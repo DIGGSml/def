@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Dictionary xmlns="http://diggsml.org/schemas/2.5.a"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a-dev/Dictionary_diggs.xsd"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://diggsml.org/schemas/2.5.a/Dictionary_diggs.xsd"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" 
     xmlns:diggs="http://diggsml.org/schemas/2.5.a" gml:id="measurement_property_class">
     <gml:identifier codeSpace="http://diggsml.org/terms">
-        DIGGS property classes
+        DIGGS measurement property classes
     </gml:identifier>
     <dictionaryEntry>
         <Definition gml:id="a_pressure">
@@ -503,7 +503,7 @@
     <dictionaryEntry>
         <Definition gml:id="cohesion_peak">
             <gml:description>
-                Shear resistance at zero normal stress —the portion of the shear strength of a soil indicated by the term c, in Coulomb’s equation
+                Shear resistance at zero normal stress ï¿½the portion of the shear strength of a soil indicated by the term c, in Coulombï¿½s equation
             </gml:description>
             <gml:identifier codeSpace="http://diggsml.org/terms">
                 peak cohesion
@@ -732,7 +732,7 @@
     <dictionaryEntry>
         <Definition gml:id="dilatometer_modulus">
             <gml:description>
-                Dilatometer modulus, based on linear elastic theory, and the primary index used in the correlation for the constrained and Young’s moduli.
+                Dilatometer modulus, based on linear elastic theory, and the primary index used in the correlation for the constrained and Youngï¿½s moduli.
             </gml:description>
             <gml:identifier codeSpace="http://diggsml.org/terms">
                 dilatometer modulus (ED)
