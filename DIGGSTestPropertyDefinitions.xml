@@ -2,8 +2,19 @@
 <Dictionary xmlns="http://diggsml.org/schemas/2.5.a"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://diggsml.org/schemas/2.5.a/Dictionary_diggs.xsd"
-    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:diggs="http://diggsml.org/schemas/2.5.a" gml:id="measurement_property_class">
+    <gml:description>
+        Dictionary enumerating the values for the element "property_class" of the object "Property" used within the Test and Monitor DIGGS features at these XPath locations: 
+        
+        diggs:Diggs/diggs:measurement/diggs:Test/diggs:outcome/diggs:TestResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass, and
+        
+        diggs:Diggs/diggs:measurement/diggs:Monitor/diggs:reading/diggs:Reading/diggs:outcome/diggs:MonitorResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass, and 
+        
+        diggs:Diggs/diggs:measurement/diggs:Monitor/diggs:reading/diggs:Reading/diggs:sensor/diggs:Sensor/diggs:detector/diggs:Detector/diggs:measurand.
+        
+        These values serve to define the "results" of geotechnical and environmental tests and monitoring activities that result from test procedures and monitoring sensors, but that may not specifically bound to the procedures that produce the results.
+    </gml:description>
     <gml:identifier codeSpace="http://diggsml.org/terms">
         DIGGS measurement property classes
     </gml:identifier>
@@ -21,7 +32,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="aggregate_abrasion_value">
@@ -37,7 +48,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AggregateAbrasionValueTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="aggregate_crushing_value">
@@ -53,7 +64,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AggregateCrushingValueTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="aggregate_elongation_index">
@@ -69,7 +80,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AggregateElongationIndexTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="aggregate_flakiness_index">
@@ -85,7 +96,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AggregateFlakinessIndexTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="aggregate_impact_value">
@@ -101,7 +112,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AggregateImpactValueTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="aggregate_LA_abrasion_loss">
@@ -117,7 +128,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LosAngelesAbrasionTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="aggregate_la_coefficient">
@@ -133,7 +144,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LosAngelesAbrasionTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="aggregate_la_wear_ratio">
@@ -149,7 +160,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LosAngelesAbrasionTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="aggregate_polished_stone_value">
@@ -165,7 +176,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AggregatePolishedStoneValueTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="aggregate_water_absorption">
@@ -181,7 +192,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AggregateWaterAbsorptionTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="b_pressure">
@@ -197,7 +208,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="bulk_density">
@@ -222,7 +233,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LabCBRTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="c_pressure">
@@ -238,7 +249,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="cbr_0.1">
@@ -257,7 +268,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LabCBRTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="cbr_0.2">
@@ -276,7 +287,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LabCBRTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="chalk_crushing_value">
@@ -292,7 +303,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ChalkCrushingValueTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="clay_percent_2_micron">
@@ -308,7 +319,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="clay_percent_5_micron">
@@ -324,7 +335,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="coef_consolidation_horiz">
@@ -340,7 +351,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="coef_consolidation_vertical">
@@ -356,7 +367,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ConsolidationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="coef_curvature">
@@ -372,7 +383,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="coef_earth_pressure">
@@ -391,7 +402,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:PressuremeterTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="coef_permeability">
@@ -416,7 +427,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:StaticConePenetrationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="coef_permeability_corrected">
@@ -432,7 +443,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LabPermeabilityTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="coef_permeability_horiz">
@@ -457,7 +468,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:StaticConePenetrationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="coef_permeability_vert">
@@ -482,7 +493,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:StaticConePenetrationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="coef_uniformity">
@@ -498,7 +509,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="cohesion_peak">
@@ -514,7 +525,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:DirectShearTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="cohesion_residual">
@@ -530,7 +541,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:DirectShearTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="colloid_percent">
@@ -546,7 +557,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="compression_index">
@@ -562,7 +573,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ConsolidationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="compressional_slowness">
@@ -578,7 +589,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="compressive_strength_unconfined">
@@ -592,9 +603,12 @@
             <uomType>pressure</uomType>
             <authority/>
             <associatedElement>
-                 /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:UnconfinedCompressiveStrengthTest
+                /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:UnconfinedCompressiveStrengthTest
             </associatedElement>
-              </Definition>        
+            <associatedElement>
+                /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LabPenetrometerTest
+            </associatedElement>
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="consistency_index">
@@ -613,7 +627,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:MoistureContentTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="constrained_vert_modulus">
@@ -632,7 +646,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="d10">
@@ -648,7 +662,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="d30">
@@ -664,7 +678,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="d50">
@@ -680,7 +694,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="d60">
@@ -696,7 +710,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="degree_of_saturation">
@@ -712,7 +726,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:MoistureContentTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="dilation_angle">
@@ -727,7 +741,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:PressuremeterTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="dilatometer_modulus">
@@ -743,7 +757,7 @@
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="dmt_tip_bearing">
@@ -760,7 +774,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="dry_density">
@@ -776,7 +790,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:DensityTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="effective_stress_vertical">
@@ -792,7 +806,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="pore_pressure_equil">
@@ -808,7 +822,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="pore_pressure_est">
@@ -824,7 +838,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="flame_ionization_measurement">
@@ -840,7 +854,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlameIonizationDetectorTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="friction_angle_cv">
@@ -859,7 +873,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:PressuremeterTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="friction_angle_peak">
@@ -881,7 +895,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:TriaxialTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="friction_angle_residual">
@@ -906,7 +920,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:TriaxialTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="friction_ratio">
@@ -922,7 +936,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:StaticConePenetrationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="frost_heave">
@@ -938,7 +952,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FrostSusceptibilityTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="gamma_ray">
@@ -954,7 +968,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="horiz_stress_index">
@@ -970,7 +984,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="inclination">
@@ -985,7 +999,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:StaticConePenetrationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="insitu_horizontal_stress">
@@ -1000,7 +1014,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:PressuremeterTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="limit_pressure">
@@ -1015,7 +1029,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:PressuremeterTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="liquid_limit">
@@ -1031,7 +1045,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AtterbergLimitsTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="liquid_limit_oven_dried">
@@ -1047,7 +1061,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AtterbergLimitsTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="liquidity_index">
@@ -1066,7 +1080,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:MoistureContentTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="material_index">
@@ -1082,7 +1096,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="dry_density_max">
@@ -1098,7 +1112,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LabCompactionTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="mcv">
@@ -1114,7 +1128,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:MCVTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="n_value">
@@ -1130,7 +1144,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:DrivenPenetrationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="n1_60">
@@ -1146,7 +1160,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:DrivenPenetrationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="overconsolidation_ratio">
@@ -1165,7 +1179,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="p_wave_velocity">
@@ -1181,7 +1195,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="p0_reading">
@@ -1197,7 +1211,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="p1_reading">
@@ -1213,7 +1227,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="p2_reading">
@@ -1229,7 +1243,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="percent_fines">
@@ -1245,7 +1259,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="percent_gravel">
@@ -1254,13 +1268,13 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <gml:identifier codeSpace="http://diggsml.org/terms">
                 percent gravel
             </gml:identifier>
-            <dataType></dataType>
+            <dataType/>
             <uomType>percent</uomType>
             <authority/>
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="percent_sand">
@@ -1276,7 +1290,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="pH">
@@ -1295,7 +1309,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LabChemicalTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="pid_result">
@@ -1311,7 +1325,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:PhotoIonizationDetectorTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="plastic_limit">
@@ -1327,7 +1341,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AtterbergLimitsTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="plasticity_index">
@@ -1343,7 +1357,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AtterbergLimitsTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="point_load_test_index">
@@ -1359,7 +1373,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:PointLoadTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="poisson_ratio">
@@ -1378,7 +1392,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="pore_water_pressure">
@@ -1394,7 +1408,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:StaticConePenetrationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="preconsolidation_pressure">
@@ -1410,7 +1424,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ConsolidationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="recompression_index">
@@ -1426,7 +1440,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ConsolidationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="redox_potential">
@@ -1444,7 +1458,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LabRedoxTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="relative_density">
@@ -1463,7 +1477,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:RelativeDensityTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="resistivity">
@@ -1482,7 +1496,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="rock_porosity">
@@ -1498,7 +1512,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:RockPorosityDensityTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="schmidt_hardness_value">
@@ -1514,7 +1528,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:SchmidtReboundHardnessTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="sensitivity">
@@ -1536,7 +1550,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:UnconfinedCompressiveStrengthTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="shear_modulus">
@@ -1555,7 +1569,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:UnconfinedCompressiveStrengthTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="shear_slowness">
@@ -1571,7 +1585,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="shear_strength_drained">
@@ -1593,7 +1607,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:TriaxialTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="shear_strength_undrained">
@@ -1624,7 +1638,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:TriaxialTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="shear_strength_undrained_residual">
@@ -1655,7 +1669,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:TriaxialTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="shear_velocity">
@@ -1674,7 +1688,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="shore_hardness_value">
@@ -1690,7 +1704,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ShoreScleroscopeHardnessTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="shrinkage_limit">
@@ -1706,7 +1720,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AtterbergLimitsTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="shrinkage_ratio">
@@ -1722,7 +1736,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AtterbergLimitsTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="slake_durability_index">
@@ -1738,7 +1752,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AggregateSlakeDurabilityTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="sleeve_friction">
@@ -1754,7 +1768,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:StaticConePenetrationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="LOI">
@@ -1770,7 +1784,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LossOnIgnitionTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="soil_suction">
@@ -1786,7 +1800,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:SuctionTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="soil_type">
@@ -1802,7 +1816,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="sonic_porosity">
@@ -1821,7 +1835,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="sonic_porosity_calculated">
@@ -1840,7 +1854,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="specific_gravity_apparent">
@@ -1856,7 +1870,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:SpecificGravityTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="specific_gravity_bulk">
@@ -1872,7 +1886,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:SpecificGravityTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="specific_gravity_solids">
@@ -1888,7 +1902,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:SpecificGravityTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="spontaneous_potential">
@@ -1904,7 +1918,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="ten_percent_fines_value">
@@ -1920,7 +1934,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AggregateTenPercentFinesTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="tension">
@@ -1936,7 +1950,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:WirelineLog
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="thrust">
@@ -1952,7 +1966,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="tip_resistance">
@@ -1968,7 +1982,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:StaticConePenetrationTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="unit_weight">
@@ -1987,7 +2001,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="uscs_symbol">
@@ -2003,7 +2017,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:ParticleSizeTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="uscs_symbol_425">
@@ -2013,13 +2027,13 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <gml:identifier codeSpace="http://diggsml.org/terms">
                 USCS symbol of material passing 425 screen
             </gml:identifier>
-            <dataType></dataType>
+            <dataType/>
             <uomType>dimensionless</uomType>
             <authority/>
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AtterbergLimitsTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="vertical_stress_total">
@@ -2035,7 +2049,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:FlatPlateDilatometerTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="volumetric_shrinkage">
@@ -2051,7 +2065,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:AtterbergLimitsTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="water_content_natural">
@@ -2073,7 +2087,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:MoistureContentTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="water_content_optimum">
@@ -2089,7 +2103,7 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:LabCompactionTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
     <dictionaryEntry>
         <Definition gml:id="youngs_modulus">
@@ -2105,6 +2119,6 @@ may be used to estimate the friction angle, overconsolidation ratio and at rest 
             <associatedElement>
                  /diggs:Diggs/diggs:measurement/diggs:Test/diggs:procedure/diggs_geo:UnconfinedCompressiveStrengthTest
             </associatedElement>
-              </Definition>        
+        </Definition>
     </dictionaryEntry>
 </Dictionary>
