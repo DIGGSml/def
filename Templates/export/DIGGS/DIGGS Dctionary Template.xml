@@ -1,0 +1,27 @@
+<Dictionary xmlns="http://diggsml.org/schemas/2.6"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6/Dictionary_diggs.xsd"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" 
+    xmlns:diggs="http://diggsml.org/dictionaries"
+    gml:id="{{DictionaryName.DictionaryID}}">
+    <gml:description>
+        {{DictionaryName.Description}}
+    </gml:description>
+    <gml:identifier codeSpace="http://diggsml.org/dictionaries/{{DictionaryName.DictionaryName}}.xml">{{DictionaryName.DictionaryID}}</gml:identifier>
+	<KYNLoop name="Definitions" loopby="table" loopon="Definitions">
+    <dictionaryEntry>
+        <Definition gml:id="{{Definitions.Code}}">
+            <gml:description>{{Definitions.Description}}</gml:description>
+            <gml:identifier codeSpace="http://diggsml.org/dictionaries/{{DictionaryName.DictionaryName}}.xml">{{Definitions.Code}}</gml:identifier>
+            <gml:name>{{Definitions.Name}}</gml:name>
+            <dataType>{{Definitions.DataType}}</dataType>
+            <uomType>{{Definitions.UOMType}}</uomType>
+            <authority>{{Definitions.Authority}}</authority>
+        <KYNLoop name="Associated Elements" loopon="AssociatedElements" filterfields="Code" filtervalues="{{Definitions.Code}}">
+            <associatedElement>{{AssociatedElements.Element}}</associatedElement>
+		</KYNLoop>
+        </Definition>
+    </dictionaryEntry>
+    </KYNLoop>
+ </Dictionary>
+ 
