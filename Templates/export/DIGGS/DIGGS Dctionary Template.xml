@@ -2,7 +2,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6/Dictionary_diggs.xsd"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" 
-    xmlns:diggs="http://diggsml.org/dictionaries"
     gml:id="{{DictionaryName.DictionaryID}}">
     <gml:description>
         {{DictionaryName.Description}}

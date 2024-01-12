@@ -3,7 +3,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6/Dictionary_diggs.xsd"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" 
-    xmlns:diggs="http://diggsml.org/dictionaries"
     gml:id="DIGGS_Roles">
     <gml:description>
         List of DIGGS standard code values for the rolePerformed property of the Role element. The specific context for a particular code can be found in the associatedElement property.
@@ -163,4 +162,4 @@
             <associatedElement>/element(*,diggs:RoleType)/diggs:rolePerformed</associatedElement>
         </Definition>
     </dictionaryEntry>
- </Dictionary>
+  </Dictionary>
