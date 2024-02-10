@@ -1,0 +1,2417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../stylesheets/propertylists.xsl"?>
+<Dictionary xmlns="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6/Diggs.xsd"
+    gml:id="propertyClass">
+    <description>
+        This dictionary contains the values for the propertyClass property of the diggs:Property object and the measurand property of the diggs:Detector object when used within the Test and Monitor DIGGS features. These values serve to define the ultimate results of geotechnical and environmental tests and monitoring activities that result from test procedures and monitoring sensors. The Xpaths to these occurrences are: 1) //diggs:Property/diggs:propertyClass (for Test, MaterialTest or Monitor 2)//diggs:Detector/diggs:measurand (for measurand).
+ 
+    </description>
+    <identifier codeSpace="http://diggsml.org/props">properties-diggs.xml</identifier>
+    <name>DIGGS Measurement Properties</name>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="a_pressure">
+                <description>The gauge gas pressure against the inside of the membrane when the center of the membrane has lifted above its support and moved laterally 0.05-mm (tolerance +0.02, -0.00 mm) into the soil surrounding the blade. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">A-Pressure</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="aggregate_abrasion_value">
+                <description> A measure of the resistance of aggregate to surface wear by abrasion.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Aggregate Abrasion Value</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AggregateAbrasionValueTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="aggregate_crushing_value">
+                <description> A relative measure of the resistance of an aggregate to crushing under a gradually applied compressive load.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Aggregate Crushing Value</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AggregateCrushingValueTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="aggregate_elongation_index">
+                <description> The percentage by weight of particles whose greatest dimension (length) is 1.8 times their mean dimension.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Aggregate Elongation Index</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AggregateElongationIndexTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="aggregate_flakiness_index">
+                <description> The percentage by weight of aggregate particles whose least dimension is less than 0.6 times their mean size.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Aggregate Flakiness Index</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AggregateFlakinessIndexTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="aggregate_impact_value">
+                <description> The resistance to impact of aggregates and is measured as percentage of aggregates passing to the total weight of the sample.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Aggregate Impact Value</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AggregateImpactValueTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="aggregate_LA_abrasion_loss">
+                <description> The actual measured loss (difference between the original weight and the final weight of the test sample), expressed as a percentage of the original weight of the test sample.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Aggregate Los Angeles Abrasion Loss</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LosAngelesAbrasionTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="aggregate_la_coefficient">
+                <description> The loss (difference between the original weight and the final weight of the test sample), expressed as an integer.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Aggregate Los Angeles Coefficient</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LosAngelesAbrasionTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="aggregate_la_wear_ratio">
+                <description> The actual measured loss (difference between the original weight and the final weight of the test sample), expressed as an integer percentage of the original weight of the test sample. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Aggregate Los Angeles Wear Ratio</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LosAngelesAbrasionTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="aggregate_polished_stone_value">
+                <description> A measure of the resistance of an aggregate to polishing.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Aggregate Polished Stone Value</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AggregatePolishedStoneValueTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="aggregate_water_absorption">
+                <description> A water content value that gives an idea of strength of aggregate. Aggregates having more water absorption are more porous in nature and are generally considered unsuitable unless they are found to be acceptable based on strength, impact, and hardness tests.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Aggregate Water Absorption</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AggregateWaterAbsorptionTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="b_pressure">
+                <description> The gauge gas pressure against the inside of the membrane when the center of the membrane has lifted above its support and moved laterally 1.10-mm (60.03 mm) into the soil surrounding the blade.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">B-Pressure</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="bleed">
+                <description> The volume of clear water in a grout cylinder resulting from grout sedimentation, reported as a percentage of initial total column height.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Bleed</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length per length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:BleedTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="bulk_density">
+                <description> Total mass (of solids and water) divided by total volume of material, representing natural conditions</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Density, Bulk (Natural)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>mass per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituCBRTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituDensityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabCBRTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabDensityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="c_pressure">
+                <description> The gauge gas pressure against the inside of the membrane when the center of the membrane returns to the A-pressure position during a controlled, gradual deflation following the B-pressure.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">C-Pressure</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="cbr_0.1">
+                <description> California Bearing Ratio is the ratio, expressed as a percentage, of the measured pressure for site soils at a penetration of 0.100 in divided by pressure to achieve equal penetration on a standard soil.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Corrected Cbr At 0.100 in Penetration</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure per pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituCBRTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabCBRTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="cbr_0.2">
+                <description> California Bearing Ratio is the ratio, expressed as a percentage, of the measured pressure for site soils at a penetration of 0.200 in divided by pressure to achieve equal penetration on a standard soil.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Corrected Cbr At 0.200 In Penetration</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure per pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituCBRTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabCBRTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="chalk_crushing_value">
+                <description> The Chalk Crushing Value is determined by using the chalk impact crushing test, which measures the rate at which a sample of chalk lumps crushes under impacts from a freefalling rammer. The chalk crushing value can be used, together with the saturation moisture content of the intact chalk lumps, to classify chalk in relation to its behavior as a freshly placed fill material. The test procedure is described for a single sample of chalk lumps, but normal procedure should be to calculate the mean value derived from six such tests on representative samples.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Chalk Crushing Value</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ChalkCrushingValueTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="chloride_content">
+                <description> Chloride content by lab testing (corrosivity series)</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Chloride Content</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabChemicalTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="clay_percent_2_micron">
+                <description> represents the total amount of clay sized particles (&lt;2 microns) in a test samples</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Clay Fraction &lt; 2 Micron</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="clay_percent_5_micron">
+                <description> represents the total amount of clay sized particles (&lt;5 microns) in a test samples</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Clay Fraction &lt; 5 Micron</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="coef_consolidation_horiz">
+                <description> The horizontal coefficient of consolidation as derived from the dissipation test data from a cone penetration or dilatometer test. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Coefficient of Horizontal Consolidation (Ch)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>area per time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="coef_consolidation_vertical">
+                <description> The vertical coefficient of consolidation as derived from a one-dimensional consolidation test in the lab.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Coefficient of Vertical Consolidation(Cv)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>area per time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ConsolidationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="coef_curvature">
+                <description> A coefficient describing the degree of curvature of the grain size distribution. Defined as (d30)^2/((d60)*(d10))</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Coefficient of Curvature</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="coef_earth_pressure">
+                <description> The ratio of horizontal earth pressure to vertical pressure for a sample in the field. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Coefficient of Earth Pressure, In Situ</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PressuremeterTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="coef_permeability">
+                <description> The rate at which water flows through a soil is proportional to the hydraulic gradient and is expressed by Darcy&apos;s Law. Also known as the hydraulic conductivity. For lab tests, an average of measured values over several permeation trials.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Coefficient of Permeability</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length per time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituPermeabilityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabPermeabilityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PumpingTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="coef_permeability_corrected">
+                <description> Coefficient of permeability, corrected to 20 degrees C.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Coefficient of Permeability, Corrected</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length per time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabPermeabilityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="coef_permeability_horiz">
+                <description> Coefficient of permeability, measuring rate of horizontal flow</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Horizontal Coefficient of Permeability</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length per time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituPermeabilityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabPermeabilityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PumpingTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="coef_permeability_vert">
+                <description> Coefficient of permeability, measuring rate of vertical flow</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Vertical Coefficient of Permeability</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length per time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituPermeabilityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabPermeabilityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PumpingTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="coef_uniformity">
+                <description> The ratio of D60/D10</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Coefficient of Uniformity</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length per length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="cohesion_peak">
+                <description> Shear resistance at zero normal stress ?the portion of the shear strength of a soil indicated by the term c, in Coulomb&apos;s equation</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Peak Cohesion</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:DirectShearTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="cohesion_residual">
+                <description> Shear resistance at zero normal stress at the residual (or large deformation) strength.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Residual Cohesion</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:DirectShearTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="colloid_percent">
+                <description> represents the total amount of &lt;1 micron size particles in a test samples</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Colloid Fraction</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="compression_index">
+                <description> Result from a Consolidation Test. This testis performed to determine the magnitude and rate of void ratio change for a laterally confined soil specimen that is subjected to different vertical pressures. From the measured data, the consolidation curve (pressure-void ratio relationship) can be plotted. This specific value is used for a specific portion of the log vertical pressure - void ratio curve to signify virgin compression. The one-dimension consolidation curve can be used to determine other values (e.g., the recompression index (slope of recompression curve) and the preconsolidation pressure (or maximum past pressure) of the soil).</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Compression Index</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ConsolidationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="compressive_strength_unconfined">
+                <description> Result of axial compression test using unconfined compression</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Unconfined Compressive Strength</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabPenetrometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PocketPenetrometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="conductivity">
+                <description> A measure of the conductive power of a specified material to the flow of an electric current.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Conductivity</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>electric conductivity</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="consistency_index">
+                <description> The consistency index (CI) indicates the consistency (firmness) of a soil. It is calculated as CI = (LL-W)/(LL-PL), where W is the existing water content. Soil at the liquid limit will have a consistency index of 0, while soil at the plastic limit will have a consistency index of 100.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Consistency Index</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:WaterContentTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="constrained_vert_modulus">
+                <description> Measure of slope of stress-strain curve when specimen is confined. Usually the result from a 1-D consolidation test.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Constrained Modulus, Vertical, Drained (M)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ConsolidationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="d10">
+                <description> Grain diameter corresponding to 10 percent passing. Intermediate value used to report other results.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">d10</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="d30">
+                <description> Grain diameter corresponding to 30 percent passing. Intermediate value used to report other results.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">d30</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="d50">
+                <description> Grain diameter corresponding to 50 percent passing. Intermediate value used to report other results.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">d50</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="d60">
+                <description> Grain diameter corresponding to 60 percent passing. Intermediate value used to report other results.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">d60</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="degree_of_saturation">
+                <description> Volume of water divided by the volume of voids, expressed as a percentage</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Degree of Saturation</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>volume per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:WaterContentTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="dilation_angle">
+                <description> The diffrence between the observed friction angle of a soil during dilation and the friction angle at zero dilation</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Dilation Angle</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>plane angle</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PressuremeterTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="dilatometer_modulus">
+                <description> Dilatometer modulus, based on linear elastic theory, and the primary index used in the correlation for the constrained and Young&apos;s moduli.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Dilatometer Modulus (Ed)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length per length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="dmt_tip_bearing">
+                <description> DMT tip bearing (qD) is the axial thrust force at the end of dilatometer blade divided by the projected cross-sectional area of the blade normal to the penetration. The DMT tip bearing is similar to the cone resistance, qc and may be used to evaluate stratigraphy. In cohesionless soils, qD and KD may be used to estimate the friction angle, overconsolidation ratio and at rest coefficient of earth pressure.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Dilatometer Tip Bearing (Qd)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="dry_density">
+                <description> Mass of solids divided by total volume</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Density, Dry</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>mass per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabDensityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="dry_density_max">
+                <description> This is a result of a compaction test. It is defined as the maximum dry unit weight that is measured when a specific type and amount of energy is used for the compaction test. This is also the value of the compacted dry unit weight when the soil is at the optimum moisture content.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Maximum Dry Density</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>mass per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabCompactionTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="effective_stress_vertical">
+                <description> Vertical effective stress at the center of the membrane before the insertion of the DMT blade.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Vertical Effective Stress</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="filtrate_volume">
+                <description> Volume of filtrate extruded in Pressure Filtration test</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Filtrate Volume</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>volume per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:PressureFiltrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="flame_ionization_measurement">
+                <description> Flame Ionization Detector Test detects total concentrations of organic gases and vapors. Gases and vapors are ionized in a flame; a current is produced in proportion to the number of carbon atoms present. Reported result can be in various units of measure, depending upon specific equipment used.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Flame Ionization Measurement</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlameIonizationDetectorTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="flow_cone_time">
+                <description> Time for grout specimen to exit flow cone</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Flow Cone Time</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:FlowConeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="friction_angle_cv">
+                <description> Angle of friction at constant volume</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Critical State Friction Angle</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>plane angle</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:DirectShearTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PressuremeterTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="friction_angle_peak">
+                <description> Measure of frictional resistance of soil. Ratio of shear strength to normal stress.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Peak Angle of Internal Friction</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>plane angle</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:DirectShearTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:TriaxialTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="friction_angle_residual">
+                <description> Angle between the axis of normal stress and the tangent to the Mohr envelope at a point representing the failure-stress condition following large deformation</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Residual Angle of Internal Friction</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>plane angle</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:DirectShearTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PressuremeterTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:TriaxialTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="friction_ratio">
+                <description> ratio of sleeve resistance to tip resistance</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Friction Ratio</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="frost_heave">
+                <description> Test establishes the degree of frost-susceptibility of unbound sub-base and base materials for pavements.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Frost Heave</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FrostSusceptibilityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="gel_time">
+                <description> The time it takes for a chemical grout to gel. If determined by rotational viscometer, this is the value where viscosity reaches 100 mpa*s.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Gel Time</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:ViscometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="HFFD">
+                <description> Heavy fuel fluorescence detector value measured by sensor</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">HFFD</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>electric potential difference</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="horiz_stress_index">
+                <description> The dimensionless dilatometer horizontal stress index, the primary index used in the correlation for in-situ horizontal stress, overconsolidation ratio, and undrained shear strength in cohesive soils. KD is similar to the at-rest coefficient of earth pressure except that it includes blade penetration effects.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Horizontal Stress Index (Kd)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="inclination">
+                <description> Measured inclination angle (vertical = 0 degrees); bearing unspecified or specified as another property</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Inclination</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>plane angle</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:Sensor</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="inclination_x">
+                <description> Inclination measured in defined x direction (specified elsewhere)</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">X Inclination</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>plane angle</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:Sensor</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="inclination_y">
+                <description> Inclination measured in defined y direction (specified elsewhere)</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Y Inclination</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>plane angle</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:Sensor</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="insitu_horizontal_stress">
+                <description> The horizontal component of the original stress status before excavations or other perturbations. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Insitu Horizontal Stress</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PressuremeterTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="Is">
+                <description> The Point Load Test produces an uncorrected Point Load Test Index (Is), which can be correlated with the uniaxial compressive strength (UCS) of rock.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Uncorrected Point Load Test Index</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PointLoadTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="Is50">
+                <description> The Point Load Test produces the Point Load Test Index (Is50), which can be correlated with the uniaxial compressive strength (UCS) of rock.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Size Corrected Point Load Test Index</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PointLoadTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="LFFD">
+                <description> Light fuel fluorescence detector value measured by sensor</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">LFFD</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>electric potential difference</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="limit_pressure">
+                <description> The oressure at failure during a Pressuremeter test</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Limit Pressure</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PressuremeterTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="line_loss_coeff_A">
+                <description> Coefficient A computed for line loss regression equation Ax^2 + Bx + C</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Line Loss Coefficient A</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:LineLossTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="line_loss_coeff_B">
+                <description> Coefficient B computed for line loss regression equation Ax^2 + Bx + C</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Line Loss Coefficient B</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:LineLossTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="line_loss_coeff_C">
+                <description> Coefficient C computed for line loss regression equation Ax^2 + Bx + C</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Line Loss Coefficient C</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:LineLossTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="line_loss_r2">
+                <description> The correlation coefficient of the line loss regression equation</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Line Loss R2</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:LineLossTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="liquid_limit">
+                <description> The liquid limit (LL) is the water content at which a soil changes from plastic to liquid behavior.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Liquid Limit</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="liquid_limit_oven_dried">
+                <description> Liquid limit determined if sample required oven drying before test</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Oven Dried Liquid Limit</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="liquidity_index">
+                <description> The liquidity index (LI) is used for scaling the natural water content of a soil sample to the limits. It can be calculated as a ratio of difference between natural water content, plastic limit, and liquid limit: LI=(W-PL)/(LL-PL) where W is the natural water content.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Liquidity Index</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:WaterContentTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="LOI">
+                <description> The amount of organic matter in a soil that derives from peat, organic muck, plant material such as wood, roots, grass, or carbonaceous maTerials such as lignite, coal, etc.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Organic Content of Soil</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LossOnIgnitionTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="lugeon_value">
+                <description> A unit devised to quantify the water permeability of bedrock and the hydraulic conductivity resulting from fractures.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Lugeon Value</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:LugeonTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="marsh_funnel_time">
+                <description> Time for grout speciment to exit marsh funnel</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Marsh Funnel Time</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:MarshFunnelTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="material_index">
+                <description> Dimensionless dilatometer material index, used to identify soil type and delineate stratigraphy.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Material Index (Id)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="mcv">
+                <description> The Moisture Condition Value (MCV) is determined from a moisture condition test, a physical test indicating how much compactive effort is needed to compact a sample of soil at a particular moisture content.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Moisture Condition Value</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:MCVTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="modulus_shear">
+                <description> Shear modulus, denoted by G, is defined as the ratio of shear stress to the shear strain.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Shear Modulus</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PressuremeterTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="modulus_youngs">
+                <description> The tangent modulus of the initial, linear portion of a stress-strain curve for material in axial compression or tension is called Young&apos;s modulus, also known as the tensile (compression) modulus. It is defined as the ratio of the uniaxial stress over the uniaxial strain in the range of stress in which Hooke&apos; Law holds. It is often calculated using theory of elasticity from other tests.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Young&apos;s Modulus</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="mud_balance_density">
+                <description> Grout or mud density determined using a mud balance</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Mud Balance Density</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>mass per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:MudBalanceTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="n_value">
+                <description> Value from Standard Penetration Test (SPT) to define advancement in terms of blows required to drive a specific sampler I foot into the soil using a hammer that provides a specific impact energy.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">N-Value (Raw)</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:DrivenPenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="n1_60">
+                <description> Calculated value that corrects the value of the Standard Penetration Blow Count (N), to account for energy of the hammer (specifically normalized to 60% energy) and specific overburden conditions (specifically to an overburden stress of 1 ton per square foot). </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">N1,60</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:DrivenPenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="n60">
+                <description> Calculated value that corrects the value of the Standard Penetration Blow Count (N-value), to account for energy of the hammer (specifically normalized to 60% energy).</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">N60</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:DrivenPenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="non_plastic">
+                <description> A value of true for this property indiates that no plastic limit can be . In such cases the value of the plastic limit should be left empty or set to the null value, and the value of non_plastic set to true.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Non Plastic</identifier>
+                <diggs:dataType>boolean</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="ocr">
+                <description> A calculation that reflects the maximum past consolidation test that the in situ soil has been subjected to compared to the current vertical overburden stress on the sample in the field. This value is usually measured from the one-dimensional consolidation tests. Often referenced as the parameter to track the stress history.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Overconsolidation Ratio</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ConsolidationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="p0_reading">
+                <description>A-Reading corrected for the DA membrane stiffness at 0.05 mm expansion, the 0.05 mm expansion itself and the gauge pressure deviation from zero. This corrected pressure is referred to as p0. This is an intermediate result from a flat plate dilatometer test.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">P0 Reading</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="p1_reading">
+                <description>B-Reading corrected for the DB membrane stiffness at 1.10 mm expansion and the gauge pressure deviation from zero. This corrected pressure is referred to as p1. This is an intermediate result from a flat plate dilatometer test.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">P1 Reading</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="p2_reading">
+                <description>C-Reading corrected for the DA membrane stiffness at 0.05 mm expansion and the gauge pressure deviation from zero. This corrected pressure is referred to as p2. This is an intermediate result from a flat plate dilatometer test.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">P2 Reading</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="percent_fines">
+                <description>The percentage of particles that pass through the #200 sieve (&lt;0.075-mm).</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Percent Fines</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="percent_gravel">
+                <description>The percentage of particles that are retained on the #4 and larger sizes (&gt;4.75 mm).</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Percent Gravel</identifier>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="percent_sand">
+                <description>The percentage of particles thatpass the #4 sivve and are retained on the #200 sieve (&lt;4.75 mm and &gt;0.075-mm).</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Percent Sand</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="pH">
+                <description>A meassure of how acidic or basic a soil or water is.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">pH</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabChemicalTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:RedoxTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="pid_result">
+                <description>Measures volatile organic compounds and other gases, expressed in parts per million.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Photoionization Detector Result</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>volume per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PhotoIonizationDetectorTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="plastic_limit">
+                <description>The plastic limit (PL) is the water content where soil transitions between brittle and plastic behavior.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Plastic Limit</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="plasticity_index">
+                <description>The plasticity index (PI) is a measure of the plasticity of a soil. The plasticity index is a measure of the range of water contents where the soil exhibits plastic properties. The PI is the difference between the liquid limit and the plastic limit (PI = LL-PL). (Soils with a high PI tend to be clay, those with a lower PI tend to be silt, and those with a PI of 0 (non-plastic) tend to have little or no silt or clay.)</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Plasticity Index</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="point_load_test_index">
+                <description>The Point Load Test produces the Point Load Test Index (Is50), which can be correlated with the uniaxial compressive strength (UCS) of rock.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Point Load Test Index</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PointLoadTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="poisson_ratio">
+                <description>Ratio of the transverse contraction of a body to its longitudinal extension when stretched. Typical values in minerals are from 0.15 to 0.3 (Carbonates:0.15, Sandstones:0.2, Shales:0.25).</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Poisson Ratio</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="pore_pressure_equil">
+                <description>the value of pore pressure measured in the field after dissipation of induced excess pore pressure. Could also be from CPTu test</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Equilibrium Pore Water Pressure (U0)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="pore_pressure_est">
+                <description>The pore-water pressure acting at the center of the membrane before the insertion of the DMT blade (often assumed as hydrostatic below the water table surface).</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Estimated Pore Water Pressure</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="pore_pressure_u1">
+                <description>Measured pore pressure from u1 transducer on tip.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Pore Water Pressure (U1)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="pore_pressure_u2">
+                <description>Measured pore pressure from u2 transducer behind tip.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Pore Water Pressure (U2)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="pore_pressure_u3">
+                <description>Measured pore pressure from u3 transducer behind sleeve.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Pore Water Pressure (U3)</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="preconsolidation_pressure">
+                <description>Result from a Consolidation Test. This test is performed to determine the magnitude and rate of void ratio change for a laterally confined soil specimen that is subjected to different vertical pressures. From the measured data, the consolidation curve (pressure-void ratio relationship) can be plotted. This specific value is used for a specific portion of the log vertical pressure - void ratio curve to signify the largest value of stress that sample has experienced before the performance of this test. It is a calculation results usually obtained by a construction technique using laboratory test results. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Preconsolidation Pressure</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ConsolidationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="pressure_filtration_value">
+                <description>Value derived from a pressure filtration test</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Pressure Filtration Value</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>reciprocal time squared</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:PressureFiltrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="recompression_index">
+                <description>Result from a Consolidation Test. This test is performed to determine the magnitude and rate of void ratio change for a laterally confined soil specimen that is subjected to different vertical pressures. From the measured data, the consolidation curve (pressure-void ratio relationship) can be plotted. This specific value is used for a specific portion of the log vertical pressure - void ratio curve to signify a response due to the unloading and reloading of a sample that is on the virgin curve.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Recompression Index</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ConsolidationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="redox_potential">
+                <description>A &apos;measure of the ability of chemical/biochemical systems to oxidize (lose electrons) or reduce (gain electrons). </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Redox Potential</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>electric potential difference</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:RedoxTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="relative_density">
+                <description>The density of a granular specimen relative to its maximum and minimum density (or void ratio) </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Density, Relative</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:DrivenPenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:RelativeDensityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="resistivity">
+                <description>A measure of the resisting power of a specified material to the flow of an electric current.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Resistivity</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>electrical resistivity</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabResistivityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="rock_porosity">
+                <description>The open space in a rock divided by the total rock volume.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Rock Porosity</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>volume per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:RockPorosityDensityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="schmidt_hardness_value">
+                <description>The Schmidt Hardness Test utilizes a hammer mass launched against an impact plunger. The amount of hammer mass rebound depends on the hardness of the test piece. This rebound amount is then shown on a scale of 10 to 100.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Schmidt Hardness Value</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:SchmidtReboundHardnessTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="sensitivity">
+                <description>the ratio of the strength of the soil in the undisturbed state to that of the soil in the remolded state.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Sensitivity</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituVaneTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabVaneTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="set_time">
+                <description>Setting time for grout</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Set Time</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:SetTimeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="shear_strength_drained">
+                <description>The peak shear resistance of an intact specimen when pore fluid pressures, generated during the course of shearing the soil, are able to dissipate during shearing. It also applies where no pore water exists in the soil (the soil is dry) and hence pore fluid pressures are negligible. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Peak Drained Shear Strength</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabPenetrometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PocketPenetrometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PressuremeterTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:TriaxialTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="shear_strength_undrained">
+                <description>The peak shear strength of an intact specimen when no volume change is allowed during the tests. The value can be measured in the lab and in the field. In both cases, the value can be calculated from different tests. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Peak Undrained Shear Strength</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituVaneTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabPenetrometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabVaneTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PocketPenetrometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PressuremeterTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:TriaxialTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="shear_strength_undrained_residual">
+                <description>A measure of the shear strength of the soil for which the shear stress remains essentially constant with increasing shear displacement andwhen no volume change is allowed during the tests. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Residual Undrained Shear Strength</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituVaneTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabPenetrometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabVaneTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PocketPenetrometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PressuremeterTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:TriaxialTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="shore_hardness_value">
+                <description>The height of the rebound travel of the Scleroscope hammer is measured on a graduated scale. The scale of the rebound is arbitrarily chosen and consists on Shore units, divided into 100 parts, which represent the average rebound from pure hardened high-carbon steel. The scale is continued higher than 100 to include metals having greater hardness.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Shore Hardness Value</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ShoreScleroscopeHardnessTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="shrinkage">
+                <description>The amount of grout shrinkage, reported as a percentage of total volume</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Shrinkage</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>volume per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:ShrinkageTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="shrinkage_limit">
+                <description>The shrinkage limit (SL) is the water content below which a soil undergoes no further volume change.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Shrinkage Limit</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>volume per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="shrinkage_ratio">
+                <description>The ratio of a given volume change expressed as a percentage of the dry volume to the corresponding change in water content above the shrinkage limit. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Shrinkage Ratio</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="slake_durability_index">
+                <description>The Slake Durability Index predicts the long-term durability of the rock specimens, to establish weathering and degradation characteristics of each rock type, and to assess the impact of water on the rock degradation.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Slake Durability Index</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AggregateSlakeDurabilityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="sleeve_friction">
+                <description>Value of stress measured on sleeve of cone during penetration</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Sleeve Friction</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="slump">
+                <description>Amount of slump of grout sample</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Slump</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:SlumpTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="soil_moisture_content">
+                <description>Soil moisture content measured by sensor (eg CPT)</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Soil Moisture Content</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="soil_suction">
+                <description>Soil suction value</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Soil Suction</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:SuctionTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="soil_type">
+                <description>A value derived from a dilatometer test, using the dilatometer modulus and material index.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Soil Type</identifier>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="specific_gravity_apparent">
+                <description>The apparent specific gravity is designated Ga and is the ratio of the weight in air of a unit volume of the impermeable portion of aggregate to the weight in air of an equal volume of distilled water, both at a stated temperature. The impermeable portion of a porous material, such as most large soil grains, includes the solid material plus impermeable pores or voids within the particles. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Apparent Specific Gravity</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:SpecificGravityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="specific_gravity_bulk">
+                <description>The bulk specific gravity is designated Gm and is the ratio of the weight in air of a unit volume of aggregate (including permeable and impermeable voids in the particles, but not the voids between the particles) to the weight of an equal volume of distilled water at a stated temperature. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Bulk Specific Gravity</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:SpecificGravityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="specific_gravity_solids">
+                <description>The specific gravity of solids (Gs) is the bulk density of the solid particles relative to the density of water. It is a required parameter to assess void ratio. Its value is a function of the mineralogy of the solid particles. It is commonly assumed by geotechnical engineers.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Specific Gravity of Solids</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:SpecificGravityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="sulfate_content">
+                <description>Sulfate content by lab testing (corrosivity series)</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Sulfate Content</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabChemicalTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="syneresis">
+                <description>Thec ontraction of a gel accompanied by the separating out of liquid. It is calculated as a percent of volume or mass loss.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Syneresis</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>mass per mass</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:SyneresisTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="syneresis_surface_area_normalized">
+                <description>The syneresis value of a gel specimen divided by its surface area; accounts for variability in syneresis of a gel depending on the amount of the gel exposed to air. Calculated as mass loss divided by surface area</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Surface Area Normalized Syneresis</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>mass per area</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:SyneresisTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="t50">
+                <description>Time until pore pressure reaches the halfway pressure (u50) between starting dynamic pore pressure and equilibrium pore pressure</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">T50</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="temperature">
+                <description>Measured temperature</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Temperature</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="ten_percent_fines_value">
+                <description>A measure of the resistance of aggregate crushing.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Ten Percent Fines Value</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>dimensionless</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AggregateTenPercentFinesTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="thrust">
+                <description>Thrust force required to advance the dilatometer to the test depth. This force is exclusive of soil or other friction along the push rods. This thrust is referred to as qd.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Thrust</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="time">
+                <description>Time of measurement</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Time</identifier>
+                <diggs:dataType>time</diggs:dataType>
+                <diggs:quantityClass>time</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="tip_resistance">
+                <description>A measure of stress measured at tip of cone during penetration</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Tip Resistance</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="tip_resistance_corrected">
+                <description>Tip resistance corrected for u2 pore pressure measurement</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Corrected Tip Resistance</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="u50">
+                <description>Pore pressure midway between dynamic pore pressure and equilibrium pore pressure</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">U50</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="unit_weight">
+                <description>Unit weight of a soil mass is the ratio of the total weight of soil to the total volume of soil.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Unit Weight</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabDensityTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="uscs_symbol">
+                <description>The two-letter symbol of soil type of the Unified Soil Classification System, used in engineering and geology to describe the texture and grain size of a soil. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">USCS Classification</identifier>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:ParticleSizeTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="uscs_symbol_425">
+                <description>The two letter symbol of soil type of the Unified Soil Classification System of material passing 425 micron screen</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">USCS Classification of Material Passing 425 Screen</identifier>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="vertical_stress_total">
+                <description>Total vertical stress at the center of the membrane before the insertion of the DMT blade, generally calculated from unit weights estimated using the DMT results.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Total Vertical Stress</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>pressure</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="volumetric_shrinkage">
+                <description>The decrease in volume of a soil mass when the water content is reduced from a given percentage to the shrinkage limit and which is expressed as percentage of dry volume of the soil mass.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Volumetric Shrinkage</identifier>
+                <diggs:dataType>integer</diggs:dataType>
+                <diggs:quantityClass>volume per volume</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="washout_result">
+                <description>Descriptive result of a washout test</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Washout Result</identifier>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:WashoutTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="water_content_natural">
+                <description>Also referred to as moisture content, this is the mass of water divided by the mass of the solids, expressed as a percentage. Use of this parameter is for natural conditions. Determined in a laboratory or via sensor.</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Natural Water Content</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:InsituCBRTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabCBRTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:WaterContentTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="water_content_optimum">
+                <description>This is a result of a compaction test. It is defined as the moisture content at the maximum dry unit weight as measured when a specific type and amount of energy is used for the compaction test. This is also the value of the compaction moisture content when the soils achieves the maximum dry unit weight. </description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Optimum Water Content</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>force per force</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:LabCompactionTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="water_depth">
+                <description>Measured depth to water below datum, typically directly observed or computed from a pressure transducer</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Water Depth</identifier>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:Sensor</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="water_elev">
+                <description>Measured elevation of water level, typically directly observed or computed from a pressure transducer</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Water elevation</identifier>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs:Sensor</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="water_depth_calc">
+                <description>Depth to water calculated from measured equilibrium pore pressure</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Calculated Depth To Water</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="water_elev_calc">
+                <description>Water elevation calculated from measured equilibrium pore pressure</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Calculated Water Elevation</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="water_depth_estimated">
+                <description>Estimate of water depth from insitu measurement (eg CPT, DMT)</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Estimated Water Depth</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="water_elev_estimated">
+                <description>Estimate of water elevation from insitu measurement (eg CPT, DMT)</description>
+                <identifier codeSpace="http://diggsml.org/props/properties-diggs.xml">Estimated Water Elevaton</identifier>
+                <diggs:dataType>double</diggs:dataType>
+                <diggs:quantityClass>length</diggs:quantityClass>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                                <diggs:conditionalElementXpath>//diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+</Dictionary>

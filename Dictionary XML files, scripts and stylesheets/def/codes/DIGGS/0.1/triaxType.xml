@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../stylesheets/codelists.xsl"?>
+<Dictionary xmlns="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6/Diggs.xsd"
+    gml:id="triaxialTestType">
+    <description>
+        Test type codes for triaxial test procedures. These codes are used as values for the triaxialTestType property of the TriaxialTest procedure object.
+    </description>
+    <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/authorities.xml#DIGGS">triaxType.xml</identifier>
+    <name>DIGGS Triaxial Test Type Code List Definitions</name>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="UNC">
+                <description> Unconfined Compressive test</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Unconfined Compressive test</identifier>
+                <name codeSpace="en"> Unconfined Compressive test</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="UU">
+                <description>Single point UU Triaxial - quick test</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Unconsolidated quick undrained (single stage)</identifier>
+                <name codeSpace="en"> Unconsolidated quick undrained (single stage)</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="UUM">
+                <description>Multi point UU Triaxial test</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Unconsolidated quick undrained (multi-stage)</identifier>
+                <name codeSpace="en"> Unconsolidated quick undrained (multi-stage)</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CADC">
+                <description> Anisotropically consolidated drained compression with pwp measurement</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Anisotropically consolidated drained compression with pwp measurement</identifier>
+                <name codeSpace="en"> Anisotropically consolidated drained compression with pwp measurement</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CADE">
+                <description> Anisotropically consolidated drained extension with pwp measurement</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Anisotropically consolidated drained extension with pwp measurement</identifier>
+                <name codeSpace="en"> Anisotropically consolidated drained extension with pwp measurement</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CAUC">
+                <description> Anisotropically consolidated undrained compression with pwp measurement</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Anisotropically consolidated undrained compression with pwp measurement</identifier>
+                <name codeSpace="en"> Anisotropically consolidated undrained compression with pwp measurement</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CAUE">
+                <description> Anisotropically consolidated undrained extension with pwp measurement</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Anisotropically consolidated undrained extension with pwp measurement</identifier>
+                <name codeSpace="en"> Anisotropically consolidated undrained extension with pwp measurement</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CD">
+                <description> Consolidated drained (single stage)</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Consolidated drained (single stage)</identifier>
+                <name codeSpace="en"> Consolidated drained (single stage)</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CDM">
+                <description> Consolidated drained (multi-stage)</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Consolidated drained (multi-stage)</identifier>
+                <name codeSpace="en"> Consolidated drained (multi-stage)</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CIDC">
+                <description> Isotropically consolidated drained compression with pwp measurement</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Isotropically consolidated drained compression with pwp measurement</identifier>
+                <name codeSpace="en"> Isotropically consolidated drained compression with pwp measurement</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CIDE">
+                <description> Isotropically consolidated drained extension with pwp measurement</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Isotropically consolidated drained extension with pwp measurement</identifier>
+                <name codeSpace="en"> Isotropically consolidated drained extension with pwp measurement</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CU">
+                <description> Consolidated undrained with pwp measurement (single stage)</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Consolidated undrained with pwp measurement (single stage)</identifier>
+                <name codeSpace="en"> Consolidated undrained with pwp measurement (single stage)</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CUM">
+                <description> Consolidated undrained with pwp measurement (multi-stage)</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Consolidated undrained with pwp measurement (multi-stage)</identifier>
+                <name codeSpace="en"> Consolidated undrained with pwp measurement (multi-stage)</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="UUP">
+                <description> Unconsolidated undrained with pwp measurement</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"> Unconsolidated undrained with pwp measurement</identifier>
+                <name codeSpace="en"> Unconsolidated undrained with pwp measurement</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+</Dictionary>

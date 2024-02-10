@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../stylesheets/codelists.xsl"?>
+<Dictionary xmlns="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6/Diggs.xsd"
+    gml:id="rolePerformed">
+    <description>
+        DIGGS standard code list for the rolePerformed property of the Role object, which can occur in various locations in a DIGGS instance. The context for allowable codes is given by the Source Element Xpath identifying which specific rolePerformed instances may use a specific code value.
+    </description>
+    <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/authorities.xml#DIGGS">roles.xml</identifier>
+    <name>DIGGS Roles Codelist</name>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="operator">
+                <description>Person operating equipment (drill rig/CPT rig)</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Operator</identifier>
+                <name codespace="en">Operator</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="logger">
+                <description>Person recording the data</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Logger</identifier>
+                <name codespace="en">Logger</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="drilling_contractor">
+                <description>Company who is performing the drilling operations</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Drilling Contractor</identifier>
+                <name codespace="en">Drilling Contractor</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="insitu_contractor">
+                <description>Company who is performing the insitu testing operations</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Insitu Contractor</identifier>
+                <name codespace="en">Insitu Contractor</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="laboratory_name">
+                <description>Company who is performing the lab testing</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Laboratory Name</identifier>
+                <name codespace="en">Laboratory Name</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="project_engineer">
+                <description>Person working on a project</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Project Engineer</identifier>
+                <name codespace="en">Project Engineer</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="project_manager">
+                <description>Person responsible for the project</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Project Manager</identifier>
+                <name codespace="en">Project Manager</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="checked_by">
+                <description>Person checking the associated data</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Checked By</identifier>
+                <name codespace="en">Checked By</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="prepared_by">
+                <description>Person inputting the data</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Prepared By</identifier>
+                <name codespace="en">Prepared By</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="calculated_by">
+                <description>Person performing calculations on the data (do we really need this)?</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Calculated By</identifier>
+                <name codespace="en">Calculated By</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="tested_by">
+                <description>Person performing the lab testing</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Tested By</identifier>
+                <name codespace="en">Tested By</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="owner">
+                <description>Company who owns the infrastructure associated with the project</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Owner</identifier>
+                <name codespace="en">Owner</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="client">
+                <description>Company for whom the work is being performed</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Client</identifier>
+                <name codespace="en">Client</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="helper">
+                <description>Person assisting with the equipment (drill rig/CPT rig)</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/roles.xml">Helper</identifier>
+                <name codespace="en">Helper</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>DIGGS</diggs:authority>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+</Dictionary>

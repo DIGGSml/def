@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.opengis.net/gml/3.2"
+    gml:id="Authorities"
+    xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+
+    <description>A collection of authorities used within the DIGGS namespace</description>
+    <identifier codeSpace="urn:diggs:def:codelist:DIGGS">urn:diggs:def:codelist:DIGGS:authorities</identifier>
+    <dictionaryEntry>
+        <Definition gml:id="DIGGS">
+            <description>DIGGS is an ASCE Geoinstitute Special Project that involves the  development of a GML (XML-based) 
+                geospatial standard schema for the transfer of geotechnical and geoenvironmental data within an organization or between multiple organizations.
+                DIGGS can work with existing software, hardware, databases and data storage facilities to easily transfer and share your data.
+            </description>
+            <identifier codeSpace="urn:diggs:def:codelist:DIGGS:authorities:DIGGS">urn:diggs:def:codelist:DIGGS:authorities:DIGGS</identifier>
+            <name codeSpace="http:diggsml.org">DIGGS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </name>
+        </Definition>
+    </dictionaryEntry>
+</Dictionary>

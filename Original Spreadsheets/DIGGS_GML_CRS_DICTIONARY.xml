@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="crs.xsl"?>
 <Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns="http://www.opengis.net/gml/3.2" gml:id="DIGGS_CompoundCRS_Dictionary"
+  xmlns="http://www.opengis.net/gml/3.2" gml:id="srsName"
   xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
   <description>Compound CRS definitions generated from components based on EPSG Database
     V7.5.8</description>
-  <identifier codeSpace="urn:diggs:def:codelist:DIGGS:authorities:DIGGS">urn:diggs:def:dictionary:DIGGS:0.1:compoundCRS</identifier>
+  <identifier codeSpace="urn:diggs:def:codelist:DIGGS:authorities:DIGGS">compoundCRS-diggs</identifier>
   <dictionaryEntry>
     <CompoundCRS gml:id="diggs-crs-63226405_5713">
       <identifier codeSpace="urn:diggs:def:codelist:DIGGS:authorities:DIGGS">urn:diggs:def:crs:DIGGS:0.1:63226405_5713</identifier>
@@ -29103,13 +29104,14 @@
   <dictionaryEntry>
     <TemporalCRS gml:id="diggs-crs-TWTms">
       <identifier codeSpace="urn:diggs:def:codelist:DIGGS:authorities:DIGGS">urn:diggs:def:crs:DIGGS:0.1:TWT</identifier>
+      <name>Two-way travel time (ms)</name>
       <scope>Two-way travel time for seismic sections</scope>
       <timeCS>
         <TimeCS gml:id="diggs-cs-TWTmilliseconds">
           <identifier codeSpace="urn:diggs:def:codelist:DIGGS:authorities:DIGGS">urn:diggs:def:cs:DIGGS:0.1:TWTmilliseconds</identifier>
           <axis>
             <CoordinateSystemAxis uom="ms" gml:id="diggs-csaxis-TWTmilliseconds">
-              <identifier codeSpace="urn:diggs:def:codelist:DIGGS:authorities:DIGGS">urn:diggs:def:csaxix:DIGGS:0.1:TWTmilliseconds</identifier>
+              <identifier codeSpace="urn:diggs:def:codelist:DIGGS:authorities:DIGGS">urn:diggs:def:csaxix:DIGGS:0.1:TWTms</identifier>
               <name>/Two-way travel time (ms)</name>
               <axisAbbrev>T</axisAbbrev>
               <axisDirection codeSpace="urn:diggs:def:codelist:DIGGS:authorities:DIGGS">future</axisDirection>

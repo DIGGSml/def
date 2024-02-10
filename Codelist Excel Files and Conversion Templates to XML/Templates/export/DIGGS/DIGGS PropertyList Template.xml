@@ -1,0 +1,43 @@
+<?xml-stylesheet type="text/xsl" href="../../../../stylesheets/propertylists.xsl"?>
+<Dictionary xmlns="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6/Diggs.xsd"
+    gml:id="{{DictionaryName.Dictionary ID}}">
+    <description>
+        {{DictionaryName.Description}}
+    </description>
+    <identifier codeSpace="http://diggsml.org/props">{{DictionaryName.DictionaryFile}}.xml</identifier>
+    <name>{{DictionaryName.DictionaryName}}</name>
+    <KYNLoop name="Definitions" loopby="table" loopon="Definitions">
+        <dictionaryEntry>
+            <diggs:Definition gml:id="{{Definitions.ID}}">
+                <description>{{Definitions.Description}}</description>
+                <identifier codeSpace="http://diggsml.org/props/{{DictionaryName.DictionaryFile}}.xml">{{Definitions.Name}}</identifier>
+                <name codeSpace="en">{{Definitions.Name}}</name>
+                <KYNCondition command="ISDATAPRESENT" sheet="Definitions" Column="DataType">
+                <diggs:dataType>{{Definitions.DataType}}</diggs:dataType>
+                </KYNCondition>
+                <KYNCondition command="ISDATAPRESENT" sheet="Definitions" Column="QuantityClass">
+                <diggs:quantityClass>{{Definitions.QuantityClass}}</diggs:quantityClass>
+                </KYNCondition>
+                <KYNCondition command="ISDATAPRESENT" sheet="Definitions" Column="Authority">
+                <diggs:authority>{{Definitions.Authority}}</diggs:authority>
+                </KYNCondition>
+                <KYNCondition command="ISDATAPRESENT" sheet="Definitions" Column="Reference">
+                <diggs:reference>{{Definitions.Reference}}</diggs:reference>
+                </KYNCondition>
+                <diggs:occurrences>
+                    <KYNLoop name="Occurrences" loopon="AssociatedElements" filterfields="ID" filtervalues="{{Definitions.ID}}">
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>{{AssociatedElements.SourceElement}}</diggs:sourceElementXpath>
+                            <KYNCondition command="ISDATAPRESENT" sheet="AssociatedElements" Column="conditionalElement">
+                                <diggs:conditionalElementXpath>{{AssociatedElements.ConditionalElement}}</diggs:conditionalElementXpath>
+                            </KYNCondition>
+                        </diggs:Occurrence>
+                    </KYNLoop>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+    </KYNLoop>
+</Dictionary>
