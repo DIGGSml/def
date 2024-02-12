@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../stylesheets/codelists.xsl"?>
+<Dictionary xmlns="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6/Diggs.xsd"
+    gml:id="classificationSymbol">
+    <description>
+        Unified Soil Classification System (USCS) group symbol codes as defined by ASTM D2487 and ASTM D2488. These codes are used as values for the classificationSymbol property of the Lithology object.
+    </description>
+    <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/authorities.xml#DIGGS">uscsGroup.xml</identifier>
+    <name>DIGGS Unified Soil Classification Group Symbol Definitions (ASTM D2487 and ASTM D2488)</name>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CH">
+                <description>Fat clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CH</identifier>
+                <name codeSpace="en">CH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CL">
+                <description>Lean clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CL</identifier>
+                <name codeSpace="en">CL</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CL-ML">
+                <description>Silty clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CL-ML</identifier>
+                <name codeSpace="en">CL-ML</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GC">
+                <description>Clayey gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GC</identifier>
+                <name codeSpace="en">GC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GC-GM">
+                <description>Silty, clayey gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GC-GM</identifier>
+                <name codeSpace="en">GC-GM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GM">
+                <description>Silty gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GM</identifier>
+                <name codeSpace="en">GM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GP">
+                <description>Poorly graded gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GP</identifier>
+                <name codeSpace="en">GP</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GP-GC">
+                <description>Poorly graded gravel with clay (or silty clay)</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GP-GC</identifier>
+                <name codeSpace="en">GP-GC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GP-GM">
+                <description>Poorly graded gravel with silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GP-GM</identifier>
+                <name codeSpace="en">GP-GM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GW">
+                <description>Well-graded gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GW</identifier>
+                <name codeSpace="en">GW</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GW-GC">
+                <description>Well-graded gravel with clay (or silty clay)</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GW-GC</identifier>
+                <name codeSpace="en">GW-GC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GW-GM">
+                <description>Well-graded gravel with silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GW-GM</identifier>
+                <name codeSpace="en">GW-GM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="MH">
+                <description>Elastic silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">MH</identifier>
+                <name codeSpace="en">MH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="ML">
+                <description>Silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">ML</identifier>
+                <name codeSpace="en">ML</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="OH">
+                <description>Organic clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">OH</identifier>
+                <name codeSpace="en">OH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="OL">
+                <description>Organic clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">OL</identifier>
+                <name codeSpace="en">OL</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="PT">
+                <description>Peat</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">PT</identifier>
+                <name codeSpace="en">PT</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SC">
+                <description>Clayey sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SC</identifier>
+                <name codeSpace="en">SC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SC-SM">
+                <description>Silty, clayey sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SC-SM</identifier>
+                <name codeSpace="en">SC-SM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SM">
+                <description>Silty sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SM</identifier>
+                <name codeSpace="en">SM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SP">
+                <description>Poorly graded sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SP</identifier>
+                <name codeSpace="en">SP</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SP-SC">
+                <description>Poorly graded sand with clay (or silty clay)</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SP-SC</identifier>
+                <name codeSpace="en">SP-SC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SP-SM">
+                <description>Poorly graded sand with silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SP-SM</identifier>
+                <name codeSpace="en">SP-SM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SW">
+                <description>Well-graded sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SW</identifier>
+                <name codeSpace="en">SW</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SW-SC">
+                <description>Well-graded sand with clay (or silty clay)</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SW-SC</identifier>
+                <name codeSpace="en">SW-SC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SW-SM">
+                <description>Well-graded sand with silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SW-SM</identifier>
+                <name codeSpace="en">SW-SM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2487</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CL_ML">
+                <description>Silty clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CL/ML</identifier>
+                <name codeSpace="en">CL/ML</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CL_CH">
+                <description>Lean to fat clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CL/CH</identifier>
+                <name codeSpace="en">CL/CH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="ML_CL">
+                <description>Clayey silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">ML/CL</identifier>
+                <name codeSpace="en">ML/CL</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SC_CL">
+                <description>Sandy clay to lean clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SC/CL</identifier>
+                <name codeSpace="en">SC/CL</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SC_CH">
+                <description>Sandy clay to fat clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SC/CH</identifier>
+                <name codeSpace="en">SC/CH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SM_ML">
+                <description>Silty sand to sandy silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SM/ML</identifier>
+                <name codeSpace="en">SM/ML</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SM_MH">
+                <description>Silty sand to sandy elastic silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SM/MH</identifier>
+                <name codeSpace="en">SM/MH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CL_SC">
+                <description>Sandy lean clay to clayey sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CL/SC</identifier>
+                <name codeSpace="en">CL/SC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CH_SC">
+                <description>Sandy fat clay to fat clayey sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CH/SC</identifier>
+                <name codeSpace="en">CH/SC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="ML_SM">
+                <description>Sandy silt to silty sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">ML/SM</identifier>
+                <name codeSpace="en">ML/SM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="MH_SM">
+                <description>Sandy elastic silt to silty sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">MH/SM</identifier>
+                <name codeSpace="en">MH/SM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GM_ML">
+                <description>Silty gravel to gravelly silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GM/ML</identifier>
+                <name codeSpace="en">GM/ML</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GM_MH">
+                <description>Silty gravel to gravelly elastic silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GM/MH</identifier>
+                <name codeSpace="en">GM/MH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GC_CL">
+                <description>Clayey grave to gravelly lean clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GC/CL</identifier>
+                <name codeSpace="en">GC/CL</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GC_CH">
+                <description>Clayey gravel to gravelly fat clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GC/CH</identifier>
+                <name codeSpace="en">GC/CH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="ML_GM">
+                <description>Gravelly silt to silty gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">ML/GM</identifier>
+                <name codeSpace="en">ML/GM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="MH_GM">
+                <description>Gravelly fat silt to silty gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">MH/GM</identifier>
+                <name codeSpace="en">MH/GM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CL_GC">
+                <description>Graelly lean clay to clayey gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CL/GC</identifier>
+                <name codeSpace="en">CL/GC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CH_GC">
+                <description>Gravelly fat clay to clayey gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CH/GC</identifier>
+                <name codeSpace="en">CH/GC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GP_SP">
+                <description>Poorly graded gravel to poorly graded sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GP/SP</identifier>
+                <name codeSpace="en">GP/SP</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GM_SM">
+                <description>Silty gravel to silty sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GM/SM</identifier>
+                <name codeSpace="en">GM/SM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GC_SC">
+                <description>Clayey gravel to clayey sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GC/SC</identifier>
+                <name codeSpace="en">GC/SC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SP_GP">
+                <description>Poorly graded sand to poorly graded gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SP/GP</identifier>
+                <name codeSpace="en">SP/GP</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SM_GM">
+                <description>Silty sand to silty gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SM/GM</identifier>
+                <name codeSpace="en">SM/GM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SC_GC">
+                <description>Clayey sand to clayey gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SC/GC</identifier>
+                <name codeSpace="en">SC/GC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SW_SP">
+                <description>Well to poorly graded sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SW/SP</identifier>
+                <name codeSpace="en">SW/SP</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GW_GP">
+                <description>Well to poorly sorted gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GW/GP</identifier>
+                <name codeSpace="en">GW/GP</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SP_SW">
+                <description>Poorly to well graded sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SP/SW</identifier>
+                <name codeSpace="en">SP/SW</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="GP_SW">
+                <description>Poorly to well graded gravel</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">GP/SW</identifier>
+                <name codeSpace="en">GP/SW</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CH_MH">
+                <description>Fat clay to elastic silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CH/MH</identifier>
+                <name codeSpace="en">CH/MH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="MH_CH">
+                <description>Elastic silt to fat clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">MH/CH</identifier>
+                <name codeSpace="en">MH/CH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SC_SM">
+                <description>Clayey sand to silty sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SC/SM</identifier>
+                <name codeSpace="en">SC/SM</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="SM_SC">
+                <description>Silty sand to clayey sand</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">SM/SC</identifier>
+                <name codeSpace="en">SM/SC</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="CH_CL">
+                <description>Fat to lean clay</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">CH/CL</identifier>
+                <name codeSpace="en">CH/CL</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="MH_ML">
+                <description>Elastic silt to silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">MH/ML</identifier>
+                <name codeSpace="en">MH/ML</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+        <dictionaryEntry>
+            <diggs:Definition gml:id="ML_MH">
+                <description>Silt to elastic silt</description>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/uscsGroup.xml">ML/MH</identifier>
+                <name codeSpace="en">ML/MH</name>
+                <diggs:dataType>string</diggs:dataType>
+                <diggs:authority>ASTM D2488</diggs:authority>
+                <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
+                <diggs:occurrences>
+                        <diggs:Occurrence>
+                                <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
+                        </diggs:Occurrence>
+                </diggs:occurrences>
+             </diggs:Definition>
+        </dictionaryEntry>
+</Dictionary>
