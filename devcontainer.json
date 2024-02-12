@@ -1,0 +1,11 @@
+{
+    "name": "My Python Project",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+    "extensions": [
+      "ms-python.python"
+    ]
+  }
