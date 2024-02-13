@@ -139,7 +139,7 @@
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Graduate|Lobster|Quicksand"
           rel="stylesheet"/>
 
-        <script src="../../../../../scripts/scripts.js"/>
+        <script src="../../../../scripts/scripts.js"/>
       </head>
       <body>
         <div>
