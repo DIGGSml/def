@@ -7,13 +7,13 @@
     <description>
         {{DictionaryName.Description}}
     </description>
-    <identifier codeSpace="http://diggsml.org/props">{{DictionaryName.DictionaryFile}}.xml</identifier>
+    <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/authorities.xml#DIGGS">{{DictionaryName.DictionaryFile}}.xml</identifier>
     <name>{{DictionaryName.DictionaryName}}</name>
     <KYNLoop name="Definitions" loopby="table" loopon="Definitions">
         <dictionaryEntry>
             <diggs:Definition gml:id="{{Definitions.ID}}">
                 <description>{{Definitions.Description}}</description>
-                <identifier codeSpace="http://diggsml.org/props/{{DictionaryName.DictionaryFile}}.xml">{{Definitions.Name}}</identifier>
+                <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/{{DictionaryName.DictionaryFile}}.xml">{{Definitions.Name}}</identifier>
                 <name codeSpace="en">{{Definitions.Name}}</name>
                 <KYNCondition command="ISDATAPRESENT" sheet="Definitions" Column="DataType">
                 <diggs:dataType>{{Definitions.DataType}}</diggs:dataType>
