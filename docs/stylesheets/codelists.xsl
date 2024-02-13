@@ -140,7 +140,7 @@
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Graduate|Lobster|Quicksand"
           rel="stylesheet"/>
         
-        <script src="https://raw.githubusercontent.com/DIGGSml/diggs-dictionaries/master/Dictionary%20XML%20files%2C%20scripts%20and%20stylesheets/scripts/scripts.js"/>
+        <script src="../../../../../scripts/scripts.js"/>
         
       </head>
       <body>
