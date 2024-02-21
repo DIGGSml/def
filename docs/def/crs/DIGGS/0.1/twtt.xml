@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemporalCRS xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.opengis.net/gml/3.2"
+    gml:id="diggs-crs-TWTms">
+    <description>Definition of elapsed two-way travel time</description>
+    <identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">http://localhost:8080</identifier>
+    <name>Two-way travel time (ms)</name>
+    <scope>Two-way travel time for seismic sections</scope>
+    <timeCS>
+        <TimeCS gml:id="diggs-cs-TWTms">
+            <identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">cs_TWTms</identifier>
+            <axis>
+                <CoordinateSystemAxis uom="ms" gml:id="diggs-csaxis-TWTms">
+                    <identifier codeSpace="http://diggsml.org/def/codes/DIGGS/authorities.xml#DIGGS">csaxis_TWTms</identifier>
+                    <name>/Two-way travel time (ms)</name>
+                    <axisAbbrev>Time</axisAbbrev>
+                    <axisDirection codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">future</axisDirection>
+                </CoordinateSystemAxis>
+            </axis>
+        </TimeCS>
+    </timeCS>
+    <temporalDatum>
+        <!-- The temporal datum is required but for TWT applications the actual origin time for the coordinate system is irrelevant if TWT starts at 0 for processed data. -->
+        <!-- For other applications, the origin property should reflect the actual time instant from which the time intervals are measured -->
+        <TemporalDatum gml:id="diggs-td-TWTms">
+            <identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">td-TWTms</identifier>
+            <scope>Time datum used for seismic lines; calendar date is irrelevant for processed data where TWT origin is 0</scope>
+            <origin>0001-01-01T00:00:00.0Z</origin>
+        </TemporalDatum>
+    </temporalDatum>
+</TemporalCRS>
