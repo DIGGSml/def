@@ -4,7 +4,7 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.opengis.net/gml/3.2"
     gml:id="diggs-crs-TWTms">
     <description>Definition of elapsed two-way travel time</description>
-    <identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">TWTms</identifier>
+    <identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.github.io/diggs-dictionaries/def/crs/DIGGS/0.1/twtt.xml#TWTms</identifier>
     <name>Two-way travel time (ms)</name>
     <scope>Two-way travel time for seismic sections</scope>
     <timeCS>
