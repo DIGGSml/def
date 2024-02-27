@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../../../../stylesheets/propertylists.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../../../stylesheets/propertylists.xsl"?>
 <Dictionary xmlns="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6/Diggs.xsd"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/main/Diggs.xsd"
     gml:id="propertyClass">
     <description>
         This dictionary contains the values for the propertyClass property of the diggs:Property object and the measurand property of the diggs:Detector object when used within the Test and Monitor DIGGS features. These values serve to define the ultimate results of geotechnical and environmental tests and monitoring activities that result from test procedures and monitoring sensors. The Xpaths to these occurrences are: 1) //diggs:Property/diggs:propertyClass (for Test, MaterialTest or Monitor) 2)//diggs:Detector/diggs:measurand (for measurand).
