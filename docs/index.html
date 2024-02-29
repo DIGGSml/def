@@ -5,7 +5,6 @@
     </head>
     <body>
         <script>
-        function listing() {
             var path = document.location.pathname;
             var dir = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
             var txt = "<h1>Index of " + dir + "</h1>";
@@ -18,7 +17,6 @@
             txt += '<tr><td valign="top"><img src="icons/unknown.gif" alt="[   ]"></td><td><a href="SchematronConstraints.xml">SchematronConstraints.xml</a></td><td align="right">2018-05-30 09:45  </td><td align="right">5.4K</td><td>&nbsp;</td></tr>';
             txt += '</table>';
             document.getElementsByTagName("body")[0].innerHTML = txt;
-        }
-        window.onload = listing();</script>
+        </script>
     </body>
 </html>
