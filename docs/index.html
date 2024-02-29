@@ -3,7 +3,7 @@
     <head>
         <title>Title</title>
         <script>
-            function iisting() {
+            function listing() {
                 var path = document.location.pathname;
                 var dir = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
                 var txt = "<h1>Index of " + dir + "</h1>";
@@ -17,7 +17,7 @@
                 txt += '</table>';
                 document.getElementByTag("body").innerHTML = txt;
             }
-            window.onload = iisting();
+            window.onload = listing();
         </script>
     </head>
     <body></body>
