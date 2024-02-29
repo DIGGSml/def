@@ -5,7 +5,7 @@
     </head>
     <body>
         <script>
-            var path = document.location;
+            var path = document.location.href;
             var base = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
             var root = base.substring(0,base.lastIndexOf("/"));
             var dir = base.substring(base.lastIndexOf("/"),base.length+1);
@@ -13,8 +13,9 @@
             console.log(base);
             console.log(root);
             console.log(dir);
+            /*
             (async () => {
-                var api = "https://api.github.com/repos/diggsml" + root+dir + "/contents/docs"
+                var api = "https://api.github.com/repos/diggsml" + root + dir + "/contents/docs"
                 const response = await fetch(api);
                 const data = await response.json();
                 var txt = "<h1>Index of " + root + dir + "</h1>";
@@ -37,6 +38,7 @@
                 txt += '</table>';
                 document.getElementsByTagName('body')[0].innerHTML = txt;
       })()
+      */
     </script>
 
     </body>
