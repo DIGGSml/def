@@ -17,7 +17,7 @@
                 var api = "https://api.github.com/repos/diggsml" + root+dir + "/contents/docs"
                 const response = await fetch(api);
                 const data = await response.json();
-                var txt = "<h1>Index of " root + dir + "</h1>";
+                var txt = "<h1>Index of " + root + dir + "</h1>";
                 txt += '<table>';
                 txt += '<tr><th valign="top"><img src="icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th></tr>';
                 txt += '<tr><th colspan="2"><hr></th></tr>';
