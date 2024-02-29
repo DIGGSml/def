@@ -1,5 +1,23 @@
+<!DOCTYPE html>
 <html>
-<body>
-<p>Hello World - def</p>
-</body>
-</html> 
+    <head>
+        <title>Title</title>
+        <script>
+            function iisting() {
+                var path = document.location.pathname;
+                var dir = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
+                var txt = "<h1>Index of " + dir + "</h1>";
+                txt += '<p>' + path + '</p>';
+                txt += '<table>';
+                txt += '<tr><th valign="top"><img src="icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>';
+                txt += '<tr><th colspan="5"><hr></th></tr>';
+                txt += '<tr><td valign="top"><img src="icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>';
+                txt += '<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="1.0.0/">1.0.0/</a></td><td align="right">2017-04-21 11:33  </td><td align="right">  - </td><td>&nbsp;</td></tr>';
+                txt += '<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="SchematronConstraints.xml">SchematronConstraints.xml</a></td><td align="right">2018-05-30 09:45  </td><td align="right">5.4K</td><td>&nbsp;</td></tr>';
+                txt += '</table>;.
+                document.getElementByTag("body").innerHTML = txt;
+            }
+        </script>
+    </head>
+    <body></body>
+</html>
