@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <script>
+            var path = document.location.pathname;
+            var base = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
+            var root = base.substring(0,base.lastIndexOf("/"));
+            var dir = base.substring(base.lastIndexOf("/"),base.length+1);
+            console.log(path);
+            console.log(base);
+            console.log(root);
+            console.log(dir);
+            (async () => {
+                var api = "https://api.github.com/repos/diggsml" + dir + "/contents/docs"
+                const response = await fetch(api);
+                const data = await response.json();
+                var txt = "<h1>Index of " + dir + "</h1>";
+                txt += '<table>';
+                txt += '<tr><th valign="top"><img src="icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th></tr>';
+                txt += '<tr><th colspan="2"><hr></th></tr>';
+                txt += '<tr><td valign="top"><img src="icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>';
+     
+                for (let rec of data) {
+                    if(rec.name == "scripts") continue;
+                    if(rec.name == "icons") continue;
+                    if(rec.name == "stylesheets") continue;
+                    if(rec.name == "index.html") continue;
+                    if(rec.name == "img") continue;
+                    if(rec.type == "file") var image ='<img src="icons/unknown.gif" alt="[   ]">';
+                    if(rec.type == "dir") image ='<img src="icons/folder.gif" alt="[DIR]">';
+
+                  txt += '<tr><td valign="top">'+image+'</td><td><a href="'+rec.name+'">'+rec.name+'</a></td></tr>';
+                }
+                txt += '</table>';
+                document.getElementsByTagName('body')[0].innerHTML = txt;
+      })()
+    </script>
+
+    </body>
+</html>
