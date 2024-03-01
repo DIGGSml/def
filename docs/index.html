@@ -5,7 +5,7 @@
     </head>
     <body>
         <script>
-            var path = document.location.pathname;
+            var path = document.location.pathname.substring(0,document.location.pathname.lastIndexOf("/"));
             var root = path.substring(0, path.substring(1,path.length).indexOf('/')+2);
             var repo = path.substring(1, root.length-1);
             var dir = path.substring(root.length-1,path.length);
