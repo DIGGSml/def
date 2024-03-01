@@ -5,13 +5,11 @@
     </head>
     <body>
         <script>
-            var path = document.location.href;
-            var base = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
-            var root = base.substring(0,base.lastIndexOf("/"));
+            var path = document.location.pathname;
+            var repo = path.substring(1, path.indexOf('/'));
             var dir = base.substring(base.lastIndexOf("/"),base.length+1);
             console.log(path);
-            console.log(base);
-            console.log(root);
+            console.log(repo);
             console.log(dir);
             /*
             (async () => {
