@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <script>
+           var repo = "def" 
+           var name = "authorities.xml";
+           var dir ="/";
+           if(dir == "") dir = "/";
+           var commitapi = "https://api.github.com/repos/diggsml/" + repo + "/commits?path=docs" + dir + "/" + name + "&page=1&per_page=1";
+           console.log(name);
+
+           (async () => {
+             const response = await fetch(commitapi);
+             const data = await response.json();
+             for (let rec of data) {
+               const d = new Date(rec.commit.author.date);
+               var dString = d.toLocaleString();
+             }
+             console.log(dString);
+
+ //           var txt = '<p>' + nm + "</p>";
+ //           document.getElementsByTagName('body')[0].innerHTML = txt;
+      })()
+    </script>
+
+    </body>
+</html>
