@@ -13,10 +13,9 @@
             console.log("Root =" + root);
             console.log("Repository = " + repo);
             console.log("Directory = "+dir);
- //           console.log(dir);
-            /*
+
             (async () => {
-                var api = "https://api.github.com/repos/diggsml" + repo + "/contents/docs"
+                var api = "https://api.github.com/repos/diggsml/" + repo + "/contents/docs"+dir;
                 const response = await fetch(api);
                 const data = await response.json();
                 var txt = "<h1>Index of " + root + dir + "</h1>";
@@ -39,7 +38,7 @@
                 txt += '</table>';
                 document.getElementsByTagName('body')[0].innerHTML = txt;
       })()
-      */
+
     </script>
 
     </body>
