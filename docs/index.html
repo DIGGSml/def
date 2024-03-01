@@ -9,9 +9,9 @@
             var repo = path.substring(1, path.length);
             if(repo.indexOf("/") > 0) repo = repo.substring(0,repo.indexOf("/"));
             var dir = path.substring(repo.length+1,path.length);
-            console.log("Root =" + root);
+            console.log("Path =" + path);
 =           console.log("Repository = " + repo);
-            console.log("Directory = "+dir);
+            console.log("Directory = " + dir);
 
             (async () => {
                 var api = "https://api.github.com/repos/diggsml/" + repo + "/contents/docs"+dir;
