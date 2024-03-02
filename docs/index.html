@@ -15,18 +15,18 @@
             console.log("Path =" + path);
             console.log("Repository = " + repo);
             console.log("Directory = " + dir);
-            // Call Github API to get repository contents
-            (async () => {
-                var api = "https://api.github.com/repos/diggsml/" + repo + "/contents/docs"+dir;
-                const response = await fetch(api);
-                const data = await response.json();
-                //Write out header lines
-                let txt = "<h1>Index of " + path + "</h1>";
+ 
+            //Write out header lines
+                var txt = "<h1>Index of " + path + "</h1>";
                 txt += '<table>';
                 txt += '<tr><th valign="top"><img src="https://diggsml.org/def/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last Modified</a></th></tr>';
                 txt += '<tr><th colspan="3"><hr></th></tr>';
                 txt += '<tr><td valign="top"><img src="https://diggsml.org/def/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../">Parent Directory</a></td><td align="right">  - </td><</tr>';
-     
+
+                // Call Github API to get repository contents
+                var api = "https://api.github.com/repos/diggsml/" + repo + "/contents/docs"+dir;
+                const data = GetRepositoryContents(api);
+
                 //Loop to parse JSON reponse; do not list resouce files and folders
                 for (let rec of data) {
                     if(rec.name == "scripts") continue;
@@ -44,7 +44,7 @@
                     var commitapi = "https://api.github.com/repos/diggsml/" + repo + "/commits?path=docs" + dir + "/" + rec.name + "&page=1&per_page=1";
 
                     //Call function to return last commit date
-                    let dString = GetLastModified(commitapi)
+                    var dString = GetLastModified(commitapi)
 
                     //Write out row for item
                     txt += '<tr><td valign="top">'+image+'</td><td><a href="'+rec.name+'">'+rec.name+'</a></td><td>'+dString+'</td></tr>';
@@ -53,17 +53,21 @@
 
                 //Set text on web pabe
                 document.getElementsByTagName('body')[0].innerHTML = txt;
-            })()
-            function GetLastModified(commitapi){
-                (async () => {
+
+            async function GetLastModified(commitapi){
                     const response = await fetch(commitapi);
                     const dat = await response.json();
                     for (let dt of dat) {
                         const d = new Date(dt.commit.author.date);
-                        let dString = d.toLocaleString();
+                        var dString = d.toLocaleString();
                     }
                     return dString;
-                })()
+            }
+            
+            async function GetRepositoryContents(api){
+                const response = await fetch(api);
+                const data = await response.json();
+                return data;
             }
         </script>
 
