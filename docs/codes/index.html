@@ -7,15 +7,17 @@
         <script>
             // Script to create listing of repository contents for Github pages - for sites with docs/ as the root folder
             //Set variables to determine directory location
-            var path = document.location.pathname.substring(0,document.location.pathname.lastIndexOf("/"));
-            var repo = path.substring(1, path.length);
-            if(repo.indexOf("/") > 0) repo = repo.substring(0,repo.indexOf("/"));
-            var dir = path.substring(repo.length+1,path.length);
-
+//            var path = document.location.pathname.substring(0,document.location.pathname.lastIndexOf("/"));
+//            var repo = path.substring(1, path.length);
+//            if(repo.indexOf("/") > 0) repo = repo.substring(0,repo.indexOf("/"));
+//            var dir = path.substring(repo.length+1,path.length);
+            var path = "/def";
+            var repo = "def";
+            var dir = "";
             console.log("Path =" + path);
             console.log("Repository = " + repo);
             console.log("Directory = " + dir);
- 
+
             //Write out header lines
                 var txt = "<h1>Index of " + path + "</h1>";
                 txt += '<table>';
@@ -24,51 +26,41 @@
                 txt += '<tr><td valign="top"><img src="https://diggsml.org/def/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../">Parent Directory</a></td><td align="right">  - </td><</tr>';
 
                 // Call Github API to get repository contents
-                var api = "https://api.github.com/repos/diggsml/" + repo + "/contents/docs"+dir;
-                const data = GetRepositoryContents(api);
+                (async () => {
+                    var api = "https://api.github.com/repos/diggsml/" + repo + "/contents/docs"+dir;
+                    const response = await fetch(api);
+                    const data = await response.json();
+                    var dString = "";
+                    //Loop to parse JSON reponse; do not list resouce files and folders
+                    for (let rec of data) {
+                        if(rec.name == "scripts") continue;
+                        if(rec.name == "icons") continue;
+                        if(rec.name == "stylesheets") continue;
+                        if(rec.name == "index.html") continue;
+                        if(rec.name == "img") continue;
+                        if(rec.name == ".gitignore") continue;
 
-                //Loop to parse JSON reponse; do not list resouce files and folders
-                for (let rec of data) {
-                    if(rec.name == "scripts") continue;
-                    if(rec.name == "icons") continue;
-                    if(rec.name == "stylesheets") continue;
-                    if(rec.name == "index.html") continue;
-                    if(rec.name == "img") continue;
-                    if(rec.name =- ".gitignore") continue;
+                        //Find file type and sassign icon for directory display
+                        if(rec.type == "file") var image ='<img src="https://diggsml.org/def/icons/unknown.gif" alt="[   ]">';
+                        if(rec.type == "dir") image ='<img src="https://diggsml.org/def/icons/folder.gif" alt="[DIR]">';
 
-                    //Find file type and sassign icon for directory display
-                    if(rec.type == "file") var image ='<img src="https://diggsml.org/def/icons/unknown.gif" alt="[   ]">';
-                    if(rec.type == "dir") image ='<img src="https://diggsml.org/def/icons/folder.gif" alt="[DIR]">';
+                        //Call function to return last commit date
 
-                    //Build request string for determining last commit date for item
-                    var commitapi = "https://api.github.com/repos/diggsml/" + repo + "/commits?path=docs" + dir + "/" + rec.name + "&page=1&per_page=1";
-
-                    //Call function to return last commit date
-                    var dString = GetLastModified(commitapi)
-
-                    //Write out row for item
-                    txt += '<tr><td valign="top">'+image+'</td><td><a href="'+rec.name+'">'+rec.name+'</a></td><td>'+dString+'</td></tr>';
-                }
-                txt += '</table>';
-
-                //Set text on web pabe
-                document.getElementsByTagName('body')[0].innerHTML = txt;
-
-            async function GetLastModified(commitapi){
-                    const response = await fetch(commitapi);
-                    const dat = await response.json();
-                    for (let dt of dat) {
-                        const d = new Date(dt.commit.author.date);
-                        var dString = d.toLocaleString();
+                        //Build request string for determining last commit date for item
+                        var commitapi = "https://api.github.com/repos/diggsml/" + repo + "/commits?path=docs" + dir + "/" + rec.name + "&page=1&per_page=1"; 
+                        const resp = await fetch(commitapi);
+                        const dat = await resp.json();
+                        for (let dt of dat) {
+                            const d = new Date(dt.commit.author.date);
+                            dString = d.toLocaleString;
+                        }
+                        //Write out row for item
+                        txt += '<tr><td valign="top">'+image+'</td><td><a href="'+rec.name+'">'+rec.name+'</a></td><td>'+dString+'</td></tr>';
                     }
-                    return dString;
-            }
-            
-            async function GetRepositoryContents(api){
-                const response = await fetch(api);
-                const data = await response.json();
-                return data;
-            }
+                    txt += '</table>';
+                    //Set text on web pabe
+                    document.getElementsByTagName('body')[0].innerHTML = txt;
+                })()
         </script>
 
     </body>
