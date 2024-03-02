@@ -15,7 +15,7 @@
             console.log("Path =" + path);
             console.log("Repository = " + repo);
             console.log("Directory = " + dir);
-            // Ca;; Github API to get repository contents
+            // Call Github API to get repository contents
             (async () => {
                 var api = "https://api.github.com/repos/diggsml/" + repo + "/contents/docs"+dir;
                 const response = await fetch(api);
@@ -27,7 +27,7 @@
                 txt += '<tr><th colspan="3"><hr></th></tr>';
                 txt += '<tr><td valign="top"><img src="https://diggsml.org/def/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../">Parent Directory</a></td><td align="right">  - </td><</tr>';
      
-                /Loop to parse JSON reponse; do not list resouce files and folders
+                //Loop to parse JSON reponse; do not list resouce files and folders
                 for (let rec of data) {
                     if(rec.name == "scripts") continue;
                     if(rec.name == "icons") continue;
