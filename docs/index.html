@@ -40,9 +40,9 @@
                         //Find file type and sassign icon for directory display
                         if(rec.type == "file") {
                             var suffix = rec.name.substring(rec.name.lastIndexOf(".")+1,rec.name.length);
-                            if(suffix = "xml"){
+                            if(suffix == "xml"){
                                 var image ='<img src="https://apache.org/icons/xml.png" alt="[XML]">';
-                            }else if(suffix = "zip" || suffix == "gz" || suffix == "Z" || suffix == "bz2"){
+                            }else if(suffix == "zip" || suffix == "gz" || suffix == "Z" || suffix == "bz2"){
                                 image ='<img src="https://apache.org/icons/compressed.gif" alt="[ZIP]">';
                             }else image ='<img src="https://apache.org/icons/generic.gif" alt="[UNK]">';
                         }
