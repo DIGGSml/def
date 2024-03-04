@@ -139,12 +139,12 @@
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Graduate|Lobster|Quicksand"
           rel="stylesheet"/>
 
-        <script src="/def/scripts/scripts.js"/>
-      </head>
+        <script src="https://diggsml.org/def/scripts/scripts.js"/>
+     </head>
       <body>
         <div>
           <div class="logo">
-            <img src="http://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
+            <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
           </div>
           <h1>
             <xsl:value-of select="gml:Dictionary/gml:name"/>
