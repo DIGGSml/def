@@ -6,24 +6,21 @@
     <body>
         <script>
             // Script to create listing of repository contents for Github pages - for sites with docs/ as the root folder
-            //Set variables to determine directory location
-//            var path = document.location.pathname.substring(0,document.location.pathname.lastIndexOf("/"));
-//            var repo = path.substring(1, path.length);
-//            if(repo.indexOf("/") > 0) repo = repo.substring(0,repo.indexOf("/"));
-//            var dir = path.substring(repo.length+1,path.length);
-            var path = "/def";
-            var repo = "def";
-            var dir = "";
-            console.log("Path =" + path);
-            console.log("Repository = " + repo);
-            console.log("Directory = " + dir);
+            //Set variables to determine directory location ans repository name
+                var path = document.location.pathname.substring(0,document.location.pathname.lastIndexOf("/"));
+                var repo = path.substring(1, path.length);
+                if(repo.indexOf("/") > 0) repo = repo.substring(0,repo.indexOf("/"));
+                var dir = path.substring(repo.length+1,path.length);
+//                console.log("Path =" + path);
+//                console.log("Repository = " + repo);
+//                console.log("Directory = " + dir);
 
             //Write out header lines
                 var txt = "<h1>Index of " + path + "</h1>";
                 txt += '<table>';
-                txt += '<tr><th valign="top"><img src="https://diggsml.org/def/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last Modified</a></th><th><a href="?C=S;O=A">Size</a></th></tr>';
+                txt += '<tr><th valign="top"><img src="https://apache.org/blank.gif" alt="[ ]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last Modified</a></th><th><a href="?C=S;O=A">Size</a></th></tr>';
                 txt += '<tr><th colspan="4"><hr></th></tr>';
-                txt += '<tr><td valign="top"><img src="https://diggsml.org/def/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../">Parent Directory</a></td><td align="right">  - </td><</tr>';
+                txt += '<tr><td valign="top"><img src="https://apache.org/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../">Parent Directory</a></td><td align="right">  - </td><</tr>';
 
                 // Call Github API to get repository contents
                 (async () => {
@@ -31,7 +28,7 @@
                     const response = await fetch(api);
                     const data = await response.json();
                     var dString = "";
-                    //Loop to parse JSON reponse; do not list resouce files and folders
+                    //Loop to parse JSON response; do not list                                 resouce files and folders
                     for (let rec of data) {
                         if(rec.name == "scripts") continue;
                         if(rec.name == "icons") continue;
@@ -41,8 +38,15 @@
                         if(rec.name == ".gitignore") continue;
 
                         //Find file type and sassign icon for directory display
-                        if(rec.type == "file") var image ='<img src="https://diggsml.org/def/icons/unknown.gif" alt="[   ]">';
-                        if(rec.type == "dir") image ='<img src="https://diggsml.org/def/icons/folder.gif" alt="[DIR]">';
+                        if(rec.type == "file") {
+                            var suffix = rec.name.substring(rec.name.lastIndexOf(".")+1,rec.name.length);
+                            if(suffix == "xml"){
+                                var image ='<img src="https://apache.org/icons/xml.png" alt="[XML]">';
+                            }else if(suffix == "zip" || suffix == "gz" || suffix == "Z" || suffix == "bz2"){
+                                image ='<img src="https://apache.org/icons/compressed.gif" alt="[ZIP]">';
+                            }else image ='<img src="https://apache.org/icons/generic.gif" alt="[UNK]">';
+                        }
+                        if(rec.type == "dir") image ='<img src="https://apache.org/icons/folder.gif" alt="[DIR]">';
                         var size = rec.size;
                         if(size == 0){
                             size = '';
