@@ -1,78 +1,84 @@
 import pandas as pd
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
- 
-# Function to prettify the XML output (for human readability)
-def prettify(elem):
-    rough_string = ET.tostring(elem, 'utf-8')
-    reparsed = minidom.parseString(rough_string)
-    return reparsed.toprettyxml(indent="    ")
+import os
+from xml.dom.minidom import parseString
 
-# Load the Excel file
-# (The actual file path would need to be provided here, assuming 'definitions.xlsx' as a placeholder)
-excel_file_path = '/workspaces/diggs-dictionaries/2.5a/DIGGSTestPropertyDefinitions.xlsx'
-xml_file_path = '/mnt/data/dictionary.xml'
+# Define the path to the Excel file
+excel_file_path = 'Codelist Excel Files and Conversion Templates to XML/triaxType.xlsx'
 
+# Read the 'DictionaryName' sheet to get the XML file name
+dictionary_name_df = pd.read_excel(excel_file_path, sheet_name='DictionaryName')
+dictionary_file = dictionary_name_df['DictionaryFile'].dropna().iloc[0].strip()
+description = dictionary_name_df['Description'].dropna().iloc[0].strip()
 
-# Read the 'Definitions' and 'AssociatedElements' sheets into Pandas DataFrames
+# Construct the XML file path using the extracted name
+xml_file_path = f'/workspaces/def/BetaVersion/converted_xml/{dictionary_file}.xml'
+
+# Read the 'Definitions' sheet for data
 definitions_df = pd.read_excel(excel_file_path, sheet_name='Definitions')
 associated_elements_df = pd.read_excel(excel_file_path, sheet_name='AssociatedElements')
 
-# Create the root element of the XML
-root = ET.Element("Dictionary")
-root.set("xmlns", "http://diggsml.org/schemas/2.5.a")
-root.set("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance")
-root.set("xsi:schemaLocation", "http://diggsml.org/schemas/2.5.a https://diggsml.org/schemas/2.5.a/Dictionary_diggs.xsd")
-root.set("xmlns:xlink", "http://www.w3.org/1999/xlink")
-root.set("xmlns:gml", "http://www.opengis.net/gml/3.2")
-root.set("xmlns:diggs", "http://diggsml.org/schemas/2.5.a")
-root.set("gml:id", "measurement_property_class")
 
-# Add the description element
-description = ET.SubElement(root, "gml:description")
-description.text = """Dictionary enumerating the values for the element "property_class" of the object "Property" used within the Test and Monitor DIGGS features at these XPath locations: ...
+# Namespace map
+NS_MAP = {
+    "gml": "http://www.opengis.net/gml/3.2",
+    "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "diggs": "http://diggsml.org/schemas/2.6"
+}
 
-    These values serve to define the "results" of geotechnical and environmental tests and monitoring activities that result from test procedures and monitoring sensors, but that may not specifically bound to the procedures that produce the results."""
+# Register namespaces
+for prefix, uri in NS_MAP.items():
+    ET.register_namespace(prefix, uri)
 
-# Add the identifier element
-identifier = ET.SubElement(root, "gml:identifier")
-identifier.set("codeSpace", "http://diggsml.org/terms")
-identifier.text = "DIGGS measurement property classes"
+# Create the root element with its namespaces
+root_attribs = {
+    "{http://www.w3.org/2001/XMLSchema-instance}schemaLocation": "http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/main/Diggs.xsd",
+    "{http://www.opengis.net/gml/3.2}id": dictionary_file  # Correct use of the gml namespace
+}
+root = ET.Element(ET.QName(NS_MAP['gml'], 'Dictionary'), attrib=root_attribs)  # Use gml namespace correctly
 
-# Iterate over the rows in the 'Definitions' DataFrame and create dictionaryEntry elements
+# Add sub-elements
+description = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'description'))
+description.text = description
+
+identifier = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'identifier'), attrib={"codeSpace": "http://diggsml.org/def/codes/DIGGS/authorities.xml#DIGGS"})
+identifier.text = dictionary_file + ".xml"
+
+# Populate the XML with data from the 'Definitions' sheet
 for _, row in definitions_df.iterrows():
-    dictionary_entry = ET.SubElement(root, "dictionaryEntry")
-    definition = ET.SubElement(dictionary_entry, "Definition")
-    definition.set("gml:id", row['Code'])
-    
-    def_description = ET.SubElement(definition, "gml:description")
-    def_description.text = row['Description']
-    
-    def_identifier = ET.SubElement(definition, "gml:identifier")
-    def_identifier.set("codeSpace", "http://diggsml.org/terms")
-    def_identifier.text = row['Name']
-    
-    data_type = ET.SubElement(definition, "dataType")
-    data_type.text = row['Data type']
-    
-    uom_type = ET.SubElement(definition, "uomType")
-    uom_type.text = row['UOMType']
-    
-    authority = ET.SubElement(definition, "authority")
-    authority.text = row['Authority'] if pd.notna(row['Authority']) else ""
-    
-    # Find associated elements for this code
-    associated_elements = associated_elements_df[associated_elements_df['Code'] == row['Code']]['Element'].tolist()
-    for element in associated_elements:
-        associated_element = ET.SubElement(definition, "associatedElement")
-        associated_element.text = element
+    entry = ET.SubElement(root, 'dictionaryEntry')
+    definition = ET.SubElement(entry, ET.QName(NS_MAP['diggs'], 'Definition'), attrib={ET.QName(NS_MAP['gml'], 'id'): row['ID'].strip()})
 
-# Convert the created XML structure into a string with indentation
-xmlstr = prettify(root)
+    # Add detailed elements as per the spreadsheet data
+    ET.SubElement(definition, 'description').text = row['Description'].strip()
+    ET.SubElement(definition, 'identifier', attrib={"codeSpace": "http://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml"}).text = row['Name'].strip()
+    ET.SubElement(definition, 'name', attrib={"codeSpace": "en"}).text = row['Name'].strip()
+    ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'dataType')).text = row['DataType'].strip()
+    ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'authority')).text = row['Authority'].strip()
+    
+    # Add occurrences
+    occurrences = ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'occurrences'))
+    source_elements = associated_elements_df[associated_elements_df['ID'] == row['ID']]['SourceElement']
+    for source_element in source_elements:
+        occurrence = ET.SubElement(occurrences, ET.QName(NS_MAP['diggs'], 'Occurrence'))
+        ET.SubElement(occurrence, ET.QName(NS_MAP['diggs'], 'sourceElementXpath')).text = source_element
 
-# Output the XML to a file
 
-with open(xml_file_path, 'w') as xml_file:
-    xml_file.write(xmlstr)
+# Write the XML to a file, including the XML declaration
+ET.ElementTree(root).write(xml_file_path, encoding='utf-8', xml_declaration=True)
 
-xml_file_path
+print(f"XML file created at: {xml_file_path}")
+
+
+# Generate the XML string from the ElementTree object
+tree_str = ET.tostring(root, 'utf-8')
+
+# Use minidom to pretty-print
+dom = parseString(tree_str)
+pretty_xml_as_string = dom.toprettyxml(indent="    ")
+
+# Write the pretty-printed XML to a file, including the XML declaration
+with open(xml_file_path, 'w', encoding='utf-8') as xml_file:
+    xml_file.write(pretty_xml_as_string)
+
+print(f"Pretty-printed XML file created at: {xml_file_path}")
