@@ -36,13 +36,15 @@
                         if(rec.name == "index.html") continue;
                         if(rec.name == "img") continue;
                         if(rec.name == ".gitignore") continue;
+                        if(rec.name == "README.md") continue;
+                        if(rec.name == "LICENSE") continue;
 
                         //Find file type and sassign icon for directory display
                         if(rec.type == "file") {
                             var suffix = rec.name.substring(rec.name.lastIndexOf(".")+1,rec.name.length);
-                            if(suffix == "xml"){
+                            if(suffix == "xml" || suffix == "xsl" || suffix == "xsd" || suffix == "diggs"){
                                 var image ='<img src="https://apache.org/icons/xml.png" alt="[XML]">';
-                            }else if(suffix == "zip" || suffix == "gz" || suffix == "Z" || suffix == "bz2"){
+                            }else if(suffix == "zip" || suffix == "gz" || suffix == "Z" || suffix == "bz2" || suffix == "diggz"){
                                 image ='<img src="https://apache.org/icons/compressed.gif" alt="[ZIP]">';
                             }else image ='<img src="https://apache.org/icons/generic.gif" alt="[UNK]">';
                         }
