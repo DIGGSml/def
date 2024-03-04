@@ -140,7 +140,7 @@
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Graduate|Lobster|Quicksand"
           rel="stylesheet"/>
         
-        <script src="http//diggsml.org/def/scripts/scripts.js"/>
+        <script src="http://diggsml.org/def/scripts/scripts.js"/>
         
       </head>
       <body>
