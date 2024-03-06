@@ -145,7 +145,7 @@
       <body>
         <div>
           <div class="logo">
-            <img src="httpS=s://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
+            <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
           </div>
           <h1>
             <xsl:value-of select="gml:Dictionary/gml:name"/>
