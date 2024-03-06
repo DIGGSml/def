@@ -1,8 +1,8 @@
-<?xml-stylesheet type="text/xsl" href="../../../../stylesheets/propertylists.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/propertylists.xsl"?>
 <Dictionary xmlns="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6/Diggs.xsd"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd"
     gml:id="{{DictionaryName.Dictionary ID}}">
     <description>
         {{DictionaryName.Description}}
