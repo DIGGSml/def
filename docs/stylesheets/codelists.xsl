@@ -29,7 +29,7 @@
           .logo {
           position: absolute;
           top: 10px;
-          left: 10px:
+          left: 10px;
           float: left;
           }
           

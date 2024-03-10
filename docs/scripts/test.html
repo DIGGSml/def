@@ -5,11 +5,18 @@
     </head>
     <body>
         <script>
+            // Set root URLs
+            var rootURL = "https://diggsml.org/schemas/"
+            // Set schema version to query
+            // In future: Put this in a
+            var version = 2.6
             window.onload = start;
             function start() {
-                var file1 = "https://diggsml.org/schemas/2.6/Diggs_geo_deprecated";
+                var file1 = "https://diggsml.org/schemas/2.6/Geotechnical.xsd";
+                var file2 = "https://diggsml.org/schemas/2.6/BetaProcedures.xsd"
 
                 loadXml(file1);
+                loadXml(file2);
 
             }
             function loadXml(xmlFile){
@@ -24,11 +31,12 @@
                             for (var j = 0; j < attrlist.length; j++){
                                 if(attrlist[j].name == "substitutionGroup"){
                                     //Element tag is global
-                                    var strStart = attrlist.getNamedItem("substitutionGroup").nodeValue.length - 13;
+                                    var strStart = attrlist.getNamedItem("substitutionGroup").nodeValue.length - 9;
                                     if (strStart > 0){
-                                        console.log(attrlist.getNamedItem("substitutionGroup").nodeValue.substring(strStart,200));
+                                        if(attrlist.getNamedItem("substitutionGroup").nodeValue.substring(strStart,200)=="TestProcedure"){
+                                            console.log(attrlist.getNamedItem("name").nodeValue);
+                                        }
                                     }
-
                                 }
                             }
                        }
