@@ -30,7 +30,7 @@ for prefix, uri in NS_MAP.items():
 
 # Create the root element with its namespaces
 root_attribs = {
-    "{http://www.w3.org/2001/XMLSchema-instance}schemaLocation": "http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/main/Diggs.xsd",
+    "{http://www.w3.org/2001/XMLSchema-instance}schemaLocation": "http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/Diggs.xsd",
     "{http://www.opengis.net/gml/3.2}id": dictionary_file  # Correct use of the gml namespace
 }
 root = ET.Element(ET.QName(NS_MAP['gml'], 'Dictionary'), attrib=root_attribs)
