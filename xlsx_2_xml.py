@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from xml.dom.minidom import parseString
 
 # Define the path to the Excel file
-excel_file_path = 'Codelist Excel Files and Conversion Templates to XML/triaxType.xlsx'
+excel_file_path = '/workspaces/def/Codelist Excel Files and Conversion Templates to XML/roles.xlsx'
 
 # Read the 'DictionaryName' sheet to get the XML file name and description
 dictionary_name_df = pd.read_excel(excel_file_path, sheet_name='DictionaryName')
