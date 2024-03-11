@@ -21,7 +21,9 @@ associated_elements_df = pd.read_excel(excel_file_path, sheet_name='AssociatedEl
 NS_MAP = {
     "gml": "http://www.opengis.net/gml/3.2",
     "xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "diggs": "http://diggsml.org/schemas/2.6"
+    "diggs": "http://diggsml.org/schemas/2.6",
+    "": "http://www.opengis.net/gml/3.2"
+
 }
 
 # Register namespaces

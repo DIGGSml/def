@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="roles">
-    <gml:description>Leave this line blank</gml:description>
-    <gml:identifier codeSpace="http://diggsml.org">roles.xml</gml:identifier>
+<Dictionary xmlns="http://www.opengis.net/gml/3.2" xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" id="roles">
+    <description>Leave this line blank</description>
+    <identifier codeSpace="http://diggsml.org">roles.xml</identifier>
     <dictionaryEntry>
-        <diggs:Definition gml:id="operator">
+        <diggs:Definition id="operator">
             <description>Person operating equipment (drill rig/CPT rig)</description>
             <identifier codeSpace="http://diggsml.org">Operator</identifier>
             <name>Operator</name>
@@ -14,7 +14,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="logger">
+        <diggs:Definition id="logger">
             <description>Person recording the data</description>
             <identifier codeSpace="http://diggsml.org">Logger</identifier>
             <name>Logger</name>
@@ -23,7 +23,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="drilling_contractor">
+        <diggs:Definition id="drilling_contractor">
             <description>Company who is performing the drilling operations</description>
             <identifier codeSpace="http://diggsml.org">Drilling Contractor</identifier>
             <name>Drilling Contractor</name>
@@ -32,7 +32,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="insitu_contractor">
+        <diggs:Definition id="insitu_contractor">
             <description>Company who is performing the insitu testing operations</description>
             <identifier codeSpace="http://diggsml.org">Insitu Contractor</identifier>
             <name>Insitu Contractor</name>
@@ -41,7 +41,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="laboratory_name">
+        <diggs:Definition id="laboratory_name">
             <description>Company who is performing the lab testing</description>
             <identifier codeSpace="http://diggsml.org">Laboratory Name</identifier>
             <name>Laboratory Name</name>
@@ -50,7 +50,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="project_engineer">
+        <diggs:Definition id="project_engineer">
             <description>Person working on a project</description>
             <identifier codeSpace="http://diggsml.org">Project Engineer</identifier>
             <name>Project Engineer</name>
@@ -59,7 +59,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="project_manager">
+        <diggs:Definition id="project_manager">
             <description>Person responsible for the project</description>
             <identifier codeSpace="http://diggsml.org">Project Manager</identifier>
             <name>Project Manager</name>
@@ -68,7 +68,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="checked_by">
+        <diggs:Definition id="checked_by">
             <description>Person checking the associated data</description>
             <identifier codeSpace="http://diggsml.org">Checked By</identifier>
             <name>Checked By</name>
@@ -77,7 +77,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="prepared_by">
+        <diggs:Definition id="prepared_by">
             <description>Person inputting the data</description>
             <identifier codeSpace="http://diggsml.org">Prepared By</identifier>
             <name>Prepared By</name>
@@ -86,7 +86,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="calculated_by">
+        <diggs:Definition id="calculated_by">
             <description>Person performing calculations on the data (do we really need this)?</description>
             <identifier codeSpace="http://diggsml.org">Calculated By</identifier>
             <name>Calculated By</name>
@@ -95,7 +95,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="tested_by">
+        <diggs:Definition id="tested_by">
             <description>Person performing the lab testing</description>
             <identifier codeSpace="http://diggsml.org">Tested By</identifier>
             <name>Tested By</name>
@@ -104,7 +104,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="owner">
+        <diggs:Definition id="owner">
             <description>Company who owns the infrastructure associated with the project</description>
             <identifier codeSpace="http://diggsml.org">Owner</identifier>
             <name>Owner</name>
@@ -113,7 +113,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="client">
+        <diggs:Definition id="client">
             <description>Company for whom the work is being performed</description>
             <identifier codeSpace="http://diggsml.org">Client</identifier>
             <name>Client</name>
@@ -122,7 +122,7 @@
         </diggs:Definition>
     </dictionaryEntry>
     <dictionaryEntry>
-        <diggs:Definition gml:id="helper">
+        <diggs:Definition id="helper">
             <description>Person assisting with the equipment (drill rig/CPT rig)</description>
             <identifier codeSpace="http://diggsml.org">Helper</identifier>
             <name>Helper</name>
@@ -130,4 +130,4 @@
             <diggs:authority>DIGGS</diggs:authority>
         </diggs:Definition>
     </dictionaryEntry>
-</gml:Dictionary>
+</Dictionary>
