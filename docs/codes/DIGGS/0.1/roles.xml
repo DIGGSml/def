@@ -3,8 +3,8 @@
 <Dictionary xmlns="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/main/Diggs.xsd"
-    gml:id="rolePerformed">
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd"
+    gml:id="roles">
     <description>
         DIGGS standard code list for the rolePerformed property of the Role object, which can occur in various locations in a DIGGS instance. The context for allowable codes is given by the Source Element Xpath identifying which specific rolePerformed instances may use a specific code value.
     </description>
