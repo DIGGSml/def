@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from xml.dom.minidom import parseString
 
 # Define the path to the Excel file
-excel_file_path = 'Codelist Excel Files and Conversion Templates to XML/triaxType.xlsx'
+excel_file_path = '/workspaces/def/Codelist Excel Files and Conversion Templates to XML/roles.xlsx'
 
 # Read the 'DictionaryName' sheet to get the XML file name and description
 dictionary_name_df = pd.read_excel(excel_file_path, sheet_name='DictionaryName')
@@ -21,7 +21,9 @@ associated_elements_df = pd.read_excel(excel_file_path, sheet_name='AssociatedEl
 NS_MAP = {
     "gml": "http://www.opengis.net/gml/3.2",
     "xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "diggs": "http://diggsml.org/schemas/2.6"
+    "diggs": "http://diggsml.org/schemas/2.6",
+    "": "http://www.opengis.net/gml/3.2"
+
 }
 
 # Register namespaces
@@ -30,7 +32,7 @@ for prefix, uri in NS_MAP.items():
 
 # Create the root element with its namespaces
 root_attribs = {
-    "{http://www.w3.org/2001/XMLSchema-instance}schemaLocation": "http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/main/Diggs.xsd",
+    "{http://www.w3.org/2001/XMLSchema-instance}schemaLocation": "http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd",
     "{http://www.opengis.net/gml/3.2}id": dictionary_file  # Correct use of the gml namespace
 }
 root = ET.Element(ET.QName(NS_MAP['gml'], 'Dictionary'), attrib=root_attribs)
