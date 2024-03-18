@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="astmD2487">
+    <gml:description>Leave this line blank</gml:description>
+    <gml:identifier gml:codeSpace="http://diggsml.org">astmD2487.xml</gml:identifier>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="CH">
+            <gml:description>More than half of soil passes No. 200 sieve; inorganic; LL ≥ 50; and PI plots above &quot;A&quot; line.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Fat clay</gml:identifier>
+            <gml:name>Fat clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="CL">
+            <gml:description>More than half of soil passes No. 200 sieve; inorganic; LL &lt; 50; PI&gt; 7; and plots on or above &quot;A&quot; line.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Lean clay</gml:identifier>
+            <gml:name>Lean clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="CL-ML">
+            <gml:description>More than half of soil passes No. 200 sieve;  liquid limit &lt; 50; inorganic; plots in the hatched (CL-ML) zone in the plasticity chart.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty clay</gml:identifier>
+            <gml:name>Silty clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GC">
+            <gml:description>More than half of coarse soil on No.4 sieve; passing No.200 &gt; 12%; Atterberg's limits plot above &quot;A&quot; line and plasticity index greater than 7.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Clayey gravel</gml:identifier>
+            <gml:name>Clayey gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GC-GM">
+            <gml:description>More than half of coarse soil on No.4 sieve; passing No.200 &gt; 12%; Atterberg's limits fall in hatched area marked CL-ML.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty, clayey gravel</gml:identifier>
+            <gml:name>Silty, clayey gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GM">
+            <gml:description>More than half of coarse soil on No.4 sieve; passing No.200 &gt; 12%; Atterberg's limits plot below &quot;A&quot; line and plasticity index &lt;4.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty gravel</gml:identifier>
+            <gml:name>Silty gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GP">
+            <gml:description>More than half of coarse soil on No.4 sieve; passing No.200 &gt; 5%; and not meeting Cu and Cc criteria for GW.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded gravel</gml:identifier>
+            <gml:name>Poorly graded gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GP-GC">
+            <gml:description>More than half of coarse soil on No.4 sieve; passing No.200 is 5-12%; and meets the criteria for GP and GC.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded gravel with clay (or silty clay)</gml:identifier>
+            <gml:name>Poorly graded gravel with clay (or silty clay)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GP-GM">
+            <gml:description>More than half of coarse soil on No.4 sieve; passing No.200 is 5-12%; and meets the criteria for GP and GM.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded gravel with silt</gml:identifier>
+            <gml:name>Poorly graded gravel with silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GW">
+            <gml:description>More than half of coarse soil on No.4 sieve. passisng No. 200 screen &lt;5%; Cu ≥ 4 and 1 ≤ Cc ≤ 3</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded gravel</gml:identifier>
+            <gml:name>Well-graded gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GW-GC">
+            <gml:description>More than half of coarse soil on No.4 sieve; passing No.200 is 5-12%; and meets the criteria for GW and GC.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded gravel with clay (or silty clay)</gml:identifier>
+            <gml:name>Well-graded gravel with clay (or silty clay)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GW-GM">
+            <gml:description>More than half of coarse soil on No.4 sieve; passing No.200 is 5-12%; and meets the criteria for GW and GM.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded gravel with silt</gml:identifier>
+            <gml:name>Well-graded gravel with silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="MH">
+            <gml:description>More than half of soil passes No. 200 sieve; inorganic; LL ≥ 50; and PI plots below &quot;A&quot; line.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Elastic silt</gml:identifier>
+            <gml:name>Elastic silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="ML">
+            <gml:description>More than half of soil passes No. 200 sieve; inorganic; LL &lt; 50; PI &lt; 4, or plots below &quot;A&quot; line.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silt</gml:identifier>
+            <gml:name>Silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OH">
+            <gml:description>More than half of soil passes No. 200 sieve; organic; (LL for oven dried sample)/(LL for non dried sample) &lt; 0.75; and LL ≥ 50.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic clay</gml:identifier>
+            <gml:name>Organic clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OL">
+            <gml:description>More than half of soil passes No. 200 sieve; organic; (LL for oven dried sample)/(LL for non dried sample) &lt; 0.75; and LL &lt; 50.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic clay</gml:identifier>
+            <gml:name>Organic clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="PT">
+            <gml:description>Peat, muck, and other highly organic soils.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Peat</gml:identifier>
+            <gml:name>Peat</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SC">
+            <gml:description>More than half of coarse soil passes No.4 sieve; passing No.200 &gt; 12%; Atterberg's limits plot above &quot;A&quot; line in the plasticity chart or plasticity index greater than 7.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Clayey sand</gml:identifier>
+            <gml:name>Clayey sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SC-SM">
+            <gml:description>More than half of coarse soil passes No.4 sieve; passing No.200 &gt; 12%; Atterberg's limits fall in hatched area marked CL-ML on the plasticity chart.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty, clayey sand</gml:identifier>
+            <gml:name>Silty, clayey sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SM">
+            <gml:description>More than half of coarse soil passes No.4 sieve; passing No.200 &gt; 12%; Atterberg's limits plot below &quot;A&quot; line in the plasticity chart or plasticity index less than 4.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty sand</gml:identifier>
+            <gml:name>Silty sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SP">
+            <gml:description>More than half of coarse soil passes No.4 sieve; passing No.200 &lt; 5%; and not meeting both criteria for SW.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded sand</gml:identifier>
+            <gml:name>Poorly graded sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SP-SC">
+            <gml:description>More than half of coarse soil passes No.4 sieve; passing No.200 is 5-12%; and meet she criteria for SP and SC.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded sand with clay (or silty clay)</gml:identifier>
+            <gml:name>Poorly graded sand with clay (or silty clay)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SP-SM">
+            <gml:description>More than half of coarse soil passes No.4 sieve; passing No.200 is 5-12%; and meet she criteria for SP and SM.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded sand with silt</gml:identifier>
+            <gml:name>Poorly graded sand with silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SW">
+            <gml:description>More than half of coarse soil passes No.4 sieve; passing No.200 &lt; 5%; Cu ≥ 6 and 1 ≤ Cc ≤ 3.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded sand</gml:identifier>
+            <gml:name>Well-graded sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SW-SC">
+            <gml:description>More than half of coarse soil passes No.4 sieve; passing No.200 is 5-12%; and meet she criteria for SW and SC.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded sand with clay (or silty clay)</gml:identifier>
+            <gml:name>Well-graded sand with clay (or silty clay)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SW-SM">
+            <gml:description>More than half of coarse soil passes No.4 sieve; passing No.200 is 5-12%; and meet she criteria for SW and SM.</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded sand with silt</gml:identifier>
+            <gml:name>Well-graded sand with silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="CHg">
+            <gml:description>CH with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand &lt; % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Fat clay with gravel</gml:identifier>
+            <gml:name>Fat clay with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="CHs">
+            <gml:description>CH with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand ≥ % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Fat clay with sand</gml:identifier>
+            <gml:name>Fat clay with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sCH">
+            <gml:description>CH with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand &lt; % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy fat clay</gml:identifier>
+            <gml:name>Sandy fat clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sCHg">
+            <gml:description>CH with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy fat clay with gravel</gml:identifier>
+            <gml:name>Sandy fat clay with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gCH">
+            <gml:description>CH with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly fat clay</gml:identifier>
+            <gml:name>Gravelly fat clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gCHs">
+            <gml:description>CH with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly fat clay with sand</gml:identifier>
+            <gml:name>Gravelly fat clay with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="CLg">
+            <gml:description>CL with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand &lt; % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Lean clay with gravel</gml:identifier>
+            <gml:name>Lean clay with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="CLs">
+            <gml:description>CL with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand ≥ % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Lean clay with sand</gml:identifier>
+            <gml:name>Lean clay with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sCL">
+            <gml:description>CL with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy lean clay</gml:identifier>
+            <gml:name>Sandy lean clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sCLg">
+            <gml:description>CL with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy lean clay with gravel</gml:identifier>
+            <gml:name>Sandy lean clay with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gCL">
+            <gml:description>CL with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly lean clay</gml:identifier>
+            <gml:name>Gravelly lean clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gCLs">
+            <gml:description>CL with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly lean clay with sand</gml:identifier>
+            <gml:name>Gravelly lean clay with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="CL-MLg">
+            <gml:description>CL-ML with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand &lt; % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty clay with gravel</gml:identifier>
+            <gml:name>Silty clay with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="CL-MLs">
+            <gml:description>CL-ML with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand ≥ % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty clay with sand</gml:identifier>
+            <gml:name>Silty clay with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sCL-ML">
+            <gml:description>CL-ML with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy silty clay</gml:identifier>
+            <gml:name>Sandy silty clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sCL-MLg">
+            <gml:description>CL-ML with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy silty clay with gravel</gml:identifier>
+            <gml:name>Sandy silty clay with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gCL-ML">
+            <gml:description>CL-ML with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly silty clay</gml:identifier>
+            <gml:name>Gravelly silty clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gCL-MLs">
+            <gml:description>CL-ML with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly silty clay with sand</gml:identifier>
+            <gml:name>Gravelly silty clay with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="MLg">
+            <gml:description>ML with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand &lt; % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silt with gravel</gml:identifier>
+            <gml:name>Silt with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="MLs">
+            <gml:description>ML with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand ≥ % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silt with sand</gml:identifier>
+            <gml:name>Silt with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sML">
+            <gml:description>ML with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy silt</gml:identifier>
+            <gml:name>Sandy silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sMLg">
+            <gml:description>ML with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy silt with gravel</gml:identifier>
+            <gml:name>Sandy silt with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gML">
+            <gml:description>ML with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly silt</gml:identifier>
+            <gml:name>Gravelly silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gMLs">
+            <gml:description>ML with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly silt with sand</gml:identifier>
+            <gml:name>Gravelly silt with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="MHg">
+            <gml:description>MH with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand &lt; % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Elastic silt with gravel</gml:identifier>
+            <gml:name>Elastic silt with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="MHs">
+            <gml:description>MH with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand ≥ % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Elastic silt with sand</gml:identifier>
+            <gml:name>Elastic silt with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sMH">
+            <gml:description>MH with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy elastic silt</gml:identifier>
+            <gml:name>Sandy elastic silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sMHg">
+            <gml:description>MH with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy elastic silt with gravel</gml:identifier>
+            <gml:name>Sandy elastic silt with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gMH">
+            <gml:description>MH with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly elastic silt</gml:identifier>
+            <gml:name>Gravelly elastic silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gMHs">
+            <gml:description>MH with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly elastic silt with sand</gml:identifier>
+            <gml:name>Gravelly elastic silt with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OLg">
+            <gml:description>OL where PI ≥ 4 and plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand &lt; % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic clay with gravel (OL)</gml:identifier>
+            <gml:name>Organic clay with gravel (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OLs">
+            <gml:description>OL where PI ≥ 4 and plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand ≥ % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic clay with sand (OL)</gml:identifier>
+            <gml:name>Organic clay with sand (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sOL">
+            <gml:description>OL where PI ≥ 4 and plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy organic clay (OL)</gml:identifier>
+            <gml:name>Sandy organic clay (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sOLg">
+            <gml:description>OL where PI ≥ 4 and plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy organic clay with gravel (OL)</gml:identifier>
+            <gml:name>Sandy organic clay with gravel (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gOL">
+            <gml:description>OL where PI ≥ 4 and plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly organic clay (OL)</gml:identifier>
+            <gml:name>Gravelly organic clay (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gOLs">
+            <gml:description>OL where PI ≥ 4 and plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly organic clay with sand (OL)</gml:identifier>
+            <gml:name>Gravelly organic clay with sand (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OHg">
+            <gml:description>OH that plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand &lt; % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic clay with gravel (OH)</gml:identifier>
+            <gml:name>Organic clay with gravel (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OHs">
+            <gml:description>OH that plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand ≥ % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic clay with sand (OH)</gml:identifier>
+            <gml:name>Organic clay with sand (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sOH">
+            <gml:description>OH that plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy organic clay (OH)</gml:identifier>
+            <gml:name>Sandy organic clay (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sOHg">
+            <gml:description>OH that plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy organic clay with gravel (OH)</gml:identifier>
+            <gml:name>Sandy organic clay with gravel (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gOH">
+            <gml:description>OH that plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly organic clay (OH)</gml:identifier>
+            <gml:name>Gravelly organic clay (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gOHs">
+            <gml:description>OH that plots on or above &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly organic clay with sand (OH)</gml:identifier>
+            <gml:name>Gravelly organic clay with sand (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OLz">
+            <gml:description>OL where PI &lt; 4 or plots below &quot;A&quot; line; coarser than No. 200 screen &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic silt (OL)</gml:identifier>
+            <gml:name>Organic silt (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OLzg">
+            <gml:description>OL where PI &lt; 4 or plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand &lt; % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic silt with gravel (OL)</gml:identifier>
+            <gml:name>Organic silt with gravel (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OLzs">
+            <gml:description>OL where PI &lt; 4 or plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand ≥ % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic silt with sand (OL)</gml:identifier>
+            <gml:name>Organic silt with sand (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sOLz">
+            <gml:description>OL where PI &lt; 4 or plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy organic silt (OL)</gml:identifier>
+            <gml:name>Sandy organic silt (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sOLzg">
+            <gml:description>OL where PI &lt; 4 or plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy organic silt with gravel (OL)</gml:identifier>
+            <gml:name>Sandy organic silt with gravel (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gOLz">
+            <gml:description>OL where PI &lt; 4 or plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly organic silt (OL)</gml:identifier>
+            <gml:name>Gravelly organic silt (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gOLzs">
+            <gml:description>OL where PI &lt; 4 or plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly organic silt with sand (OL)</gml:identifier>
+            <gml:name>Gravelly organic silt with sand (OL)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OHz">
+            <gml:description>OH that plots below &quot;A&quot; line; coarser than No. 200 screen &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic silt (OH)</gml:identifier>
+            <gml:name>Organic silt (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OHzg">
+            <gml:description>OH that plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand &lt; % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic silt with gravel (OH)</gml:identifier>
+            <gml:name>Organic silt with gravel (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="OHzs">
+            <gml:description>OH that plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 15% and &lt; 30% and % sand ≥ % gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Organic silt with sand (OH)</gml:identifier>
+            <gml:name>Organic silt with sand (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sOHz">
+            <gml:description>OH that plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy organic silt (OH)</gml:identifier>
+            <gml:name>Sandy organic silt (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sOHzg">
+            <gml:description>OH that plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand ≥ % gravel and % gravel ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Sandy organic silt with gravel (OH)</gml:identifier>
+            <gml:name>Sandy organic silt with gravel (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gOHz">
+            <gml:description>OH that plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand &lt; 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly organic silt (OH)</gml:identifier>
+            <gml:name>Gravelly organic silt (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gOHzs">
+            <gml:description>OH that plots below &quot;A&quot; line; with coarser than  No. 200 screen ≥ 30% and % sand &lt; % gravel and % sand ≥ 15%</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Gravelly organic silt with sand (OH)</gml:identifier>
+            <gml:name>Gravelly organic silt with sand (OH)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GWs">
+            <gml:description>GW with ≥ 15% sand</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded gravel with sand</gml:identifier>
+            <gml:name>Well-graded gravel with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GPs">
+            <gml:description>GP with ≥ 15% sand</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded gravel with sand</gml:identifier>
+            <gml:name>Poorly graded gravel with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GW-GMs">
+            <gml:description>GW-GM with ≥ 15% sand</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded gravel with silt and sand</gml:identifier>
+            <gml:name>Well-graded gravel with silt and sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GW-GCs">
+            <gml:description>GW-GC with ≥ 15% sand</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded gravel with clay and sand (or silty clay and sand)</gml:identifier>
+            <gml:name>Well-graded gravel with clay and sand (or silty clay and sand)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GP-GMs">
+            <gml:description>GP-GM with ≥ 15% sand</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded gravel with silt and sand</gml:identifier>
+            <gml:name>Poorly graded gravel with silt and sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GP-GCs">
+            <gml:description>GP-GC with ≥ 15% sand</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded gravel with clay and sand (or silty clay and sand)</gml:identifier>
+            <gml:name>Poorly graded gravel with clay and sand (or silty clay and sand)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GMs">
+            <gml:description>GM with ≥ 15% sand</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty gravel with sand</gml:identifier>
+            <gml:name>Silty gravel with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GCs">
+            <gml:description>GC with ≥ 15% sand</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Clayey gravel with sand</gml:identifier>
+            <gml:name>Clayey gravel with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="GC-GMs">
+            <gml:description>GC-GM with ≥ 15% sand</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty, clayey gravel with sand</gml:identifier>
+            <gml:name>Silty, clayey gravel with sand</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SWg">
+            <gml:description>SW with ≥ 15% gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded sand with gravel</gml:identifier>
+            <gml:name>Well-graded sand with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SPg">
+            <gml:description>SP with ≥ 15% gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded sand with gravel</gml:identifier>
+            <gml:name>Poorly graded sand with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SW-SMg">
+            <gml:description>SW-SM with ≥ 15% gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded sand with silt and gravel</gml:identifier>
+            <gml:name>Well-graded sand with silt and gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SW-SCg">
+            <gml:description>SW-SC with ≥ 15% gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Well-graded sand with clay and gravel (or silty clay and gravel)</gml:identifier>
+            <gml:name>Well-graded sand with clay and gravel (or silty clay and gravel)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SP-SMg">
+            <gml:description>SP-SM with ≥ 15% gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded sand with silt and gravel</gml:identifier>
+            <gml:name>Poorly graded sand with silt and gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SP-SCg">
+            <gml:description>SP-SC with ≥ 15% gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Poorly graded sand with clay and gravel (or silty clay and gravel)</gml:identifier>
+            <gml:name>Poorly graded sand with clay and gravel (or silty clay and gravel)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SMg">
+            <gml:description>SM with ≥ 15% gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty sand with gravel</gml:identifier>
+            <gml:name>Silty sand with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SCg">
+            <gml:description>SC with ≥ 15% gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Clayey sand with gravel</gml:identifier>
+            <gml:name>Clayey sand with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="SC-SMg">
+            <gml:description>SC-SM with ≥ 15% gravel</gml:description>
+            <gml:identifier gml:codeSpace="http://diggsml.org">Silty, clayey sand with gravel</gml:identifier>
+            <gml:name>Silty, clayey sand with gravel</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>

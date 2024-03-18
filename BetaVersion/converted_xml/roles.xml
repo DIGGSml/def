@@ -11,6 +11,11 @@
             <gml:name>Operator</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -20,6 +25,11 @@
             <gml:name>Logger</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -29,6 +39,11 @@
             <gml:name>Drilling Contractor</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -38,6 +53,11 @@
             <gml:name>Insitu Contractor</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -47,6 +67,11 @@
             <gml:name>Laboratory Name</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -56,6 +81,11 @@
             <gml:name>Project Engineer</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -65,6 +95,11 @@
             <gml:name>Project Manager</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -74,6 +109,11 @@
             <gml:name>Checked By</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -83,6 +123,11 @@
             <gml:name>Prepared By</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -92,6 +137,11 @@
             <gml:name>Calculated By</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -101,6 +151,11 @@
             <gml:name>Tested By</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -110,6 +165,11 @@
             <gml:name>Owner</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -119,6 +179,11 @@
             <gml:name>Client</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -128,6 +193,11 @@
             <gml:name>Helper</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
 </gml:Dictionary>
