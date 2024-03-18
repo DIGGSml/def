@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from xml.dom.minidom import parseString
 
 # Define the path to the Excel file
-excel_file_path = '/workspaces/def/Codelist Excel Files and Conversion Templates to XML/roles.xlsx'
+excel_file_path = '/workspaces/def/Codelist Excel Files and Conversion Templates to XML/triaxType.xlsx'
 
 # Read the 'DictionaryName' sheet to get the XML file name and description
 dictionary_name_df = pd.read_excel(excel_file_path, sheet_name='DictionaryName')
@@ -17,13 +17,15 @@ xml_file_path = f'/workspaces/def/BetaVersion/converted_xml/{dictionary_file}.xm
 definitions_df = pd.read_excel(excel_file_path, sheet_name='Definitions')
 associated_elements_df = pd.read_excel(excel_file_path, sheet_name='AssociatedElements')
 
+print(definitions_df)
+print(associated_elements_df)
+
 # Namespace map
 NS_MAP = {
+    "":"http://www.opengis.net/gml/3.2",
     "gml": "http://www.opengis.net/gml/3.2",
     "xsi": "http://www.w3.org/2001/XMLSchema-instance",
     "diggs": "http://diggsml.org/schemas/2.6",
-    "": "http://www.opengis.net/gml/3.2"
-
 }
 
 # Register namespaces
@@ -37,26 +39,45 @@ root_attribs = {
 }
 root = ET.Element(ET.QName(NS_MAP['gml'], 'Dictionary'), attrib=root_attribs)
 
-# Add sub-elements like description and identifier
+# Add sub-elements like description and identifier with the gml prefix
 description = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'description'))
 description.text = description_text
 
-identifier = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'identifier'), attrib={"codeSpace": "http://diggsml.org"})
+identifier = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'identifier'), attrib={ET.QName(NS_MAP['gml'], 'codeSpace'): "http://diggsml.org"})
 identifier.text = dictionary_file + ".xml"
 
-# Populate the XML with data from the 'Definitions' sheet
+# Populate the XML with data from the 'Definitions' sheet, using the 'gml' prefix for GML elements
 for _, row in definitions_df.iterrows():
-    entry = ET.SubElement(root, 'dictionaryEntry')
+    entry = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'dictionaryEntry'))
     definition = ET.SubElement(entry, ET.QName(NS_MAP['diggs'], 'Definition'), attrib={ET.QName(NS_MAP['gml'], 'id'): row['ID'].strip()})
     
-    # Add detailed elements as per the spreadsheet data
-    ET.SubElement(definition, 'description').text = row['Description'].strip()
-    ET.SubElement(definition, 'identifier', attrib={"codeSpace": "http://diggsml.org"}).text = row['Name'].strip()
-    ET.SubElement(definition, 'name').text = row['Name'].strip()
+    # Add detailed elements as per the spreadsheet data, with 'gml' prefix where appropriate
+    ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'description')).text = row['Description'].strip()
+    ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'identifier'), attrib={ET.QName(NS_MAP['gml'], 'codeSpace'): "http://diggsml.org"}).text = row['Name'].strip()
+    ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'name')).text = row['Name'].strip()
+    # For elements not in the GML namespace, continue as before
     ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'dataType')).text = row['DataType'].strip()
     ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'authority')).text = row['Authority'].strip()
+
+for _, row in associated_elements_df.iterrows():
+    # Find the parent definition element by matching the ID
+    definition_id = row['ID'].strip()  # Assuming there's an 'ID' column to match with definitions
+    source_element = row['SourceElement'].strip()  # The XPath or other identifier
     
-    # Handle associated elements if necessary
+    # Find the definition element this occurrence is associated with
+    for definition in root.findall(f".//{{{NS_MAP['diggs']}}}Definition"):
+        if definition.get(ET.QName(NS_MAP['gml'], 'id')) == definition_id:
+            # Once the correct definition is found, create the occurrences element if not already present
+            occurrences = definition.find(f".//{{{NS_MAP['diggs']}}}occurrences")
+            if occurrences is None:  # If there's no occurrences element, create one
+                occurrences = ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'occurrences'))
+            
+            # Add the Occurrence element
+            occurrence = ET.SubElement(occurrences, ET.QName(NS_MAP['diggs'], 'Occurrence'))
+            source_element_xpath = ET.SubElement(occurrence, ET.QName(NS_MAP['diggs'], 'sourceElementXpath'))
+            source_element_xpath.text = source_element
+            break  # Exit the loop once the occurrence is added to the correct definition
+
 
 # Convert the ElementTree to a string
 tree_str = ET.tostring(root, 'utf-8')
