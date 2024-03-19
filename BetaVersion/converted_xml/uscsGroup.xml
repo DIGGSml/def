@@ -8,10 +8,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CH">
             <gml:description>Fat clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CH</gml:identifier>
             <gml:name>CH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -22,10 +23,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CH_CL">
             <gml:description>Fat to lean clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CH/CL</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CH/CL</gml:identifier>
             <gml:name>CH/CL</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -36,10 +38,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CH_GC">
             <gml:description>Gravelly fat clay to clayey gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CH/GC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CH/GC</gml:identifier>
             <gml:name>CH/GC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -50,10 +53,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CH_MH">
             <gml:description>Fat clay to elastic silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CH/MH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CH/MH</gml:identifier>
             <gml:name>CH/MH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -64,10 +68,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CH_SC">
             <gml:description>Sandy fat clay to fat clayey sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CH/SC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CH/SC</gml:identifier>
             <gml:name>CH/SC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -78,10 +83,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CL">
             <gml:description>Lean clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CL</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CL</gml:identifier>
             <gml:name>CL</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -92,10 +98,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CL-ML">
             <gml:description>Silty clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CL-ML</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CL-ML</gml:identifier>
             <gml:name>CL-ML</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -106,10 +113,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CL_CH">
             <gml:description>Lean to fat clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CL/CH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CL/CH</gml:identifier>
             <gml:name>CL/CH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -120,10 +128,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CL_GC">
             <gml:description>Graelly lean clay to clayey gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CL/GC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CL/GC</gml:identifier>
             <gml:name>CL/GC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -134,10 +143,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CL_ML">
             <gml:description>Silty clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CL/ML</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CL/ML</gml:identifier>
             <gml:name>CL/ML</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -148,10 +158,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CL_SC">
             <gml:description>Sandy lean clay to clayey sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">CL/SC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">CL/SC</gml:identifier>
             <gml:name>CL/SC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -162,10 +173,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GC">
             <gml:description>Clayey gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GC</gml:identifier>
             <gml:name>GC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -176,10 +188,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GC-GM">
             <gml:description>Silty, clayey gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GC-GM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GC-GM</gml:identifier>
             <gml:name>GC-GM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -190,10 +203,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GC_CH">
             <gml:description>Clayey gravel to gravelly fat clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GC/CH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GC/CH</gml:identifier>
             <gml:name>GC/CH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -204,10 +218,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GC_CL">
             <gml:description>Clayey grave to gravelly lean clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GC/CL</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GC/CL</gml:identifier>
             <gml:name>GC/CL</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -218,10 +233,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GC_SC">
             <gml:description>Clayey gravel to clayey sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GC/SC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GC/SC</gml:identifier>
             <gml:name>GC/SC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -232,10 +248,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GM">
             <gml:description>Silty gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GM</gml:identifier>
             <gml:name>GM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -246,10 +263,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GM_MH">
             <gml:description>Silty gravel to gravelly elastic silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GM/MH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GM/MH</gml:identifier>
             <gml:name>GM/MH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -260,10 +278,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GM_ML">
             <gml:description>Silty gravel to gravelly silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GM/ML</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GM/ML</gml:identifier>
             <gml:name>GM/ML</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -274,10 +293,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GM_SM">
             <gml:description>Silty gravel to silty sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GM/SM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GM/SM</gml:identifier>
             <gml:name>GM/SM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -288,10 +308,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GP">
             <gml:description>Poorly graded gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GP</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GP</gml:identifier>
             <gml:name>GP</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -302,10 +323,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GP-GC">
             <gml:description>Poorly graded gravel with clay (or silty clay)</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GP-GC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GP-GC</gml:identifier>
             <gml:name>GP-GC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -316,10 +338,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GP-GM">
             <gml:description>Poorly graded gravel with silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GP-GM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GP-GM</gml:identifier>
             <gml:name>GP-GM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -330,10 +353,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GP_SP">
             <gml:description>Poorly graded gravel to poorly graded sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GP/SP</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GP/SP</gml:identifier>
             <gml:name>GP/SP</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -344,10 +368,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GP_SW">
             <gml:description>Poorly to well graded gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GP/SW</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GP/SW</gml:identifier>
             <gml:name>GP/SW</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -358,10 +383,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GW">
             <gml:description>Well-graded gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GW</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GW</gml:identifier>
             <gml:name>GW</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -372,10 +398,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GW-GC">
             <gml:description>Well-graded gravel with clay (or silty clay)</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GW-GC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GW-GC</gml:identifier>
             <gml:name>GW-GC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -386,10 +413,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GW-GM">
             <gml:description>Well-graded gravel with silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GW-GM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GW-GM</gml:identifier>
             <gml:name>GW-GM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -400,10 +428,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="GW_GP">
             <gml:description>Well to poorly sorted gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">GW/GP</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">GW/GP</gml:identifier>
             <gml:name>GW/GP</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -414,10 +443,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="MH">
             <gml:description>Elastic silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">MH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">MH</gml:identifier>
             <gml:name>MH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -428,10 +458,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="MH_CH">
             <gml:description>Elastic silt to fat clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">MH/CH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">MH/CH</gml:identifier>
             <gml:name>MH/CH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -442,10 +473,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="MH_GM">
             <gml:description>Gravelly fat silt to silty gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">MH/GM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">MH/GM</gml:identifier>
             <gml:name>MH/GM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -456,10 +488,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="MH_ML">
             <gml:description>Elastic silt to silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">MH/ML</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">MH/ML</gml:identifier>
             <gml:name>MH/ML</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -470,10 +503,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="MH_SM">
             <gml:description>Sandy elastic silt to silty sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">MH/SM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">MH/SM</gml:identifier>
             <gml:name>MH/SM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -484,10 +518,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="ML">
             <gml:description>Silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">ML</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">ML</gml:identifier>
             <gml:name>ML</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -498,10 +533,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="ML_CL">
             <gml:description>Clayey silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">ML/CL</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">ML/CL</gml:identifier>
             <gml:name>ML/CL</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -512,10 +548,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="ML_GM">
             <gml:description>Gravelly silt to silty gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">ML/GM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">ML/GM</gml:identifier>
             <gml:name>ML/GM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -526,10 +563,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="ML_MH">
             <gml:description>Silt to elastic silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">ML/MH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">ML/MH</gml:identifier>
             <gml:name>ML/MH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -540,10 +578,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="ML_SM">
             <gml:description>Sandy silt to silty sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">ML/SM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">ML/SM</gml:identifier>
             <gml:name>ML/SM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -554,10 +593,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="OH">
             <gml:description>Organic clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">OH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">OH</gml:identifier>
             <gml:name>OH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -568,10 +608,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="OL">
             <gml:description>Organic clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">OL</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">OL</gml:identifier>
             <gml:name>OL</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -582,10 +623,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="PT">
             <gml:description>Peat</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">PT</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">PT</gml:identifier>
             <gml:name>PT</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -596,10 +638,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SC">
             <gml:description>Clayey sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SC</gml:identifier>
             <gml:name>SC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -610,10 +653,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SC-SM">
             <gml:description>Silty, clayey sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SC-SM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SC-SM</gml:identifier>
             <gml:name>SC-SM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -624,10 +668,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SC_CH">
             <gml:description>Sandy clay to fat clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SC/CH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SC/CH</gml:identifier>
             <gml:name>SC/CH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -638,10 +683,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SC_CL">
             <gml:description>Sandy clay to lean clay</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SC/CL</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SC/CL</gml:identifier>
             <gml:name>SC/CL</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -652,10 +698,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SC_GC">
             <gml:description>Clayey sand to clayey gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SC/GC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SC/GC</gml:identifier>
             <gml:name>SC/GC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -666,10 +713,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SC_SM">
             <gml:description>Clayey sand to silty sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SC/SM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SC/SM</gml:identifier>
             <gml:name>SC/SM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -680,10 +728,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SM">
             <gml:description>Silty sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SM</gml:identifier>
             <gml:name>SM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -694,10 +743,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SM_GM">
             <gml:description>Silty sand to silty gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SM/GM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SM/GM</gml:identifier>
             <gml:name>SM/GM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -708,10 +758,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SM_MH">
             <gml:description>Silty sand to sandy elastic silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SM/MH</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SM/MH</gml:identifier>
             <gml:name>SM/MH</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -722,10 +773,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SM_ML">
             <gml:description>Silty sand to sandy silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SM/ML</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SM/ML</gml:identifier>
             <gml:name>SM/ML</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -736,10 +788,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SM_SC">
             <gml:description>Silty sand to clayey sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SM/SC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SM/SC</gml:identifier>
             <gml:name>SM/SC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -750,10 +803,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SP">
             <gml:description>Poorly graded sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SP</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SP</gml:identifier>
             <gml:name>SP</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -764,10 +818,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SP-SC">
             <gml:description>Poorly graded sand with clay (or silty clay)</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SP-SC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SP-SC</gml:identifier>
             <gml:name>SP-SC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -778,10 +833,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SP-SM">
             <gml:description>Poorly graded sand with silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SP-SM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SP-SM</gml:identifier>
             <gml:name>SP-SM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -792,10 +848,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SP_GP">
             <gml:description>Poorly graded sand to poorly graded gravel</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SP/GP</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SP/GP</gml:identifier>
             <gml:name>SP/GP</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -806,10 +863,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SP_SW">
             <gml:description>Poorly to well graded sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SP/SW</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SP/SW</gml:identifier>
             <gml:name>SP/SW</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -820,10 +878,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SW">
             <gml:description>Well-graded sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SW</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SW</gml:identifier>
             <gml:name>SW</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -834,10 +893,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SW-SC">
             <gml:description>Well-graded sand with clay (or silty clay)</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SW-SC</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SW-SC</gml:identifier>
             <gml:name>SW-SC</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -848,10 +908,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SW-SM">
             <gml:description>Well-graded sand with silt</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SW-SM</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SW-SM</gml:identifier>
             <gml:name>SW-SM</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2487</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
@@ -862,10 +923,11 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="SW_SP">
             <gml:description>Well to poorly graded sand</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">SW/SP</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">SW/SP</gml:identifier>
             <gml:name>SW/SP</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>

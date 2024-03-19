@@ -71,7 +71,7 @@ def xlsx_2_xml(excel_file_path):
         if pd.notna(row['Description']) and row['Description'].strip():
             ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'description')).text = row['Description'].strip()
         if pd.notna(row['Name']) and row['Name'].strip():
-            identifier_attrib = {'codeSpace': "http://diggsml.org"}
+            identifier_attrib = {'codeSpace': "https://diggsml.org/def/authorities.xml#DIGGS"}
             identifier = ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'identifier'), attrib=identifier_attrib)
             identifier.text = row['Name'].strip()
             ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'name')).text = row['Name'].strip()
@@ -79,6 +79,8 @@ def xlsx_2_xml(excel_file_path):
             ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'dataType')).text = str(row['DataType']).strip()
         if pd.notna(row['Authority']) and row['Authority'].strip():
             ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'authority')).text = str(row['Authority']).strip()
+        if pd.notna(row['Reference']) and row['Reference'].strip():
+            ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'reference')).text = str(row['Reference']).strip()
 
 
     for _, row in associated_elements_df.iterrows():
