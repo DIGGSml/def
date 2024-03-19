@@ -217,8 +217,9 @@
           <p id="gmlid">
             <xsl:value-of select="/gml:Dictionary/@gml:id"/>
           </p>
-          <p id="url"><xsl:value-of select="gml:Dictionary/@gml:id"/> codeSpace="<xsl:value-ofselect="./gml:Dictionary/gml:identifier"/>
-          select="./gml:Dictionary/gml:dictionaryEntry[1]/diggs:Definition/gml:identifier/@codeSpace"/>
+          <p id="url"><xsl:value-of select="gml:Dictionary/@gml:id"/> codeSpace="<xsl:value-of
+          select="./gml:Dictionary/gml:identifier"/>
+
           </p>
         </div>
       </body>
