@@ -9,6 +9,7 @@ def xlsx_2_xml(excel_file_path):
     dictionary_file = dictionary_name_df['DictionaryFile'].dropna().iloc[0].strip()
     description_text = dictionary_name_df['Description'].dropna().iloc[1].strip()
     dictionary_name = dictionary_name_df['DictionaryName'].dropna().iloc[0].strip()
+    dictionary_id = dictionary_name_df['Dictionary ID'].dropna().iloc[0].strip()
 
     # Construct the XML file path using the extracted name
     xml_file_path = f'/workspaces/def/BetaVersion/converted_xml/{dictionary_file}.xml'
@@ -45,7 +46,7 @@ def xlsx_2_xml(excel_file_path):
     # Create the root element with its namespaces
     root_attribs = {
         "{http://www.w3.org/2001/XMLSchema-instance}schemaLocation": "http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd",
-        "{http://www.opengis.net/gml/3.2}id": dictionary_file  # Correct use of the gml namespace
+        "{http://www.opengis.net/gml/3.2}id": dictionary_id  # Correct use of the gml namespace
     }
     root = ET.Element(ET.QName(NS_MAP['gml'], 'Dictionary'), attrib=root_attribs)
 
@@ -55,7 +56,7 @@ def xlsx_2_xml(excel_file_path):
 
     # Corrected identifier element: Removed gml prefix from codeSpace attribute
     identifier = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'identifier'), attrib={'codeSpace': "https://diggsml.org/def/authorities.xml#DIGGS"})
-    identifier.text = dictionary_file + ".xml"
+    identifier.text = "https://diggsml.org/def/codes/DIGGS?0.1/" + dictionary_file + ".xml"
 
     # Add sub-element name with the gml prefix
     name = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'name'))
@@ -73,7 +74,7 @@ def xlsx_2_xml(excel_file_path):
         if pd.notna(row['Name']) and row['Name'].strip():
             identifier_attrib = {'codeSpace': "https://diggsml.org/def/authorities.xml#DIGGS"}
             identifier = ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'identifier'), attrib=identifier_attrib)
-            identifier.text = row['Name'].strip()
+            identifier.text = "https://diggsml.org/def/codes/DIGGS?0.1/" + dictionary_file + ".xml#" + row['ID'].strip()
             ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'name')).text = row['Name'].strip()
         if pd.notna(row['DataType']) and row['DataType'].strip():
             ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'dataType')).text = str(row['DataType']).strip()
