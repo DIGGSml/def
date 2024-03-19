@@ -178,7 +178,7 @@
             </tr>
             <xsl:for-each select="gml:Dictionary/gml:dictionaryEntry/diggs:Definition">
               <!--        <xsl:sort select="diggs:occurences/diggs:Occurrence/diggs:sourceElementXpath"/> -->
-              <xsl:sort select="./gml:identifier"/>
+              <xsl:sort select="./gml:namd"/>
               <tr>
                 <td>
                   <xsl:value-of select="./gml:name"/>

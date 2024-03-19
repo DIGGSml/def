@@ -117,7 +117,7 @@
           }
           
           #myInput {
-          background-image: url('/img/searchIcon.png');
+          background-image: url('https://diggsml.org/def/img/searchIcon.png');
           background-size: 30px;
           background-position: 8px 6px; /* Position the search icon */
           background-color: none;
@@ -176,7 +176,7 @@
               <th>Source Procedure XPath</th>
             </tr>
             <xsl:for-each select="gml:Dictionary/gml:dictionaryEntry/diggs:Definition">
-              <xsl:sort select="./gml:identifier"/>
+              <xsl:sort select="./gml:name"/>
               <tr>
                 <td>
                   <xsl:value-of select="./gml:name"/>
