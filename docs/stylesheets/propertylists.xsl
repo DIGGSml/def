@@ -102,8 +102,8 @@
           
           #instance {
           text-align: center;
-          font-size: 20px;
-          font-family: 'Crimson Text', serif;
+          font-size: 14px;
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
           color: black;
           font-weight: bold;
           border: 2px solid black;
@@ -179,7 +179,7 @@
               <xsl:sort select="./gml:identifier"/>
               <tr>
                 <td>
-                  <xsl:value-of select="./gml:identifier"/>
+                  <xsl:value-of select="./gml:name"/>
                 </td>
                 <td>
                   <xsl:value-of select="@gml:id"/>
@@ -217,8 +217,8 @@
           <p id="gmlid">
             <xsl:value-of select="/gml:Dictionary/@gml:id"/>
           </p>
-          <p id="url"><xsl:value-of select="gml:Dictionary/@gml:id"/> codeSpace="<xsl:value-of
-            select="./gml:Dictionary/gml:dictionaryEntry[1]/diggs:Definition/gml:identifier/@codeSpace"/>
+          <p id="url"><xsl:value-of select="gml:Dictionary/@gml:id"/> codeSpace="<xsl:value-ofselect="./gml:Dictionary/gml:identifier"/>
+          select="./gml:Dictionary/gml:dictionaryEntry[1]/diggs:Definition/gml:identifier/@codeSpace"/>
           </p>
         </div>
       </body>
