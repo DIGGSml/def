@@ -56,9 +56,9 @@ function highlight_row() {
             var url = document.getElementById("url").innerHTML;
             var txt = 'Example instance:<p style="color: red;">&lt;';
             txt += url;
-            txt += "#" + id +"&quot;&gt;";
+            txt += "&quot;&gt;";
             txt += identifier + "&lt;/" + element + '&gt;</p>';
-            txt += '<p>NOTE: If the value of '+element+' is equal to the Identifier, then the # fragment in the codeSpace is optional.</p>'
+            txt += '<p>NOTE: the value of '+element+' should be the code name as shown, but can be a localized synonym.</p>'
             
             //Send to page
             document.getElementById("instance").innerHTML = txt;
