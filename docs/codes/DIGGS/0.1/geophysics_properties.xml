@@ -3,12 +3,12 @@
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="propertyClass">
     <gml:description>This dictionary contains the values for the propertyClass property of the diggs:Property object and the measurand property of the diggs:Detector object when used within the Test feature, where thetesting procedure is a ProcessedGeophysicalsurvey or WirelineLog. These values serve to define the ultimate results of geophysical field measurements. The Xpaths to these occurrences are: 1) //diggs:Property/diggs:propertyClass.</gml:description>
-    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml</gml:identifier>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml</gml:identifier>
     <gml:name>DIGGS Measurement Properties for Geophysics</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="acoustic_impedance">
             <gml:description>The resistance to the propagation of ultrasound waves through a medium.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#acoustic_impedance</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#acoustic_impedance</gml:identifier>
             <gml:name>Acoustic Impedence</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -26,7 +26,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="anomaly_bouguer">
             <gml:description>A gravity anomaly, corrected for the height at which it is measured and the attraction of terrain. The height correction alone gives a free-air gravity anomaly.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#anomaly_bouguer</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#anomaly_bouguer</gml:identifier>
             <gml:name>Bouguer Anomaly</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -40,7 +40,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="anomaly_free_air">
             <gml:description>The measured gravity anomaly after a free-air correction is applied to account for the elevation at which a measurement is made. It does so by adjusting these measurements of gravity to what would have been measured at a reference level, which is commonly taken as mean sea level or the geoid.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#anomaly_free_air</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#anomaly_free_air</gml:identifier>
             <gml:name>Free Air Anamoly</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -54,7 +54,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="attenuation">
             <gml:description>The reduction of the amplitude of a signal, electric current, or other oscillation during propagation.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#attenuation</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#attenuation</gml:identifier>
             <gml:name>Attenuation</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -84,7 +84,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="borehole_diameter">
             <gml:description>The distance measured across an open borehole.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#borehole_diameter</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#borehole_diameter</gml:identifier>
             <gml:name>Borehole Diameter</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -98,7 +98,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="bulk_density">
             <gml:description>Total mass (of solids and water) divided by total volume of material, representing natural conditions</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#bulk_density</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#bulk_density</gml:identifier>
             <gml:name>Density, Bulk (Natural)</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -124,7 +124,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="capacitance">
             <gml:description>The measured capacitance which is the ratio of delta charge and delta potential</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#capacitance</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#capacitance</gml:identifier>
             <gml:name>Capacitance</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -138,7 +138,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="compressional_slowness">
             <gml:description>The time it takes for a compressional wave to traverse a fixed distance. The reciprocal of p_wave_velocity.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#compressional_slowness</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#compressional_slowness</gml:identifier>
             <gml:name>Compressional Slowness</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -152,7 +152,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="conductivity">
             <gml:description>A measure of the ability of a specified material to pass an electric current.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#conductivity</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#conductivity</gml:identifier>
             <gml:name>Electrical Conductivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -178,7 +178,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="dielectric_constant">
             <gml:description>The ratio of the permittivity of the medium to the permittivity of the free space</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#dielectric_constant</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#dielectric_constant</gml:identifier>
             <gml:name>Dielectric Constant</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -192,7 +192,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="dielectric_permittivity">
             <gml:description>The ability of a medium to hold an electric charge.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#dielectric_permittivity</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#dielectric_permittivity</gml:identifier>
             <gml:name>Dielectric Permittivity Of The Medium</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -206,7 +206,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="electric_field_x">
             <gml:description>The x component of an electric field.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#electric_field_x</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#electric_field_x</gml:identifier>
             <gml:name>X Component of Electric Field</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -224,7 +224,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="electric_field_y">
             <gml:description>The y component of an electric field.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#electric_field_y</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#electric_field_y</gml:identifier>
             <gml:name>Y Component of Electric Field</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -242,7 +242,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="electric_field_z">
             <gml:description>The z component of an electric field.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#electric_field_z</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#electric_field_z</gml:identifier>
             <gml:name>Z Component of Electric Field</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -256,7 +256,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="em_velocity">
             <gml:description>The velocity of electromagnetic wave propagation through a medium.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#em_velocity</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#em_velocity</gml:identifier>
             <gml:name>Electromagnetic Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -270,7 +270,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="flow_velocity">
             <gml:description>The rate of vertical flow of a fluid  within a borehole.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#flow_velocity</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#flow_velocity</gml:identifier>
             <gml:name>Flow Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -284,7 +284,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="gamma_ray">
             <gml:description>The intensity of natural gamma-ray radiation emitted from formations containing radioactive elements, such as Potassium, Thorium, and Uranium. Measured according to API specifications or as counts per time</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#gamma_ray</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#gamma_ray</gml:identifier>
             <gml:name>Gamma Ray</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -298,7 +298,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="gravity_absolute">
             <gml:description>The acceleration due to gravity (weight/mass) measured in absolute terms.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#gravity_absolute</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#gravity_absolute</gml:identifier>
             <gml:name>Absolute Gravitational Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -312,7 +312,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="gravity_gradient">
             <gml:description>The gradient in the gravitational forces acting on different parts of a nonspherical object.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#gravity_gradient</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#gravity_gradient</gml:identifier>
             <gml:name>Gravity Gradient</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -326,7 +326,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="gravity_relative">
             <gml:description>The acceleration due to gravity (weight/mass) measured measured relative to some absolute value.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#gravity_relative</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#gravity_relative</gml:identifier>
             <gml:name>Relative Gravitational Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -340,7 +340,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="in_phase_x">
             <gml:description>the x component of the in-phase wave component.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#in_phase_x</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#in_phase_x</gml:identifier>
             <gml:name>X Component of In Phase</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -358,7 +358,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="in_phase_y">
             <gml:description>the y component of the in-phase wave component.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#in_phase_y</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#in_phase_y</gml:identifier>
             <gml:name>Y Component of In Phase</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -376,7 +376,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="larmor_frequency">
             <gml:description>The hydrogen proton excitation from specific magnetic field frequency based on Earth's field.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#larmor_frequency</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#larmor_frequency</gml:identifier>
             <gml:name>Larmor Frequency</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -390,7 +390,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="mag_permeability">
             <gml:description>The ratio of the flux density to the magnetic field strength.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#mag_permeability</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#mag_permeability</gml:identifier>
             <gml:name>Magnetic Permeability</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -404,7 +404,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="magnetic_field_gradient">
             <gml:description>The magnetic field gradient.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#magnetic_field_gradient</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#magnetic_field_gradient</gml:identifier>
             <gml:name>Magnetic Field Gradient</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -418,7 +418,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="magnetic_field_total">
             <gml:description>Total strength of the magnetic field.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#magnetic_field_total</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#magnetic_field_total</gml:identifier>
             <gml:name>Total Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -432,7 +432,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="magnetic_field_x">
             <gml:description>The x component of a magnetic field.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#magnetic_field_x</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#magnetic_field_x</gml:identifier>
             <gml:name>X Component of Magnetic Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -450,7 +450,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="magnetic_field_y">
             <gml:description>The y component of a magnetic field.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#magnetic_field_y</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#magnetic_field_y</gml:identifier>
             <gml:name>Y Component of Magnetic Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -468,7 +468,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="magnetic_field_z">
             <gml:description>The z component of a magnetic field.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#magnetic_field_z</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#magnetic_field_z</gml:identifier>
             <gml:name>Z Component of Magnetic Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -486,7 +486,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="magnetic_susceptibility">
             <gml:description>The degree to which a material becomes magnetized in response to an applied magnetic field.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#magnetic_susceptibility</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#magnetic_susceptibility</gml:identifier>
             <gml:name>Magnetic Susceptibility</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -504,7 +504,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="modulus_bulk">
             <gml:description>Bulk modulus, denoted by K or B, is defined as a measure of how resistant to compression a substance is.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#modulus_bulk</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#modulus_bulk</gml:identifier>
             <gml:name>Bulk Modulus</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -530,7 +530,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="modulus_shear">
             <gml:description>Shear modulus, denoted by G, is defined as the ratio of shear stress to the shear strain.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#modulus_shear</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#modulus_shear</gml:identifier>
             <gml:name>Shear Modulus</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -556,7 +556,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="modulus_youngs">
             <gml:description>The tangent modulus of the initial, linear portion of a stress-strain curve for material in axial compression or tension is called Young's modulus, also known as the tensile (compression) modulus. It is defined as the ratio of the uniaxial stress over the uniaxial strain in the range of stress in which Hooke's Law holds.  It is often calculated using theory of elasticity from other tests.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#modulus_youngs</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#modulus_youngs</gml:identifier>
             <gml:name>Young's Modulus</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -574,7 +574,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="number_beta_particles">
             <gml:description>The amount of detected beta particles in a given time.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#number_beta_particles</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#number_beta_particles</gml:identifier>
             <gml:name>Number of Beta Particles</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -588,7 +588,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="number_gamma_particles">
             <gml:description>The amount of detected gamma particles in a given time.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#number_gamma_particles</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#number_gamma_particles</gml:identifier>
             <gml:name>Number of Gamma Particles</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -602,7 +602,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="p_wave_velocity">
             <gml:description>The velocity of a p-wave (Vp). P-waves (primary waves) are compressional waves that are longitudinal in nature.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#p_wave_velocity</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#p_wave_velocity</gml:identifier>
             <gml:name>Primary Compression Wave Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -632,7 +632,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="poisson_ratio">
             <gml:description>Ratio of the transverse contraction of a body to its longitudinal extension when stretched. Typical values in minerals are from 0.15 to 0.3 (Carbonates:0.15, Sandstones:0.2, Shales:0.25).</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#poisson_ratio</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#poisson_ratio</gml:identifier>
             <gml:name>Poisson Ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -662,7 +662,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="electrodiffusion_potential">
             <gml:description>A measure of transient background potentials that come from the difference in electrolyte mobilities within porous media</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#electrodiffusion_potential</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#electrodiffusion_potential</gml:identifier>
             <gml:name>Electrodiffusion Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -676,7 +676,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="electric_potential">
             <gml:description>A measure of the amount of work energy needed per unit of electric charge to move the charge from a reference point to a specific point in an electric field.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#electric_potential</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#electric_potential</gml:identifier>
             <gml:name>Electric Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -694,7 +694,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="kinetic_potential">
             <gml:description>A measure of the potential that forms from electrolytes flowing through a porous medium</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#kinetic_potential</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#kinetic_potential</gml:identifier>
             <gml:name>Electrokinetic Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -708,7 +708,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="mineral_potential">
             <gml:description>A measure of the potential from mineral deposit sources</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#mineral_potential</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#mineral_potential</gml:identifier>
             <gml:name>Mineral Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -722,7 +722,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="nerst_potential">
             <gml:description>The potential difference between two electrodes immersed in a homogeonous medium in which local concentration differ</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#nerst_potential</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#nerst_potential</gml:identifier>
             <gml:name>Nerst Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -736,7 +736,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="redox_potential">
             <gml:description>A measure of the ability of chemical/biochemical systems to oxidize (lose electrons) or reduce (gain electrons).</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#redox_potential</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#redox_potential</gml:identifier>
             <gml:name>Redox Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -750,7 +750,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="quadrature_x">
             <gml:description>The x component of the quadrature component (90 degrees out of phase) of transmitted EM energy.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#quadrature_x</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#quadrature_x</gml:identifier>
             <gml:name>X Component Of Quadrature</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -764,7 +764,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="quadrature_y">
             <gml:description>The y component of the quadrature component (90 degrees out of phase) of transmitted EM energy.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#quadrature_y</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#quadrature_y</gml:identifier>
             <gml:name>Y Component Of Quadrature</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -778,7 +778,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="radiation_energy">
             <gml:description>Radiant energy emitted by radioactive source</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#radiation_energy</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#radiation_energy</gml:identifier>
             <gml:name>Radiation Energy</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -792,7 +792,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="reflection_coefficient">
             <gml:description>the ratio of amplitude of the reflected wave to the incident wave</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#reflection_coefficient</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#reflection_coefficient</gml:identifier>
             <gml:name>Reflection Coefficient</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -806,7 +806,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="resistance">
             <gml:description>The property by which a conductor opposes the flow of electrons, precisely electric current. It is the ratio of voltage to the electric current applied on an electronic device. Resistance is a physical property of the material, and hence, it depends upon the material type. It also depends upon the length and cross-sectional area of the material to which the current is applied. For a material, resistance is proportional to the length and inversely proportional to its cross-sectional area.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#resistance</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#resistance</gml:identifier>
             <gml:name>Electrical Resistance</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -820,7 +820,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="resistivity">
             <gml:description>The resisting property of the material when the current is applied through it and is defined as the resistance per unit length for a unit cross-section of material. Resistivity is directly proportional to temperature.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#resistivity</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#resistivity</gml:identifier>
             <gml:name>Electrical Resistivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -850,7 +850,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="resistivity_app">
             <gml:description>Resistivity between electrodes.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#resistivity_app</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#resistivity_app</gml:identifier>
             <gml:name>Apparent Resistivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -880,7 +880,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="shear_slowness">
             <gml:description>Acoustic slowness of a shear wave (Vs); reciprocal of Shear_Velocity; a shear wave is a type of seismic wave in which the particle motion is perpendicular to the direction of propagation; also called S-wave or secondary wave.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#shear_slowness</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#shear_slowness</gml:identifier>
             <gml:name>Shear Slowness</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -894,7 +894,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="shear_velocity">
             <gml:description>The velocity of a shear wave (Vs); a shear wave is a type of seismic wave in which the particle motion is perpendicular to the direction of propagation in a horizontal plane ; also called S-wave or secondary wave.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#shear_velocity</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#shear_velocity</gml:identifier>
             <gml:name>Shear Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -924,7 +924,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="sonic_porosity">
             <gml:description>A measure of porosity (defined as the percentage of empty space within a medium) made by comparing the velocity measued by an acoustic logging tool to velocities of the soil/rock matrix and borehole fluid.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#sonic_porosity</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#sonic_porosity</gml:identifier>
             <gml:name>Sonic Porosity</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -938,7 +938,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="spontaneous_potential">
             <gml:description>Also called self potential, is a naturally occurring electric potential difference in the Earth, measured by an electrode relative to a fixed reference electrode. Spontaneous potentials are usually caused by charge separation in clay or other minerals, due to presence of semi-permeable interface impeding the diffusion of ions through the pore space of rocks, or by natural flow of a conducting fluid through the rocks.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#spontaneous_potential</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#spontaneous_potential</gml:identifier>
             <gml:name>Spontaneous Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -952,7 +952,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="t1">
             <gml:description>The time constant for regrowth of longitudinal magnetization (Mz)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#t1</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#t1</gml:identifier>
             <gml:name>T1 Time Constant</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -966,7 +966,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="t1_relaxation">
             <gml:description>The time required for the z-component of M to reach (1 − 1/e) or about 63% of its maximum value (Mo).</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#t1_relaxation</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#t1_relaxation</gml:identifier>
             <gml:name>Longitudinal (Spin-Lattice) Relaxation</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -980,7 +980,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="t2">
             <gml:description>The time constant for decay/dephasing of transverse magnetization (Mxy)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#t2</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#t2</gml:identifier>
             <gml:name>T2 Time Constant</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -994,7 +994,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="t2_relaxation">
             <gml:description>The time required for the transverse magnetization to fall to approximately 37% (1/e) of its initial value.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#t2_relaxation</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#t2_relaxation</gml:identifier>
             <gml:name>Transverse (Spin-Spin) Relaxation</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -1008,7 +1008,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="temperature">
             <gml:description>The measure of hotness or coldness,.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#temperature</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#temperature</gml:identifier>
             <gml:name>Temperature</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -1022,7 +1022,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="tension">
             <gml:description>The force tending to cause extension of a body, as experienced in a cable, rope, string, etc.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#tension</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#tension</gml:identifier>
             <gml:name>Tension</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -1036,7 +1036,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="tensor_impedance_x">
             <gml:description>The x component of the magnetotelluric impedence tensor.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#tensor_impedance_x</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#tensor_impedance_x</gml:identifier>
             <gml:name>X Component of Tensor Impedance</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -1050,7 +1050,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="tensor_impedance_y">
             <gml:description>The y component of the magnetotelluric impedence tensor.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#tensor_impedance_y</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#tensor_impedance_y</gml:identifier>
             <gml:name>Y Component of Tensor Impedance</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -1064,7 +1064,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="tensor_impedance_z">
             <gml:description>The z component of the magnetotelluric impedence tensor.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#tensor_impedance_z</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#tensor_impedance_z</gml:identifier>
             <gml:name>Z Component of Tensor Impedance</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -1078,7 +1078,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="tube_wave_velocity">
             <gml:description>Wave velocity that propagates along a steel-cased borehole</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#tube_wave_velocity</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#tube_wave_velocity</gml:identifier>
             <gml:name>Tube Wave Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -1092,7 +1092,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="wall_amp">
             <gml:description>amplitude of borehole wall signals</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#wall_amp</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#wall_amp</gml:identifier>
             <gml:name>Borehole Wall Amplitude</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
@@ -1106,7 +1106,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="wall_image_r">
             <gml:description>Borehole wall color image R pixel value</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#wall_image_r</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#wall_image_r</gml:identifier>
             <gml:name>Image R value</gml:name>
             <diggs:dataType>integer</diggs:dataType>
             <diggs:occurrences>
@@ -1120,7 +1120,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="wall_image_g">
             <gml:description>Borehole wall color image G pixel value</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#wall_image_g</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#wall_image_g</gml:identifier>
             <gml:name>Image G value</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
@@ -1134,7 +1134,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="wall_image_b">
             <gml:description>Borehole wall color image B pixel value</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#wall_image_b</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#wall_image_b</gml:identifier>
             <gml:name>Image B value</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
@@ -1148,7 +1148,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="wall_time">
             <gml:description>The  two-way time required for a sesimic wave to travel from the source to the borehole wall</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS?0.1/geophysics_properties.xml#wall_time</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/geophysics_properties.xml#wall_time</gml:identifier>
             <gml:name>Borehole Wall Travel Time</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
