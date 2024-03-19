@@ -3,8 +3,8 @@
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="uscsGroup">
     <gml:description>Unified Soil Classification System (USCS) group symbol codes as defined by ASTM D2487 and ASTM D2488. These codes are used as values for the classificationSymbol property of the Lithology object.</gml:description>
-    <gml:name>DIGGS Unified Soil Classification Group Symbol Definitions (ASTM D2487 and ASTM D2488)</gml:name>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">uscsGroup.xml</gml:identifier>
+    <gml:name>DIGGS Unified Soil Classification Group Symbol Definitions (ASTM D2487 and ASTM D2488)</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CH">
             <gml:description>Fat clay</gml:description>

@@ -3,8 +3,8 @@
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="usda">
     <gml:description>Soil textural classsification codes based on the U.S. Department of Agriculture soil textural triangle for soil material &lt; 2 mm diameter. These codes are used for the value of the classificationCode property of the Lithology object.</gml:description>
-    <gml:name>DIGGS USDA Soil Texture Classification Codelist Definitionss</gml:name>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">usda.xml</gml:identifier>
+    <gml:name>DIGGS USDA Soil Texture Classification Codelist Definitionss</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="LFS">
             <gml:description>Between 70 and 91 percent sand and the percentage of silt plus 1.5 times the percentage of clay is 15 or more; and the percentage of silt plus twice the percentage of clay is less than 30. 50 percent or more fine (0.25-0.1 mm diameter) sand or less than 50 percent very fine (0.1-0.05 mm diameter) sand and a total of less than 25 percent very coarse  (2-1 mm diameter), coarse (1-0.5 mm diameter), and medium (0.5-0.25 mm diameter) sand.</gml:description>

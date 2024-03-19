@@ -3,8 +3,8 @@
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="properties">
     <gml:description>This dictionary contains the values for the propertyClass property of the diggs:Property object and the measurand property of the diggs:Detector object when used within the Test and Monitor DIGGS features. These values serve to define the ultimate results of geotechnical and environmental tests and monitoring activities that result from test procedures and monitoring sensors. The Xpaths to these occurrences are: 1) //diggs:Property/diggs:propertyClass (for Test, MaterialTest or Monitor) 2)//diggs:Detector/diggs:measurand (for measurand).</gml:description>
-    <gml:name>DIGGS Measurement Properties</gml:name>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">properties.xml</gml:identifier>
+    <gml:name>DIGGS Measurement Properties</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="a_pressure">
             <gml:description>The gauge gas pressure against the inside of the membrane when the center of the membrane has lifted above its support and moved laterally 0.05-mm (tolerance +0.02, -0.00 mm) into the soil surrounding the blade.</gml:description>
