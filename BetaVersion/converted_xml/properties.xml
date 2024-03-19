@@ -230,7 +230,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="water_depth_calc">
-            <gml:description>Depth to water calculated from measured equilibrium pore pressure</gml:description>
+            <gml:description>Depth to water calculated from measured equilibrium pore pressure.  Note: it is preferable to use water_depth as the propertyClass with the measurementTechnique property of the Property element set to &quot;calculated&quot;, instead.</gml:description>
             <gml:identifier gml:codeSpace="http://diggsml.org">Calculated Depth To Water</gml:identifier>
             <gml:name>Calculated Depth To Water</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -244,7 +244,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="water_elev_calc">
-            <gml:description>Water elevation calculated from measured equilibrium pore pressure</gml:description>
+            <gml:description>Water elevation calculated from measured equilibrium pore pressure. Note: it is preferable to use water_elevation as the propertyClass with the measurementTechnique property of the Property element set to &quot;calculated&quot;, instead.</gml:description>
             <gml:identifier gml:codeSpace="http://diggsml.org">Calculated Water Elevation</gml:identifier>
             <gml:name>Calculated Water Elevation</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -752,7 +752,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="pore_pressure_equil">
-            <gml:description>the value of pore pressure measured in the field after dissipation of induced excess pore pressure. Could also be from CPTu test</gml:description>
+            <gml:description>The value of pore pressure measured in the field after dissipation of induced excess pore pressure. Could also be from CPTu test</gml:description>
             <gml:identifier gml:codeSpace="http://diggsml.org">Equilibrium Pore Water Pressure (U0)</gml:identifier>
             <gml:name>Equilibrium Pore Water Pressure (U0)</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -783,7 +783,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="water_depth_estimated">
-            <gml:description>Estimate of water depth from insitu measurement (eg CPT, DMT)</gml:description>
+            <gml:description>Estimate of water depth from insitu measurement (eg CPT, DMT). Note: it is preferable to use water_depth as the propertyClass with the measurementTechnique property qualifer (eg. &quot;extrapolated&quot;. &quot;inferred&quot;), instead.</gml:description>
             <gml:identifier gml:codeSpace="http://diggsml.org">Estimated Water Depth</gml:identifier>
             <gml:name>Estimated Water Depth</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -797,7 +797,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="water_elev_estimated">
-            <gml:description>Estimate of water elevation from insitu measurement (eg CPT, DMT)</gml:description>
+            <gml:description>Estimate of water elevation from insitu measurement (eg CPT, DMT). Note: it is preferable to use water_elevation as the propertyClass with the measurementTechnique property qualifer (eg. &quot;extrapolated&quot;. &quot;inferred&quot;), instead.</gml:description>
             <gml:identifier gml:codeSpace="http://diggsml.org">Estimated Water Elevaton</gml:identifier>
             <gml:name>Estimated Water Elevaton</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -831,6 +831,9 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:authority>nan</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
@@ -1377,6 +1380,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1414,6 +1420,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1425,6 +1434,9 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:authority>nan</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
@@ -1525,6 +1537,9 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:authority>nan</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
@@ -1719,6 +1734,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1744,6 +1762,9 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:authority>nan</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
@@ -2076,7 +2097,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="syneresis">
-            <gml:description>Thec ontraction of a gel accompanied by the separating out of liquid. It is calculated as a percent of volume or mass loss.</gml:description>
+            <gml:description>The contraction of a gel accompanied by the separating out of liquid. It is calculated as a percent of volume or mass loss.</gml:description>
             <gml:identifier gml:codeSpace="http://diggsml.org">Syneresis</gml:identifier>
             <gml:name>Syneresis</gml:name>
             <diggs:dataType>double</diggs:dataType>
