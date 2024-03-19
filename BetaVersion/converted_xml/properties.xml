@@ -11,6 +11,8 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">A-Pressure</gml:identifier>
             <gml:name>A-Pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:reference>DIGGS</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
