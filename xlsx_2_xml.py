@@ -12,7 +12,7 @@ def xlsx_2_xml(excel_file_path):
     dictionary_id = dictionary_name_df['Dictionary ID'].dropna().iloc[0].strip()
 
     # Construct the XML file path using the extracted name
-    xml_file_path = f'/workspaces/def/codes/DIGGS/0.1/{dictionary_file}.xml'
+    xml_file_path = f'/workspaces/def/docs/codes/DIGGS/0.1{dictionary_file}.xml'
 
     # Read the 'Definitions' and 'AssociatedElements' sheets for data
     definitions_df = pd.read_excel(excel_file_path, sheet_name='Definitions')
