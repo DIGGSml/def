@@ -181,7 +181,7 @@
               <xsl:sort select="./gml:identifier"/>
               <tr>
                 <td>
-                  <xsl:value-of select="./gml:identifier"/>
+                  <xsl:value-of select="./gml:name"/>
                 </td>
                 <td>
                   <xsl:value-of select="@gml:id"/>
