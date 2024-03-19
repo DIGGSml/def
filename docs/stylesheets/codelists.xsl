@@ -133,7 +133,7 @@
           }
           
           .hiddenFlds {
-          display: none;
+          display: inline;
           }
           
         </style>
