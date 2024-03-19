@@ -53,14 +53,14 @@ def xlsx_2_xml(excel_file_path):
     description = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'description'))
     description.text = description_text
 
-    # Add sub-elements like description and identifier with the gml prefix
-    name = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'name'))
-    name.text = dictionary_name
-
-
     # Corrected identifier element: Removed gml prefix from codeSpace attribute
     identifier = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'identifier'), attrib={'codeSpace': "https://diggsml.org/def/authorities.xml#DIGGS"})
     identifier.text = dictionary_file + ".xml"
+
+    # Add sub-element name with the gml prefix
+    name = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'name'))
+    name.text = dictionary_name
+
 
     # Populate the XML with data from the 'Definitions' sheet, using the 'gml' prefix for GML elements
     for _, row in definitions_df.iterrows():
@@ -71,7 +71,7 @@ def xlsx_2_xml(excel_file_path):
         if pd.notna(row['Description']) and row['Description'].strip():
             ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'description')).text = row['Description'].strip()
         if pd.notna(row['Name']) and row['Name'].strip():
-            identifier_attrib = {'codeSpace': "http://diggsml.org"}
+            identifier_attrib = {'codeSpace': "https://diggsml.org/def/authorities.xml#DIGGS"}
             identifier = ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'identifier'), attrib=identifier_attrib)
             identifier.text = row['Name'].strip()
             ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'name')).text = row['Name'].strip()
@@ -79,6 +79,8 @@ def xlsx_2_xml(excel_file_path):
             ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'dataType')).text = str(row['DataType']).strip()
         if pd.notna(row['Authority']) and row['Authority'].strip():
             ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'authority')).text = str(row['Authority']).strip()
+        if pd.notna(row['Reference']) and row['Reference'].strip():
+            ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'reference')).text = str(row['Reference']).strip()
 
 
     for _, row in associated_elements_df.iterrows():

@@ -3,12 +3,12 @@
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="roles">
     <gml:description>DIGGS standard code list for the rolePerformed property of the Role object, which can occur in various locations in a DIGGS instance. The context for allowable codes is given by the Source Element Xpath identifying which specific rolePerformed instances may use a specific code value.</gml:description>
-    <gml:name>DIGGS Roles Codelist</gml:name>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">roles.xml</gml:identifier>
+    <gml:name>DIGGS Roles Codelist</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="operator">
             <gml:description>Person operating equipment (drill rig/CPT rig)</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Operator</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Operator</gml:identifier>
             <gml:name>Operator</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -22,7 +22,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="logger">
             <gml:description>Person recording the data</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Logger</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Logger</gml:identifier>
             <gml:name>Logger</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -36,7 +36,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="drilling_contractor">
             <gml:description>Company who is performing the drilling operations</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Drilling Contractor</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Drilling Contractor</gml:identifier>
             <gml:name>Drilling Contractor</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -50,7 +50,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="insitu_contractor">
             <gml:description>Company who is performing the insitu testing operations</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Insitu Contractor</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Insitu Contractor</gml:identifier>
             <gml:name>Insitu Contractor</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -64,7 +64,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="laboratory_name">
             <gml:description>Company who is performing the lab testing</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Laboratory Name</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Laboratory Name</gml:identifier>
             <gml:name>Laboratory Name</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -78,7 +78,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="project_engineer">
             <gml:description>Person working on a project</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Project Engineer</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Project Engineer</gml:identifier>
             <gml:name>Project Engineer</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -92,7 +92,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="project_manager">
             <gml:description>Person responsible for the project</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Project Manager</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Project Manager</gml:identifier>
             <gml:name>Project Manager</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -106,7 +106,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="checked_by">
             <gml:description>Person checking the associated data</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Checked By</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Checked By</gml:identifier>
             <gml:name>Checked By</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -120,7 +120,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="prepared_by">
             <gml:description>Person inputting the data</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Prepared By</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Prepared By</gml:identifier>
             <gml:name>Prepared By</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -134,7 +134,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="calculated_by">
             <gml:description>Person performing calculations on the data (do we really need this)?</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Calculated By</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Calculated By</gml:identifier>
             <gml:name>Calculated By</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -148,7 +148,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="tested_by">
             <gml:description>Person performing the lab testing</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Tested By</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Tested By</gml:identifier>
             <gml:name>Tested By</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -162,7 +162,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="owner">
             <gml:description>Company who owns the infrastructure associated with the project</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Owner</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Owner</gml:identifier>
             <gml:name>Owner</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -176,7 +176,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="client">
             <gml:description>Company for whom the work is being performed</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Client</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Client</gml:identifier>
             <gml:name>Client</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -190,7 +190,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="helper">
             <gml:description>Person assisting with the equipment (drill rig/CPT rig)</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Helper</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Helper</gml:identifier>
             <gml:name>Helper</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>

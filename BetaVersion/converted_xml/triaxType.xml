@@ -3,12 +3,12 @@
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="triaxType">
     <gml:description>Test type codes for triaxial test procedures. These codes are used as values for the triaxialTestType property of the TriaxialTest procedure object.</gml:description>
-    <gml:name>DIGGS Triaxial Test Type Code List Definitions</gml:name>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">triaxType.xml</gml:identifier>
+    <gml:name>DIGGS Triaxial Test Type Code List Definitions</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="UNC">
             <gml:description>Unconfined Compressive test</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Unconfined Compressive test</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Unconfined Compressive test</gml:identifier>
             <gml:name>Unconfined Compressive test</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -22,7 +22,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="UU">
             <gml:description>Single point UU Triaxial - quick test</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Unconsolidated quick undrained (single stage)</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Unconsolidated quick undrained (single stage)</gml:identifier>
             <gml:name>Unconsolidated quick undrained (single stage)</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -36,7 +36,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="UUM">
             <gml:description>Multi point UU Triaxial test</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Unconsolidated quick undrained (multi-stage)</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Unconsolidated quick undrained (multi-stage)</gml:identifier>
             <gml:name>Unconsolidated quick undrained (multi-stage)</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -50,7 +50,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CADC">
             <gml:description>Anisotropically consolidated drained compression with pwp measurement</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Anisotropically consolidated drained compression with pwp measurement</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Anisotropically consolidated drained compression with pwp measurement</gml:identifier>
             <gml:name>Anisotropically consolidated drained compression with pwp measurement</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -64,7 +64,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CADE">
             <gml:description>Anisotropically consolidated drained extension with pwp measurement</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Anisotropically consolidated drained extension with pwp measurement</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Anisotropically consolidated drained extension with pwp measurement</gml:identifier>
             <gml:name>Anisotropically consolidated drained extension with pwp measurement</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -78,7 +78,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CAUC">
             <gml:description>Anisotropically consolidated undrained compression with pwp measurement</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Anisotropically consolidated undrained compression with pwp measurement</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Anisotropically consolidated undrained compression with pwp measurement</gml:identifier>
             <gml:name>Anisotropically consolidated undrained compression with pwp measurement</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -92,7 +92,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CAUE">
             <gml:description>Anisotropically consolidated undrained extension with pwp measurement</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Anisotropically consolidated undrained extension with pwp measurement</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Anisotropically consolidated undrained extension with pwp measurement</gml:identifier>
             <gml:name>Anisotropically consolidated undrained extension with pwp measurement</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -106,7 +106,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CD">
             <gml:description>Consolidated drained (single stage)</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Consolidated drained (single stage)</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Consolidated drained (single stage)</gml:identifier>
             <gml:name>Consolidated drained (single stage)</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -120,7 +120,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CDM">
             <gml:description>Consolidated drained (multi-stage)</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Consolidated drained (multi-stage)</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Consolidated drained (multi-stage)</gml:identifier>
             <gml:name>Consolidated drained (multi-stage)</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -134,7 +134,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CIDC">
             <gml:description>Isotropically consolidated drained compression with pwp measurement</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Isotropically consolidated drained compression with pwp measurement</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Isotropically consolidated drained compression with pwp measurement</gml:identifier>
             <gml:name>Isotropically consolidated drained compression with pwp measurement</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -148,7 +148,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CIDE">
             <gml:description>Isotropically consolidated drained extension with pwp measurement</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Isotropically consolidated drained extension with pwp measurement</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Isotropically consolidated drained extension with pwp measurement</gml:identifier>
             <gml:name>Isotropically consolidated drained extension with pwp measurement</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -162,7 +162,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CU">
             <gml:description>Consolidated undrained with pwp measurement (single stage)</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Consolidated undrained with pwp measurement (single stage)</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Consolidated undrained with pwp measurement (single stage)</gml:identifier>
             <gml:name>Consolidated undrained with pwp measurement (single stage)</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -176,7 +176,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="CUM">
             <gml:description>Consolidated undrained with pwp measurement (multi-stage)</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Consolidated undrained with pwp measurement (multi-stage)</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Consolidated undrained with pwp measurement (multi-stage)</gml:identifier>
             <gml:name>Consolidated undrained with pwp measurement (multi-stage)</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
@@ -190,7 +190,7 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="UUP">
             <gml:description>Unconsolidated undrained with pwp measurement</gml:description>
-            <gml:identifier codeSpace="http://diggsml.org">Unconsolidated undrained with pwp measurement</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">Unconsolidated undrained with pwp measurement</gml:identifier>
             <gml:name>Unconsolidated undrained with pwp measurement</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
