@@ -118,7 +118,7 @@
           }
           
           #myInput {
-          background-image: url('/img/searchIcon.png');
+          background-image: url('https://diggsml.org/def/img/searchIcon.png');
           background-size: 30px;
           background-position: 8px 6px; /* Position the search icon */
           background-color: none;
