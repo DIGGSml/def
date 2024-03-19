@@ -56,7 +56,7 @@ def xlsx_2_xml(excel_file_path):
 
     # Corrected identifier element: Removed gml prefix from codeSpace attribute
     identifier = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'identifier'), attrib={'codeSpace': "https://diggsml.org/def/authorities.xml#DIGGS"})
-    identifier.text = "https://diggsml.org/def/codes/DIGGS?0.1/" + dictionary_file + ".xml"
+    identifier.text = "https://diggsml.org/def/codes/DIGGS/0.1/" + dictionary_file + ".xml"
 
     # Add sub-element name with the gml prefix
     name = ET.SubElement(root, ET.QName(NS_MAP['gml'], 'name'))
@@ -74,7 +74,7 @@ def xlsx_2_xml(excel_file_path):
         if pd.notna(row['Name']) and row['Name'].strip():
             identifier_attrib = {'codeSpace': "https://diggsml.org/def/authorities.xml#DIGGS"}
             identifier = ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'identifier'), attrib=identifier_attrib)
-            identifier.text = "https://diggsml.org/def/codes/DIGGS?0.1/" + dictionary_file + ".xml#" + row['ID'].strip()
+            identifier.text = "https://diggsml.org/def/codes/DIGGS/0.1/" + dictionary_file + ".xml#" + row['ID'].strip()
             ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'name')).text = row['Name'].strip()
         if pd.notna(row['DataType']) and row['DataType'].strip():
             ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'dataType')).text = str(row['DataType']).strip()
