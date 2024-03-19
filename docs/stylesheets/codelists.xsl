@@ -103,8 +103,8 @@
           
           #instance {
           text-align: center;
-          font-size: 20px;
-          font-family: 'Crimson Text', serif;
+          font-size: 14px;
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
           color: black;
           font-weight: bold;
           border: 2px solid black;
