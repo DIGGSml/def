@@ -169,7 +169,7 @@
         <div class="fixed_header">
           <table id="myTable">
             <tr>
-              <th>Identifier</th>
+              <th>Name</th>
               <th>ID</th>
               <th>Definition</th>
               <th>Source Element XPath</th>
