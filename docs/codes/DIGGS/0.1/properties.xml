@@ -858,7 +858,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:FlameIonizationDetectorTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>//diggs_geo:FlameIonizationDetectorTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
