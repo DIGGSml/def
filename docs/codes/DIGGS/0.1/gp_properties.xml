@@ -13,12 +13,12 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -31,8 +31,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -45,8 +45,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -59,23 +59,23 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -89,7 +89,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -103,19 +103,19 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -129,8 +129,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;induced polarization (IP)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;induced polarization (IP)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -143,7 +143,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -157,19 +157,19 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;ground penetrating radar (GPR)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;ground penetrating radar (GPR)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -183,8 +183,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;ground penetrating radar (GPR)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;ground penetrating radar (GPR)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -197,8 +197,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;ground penetrating radar (GPR)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;ground penetrating radar (GPR)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -211,12 +211,12 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -229,12 +229,12 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -247,8 +247,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -261,8 +261,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;ground penetrating radar (GPR)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;ground penetrating radar (GPR)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -275,7 +275,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -289,7 +289,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -303,8 +303,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -317,8 +317,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -331,8 +331,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;gravity&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -345,12 +345,12 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -363,12 +363,12 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -381,8 +381,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -395,8 +395,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -409,8 +409,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -423,8 +423,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -437,12 +437,12 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -455,12 +455,12 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -473,12 +473,12 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -491,11 +491,11 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magnetometry&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -509,20 +509,20 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -535,20 +535,20 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -561,12 +561,12 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -579,8 +579,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;radiometric&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;radiometric&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -593,8 +593,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;radiometric&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;radiometric&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -607,23 +607,23 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -637,23 +637,23 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -667,8 +667,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -681,12 +681,12 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;electrical resistivity (ERI/ERT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;electrical resistivity (ERI/ERT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -699,8 +699,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -713,8 +713,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -727,8 +727,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -741,8 +741,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;self-potential (SP)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -755,8 +755,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -769,8 +769,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -783,8 +783,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;radiometric&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;radiometric&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -797,8 +797,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -811,7 +811,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -825,23 +825,23 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;electrical resistivity (ERI/ERT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;electrical resistivity (ERI/ERT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;frequency domain EM (FDEM)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;time-domain EM (TEM)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;time-domain EM (TEM)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -855,24 +855,24 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;electrical resistivity (ERI/ERT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;electrical resistivity (ERI/ERT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;induced polarization (IP)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;induced polarization (IP)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;time-domain EM (TEM)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;time-domain EM (TEM)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;VLF EM&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -885,7 +885,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -899,23 +899,23 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - active&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;MASW - passive&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic reflection&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;seismic refraction&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -929,7 +929,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -943,7 +943,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -957,8 +957,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -971,8 +971,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -985,8 +985,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -999,8 +999,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;nuclear magnetic resonance (NMR)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1013,7 +1013,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -1027,7 +1027,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -1041,8 +1041,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1055,8 +1055,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1069,8 +1069,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;magneotellurics (MT)&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1083,7 +1083,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>//diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -1097,8 +1097,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;borehole image log&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;borehole image log&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1111,8 +1111,8 @@
             <diggs:dataType>integer</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;borehole image log&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;borehole image log&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1125,8 +1125,8 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;borehole image log&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;borehole image log&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1139,8 +1139,8 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;borehole image log&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;borehole image log&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1153,8 +1153,8 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>//diggs:ProcessedGeophysicalSurvey/diggs:geophysicalMethod[text()=&quot;borehole image log&quot;]</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;borehole image log&quot;]</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
