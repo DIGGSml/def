@@ -78,7 +78,9 @@ def xlsx_2_xml(excel_file_path):
             ET.SubElement(definition, ET.QName(NS_MAP['gml'], 'name')).text = row['Name'].strip()
         if pd.notna(row['DataType']) and row['DataType'].strip():
             ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'dataType')).text = str(row['DataType']).strip()
-        if pd.notna(row['Authority']) and row['Authority'].strip():
+         if pd.notna(row['QuantityClass']) and row['QuantityClass'].strip():
+            ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'quantityClass')).text = str(row['QuantityClass']).strip()
+       if pd.notna(row['Authority']) and row['Authority'].strip():
             ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'authority')).text = str(row['Authority']).strip()
         if pd.notna(row['Reference']) and row['Reference'].strip():
             ET.SubElement(definition, ET.QName(NS_MAP['diggs'], 'reference')).text = str(row['Reference']).strip()
