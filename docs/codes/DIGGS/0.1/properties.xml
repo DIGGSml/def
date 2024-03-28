@@ -11,6 +11,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#a_pressure</gml:identifier>
             <gml:name>A-Pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -25,6 +26,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_abrasion_value</gml:identifier>
             <gml:name>Aggregate Abrasion Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -39,6 +41,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_crushing_value</gml:identifier>
             <gml:name>Aggregate Crushing Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -53,6 +56,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_elongation_index</gml:identifier>
             <gml:name>Aggregate Elongation Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -67,6 +71,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_flakiness_index</gml:identifier>
             <gml:name>Aggregate Flakiness Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -81,6 +86,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_impact_value</gml:identifier>
             <gml:name>Aggregate Impact Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -95,6 +101,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_LA_abrasion_loss</gml:identifier>
             <gml:name>Aggregate Los Angeles Abrasion Loss</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -109,6 +116,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_la_coefficient</gml:identifier>
             <gml:name>Aggregate Los Angeles Coefficient</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -123,6 +131,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_la_wear_ratio</gml:identifier>
             <gml:name>Aggregate Los Angeles Wear Ratio</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -137,6 +146,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_polished_stone_value</gml:identifier>
             <gml:name>Aggregate Polished Stone Value</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -151,6 +161,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_water_absorption</gml:identifier>
             <gml:name>Aggregate Water Absorption</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -165,6 +176,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#specific_gravity_apparent</gml:identifier>
             <gml:name>Apparent Specific Gravity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -179,6 +191,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#b_pressure</gml:identifier>
             <gml:name>B-Pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -193,6 +206,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bleed</gml:identifier>
             <gml:name>Bleed</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -207,6 +221,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#specific_gravity_bulk</gml:identifier>
             <gml:name>Bulk Specific Gravity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -221,6 +236,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#c_pressure</gml:identifier>
             <gml:name>C-Pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -235,6 +251,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_depth_calc</gml:identifier>
             <gml:name>Calculated Depth To Water</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -249,6 +266,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_elev_calc</gml:identifier>
             <gml:name>Calculated Water Elevation</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -263,6 +281,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#chalk_crushing_value</gml:identifier>
             <gml:name>Chalk Crushing Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -277,6 +296,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#chloride_content</gml:identifier>
             <gml:name>Chloride Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -291,6 +311,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#clay_percent_2_micron</gml:identifier>
             <gml:name>Clay Fraction &lt; 2 Micron</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -305,6 +326,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#clay_percent_5_micron</gml:identifier>
             <gml:name>Clay Fraction &lt; 5 Micron</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -319,6 +341,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_curvature</gml:identifier>
             <gml:name>Coefficient of Curvature</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -337,6 +360,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_earth_pressure</gml:identifier>
             <gml:name>Coefficient of Earth Pressure, In Situ</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -355,6 +379,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_consolidation_horiz</gml:identifier>
             <gml:name>Coefficient of Horizontal Consolidation (Ch)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>area per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -373,6 +398,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_permeability</gml:identifier>
             <gml:name>Coefficient of Permeability</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -399,6 +425,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_permeability_corrected</gml:identifier>
             <gml:name>Coefficient of Permeability, Corrected</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -413,6 +440,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_uniformity</gml:identifier>
             <gml:name>Coefficient of Uniformity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -431,6 +459,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_consolidation_vertical</gml:identifier>
             <gml:name>Coefficient of Vertical Consolidation(Cv)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>area per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -445,6 +474,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#colloid_percent</gml:identifier>
             <gml:name>Colloid Fraction</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -459,6 +489,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#compression_index</gml:identifier>
             <gml:name>Compression Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -473,6 +504,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#conductivity</gml:identifier>
             <gml:name>Conductivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric conductivity</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -487,6 +519,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#consistency_index</gml:identifier>
             <gml:name>Consistency Index</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -505,6 +538,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#constrained_vert_modulus</gml:identifier>
             <gml:name>Constrained Modulus, Vertical, Drained (M)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -523,6 +557,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cbr_0.1</gml:identifier>
             <gml:name>Corrected Cbr At 0.100 in Penetration</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure per pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -541,6 +576,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cbr_0.2</gml:identifier>
             <gml:name>Corrected Cbr At 0.200 In Penetration</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure per pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -559,6 +595,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#tip_resistance_corrected</gml:identifier>
             <gml:name>Corrected Tip Resistance</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -573,6 +610,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_cv</gml:identifier>
             <gml:name>Critical State Friction Angle</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>plane angle</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -591,6 +629,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#d10</gml:identifier>
             <gml:name>d10</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -609,6 +648,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#d30</gml:identifier>
             <gml:name>d30</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -627,6 +667,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#d50</gml:identifier>
             <gml:name>d50</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -645,6 +686,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#d60</gml:identifier>
             <gml:name>d60</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -663,6 +705,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#degree_of_saturation</gml:identifier>
             <gml:name>Degree of Saturation</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -677,6 +720,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density</gml:identifier>
             <gml:name>Density, Bulk (Natural)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>mass per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -703,6 +747,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_density</gml:identifier>
             <gml:name>Density, Dry</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>mass per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -717,6 +762,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_density</gml:identifier>
             <gml:name>Density, Relative</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -735,6 +781,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dilation_angle</gml:identifier>
             <gml:name>Dilation Angle</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>plane angle</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -749,6 +796,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dilatometer_modulus</gml:identifier>
             <gml:name>Dilatometer Modulus (Ed)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -763,6 +811,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dmt_tip_bearing</gml:identifier>
             <gml:name>Dilatometer Tip Bearing (Qd)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -777,6 +826,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_equil</gml:identifier>
             <gml:name>Equilibrium Pore Water Pressure (U0)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -795,6 +845,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_est</gml:identifier>
             <gml:name>Estimated Pore Water Pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -809,6 +860,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_depth_estimated</gml:identifier>
             <gml:name>Estimated Water Depth</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -823,6 +875,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_elev_estimated</gml:identifier>
             <gml:name>Estimated Water Elevaton</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -837,6 +890,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#filtrate_volume</gml:identifier>
             <gml:name>Filtrate Volume</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -851,6 +905,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#flame_ionization_measurement</gml:identifier>
             <gml:name>Flame Ionization Measurement</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -869,6 +924,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#flow_cone_time</gml:identifier>
             <gml:name>Flow Cone Time</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -883,6 +939,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_ratio</gml:identifier>
             <gml:name>Friction Ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -897,6 +954,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#frost_heave</gml:identifier>
             <gml:name>Frost Heave</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -911,6 +969,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#gel_time</gml:identifier>
             <gml:name>Gel Time</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -929,6 +988,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#HFFD</gml:identifier>
             <gml:name>HFFD</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -943,6 +1003,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_permeability_horiz</gml:identifier>
             <gml:name>Horizontal Coefficient of Permeability</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -973,6 +1034,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#horiz_stress_index</gml:identifier>
             <gml:name>Horizontal Stress Index (Kd)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -987,6 +1049,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#inclination</gml:identifier>
             <gml:name>Inclination</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>plane angle</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1005,6 +1068,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#insitu_horizontal_stress</gml:identifier>
             <gml:name>Insitu Horizontal Stress</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1019,6 +1083,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#LFFD</gml:identifier>
             <gml:name>LFFD</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1033,6 +1098,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#limit_pressure</gml:identifier>
             <gml:name>Limit Pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1047,6 +1113,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#line_loss_coeff_A</gml:identifier>
             <gml:name>Line Loss Coefficient A</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1061,6 +1128,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#line_loss_coeff_B</gml:identifier>
             <gml:name>Line Loss Coefficient B</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1075,6 +1143,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#line_loss_coeff_C</gml:identifier>
             <gml:name>Line Loss Coefficient C</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1089,6 +1158,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#line_loss_r2</gml:identifier>
             <gml:name>Line Loss R2</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1103,6 +1173,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#liquid_limit</gml:identifier>
             <gml:name>Liquid Limit</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1117,6 +1188,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#liquidity_index</gml:identifier>
             <gml:name>Liquidity Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1135,6 +1207,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#lugeon_value</gml:identifier>
             <gml:name>Lugeon Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1149,6 +1222,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#marsh_funnel_time</gml:identifier>
             <gml:name>Marsh Funnel Time</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1163,6 +1237,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#material_index</gml:identifier>
             <gml:name>Material Index (Id)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1177,6 +1252,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_density_max</gml:identifier>
             <gml:name>Maximum Dry Density</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>mass per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1191,6 +1267,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mcv</gml:identifier>
             <gml:name>Moisture Condition Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1205,6 +1282,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mud_balance_density</gml:identifier>
             <gml:name>Mud Balance Density</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>mass per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1219,6 +1297,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#n_value</gml:identifier>
             <gml:name>N-Value (Raw)</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1233,6 +1312,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#n1_60</gml:identifier>
             <gml:name>N1,60</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1247,6 +1327,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#n60</gml:identifier>
             <gml:name>N60</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1261,6 +1342,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_content_natural</gml:identifier>
             <gml:name>Natural Water Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1287,6 +1369,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#non_plastic</gml:identifier>
             <gml:name>Non Plastic</gml:name>
             <diggs:dataType>boolean</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1301,6 +1384,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_content_optimum</gml:identifier>
             <gml:name>Optimum Water Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1315,6 +1399,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#LOI</gml:identifier>
             <gml:name>Organic Content of Soil</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1329,6 +1414,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#liquid_limit_oven_dried</gml:identifier>
             <gml:name>Oven Dried Liquid Limit</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1343,6 +1429,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ocr</gml:identifier>
             <gml:name>Overconsolidation Ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1361,6 +1448,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#p0_reading</gml:identifier>
             <gml:name>P0 Reading</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1375,6 +1463,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#p1_reading</gml:identifier>
             <gml:name>P1 Reading</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1389,6 +1478,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#p2_reading</gml:identifier>
             <gml:name>P2 Reading</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1403,6 +1493,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak</gml:identifier>
             <gml:name>Peak Angle of Internal Friction</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>plane angle</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1429,6 +1520,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak</gml:identifier>
             <gml:name>Peak Cohesion</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1443,6 +1535,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shear_strength_drained</gml:identifier>
             <gml:name>Peak Drained Shear Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1473,6 +1566,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shear_strength_undrained</gml:identifier>
             <gml:name>Peak Undrained Shear Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1515,6 +1609,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#percent_fines</gml:identifier>
             <gml:name>Percent Fines</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1533,6 +1628,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#percent_gravel</gml:identifier>
             <gml:name>Percent Gravel</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1551,6 +1647,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#percent_sand</gml:identifier>
             <gml:name>Percent Sand</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1569,6 +1666,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pH</gml:identifier>
             <gml:name>pH</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1587,6 +1685,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pid_result</gml:identifier>
             <gml:name>Photoionization Detector Result</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1605,6 +1704,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#plastic_limit</gml:identifier>
             <gml:name>Plastic Limit</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1619,6 +1719,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#plasticity_index</gml:identifier>
             <gml:name>Plasticity Index</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1633,6 +1734,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#point_load_test_index</gml:identifier>
             <gml:name>Point Load Test Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1647,6 +1749,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio</gml:identifier>
             <gml:name>Poisson Ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1661,6 +1764,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_u1</gml:identifier>
             <gml:name>Pore Water Pressure (U1)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1675,6 +1779,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_u2</gml:identifier>
             <gml:name>Pore Water Pressure (U2)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1689,6 +1794,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_u3</gml:identifier>
             <gml:name>Pore Water Pressure (U3)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1703,6 +1809,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#preconsolidation_pressure</gml:identifier>
             <gml:name>Preconsolidation Pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1717,6 +1824,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pressure_filtration_value</gml:identifier>
             <gml:name>Pressure Filtration Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>reciprocal time squared</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1731,6 +1839,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#p_wave_velocity</gml:identifier>
             <gml:name>Primary Compression Wave Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1745,6 +1854,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#recompression_index</gml:identifier>
             <gml:name>Recompression Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1759,6 +1869,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#redox_potential</gml:identifier>
             <gml:name>Redox Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1773,6 +1884,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_residual</gml:identifier>
             <gml:name>Residual Angle of Internal Friction</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>plane angle</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1803,6 +1915,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_residual</gml:identifier>
             <gml:name>Residual Cohesion</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1817,6 +1930,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shear_strength_undrained_residual</gml:identifier>
             <gml:name>Residual Undrained Shear Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1859,6 +1973,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#resistivity</gml:identifier>
             <gml:name>Resistivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electrical resistivity</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1873,6 +1988,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#rock_porosity</gml:identifier>
             <gml:name>Rock Porosity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1887,6 +2003,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#schmidt_hardness_value</gml:identifier>
             <gml:name>Schmidt Hardness Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1901,6 +2018,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sensitivity</gml:identifier>
             <gml:name>Sensitivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1923,6 +2041,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#set_time</gml:identifier>
             <gml:name>Set Time</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1937,6 +2056,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_shear</gml:identifier>
             <gml:name>Shear Modulus</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1955,6 +2075,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shear_velocity</gml:identifier>
             <gml:name>Shear Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1969,6 +2090,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shore_hardness_value</gml:identifier>
             <gml:name>Shore Hardness Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1983,6 +2105,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shrinkage</gml:identifier>
             <gml:name>Shrinkage</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2001,6 +2124,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shrinkage_limit</gml:identifier>
             <gml:name>Shrinkage Limit</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>volume per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2015,6 +2139,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shrinkage_ratio</gml:identifier>
             <gml:name>Shrinkage Ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2029,6 +2154,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#Is50</gml:identifier>
             <gml:name>Size Corrected Point Load Test Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2043,6 +2169,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#slake_durability_index</gml:identifier>
             <gml:name>Slake Durability Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2057,6 +2184,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sleeve_friction</gml:identifier>
             <gml:name>Sleeve Friction</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2071,6 +2199,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#slump</gml:identifier>
             <gml:name>Slump</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2085,6 +2214,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#soil_moisture_content</gml:identifier>
             <gml:name>Soil Moisture Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2099,6 +2229,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#soil_suction</gml:identifier>
             <gml:name>Soil Suction</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2127,6 +2258,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#specific_gravity_solids</gml:identifier>
             <gml:name>Specific Gravity of Solids</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2141,6 +2273,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sulfate_content</gml:identifier>
             <gml:name>Sulfate Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2155,6 +2288,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#syneresis_surface_area_normalized</gml:identifier>
             <gml:name>Surface Area Normalized Syneresis</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>mass per area</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2169,6 +2303,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#syneresis</gml:identifier>
             <gml:name>Syneresis</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>mass per mass</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2183,6 +2318,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#t50</gml:identifier>
             <gml:name>T50</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2197,6 +2333,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#temperature</gml:identifier>
             <gml:name>Temperature</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2211,6 +2348,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ten_percent_fines_value</gml:identifier>
             <gml:name>Ten Percent Fines Value</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2225,6 +2363,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thrust</gml:identifier>
             <gml:name>Thrust</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2239,6 +2378,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#time</gml:identifier>
             <gml:name>Time</gml:name>
             <diggs:dataType>time</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2253,6 +2393,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#tip_resistance</gml:identifier>
             <gml:name>Tip Resistance</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2267,6 +2408,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#vertical_stress_total</gml:identifier>
             <gml:name>Total Vertical Stress</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2281,6 +2423,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#u50</gml:identifier>
             <gml:name>U50</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2295,6 +2438,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#compressive_strength_unconfined</gml:identifier>
             <gml:name>Unconfined Compressive Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2317,6 +2461,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#Is</gml:identifier>
             <gml:name>Uncorrected Point Load Test Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2331,6 +2476,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#unit_weight</gml:identifier>
             <gml:name>Unit Weight</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2377,6 +2523,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_permeability_vert</gml:identifier>
             <gml:name>Vertical Coefficient of Permeability</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2403,6 +2550,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#effective_stress_vertical</gml:identifier>
             <gml:name>Vertical Effective Stress</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2417,6 +2565,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#volumetric_shrinkage</gml:identifier>
             <gml:name>Volumetric Shrinkage</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>volume per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2445,6 +2594,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_depth</gml:identifier>
             <gml:name>Water Depth</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2459,6 +2609,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_elev</gml:identifier>
             <gml:name>Water elevation</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2473,6 +2624,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#inclination_x</gml:identifier>
             <gml:name>X Inclination</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>plane angle</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2491,6 +2643,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#inclination_y</gml:identifier>
             <gml:name>Y Inclination</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>plane angle</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -2509,6 +2662,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs</gml:identifier>
             <gml:name>Young's Modulus</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>

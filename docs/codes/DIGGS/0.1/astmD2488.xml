@@ -66,48 +66,6 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="ML_CL">
-            <gml:description>Silt bordering to clay (ML/CL)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#ML_CL</gml:identifier>
-            <gml:name>Clayey silt</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="ML_CLg">
-            <gml:description>ML/CL with &gt;70-85% fines and % sand &lt; % gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#ML_CLg</gml:identifier>
-            <gml:name>Clayey silt with gravel</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="ML_CLs">
-            <gml:description>ML/CL with &gt;70-85% fines and % sand ≥ % gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#ML_CLs</gml:identifier>
-            <gml:name>Clayey silt with sand</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="MH">
             <gml:description>&gt; 85% fines; inorganic; low to med. dry strength; none to slow dilatency; low to med. plasticity</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#MH</gml:identifier>
@@ -188,34 +146,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#CHs</gml:identifier>
             <gml:name>Fat clay with sand</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="gML_CL">
-            <gml:description>ML/CL with ≥ 50% to ≤ 70% fines; % sand &lt; % gravel; &lt; 15% sand</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#gML_CL</gml:identifier>
-            <gml:name>Gravelly clayey silt</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="gML_CLs">
-            <gml:description>ML/CL with ≥ 50% to ≤ 70% fines; % sand &lt; % gravel; ≥ 15% sand</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#gML_CLs</gml:identifier>
-            <gml:name>Gravelly clayey silt with sand</gml:name>
             <diggs:authority>ASTM D2488</diggs:authority>
             <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
@@ -316,34 +246,6 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="gCL_CH">
-            <gml:description>CL/CH with ≥ 50% to ≤ 70% fines; % sand &lt; % gravel; &lt; 15% sand</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#gCL_CH</gml:identifier>
-            <gml:name>Gravelly lean to  fat clay</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="gCL_CHs">
-            <gml:description>CL/CH with ≥ 50% to ≤ 70% fines; % sand &lt; % gravel; ≥ 15% sand</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#gCL_CHs</gml:identifier>
-            <gml:name>Gravelly lean to fat clay with sand</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="gOL_OH">
             <gml:description>OL/OH with ≥ 50% to ≤ 70% fines; % sand &lt; % gravel; &lt; 15% sand</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#gOL_OH</gml:identifier>
@@ -404,34 +306,6 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="gCL_ML">
-            <gml:description>CL/ML with ≥ 50% to ≤ 70% fines; % sand &lt; % gravel; &lt; 15% sand</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#gCL_ML</gml:identifier>
-            <gml:name>Gravelly silty clay</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="gCL_MLs">
-            <gml:description>CL/ML with ≥ 50% to ≤ 70% fines; % sand &lt; % gravel; ≥ 15% sand</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#gCL_MLs</gml:identifier>
-            <gml:name>Gravelly silty clay with sand</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="CL">
             <gml:description>&gt; 85% fines; inorganic; med. to high dry strength; none to slow dilatency; med. plasticity</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#CL</gml:identifier>
@@ -477,48 +351,6 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="CL_CH">
-            <gml:description>Clay with borderline compressibility (CL/CH)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#CL_CH</gml:identifier>
-            <gml:name>Lean to fat clay</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="CL_CHg">
-            <gml:description>CL/CH with &gt;70-85% fines and % sand &lt; % gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#CL_CHg</gml:identifier>
-            <gml:name>Lean to fat clay with gravel</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="CL_CHs">
-            <gml:description>CL/CH with &gt;70-85% fines and % sand ≥ % gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#CL_CHs</gml:identifier>
-            <gml:name>Lean to fat clay with sand</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="OL_OH">
             <gml:description>&gt; 85% fines; organic</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#OL_OH</gml:identifier>
@@ -553,21 +385,6 @@
             <gml:description>OL/OH with &gt;70-85% fines and % sand ≥ % gravel</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#OL_OHs</gml:identifier>
             <gml:name>Organic soil with sand</gml:name>
-            <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="PT">
-            <gml:description>Peat, muck, and other highly organic soils.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#PT</gml:identifier>
-            <gml:name>Peat</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
             <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
@@ -759,34 +576,6 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="sML_CL">
-            <gml:description>ML/CL with ≥ 50% to ≤ 70% fines; % sand &gt; % gravel; &lt;15% gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#sML_CL</gml:identifier>
-            <gml:name>Sandy clayey silt</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="sML_CLg">
-            <gml:description>ML/CL with ≥ 50% to ≤ 70% fines; % sand &gt; % gravel; ≥15% gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#sML_CLg</gml:identifier>
-            <gml:name>Sandy clayey silt with gravel</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="sMH">
             <gml:description>MH with ≥ 50% to ≤ 70% fines; % sand &gt; % gravel; &lt;15% gravel</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#sMH</gml:identifier>
@@ -877,34 +666,6 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="sCL_CH">
-            <gml:description>CL/CH with ≥ 50% to ≤ 70% fines; % sand &gt; % gravel; &lt;15% gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#sCL_CH</gml:identifier>
-            <gml:name>Sandy lean to fat clay</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="sCL_CHg">
-            <gml:description>CL/CH with ≥ 50% to ≤ 70% fines; % sand &gt; % gravel; ≥15% gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#sCL_CHg</gml:identifier>
-            <gml:name>Sandy lean to fat clay with gravel</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="sOL_OH">
             <gml:description>OL/OH with ≥ 50% to ≤ 70% fines; % sand &gt; % gravel; &lt;15% gravel</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#sOL_OH</gml:identifier>
@@ -965,34 +726,6 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="sCL_ML">
-            <gml:description>CL/ML with ≥ 50% to ≤ 70% fines; % sand &gt; % gravel; &lt;15% gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#sCL_ML</gml:identifier>
-            <gml:name>Sandy silty clay</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="sCL_MLg">
-            <gml:description>CL/ML with ≥ 50% to ≤ 70% fines; % sand &gt; % gravel; ≥15% gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#sCL_MLg</gml:identifier>
-            <gml:name>Sandy silty clay with gravel</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="ML">
             <gml:description>&gt; 85% fines; inorganic; none to low dry strength; slow to rapid dilatency; none to low plasticity</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#ML</gml:identifier>
@@ -1027,50 +760,6 @@
             <gml:description>ML with &gt;70-85% fines and % sand ≥ % gravel</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#MLs</gml:identifier>
             <gml:name>Silt with sand</gml:name>
-            <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="CL_ML">
-            <gml:description>Lean clay bordering to silt (CL/ML)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#CL_ML</gml:identifier>
-            <gml:name>Silty clay</gml:name>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="CL_MLg">
-            <gml:description>CL/ML with &gt;70-85% fines and % sand &lt; % gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#CL_MLg</gml:identifier>
-            <gml:name>Silty clay with gravel</gml:name>
-            <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>ASTM D2488</diggs:authority>
-            <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="CL_MLs">
-            <gml:description>CL/ML with &gt;70-85% fines and % sand ≥ % gravel</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#CL_MLs</gml:identifier>
-            <gml:name>Silty clay with sand</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
             <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>

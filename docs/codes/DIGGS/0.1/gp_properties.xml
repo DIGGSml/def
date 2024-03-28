@@ -11,6 +11,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#acoustic_impedance</gml:identifier>
             <gml:name>Acoustic Impedence</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure time per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -29,6 +30,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#anomaly_bouguer</gml:identifier>
             <gml:name>Bouguer Anomaly</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>linear acceleration</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -43,6 +45,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#anomaly_free_air</gml:identifier>
             <gml:name>Free Air Anamoly</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>linear acceleration</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -57,6 +60,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#attenuation</gml:identifier>
             <gml:name>Attenuation</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -87,6 +91,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#borehole_diameter</gml:identifier>
             <gml:name>Borehole Diameter</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -101,6 +106,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#bulk_density</gml:identifier>
             <gml:name>Density, Bulk (Natural)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>mass per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -127,6 +133,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#capacitance</gml:identifier>
             <gml:name>Capacitance</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -141,6 +148,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#compressional_slowness</gml:identifier>
             <gml:name>Compressional Slowness</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time per length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -155,6 +163,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#conductivity</gml:identifier>
             <gml:name>Electrical Conductivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric conductivity</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -181,6 +190,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#dielectric_constant</gml:identifier>
             <gml:name>Dielectric Constant</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -195,6 +205,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#dielectric_permittivity</gml:identifier>
             <gml:name>Dielectric Permittivity Of The Medium</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>permittivity</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -209,6 +220,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#electric_field_x</gml:identifier>
             <gml:name>X Component of Electric Field</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric field strength</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -227,6 +239,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#electric_field_y</gml:identifier>
             <gml:name>Y Component of Electric Field</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric field strength</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -245,6 +258,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#electric_field_z</gml:identifier>
             <gml:name>Z Component of Electric Field</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric field strength</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -259,6 +273,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#em_velocity</gml:identifier>
             <gml:name>Electromagnetic Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -273,6 +288,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#flow_velocity</gml:identifier>
             <gml:name>Flow Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -287,6 +303,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#gamma_ray</gml:identifier>
             <gml:name>Gamma Ray</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>API gamma ray</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -301,6 +318,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#gravity_absolute</gml:identifier>
             <gml:name>Absolute Gravitational Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>linear acceleration</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -315,6 +333,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#gravity_gradient</gml:identifier>
             <gml:name>Gravity Gradient</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>reciprocal time squared</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -329,6 +348,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#gravity_relative</gml:identifier>
             <gml:name>Relative Gravitational Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>linear acceleration</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -343,6 +363,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#in_phase_x</gml:identifier>
             <gml:name>X Component of In Phase</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -361,6 +382,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#in_phase_y</gml:identifier>
             <gml:name>Y Component of In Phase</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -379,6 +401,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#larmor_frequency</gml:identifier>
             <gml:name>Larmor Frequency</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>frequency</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -393,6 +416,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#mag_permeability</gml:identifier>
             <gml:name>Magnetic Permeability</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -407,6 +431,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#magnetic_field_gradient</gml:identifier>
             <gml:name>Magnetic Field Gradient</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>magnetic flux density per length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -421,6 +446,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#magnetic_field_total</gml:identifier>
             <gml:name>Total Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric field strength</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -435,6 +461,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#magnetic_field_x</gml:identifier>
             <gml:name>X Component of Magnetic Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric field strength</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -453,6 +480,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#magnetic_field_y</gml:identifier>
             <gml:name>Y Component of Magnetic Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric field strength</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -471,6 +499,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#magnetic_field_z</gml:identifier>
             <gml:name>Z Component of Magnetic Field Strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric field strength</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -489,6 +518,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#magnetic_susceptibility</gml:identifier>
             <gml:name>Magnetic Susceptibility</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -507,6 +537,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#modulus_bulk</gml:identifier>
             <gml:name>Bulk Modulus</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -533,6 +564,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#modulus_shear</gml:identifier>
             <gml:name>Shear Modulus</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -559,6 +591,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#modulus_youngs</gml:identifier>
             <gml:name>Young's Modulus</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -577,6 +610,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#number_beta_particles</gml:identifier>
             <gml:name>Number of Beta Particles</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>frequency</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -591,6 +625,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#number_gamma_particles</gml:identifier>
             <gml:name>Number of Gamma Particles</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>frequency</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -605,6 +640,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#p_wave_velocity</gml:identifier>
             <gml:name>Primary Compression Wave Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -635,6 +671,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#poisson_ratio</gml:identifier>
             <gml:name>Poisson Ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -665,6 +702,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#electrodiffusion_potential</gml:identifier>
             <gml:name>Electrodiffusion Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -679,6 +717,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#electric_potential</gml:identifier>
             <gml:name>Electric Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -697,6 +736,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#kinetic_potential</gml:identifier>
             <gml:name>Electrokinetic Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -711,6 +751,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#mineral_potential</gml:identifier>
             <gml:name>Mineral Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -725,6 +766,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#nerst_potential</gml:identifier>
             <gml:name>Nerst Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -739,6 +781,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#redox_potential</gml:identifier>
             <gml:name>Redox Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -753,6 +796,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#quadrature_x</gml:identifier>
             <gml:name>X Component Of Quadrature</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -767,6 +811,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#quadrature_y</gml:identifier>
             <gml:name>Y Component Of Quadrature</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -781,6 +826,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#radiation_energy</gml:identifier>
             <gml:name>Radiation Energy</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>energy</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -795,6 +841,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#reflection_coefficient</gml:identifier>
             <gml:name>Reflection Coefficient</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -809,6 +856,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#resistance</gml:identifier>
             <gml:name>Electrical Resistance</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric resistance</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -823,6 +871,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#resistivity</gml:identifier>
             <gml:name>Electrical Resistivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electrical resistivity</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -853,6 +902,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#resistivity_app</gml:identifier>
             <gml:name>Apparent Resistivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electrical resistivity</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -883,6 +933,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#shear_slowness</gml:identifier>
             <gml:name>Shear Slowness</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time per length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -897,6 +948,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#shear_velocity</gml:identifier>
             <gml:name>Shear Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -927,6 +979,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#sonic_porosity</gml:identifier>
             <gml:name>Sonic Porosity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -941,6 +994,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#spontaneous_potential</gml:identifier>
             <gml:name>Spontaneous Potential</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -955,6 +1009,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#t1</gml:identifier>
             <gml:name>T1 Time Constant</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -969,6 +1024,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#t1_relaxation</gml:identifier>
             <gml:name>Longitudinal (Spin-Lattice) Relaxation</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -983,6 +1039,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#t2</gml:identifier>
             <gml:name>T2 Time Constant</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -997,6 +1054,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#t2_relaxation</gml:identifier>
             <gml:name>Transverse (Spin-Spin) Relaxation</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1011,6 +1069,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#temperature</gml:identifier>
             <gml:name>Temperature</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1025,6 +1084,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#tension</gml:identifier>
             <gml:name>Tension</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1039,6 +1099,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#tensor_impedance_x</gml:identifier>
             <gml:name>X Component of Tensor Impedance</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric resistance</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1053,6 +1114,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#tensor_impedance_y</gml:identifier>
             <gml:name>Y Component of Tensor Impedance</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric resistance</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1067,6 +1129,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#tensor_impedance_z</gml:identifier>
             <gml:name>Z Component of Tensor Impedance</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric resistance</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1081,6 +1144,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#tube_wave_velocity</gml:identifier>
             <gml:name>Tube Wave Velocity</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1095,6 +1159,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#wall_amp</gml:identifier>
             <gml:name>Borehole Wall Amplitude</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electric potential difference</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1109,6 +1174,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#wall_image_r</gml:identifier>
             <gml:name>Image R value</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>unitless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1123,6 +1189,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#wall_image_g</gml:identifier>
             <gml:name>Image G value</gml:name>
             <diggs:dataType>string</diggs:dataType>
+            <diggs:quantityClass>unitless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1137,6 +1204,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#wall_image_b</gml:identifier>
             <gml:name>Image B value</gml:name>
             <diggs:dataType>string</diggs:dataType>
+            <diggs:quantityClass>unitless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
@@ -1151,6 +1219,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#wall_time</gml:identifier>
             <gml:name>Borehole Wall Travel Time</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
