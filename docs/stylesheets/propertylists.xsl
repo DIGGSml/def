@@ -168,7 +168,7 @@
           <table id="myTable">
             <tr>
               <th>Name</th>
-              <th><xsl:text>&#160;&#160;&#160&#160;&#160;&#160;Code&#160;&#160;&#160&#160;&#160;&#160;</xsl:text></th>
+              <th><xsl:text>&#160;&#160;&#160;&#160;&#160;&#160;Code&#160;&#160;&#160;&#160;&#160;&#160;</xsl:text></th>
               <th>Definition</th>
               <th>Data Type</th>
               <th>Quantity Classification</th>
