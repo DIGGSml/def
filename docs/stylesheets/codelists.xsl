@@ -170,7 +170,7 @@
           <table id="myTable">
             <tr>
               <th>Name</th>
-              <th>&nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;</th>
+              <th>&#x20;&#x20;&#x20;ID&#x20;&#x20;&#x20;</th>
               <th>Definition</th>
               <th>Source Element XPath</th>
               <th>Authority</th>
