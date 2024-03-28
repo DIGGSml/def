@@ -168,7 +168,7 @@
           <table id="myTable">
             <tr>
               <th>Name</th>
-              <th>&&nbsp;&nbsp;&nbsp;Code&nbp;&nbsp;&nbsp;</th>
+              <th>&nbsp;&nbsp;&nbsp;Code&nbp;&nbsp;&nbsp;</th>
               <th>Definition</th>
               <th>Data Type</th>
               <th>Quantity Classification</th>
