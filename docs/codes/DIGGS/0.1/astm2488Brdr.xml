@@ -5,7 +5,7 @@
     <gml:description>Soil classification codes for borderline soils as defined by ASTM-D2488 (visual-manual classification Appendix X3. These codes are used as values for the classificationCode property of the Lithology object where a soil has been identified as having properties
 that do not distinctly place the soil into a specific group. Use of borderline codes is discouraged as instructions in Appendix X3 contradict other directives of the standard.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astm2488Brdr.xml</gml:identifier>
-    <gml:name>DIGGS Soil Classification Codelist Definitions (ASTM D2488 Borderline Classifications)</gml:name>
+    <gml:name>DIGGS Soil Classification Definitions (ASTM D2488 Borderline Classifications)</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="ML_CL">
             <gml:description>Silt bordering to clay (ML/CL)</gml:description>

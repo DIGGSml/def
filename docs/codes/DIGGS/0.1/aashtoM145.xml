@@ -4,7 +4,7 @@
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="classificationCode">
     <gml:description>Classification codes as defined by the American Association of State Highway Transportation Officials (AASHTO M 145 or ASTM D 3282) for soils and soil-aggregate mixtures for highway construction purposes. These codes are used as values for the classificationCode property of the Lithology object.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml</gml:identifier>
-    <gml:name>DIGGS Soil Classification Codelist Definitions (AASHTO M 145)</gml:name>
+    <gml:name>DIGGS Soil Classification  Definitions (AASHTO M 145)</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="a-1-a">
             <gml:description>Well-graded mixture of stone fragments or gravel, coarse sand, fine sand, and a nonplastic or feebly plastic soil binder.This subgroup includes those materials consisting predominantly of stone fragments or gravel, either with or without a well-graded binder of fine material.</gml:description>
