@@ -169,7 +169,7 @@
         <div class="fixed_header">
           <table id="myTable">
             <tr>
-              <th>Name</th>
+              <th><xsl:text>&#160;&#160;&#160;&#160;Name&#160;&#160;&#160;&#160;</xsl:text></th>
               <th><xsl:text>&#160;&#160;&#160;&#160;&#160;&#160;ID&#160;&#160;&#160;&#160;&#160;&#160;</xsl:text></th>
               <th>Definition</th>
               <th>Source Element XPath</th>
