@@ -22,7 +22,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="a-3">
-            <gml:description>Fine beach sand or fine desert blow sand without silty or clay fines or with a very small amount of nonplastic silt. The group includes also streamdeposited mixtures of poorly graded fine sand and limited amounts of coarse sand and gravel.</gml:description>
+            <gml:description>Fine beach sand or fine desert blow sand without silty or clay fines or with a very small amount of nonplastic silt. The group includes also stream-deposited mixtures of poorly graded fine sand and limited amounts of coarse sand and gravel.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/grp-aashtoM145.xml#a-3</gml:identifier>
             <gml:name>A-3</gml:name>
             <diggs:dataType>string</diggs:dataType>
