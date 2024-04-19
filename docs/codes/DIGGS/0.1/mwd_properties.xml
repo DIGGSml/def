@@ -638,10 +638,38 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="Data_capture_software">
+        <diggs:Definition gml:id="data_capture_software">
             <gml:description>Indentier of the data processing software and version</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#Data_capture_software</gml:identifier>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#data_capture_software</gml:identifier>
             <gml:name>Data Capture Software</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="drilling_activity_note">
+            <gml:description>Make notes of things while drilling MWD, or transitioning</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#drilling_activity_note</gml:identifier>
+            <gml:name>Drilling Activity Note</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="current_drilling_state">
+            <gml:description>Auger drilling, Mud rtotary, hollow stem, rock core.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#current_drilling_state</gml:identifier>
+            <gml:name>Current Drilling State</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
