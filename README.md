@@ -30,4 +30,4 @@ This project is licensed under the [MIT License](LICENSE), which means you are f
 
 ## Support
 
-For questions, issues, or support related to the Diggs CodeSpace Templates, please open an issue on GitHub or contact [maintainer_email@example.com].
+For questions, issues, or support related to the Diggs CodeSpace Templates, please open an issue on GitHub or contact [ross.cutts@geosetta.org].
