@@ -22,7 +22,7 @@ To use the templates provided in this repository:
 
 ## Contributing
 
-We welcome contributions to improve the functionality and usability of these templates. If you have suggestions, bug fixes, or new templates to add, please feel free to submit a pull request. Make sure to follow the contribution guidelines outlined in the CONTRIBUTING.md file.
+We welcome contributions to improve the functionality and usability of these templates. If you have suggestions, bug fixes, or new templates to add, please feel free to submit a pull request.
 
 ## License
 
