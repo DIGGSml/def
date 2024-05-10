@@ -8,7 +8,7 @@ Diggs, short for Data Interchange for Geotechnical and Geoenvironmental Speciali
 
 ## About This Repository
 
-This repository serves as a central location for storing and managing the Excel templates used to generate code spaces for Diggs. Code spaces are predefined structures within Diggs used to represent specific types of geotechnical data. By using these templates, users can easily create code spaces tailored to their specific needs and project requirements.
+This repository serves as a central location for storing and managing the Excel templates used to generate code spaces for Diggs. Codelists are predefined structures within Diggs used to represent specific types of geotechnical data. By using these templates, users can easily create Codelists tailored to ensure that DIGGS can fit for their requirements.
 
 ## Usage
 
