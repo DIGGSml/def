@@ -2671,4 +2671,19 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="aggregate_soundness_value">
+            <gml:description>The percentage of mass lost by degradation as determined by sieving and weighing the samples after the test cycles.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_soundness_value</gml:identifier>
+            <gml:name>Aggregate Soundness Value</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>mass per mass</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:AggregateSoundnessTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
