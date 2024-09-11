@@ -217,7 +217,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="blow_count">
-            <gml:description>The number of blows of a hammer that drives a tool into the eart for a particular  distance. The distance should correspond to the difference between the associated top and bottom positions recorded in the domain portion of the test, or be specified in the pen_increment property associated with a point location.</gml:description>
+            <gml:description>The number of blows of a hammer that drives a tool into the earth for a particular distance. The distance should correspond to the difference between the associated top and bottom positions recorded in the location property of the test, or be specified in the pen_increment property associated with a point location.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#blow_count</gml:identifier>
             <gml:name>Blow Count</gml:name>
             <diggs:dataType>integer</diggs:dataType>
