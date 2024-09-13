@@ -4,7 +4,7 @@ Welcome to the Diggs CodeSpace Templates repository! This repository contains Ex
 
 ## What is Diggs?
 
-Diggs, short for Data Interchange for Geotechnical and Geoenvironmental Specialists, is a standardized format for organizing and exchanging geotechnical data. It provides a structured framework for representing various aspects of geotechnical information, facilitating interoperability and data exchange between different software systems and organizations.
+Diggs, short for Data Interchange for Geotechnical and Geoenvironmental Specialists, is a standardized format for organizing and exchanging geotechnical data. It provides a structured framework for representing various aspects of geotechnical information, facilitating interoperability and data exchange between different software systems and organizations. NOTE: You can view the [DIGGS manual here](https://docs.google.com/document/d/1Md_GAfT6peEJmzWbWjA8zIMi2lFMa91y/export?format=pdf).
 
 ## About This Repository
 
