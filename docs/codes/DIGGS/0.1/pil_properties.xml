@@ -4,7 +4,7 @@
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="propertyClass">
     <gml:description>Codes and definitions properties observed during pile installation as well as observed properteis from post-installation testing.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml</gml:identifier>
-    <gml:name>Observed Properties for Pile Installation and Tests</gml:name>
+    <gml:name>DIGGS Pile Installation Properties</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="blow_count">
             <gml:description>The number of strikes of the hammer against the pile for a distance given by pen_increment</gml:description>
