@@ -1,0 +1,17 @@
+ID,Name,Description,DataType,QuantityClass
+id,ID,A unique identifier for the PDA test.,String,N/A
+force,Force,The force exerted on the pile by the hammer during driving.,Double,Force
+velocity,Velocity,The velocity of the pile during impact.,Double,Velocity
+compressive_stress,Compressive Stress,The compressive force experienced by the pile.,Double,Stress
+tensile_stress,Tensile Stress,The tensile force experienced by the pile.,Double,Stress
+hammer_energy,Hammer Energy,The energy delivered by the hammer to the pile.,Double,Energy
+displacement,Displacement,The displacement or movement of the pile during each hammer blow.,Double,Displacement
+dynamic_resistance,Dynamic Resistance,The dynamic response of the pile to the driving force.,Double,Resistance
+reflected_waves,Reflected Waves,Stress waves reflected up and down the pile during impact.,Double,Wave Propagation
+blow_count,Blow Count,The number of hammer blows per unit depth of penetration.,Integer,Count
+set_per_blow,Set per Blow,The permanent displacement of the pile per hammer blow.,Double,Displacement
+capacity,Capacity,The calculated load-carrying capacity of the pile.,Double,Capacity
+damping_stiffness,Damping and Stiffness,The damping and stiffness parameters of the soil-pile system.,Double,Damping
+wave_speed,Wave Speed,The speed of the stress wave traveling through the pile.,Double,Speed
+integrity,Pile Integrity,The structural integrity of the pile assessed through stress waves.,String,Integrity
+impact_time,Impact Time,The time of the hammer impact on the pile.,Time,Time
