@@ -2,28 +2,28 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/propertylists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="propertyClass">
-    <gml:description>This dictionary contains the values for the propertyClass property of the diggs:Property object and the measurand property of the diggs:Detector object when used within the Test feature, where thetesting procedure is a ProcessedGeophysicalsurvey or WirelineLog. These values serve to define the ultimate results of geophysical field measurements. The Xpaths to these occurrences are: 1) //diggs:Property/diggs:propertyClass.</gml:description>
+    <gml:description>This dictionary contains the values for the propertyClass property of the diggs:Property object for the Measurement While Drilling measurement object (diggs:/MeasurementWhileDrilling).</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml</gml:identifier>
     <gml:name>DIGGS Measurement Properties for MWD</gml:name>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="torque">
-            <gml:description>Torque (in-lbs): The rotational force applied by the drill rig, measured in inch-pounds.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#torque</gml:identifier>
-            <gml:name>Torque</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force per length</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy1</diggs:authority>
+        <diggs:Definition gml:id="calibration_flag">
+            <gml:description>True False Flag; true if this is a calibration test</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#calibration_flag</gml:identifier>
+            <gml:name>calibration flag</gml:name>
+            <diggs:dataType>boolean</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy2</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="crowd_downward_thrust">
-            <gml:description>Crowd or downward thrust (lbf): The force exerted in the downward direction onto the drill bit, measured in pounds-force.</gml:description>
+            <gml:description>Crowd or downward thrust: The force exerted in the downward direction onto the drill bit.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#crowd_downward_thrust</gml:identifier>
             <gml:name>Crowd or downward thrust</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -31,571 +31,30 @@
             <diggs:authority>AASHTO Designation: TP xxx-yy2</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="penetration_rate">
-            <gml:description>Penetration rate (in/min): The speed at which the drill bit penetrates the soil or rock, measured in inches per minute.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_rate</gml:identifier>
-            <gml:name>Penetration rate</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>length per time</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy3</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="rotational_speed">
-            <gml:description>Rotational speed (RPM): The number of revolutions per minute the drill bit makes.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#rotational_speed</gml:identifier>
-            <gml:name>Rotational speed</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>angular velocity</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy4</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="fluid_injection_volume_rate">
-            <gml:description>Fluid injection volumetric flow rate, pumped inflow (GPM): The volume of drilling fluid pumped into the well per minute, measured in gallons per minute.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_injection_volume_rate</gml:identifier>
-            <gml:name>Fluid injection volumetric flow rate, pumped inflow</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>volume per time</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy5</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="fluid_injection_mass_rate">
-            <gml:description>Fluid injection mass flow rate (lbf/min): The mass of drilling fluid injected into the well per minute, measured in pounds-force per minute.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_injection_mass_rate</gml:identifier>
-            <gml:name>Fluid injection mass flow rate</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:authority>AASHTO Designation: TP xxx-yy6</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="fluid_injection_pressure">
-            <gml:description>Fluid injection pressure (psi): The pressure at which drilling fluid is injected into the well, measured in pounds per square inch.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_injection_pressure</gml:identifier>
-            <gml:name>Fluid injection pressure</gml:name>
+        <diggs:Definition gml:id="crowd_pressure">
+            <gml:description>The pressure used to apply crowd force to the drill bit.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#crowd_pressure</gml:identifier>
+            <gml:name>crowd pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy7</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="fluid_return_volume_rate">
-            <gml:description>Fluid return volumetric flow rate, returned outflow (GPM): The volume of drilling fluid flowing back to the surface per minute, measured in gallons per minute.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_return_volume_rate</gml:identifier>
-            <gml:name>Fluid return volumetric flow rate, returned outflow</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>volume per time</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy8</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="injected_fluid_density">
-            <gml:description>Injected fluid density slugs (ft³): The mass per unit volume of the injected fluid, measured in slugs per cubic foot.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#injected_fluid_density</gml:identifier>
-            <gml:name>Injected fluid density slugs</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>volume</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy9</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="injected_fluid_viscosity">
-            <gml:description>Injected fluid dynamic viscosity (lbf-s/ft²): The resistance of the injected fluid to flow, measured in pound-force seconds per square foot.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#injected_fluid_viscosity</gml:identifier>
-            <gml:name>Injected fluid dynamic viscosity</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:authority>AASHTO Designation: TP xxx-yy10</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="vibration">
-            <gml:description>Vibration (ft/s²): The rate of change of velocity per second of the drill string, measured in feet per second squared.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#vibration</gml:identifier>
-            <gml:name>Vibration</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>linear acceleration</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy11</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="inclination">
-            <gml:description>Inclination (degrees): The angle of the borehole relative to the vertical, measured in degrees.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#inclination</gml:identifier>
-            <gml:name>Inclination</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>plane angle</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy12</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="penetration_length">
-            <gml:description>Penetration length (in): The length of the borehole produced by the drill bit, measured in inches.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_length</gml:identifier>
-            <gml:name>Penetration length</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>length</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy13</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="measured_time">
-            <gml:description>Measured time (s, min): The time taken for a certain drilling operation, measured in seconds or minutes.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#measured_time</gml:identifier>
-            <gml:name>Measured time</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>time</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy14</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="measured_depth">
-            <gml:description>Measured depth (in, ft): The vertical depth reached by the drill bit, measured in inches or feet.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#measured_depth</gml:identifier>
-            <gml:name>Measured depth</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>length</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy15</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="recorded_depth_increment">
-            <gml:description>Recorded depth increment (in, ft): The incremental depth recorded, usually after a certain operation or time interval, measured in inches or feet.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#recorded_depth_increment</gml:identifier>
-            <gml:name>Recorded depth increment</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>length</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy16</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="drill_bit_diameter">
-            <gml:description>Drill bit diameter (in): The diameter of the drill bit, measured in inches.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#drill_bit_diameter</gml:identifier>
-            <gml:name>Drill bit diameter</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>length</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy17</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="excavated_borehole_area">
-            <gml:description>Cross-sectional area of excavated borehole (in²): The cross-sectional area of the borehole cleared by the drill bit, measured in square inches.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#excavated_borehole_area</gml:identifier>
-            <gml:name>Cross-sectional area of excavated borehole</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>area</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy18</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="max_torque_drill_rig">
-            <gml:description>Maximum Torque available on the drill rig (ft-lbs): The highest rotational force that can be applied by the drill rig, measured in foot-pounds.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#max_torque_drill_rig</gml:identifier>
-            <gml:name>Maximum Torque available on the drill rig</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>moment of force</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy19</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="max_crowd_drill_rig">
-            <gml:description>Maximum crowd available on the drill rig (lbf): The maximum downward force that can be exerted by the drill rig, measured in pounds-force.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#max_crowd_drill_rig</gml:identifier>
-            <gml:name>Maximum crowd available on the drill rig</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy20</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="baseline_torque_pressure">
-            <gml:description>Baseline torque pressure (psi): The standard operating pressure for torque application on the drill rig, measured in pounds per square inch.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#baseline_torque_pressure</gml:identifier>
-            <gml:name>Baseline torque pressure</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy21</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="baseline_crowd_pressure">
-            <gml:description>Baseline crowd pressure (psi): The standard operating pressure for crowd force application on the drill rig, measured in pounds per square inch.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#baseline_crowd_pressure</gml:identifier>
-            <gml:name>Baseline crowd pressure</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy22</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="crowd_conversion_coeff">
-            <gml:description>Crowd conversion coefficient (lbf/psi): The ratio of crowd force to the pressure applied, measured in pounds-force per square inch.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#crowd_conversion_coeff</gml:identifier>
-            <gml:name>Crowd conversion coefficient</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:authority>AASHTO Designation: TP xxx-yy23</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="max_operating_pressure_drill_rig">
-            <gml:description>Maximum operating pressure of drill rig hydraulic system (psi): The highest pressure at which the drill rig's hydraulic system can operate, measured in pounds per square inch.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#max_operating_pressure_drill_rig</gml:identifier>
-            <gml:name>Maximum operating pressure of drill rig hydraulic system</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy24</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="hydraulic_torque_pressure">
-            <gml:description>Hydraulic torque operating pressure (psi): The pressure at which the hydraulic system operates to deliver torque, measured in pounds per square inch.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_torque_pressure</gml:identifier>
-            <gml:name>Hydraulic torque operating pressure</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy25</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="hydraulic_crowd_pressure">
-            <gml:description>Hydraulic crowd operating pressure (psi): The pressure at which the hydraulic system operates to exert crowd force, measured in pounds per square inch.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_crowd_pressure</gml:identifier>
-            <gml:name>Hydraulic crowd operating pressure</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy26</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="max_hydraulic_motor_displacement">
-            <gml:description>Maximum hydraulic motor displacement (in³/rev): The maximum volume displaced by the hydraulic motor per revolution, measured in cubic inches per revolution.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#max_hydraulic_motor_displacement</gml:identifier>
-            <gml:name>Maximum hydraulic motor displacement</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>volume per rotation</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy27</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="min_hydraulic_motor_displacement">
-            <gml:description>Minimum hydraulic motor displacement (in³/rev): The minimum volume displaced by the hydraulic motor per revolution, measured in cubic inches per revolution.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#min_hydraulic_motor_displacement</gml:identifier>
-            <gml:name>Minimum hydraulic motor displacement</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>volume per rotation</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy28</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="hydraulic_fluid_flow_rate">
-            <gml:description>Hydraulic fluid flow rate (in³/min): The flow rate of the hydraulic fluid, measured in cubic inches per minute.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_fluid_flow_rate</gml:identifier>
-            <gml:name>Hydraulic fluid flow rate</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>volume per time</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy29</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="num_hydraulic_motors">
-            <gml:description>Number of hydraulic motors (-): The count of hydraulic motors used in the drilling setup.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#num_hydraulic_motors</gml:identifier>
-            <gml:name>Number of hydraulic motors</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy30</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="gearcase_reduction">
-            <gml:description>Gearcase reduction for each gear (n) (-): The gear reduction ratio in the gearcase for each gear, a unitless number.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#gearcase_reduction</gml:identifier>
-            <gml:name>Gearcase reduction for each gear (n)</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy31</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="specific_energy">
-            <gml:description>Specific energy (psi)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#specific_energy</gml:identifier>
-            <gml:name>Specific energy</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy32</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="drillability_strength">
-            <gml:description>Drillability strength (psi)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#drillability_strength</gml:identifier>
-            <gml:name>Drillability strength</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy33</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="somerton_index">
-            <gml:description>Somerton index (-)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#somerton_index</gml:identifier>
-            <gml:name>Somerton index</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy34</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="penetration_resistance">
-            <gml:description>Penetration resistance (min/1-in)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_resistance</gml:identifier>
-            <gml:name>Penetration resistance</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>time per length</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy35</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="soil_rock_resistance">
-            <gml:description>Soil-rock resistance (pci-min)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#soil_rock_resistance</gml:identifier>
-            <gml:name>Soil-rock resistance</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:authority>AASHTO Designation: TP xxx-yy36</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="ground_water_table">
-            <gml:description>Ground Water Table Depth (ft)</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#ground_water_table</gml:identifier>
-            <gml:name>Ground Water Table</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>length</diggs:quantityClass>
-            <diggs:authority>AASHTO Designation: TP xxx-yy37</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="drill_rod_weight">
-            <gml:description>Weight of the drill rod or drill string (lbf)</gml:description>
+            <gml:description>Total weight of the drill rod or drill string; increases as a new section Is added.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#drill_rod_weight</gml:identifier>
             <gml:name>Weight of drill rod or drill string</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -603,78 +62,436 @@
             <diggs:authority>AASHTO Designation: TP xxx-yy38</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="drillability_strength">
+            <gml:description>Drillability strength.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#drillability_strength</gml:identifier>
+            <gml:name>Drillability strength</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy33</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="excavated_borehole_area">
+            <gml:description>The cross-sectional area of the borehole cleared by the drill bit, assumed from drill bit diameter.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#excavated_borehole_area</gml:identifier>
+            <gml:name>Cross-sectional area of excavated borehole</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>area</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy18</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fluid_injection_mass_rate">
+            <gml:description>Fluid injection mass flow rate: The mass of drilling fluid injected into the well per unit time.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_injection_mass_rate</gml:identifier>
+            <gml:name>Fluid injection mass flow rate</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per time</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy6</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fluid_injection_pressure">
+            <gml:description>Fluid injection pressure: The pressure at which drilling fluid is injected into the well.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_injection_pressure</gml:identifier>
+            <gml:name>Fluid injection pressure</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy7</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fluid_injection_volume_rate">
+            <gml:description>Fluid injection volumetric flow rate, pumped inflow: The volume of drilling fluid pumped into the well per unit time.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_injection_volume_rate</gml:identifier>
+            <gml:name>Fluid injection volumetric flow rate, pumped inflow</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per time</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy5</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fluid_return_volume_rate">
+            <gml:description>Fluid return volumetric flow rate, returned outflow: The volume of drilling fluid flowing back to the surface per unit time.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_return_volume_rate</gml:identifier>
+            <gml:name>Fluid return volumetric flow rate, returned outflow</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per time</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy8</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gear_number">
+            <gml:description>The number of the gear that is engaged.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#gear_number</gml:identifier>
+            <gml:name>Gear Number</gml:name>
+            <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>unitless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="hydraulic_crowd_pressure">
+            <gml:description>Hydraulic crowd operating pressure: The pressure at which the hydraulic system operates to exert crowd force.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_crowd_pressure</gml:identifier>
+            <gml:name>Hydraulic crowd operating pressure</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy26</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="hydraulic_fluid_flow_rate">
+            <gml:description>Hydraulic fluid flow rate: The flow rate of the hydraulic fluid.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_fluid_flow_rate</gml:identifier>
+            <gml:name>Hydraulic fluid flow rate</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per time</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy29</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="hydraulic_torque_pressure">
+            <gml:description>Hydraulic torque operating pressure. The pressure at which the hydraulic system operates to deliver torque.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_torque_pressure</gml:identifier>
+            <gml:name>Hydraulic torque operating pressure</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy25</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="inclination">
+            <gml:description>Inclination: The angle of the borehole relative to the vertical.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#inclination</gml:identifier>
+            <gml:name>Inclination</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>plane angle</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy12</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="injected_fluid_density">
+            <gml:description>Injected fluid density: The mass per unit volume of the injected fluid.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#injected_fluid_density</gml:identifier>
+            <gml:name>Injected fluid density</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>mass per volume</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy9</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="injected_fluid_viscosity">
+            <gml:description>Injected fluid dynamic viscosity: The resistance of the injected fluid to flow.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#injected_fluid_viscosity</gml:identifier>
+            <gml:name>Injected fluid dynamic viscosity</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dynamic viscosity</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy10</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="measured_depth">
+            <gml:description>The measured depth downhole reached by the drill bit; a positive number.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#measured_depth</gml:identifier>
+            <gml:name>Measured depth</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy15</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="measured_time">
+            <gml:description>The time noted for a certain driling operation or when a measurement is obtained, measured as an elapsed time from the start of drilling or of a drilling segment.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#measured_time</gml:identifier>
+            <gml:name>Measured time</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy14</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="penetration_length">
+            <gml:description>Penetration length: The length of a increment of the borehole advanced by the drill bit.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_length</gml:identifier>
+            <gml:name>Penetration length</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy13</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="penetration_rate">
+            <gml:description>Penetration rate: The speed at which the drill bit penetrates the soil or rock.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_rate</gml:identifier>
+            <gml:name>Penetration rate</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per time</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy3</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="penetration_resistance">
+            <gml:description>Penetration resistance is the amount of time it takes to drill a specified distance.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_resistance</gml:identifier>
+            <gml:name>Penetration resistance</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time per length</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy35</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="rotation_shaft">
+            <gml:description>The number of revolutions per unit time measured on the shaft.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#rotation_shaft</gml:identifier>
+            <gml:name>Shaft rotational speed</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>angular velocity</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy4</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="rotation_tool">
+            <gml:description>The number of revolutions per unit time measured on the drill bit or cutting tool.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#rotation_tool</gml:identifier>
+            <gml:name>Cutting tool rotational epeed</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>angular velocity</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy4</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="somerton_index">
+            <gml:description>Somerton index. A strength parameter that correlates the effective weight on a bit, rotation rate, and advance rate.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#somerton_index</gml:identifier>
+            <gml:name>Somerton index</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy34</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="specific_energy">
+            <gml:description>Specific energy. The amount of energy required to excavate a unit volume of soil or rock.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#specific_energy</gml:identifier>
+            <gml:name>Specific energy</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy32</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="stop_depth">
-            <gml:description>True False Flag for when the drill rig stops (1,0)</gml:description>
+            <gml:description>A logical flag; true when the drill rig advancement is stopped.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#stop_depth</gml:identifier>
             <gml:name>Stop Depth</gml:name>
             <diggs:dataType>boolean</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="torquetach">
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#torquetach</gml:identifier>
+        <diggs:Definition gml:id="torque">
+            <gml:description>Torque: The rotational force applied by the drill rig.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#torque</gml:identifier>
+            <gml:name>Torque</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>moment of force</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy1</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="torque_tach">
+            <gml:description>The percentage of the maximum available torque being used by the drill rig.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#torque_tach</gml:identifier>
             <gml:name>torque Tach (%)</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="data_capture_software">
-            <gml:description>Indentier of the data processing software and version</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#data_capture_software</gml:identifier>
-            <gml:name>Data Capture Software</gml:name>
-            <diggs:dataType>string</diggs:dataType>
+        <diggs:Definition gml:id="vibration_acceleration">
+            <gml:description>The rate of change of velocity per second of the drill string.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#vibration_acceleration</gml:identifier>
+            <gml:name>Vibration</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>linear acceleration</diggs:quantityClass>
+            <diggs:authority>AASHTO Designation: TP xxx-yy11</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="drilling_activity_note">
-            <gml:description>Make notes of things while drilling MWD, or transitioning</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#drilling_activity_note</gml:identifier>
-            <gml:name>Drilling Activity Note</gml:name>
-            <diggs:dataType>string</diggs:dataType>
+        <diggs:Definition gml:id="vibration_frequency">
+            <gml:description>The frequency of vibration of the drill string</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#vibration_frequency</gml:identifier>
+            <gml:name>Vibration frequency</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>frequency</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="current_drilling_state">
-            <gml:description>Auger drilling, Mud rtotary, hollow stem, rock core.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#current_drilling_state</gml:identifier>
-            <gml:name>Current Drilling State</gml:name>
-            <diggs:dataType>string</diggs:dataType>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>TBD</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:MWDResult/diggs:results/diggs:ResultSet/diggs:parameters/diggs:PropertyParameters/diggs:properties/diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//diggs:MWDResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
