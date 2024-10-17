@@ -489,7 +489,7 @@
         <diggs:Definition gml:id="vibration_acceleration">
             <gml:description>The rate of change of velocity per second of the drill string.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#vibration_acceleration</gml:identifier>
-            <gml:name>Vibration</gml:name>
+            <gml:name>Vibration acceleration</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>linear acceleration</diggs:quantityClass>
             <diggs:occurrences>
