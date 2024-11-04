@@ -639,6 +639,10 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:InSituPenetrometerTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:LabPenetrometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -784,6 +788,21 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:WaterContentTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="delay">
+            <gml:description>Duration of delay before the start of a penetration increment</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#delay</gml:identifier>
+            <gml:name>Delay Time</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:DynamicProbeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1093,11 +1112,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../diggs:sensor/</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>../../../../../../../../../diggs:sensor/</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1112,11 +1131,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../diggs:sensor/</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>../../../../../../../../../diggs:sensor/</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1131,11 +1150,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../diggs:sensor/</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>../../../../../../../../../diggs:sensor/</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1927,6 +1946,10 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:LabResistivityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:InSituResistivityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -2474,6 +2497,21 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="torque">
+            <gml:description>Torque: The rotational force applied by the drill rig.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#torque</gml:identifier>
+            <gml:name>Torque</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>moment of force</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs_geo:DynamicProbeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
