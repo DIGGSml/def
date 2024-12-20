@@ -6,11 +6,11 @@
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml</gml:identifier>
     <gml:name>DIGGS Measurement Properties for MWD</gml:name>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="calibration_flag">
-            <gml:description>True False Flag; true if this is a calibration test</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#calibration_flag</gml:identifier>
-            <gml:name>Calibration flag</gml:name>
-            <diggs:dataType>boolean</diggs:dataType>
+        <diggs:Definition gml:id="alteration_index">
+            <gml:description>A value of relative hardness as a function of crowd and penetration rate, as defined by Pfister, 1985.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#alteration_index</gml:identifier>
+            <gml:name>Alteration index</gml:name>
+            <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -21,12 +21,12 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="excavated_borehole_area">
-            <gml:description>The cross-sectional area of the borehole cleared by the drill bit, assumed from drill bit diameter.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#excavated_borehole_area</gml:identifier>
-            <gml:name>Cross-sectional area of excavated borehole</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>area</diggs:quantityClass>
+        <diggs:Definition gml:id="calibration_flag">
+            <gml:description>True False Flag; true if this is a calibration test</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#calibration_flag</gml:identifier>
+            <gml:name>Calibration flag</gml:name>
+            <diggs:dataType>boolean</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -82,7 +82,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="drillability_strength">
-            <gml:description>Drillability strength.</gml:description>
+            <gml:description>The inherent resistance of rock to drilling operations that takes into account various rock properties that affect drilling performance, such as: 1) rock hardness, 2) compressive strengt, 3) brasiveness, 4) fracture toughness and 5) mineral composition.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#drillability_strength</gml:identifier>
             <gml:name>Drillability strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -96,8 +96,23 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
+        <diggs:Definition gml:id="exponent_method">
+            <gml:description>A value to estimate pore pressure during drilling by calculating a &quot;d-exponent,&quot; which is a normalized measure of drillability based on drilling parameters like weight on bit, rotary speed (RPM), and bit diameter, essentially indicating how easily a formation is being drilled through; this method was first described by Jorden and Shirley in 1966.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#exponent_method</gml:identifier>
+            <gml:name>Exponent method</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
         <diggs:Definition gml:id="fluid_injection_mass_rate">
-            <gml:description>Fluid injection mass flow rate: The mass of drilling fluid injected into the well per unit time.</gml:description>
+            <gml:description>Fluid injection mass flow rate: The mass of drilling fluid injected into the hole per unit time.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_injection_mass_rate</gml:identifier>
             <gml:name>Fluid injection mass flow rate</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -112,7 +127,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="fluid_injection_pressure">
-            <gml:description>Fluid injection pressure: The pressure at which drilling fluid is injected into the well.</gml:description>
+            <gml:description>Fluid injection pressure: The pressure at which drilling fluid is injected into the hole.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_injection_pressure</gml:identifier>
             <gml:name>Fluid injection pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -186,6 +201,21 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
+        <diggs:Definition gml:id="hardness_parameter">
+            <gml:description>Introduced by Bingham, 1965, this parameter characterizes material hardness through two complementary measures (Γhard and Γeasy) using drilling operational parameters like speed, force, bit size, penetration rate and torque. The two parameters are inversely related to each other.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hardness_parameter</gml:identifier>
+            <gml:name>Hardness parameter</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
         <diggs:Definition gml:id="holdback_pressure">
             <gml:description>Hydraulic pressure used to prevent the drilling rod from penetrating too fast,  to prevent equipment from falling into a hole, or to compensate for the weight of rods added as the hole is drilled deeper.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#holdback_pressure</gml:identifier>
@@ -216,42 +246,12 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="hydraulic_fluid_flow_rate">
-            <gml:description>Hydraulic fluid flow rate: The flow rate of the hydraulic fluid.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_fluid_flow_rate</gml:identifier>
-            <gml:name>Hydraulic fluid flow rate</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>volume per time</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="hydraulic_torque_pressure">
             <gml:description>Hydraulic torque operating pressure. The pressure at which the hydraulic system operates to deliver torque.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_torque_pressure</gml:identifier>
             <gml:name>Hydraulic torque operating pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="inclination">
-            <gml:description>Inclination: The angle of the borehole relative to the vertical.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#inclination</gml:identifier>
-            <gml:name>Inclination</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>plane angle</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -307,7 +307,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="measured_time">
-            <gml:description>The time noted for a certain driling operation or when a measurement is obtained, measured as an elapsed time from the start of drilling or of a drilling segment.</gml:description>
+            <gml:description>The time noted for a certain driling operation or when a measurement is obtained, measured as an elapsed time from the start of drilling increment.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#measured_time</gml:identifier>
             <gml:name>Measured time</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -382,7 +382,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="penetration_resistance">
-            <gml:description>Penetration resistance is the amount of time it takes to drill a specified distance.</gml:description>
+            <gml:description>The amount of time it takes to drill a specified distance.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_resistance</gml:identifier>
             <gml:name>Penetration resistance</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -411,8 +411,23 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
+        <diggs:Definition gml:id="soil_rock_resistance">
+            <gml:description>The force or resistance encountered by drilling equipment as it penetrates through different layers of soil and rock formations.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#soil_rock_resistance</gml:identifier>
+            <gml:name>Soil-Rock resistance</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force time per volume</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
         <diggs:Definition gml:id="somerton_index">
-            <gml:description>Somerton index. A strength parameter that correlates the effective weight on a bit, rotation rate, and advance rate.</gml:description>
+            <gml:description>A strength parameter that correlates the effective weight on a bit, rotation rate, and advance rate.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#somerton_index</gml:identifier>
             <gml:name>Somerton index</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -427,7 +442,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="specific_energy">
-            <gml:description>Specific energy. The amount of energy required to excavate a unit volume of soil or rock.</gml:description>
+            <gml:description>The amount of energy required to excavate a unit volume of soil or rock.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#specific_energy</gml:identifier>
             <gml:name>Specific energy</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -441,10 +456,10 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="stop_depth">
+        <diggs:Definition gml:id="stop_flag">
             <gml:description>A logical flag; true when the drill rig advancement is stopped.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#stop_depth</gml:identifier>
-            <gml:name>Stop Depth</gml:name>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#stop_flag</gml:identifier>
+            <gml:name>Stop Flag</gml:name>
             <diggs:dataType>boolean</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
@@ -457,7 +472,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="torque">
-            <gml:description>Torque: The rotational force applied by the drill rig.</gml:description>
+            <gml:description>Torque: The rotational force applied to the drill rod.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#torque</gml:identifier>
             <gml:name>Torque</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -502,7 +517,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="vibration_frequency">
-            <gml:description>The frequency of vibration of the drill string</gml:description>
+            <gml:description>The frequency of vibration of the drill string.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#vibration_frequency</gml:identifier>
             <gml:name>Vibration frequency</gml:name>
             <diggs:dataType>double</diggs:dataType>
