@@ -12,6 +12,7 @@
             <gml:name>Alteration index</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:reference>Pfister, P. 1985. “Recording Drilling Parameters in Ground Engineering.” Journal of Ground Engineering, 18(3), 16–21.</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -22,7 +23,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="calibration_flag">
-            <gml:description>True False Flag; true if this is a calibration test</gml:description>
+            <gml:description>True-False Flag; true if this is a calibration test</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#calibration_flag</gml:identifier>
             <gml:name>Calibration flag</gml:name>
             <diggs:dataType>boolean</diggs:dataType>
@@ -82,11 +83,12 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="drillability_strength">
-            <gml:description>The inherent resistance of rock to drilling operations that takes into account various rock properties that affect drilling performance, such as: 1) rock hardness, 2) compressive strengt, 3) brasiveness, 4) fracture toughness and 5) mineral composition.</gml:description>
+            <gml:description>The inherent resistance of rock to drilling operations that takes into account various rock properties that affect drilling performance, such as: 1) rock hardness, 2) compressive strength, 3) abrasiveness, 4) fracture toughness and 5) mineral composition. Introduced by Karasawa and others, 2002.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#drillability_strength</gml:identifier>
             <gml:name>Drillability strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:reference>Karasawa, H., Ohno, T., Kosugi, M., and Rowley, J. C., 2002, “Methods to Estimate the Rock Strength and Tooth Wear While Drilling With Roller-Bits, Part 1: Milled-Tooth Bits,” ASME J. Energy Resour. Technol., 124, pp. 125–132.</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -102,6 +104,7 @@
             <gml:name>Exponent method</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:reference>Jorden, J., and Shirley, O. 1966. “Application of Drilling Performance Data to Overpressure Detection.” Journal of Petroleum Technology, 7, 987–991.</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -207,6 +210,7 @@
             <gml:name>Hardness parameter</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>Bingham, M. 1965. “A New Approach to Interpreting Rock Drillability.” Petroleum Publishing Company.</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -382,11 +386,12 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="penetration_resistance">
-            <gml:description>The amount of time it takes to drill a specified distance.</gml:description>
+            <gml:description>The amount of time it takes to drill a specified distance. Defined in ISO/IEC, 2016.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_resistance</gml:identifier>
             <gml:name>Penetration resistance</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>time per length</diggs:quantityClass>
+            <diggs:reference>ISO/IEC. 2016. Geotechnical Investigation and Testing – Field Testing – Part 15: Measuring While Drilling. ISO 22476-15:2016, International Standards Organization. Geneva, Switzerland.</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -412,11 +417,12 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="soil_rock_resistance">
-            <gml:description>The force or resistance encountered by drilling equipment as it penetrates through different layers of soil and rock formations.</gml:description>
+            <gml:description>The force or resistance encountered by drilling equipment as it penetrates through different layers of soil and rock formations, from ISO/IEC, 2016</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#soil_rock_resistance</gml:identifier>
             <gml:name>Soil-Rock resistance</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>force time per volume</diggs:quantityClass>
+            <diggs:reference>ISO/IEC. 2016. Geotechnical Investigation and Testing – Field Testing – Part 15: Measuring While Drilling. ISO 22476-15:2016, International Standards Organization. Geneva, Switzerland.</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -427,11 +433,12 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="somerton_index">
-            <gml:description>A strength parameter that correlates the effective weight on a bit, rotation rate, and advance rate.</gml:description>
+            <gml:description>From Somerton (1959), a strength parameter that correlates the effective weight on a bit, rotation rate, and advance rate.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#somerton_index</gml:identifier>
             <gml:name>Somerton index</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:reference>Somerton W.H. 1959. “A laboratory study of rock breakage by rotary drilling.” J. Pet. Technol, 216 pp. 92-97.</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -442,11 +449,12 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="specific_energy">
-            <gml:description>The amount of energy required to excavate a unit volume of soil or rock.</gml:description>
+            <gml:description>The amount of energy required to excavate a unit volume of soil or rock as defined by Teae, 1965</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#specific_energy</gml:identifier>
             <gml:name>Specific energy</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:reference>Teale, R. 1965. “The concept of specific energy in rock drilling.” International Journal of Rock Mechanics and Mining Sciences. 2(1): 57–73.</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -543,6 +551,24 @@
                     <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fluid_temperature">
+            <gml:description>The temperature of thedrilling fluid.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_temperature</gml:identifier>
+            <gml:name>Fluid temperature</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="eccentricity">
+            <gml:description>The offset distance between the axis of the drill bit rotation and the center of the wellbore.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#eccentricity</gml:identifier>
+            <gml:name>Eccentricity</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
         </diggs:Definition>
     </gml:dictionaryEntry>
 </gml:Dictionary>
