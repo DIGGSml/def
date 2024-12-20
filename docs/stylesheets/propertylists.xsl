@@ -218,8 +218,6 @@
                     <xsl:attribute name="target">_blank</xsl:attribute>
                     <xsl:value-of select="./diggs:reference"/>
                   </xsl:element>
-                <td>
-                  <xsl:value-of select="./diggs:reference"/>
                 </td>
               </tr>
             </xsl:for-each>
