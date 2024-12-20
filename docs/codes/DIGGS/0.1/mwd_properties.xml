@@ -12,7 +12,8 @@
             <gml:name>Alteration index</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
-            <diggs:reference>Pfister, P. 1985. “Recording Drilling Parameters in Ground Engineering.” Journal of Ground Engineering, 18(3), 16–21.</diggs:reference>
+            <diggs:authority>Pfister, P. 1985. “Recording Drilling Parameters in Ground Engineering.” Journal of Ground Engineering, 18(3), 16–21.</diggs:authority>
+            <diggs:reference>https://emap-romulus-prod.s3.eu-west-1.amazonaws.com/wp-content/uploads/sites/13/1985/04/1985-04_Pages_16-21.pdf</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -88,7 +89,8 @@
             <gml:name>Drillability strength</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:reference>Karasawa, H., Ohno, T., Kosugi, M., and Rowley, J. C., 2002, “Methods to Estimate the Rock Strength and Tooth Wear While Drilling With Roller-Bits, Part 1: Milled-Tooth Bits,” ASME J. Energy Resour. Technol., 124, pp. 125–132.</diggs:reference>
+            <diggs:authority>Karasawa, H., Ohno, T., Kosugi, M., and Rowley, J. C., 2002, “Methods to Estimate the Rock Strength and Tooth Wear While Drilling With Roller-Bits, Part 1: Milled-Tooth Bits,” ASME J. Energy Resour. Technol., 124, pp. 125–132.</diggs:authority>
+            <diggs:reference>http://dx.doi.org/10.1115/1.1482405</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -104,7 +106,8 @@
             <gml:name>Exponent method</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
-            <diggs:reference>Jorden, J., and Shirley, O. 1966. “Application of Drilling Performance Data to Overpressure Detection.” Journal of Petroleum Technology, 7, 987–991.</diggs:reference>
+            <diggs:authority>Jorden, J., and Shirley, O. 1966. “Application of Drilling Performance Data to Overpressure Detection.” Journal of Petroleum Technology, 7, 987–991.</diggs:authority>
+            <diggs:reference>https://doi.org/10.2118/1407-PA</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -211,6 +214,7 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>Bingham, M. 1965. “A New Approach to Interpreting Rock Drillability.” Petroleum Publishing Company.</diggs:authority>
+            <diggs:reference>https://books.google.com/books/about/A_New_Approach_to_Interpreting_Rock_Dril.html?id=8KcRnQEACAAJ</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -391,7 +395,8 @@
             <gml:name>Penetration resistance</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>time per length</diggs:quantityClass>
-            <diggs:reference>ISO/IEC. 2016. Geotechnical Investigation and Testing – Field Testing – Part 15: Measuring While Drilling. ISO 22476-15:2016, International Standards Organization. Geneva, Switzerland.</diggs:reference>
+            <diggs:authority>ISO/IEC. 2016. Geotechnical Investigation and Testing – Field Testing – Part 15: Measuring While Drilling. ISO 22476-15:2016, International Standards Organization. Geneva, Switzerland.</diggs:authority>
+            <diggs:reference>https://www.iso.org/standard/63412.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -422,7 +427,8 @@
             <gml:name>Soil-Rock resistance</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>force time per volume</diggs:quantityClass>
-            <diggs:reference>ISO/IEC. 2016. Geotechnical Investigation and Testing – Field Testing – Part 15: Measuring While Drilling. ISO 22476-15:2016, International Standards Organization. Geneva, Switzerland.</diggs:reference>
+            <diggs:authority>ISO/IEC. 2016. Geotechnical Investigation and Testing – Field Testing – Part 15: Measuring While Drilling. ISO 22476-15:2016, International Standards Organization. Geneva, Switzerland.</diggs:authority>
+            <diggs:reference>https://www.iso.org/standard/63412.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -438,7 +444,8 @@
             <gml:name>Somerton index</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
-            <diggs:reference>Somerton W.H. 1959. “A laboratory study of rock breakage by rotary drilling.” J. Pet. Technol, 216 pp. 92-97.</diggs:reference>
+            <diggs:authority>Somerton W.H. 1959. “A laboratory study of rock breakage by rotary drilling.” J. Pet. Technol, 216 pp. 92-97.</diggs:authority>
+            <diggs:reference>https://doi.org/10.2118/1163-G</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -454,7 +461,8 @@
             <gml:name>Specific energy</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:reference>Teale, R. 1965. “The concept of specific energy in rock drilling.” International Journal of Rock Mechanics and Mining Sciences. 2(1): 57–73.</diggs:reference>
+            <diggs:authority>Teale, R. 1965. “The concept of specific energy in rock drilling.” International Journal of Rock Mechanics and Mining Sciences. 2(1): 57–73.</diggs:authority>
+            <diggs:reference>https://doi.org/10.1016/0148-9062(65)90022-7</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
