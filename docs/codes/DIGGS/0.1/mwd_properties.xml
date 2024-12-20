@@ -563,20 +563,32 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="fluid_temperature">
-            <gml:description>The temperature of thedrilling fluid.</gml:description>
+            <gml:description>The temperature of the drilling fluid.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_temperature</gml:identifier>
             <gml:name>Fluid temperature</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="eccentricity">
-            <gml:description>The offset distance between the axis of the drill bit rotation and the center of the wellbore.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#eccentricity</gml:identifier>
-            <gml:name>Eccentricity</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>length</diggs:quantityClass>
+        <diggs:Definition gml:id="eccentric_rotation">
+            <gml:description>A logical flag; true when observation and/or rig vibration indicates significant offset between the bit axis of rotation and the vellbore center.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#eccentric_rotation</gml:identifier>
+            <gml:name>Eccentric rotation</gml:name>
+            <diggs:dataType>boolean</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>../../../../../../../../../procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
 </gml:Dictionary>
