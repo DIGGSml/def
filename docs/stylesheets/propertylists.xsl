@@ -84,7 +84,7 @@
           text-align: left;
           border-bottom: 2px solid gray;
           font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-          font-size: 14px;
+        font-size: 18px;
           cursor: pointer;
           }
           
@@ -211,6 +211,13 @@
                 <td>
                   <xsl:value-of select="./diggs:authority"/>
                 </td>
+                  <xsl:element name="a">
+                    <xsl:attribute name="href">
+                      <xsl:value-of select="./diggs:reference"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="target">_blank</xsl:attribute>
+                    <xsl:value-of select="./diggs:reference"/>
+                  </xsl:element>
                 <td>
                   <xsl:value-of select="./diggs:reference"/>
                 </td>
