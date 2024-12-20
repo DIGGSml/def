@@ -83,7 +83,7 @@
           padding: 8px;
           text-align: left;
           border-bottom: 2px solid gray;
-          border-right 2px dotted gray;
+          border-right: 2px dotted gray;
           font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
         font-size: 18px;
           cursor: pointer;
