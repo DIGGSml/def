@@ -211,6 +211,7 @@
                 <td>
                   <xsl:value-of select="./diggs:authority"/>
                 </td>
+                <td>
                   <xsl:element name="a">
                     <xsl:attribute name="href">
                       <xsl:value-of select="./diggs:reference"/>
