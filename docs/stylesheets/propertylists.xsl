@@ -83,6 +83,7 @@
           padding: 8px;
           text-align: left;
           border-bottom: 2px solid gray;
+          border-right 2px dotted gray;
           font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
         font-size: 18px;
           cursor: pointer;
@@ -202,7 +203,7 @@
                     <br/>
                   </xsl:for-each>
                 </td>
-                <td style="border-left: 2px dotted grey;">
+                <td>
                   <xsl:for-each select="./diggs:occurrences/diggs:Occurrence">
                     <xsl:value-of select="./diggs:conditionalElementXpath"/>
                     <br/>
