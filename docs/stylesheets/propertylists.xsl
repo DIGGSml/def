@@ -84,7 +84,7 @@
           text-align: left;
           border-bottom: 2px solid gray;
           font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-          font-size: 18px;
+          font-size: 14px;
           cursor: pointer;
           }
           
@@ -174,6 +174,9 @@
               <th>Quantity Classification</th>
               <th>Source Element XPath</th>
               <th>Source Procedure XPath</th>
+              <th>Source/Authority</th>
+              <th>Reference</th>
+
             </tr>
             <xsl:for-each select="gml:Dictionary/gml:dictionaryEntry/diggs:Definition">
               <xsl:sort select="./gml:name"/>
@@ -204,6 +207,12 @@
                     <xsl:value-of select="./diggs:conditionalElementXpath"/>
                     <br/>
                   </xsl:for-each>
+                </td>
+                <td>
+                  <xsl:value-of select="./diggs:authority"/>
+                </td>
+                <td>
+                  <xsl:value-of select="./diggs:reference"/>
                 </td>
               </tr>
             </xsl:for-each>
