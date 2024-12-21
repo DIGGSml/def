@@ -578,7 +578,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="eccentric_rotation">
-            <gml:description>A logical flag; true when observation and/or rig vibration indicates significant offset between the bit axis of rotation and the vellbore center.</gml:description>
+            <gml:description>A logical flag; true when observation and/or rig vibration indicates significant offset between the bit axis of rotation and the wellbore center.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#eccentric_rotation</gml:identifier>
             <gml:name>Eccentric rotation</gml:name>
             <diggs:dataType>boolean</diggs:dataType>
