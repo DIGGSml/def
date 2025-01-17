@@ -50,8 +50,8 @@ function highlight_row() {
             
             // Now get cell info to show instance example
             
-            var id = rowSelected.cells[1].innerHTML;
-            var identifier = rowSelected.cells[0].innerHTML;
+            var id = rowSelected.cells[0].innerHTML;
+            var identifier = rowSelected.cells[1].innerHTML;
             var element = document.getElementById("gml:id").innerHTML;
             var url = document.getElementById("url").innerHTML+"&quot;&gt;";
             var txt = 'Example instance:<p style="color: red;">&lt;';
