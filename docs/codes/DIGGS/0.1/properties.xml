@@ -824,7 +824,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="dilatometer_modulus">
-            <gml:description>Dilatometer modulus, based on linear elastic theory, and the primary index used in the correlation for the constrained and Young's moduli.</gml:description>
+            <gml:description>Dilatometer modulus (Ed), based on linear elastic theory, and the primary index used in the correlation for the constrained and Young's moduli.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dilatometer_modulus</gml:identifier>
             <gml:name>Dilatometer Modulus (Ed)</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -839,7 +839,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="dmt_tip_bearing">
-            <gml:description>DMT tip bearing (qD) is the axial thrust force at the end of dilatometer blade divided by the projected cross-sectional area of the blade normal to the penetration. The DMT tip bearing is similar to the cone resistance, qc and may be used to evaluate stratigraphy. In cohesionless soils, qD and KD may be used to estimate the friction angle, overconsolidation ratio and at rest coefficient of earth pressure.</gml:description>
+            <gml:description>DMT tip bearing (qD) is the axial thrust force at the end of a dilatometer blade divided by the projected cross-sectional area of the blade normal to the penetration. The DMT tip bearing is similar to the cone resistance, qc and may be used to evaluate stratigraphy. In cohesionless soils, qD and eD may be used to estimate the friction angle, overconsolidation ratio and at rest coefficient of earth pressure.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dmt_tip_bearing</gml:identifier>
             <gml:name>Dilatometer Tip Bearing (Qd)</gml:name>
             <diggs:dataType>double</diggs:dataType>
