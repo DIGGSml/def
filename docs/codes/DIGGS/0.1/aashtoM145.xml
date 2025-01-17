@@ -11,7 +11,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-1-a</gml:identifier>
             <gml:name>A-1-a</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -26,7 +26,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-1-b</gml:identifier>
             <gml:name>A-1-b</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -41,7 +41,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-3</gml:identifier>
             <gml:name>A-3</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -56,7 +56,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-2-4</gml:identifier>
             <gml:name>A-2-4</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -71,7 +71,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-2-5</gml:identifier>
             <gml:name>A-2-5</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -86,7 +86,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-2-6</gml:identifier>
             <gml:name>A-2-6</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -101,7 +101,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-2-7</gml:identifier>
             <gml:name>A-2-7</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -116,7 +116,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-4</gml:identifier>
             <gml:name>A-4</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -131,7 +131,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-5</gml:identifier>
             <gml:name>A-5</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -146,7 +146,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-6</gml:identifier>
             <gml:name>A-6</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -161,7 +161,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-7-5</gml:identifier>
             <gml:name>A-7-5</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -176,7 +176,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-7-6</gml:identifier>
             <gml:name>A-7-6</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -191,7 +191,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml#a-8</gml:identifier>
             <gml:name>A-8</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>AASHTO D 145</diggs:authority>
+            <diggs:authority>AASHTO M 145-91</diggs:authority>
             <diggs:reference>https://store.transportation.org/item/publicationdetail/457</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>

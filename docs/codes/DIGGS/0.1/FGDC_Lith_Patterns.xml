@@ -1,0 +1,1763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="FGDC_Lith_Code">
+    <gml:description>Federal Geographic Data Committee FGDC DigitalCartographic Standard for Geologic Map Symbolization Document Number FGDC-STD-013-2006</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml</gml:identifier>
+    <gml:name>DIGGS Soil Classification Definitions (FGDC Lith Patterns)</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="601">
+            <gml:description>Gravel or conglomerate (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#601</gml:identifier>
+            <gml:name>Gravel or conglomerate (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="602">
+            <gml:description>Gravel or conglomerate (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#602</gml:identifier>
+            <gml:name>Gravel or conglomerate (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="603">
+            <gml:description>Crossbedded gravel or conglomerate</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#603</gml:identifier>
+            <gml:name>Crossbedded gravel or conglomerate</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="605">
+            <gml:description>Breccia (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#605</gml:identifier>
+            <gml:name>Breccia (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="606">
+            <gml:description>Breccia (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#606</gml:identifier>
+            <gml:name>Breccia (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="607">
+            <gml:description>Massive sand or sandstone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#607</gml:identifier>
+            <gml:name>Massive sand or sandstone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="608">
+            <gml:description>Bedded sand or sandstone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#608</gml:identifier>
+            <gml:name>Bedded sand or sandstone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="609">
+            <gml:description>Crossbedded sand or sandstone (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#609</gml:identifier>
+            <gml:name>Crossbedded sand or sandstone (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="610">
+            <gml:description>Crossbedded sand or sandstone (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#610</gml:identifier>
+            <gml:name>Crossbedded sand or sandstone (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="611">
+            <gml:description>Ripple-bedded sand or sandstone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#611</gml:identifier>
+            <gml:name>Ripple-bedded sand or sandstone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="612">
+            <gml:description>Argillaceous or shaly sandstone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#612</gml:identifier>
+            <gml:name>Argillaceous or shaly sandstone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="613">
+            <gml:description>Calcareous sandstone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#613</gml:identifier>
+            <gml:name>Calcareous sandstone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="614">
+            <gml:description>Dolomitic sandstone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#614</gml:identifier>
+            <gml:name>Dolomitic sandstone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="616">
+            <gml:description>Silt, siltstone, or shaly silt</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#616</gml:identifier>
+            <gml:name>Silt, siltstone, or shaly silt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="617">
+            <gml:description>Calcareous siltstone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#617</gml:identifier>
+            <gml:name>Calcareous siltstone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="618">
+            <gml:description>Dolomitic siltstone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#618</gml:identifier>
+            <gml:name>Dolomitic siltstone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="619">
+            <gml:description>Sandy or silty shale</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#619</gml:identifier>
+            <gml:name>Sandy or silty shale</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="620">
+            <gml:description>Clay or clay shale</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#620</gml:identifier>
+            <gml:name>Clay or clay shale</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="621">
+            <gml:description>Cherty shale</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#621</gml:identifier>
+            <gml:name>Cherty shale</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="622">
+            <gml:description>Dolomitic shale</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#622</gml:identifier>
+            <gml:name>Dolomitic shale</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="623">
+            <gml:description>Calcareous shale or marl</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#623</gml:identifier>
+            <gml:name>Calcareous shale or marl</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="624">
+            <gml:description>Carbonaceous shale</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#624</gml:identifier>
+            <gml:name>Carbonaceous shale</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="625">
+            <gml:description>Oil shale</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#625</gml:identifier>
+            <gml:name>Oil shale</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="626">
+            <gml:description>Chalk</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#626</gml:identifier>
+            <gml:name>Chalk</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="627">
+            <gml:description>Limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#627</gml:identifier>
+            <gml:name>Limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="628">
+            <gml:description>Clastic limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#628</gml:identifier>
+            <gml:name>Clastic limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="629">
+            <gml:description>Fossiliferous clastic limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#629</gml:identifier>
+            <gml:name>Fossiliferous clastic limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="630">
+            <gml:description>Nodular or irregularly bedded limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#630</gml:identifier>
+            <gml:name>Nodular or irregularly bedded limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="631">
+            <gml:description>Limestone, irregular (burrow?) fillings of saccharoidal dolomite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#631</gml:identifier>
+            <gml:name>Limestone, irregular (burrow?) fillings of saccharoidal dolomite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="632">
+            <gml:description>Crossbedded limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#632</gml:identifier>
+            <gml:name>Crossbedded limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="633">
+            <gml:description>Cherty crossbedded limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#633</gml:identifier>
+            <gml:name>Cherty crossbedded limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="634">
+            <gml:description>Cherty and sandy crossbedded clastic limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#634</gml:identifier>
+            <gml:name>Cherty and sandy crossbedded clastic limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="635">
+            <gml:description>Oolitic limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#635</gml:identifier>
+            <gml:name>Oolitic limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="636">
+            <gml:description>Sandy limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#636</gml:identifier>
+            <gml:name>Sandy limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="637">
+            <gml:description>Silty limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#637</gml:identifier>
+            <gml:name>Silty limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="638">
+            <gml:description>Argillaceous or shaly limestone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#638</gml:identifier>
+            <gml:name>Argillaceous or shaly limestone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="639">
+            <gml:description>Cherty limestone (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#639</gml:identifier>
+            <gml:name>Cherty limestone (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="640">
+            <gml:description>Cherty limestone (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#640</gml:identifier>
+            <gml:name>Cherty limestone (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="641">
+            <gml:description>Dolomitic limestone, limy dolostone, or limy dolomite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#641</gml:identifier>
+            <gml:name>Dolomitic limestone, limy dolostone, or limy dolomite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="642">
+            <gml:description>Dolostone or dolomite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#642</gml:identifier>
+            <gml:name>Dolostone or dolomite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="643">
+            <gml:description>Crossbedded dolostone or dolomite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#643</gml:identifier>
+            <gml:name>Crossbedded dolostone or dolomite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="644">
+            <gml:description>Oolitic dolostone or dolomite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#644</gml:identifier>
+            <gml:name>Oolitic dolostone or dolomite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="652">
+            <gml:description>Fossiliferous rock</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#652</gml:identifier>
+            <gml:name>Fossiliferous rock</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="653">
+            <gml:description>Diatomaceous rock</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#653</gml:identifier>
+            <gml:name>Diatomaceous rock</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="654">
+            <gml:description>Subgraywacke</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#654</gml:identifier>
+            <gml:name>Subgraywacke</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="655">
+            <gml:description>Crossbedded subgraywacke</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#655</gml:identifier>
+            <gml:name>Crossbedded subgraywacke</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="656">
+            <gml:description>Ripple-bedded subgraywacke</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#656</gml:identifier>
+            <gml:name>Ripple-bedded subgraywacke</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="657">
+            <gml:description>Peat</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#657</gml:identifier>
+            <gml:name>Peat</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="658">
+            <gml:description>Coal</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#658</gml:identifier>
+            <gml:name>Coal</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="645">
+            <gml:description>Sandy dolostone or dolomite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#645</gml:identifier>
+            <gml:name>Sandy dolostone or dolomite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="646">
+            <gml:description>Silty dolostone or dolomite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#646</gml:identifier>
+            <gml:name>Silty dolostone or dolomite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="647">
+            <gml:description>Argillaceous or shaly dolostone or dolomite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#647</gml:identifier>
+            <gml:name>Argillaceous or shaly dolostone or dolomite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="648">
+            <gml:description>Cherty dolostone or dolomite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#648</gml:identifier>
+            <gml:name>Cherty dolostone or dolomite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="649">
+            <gml:description>Bedded chert (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#649</gml:identifier>
+            <gml:name>Bedded chert (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="650">
+            <gml:description>Bedded chert (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#650</gml:identifier>
+            <gml:name>Bedded chert (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="651">
+            <gml:description>Fossiliferous bedded chert</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#651</gml:identifier>
+            <gml:name>Fossiliferous bedded chert</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="659">
+            <gml:description>Bony coal or impure coal</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#659</gml:identifier>
+            <gml:name>Bony coal or impure coal</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="660">
+            <gml:description>Underclay</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#660</gml:identifier>
+            <gml:name>Underclay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="661">
+            <gml:description>Flint clay</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#661</gml:identifier>
+            <gml:name>Flint clay</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="662">
+            <gml:description>Bentonite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#662</gml:identifier>
+            <gml:name>Bentonite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="663">
+            <gml:description>Glauconite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#663</gml:identifier>
+            <gml:name>Glauconite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="664">
+            <gml:description>Limonite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#664</gml:identifier>
+            <gml:name>Limonite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="665">
+            <gml:description>Siderite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#665</gml:identifier>
+            <gml:name>Siderite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="666">
+            <gml:description>Phosphatic-nodular rock</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#666</gml:identifier>
+            <gml:name>Phosphatic-nodular rock</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="667">
+            <gml:description>Gypsum</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#667</gml:identifier>
+            <gml:name>Gypsum</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="668">
+            <gml:description>Salt</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#668</gml:identifier>
+            <gml:name>Salt</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="669">
+            <gml:description>Interbedded sandstone and siltstone</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#669</gml:identifier>
+            <gml:name>Interbedded sandstone and siltstone</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="670">
+            <gml:description>Interbedded sandstone and shale</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#670</gml:identifier>
+            <gml:name>Interbedded sandstone and shale</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="671">
+            <gml:description>Interbedded ripple- bedded sandstone and shale</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#671</gml:identifier>
+            <gml:name>Interbedded ripple- bedded sandstone and shale</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="672">
+            <gml:description>Interbedded shale and silty limestone (shale dominant)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#672</gml:identifier>
+            <gml:name>Interbedded shale and silty limestone (shale dominant)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="680">
+            <gml:description>Interbedded limestone and calcareous shale</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#680</gml:identifier>
+            <gml:name>Interbedded limestone and calcareous shale</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="681">
+            <gml:description>Till or diamicton (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#681</gml:identifier>
+            <gml:name>Till or diamicton (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="682">
+            <gml:description>Till or diamicton (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#682</gml:identifier>
+            <gml:name>Till or diamicton (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="683">
+            <gml:description>Till or diamicton (3rd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#683</gml:identifier>
+            <gml:name>Till or diamicton (3rd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="684">
+            <gml:description>Loess (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#684</gml:identifier>
+            <gml:name>Loess (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="685">
+            <gml:description>Loess (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#685</gml:identifier>
+            <gml:name>Loess (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="686">
+            <gml:description>Loess (3rd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#686</gml:identifier>
+            <gml:name>Loess (3rd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="673">
+            <gml:description>Interbedded shale and limestone (shale dominant) (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#673</gml:identifier>
+            <gml:name>Interbedded shale and limestone (shale dominant) (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="674">
+            <gml:description>Interbedded shale and limestone (shale dominant) (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#674</gml:identifier>
+            <gml:name>Interbedded shale and limestone (shale dominant) (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="675">
+            <gml:description>Interbedded calc- areous shale and limestone (shale dominant)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#675</gml:identifier>
+            <gml:name>Interbedded calc- areous shale and limestone (shale dominant)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="676">
+            <gml:description>Interbedded silty limestone and shale</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#676</gml:identifier>
+            <gml:name>Interbedded silty limestone and shale</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="677">
+            <gml:description>Interbedded limestone and shale (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#677</gml:identifier>
+            <gml:name>Interbedded limestone and shale (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="678">
+            <gml:description>Interbedded limestone and shale (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#678</gml:identifier>
+            <gml:name>Interbedded limestone and shale (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="679">
+            <gml:description>Interbedded limestone and shale (limestone dominant)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#679</gml:identifier>
+            <gml:name>Interbedded limestone and shale (limestone dominant)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="717">
+            <gml:description>Basaltic flows</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#717</gml:identifier>
+            <gml:name>Basaltic flows</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="718">
+            <gml:description>Granite (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#718</gml:identifier>
+            <gml:name>Granite (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="719">
+            <gml:description>Granite (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#719</gml:identifier>
+            <gml:name>Granite (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="720">
+            <gml:description>Banded igneous rock</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#720</gml:identifier>
+            <gml:name>Banded igneous rock</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="721">
+            <gml:description>Igneous rock (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#721</gml:identifier>
+            <gml:name>Igneous rock (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="723">
+            <gml:description>Igneous rock (3rd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#723</gml:identifier>
+            <gml:name>Igneous rock (3rd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="724">
+            <gml:description>Igneous rock (4th option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#724</gml:identifier>
+            <gml:name>Igneous rock (4th option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="725">
+            <gml:description>Igneous rock (5th option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#725</gml:identifier>
+            <gml:name>Igneous rock (5th option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="726">
+            <gml:description>Igneous rock (6th option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#726</gml:identifier>
+            <gml:name>Igneous rock (6th option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="727">
+            <gml:description>Igneous rock (7th option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#727</gml:identifier>
+            <gml:name>Igneous rock (7th option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="728">
+            <gml:description>Igneous rock (8th option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#728</gml:identifier>
+            <gml:name>Igneous rock (8th option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="722">
+            <gml:description>Igneous rock (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#722</gml:identifier>
+            <gml:name>Igneous rock (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="711">
+            <gml:description>Tuffaceous rock</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#711</gml:identifier>
+            <gml:name>Tuffaceous rock</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="712">
+            <gml:description>Crystal tuff</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#712</gml:identifier>
+            <gml:name>Crystal tuff</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="713">
+            <gml:description>Devitrified tuff</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#713</gml:identifier>
+            <gml:name>Devitrified tuff</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="714">
+            <gml:description>Volcanic breccia and tuff</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#714</gml:identifier>
+            <gml:name>Volcanic breccia and tuff</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="715">
+            <gml:description>Volcanic breccia or agglomerate</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#715</gml:identifier>
+            <gml:name>Volcanic breccia or agglomerate</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="716">
+            <gml:description>Zeolitic rock</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#716</gml:identifier>
+            <gml:name>Zeolitic rock</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="729">
+            <gml:description>Porphyritic rock (1st option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#729</gml:identifier>
+            <gml:name>Porphyritic rock (1st option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="730">
+            <gml:description>Porphyritic rock (2nd option)</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#730</gml:identifier>
+            <gml:name>Porphyritic rock (2nd option)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="731">
+            <gml:description>Vitrophyre</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#731</gml:identifier>
+            <gml:name>Vitrophyre</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="732">
+            <gml:description>Quartz</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#732</gml:identifier>
+            <gml:name>Quartz</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="733">
+            <gml:description>Ore</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#733</gml:identifier>
+            <gml:name>Ore</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="707">
+            <gml:description>Schist and gneiss</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#707</gml:identifier>
+            <gml:name>Schist and gneiss</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="708">
+            <gml:description>Gneiss</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#708</gml:identifier>
+            <gml:name>Gneiss</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="709">
+            <gml:description>Contorted gneiss</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#709</gml:identifier>
+            <gml:name>Contorted gneiss</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="710">
+            <gml:description>Soapstone, talc, or serpentinite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#710</gml:identifier>
+            <gml:name>Soapstone, talc, or serpentinite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="701">
+            <gml:description>Metamorphism</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#701</gml:identifier>
+            <gml:name>Metamorphism</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="702">
+            <gml:description>Quartzite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#702</gml:identifier>
+            <gml:name>Quartzite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="703">
+            <gml:description>Slate</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#703</gml:identifier>
+            <gml:name>Slate</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="704">
+            <gml:description>Schistose or gneissoid granite</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#704</gml:identifier>
+            <gml:name>Schistose or gneissoid granite</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="705">
+            <gml:description>Schist</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#705</gml:identifier>
+            <gml:name>Schist</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="706">
+            <gml:description>Contorted schist</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/FGDC_Lith_Patterns.xml#706</gml:identifier>
+            <gml:name>Contorted schist</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FGDC</diggs:authority>
+            <diggs:reference>https://ngmdb.usgs.gov/fgdc_gds/geolsymstd/fgdc-geolsym-sec37.pdf</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:FGDC_Lith_Code</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
