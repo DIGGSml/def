@@ -56,7 +56,7 @@ function highlight_row() {
             var url = document.getElementById("url").innerHTML+"&quot;&gt;";
             var txt = 'Example instance:<p style="color: red;">&lt;';
             txt += url;
-            txt += id + "&lt;/" + element + '&gt;</p>';
+            txt += identifier + "&lt;/" + element + '&gt;</p>';
 
             //Send to page
             document.getElementById("instance").innerHTML = txt;
