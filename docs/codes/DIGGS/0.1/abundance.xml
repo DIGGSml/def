@@ -15,10 +15,7 @@
             <diggs:reference>https://knowledge.bsigroup.com/products/code-of-practice-for-ground-investigations?version=standard</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -32,10 +29,7 @@
             <diggs:authority>Wentworth Scale (modified by Folk, 1954, 1974)</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -50,10 +44,7 @@
             <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -68,10 +59,7 @@
             <diggs:reference>https://knowledge.bsigroup.com/products/code-of-practice-for-ground-investigations?version=standard</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -85,10 +73,7 @@
             <diggs:authority>Wentworth Scale (modified by Folk, 1954, 1974)</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -103,10 +88,7 @@
             <diggs:reference>https://knowledge.bsigroup.com/products/code-of-practice-for-ground-investigations?version=standard</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -121,10 +103,7 @@
             <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -139,10 +118,7 @@
             <diggs:reference>https://knowledge.bsigroup.com/products/code-of-practice-for-ground-investigations?version=standard</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -157,10 +133,7 @@
             <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -173,10 +146,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -191,10 +161,7 @@
             <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -209,10 +176,7 @@
             <diggs:reference>https://knowledge.bsigroup.com/products/code-of-practice-for-ground-investigations?version=standard</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -225,13 +189,10 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Color/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -246,16 +207,10 @@
             <diggs:reference>https://knowledge.bsigroup.com/products/code-of-practice-for-ground-investigations?version=standard</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -268,13 +223,10 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Color/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -289,10 +241,7 @@
             <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -305,13 +254,10 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Color/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -326,10 +272,19 @@
             <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Constituent/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="quaternary">
+            <gml:description>Describes the fourth most common component observed</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/abundance.xml#quaternary</gml:identifier>
+            <gml:name>quaternary</gml:name>
+            <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ComponentLithology/diggs:abundanceCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:abundanceCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

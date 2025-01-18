@@ -203,7 +203,7 @@
         <diggs:Definition gml:id="dielectric_permittivity">
             <gml:description>The ability of a medium to hold an electric charge.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#dielectric_permittivity</gml:identifier>
-            <gml:name>Dielectric Permittivity Of The Medium</gml:name>
+            <gml:name>Dielectric Permittivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>permittivity</diggs:quantityClass>
             <diggs:occurrences>
