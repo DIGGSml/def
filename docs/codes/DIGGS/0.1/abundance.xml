@@ -36,7 +36,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="and">
-            <gml:description>Component descrbed  comprises 35 to 50% by volume of the total feature described. The term &quot;and&quot; is used to connect tow components in a descriptive term with the dominant component listed last.</gml:description>
+            <gml:description>Component descrbed  comprises 35 to 50% by volume of the total feature described. The term &quot;and&quot; is used to connect two components in a descriptive term with the dominant component listed last.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/abundance.xml#and</gml:identifier>
             <gml:name>and</gml:name>
             <diggs:dataType>string</diggs:dataType>
