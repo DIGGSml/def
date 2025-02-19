@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="classificationCode">
-    <gml:description>These are values defined in ASTM D2487 to define the basic components of a soil, eg. sand, silt, gravel, etc. These codes are to be used in the classificationCode property for ComponentLith objects when descxribing specific components wihin a soil in detail.</gml:description>
+    <gml:description>These are values defined in ASTM D2487 to define the basic components of a soil, eg. sand, silt, gravel, etc. These codes are to be used in the classificationCode property for ComponentLith objects when describing specific components wihin a soil in detail.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/USCSSoilComponents.xml</gml:identifier>
-    <gml:name>Unified Soil Classificatoin Soil Components</gml:name>
+    <gml:name>Unified Soil Classification System Soil Component Names</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="boulders">
             <gml:description>Soil particles above 12 in in diameter</gml:description>
