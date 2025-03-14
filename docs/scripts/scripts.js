@@ -53,9 +53,9 @@ function highlight_row() {
             var id = rowSelected.cells[1].innerHTML;
             var identifier = rowSelected.cells[0].innerHTML;
             var element = document.getElementById("gmlid").innerHTML;
-            var url = document.getElementById("url").innerHTML+"&quot;&gt;";
+            var url = document.getElementById("url").innerHTML;
             var txt = 'Example instance:<p style="color: red;">&lt;';
-            txt += url;
+            txt += url + "#"+ id +"&quot;&gt;";
             txt += identifier + "&lt;/" + element + '&gt;</p>';
 
             //Send to page
