@@ -168,8 +168,12 @@
         <div class="fixed_header">
           <table id="myTable">
             <tr>
+            <!--
               <th><xsl:text>&#160;&#160;&#160;&#160;Name&#160;&#160;&#160;&#160;</xsl:text></th>
-              <th><xsl:text>&#160;&#160;&#160;&#160;&#160;&#160;Code&#160;&#160;&#160;&#160;&#160;&#160;</xsl:text></th>
+              <th><xsl:text>&#160;&#160;&#160;&#160;&#160;&#160;ID&#160;&#160;&#160;&#160;&#160;&#160;</xsl:text></th>
+              -->
+              <th>Name</th>
+              <th>ID</th>
               <th>Definition</th>
               <th>Data Type</th>
               <th>Quantity Classification</th>
