@@ -194,7 +194,7 @@
                         <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
                     </div>
                     <div class="title-container">
-                        <h1>U<xsl:value-of select="/uom:uomDictionary/title | uom:uomDictionaryuom:/title"/></h1>
+                        <h1><xsl:value-of select="/uom:uomDictionary/title | uom:uomDictionary/uom:title"/></h1>
                     </div>
                     <!-- Empty div to balance the flex layout -->
                     <div style="flex: 0 0 150px;"></div>
