@@ -14,7 +14,10 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeature//rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingActivity//rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -28,7 +31,10 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeature//rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -42,7 +48,10 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeature//rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingActivity//rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -70,7 +79,10 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>/diggs:measurement//diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:project//diggs:rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -84,7 +96,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:project//diggs:rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -98,30 +110,16 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:project//diggs:rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="checked_by">
-            <gml:description>Person checking the associated data</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#checked_by</gml:identifier>
-            <gml:name>Checked By</gml:name>
-            <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>DIGGS</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Borehole/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="prepared_by">
-            <gml:description>Person inputting the data</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#prepared_by</gml:identifier>
-            <gml:name>Prepared By</gml:name>
+        <diggs:Definition gml:id="checker">
+            <gml:description>Person checking the associated data, or for accuracy or standards compliance</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#checker</gml:identifier>
+            <gml:name>Checker</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -132,10 +130,10 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="calculated_by">
-            <gml:description>Person performing calculations on the data (do we really need this)?</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#calculated_by</gml:identifier>
-            <gml:name>Calculated By</gml:name>
+        <diggs:Definition gml:id="preparer">
+            <gml:description>Person compiling or inputting the data for  or ppreparing specimen for testing</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#preparer</gml:identifier>
+            <gml:name>Preparer</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -146,10 +144,24 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="tested_by">
+        <diggs:Definition gml:id="calculator">
+            <gml:description>Person performing calculations to obtain derived results</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#calculator</gml:identifier>
+            <gml:name>Calculator</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="tester">
             <gml:description>Person performing the lab testing</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#tested_by</gml:identifier>
-            <gml:name>Tested By</gml:name>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#tester</gml:identifier>
+            <gml:name>Tester</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -168,7 +180,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:project//diggs:rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -182,21 +194,41 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Project/diggs:role/diggs:Role/diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:project//diggs:rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="helper">
-            <gml:description>Person assisting with the equipment (drill rig/CPT rig)</gml:description>
+            <gml:description>Person assisting with construction (eg. borehole, actvity, sampling, observation or measurement</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#helper</gml:identifier>
             <gml:name>Helper</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingFeature//rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="collector">
+            <gml:description>Person that collects or creates a sample</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#collector</gml:identifier>
+            <gml:name>Collector</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingActivity//rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:sample//rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
