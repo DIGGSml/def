@@ -250,14 +250,14 @@
                                     //unitSet/unit[normalize-space(symbol) = $memberUnitValue]">
                                     <xsl:if test="position() = 1"> <!-- Only use the first matching unit if there are duplicates -->
                                         <tr class="{$rowClass}">
+                                            <td><xsl:value-of select="uom:symbol | symbol"/></td>
+                                            <td><xsl:value-of select="uom:name | name"/></td>
+                                            <td><xsl:value-of select="uom:description | description"/></td>
                                             <!-- Repeat quantityClass info for each row (no rowspan) -->
                                             <td><xsl:value-of select="$qcName"/></td>
                                             <td><xsl:value-of select="$qcDescription"/></td>
                                             
                                             <!-- Display unit info from the matching unit element -->
-                                            <td><xsl:value-of select="uom:symbol | symbol"/></td>
-                                            <td><xsl:value-of select="uom:name | name"/></td>
-                                            <td><xsl:value-of select="uom:description | description"/></td>
                                             <td><xsl:value-of select="uom:dimension | dimension"/></td>
                                             <td><xsl:value-of select="uom:isSI | isSI"/></td>
                                             <td><xsl:value-of select="uom:category | category"/></td>
