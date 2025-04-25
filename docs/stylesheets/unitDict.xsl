@@ -31,6 +31,16 @@
                     h1 {
                     margin: 0;
                     }
+                    .description-container {
+                    border: 2px solid black;
+                    padding: 5px;
+                    text-align: left;
+                    background-color: none;
+                    display: inline-block;
+                    max-width: 1000px;
+                    
+                    }
+                    
                     .search-row {
                     display: flex;
                     justify-content: center;
@@ -199,6 +209,9 @@
                     <!-- Empty div to balance the flex layout -->
                     <div style="flex: 0 0 150px;"></div>
                 </div>
+                <div class="description-container">
+                    <p><xsl:value-of select="uom:uomDictionary/description | description"/></p>
+                </div>
                 
                 <div class="search-row">
                     <input type="text" id="filterInput" placeholder="Filter by name, description, symbol, or dimension..."/>
@@ -209,7 +222,6 @@
                     <table id="unitTable">
                         <tr>
                             <th>Symbol</th>
-
                             <th>Unit Name</th>
                             <th>Unit<br/>Description</th>
                             <th>Quantity Class<br/>Name</th>
