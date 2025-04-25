@@ -194,7 +194,7 @@
                         <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
                     </div>
                     <div class="title-container">
-                        <h1>Unit Dictionary</h1>
+                        <h1>U<xsl:value-of select="/uom:uomDictionary/title | uom:uomDictionaryuom:/title"/></h1>
                     </div>
                     <!-- Empty div to balance the flex layout -->
                     <div style="flex: 0 0 150px;"></div>
@@ -208,11 +208,12 @@
                 <div class="container">
                     <table id="unitTable">
                         <tr>
-                            <th>QuantityClass<br/>Name</th>
-                            <th>Description</th>
                             <th>Symbol</th>
-                            <th>Name</th>
-                            <th>Description</th>
+
+                            <th>Unit Name</th>
+                            <th>Unit<br/>Description</th>
+                            <th>Quantity Class<br/>Name</th>
+                            <th>Quantity Class<br/>Description</th>
                             <th>Dimension</th>
                             <th>Is SI</th>
                             <th>Category</th>
