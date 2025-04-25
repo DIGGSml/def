@@ -209,7 +209,7 @@
                     <!-- Empty div to balance the flex layout -->
                     <div style="flex: 0 0 150px;"></div>
                 </div>
-                <div class="description-container">
+                <div>
                     <p><xsl:value-of select="uom:uomDictionary/description | description"/></p>
                 </div>
                 
@@ -221,8 +221,13 @@
                 <div class="container">
                     <table id="unitTable">
                         <tr>
-                            <th>Symbol</th>
-                            <th>Unit Name</th>
+                            <th colspan="11"/>
+                            <th colspan="4">Conversion Coefficients<br/>y=(A + Bx)/(C + Dx)</th>
+                            <th/>
+                        </tr>
+                        <tr>
+                            <th>Unit<br/>Symbol</th>
+                            <th>Unit<br/>Name</th>
                             <th>Unit<br/>Description</th>
                             <th>Quantity Class<br/>Name</th>
                             <th>Quantity Class<br/>Description</th>

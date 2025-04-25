@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/unitDict.xsl"?>
 <uomDictionary xmlns="http://www.energistics.org/energyml/data/uomv1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/uomv1 https://diggsml.org/schema-dev/energistics/EnergisticsUnitOfMeasureDictionary_V1.0.xsd" version="1.0">
-	<title>Diggs Unit of Measure Dictionary</title>
-	<originator>Energistics</originator>
+	<title>DIGGS Unit of Measure Dictionary</title>
+	<originator>Energistics/DIGGS</originator>
 	<description>This dictionary defines units of measure and related supporting information which is intended for use in application of the DIGGS interchange standard,
 		This product extemds the Energistics (c) Unit of Measure Dictionary v1.0 for use by the geotechnical and 
 		geoenviromnental communities, and is not intended to cover all possible quantity categories or individual units. Unit symbols, quantity classes and definitions created by the DIGGS 
