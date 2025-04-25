@@ -7,7 +7,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Unit Dictionary</title>
+                <title>DIGGS Unit of Measure Dictionary</title>
                 <style>
                     body {
                     font-family: Arial, sans-serif;
@@ -87,15 +87,15 @@
                     }
                     /* Style for alternating quantity classes */
                     .quantity-class-even {
-                    background-color: #f0f0f0; /* Light grey */
+                    background-color: #DCDCDC; /*grey */
                     }
                     .quantity-class-odd {
                     background-color: #ffffff; /* White */
                     }
                     /* Row border styling */
                     tr {
-                    border-top: 2px solid #bbb;
-                    border-bottom: 2px solid #bbb;
+                    border-top: 2px solid #000;
+                    border-bottom: 2px solid #000;
                     }
                     tr:hover {
                     background-color: #e6f2ff; /* Light blue */
@@ -209,7 +209,7 @@
                     <!-- Empty div to balance the flex layout -->
                     <div style="flex: 0 0 150px;"></div>
                 </div>
-                <div>
+                <div class="description-container">
                     <p><xsl:value-of select="/uom:uomDictionary/uom:description | /uomDictionary/description"/></p>
                 </div>
                 
