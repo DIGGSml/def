@@ -69,7 +69,8 @@
                     overflow-y: auto;
                     }
                     th, td {
-                    border: 1px solid #ddd;
+                    border-right: 1px solid #ddd;
+                    border-left: 1px solid #ddd;     
                     padding: 8px;
                     text-align: left;
                     }
@@ -87,7 +88,7 @@
                     }
                     /* Style for alternating quantity classes */
                     .quantity-class-even {
-                    background-color: #DCDCDC; /*grey */
+                    background-color: #aaaaaa; /*grey */
                     }
                     .quantity-class-odd {
                     background-color: #ffffff; /* White */
@@ -209,8 +210,8 @@
                     <!-- Empty div to balance the flex layout -->
                     <div style="flex: 0 0 150px;"></div>
                 </div>
-                <div class="description-container">
-                    <p><xsl:value-of select="/uom:uomDictionary/uom:description | /uomDictionary/description"/></p>
+                <div>
+                    <span class="description-container"><xsl:value-of select="/uom:uomDictionary/uom:description | /uomDictionary/description"/></span>
                 </div>
                 
                 <div class="search-row">
