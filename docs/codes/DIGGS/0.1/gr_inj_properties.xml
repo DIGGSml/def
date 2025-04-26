@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/propertylists.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="propertyClass">
     <gml:description>Dictionary defining the values for recorded grout injection properties for both staged and continuous grouting activities. These values are used in the propertyClass property of the &quot;GroutinjectionProperty&quot; and &quot;ContinuousGroutInjectionProperty&quot; objects.</gml:description>
@@ -14,8 +14,7 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -29,8 +28,7 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -44,8 +42,7 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -59,8 +56,7 @@
             <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -74,8 +70,7 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -89,8 +84,7 @@
             <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -104,8 +98,7 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -119,12 +112,10 @@
             <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -138,8 +129,7 @@
             <diggs:quantityClass>volume per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -153,8 +143,7 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -168,8 +157,7 @@
             <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -183,8 +171,7 @@
             <diggs:quantityClass>volume per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -198,8 +185,7 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -213,8 +199,7 @@
             <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -228,8 +213,7 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -243,12 +227,10 @@
             <diggs:quantityClass>volume per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -262,12 +244,10 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -281,12 +261,10 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -300,12 +278,10 @@
             <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -319,8 +295,7 @@
             <diggs:quantityClass>volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -334,8 +309,7 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -349,8 +323,7 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -364,8 +337,7 @@
             <diggs:quantityClass>pressure per length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -379,8 +351,7 @@
             <diggs:quantityClass>volume per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -394,8 +365,7 @@
             <diggs:quantityClass>volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -408,8 +378,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -423,8 +392,7 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -438,8 +406,7 @@
             <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -453,8 +420,7 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -468,8 +434,7 @@
             <diggs:quantityClass>angular velocity</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -483,8 +448,7 @@
             <diggs:quantityClass>energy per meter</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -498,12 +462,10 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -517,12 +479,10 @@
             <diggs:quantityClass>volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:GroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -536,8 +496,7 @@
             <diggs:quantityClass>force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -551,8 +510,24 @@
             <diggs:quantityClass>moment of force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ContinuousGroutInjectionProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="time">
+            <gml:description>Time instant of measurement</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml#time</gml:identifier>
+            <gml:name>time</gml:name>
+            <diggs:dataType>time</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:ContinuousGrouting//diggs:propertyClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:GroutStage//diggs:propertyClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
