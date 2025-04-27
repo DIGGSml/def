@@ -79,7 +79,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:measurement//diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:measurement//diggs:rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:project//diggs:rolePerformed</diggs:sourceElementXpath>
