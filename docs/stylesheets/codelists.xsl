@@ -18,12 +18,10 @@
           
           h1 {
           text-align: center;
-          color: #21130d;
           }
           
           h2 {
           text-align: center;
-          color: #21130d;
           }
           
           .logo {
@@ -37,9 +35,7 @@
           border: 2px solid black;
           padding: 5px;
           text-align: left;
-          font-size: 20px;
           background-color: none;
-          color: #21130d;
           display: inline-block;
           max-width: 1000px;
           
