@@ -89,7 +89,7 @@
                     }
                     #unitTable tr:nth-child(2) th {
                     position: sticky;
-                    top: 60px; /* Height of first header row + padding */
+                    top: 59px; /* Adjusted: Height of first header row + padding - 1px */
                     background-color: #000000;
                     color: white;
                     font-weight: bold;
@@ -114,6 +114,42 @@
                     tr:hover {
                     background-color: #e6f2ff; /* Light blue */
                     }
+                    /* Loading overlay styles */
+                    #loadingOverlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 9999;
+                    }
+                    .loading-spinner {
+                    border: 16px solid #f3f3f3;
+                    border-top: 16px solid #3498db;
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    animation: spin 2s linear infinite;
+                    margin-bottom: 20px;
+                    }
+                    .loading-text {
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-align: center;
+                    }
+                    @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                    }
+                    .loading-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    }
                 </style>
                 <script type="text/javascript">
                     // Initialize table data when the page is loaded
@@ -121,41 +157,79 @@
                     var totalRows = 0;
                     var debounceTimeout = null;
                     
+                    // Show loading overlay
+                    function showLoading() {
+                    var overlay = document.createElement('div');
+                    overlay.id = 'loadingOverlay';
+                    
+                    var container = document.createElement('div');
+                    container.className = 'loading-container';
+                    
+                    var spinner = document.createElement('div');
+                    spinner.className = 'loading-spinner';
+                    
+                    var text = document.createElement('div');
+                    text.className = 'loading-text';
+                    text.textContent = 'Loading... Please wait';
+                    
+                    container.appendChild(spinner);
+                    container.appendChild(text);
+                    overlay.appendChild(container);
+                    
+                    document.body.appendChild(overlay);
+                    }
+                    
+                    // Hide loading overlay
+                    function hideLoading() {
+                    var overlay = document.getElementById('loadingOverlay');
+                    if (overlay) {
+                        document.body.removeChild(overlay);
+                    }
+                    }
+                    
                     // Pre-process the table data for faster filtering
                     function initializeTableData() {
-                    var table = document.getElementById("unitTable");
-                    var rows = table.getElementsByTagName("tr");
-                    totalRows = rows.length - 2; // Subtract 2 header rows
+                    // Show loading overlay first
+                    showLoading();
                     
-                    // Store searchable data for each row
-                    for (var i = 2; i &lt; rows.length; i++) { // Start from index 2 (after 2 header rows)
-                    var cells = rows[i].getElementsByTagName("td");
-                    var rowData = {
-                    element: rows[i],
-                    searchText: ""
-                    };
-                    
-                    // Only include columns we want to search (0, 1, 2, 3, 4, 5)
-                    var columnsToSearch = [0, 1, 2, 3, 4, 5];
-                    for (var j = 0; j &lt; columnsToSearch.length; j++) {
-                    var colIndex = columnsToSearch[j];
-                    if (colIndex &lt; cells.length) {
-                    var cellText = cells[colIndex].textContent || cells[colIndex].innerText;
-                    rowData.searchText += cellText.toUpperCase() + " ";
-                    }
-                    }
-                    
-                    tableData.push(rowData);
-                    }
-                    
-                    // Update the row count display initially
-                    updateRowCount(totalRows);
+                    setTimeout(function() {
+                        var table = document.getElementById("unitTable");
+                        var rows = table.getElementsByTagName("tr");
+                        totalRows = rows.length - 2; // Subtract 2 header rows
+                        
+                        // Store searchable data for each row
+                        for (var i = 2; i &lt; rows.length; i++) { // Start from index 2 (after 2 header rows)
+                        var cells = rows[i].getElementsByTagName("td");
+                        var rowData = {
+                        element: rows[i],
+                        searchText: ""
+                        };
+                        
+                        // Include columns we want to search (0, 1, 2, 3, 4, 5, 15) - Added column 15 (Underlying Definition)
+                        var columnsToSearch = [0, 1, 2, 3, 4, 5, 15];
+                        for (var j = 0; j &lt; columnsToSearch.length; j++) {
+                        var colIndex = columnsToSearch[j];
+                        if (colIndex &lt; cells.length) {
+                            var cellText = cells[colIndex].textContent || cells[colIndex].innerText;
+                            rowData.searchText += cellText.toUpperCase() + " ";
+                        }
+                        }
+                        
+                        tableData.push(rowData);
+                        }
+                        
+                        // Update the row count display initially
+                        updateRowCount(totalRows);
+                        
+                        // Hide loading overlay
+                        hideLoading();
+                    }, 100); // Small delay to ensure DOM has loaded
                     }
                     
                     function updateRowCount(visibleRows) {
                     var countElement = document.getElementById("rowCount");
                     if (countElement) {
-                    countElement.textContent = "Showing " + visibleRows + " of " + totalRows + " records";
+                        countElement.textContent = "Showing " + visibleRows + " of " + totalRows + " records";
                     }
                     }
                     
@@ -167,11 +241,11 @@
                     
                     // Use the pre-processed data for faster filtering
                     for (var i = 0; i &lt; tableData.length; i++) {
-                    var visible = filter === "" || tableData[i].searchText.indexOf(filter) > -1;
-                    tableData[i].element.style.display = visible ? "" : "none";
-                    if (visible) {
-                    visibleRows++;
-                    }
+                        var visible = filter === "" || tableData[i].searchText.indexOf(filter) > -1;
+                        tableData[i].element.style.display = visible ? "" : "none";
+                        if (visible) {
+                        visibleRows++;
+                        }
                     }
                     
                     // Update the row count display
@@ -181,38 +255,45 @@
                     // Debounce function to avoid excessive filtering for fast typers
                     function debounceFilter() {
                     if (debounceTimeout) {
-                    clearTimeout(debounceTimeout);
+                        clearTimeout(debounceTimeout);
                     }
                     debounceTimeout = setTimeout(function() {
-                    filterTable();
+                        filterTable();
                     }, 250); // 250ms delay
                     }
                     
                     // Set up event listeners when the document is loaded
                     document.addEventListener('DOMContentLoaded', function() {
-                    // Initialize the table data for faster searching
-                    initializeTableData();
+                    // Show loading message before initializing
+                    showLoading();
                     
-                    var input = document.getElementById("filterInput");
-                    
-                    // Real-time filtering with debouncing
-                    input.addEventListener('input', debounceFilter);
-                    
-                    // Apply filter when Enter key is pressed (immediate, no debounce)
-                    input.addEventListener('keypress', function(event) {
-                    if (event.key === 'Enter') {
-                    if (debounceTimeout) {
-                    clearTimeout(debounceTimeout);
-                    }
-                    filterTable();
-                    // Prevent form submission if within a form
-                    event.preventDefault();
-                    }
-                    });
+                    // Initialize the table data for faster searching with a delay
+                    setTimeout(function() {
+                        initializeTableData();
+                        
+                        var input = document.getElementById("filterInput");
+                        
+                        // Real-time filtering with debouncing
+                        input.addEventListener('input', debounceFilter);
+                        
+                        // Apply filter when Enter key is pressed (immediate, no debounce)
+                        input.addEventListener('keypress', function(event) {
+                        if (event.key === 'Enter') {
+                            if (debounceTimeout) {
+                            clearTimeout(debounceTimeout);
+                            }
+                            filterTable();
+                            // Prevent form submission if within a form
+                            event.preventDefault();
+                        }
+                        });
+                    }, 200); // Short delay to allow the DOM to fully load
                     });
                 </script>
             </head>
             <body>
+                <!-- Loading overlay will be inserted here by JavaScript -->
+                
                 <div class="header-container">
                     <div class="logo">
                         <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
@@ -228,7 +309,7 @@
                 </div>
                 
                 <div class="search-row">
-                    <input type="text" id="filterInput" placeholder="Filter by name, description, symbol, or dimension..."/>
+                    <input type="text" id="filterInput" placeholder="Filter by name, description, symbol, dimension, or definition..."/>
                     <div id="rowCount"></div>
                 </div>
                 
