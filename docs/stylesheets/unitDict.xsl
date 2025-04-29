@@ -150,13 +150,17 @@
                     100% { transform: rotate(360deg); }
                     }
                 </style>
-                <!-- Loading overlay HTML - defined inline for immediate display -->
-                <script type="text/javascript">
-                    // Create and append the loading overlay to the document as soon as possible
-                    document.write('<div id="loading-overlay"><div class="logo"><img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/></div><div id="loader"></div><div class="loading-text">Loading DIGGS Unit Dictionary...</div><div id="progress-text">Initializing...</div></div>');
-                </script>
             </head>
             <body>
+                <div id="loading-overlay">
+                    <div class="logo">
+                        <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
+                    </div>
+                    <div id="loader"></div>
+                    <div class="loading-text">Loading DIGGS Unit Dictionary...</div>
+                    <div id="progress-text">Initializing...</div>
+                </div>
+                
                 <div class="header-container">
                     <div class="logo">
                         <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
@@ -264,7 +268,8 @@
                     </table>
                 </div>
                 
-                <script type="text/javascript">
+                <script>
+                <![CDATA[
                     // Initialize variables
                     var tableData = [];
                     var totalRows = 0;
@@ -413,6 +418,7 @@
                         // Start table data processing after a short delay
                         setTimeout(initializeTableData, 100);
                     });
+                ]]>
                 </script>
             </body>
         </html>
