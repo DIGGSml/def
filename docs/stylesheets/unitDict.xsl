@@ -31,15 +31,14 @@
                     h1 {
                     margin: 0;
                     }
-                    /* Modified to center the description-container */
                     .description-container {
                     border: 2px solid black;
                     padding: 5px;
                     text-align: left;
                     background-color: none;
-                    display: block;
+                    display: block; /* Changed from inline-block to block */
                     max-width: 1000px;
-                    margin: 0 auto; /* This centers the block */
+                    margin: 0 auto; /* Added auto margins for centering */
                     }
                     
                     .search-row {
@@ -75,18 +74,15 @@
                     padding: 8px;
                     text-align: left;
                     }
-                    /* Modified header styling to make both header rows sticky */
-                    #unitTable thead {
+                    th {
                     position: sticky;
                     top: 0;
-                    z-index: 2;
-                    }
-                    th {
                     background-color: #000000;
                     color: white;
                     font-weight: bold;
                     text-align: center;
                     vertical-align: middle;
+                    z-index: 1;
                     padding: 10px 5px;
                     height: 40px;
                     }
@@ -116,27 +112,27 @@
                     function initializeTableData() {
                     var table = document.getElementById("unitTable");
                     var rows = table.getElementsByTagName("tr");
-                    totalRows = rows.length - 2; // Subtract header rows
+                    totalRows = rows.length - 1; // Subtract header row
                     
                     // Store searchable data for each row
-                    for (var i = 2; i < rows.length; i++) {
-                        var cells = rows[i].getElementsByTagName("td");
-                        var rowData = {
-                        element: rows[i],
-                        searchText: ""
-                        };
-                        
-                        // Only include columns we want to search (0, 1, 2, 3, 4, 5)
-                        var columnsToSearch = [0, 1, 2, 3, 4, 5];
-                        for (var j = 0; j < columnsToSearch.length; j++) {
-                        var colIndex = columnsToSearch[j];
-                        if (colIndex < cells.length) {
-                            var cellText = cells[colIndex].textContent || cells[colIndex].innerText;
-                            rowData.searchText += cellText.toUpperCase() + " ";
-                        }
-                        }
-                        
-                        tableData.push(rowData);
+                    for (var i = 1; i &lt; rows.length; i++) {
+                    var cells = rows[i].getElementsByTagName("td");
+                    var rowData = {
+                    element: rows[i],
+                    searchText: ""
+                    };
+                    
+                    // Only include columns we want to search (0, 1, 2, 3, 4, 5)
+                    var columnsToSearch = [0, 1, 2, 3, 4, 5];
+                    for (var j = 0; j &lt; columnsToSearch.length; j++) {
+                    var colIndex = columnsToSearch[j];
+                    if (colIndex &lt; cells.length) {
+                    var cellText = cells[colIndex].textContent || cells[colIndex].innerText;
+                    rowData.searchText += cellText.toUpperCase() + " ";
+                    }
+                    }
+                    
+                    tableData.push(rowData);
                     }
                     
                     // Update the row count display initially
@@ -146,7 +142,7 @@
                     function updateRowCount(visibleRows) {
                     var countElement = document.getElementById("rowCount");
                     if (countElement) {
-                        countElement.textContent = "Showing " + visibleRows + " of " + totalRows + " records";
+                    countElement.textContent = "Showing " + visibleRows + " of " + totalRows + " records";
                     }
                     }
                     
@@ -157,12 +153,12 @@
                     var visibleRows = 0;
                     
                     // Use the pre-processed data for faster filtering
-                    for (var i = 0; i < tableData.length; i++) {
-                        var visible = filter === "" || tableData[i].searchText.indexOf(filter) > -1;
-                        tableData[i].element.style.display = visible ? "" : "none";
-                        if (visible) {
-                        visibleRows++;
-                        }
+                    for (var i = 0; i &lt; tableData.length; i++) {
+                    var visible = filter === "" || tableData[i].searchText.indexOf(filter) > -1;
+                    tableData[i].element.style.display = visible ? "" : "none";
+                    if (visible) {
+                    visibleRows++;
+                    }
                     }
                     
                     // Update the row count display
@@ -172,10 +168,10 @@
                     // Debounce function to avoid excessive filtering for fast typers
                     function debounceFilter() {
                     if (debounceTimeout) {
-                        clearTimeout(debounceTimeout);
+                    clearTimeout(debounceTimeout);
                     }
                     debounceTimeout = setTimeout(function() {
-                        filterTable();
+                    filterTable();
                     }, 250); // 250ms delay
                     }
                     
@@ -191,14 +187,14 @@
                     
                     // Apply filter when Enter key is pressed (immediate, no debounce)
                     input.addEventListener('keypress', function(event) {
-                        if (event.key === 'Enter') {
-                        if (debounceTimeout) {
-                            clearTimeout(debounceTimeout);
-                        }
-                        filterTable();
-                        // Prevent form submission if within a form
-                        event.preventDefault();
-                        }
+                    if (event.key === 'Enter') {
+                    if (debounceTimeout) {
+                    clearTimeout(debounceTimeout);
+                    }
+                    filterTable();
+                    // Prevent form submission if within a form
+                    event.preventDefault();
+                    }
                     });
                     });
                 </script>
@@ -214,7 +210,7 @@
                     <!-- Empty div to balance the flex layout -->
                     <div style="flex: 0 0 150px;"></div>
                 </div>
-                <div style="text-align: center;">
+                <div style="text-align: center;"> <!-- Added wrapper div with center alignment -->
                     <span class="description-container"><xsl:value-of select="/uom:uomDictionary/uom:description | /uomDictionary/description"/></span>
                 </div>
                 
@@ -299,13 +295,11 @@
                                 <xsl:if test="not(//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
                                     //unitSet/unit[normalize-space(symbol) = $memberUnitValue])">
                                     <tr class="{$rowClass}">
-                                        <!-- Show only the memberUnit as the symbol -->
-                                        <td><xsl:value-of select="$memberUnitValue"/></td>
-                                        <td colspan="4">No matching unit found in unitSet</td>
                                         <!-- Repeat quantityClass info for each row (no rowspan) -->
+                                        <td><xsl:value-of select="$memberUnitValue"/></td>
                                         <td><xsl:value-of select="$qcName"/></td>
                                         <td><xsl:value-of select="$qcDescription"/></td>
-                                        <td colspan="9"></td>
+                                        <td colspan="13">No matching unit found in unitSet</td>
                                     </tr>
                                 </xsl:if>
                             </xsl:for-each>
