@@ -11,19 +11,19 @@
 
         <style>
           body {
-          background-color: #f7f0c6;
-          }
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFEFD5; /* Light amber background */          }
           
           h1 {
           text-align: center;
           color: #21130d;
-          font-family: 'Crimson Text', serif;
           }
           
           h2 {
           text-align: center;
           color: #21130d;
-          font-family: 'Crimson Text', serif;
           }
           
           .logo {
@@ -34,7 +34,6 @@
           }
           
           .description {
-          font-family: 'Crimson Text', serif;
           border: 2px solid black;
           padding: 5px;
           text-align: left;
@@ -47,7 +46,6 @@
           }
           
           #counter {
-          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
           font-size: 14px;
           padding: 5px;
           
@@ -63,7 +61,6 @@
           }
           
           .fixed_header table {
-          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
           border-collapse: collapse;
           width: 100%;
           background-color: #f2f2f2;
@@ -77,14 +74,12 @@
           text-align: center;
           background-color: black;
           color: #FFFFFF;
-          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
           }
           
           .fixed_header td {
           padding: 8px;
           text-align: left;
           border-bottom: 2px solid gray;
-          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
           font-size: 18px;
           cursor: pointer;
           }
@@ -104,7 +99,6 @@
           #instance {
           text-align: center;
           font-size: 14px;
-          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
           color: black;
           font-weight: bold;
           border: 2px solid black;
@@ -124,7 +118,6 @@
           background-color: none;
           background-repeat: no-repeat; /* Do not repeat the icon image */
           width: 30%; /* Percentage of screen width */
-          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
           font-size: 16px; /* Increase font-size */
           padding: 12px 20px 12px 40px; /* Add some padding */
           border: 1px solid #ddd; /* Add a grey border */
@@ -137,9 +130,7 @@
           }
           
         </style>
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Graduate|Lobster|Quicksand"
-          rel="stylesheet"/>
-        
+       
         <script src="https://diggsml.org/def/scripts/scripts.js"/>
         
       </head>
