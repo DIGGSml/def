@@ -112,7 +112,7 @@
                     function initializeTableData() {
                     var table = document.getElementById("unitTable");
                     var rows = table.getElementsByTagName("tr");
-                    totalRows = rows.length - 1; // Subtract header row
+                    totalRows = rows.length - 2; // Subtract header rows
                     
                     // Store searchable data for each row
                     for (var i = 1; i &lt; rows.length; i++) {
@@ -122,8 +122,8 @@
                     searchText: ""
                     };
                     
-                    // Only include columns we want to search (0, 1, 2, 3, 4, 5)
-                    var columnsToSearch = [0, 1, 2, 3, 4, 5];
+                    // Only include columns we want to search (0, 1, 2, 3, 4, 5, 16)
+                    var columnsToSearch = [0, 1, 2, 3, 4, 5, 16];
                     for (var j = 0; j &lt; columnsToSearch.length; j++) {
                     var colIndex = columnsToSearch[j];
                     if (colIndex &lt; cells.length) {
