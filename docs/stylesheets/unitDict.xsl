@@ -115,52 +115,49 @@
                     background-color: #e6f2ff; /* Light blue */
                     }
                     /* Loading overlay styles */
-                    #loadingOverlay {
-                    position: fixed;
+                    #loader {
+                    border: 16px solid #f3f3f3;
+                    border-radius: 50%;
+                    border-top: 16px solid #3498db;
+                    width: 120px;
+                    height: 120px;
+                    animation: spin 2s linear infinite;
+                    position: absolute;
                     top: 0;
+                    bottom: 0;
                     left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(255, 255, 255, 0.9);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    right: 0;
+                    margin: auto;
                     z-index: 9999;
                     }
-                    .loading-spinner {
-                    border: 16px solid #f3f3f3;
-                    border-top: 16px solid #3498db;
-                    border-radius: 50%;
-                    width: 80px;
-                    height: 80px;
-                    animation: spin 2s linear infinite;
-                    margin-bottom: 20px;
-                    }
+                    
                     .loading-text {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    margin-top: 80px;
+                    text-align: center;
                     font-size: 24px;
                     font-weight: bold;
-                    text-align: center;
+                    z-index: 9999;
                     }
+                    
                     @keyframes spin {
                     0% { transform: rotate(0deg); }
                     100% { transform: rotate(360deg); }
                     }
-                    .loading-container {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    }
                 </style>
+                <!-- Put inline script at the top to execute immediately -->
+                <script type="text/javascript">
+                    // This script needs to be inline and at the top of the page
+                    // It executes before the browser renders anything
+                    if (document.readyState !== "complete") {
+                        document.write('<div id="loader"></div><div class="loading-text">Loading... Please wait</div>');
+                    }
+                </script>
             </head>
             <body>
-                <!-- Loading overlay embedded directly in the HTML -->
-                <div id="loadingOverlay">
-                    <div class="loading-container">
-                        <div class="loading-spinner"></div>
-                        <div class="loading-text">Loading... Please wait</div>
-                    </div>
-                </div>
-                
                 <div class="header-container">
                     <div class="logo">
                         <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
@@ -269,17 +266,17 @@
                 </div>
                 
                 <script type="text/javascript">
-                    // Initialize table data
+                    // Initialize table data when the page is loaded
                     var tableData = [];
                     var totalRows = 0;
                     var debounceTimeout = null;
                     
                     // Hide loading overlay
                     function hideLoading() {
-                        var overlay = document.getElementById('loadingOverlay');
-                        if (overlay) {
-                            document.body.removeChild(overlay);
-                        }
+                        var loader = document.getElementById('loader');
+                        var loadingText = document.getElementsByClassName('loading-text')[0];
+                        if (loader) document.body.removeChild(loader);
+                        if (loadingText) document.body.removeChild(loadingText);
                     }
                     
                     // Pre-process the table data for faster filtering
@@ -311,9 +308,6 @@
                         
                         // Update the row count display initially
                         updateRowCount(totalRows);
-                        
-                        // Hide loading overlay when done
-                        hideLoading();
                     }
                     
                     function updateRowCount(visibleRows) {
@@ -352,15 +346,14 @@
                         }, 250); // 250ms delay
                     }
                     
-                    // Set up event listeners when the document is loaded
-                    window.addEventListener('load', function() {
-                        // Initialize the table data with a short delay
-                        setTimeout(function() {
+                    // Check document ready state and initialize
+                    document.onreadystatechange = function () {
+                        if (document.readyState === "complete") {
+                            // Initialize the table data
                             initializeTableData();
                             
+                            // Set up the filter input event listener
                             var input = document.getElementById("filterInput");
-                            
-                            // Real-time filtering with debouncing
                             input.addEventListener('input', debounceFilter);
                             
                             // Apply filter when Enter key is pressed (immediate, no debounce)
@@ -374,8 +367,11 @@
                                     event.preventDefault();
                                 }
                             });
-                        }, 100); // Short delay to ensure DOM is fully loaded
-                    });
+                            
+                            // Hide the loading overlay
+                            hideLoading();
+                        }
+                    };
                 </script>
             </body>
         </html>
