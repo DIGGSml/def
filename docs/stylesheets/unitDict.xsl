@@ -121,7 +121,7 @@
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    background-color: rgba(255, 255, 255, 0.8);
+                    background-color: rgba(255, 255, 255, 0.9);
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -150,34 +150,19 @@
                     flex-direction: column;
                     align-items: center;
                     }
+                    /* Hide content initially */
+                    .main-content {
+                    display: none;
+                    }
                 </style>
                 <script type="text/javascript">
-                    // Initialize table data when the page is loaded
+                    // Initialize table data
                     var tableData = [];
                     var totalRows = 0;
                     var debounceTimeout = null;
                     
-                    // Show loading overlay
-                    function showLoading() {
-                    var overlay = document.createElement('div');
-                    overlay.id = 'loadingOverlay';
-                    
-                    var container = document.createElement('div');
-                    container.className = 'loading-container';
-                    
-                    var spinner = document.createElement('div');
-                    spinner.className = 'loading-spinner';
-                    
-                    var text = document.createElement('div');
-                    text.className = 'loading-text';
-                    text.textContent = 'Loading... Please wait';
-                    
-                    container.appendChild(spinner);
-                    container.appendChild(text);
-                    overlay.appendChild(container);
-                    
-                    document.body.appendChild(overlay);
-                    }
+                    // Create and show loading overlay immediately when the page starts loading
+                    document.write('<div id="loadingOverlay"><div class="loading-container"><div class="loading-spinner"></div><div class="loading-text">Loading... Please wait</div></div></div>');
                     
                     // Hide loading overlay
                     function hideLoading() {
@@ -185,20 +170,18 @@
                     if (overlay) {
                         document.body.removeChild(overlay);
                     }
+                    // Show main content
+                    document.getElementById('mainContent').style.display = 'block';
                     }
                     
                     // Pre-process the table data for faster filtering
                     function initializeTableData() {
-                    // Show loading overlay first
-                    showLoading();
+                    var table = document.getElementById("unitTable");
+                    var rows = table.getElementsByTagName("tr");
+                    totalRows = rows.length - 2; // Subtract 2 header rows
                     
-                    setTimeout(function() {
-                        var table = document.getElementById("unitTable");
-                        var rows = table.getElementsByTagName("tr");
-                        totalRows = rows.length - 2; // Subtract 2 header rows
-                        
-                        // Store searchable data for each row
-                        for (var i = 2; i &lt; rows.length; i++) { // Start from index 2 (after 2 header rows)
+                    // Store searchable data for each row
+                    for (var i = 2; i < rows.length; i++) { // Start from index 2 (after 2 header rows)
                         var cells = rows[i].getElementsByTagName("td");
                         var rowData = {
                         element: rows[i],
@@ -207,23 +190,22 @@
                         
                         // Include columns we want to search (0, 1, 2, 3, 4, 5, 15) - Added column 15 (Underlying Definition)
                         var columnsToSearch = [0, 1, 2, 3, 4, 5, 15];
-                        for (var j = 0; j &lt; columnsToSearch.length; j++) {
+                        for (var j = 0; j < columnsToSearch.length; j++) {
                         var colIndex = columnsToSearch[j];
-                        if (colIndex &lt; cells.length) {
+                        if (colIndex < cells.length) {
                             var cellText = cells[colIndex].textContent || cells[colIndex].innerText;
                             rowData.searchText += cellText.toUpperCase() + " ";
                         }
                         }
                         
                         tableData.push(rowData);
-                        }
-                        
-                        // Update the row count display initially
-                        updateRowCount(totalRows);
-                        
-                        // Hide loading overlay
-                        hideLoading();
-                    }, 100); // Small delay to ensure DOM has loaded
+                    }
+                    
+                    // Update the row count display initially
+                    updateRowCount(totalRows);
+                    
+                    // Hide loading overlay and show content
+                    hideLoading();
                     }
                     
                     function updateRowCount(visibleRows) {
@@ -240,7 +222,7 @@
                     var visibleRows = 0;
                     
                     // Use the pre-processed data for faster filtering
-                    for (var i = 0; i &lt; tableData.length; i++) {
+                    for (var i = 0; i < tableData.length; i++) {
                         var visible = filter === "" || tableData[i].searchText.indexOf(filter) > -1;
                         tableData[i].element.style.display = visible ? "" : "none";
                         if (visible) {
@@ -263,11 +245,8 @@
                     }
                     
                     // Set up event listeners when the document is loaded
-                    document.addEventListener('DOMContentLoaded', function() {
-                    // Show loading message before initializing
-                    showLoading();
-                    
-                    // Initialize the table data for faster searching with a delay
+                    window.onload = function() {
+                    // Initialize the table data for faster searching
                     setTimeout(function() {
                         initializeTableData();
                         
@@ -287,118 +266,119 @@
                             event.preventDefault();
                         }
                         });
-                    }, 200); // Short delay to allow the DOM to fully load
-                    });
+                    }, 10); // Short delay to ensure DOM is ready
+                    };
                 </script>
             </head>
             <body>
-                <!-- Loading overlay will be inserted here by JavaScript -->
-                
-                <div class="header-container">
-                    <div class="logo">
-                        <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
+                <!-- Main content wrapped in a div that's initially hidden -->
+                <div id="mainContent" class="main-content">
+                    <div class="header-container">
+                        <div class="logo">
+                            <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
+                        </div>
+                        <div class="title-container">
+                            <h1><xsl:value-of select="/uomDictionary/title | /uom:uomDictionary/uom:title"/></h1>
+                        </div>
+                        <!-- Empty div to balance the flex layout -->
+                        <div style="flex: 0 0 150px;"></div>
                     </div>
-                    <div class="title-container">
-                        <h1><xsl:value-of select="/uomDictionary/title | /uom:uomDictionary/uom:title"/></h1>
+                    <div style="text-align: center;"> <!-- Added wrapper div with center alignment -->
+                        <span class="description-container"><xsl:value-of select="/uom:uomDictionary/uom:description | /uomDictionary/description"/></span>
                     </div>
-                    <!-- Empty div to balance the flex layout -->
-                    <div style="flex: 0 0 150px;"></div>
-                </div>
-                <div style="text-align: center;"> <!-- Added wrapper div with center alignment -->
-                    <span class="description-container"><xsl:value-of select="/uom:uomDictionary/uom:description | /uomDictionary/description"/></span>
-                </div>
-                
-                <div class="search-row">
-                    <input type="text" id="filterInput" placeholder="Filter by name, description, symbol, dimension, or definition..."/>
-                    <div id="rowCount"></div>
-                </div>
-                
-                <div class="container">
-                    <table id="unitTable">
-                        <tr>
-                            <th colspan="11"/>
-                            <th colspan="4">Conversion Coefficients<br/>y=(A + Bx)/(C + Dx)</th>
-                            <th/>
-                        </tr>
-                        <tr>
-                            <th>Unit<br/>Symbol</th>
-                            <th>Unit<br/>Name</th>
-                            <th>Unit<br/>Description</th>
-                            <th>Quantity Class<br/>Name</th>
-                            <th>Quantity Class<br/>Description</th>
-                            <th>Dimension</th>
-                            <th>Is SI</th>
-                            <th>Category</th>
-                            <th>Base Unit</th>
-                            <th>Conversion<br/>Reference</th>
-                            <th>Conversion<br/>Exact?</th>
-                            <th>A</th>
-                            <th>B</th>
-                            <th>C</th>
-                            <th>D</th>
-                            <th>Underlying<br/>Definition</th>
-                        </tr>
-                        
-                        <!-- Process each quantityClass in order by name -->
-                        <xsl:for-each select="//uom:quantityClassSet/uom:quantityClass | //quantityClassSet/quantityClass">
-                            <xsl:sort select="uom:name | name"/>
+                    
+                    <div class="search-row">
+                        <input type="text" id="filterInput" placeholder="Filter by name, description, symbol, dimension, or definition..."/>
+                        <div id="rowCount"></div>
+                    </div>
+                    
+                    <div class="container">
+                        <table id="unitTable">
+                            <tr>
+                                <th colspan="11"/>
+                                <th colspan="4">Conversion Coefficients<br/>y=(A + Bx)/(C + Dx)</th>
+                                <th/>
+                            </tr>
+                            <tr>
+                                <th>Unit<br/>Symbol</th>
+                                <th>Unit<br/>Name</th>
+                                <th>Unit<br/>Description</th>
+                                <th>Quantity Class<br/>Name</th>
+                                <th>Quantity Class<br/>Description</th>
+                                <th>Dimension</th>
+                                <th>Is SI</th>
+                                <th>Category</th>
+                                <th>Base Unit</th>
+                                <th>Conversion<br/>Reference</th>
+                                <th>Conversion<br/>Exact?</th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D</th>
+                                <th>Underlying<br/>Definition</th>
+                            </tr>
                             
-                            <xsl:variable name="qcName" select="uom:name | name"/>
-                            <xsl:variable name="qcDescription" select="uom:description | description"/>
-                            <xsl:variable name="qcPosition" select="position()"/>
-                            <xsl:variable name="rowClass">
-                                <xsl:choose>
-                                    <xsl:when test="$qcPosition mod 2 = 1">quantity-class-odd</xsl:when>
-                                    <xsl:otherwise>quantity-class-even</xsl:otherwise>
-                                </xsl:choose>
-                            </xsl:variable>
-                            
-                            <!-- For each memberUnit in this quantityClass -->
-                            <xsl:for-each select="uom:memberUnit | memberUnit">
-                                <xsl:variable name="memberUnitValue" select="normalize-space(.)"/>
+                            <!-- Process each quantityClass in order by name -->
+                            <xsl:for-each select="//uom:quantityClassSet/uom:quantityClass | //quantityClassSet/quantityClass">
+                                <xsl:sort select="uom:name | name"/>
                                 
-                                <!-- Find the matching unit in unitSet based on symbol -->
-                                <xsl:for-each select="//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
-                                    //unitSet/unit[normalize-space(symbol) = $memberUnitValue]">
-                                    <xsl:if test="position() = 1"> <!-- Only use the first matching unit if there are duplicates -->
+                                <xsl:variable name="qcName" select="uom:name | name"/>
+                                <xsl:variable name="qcDescription" select="uom:description | description"/>
+                                <xsl:variable name="qcPosition" select="position()"/>
+                                <xsl:variable name="rowClass">
+                                    <xsl:choose>
+                                        <xsl:when test="$qcPosition mod 2 = 1">quantity-class-odd</xsl:when>
+                                        <xsl:otherwise>quantity-class-even</xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:variable>
+                                
+                                <!-- For each memberUnit in this quantityClass -->
+                                <xsl:for-each select="uom:memberUnit | memberUnit">
+                                    <xsl:variable name="memberUnitValue" select="normalize-space(.)"/>
+                                    
+                                    <!-- Find the matching unit in unitSet based on symbol -->
+                                    <xsl:for-each select="//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
+                                        //unitSet/unit[normalize-space(symbol) = $memberUnitValue]">
+                                        <xsl:if test="position() = 1"> <!-- Only use the first matching unit if there are duplicates -->
+                                            <tr class="{$rowClass}">
+                                                <td><xsl:value-of select="uom:symbol | symbol"/></td>
+                                                <td><xsl:value-of select="uom:name | name"/></td>
+                                                <td><xsl:value-of select="uom:description | description"/></td>
+                                                <!-- Repeat quantityClass info for each row (no rowspan) -->
+                                                <td><xsl:value-of select="$qcName"/></td>
+                                                <td><xsl:value-of select="$qcDescription"/></td>
+                                                
+                                                <!-- Display unit info from the matching unit element -->
+                                                <td><xsl:value-of select="uom:dimension | dimension"/></td>
+                                                <td><xsl:value-of select="uom:isSI | isSI"/></td>
+                                                <td><xsl:value-of select="uom:category | category"/></td>
+                                                <td><xsl:value-of select="uom:baseUnit | baseUnit"/></td>
+                                                <td><xsl:value-of select="uom:conversionRef | conversionRef"/></td>
+                                                <td><xsl:value-of select="uom:isExact | isExact"/></td>
+                                                <td><xsl:value-of select="uom:A | A"/></td>
+                                                <td><xsl:value-of select="uom:B | B"/></td>
+                                                <td><xsl:value-of select="uom:C | C"/></td>
+                                                <td><xsl:value-of select="uom:D | D"/></td>
+                                                <td><xsl:value-of select="uom:underlyingDef | underlyingDef"/></td>
+                                            </tr>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                    
+                                    <!-- If no matching unit was found, create a row with just the quantityClass and memberUnit info -->
+                                    <xsl:if test="not(//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
+                                        //unitSet/unit[normalize-space(symbol) = $memberUnitValue])">
                                         <tr class="{$rowClass}">
-                                            <td><xsl:value-of select="uom:symbol | symbol"/></td>
-                                            <td><xsl:value-of select="uom:name | name"/></td>
-                                            <td><xsl:value-of select="uom:description | description"/></td>
                                             <!-- Repeat quantityClass info for each row (no rowspan) -->
+                                            <td><xsl:value-of select="$memberUnitValue"/></td>
                                             <td><xsl:value-of select="$qcName"/></td>
                                             <td><xsl:value-of select="$qcDescription"/></td>
-                                            
-                                            <!-- Display unit info from the matching unit element -->
-                                            <td><xsl:value-of select="uom:dimension | dimension"/></td>
-                                            <td><xsl:value-of select="uom:isSI | isSI"/></td>
-                                            <td><xsl:value-of select="uom:category | category"/></td>
-                                            <td><xsl:value-of select="uom:baseUnit | baseUnit"/></td>
-                                            <td><xsl:value-of select="uom:conversionRef | conversionRef"/></td>
-                                            <td><xsl:value-of select="uom:isExact | isExact"/></td>
-                                            <td><xsl:value-of select="uom:A | A"/></td>
-                                            <td><xsl:value-of select="uom:B | B"/></td>
-                                            <td><xsl:value-of select="uom:C | C"/></td>
-                                            <td><xsl:value-of select="uom:D | D"/></td>
-                                            <td><xsl:value-of select="uom:underlyingDef | underlyingDef"/></td>
+                                            <td colspan="13">No matching unit found in unitSet</td>
                                         </tr>
                                     </xsl:if>
                                 </xsl:for-each>
-                                
-                                <!-- If no matching unit was found, create a row with just the quantityClass and memberUnit info -->
-                                <xsl:if test="not(//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
-                                    //unitSet/unit[normalize-space(symbol) = $memberUnitValue])">
-                                    <tr class="{$rowClass}">
-                                        <!-- Repeat quantityClass info for each row (no rowspan) -->
-                                        <td><xsl:value-of select="$memberUnitValue"/></td>
-                                        <td><xsl:value-of select="$qcName"/></td>
-                                        <td><xsl:value-of select="$qcDescription"/></td>
-                                        <td colspan="13">No matching unit found in unitSet</td>
-                                    </tr>
-                                </xsl:if>
                             </xsl:for-each>
-                        </xsl:for-each>
-                    </table>
+                        </table>
+                    </div>
                 </div>
             </body>
         </html>
