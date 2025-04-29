@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGGS Unit of Measure Dictionary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFEFD5; /* Light amber background */
+        }
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFEFD5;
+            z-index: 9999;
+        }
+        #loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+        .loading-text {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #progress-text {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #content {
+            display: none;
+        }
+        /* Additional styles will be added by the XSLT transformation */
+    </style>
+</head>
+<body>
+    <!-- Loading overlay - shown immediately -->
+    <div id="loading-overlay">
+        <div class="logo">
+            <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
+        </div>
+        <div id="loader"></div>
+        <div class="loading-text">Loading DIGGS Unit Dictionary...</div>
+        <div id="progress-text">Initializing...</div>
+    </div>
+    
+    <!-- Content container - will be populated by the XML transformation -->
+    <div id="content"></div>
+    
+    <script>
+        // Update progress text
+        function updateProgress(message) {
+            document.getElementById('progress-text').textContent = message;
+        }
+        
+        // Load XML and apply XSLT transformation
+        function loadAndTransformXML() {
+            updateProgress("Fetching XML data...");
+            
+            // Create XMLHttpRequest to load the XML file
+            const xmlRequest = new XMLHttpRequest();
+            xmlRequest.open('GET', 'https://diggsml.org/def/units/DiggsUomDictionary.xml', true);
+            
+            xmlRequest.onprogress = function(event) {
+                if (event.lengthComputable) {
+                    const percentComplete = Math.round((event.loaded / event.total) * 100);
+                    updateProgress(`Loading XML: ${percentComplete}% complete...`);
+                }
+            };
+            
+            xmlRequest.onload = function() {
+                if (xmlRequest.status === 200) {
+                    updateProgress("XML loaded successfully. Processing data...");
+                    
+                    // Parse the XML
+                    const xmlDoc = xmlRequest.responseXML;
+                    
+                    // Create a table from the XML data
+                    buildTableFromXML(xmlDoc);
+                } else {
+                    updateProgress(`Error loading XML: ${xmlRequest.status}`);
+                    document.getElementById('loading-text').textContent = "Error Loading Data";
+                }
+            };
+            
+            xmlRequest.onerror = function() {
+                updateProgress("Network error occurred while loading XML");
+                document.getElementById('loading-text').textContent = "Network Error";
+            };
+            
+            xmlRequest.send();
+        }
+        
+        // Build HTML table from XML data
+        function buildTableFromXML(xmlDoc) {
+            updateProgress("Building table structure...");
+            
+            // Get content container
+            const contentContainer = document.getElementById('content');
+            
+            // Create header
+            const header = document.createElement('div');
+            header.className = 'header-container';
+            header.innerHTML = `
+                <div class="logo">
+                    <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
+                </div>
+                <div class="title-container">
+                    <h1>${getXMLValue(xmlDoc, '/uomDictionary/title') || getXMLValue(xmlDoc, '/uom:uomDictionary/uom:title') || 'DIGGS Unit of Measure Dictionary'}</h1>
+                </div>
+                <div style="flex: 0 0 150px;"></div>
+            `;
+            contentContainer.appendChild(header);
+            
+            // Create description
+            const descriptionContainer = document.createElement('div');
+            descriptionContainer.style.textAlign = 'center';
+            descriptionContainer.innerHTML = `
+                <span class="description-container">${getXMLValue(xmlDoc, '/uomDictionary/description') || getXMLValue(xmlDoc, '/uom:uomDictionary/uom:description') || ''}</span>
+            `;
+            contentContainer.appendChild(descriptionContainer);
+            
+            // Create search row
+            const searchRow = document.createElement('div');
+            searchRow.className = 'search-row';
+            searchRow.innerHTML = `
+                <input type="text" id="filterInput" placeholder="Filter by name, description, symbol, dimension, or definition..."/>
+                <div id="rowCount"></div>
+            `;
+            contentContainer.appendChild(searchRow);
+            
+            // Create table container
+            const tableContainer = document.createElement('div');
+            tableContainer.className = 'container';
+            contentContainer.appendChild(tableContainer);
+            
+            // Create table
+            const table = document.createElement('table');
+            table.id = 'unitTable';
+            tableContainer.appendChild(table);
+            
+            // Create table headers
+            const headerRow1 = document.createElement('tr');
+            headerRow1.innerHTML = `
+                <th colspan="11"></th>
+                <th colspan="4">Conversion Coefficients<br/>y=(A + Bx)/(C + Dx)</th>
+                <th></th>
+            `;
+            table.appendChild(headerRow1);
+            
+            const headerRow2 = document.createElement('tr');
+            headerRow2.innerHTML = `
+                <th>Unit<br/>Symbol</th>
+                <th>Unit<br/>Name</th>
+                <th>Unit<br/>Description</th>
+                <th>Quantity Class<br/>Name</th>
+                <th>Quantity Class<br/>Description</th>
+                <th>Dimension</th>
+                <th>Is SI</th>
+                <th>Category</th>
+                <th>Base Unit</th>
+                <th>Conversion<br/>Reference</th>
+                <th>Conversion<br/>Exact?</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>Underlying<br/>Definition</th>
+            `;
+            table.appendChild(headerRow2);
+            
+            // Add CSS for table styling
+            const style = document.createElement('style');
+            style.textContent = `
+                .header-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 20px;
+                }
+                .logo {
+                    flex: 0 0 150px;
+                }
+                .title-container {
+                    flex: 1;
+                    text-align: center;
+                }
+                h1 {
+                    margin: 0;
+                }
+                .description-container {
+                    border: 2px solid black;
+                    padding: 5px;
+                    text-align: left;
+                    background-color: none;
+                    display: block;
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+                .search-row {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                    gap: 20px;
+                }
+                #filterInput {
+                    padding: 8px;
+                    width: 500px;
+                    font-size: 16px;
+                }
+                #rowCount {
+                    font-weight: bold;
+                    min-width: 200px;
+                }
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                    background-color: white;
+                }
+                .container {
+                    background-color: white;
+                    margin: 0 20px 20px 20px;
+                    max-height: 70vh;
+                    overflow-y: auto;
+                }
+                th, td {
+                    border-right: 1px solid #ddd;
+                    border-left: 1px solid #ddd;     
+                    padding: 8px;
+                    text-align: left;
+                }
+                #unitTable tr:nth-child(1) th {
+                    position: sticky;
+                    top: 0;
+                    background-color: #000000;
+                    color: white;
+                    font-weight: bold;
+                    text-align: center;
+                    vertical-align: middle;
+                    z-index: 2;
+                    padding: 10px 5px;
+                    height: 40px;
+                }
+                #unitTable tr:nth-child(2) th {
+                    position: sticky;
+                    top: 59px;
+                    background-color: #000000;
+                    color: white;
+                    font-weight: bold;
+                    text-align: center;
+                    vertical-align: middle;
+                    z-index: 1;
+                    padding: 10px 5px;
+                    height: 40px;
+                }
+                .quantity-class-even {
+                    background-color: #aaaaaa;
+                }
+                .quantity-class-odd {
+                    background-color: #ffffff;
+                }
+                tr {
+                    border-top: 2px solid #000;
+                    border-bottom: 2px solid #000;
+                }
+                tr:hover {
+                    background-color: #e6f2ff;
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Now build the table body in chunks
+            updateProgress("Building table rows...");
+            populateTableRows(xmlDoc, table);
+        }
+        
+        // Helper function to get XML value with fallback
+        function getXMLValue(xmlDoc, xpath) {
+            try {
+                // Try standard namespace
+                const nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.STRING_TYPE, null);
+                return nodes.stringValue;
+            } catch (e) {
+                console.error("XPath error:", e);
+                return null;
+            }
+        }
+        
+        // Populate table rows in chunks
+        function populateTableRows(xmlDoc, table) {
+            try {
+                // Get quantityClasses
+                let quantityClasses = [];
+                const qcNodes = xmlDoc.querySelectorAll('quantityClass, uom\\:quantityClass');
+                
+                for (let i = 0; i < qcNodes.length; i++) {
+                    const qc = qcNodes[i];
+                    
+                    // Extract quantityClass info
+                    const name = qc.querySelector('name, uom\\:name')?.textContent || '';
+                    const description = qc.querySelector('description, uom\\:description')?.textContent || '';
+                    const memberUnits = qc.querySelectorAll('memberUnit, uom\\:memberUnit');
+                    
+                    quantityClasses.push({
+                        name: name,
+                        description: description,
+                        position: i,
+                        memberUnits: Array.from(memberUnits).map(mu => mu.textContent.trim())
+                    });
+                }
+                
+                // Sort quantityClasses by name
+                quantityClasses.sort((a, b) => a.name.localeCompare(b.name));
+                
+                // Get all units
+                const unitNodes = xmlDoc.querySelectorAll('unit, uom\\:unit');
+                const units = {};
+                
+                for (let i = 0; i < unitNodes.length; i++) {
+                    const unit = unitNodes[i];
+                    const symbol = unit.querySelector('symbol, uom\\:symbol')?.textContent.trim() || '';
+                    
+                    if (symbol) {
+                        units[symbol] = {
+                            name: unit.querySelector('name, uom\\:name')?.textContent || '',
+                            description: unit.querySelector('description, uom\\:description')?.textContent || '',
+                            dimension: unit.querySelector('dimension, uom\\:dimension')?.textContent || '',
+                            isSI: unit.querySelector('isSI, uom\\:isSI')?.textContent || '',
+                            category: unit.querySelector('category, uom\\:category')?.textContent || '',
+                            baseUnit: unit.querySelector('baseUnit, uom\\:baseUnit')?.textContent || '',
+                            conversionRef: unit.querySelector('conversionRef, uom\\:conversionRef')?.textContent || '',
+                            isExact: unit.querySelector('isExact, uom\\:isExact')?.textContent || '',
+                            A: unit.querySelector('A, uom\\:A')?.textContent || '',
+                            B: unit.querySelector('B, uom\\:B')?.textContent || '',
+                            C: unit.querySelector('C, uom\\:C')?.textContent || '',
+                            D: unit.querySelector('D, uom\\:D')?.textContent || '',
+                            underlyingDef: unit.querySelector('underlyingDef, uom\\:underlyingDef')?.textContent || ''
+                        };
+                    }
+                }
+                
+                // Process in chunks
+                let totalRows = 0;
+                quantityClasses.forEach(qc => {
+                    totalRows += qc.memberUnits.length;
+                });
+                
+                let processedRows = 0;
+                let currentQCIndex = 0;
+                let currentMUIndex = 0;
+                
+                function processChunk() {
+                    const chunkSize = 200;
+                    let rowsInThisChunk = 0;
+                    
+                    while (currentQCIndex < quantityClasses.length && rowsInThisChunk < chunkSize) {
+                        const qc = quantityClasses[currentQCIndex];
+                        const rowClass = qc.position % 2 === 1 ? 'quantity-class-odd' : 'quantity-class-even';
+                        
+                        while (currentMUIndex < qc.memberUnits.length && rowsInThisChunk < chunkSize) {
+                            const memberUnitValue = qc.memberUnits[currentMUIndex];
+                            const unit = units[memberUnitValue];
+                            
+                            const row = document.createElement('tr');
+                            row.className = rowClass;
+                            
+                            if (unit) {
+                                // Unit found in unitSet
+                                row.innerHTML = `
+                                    <td>${memberUnitValue}</td>
+                                    <td>${unit.name}</td>
+                                    <td>${unit.description}</td>
+                                    <td>${qc.name}</td>
+                                    <td>${qc.description}</td>
+                                    <td>${unit.dimension}</td>
+                                    <td>${unit.isSI}</td>
+                                    <td>${unit.category}</td>
+                                    <td>${unit.baseUnit}</td>
+                                    <td>${unit.conversionRef}</td>
+                                    <td>${unit.isExact}</td>
+                                    <td>${unit.A}</td>
+                                    <td>${unit.B}</td>
+                                    <td>${unit.C}</td>
+                                    <td>${unit.D}</td>
+                                    <td>${unit.underlyingDef}</td>
+                                `;
+                            } else {
+                                // No matching unit found
+                                row.innerHTML = `
+                                    <td>${memberUnitValue}</td>
+                                    <td>${qc.name}</td>
+                                    <td>${qc.description}</td>
+                                    <td colspan="13">No matching unit found in unitSet</td>
+                                `;
+                            }
+                            
+                            table.appendChild(row);
+                            currentMUIndex++;
+                            processedRows++;
+                            rowsInThisChunk++;
+                        }
+                        
+                        if (currentMUIndex >= qc.memberUnits.length) {
+                            currentQCIndex++;
+                            currentMUIndex = 0;
+                        }
+                    }
+                    
+                    // Update progress
+                    const percentComplete = Math.min(100, Math.round((processedRows / totalRows) * 100));
+                    updateProgress(`Building table: ${percentComplete}% complete...`);
+                    
+                    if (currentQCIndex < quantityClasses.length) {
+                        // More to process
+                        setTimeout(processChunk, 0);
+                    } else {
+                        // All done, initialize filtering
+                        updateProgress("Table built successfully. Initializing filtering...");
+                        initializeTableData();
+                    }
+                }
+                
+                // Start the first chunk
+                processChunk();
+                
+            } catch (error) {
+                console.error("Error populating table:", error);
+                updateProgress(`Error building table: ${error.message}`);
+            }
+        }
+        
+        // Initialize table data for filtering
+        let tableData = [];
+        let totalRows = 0;
+        let debounceTimeout = null;
+        
+        function initializeTableData() {
+            updateProgress("Initializing table filtering...");
+            
+            const table = document.getElementById("unitTable");
+            const rows = table.getElementsByTagName("tr");
+            totalRows = rows.length - 2; // Subtract header rows
+            
+            // Process in chunks to prevent UI freezing
+            let processedRows = 0;
+            const chunkSize = 500;
+            
+            function processIndexChunk() {
+                const endRow = Math.min(processedRows + chunkSize + 2, rows.length);
+                
+                for (let i = processedRows + 2; i < endRow; i++) {
+                    const cells = rows[i].getElementsByTagName("td");
+                    const rowData = {
+                        element: rows[i],
+                        searchText: ""
+                    };
+                    
+                    // Include columns we want to search (0, 1, 2, 3, 4, 5, 15)
+                    const columnsToSearch = [0, 1, 2, 3, 4, 5, 15];
+                    for (let j = 0; j < columnsToSearch.length; j++) {
+                        const colIndex = columnsToSearch[j];
+                        if (colIndex < cells.length) {
+                            const cellText = cells[colIndex].textContent || cells[colIndex].innerText;
+                            rowData.searchText += cellText.toUpperCase() + " ";
+                        }
+                    }
+                    
+                    tableData.push(rowData);
+                }
+                
+                processedRows += chunkSize;
+                
+                // Update progress
+                const percentComplete = Math.min(100, Math.round((processedRows / totalRows) * 100));
+                updateProgress(`Initializing filtering: ${percentComplete}% complete...`);
+                
+                if (processedRows < totalRows) {
+                    // More to process
+                    setTimeout(processIndexChunk, 0);
+                } else {
+                    // All done, show content
+                    updateRowCount(totalRows);
+                    updateProgress("Loading complete!");
+                    
+                    // Set up filter input event listener
+                    const input = document.getElementById("filterInput");
+                    if (input) {
+                        input.addEventListener('input', debounceFilter);
+                        input.addEventListener('keypress', function(event) {
+                            if (event.key === 'Enter') {
+                                if (debounceTimeout) {
+                                    clearTimeout(debounceTimeout);
+                                }
+                                filterTable();
+                                event.preventDefault();
+                            }
+                        });
+                    }
+                    
+                    // Show content and hide loading overlay
+                    document.getElementById('content').style.display = 'block';
+                    setTimeout(() => {
+                        document.getElementById('loading-overlay').style.display = 'none';
+                    }, 500);
+                }
+            }
+            
+            // Start the first chunk
+            setTimeout(processIndexChunk, 0);
+        }
+        
+        function updateRowCount(visibleRows) {
+            const countElement = document.getElementById("rowCount");
+            if (countElement) {
+                countElement.textContent = "Showing " + visibleRows + " of " + totalRows + " records";
+            }
+        }
+        
+        function filterTable() {
+            const input = document.getElementById("filterInput");
+            if (!input) return;
+            
+            const filter = input.value.toUpperCase();
+            let visibleRows = 0;
+            
+            for (let i = 0; i < tableData.length; i++) {
+                const visible = filter === "" || tableData[i].searchText.indexOf(filter) > -1;
+                tableData[i].element.style.display = visible ? "" : "none";
+                if (visible) {
+                    visibleRows++;
+                }
+            }
+            
+            updateRowCount(visibleRows);
+        }
+        
+        function debounceFilter() {
+            if (debounceTimeout) {
+                clearTimeout(debounceTimeout);
+            }
+            debounceTimeout = setTimeout(function() {
+                filterTable();
+            }, 250);
+        }
+        
+        // Start loading when the page is ready
+        document.addEventListener('DOMContentLoaded', loadAndTransformXML);
+    </script>
+</body>
+</html>
