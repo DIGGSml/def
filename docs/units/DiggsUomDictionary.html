@@ -130,13 +130,39 @@
             `;
             contentContainer.appendChild(header);
             
-            // Create description
-            const descriptionContainer = document.createElement('div');
-            descriptionContainer.style.textAlign = 'center';
-            descriptionContainer.innerHTML = `
-                <span class="description-container">${getXMLValue(xmlDoc, '/uomDictionary/description') || getXMLValue(xmlDoc, '/uom:uomDictionary/uom:description') || ''}</span>
-            `;
-            contentContainer.appendChild(descriptionContainer);
+// Create description
+const descriptionContainer = document.createElement('div');
+descriptionContainer.style.textAlign = 'center';
+
+// Get description text - try multiple methods to ensure we get it
+let descriptionText = '';
+
+// Method 1: Try XPath
+descriptionText = getXMLValue(xmlDoc, '/uomDictionary/description') || getXMLValue(xmlDoc, '/uom:uomDictionary/uom:description');
+
+// Method 2: Try direct element selection if XPath didn't work
+if (!descriptionText) {
+    const descElement = xmlDoc.querySelector('description, uom\\:description');
+    if (descElement) {
+        descriptionText = descElement.textContent;
+    }
+}
+
+// Method 3: If we still don't have it, try more specific selectors
+if (!descriptionText) {
+    const uomDict = xmlDoc.querySelector('uomDictionary, uom\\:uomDictionary');
+    if (uomDict) {
+        const descElement = uomDict.querySelector(':scope > description, :scope > uom\\:description');
+        if (descElement) {
+            descriptionText = descElement.textContent;
+        }
+    }
+}
+
+descriptionContainer.innerHTML = `
+    <span class="description-container">${descriptionText || ''}</span>
+`;
+contentContainer.appendChild(descriptionContainer);
             
             // Create search row
             const searchRow = document.createElement('div');
@@ -294,17 +320,24 @@
         }
         
         // Helper function to get XML value with fallback
-        function getXMLValue(xmlDoc, xpath) {
+// Helper function to get XML value with fallback
+function getXMLValue(xmlDoc, xpath) {
             try {
                 // Try standard namespace
                 const nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.STRING_TYPE, null);
                 return nodes.stringValue;
             } catch (e) {
                 console.error("XPath error:", e);
+                
+                // For simple paths, fall back to direct element selection
+                if (xpath.includes('description')) {
+                    const descElement = xmlDoc.querySelector('description, uom\\:description');
+                    return descElement ? descElement.textContent : null;
+                }
+                
                 return null;
             }
-        }
-        
+        }        
         // Populate table rows in chunks
         function populateTableRows(xmlDoc, table) {
             try {
