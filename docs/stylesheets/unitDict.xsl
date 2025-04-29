@@ -153,6 +153,14 @@
                 </style>
             </head>
             <body>
+                <!-- Loading overlay embedded directly in the HTML -->
+                <div id="loadingOverlay">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <div class="loading-text">Loading... Please wait</div>
+                    </div>
+                </div>
+                
                 <div class="header-container">
                     <div class="logo">
                         <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
@@ -261,32 +269,10 @@
                 </div>
                 
                 <script type="text/javascript">
-                    // Initialize table data when the page is loaded
+                    // Initialize table data
                     var tableData = [];
                     var totalRows = 0;
                     var debounceTimeout = null;
-                    
-                    // Create and show loading overlay
-                    function showLoading() {
-                        var overlay = document.createElement('div');
-                        overlay.id = 'loadingOverlay';
-                        
-                        var container = document.createElement('div');
-                        container.className = 'loading-container';
-                        
-                        var spinner = document.createElement('div');
-                        spinner.className = 'loading-spinner';
-                        
-                        var text = document.createElement('div');
-                        text.className = 'loading-text';
-                        text.textContent = 'Loading... Please wait';
-                        
-                        container.appendChild(spinner);
-                        container.appendChild(text);
-                        overlay.appendChild(container);
-                        
-                        document.body.appendChild(overlay);
-                    }
                     
                     // Hide loading overlay
                     function hideLoading() {
@@ -368,10 +354,7 @@
                     
                     // Set up event listeners when the document is loaded
                     window.addEventListener('load', function() {
-                        // Show loading overlay immediately
-                        showLoading();
-                        
-                        // Initialize the table data for faster searching with a delay
+                        // Initialize the table data with a short delay
                         setTimeout(function() {
                             initializeTableData();
                             
