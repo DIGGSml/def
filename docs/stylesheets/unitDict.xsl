@@ -76,7 +76,7 @@
                     text-align: left;
                     }
                     /* Modified header styling to make both header rows sticky */
-                    thead {
+                    #unitTable thead {
                     position: sticky;
                     top: 0;
                     z-index: 2;
@@ -115,12 +115,11 @@
                     // Pre-process the table data for faster filtering
                     function initializeTableData() {
                     var table = document.getElementById("unitTable");
-                    var tbody = document.querySelector("#unitTable tbody");
-                    var rows = tbody.getElementsByTagName("tr");
-                    totalRows = rows.length; // Count all data rows
+                    var rows = table.getElementsByTagName("tr");
+                    totalRows = rows.length - 2; // Subtract header rows
                     
                     // Store searchable data for each row
-                    for (var i = 0; i < rows.length; i++) {
+                    for (var i = 2; i < rows.length; i++) {
                         var cells = rows[i].getElementsByTagName("td");
                         var rowData = {
                         element: rows[i],
@@ -226,94 +225,91 @@
                 
                 <div class="container">
                     <table id="unitTable">
-                        <thead>
-                            <tr>
-                                <th colspan="11"/>
-                                <th colspan="4">Conversion Coefficients<br/>y=(A + Bx)/(C + Dx)</th>
-                                <th/>
-                            </tr>
-                            <tr>
-                                <th>Unit<br/>Symbol</th>
-                                <th>Unit<br/>Name</th>
-                                <th>Unit<br/>Description</th>
-                                <th>Quantity Class<br/>Name</th>
-                                <th>Quantity Class<br/>Description</th>
-                                <th>Dimension</th>
-                                <th>Is SI</th>
-                                <th>Category</th>
-                                <th>Base Unit</th>
-                                <th>Conversion<br/>Reference</th>
-                                <th>Conversion<br/>Exact?</th>
-                                <th>A</th>
-                                <th>B</th>
-                                <th>C</th>
-                                <th>D</th>
-                                <th>Underlying<br/>Definition</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Process each quantityClass in order by name -->
-                            <xsl:for-each select="//uom:quantityClassSet/uom:quantityClass | //quantityClassSet/quantityClass">
-                                <xsl:sort select="uom:name | name"/>
+                        <tr>
+                            <th colspan="11"/>
+                            <th colspan="4">Conversion Coefficients<br/>y=(A + Bx)/(C + Dx)</th>
+                            <th/>
+                        </tr>
+                        <tr>
+                            <th>Unit<br/>Symbol</th>
+                            <th>Unit<br/>Name</th>
+                            <th>Unit<br/>Description</th>
+                            <th>Quantity Class<br/>Name</th>
+                            <th>Quantity Class<br/>Description</th>
+                            <th>Dimension</th>
+                            <th>Is SI</th>
+                            <th>Category</th>
+                            <th>Base Unit</th>
+                            <th>Conversion<br/>Reference</th>
+                            <th>Conversion<br/>Exact?</th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>Underlying<br/>Definition</th>
+                        </tr>
+                        
+                        <!-- Process each quantityClass in order by name -->
+                        <xsl:for-each select="//uom:quantityClassSet/uom:quantityClass | //quantityClassSet/quantityClass">
+                            <xsl:sort select="uom:name | name"/>
+                            
+                            <xsl:variable name="qcName" select="uom:name | name"/>
+                            <xsl:variable name="qcDescription" select="uom:description | description"/>
+                            <xsl:variable name="qcPosition" select="position()"/>
+                            <xsl:variable name="rowClass">
+                                <xsl:choose>
+                                    <xsl:when test="$qcPosition mod 2 = 1">quantity-class-odd</xsl:when>
+                                    <xsl:otherwise>quantity-class-even</xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:variable>
+                            
+                            <!-- For each memberUnit in this quantityClass -->
+                            <xsl:for-each select="uom:memberUnit | memberUnit">
+                                <xsl:variable name="memberUnitValue" select="normalize-space(.)"/>
                                 
-                                <xsl:variable name="qcName" select="uom:name | name"/>
-                                <xsl:variable name="qcDescription" select="uom:description | description"/>
-                                <xsl:variable name="qcPosition" select="position()"/>
-                                <xsl:variable name="rowClass">
-                                    <xsl:choose>
-                                        <xsl:when test="$qcPosition mod 2 = 1">quantity-class-odd</xsl:when>
-                                        <xsl:otherwise>quantity-class-even</xsl:otherwise>
-                                    </xsl:choose>
-                                </xsl:variable>
-                                
-                                <!-- For each memberUnit in this quantityClass -->
-                                <xsl:for-each select="uom:memberUnit | memberUnit">
-                                    <xsl:variable name="memberUnitValue" select="normalize-space(.)"/>
-                                    
-                                    <!-- Find the matching unit in unitSet based on symbol -->
-                                    <xsl:for-each select="//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
-                                        //unitSet/unit[normalize-space(symbol) = $memberUnitValue]">
-                                        <xsl:if test="position() = 1"> <!-- Only use the first matching unit if there are duplicates -->
-                                            <tr class="{$rowClass}">
-                                                <td><xsl:value-of select="uom:symbol | symbol"/></td>
-                                                <td><xsl:value-of select="uom:name | name"/></td>
-                                                <td><xsl:value-of select="uom:description | description"/></td>
-                                                <!-- Repeat quantityClass info for each row (no rowspan) -->
-                                                <td><xsl:value-of select="$qcName"/></td>
-                                                <td><xsl:value-of select="$qcDescription"/></td>
-                                                
-                                                <!-- Display unit info from the matching unit element -->
-                                                <td><xsl:value-of select="uom:dimension | dimension"/></td>
-                                                <td><xsl:value-of select="uom:isSI | isSI"/></td>
-                                                <td><xsl:value-of select="uom:category | category"/></td>
-                                                <td><xsl:value-of select="uom:baseUnit | baseUnit"/></td>
-                                                <td><xsl:value-of select="uom:conversionRef | conversionRef"/></td>
-                                                <td><xsl:value-of select="uom:isExact | isExact"/></td>
-                                                <td><xsl:value-of select="uom:A | A"/></td>
-                                                <td><xsl:value-of select="uom:B | B"/></td>
-                                                <td><xsl:value-of select="uom:C | C"/></td>
-                                                <td><xsl:value-of select="uom:D | D"/></td>
-                                                <td><xsl:value-of select="uom:underlyingDef | underlyingDef"/></td>
-                                            </tr>
-                                        </xsl:if>
-                                    </xsl:for-each>
-                                    
-                                    <!-- If no matching unit was found, create a row with just the quantityClass and memberUnit info -->
-                                    <xsl:if test="not(//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
-                                        //unitSet/unit[normalize-space(symbol) = $memberUnitValue])">
+                                <!-- Find the matching unit in unitSet based on symbol -->
+                                <xsl:for-each select="//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
+                                    //unitSet/unit[normalize-space(symbol) = $memberUnitValue]">
+                                    <xsl:if test="position() = 1"> <!-- Only use the first matching unit if there are duplicates -->
                                         <tr class="{$rowClass}">
+                                            <td><xsl:value-of select="uom:symbol | symbol"/></td>
+                                            <td><xsl:value-of select="uom:name | name"/></td>
+                                            <td><xsl:value-of select="uom:description | description"/></td>
                                             <!-- Repeat quantityClass info for each row (no rowspan) -->
                                             <td><xsl:value-of select="$qcName"/></td>
                                             <td><xsl:value-of select="$qcDescription"/></td>
                                             
-                                            <!-- Show only the memberUnit as the symbol -->
-                                            <td><xsl:value-of select="$memberUnitValue"/></td>
-                                            <td colspan="13">No matching unit found in unitSet</td>
+                                            <!-- Display unit info from the matching unit element -->
+                                            <td><xsl:value-of select="uom:dimension | dimension"/></td>
+                                            <td><xsl:value-of select="uom:isSI | isSI"/></td>
+                                            <td><xsl:value-of select="uom:category | category"/></td>
+                                            <td><xsl:value-of select="uom:baseUnit | baseUnit"/></td>
+                                            <td><xsl:value-of select="uom:conversionRef | conversionRef"/></td>
+                                            <td><xsl:value-of select="uom:isExact | isExact"/></td>
+                                            <td><xsl:value-of select="uom:A | A"/></td>
+                                            <td><xsl:value-of select="uom:B | B"/></td>
+                                            <td><xsl:value-of select="uom:C | C"/></td>
+                                            <td><xsl:value-of select="uom:D | D"/></td>
+                                            <td><xsl:value-of select="uom:underlyingDef | underlyingDef"/></td>
                                         </tr>
                                     </xsl:if>
                                 </xsl:for-each>
+                                
+                                <!-- If no matching unit was found, create a row with just the quantityClass and memberUnit info -->
+                                <xsl:if test="not(//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
+                                    //unitSet/unit[normalize-space(symbol) = $memberUnitValue])">
+                                    <tr class="{$rowClass}">
+                                        <!-- Show only the memberUnit as the symbol -->
+                                        <td><xsl:value-of select="$memberUnitValue"/></td>
+                                        <td colspan="4">No matching unit found in unitSet</td>
+                                        <!-- Repeat quantityClass info for each row (no rowspan) -->
+                                        <td><xsl:value-of select="$qcName"/></td>
+                                        <td><xsl:value-of select="$qcDescription"/></td>
+                                        <td colspan="9"></td>
+                                    </tr>
+                                </xsl:if>
                             </xsl:for-each>
-                        </tbody>
+                        </xsl:for-each>
                     </table>
                 </div>
             </body>
