@@ -115,7 +115,7 @@
                     background-color: #e6f2ff; /* Light blue */
                     }
                     /* Loading overlay styles */
-                    #loading-container {
+                    #loading-overlay {
                     position: fixed;
                     top: 0;
                     left: 0;
@@ -149,138 +149,126 @@
                     0% { transform: rotate(0deg); }
                     100% { transform: rotate(360deg); }
                     }
-                    #content {
-                    display: none;
-                    }
                 </style>
+                <!-- Loading overlay HTML - defined inline for immediate display -->
+                <script type="text/javascript">
+                    // Create and append the loading overlay to the document as soon as possible
+                    document.write('<div id="loading-overlay"><div class="logo"><img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/></div><div id="loader"></div><div class="loading-text">Loading DIGGS Unit Dictionary...</div><div id="progress-text">Initializing...</div></div>');
+                </script>
             </head>
             <body>
-                <!-- Loading container - shown immediately and removed when content is ready -->
-                <div id="loading-container">
+                <div class="header-container">
                     <div class="logo">
                         <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
                     </div>
-                    <div id="loader"></div>
-                    <div class="loading-text">Loading DIGGS Unit Dictionary...</div>
-                    <div id="progress-text">Processing data...</div>
+                    <div class="title-container">
+                        <h1><xsl:value-of select="/uomDictionary/title | /uom:uomDictionary/uom:title"/></h1>
+                    </div>
+                    <!-- Empty div to balance the flex layout -->
+                    <div style="flex: 0 0 150px;"></div>
+                </div>
+                <div style="text-align: center;"> <!-- Added wrapper div with center alignment -->
+                    <span class="description-container"><xsl:value-of select="/uom:uomDictionary/uom:description | /uomDictionary/description"/></span>
                 </div>
                 
-                <!-- Content container - hidden until loading is complete -->
-                <div id="content">
-                    <div class="header-container">
-                        <div class="logo">
-                            <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px"/>
-                        </div>
-                        <div class="title-container">
-                            <h1><xsl:value-of select="/uomDictionary/title | /uom:uomDictionary/uom:title"/></h1>
-                        </div>
-                        <!-- Empty div to balance the flex layout -->
-                        <div style="flex: 0 0 150px;"></div>
-                    </div>
-                    <div style="text-align: center;"> <!-- Added wrapper div with center alignment -->
-                        <span class="description-container"><xsl:value-of select="/uom:uomDictionary/uom:description | /uomDictionary/description"/></span>
-                    </div>
-                    
-                    <div class="search-row">
-                        <input type="text" id="filterInput" placeholder="Filter by name, description, symbol, dimension, or definition..."/>
-                        <div id="rowCount"></div>
-                    </div>
-                    
-                    <div class="container">
-                        <table id="unitTable">
-                            <tr>
-                                <th colspan="11"/>
-                                <th colspan="4">Conversion Coefficients<br/>y=(A + Bx)/(C + Dx)</th>
-                                <th/>
-                            </tr>
-                            <tr>
-                                <th>Unit<br/>Symbol</th>
-                                <th>Unit<br/>Name</th>
-                                <th>Unit<br/>Description</th>
-                                <th>Quantity Class<br/>Name</th>
-                                <th>Quantity Class<br/>Description</th>
-                                <th>Dimension</th>
-                                <th>Is SI</th>
-                                <th>Category</th>
-                                <th>Base Unit</th>
-                                <th>Conversion<br/>Reference</th>
-                                <th>Conversion<br/>Exact?</th>
-                                <th>A</th>
-                                <th>B</th>
-                                <th>C</th>
-                                <th>D</th>
-                                <th>Underlying<br/>Definition</th>
-                            </tr>
+                <div class="search-row">
+                    <input type="text" id="filterInput" placeholder="Filter by name, description, symbol, dimension, or definition..."/>
+                    <div id="rowCount"></div>
+                </div>
+                
+                <div class="container">
+                    <table id="unitTable">
+                        <tr>
+                            <th colspan="11"/>
+                            <th colspan="4">Conversion Coefficients<br/>y=(A + Bx)/(C + Dx)</th>
+                            <th/>
+                        </tr>
+                        <tr>
+                            <th>Unit<br/>Symbol</th>
+                            <th>Unit<br/>Name</th>
+                            <th>Unit<br/>Description</th>
+                            <th>Quantity Class<br/>Name</th>
+                            <th>Quantity Class<br/>Description</th>
+                            <th>Dimension</th>
+                            <th>Is SI</th>
+                            <th>Category</th>
+                            <th>Base Unit</th>
+                            <th>Conversion<br/>Reference</th>
+                            <th>Conversion<br/>Exact?</th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>Underlying<br/>Definition</th>
+                        </tr>
+                        
+                        <!-- Process each quantityClass in order by name -->
+                        <xsl:for-each select="//uom:quantityClassSet/uom:quantityClass | //quantityClassSet/quantityClass">
+                            <xsl:sort select="uom:name | name"/>
                             
-                            <!-- Process each quantityClass in order by name -->
-                            <xsl:for-each select="//uom:quantityClassSet/uom:quantityClass | //quantityClassSet/quantityClass">
-                                <xsl:sort select="uom:name | name"/>
+                            <xsl:variable name="qcName" select="uom:name | name"/>
+                            <xsl:variable name="qcDescription" select="uom:description | description"/>
+                            <xsl:variable name="qcPosition" select="position()"/>
+                            <xsl:variable name="rowClass">
+                                <xsl:choose>
+                                    <xsl:when test="$qcPosition mod 2 = 1">quantity-class-odd</xsl:when>
+                                    <xsl:otherwise>quantity-class-even</xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:variable>
+                            
+                            <!-- For each memberUnit in this quantityClass -->
+                            <xsl:for-each select="uom:memberUnit | memberUnit">
+                                <xsl:variable name="memberUnitValue" select="normalize-space(.)"/>
                                 
-                                <xsl:variable name="qcName" select="uom:name | name"/>
-                                <xsl:variable name="qcDescription" select="uom:description | description"/>
-                                <xsl:variable name="qcPosition" select="position()"/>
-                                <xsl:variable name="rowClass">
-                                    <xsl:choose>
-                                        <xsl:when test="$qcPosition mod 2 = 1">quantity-class-odd</xsl:when>
-                                        <xsl:otherwise>quantity-class-even</xsl:otherwise>
-                                    </xsl:choose>
-                                </xsl:variable>
-                                
-                                <!-- For each memberUnit in this quantityClass -->
-                                <xsl:for-each select="uom:memberUnit | memberUnit">
-                                    <xsl:variable name="memberUnitValue" select="normalize-space(.)"/>
-                                    
-                                    <!-- Find the matching unit in unitSet based on symbol -->
-                                    <xsl:for-each select="//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
-                                        //unitSet/unit[normalize-space(symbol) = $memberUnitValue]">
-                                        <xsl:if test="position() = 1"> <!-- Only use the first matching unit if there are duplicates -->
-                                            <tr class="{$rowClass}">
-                                                <td><xsl:value-of select="uom:symbol | symbol"/></td>
-                                                <td><xsl:value-of select="uom:name | name"/></td>
-                                                <td><xsl:value-of select="uom:description | description"/></td>
-                                                <!-- Repeat quantityClass info for each row (no rowspan) -->
-                                                <td><xsl:value-of select="$qcName"/></td>
-                                                <td><xsl:value-of select="$qcDescription"/></td>
-                                                
-                                                <!-- Display unit info from the matching unit element -->
-                                                <td><xsl:value-of select="uom:dimension | dimension"/></td>
-                                                <td><xsl:value-of select="uom:isSI | isSI"/></td>
-                                                <td><xsl:value-of select="uom:category | category"/></td>
-                                                <td><xsl:value-of select="uom:baseUnit | baseUnit"/></td>
-                                                <td><xsl:value-of select="uom:conversionRef | conversionRef"/></td>
-                                                <td><xsl:value-of select="uom:isExact | isExact"/></td>
-                                                <td><xsl:value-of select="uom:A | A"/></td>
-                                                <td><xsl:value-of select="uom:B | B"/></td>
-                                                <td><xsl:value-of select="uom:C | C"/></td>
-                                                <td><xsl:value-of select="uom:D | D"/></td>
-                                                <td><xsl:value-of select="uom:underlyingDef | underlyingDef"/></td>
-                                            </tr>
-                                        </xsl:if>
-                                    </xsl:for-each>
-                                    
-                                    <!-- If no matching unit was found, create a row with just the quantityClass and memberUnit info -->
-                                    <xsl:if test="not(//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
-                                        //unitSet/unit[normalize-space(symbol) = $memberUnitValue])">
+                                <!-- Find the matching unit in unitSet based on symbol -->
+                                <xsl:for-each select="//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
+                                    //unitSet/unit[normalize-space(symbol) = $memberUnitValue]">
+                                    <xsl:if test="position() = 1"> <!-- Only use the first matching unit if there are duplicates -->
                                         <tr class="{$rowClass}">
+                                            <td><xsl:value-of select="uom:symbol | symbol"/></td>
+                                            <td><xsl:value-of select="uom:name | name"/></td>
+                                            <td><xsl:value-of select="uom:description | description"/></td>
                                             <!-- Repeat quantityClass info for each row (no rowspan) -->
-                                            <td><xsl:value-of select="$memberUnitValue"/></td>
                                             <td><xsl:value-of select="$qcName"/></td>
                                             <td><xsl:value-of select="$qcDescription"/></td>
-                                            <td colspan="13">No matching unit found in unitSet</td>
+                                            
+                                            <!-- Display unit info from the matching unit element -->
+                                            <td><xsl:value-of select="uom:dimension | dimension"/></td>
+                                            <td><xsl:value-of select="uom:isSI | isSI"/></td>
+                                            <td><xsl:value-of select="uom:category | category"/></td>
+                                            <td><xsl:value-of select="uom:baseUnit | baseUnit"/></td>
+                                            <td><xsl:value-of select="uom:conversionRef | conversionRef"/></td>
+                                            <td><xsl:value-of select="uom:isExact | isExact"/></td>
+                                            <td><xsl:value-of select="uom:A | A"/></td>
+                                            <td><xsl:value-of select="uom:B | B"/></td>
+                                            <td><xsl:value-of select="uom:C | C"/></td>
+                                            <td><xsl:value-of select="uom:D | D"/></td>
+                                            <td><xsl:value-of select="uom:underlyingDef | underlyingDef"/></td>
                                         </tr>
                                     </xsl:if>
                                 </xsl:for-each>
+                                
+                                <!-- If no matching unit was found, create a row with just the quantityClass and memberUnit info -->
+                                <xsl:if test="not(//uom:unitSet/uom:unit[normalize-space(uom:symbol) = $memberUnitValue] | 
+                                    //unitSet/unit[normalize-space(symbol) = $memberUnitValue])">
+                                    <tr class="{$rowClass}">
+                                        <!-- Repeat quantityClass info for each row (no rowspan) -->
+                                        <td><xsl:value-of select="$memberUnitValue"/></td>
+                                        <td><xsl:value-of select="$qcName"/></td>
+                                        <td><xsl:value-of select="$qcDescription"/></td>
+                                        <td colspan="13">No matching unit found in unitSet</td>
+                                    </tr>
+                                </xsl:if>
                             </xsl:for-each>
-                        </table>
-                    </div>
+                        </xsl:for-each>
+                    </table>
                 </div>
                 
                 <script type="text/javascript">
-                    // Initialize table data and loading state variables
+                    // Initialize variables
                     var tableData = [];
                     var totalRows = 0;
                     var debounceTimeout = null;
-                    var processingStartTime = Date.now();
                     
                     // Function to update the loading progress text
                     function updateProgress(message) {
@@ -290,67 +278,96 @@
                         }
                     }
                     
-                    // Hide loading overlay and show content
-                    function showContent() {
-                        document.getElementById('loading-container').style.display = 'none';
-                        document.getElementById('content').style.display = 'block';
+                    // Hide loading overlay when content is ready
+                    function hideLoading() {
+                        var overlay = document.getElementById('loading-overlay');
+                        if (overlay) {
+                            overlay.style.display = 'none';
+                        }
                     }
                     
                     // Pre-process the table data for faster filtering
                     function initializeTableData() {
-                        updateProgress("Initializing table data...");
+                        updateProgress("Processing table data...");
+                        
+                        // Get table rows
                         var table = document.getElementById("unitTable");
+                        if (!table) {
+                            console.error("Table element not found!");
+                            return;
+                        }
+                        
                         var rows = table.getElementsByTagName("tr");
+                        if (!rows || rows.length < 3) {
+                            console.error("Not enough rows in table!");
+                            return;
+                        }
+                        
                         totalRows = rows.length - 2; // Subtract 2 header rows
                         
-                        // Create a promise to allow chunking of table processing
-                        return new Promise((resolve) => {
-                            // Process in chunks to prevent UI freezing
-                            let processedRows = 0;
+                        // Process in chunks to prevent UI freezing
+                        var processedRows = 0;
+                        var chunkSize = 200; // Process 200 rows at a time
+                        
+                        function processChunk() {
+                            var endRow = Math.min(processedRows + chunkSize + 2, rows.length);
                             
-                            function processChunk() {
-                                const chunkSize = 200; // Adjust this number based on performance
-                                const startRow = processedRows + 2; // Skip header rows
-                                const endRow = Math.min(startRow + chunkSize, rows.length);
+                            for (var i = processedRows + 2; i < endRow; i++) {
+                                var cells = rows[i].getElementsByTagName("td");
+                                var rowData = {
+                                    element: rows[i],
+                                    searchText: ""
+                                };
                                 
-                                for (let i = startRow; i < endRow; i++) {
-                                    const cells = rows[i].getElementsByTagName("td");
-                                    const rowData = {
-                                        element: rows[i],
-                                        searchText: ""
-                                    };
-                                    
-                                    // Include columns we want to search (0, 1, 2, 3, 4, 5, 15)
-                                    const columnsToSearch = [0, 1, 2, 3, 4, 5, 15];
-                                    for (let j = 0; j < columnsToSearch.length; j++) {
-                                        const colIndex = columnsToSearch[j];
-                                        if (colIndex < cells.length) {
-                                            const cellText = cells[colIndex].textContent || cells[colIndex].innerText;
-                                            rowData.searchText += cellText.toUpperCase() + " ";
-                                        }
+                                // Include columns we want to search (0, 1, 2, 3, 4, 5, 15)
+                                var columnsToSearch = [0, 1, 2, 3, 4, 5, 15];
+                                for (var j = 0; j < columnsToSearch.length; j++) {
+                                    var colIndex = columnsToSearch[j];
+                                    if (colIndex < cells.length) {
+                                        var cellText = cells[colIndex].textContent || cells[colIndex].innerText;
+                                        rowData.searchText += cellText.toUpperCase() + " ";
                                     }
-                                    
-                                    tableData.push(rowData);
                                 }
                                 
-                                processedRows += chunkSize;
-                                
-                                // Update progress
-                                const percentComplete = Math.min(100, Math.round((processedRows / totalRows) * 100));
-                                updateProgress(`Processing table: ${percentComplete}% complete...`);
-                                
-                                if (processedRows < totalRows) {
-                                    // Schedule next chunk
-                                    setTimeout(processChunk, 0);
-                                } else {
-                                    // All done
-                                    resolve();
-                                }
+                                tableData.push(rowData);
                             }
                             
-                            // Start processing the first chunk
-                            processChunk();
-                        });
+                            processedRows += chunkSize;
+                            
+                            // Update progress
+                            var percentComplete = Math.min(100, Math.round((processedRows / totalRows) * 100));
+                            updateProgress("Processing table: " + percentComplete + "% complete...");
+                            
+                            if (processedRows < totalRows) {
+                                // Process next chunk asynchronously
+                                setTimeout(processChunk, 0);
+                            } else {
+                                // Processing complete
+                                updateRowCount(totalRows);
+                                updateProgress("Table processing complete!");
+                                
+                                // Set up the filter input event listener
+                                var input = document.getElementById("filterInput");
+                                if (input) {
+                                    input.addEventListener('input', debounceFilter);
+                                    input.addEventListener('keypress', function(event) {
+                                        if (event.key === 'Enter') {
+                                            if (debounceTimeout) {
+                                                clearTimeout(debounceTimeout);
+                                            }
+                                            filterTable();
+                                            event.preventDefault();
+                                        }
+                                    });
+                                }
+                                
+                                // Hide loading overlay
+                                setTimeout(hideLoading, 500);
+                            }
+                        }
+                        
+                        // Start processing the first chunk
+                        setTimeout(processChunk, 0);
                     }
                     
                     function updateRowCount(visibleRows) {
@@ -363,6 +380,8 @@
                     function filterTable() {
                         // Get input value
                         var input = document.getElementById("filterInput");
+                        if (!input) return;
+                        
                         var filter = input.value.toUpperCase();
                         var visibleRows = 0;
                         
@@ -389,40 +408,10 @@
                         }, 250); // 250ms delay
                     }
                     
-                    // Initialize the page with loading indicator first, then process data
+                    // Initialize the page
                     document.addEventListener('DOMContentLoaded', function() {
-                        updateProgress("Starting data processing...");
-                        
-                        // Process table data in chunks to prevent UI freezing
-                        setTimeout(function() {
-                            initializeTableData().then(function() {
-                                // Set up the filter input event listener
-                                var input = document.getElementById("filterInput");
-                                input.addEventListener('input', debounceFilter);
-                                
-                                // Apply filter when Enter key is pressed (immediate, no debounce)
-                                input.addEventListener('keypress', function(event) {
-                                    if (event.key === 'Enter') {
-                                        if (debounceTimeout) {
-                                            clearTimeout(debounceTimeout);
-                                        }
-                                        filterTable();
-                                        // Prevent form submission if within a form
-                                        event.preventDefault();
-                                    }
-                                });
-                                
-                                // Update initial row count
-                                updateRowCount(totalRows);
-                                
-                                // Processing complete, show content
-                                const processingTime = (Date.now() - processingStartTime) / 1000;
-                                console.log(`Table processing completed in ${processingTime.toFixed(2)} seconds`);
-                                
-                                // Show content after a short delay to ensure UI is updated
-                                setTimeout(showContent, 100);
-                            });
-                        }, 10);
+                        // Start table data processing after a short delay
+                        setTimeout(initializeTableData, 100);
                     });
                 </script>
             </body>
