@@ -74,9 +74,22 @@
                     padding: 8px;
                     text-align: left;
                     }
-                    th {
+                    /* Modified header styling to make both rows sticky */
+                    #unitTable tr:nth-child(1) th {
                     position: sticky;
                     top: 0;
+                    background-color: #000000;
+                    color: white;
+                    font-weight: bold;
+                    text-align: center;
+                    vertical-align: middle;
+                    z-index: 2; /* Higher z-index for first row */
+                    padding: 10px 5px;
+                    height: 40px;
+                    }
+                    #unitTable tr:nth-child(2) th {
+                    position: sticky;
+                    top: 60px; /* Height of first header row + padding */
                     background-color: #000000;
                     color: white;
                     font-weight: bold;
@@ -112,18 +125,18 @@
                     function initializeTableData() {
                     var table = document.getElementById("unitTable");
                     var rows = table.getElementsByTagName("tr");
-                    totalRows = rows.length - 2; // Subtract header rows
+                    totalRows = rows.length - 2; // Subtract 2 header rows
                     
                     // Store searchable data for each row
-                    for (var i = 1; i &lt; rows.length; i++) {
+                    for (var i = 2; i &lt; rows.length; i++) { // Start from index 2 (after 2 header rows)
                     var cells = rows[i].getElementsByTagName("td");
                     var rowData = {
                     element: rows[i],
                     searchText: ""
                     };
                     
-                    // Only include columns we want to search (0, 1, 2, 3, 4, 5, 16)
-                    var columnsToSearch = [0, 1, 2, 3, 4, 5, 16];
+                    // Only include columns we want to search (0, 1, 2, 3, 4, 5)
+                    var columnsToSearch = [0, 1, 2, 3, 4, 5];
                     for (var j = 0; j &lt; columnsToSearch.length; j++) {
                     var colIndex = columnsToSearch[j];
                     if (colIndex &lt; cells.length) {
