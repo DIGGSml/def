@@ -145,9 +145,7 @@
           
           <div style="text-align: center">
             <span class="description">
-              <strong>
                 <xsl:value-of select="gml:Dictionary/gml:description"/>
-              </strong>
             </span>
           </div>
         </div>
