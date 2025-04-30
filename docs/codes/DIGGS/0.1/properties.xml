@@ -15,7 +15,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -29,7 +29,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -43,7 +43,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -58,7 +58,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AggregateAbrasionValueTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregateAbrasionValueTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -73,7 +73,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AggregateCrushingValueTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregateCrushingValueTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -88,7 +88,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AggregateElongationIndexTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregateElongationIndexTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -103,7 +103,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AggregateFlakinessIndexTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregateFlakinessIndexTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -118,7 +118,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AggregateImpactValueTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregateImpactValueTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -133,7 +133,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LosAngelesAbrasionTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LosAngelesAbrasionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -148,7 +148,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LosAngelesAbrasionTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LosAngelesAbrasionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -163,7 +163,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LosAngelesAbrasionTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LosAngelesAbrasionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -178,7 +178,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AggregatePolishedStoneValueTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregatePolishedStoneValueTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -193,7 +193,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AggregateSoundnessTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregateSoundnessTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -208,7 +208,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AggregateWaterAbsorptionTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregateWaterAbsorptionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -223,7 +223,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -238,7 +238,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:BleedTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:BleedTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -253,7 +253,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DynamicProbeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DynamicProbeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -268,19 +268,19 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituCBRTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituCBRTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituDensityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituDensityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabCBRTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCBRTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -298,7 +298,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -313,11 +313,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituCBRTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituCBRTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabCBRTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCBRTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -332,11 +332,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituCBRTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituCBRTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabCBRTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCBRTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -351,7 +351,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ChalkCrushingValueTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ChalkCrushingValueTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -366,7 +366,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -381,7 +381,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -396,7 +396,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -411,11 +411,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -430,7 +430,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -445,11 +445,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -464,11 +464,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -483,19 +483,19 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituPermeabilityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituPermeabilityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabPermeabilityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabPermeabilityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PumpingTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PumpingTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -510,7 +510,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabPermeabilityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabPermeabilityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -525,23 +525,23 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituPermeabilityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituPermeabilityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabPermeabilityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabPermeabilityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PumpingTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PumpingTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -556,19 +556,19 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituPermeabilityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituPermeabilityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabPermeabilityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabPermeabilityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PumpingTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PumpingTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -583,11 +583,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -602,7 +602,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DirectShearTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DirectShearTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -617,7 +617,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DirectShearTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DirectShearTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -632,7 +632,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -647,7 +647,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -662,19 +662,19 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InSituPenetrometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InSituPenetrometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabPenetrometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabPenetrometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PocketPenetrometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PocketPenetrometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -689,7 +689,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -707,11 +707,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:WaterContentTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:WaterContentTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -726,11 +726,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -745,11 +745,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -764,11 +764,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -783,11 +783,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -802,11 +802,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -821,11 +821,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -840,11 +840,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -859,7 +859,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:WaterContentTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:WaterContentTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -874,7 +874,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DynamicProbeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DynamicProbeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -889,6 +889,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:MonitorResult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:TemporalResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -906,7 +911,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -924,7 +929,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -939,7 +944,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -954,7 +959,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -969,7 +974,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -984,7 +989,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -999,19 +1004,19 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DissipationTimeSeriesResult</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:dissipationTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:LugeonStepTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:lugeonStepTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:SyneresisTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:syneresisTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -1029,7 +1034,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressureFiltrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressureFiltrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1044,11 +1049,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:EnvironmentalScreeningTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:EnvironmentalScreeningTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlameIonizationDetectorTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlameIonizationDetectorTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1063,7 +1068,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlowConeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlowConeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1078,7 +1083,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:LugeonStepTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:lugeonStepTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -1096,7 +1101,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:LugeonStepTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:lugeonStepTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -1114,11 +1119,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DirectShearTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DirectShearTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1133,19 +1138,19 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DirectShearTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DirectShearTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1160,23 +1165,23 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DirectShearTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DirectShearTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1191,7 +1196,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1206,7 +1211,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FrostSusceptibilityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FrostSusceptibilityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1221,7 +1226,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:LugeonStepTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:lugeonStepTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -1239,11 +1244,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TiltCupTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TiltCupTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ViscometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ViscometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1258,7 +1263,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -1276,7 +1281,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1291,7 +1296,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -1309,7 +1314,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -1327,7 +1332,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -1345,7 +1350,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1360,7 +1365,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PointLoadTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PointLoadTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1375,7 +1380,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PointLoadTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PointLoadTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1390,7 +1395,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -1408,7 +1413,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1423,7 +1428,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LineLossTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LineLossTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1438,7 +1443,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LineLossTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LineLossTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1453,7 +1458,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LineLossTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LineLossTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1468,7 +1473,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LineLossTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LineLossTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1483,7 +1488,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1498,7 +1503,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1513,11 +1518,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:WaterContentTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:WaterContentTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1532,7 +1537,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LossOnIgnitionTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LossOnIgnitionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1547,7 +1552,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LugeonTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LugeonTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1562,7 +1567,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MarshFunnelTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MarshFunnelTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1577,7 +1582,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:SyneresisTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:syneresisTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1592,7 +1597,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:SyneresisTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:syneresisTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1607,7 +1612,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1622,7 +1627,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MCVTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MCVTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1637,11 +1642,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1656,7 +1661,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1671,7 +1676,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MudBalanceTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MudBalanceTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1686,7 +1691,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DrivenPenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DrivenPenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1701,7 +1706,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DrivenPenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DrivenPenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1716,7 +1721,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DrivenPenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DrivenPenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1731,7 +1736,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1746,11 +1751,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1765,7 +1770,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabVelocityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabVelocityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1780,7 +1785,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1795,7 +1800,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1810,7 +1815,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1825,7 +1830,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DynamicProbeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DynamicProbeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1840,11 +1845,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1859,11 +1864,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1878,11 +1883,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1897,11 +1902,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1916,11 +1921,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MaterialGradationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1935,11 +1940,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:RedoxTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:RedoxTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1954,11 +1959,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:EnvironmentalScreeningTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:EnvironmentalScreeningTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PhotoIonizationDetectorTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PhotoIonizationDetectorTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1973,7 +1978,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1988,7 +1993,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2003,7 +2008,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PointLoadTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PointLoadTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2018,7 +2023,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2033,11 +2038,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2052,7 +2057,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2067,11 +2072,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DissipationTimeSeriesResult</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:dissipationTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -2089,11 +2094,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DissipationTimeSeriesResult</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:dissipationTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -2111,11 +2116,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DissipationTimeSeriesResult</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:dissipationTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -2133,7 +2138,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2148,7 +2153,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressureFiltrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressureFiltrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2163,7 +2168,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ConsolidationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2178,7 +2183,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:RedoxTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:RedoxTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2193,11 +2198,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DrivenPenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DrivenPenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:RelativeDensityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:RelativeDensityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2212,11 +2217,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InSituResistivityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InSituResistivityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabResistivityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabResistivityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -2234,7 +2239,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:RockPorosityDensityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:RockPorosityDensityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2249,7 +2254,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:SchmidtReboundHardnessTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SchmidtReboundHardnessTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2264,15 +2269,15 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituVaneTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituVaneTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabVaneTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabVaneTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:UnconfinedCompressiveStrengthTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2287,7 +2292,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:SetTimeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SetTimeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2302,23 +2307,23 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabPenetrometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabPenetrometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PocketPenetrometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PocketPenetrometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2333,35 +2338,35 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituVaneTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituVaneTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabPenetrometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabPenetrometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabVaneTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabVaneTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PocketPenetrometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PocketPenetrometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2376,35 +2381,35 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituVaneTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituVaneTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabPenetrometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabPenetrometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabVaneTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabVaneTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PocketPenetrometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PocketPenetrometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TriaxialTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2419,7 +2424,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabVelocityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabVelocityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2434,7 +2439,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ShoreScleroscopeHardnessTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ShoreScleroscopeHardnessTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2449,11 +2454,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LinearShrinkageTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LinearShrinkageTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ShrinkageTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ShrinkageTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2468,7 +2473,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2483,7 +2488,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2498,7 +2503,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AggregateSlakeDurabilityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregateSlakeDurabilityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2513,7 +2518,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -2531,7 +2536,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:SlumpTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SlumpTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2546,7 +2551,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -2564,7 +2569,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:SuctionTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SuctionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2578,7 +2583,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2593,7 +2598,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:SpecificGravityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SpecificGravityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2608,7 +2613,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:SpecificGravityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SpecificGravityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2623,7 +2628,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:SpecificGravityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SpecificGravityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2638,7 +2643,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2653,11 +2658,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:SyneresisTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SyneresisTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:SyneresisTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:syneresisTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2672,11 +2677,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:SyneresisTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SyneresisTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:SyneresisTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:syneresisTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2691,7 +2696,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2706,7 +2711,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -2724,7 +2729,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AggregateTenPercentFinesTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregateTenPercentFinesTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2739,7 +2744,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2754,19 +2759,27 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DissipationTimeSeriesResult</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:dissipationTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:LugeonStepTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:lugeonStepTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:SyneresisTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:synere+[gp_properties.xlsx]AssociatedElements!$C$161:$D$268sisTimeSeries</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::SpatialReult</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::TestResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -2784,7 +2797,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -2802,7 +2815,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2817,7 +2830,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:DynamicProbeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:DynamicProbeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2832,7 +2845,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:LugeonStepTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:lugeonStepTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -2850,7 +2863,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2865,11 +2878,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2883,7 +2896,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2897,7 +2910,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ParticleSizeTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2911,7 +2924,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2926,7 +2939,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FlatPlateDilatometerTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2941,7 +2954,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:SyneresisTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:syneresisTimeSeries</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggspropertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath></diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2956,7 +2973,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:SyneresisTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:syneresisTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2971,7 +2988,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AtterbergLimitsTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2985,7 +3002,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:WashoutTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:WashoutTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -3000,27 +3017,27 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:InsituCBRTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituCBRTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabCBRTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCBRTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:WaterContentTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:WaterContentTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -3035,7 +3052,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -3050,7 +3067,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
@@ -3068,7 +3085,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::measurement//procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>

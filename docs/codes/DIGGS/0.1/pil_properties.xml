@@ -14,12 +14,12 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -33,12 +33,12 @@
             <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -52,12 +52,12 @@
             <diggs:quantityClass>moment of force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -71,12 +71,12 @@
             <diggs:quantityClass>force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -90,12 +90,12 @@
             <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -109,12 +109,12 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -128,12 +128,12 @@
             <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -147,12 +147,12 @@
             <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -166,12 +166,12 @@
             <diggs:quantityClass>time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -185,12 +185,12 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -204,8 +204,8 @@
             <diggs:quantityClass>force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -219,8 +219,8 @@
             <diggs:quantityClass>force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -234,8 +234,8 @@
             <diggs:quantityClass>force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -249,8 +249,8 @@
             <diggs:quantityClass>force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -264,8 +264,8 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -279,8 +279,8 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -294,8 +294,8 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -309,8 +309,8 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -324,8 +324,8 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -339,8 +339,8 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -354,8 +354,8 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -369,8 +369,8 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>//propertyClass</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -384,8 +384,8 @@
             <diggs:quantityClass>moment of force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -399,8 +399,8 @@
             <diggs:quantityClass>moment of force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -414,8 +414,8 @@
             <diggs:quantityClass>moment of force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -429,8 +429,8 @@
             <diggs:quantityClass>moment of force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -444,8 +444,8 @@
             <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -459,8 +459,8 @@
             <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -474,8 +474,8 @@
             <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -489,12 +489,12 @@
             <diggs:quantityClass>reciprocal time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -508,8 +508,8 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -523,8 +523,8 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -538,8 +538,8 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -553,8 +553,8 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -567,12 +567,12 @@
             <diggs:dataType>boolean</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DriveRecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PileDrivingRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PDARecordProperty/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>none</diggs:conditionalElementXpath>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PDARecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
