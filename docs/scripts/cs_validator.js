@@ -376,7 +376,7 @@ function validateXML() {
         }
         
         // Fetch the XSLT file using the fetch API
-        fetch('https://diggsml.org/def/stylesheets/cs_validator_clean.xsl')
+        fetch('https://diggsml.org/def/stylesheets/cs_validator.xsl')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Failed to load XSLT stylesheet: ${response.status} ${response.statusText}`);
