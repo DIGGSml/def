@@ -367,12 +367,50 @@ function validateXML() {
                 
                 // Perform the XSLT transformation
                 let resultDoc;
+                let validationResults = [];
                 
                 if (window.XSLTProcessor) {
                     // Modern browsers (Firefox, Chrome, Safari)
                     const xsltProcessor = new XSLTProcessor();
                     xsltProcessor.importStylesheet(xsltDoc);
                     resultDoc = xsltProcessor.transformToDocument(xmlDoc);
+                    
+                    // Check if resultDoc is null or undefined
+                    if (!resultDoc) {
+                        throw new Error('XSLT transformation failed to produce a result document');
+                    }
+                    
+                    // Get all validation entries from the result
+                    let validationEntries = resultDoc.querySelectorAll('validationEntry');
+                    
+                    if (validationEntries && validationEntries.length > 0) {
+                        validationEntries.forEach(entry => {
+                            validationResults.push({
+                                lineNumber: entry.getAttribute('lineNumber') || 'Unknown',
+                                elementPath: entry.getAttribute('elementPath') || '',
+                                value: entry.getAttribute('value') || '',
+                                codeSpace: entry.getAttribute('codeSpace') || '',
+                                level: entry.getAttribute('level') || 'INFO',
+                                severity: entry.getAttribute('severity') || 'Information',
+                                sourceXml: entry.getAttribute('sourceXml') || '',
+                                message: entry.getAttribute('message') || ''
+                            });
+                        });
+                    } else {
+                        // Handle the case where no validation entries are found
+                        console.log('No validation entries found in transformation result');
+                        // Add a debug message to show something happened
+                        validationResults.push({
+                            lineNumber: 'N/A',
+                            elementPath: '',
+                            value: '',
+                            codeSpace: '',
+                            level: 'INFO',
+                            severity: 'Information',
+                            sourceXml: '',
+                            message: 'XML validation completed with no issues found or no elements to validate.'
+                        });
+                    }
                 } else if (window.ActiveXObject || "ActiveXObject" in window) {
                     // Internet Explorer
                     const xslt = new ActiveXObject("Msxml2.XSLTemplate.6.0");
@@ -386,28 +424,46 @@ function validateXML() {
                     // Parse the output from IE's transform
                     const ieResult = xslProc.output;
                     resultDoc = parser.parseFromString(ieResult, 'application/xml');
+                    
+                    // Check if resultDoc is null or undefined
+                    if (!resultDoc) {
+                        throw new Error('XSLT transformation failed to produce a result document in IE');
+                    }
+                    
+                    // Get all validation entries from the result
+                    let validationEntries = resultDoc.querySelectorAll('validationEntry');
+                    
+                    if (validationEntries && validationEntries.length > 0) {
+                        validationEntries.forEach(entry => {
+                            validationResults.push({
+                                lineNumber: entry.getAttribute('lineNumber') || 'Unknown',
+                                elementPath: entry.getAttribute('elementPath') || '',
+                                value: entry.getAttribute('value') || '',
+                                codeSpace: entry.getAttribute('codeSpace') || '',
+                                level: entry.getAttribute('level') || 'INFO',
+                                severity: entry.getAttribute('severity') || 'Information',
+                                sourceXml: entry.getAttribute('sourceXml') || '',
+                                message: entry.getAttribute('message') || ''
+                            });
+                        });
+                    } else {
+                        // Handle the case where no validation entries are found
+                        console.log('No validation entries found in transformation result (IE)');
+                        // Add a debug message
+                        validationResults.push({
+                            lineNumber: 'N/A',
+                            elementPath: '',
+                            value: '',
+                            codeSpace: '',
+                            level: 'INFO',
+                            severity: 'Information',
+                            sourceXml: '',
+                            message: 'XML validation completed with no issues found or no elements to validate.'
+                        });
+                    }
                 } else {
                     throw new Error('Your browser does not support XSLT processing');
                 }
-                
-                // Extract validation results from the transformed document
-                const validationResults = [];
-                
-                // Get all validation entries from the result
-                const validationEntries = resultDoc.querySelectorAll('validationEntry');
-                
-                validationEntries.forEach(entry => {
-                    validationResults.push({
-                        lineNumber: entry.getAttribute('lineNumber') || 'Unknown',
-                        elementPath: entry.getAttribute('elementPath') || '',
-                        value: entry.getAttribute('value') || '',
-                        codeSpace: entry.getAttribute('codeSpace') || '',
-                        level: entry.getAttribute('level') || 'INFO',
-                        severity: entry.getAttribute('severity') || 'Information',
-                        sourceXml: entry.getAttribute('sourceXml') || '',
-                        message: entry.getAttribute('message') || ''
-                    });
-                });
                 
                 // Process the results
                 processValidationResults(validationResults);
