@@ -1,5 +1,3 @@
-/* DIGGS CodeSpace Validator Stylesheet */
-
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
@@ -66,7 +64,7 @@ label:hover {
     margin: 20px 0;
 }
 
-/* Spinner animation - using standard CSS Level 3 properties only */
+/* Spinner animation */
 .spinner {
     border: 4px solid rgba(0, 0, 0, 0.1);
     width: 36px;
@@ -78,13 +76,8 @@ label:hover {
 }
 
 @keyframes spin {
-    from { 
-        /* Using older syntax guaranteed to work with CSS3 validators */
-        transform: rotate(0deg); 
-    }
-    to { 
-        transform: rotate(360deg); 
-    }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .error-message {
@@ -116,11 +109,43 @@ label:hover {
     background-color: #27ae60;
 }
 
-/* Results table styles */
+/* Validation result styles */
+.info {
+    color: #3498db;
+    background-color: #e8f4fc;
+    border-left: 4px solid #3498db;
+}
+
+.warning {
+    color: #f39c12;
+    background-color: #fef5e7;
+    border-left: 4px solid #f39c12;
+}
+
+.error {
+    color: #e74c3c;
+    background-color: #fdedeb;
+    border-left: 4px solid #e74c3c;
+}
+
+.success {
+    color: #2ecc71;
+    background-color: #e9f7ef;
+    border-left: 4px solid #2ecc71;
+}
+
+.debug {
+    color: #7f8c8d;
+    background-color: #f8f9f9;
+    border-left: 4px solid #7f8c8d;
+    display: none; /* Hide debug messages by default */
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    font-size: 14px;
 }
 
 th, td {
@@ -131,33 +156,21 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 tr:hover {
     background-color: #f5f5f5;
 }
 
-.info {
-    color: #3498db;
-}
-
-.warning {
-    color: #f39c12;
-}
-
-.error {
-    color: #e74c3c;
-}
-
-.success {
-    color: #2ecc71;
-}
-
 .validation-summary {
     margin-top: 20px;
-    padding: 10px;
+    padding: 15px;
     background-color: #f8f9fa;
     border-radius: 4px;
+    border-left: 4px solid #2c3e50;
 }
 
 .code {
@@ -165,4 +178,151 @@ tr:hover {
     background-color: #f5f5f5;
     padding: 2px 4px;
     border-radius: 3px;
+}
+
+.element-path {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.element-path:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+/* Controls for filter and debug toggle */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.filter-controls, .debug-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-controls select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #3498db;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Line number display */
+.line-number {
+    color: #7f8c8d;
+    font-size: 12px;
+}
+
+/* Copy to clipboard feature */
+.copy-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #3498db;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.copy-button:hover {
+    color: #2980b9;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Export buttons */
+.export-buttons {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.export-button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.export-button:hover {
+    background-color: #2980b9;
 }
