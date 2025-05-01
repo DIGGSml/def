@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Clean DIGGS CodeSpace Validator XSLT - Logic Only
+    Improved DIGGS CodeSpace Validator XSLT
     
     This stylesheet validates DIGGS XML files by checking codeSpace attributes
     and their values according to the DIGGS specification. It outputs validation
     results in a structured XML format that can be processed by JavaScript.
     
-    Features:
-    - Single-pass validation
-    - Dictionary caching
-    - Structured XML output (no HTML or UI elements)
-    - Severity levels for messages
+    Improvements:
+    - Added source XML text to output
+    - Added more detailed error reporting
+    - Clear severity level indication
+    - Early termination of validation when errors are found
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:diggs="http://diggsml.org/schema-dev"
@@ -33,14 +33,6 @@
             <xsl:variable name="elementsWithCodeSpace" select="//*[@codeSpace]"/>
             <summary>
                 <totalElements><xsl:value-of select="count($elementsWithCodeSpace)"/></totalElements>
-                <errorCount>
-                    <xsl:value-of select="count(//*[@codeSpace][not(contains(@codeSpace, '#'))] | 
-                                              //*[@codeSpace][contains(@codeSpace, '#')][not(document(substring-before(@codeSpace, '#'), /))] | 
-                                              //*[@codeSpace][contains(@codeSpace, '#')][document(substring-before(@codeSpace, '#'), /)][not(document(substring-before(@codeSpace, '#'), /)//*[local-name() = 'Definition'][@*[local-name() = 'id'] = substring-after(current()/@codeSpace, '#')])])"/>
-                </errorCount>
-                <warningCount>
-                    <xsl:value-of select="count(//*[@codeSpace][contains(@codeSpace, '#')][document(substring-before(@codeSpace, '#'), /)][not(document(substring-before(@codeSpace, '#'), /)//*[local-name() = 'Dictionary'])])"/>
-                </warningCount>
             </summary>
             
             <!-- Process all elements with codeSpace attribute -->
@@ -83,6 +75,13 @@
             </xsl:for-each>
         </xsl:variable>
         
+        <!-- Get source XML text -->
+        <xsl:variable name="source-xml">
+            <xsl:call-template name="get-element-xml">
+                <xsl:with-param name="element" select="."/>
+            </xsl:call-template>
+        </xsl:variable>
+        
         <!-- Step 1: Check URL format by looking for # character -->
         <xsl:choose>
             <xsl:when test="not(contains($codeSpace, '#'))">
@@ -92,6 +91,8 @@
                     value="{$element-value}" 
                     codeSpace="{$codeSpace}" 
                     level="INFO"
+                    severity="Information"
+                    sourceXml="{$source-xml}"
                     message="The value of {$element-name} cannot be validated. If codeSpace attribute '{$codeSpace}' references an authority, be sure that the value '{$element-value}' is a valid term controlled by '{$codeSpace}'"/>
             </xsl:when>
             <xsl:otherwise>
@@ -109,7 +110,10 @@
                             value="{$element-value}" 
                             codeSpace="{$codeSpace}" 
                             level="ERROR"
+                            severity="Error"
+                            sourceXml="{$source-xml}"
                             message="The URL '{$dictionaryUrl}' referenced in the codeSpace attribute could not be accessed."/>
+                        <!-- Early termination - stop validation for this element -->
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- Document is available -->
@@ -125,7 +129,10 @@
                                     value="{$element-value}" 
                                     codeSpace="{$codeSpace}" 
                                     level="WARNING"
+                                    severity="Warning"
+                                    sourceXml="{$source-xml}"
                                     message="The resource at '{$dictionaryUrl}' is not a valid DIGGS dictionary. If this value is intended to reference an authority rather than a DIGGS dictionary, be sure that the value '{$element-value}' is a valid term controlled by '{$codeSpace}'"/>
+                                <!-- Early termination - stop validation for this element -->
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- It's a dictionary, continue with validation -->
@@ -142,7 +149,10 @@
                                             value="{$element-value}" 
                                             codeSpace="{$codeSpace}" 
                                             level="ERROR"
+                                            severity="Error"
+                                            sourceXml="{$source-xml}"
                                             message="No Definition with id='{$fragmentId}' found in the dictionary at '{$dictionaryUrl}'."/>
+                                        <!-- Early termination - stop validation for this element -->
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <!-- Definition exists, get source element xpaths -->
@@ -173,7 +183,10 @@
                                                     value="{$element-value}" 
                                                     codeSpace="{$codeSpace}" 
                                                     level="ERROR"
+                                                    severity="Error"
+                                                    sourceXml="{$source-xml}"
                                                     message="The element {$element-name} with value '{$element-value}' references a definition that is not allowed at this location in the XML instance. Current path: '{$currentElementPath}'"/>
+                                                <!-- Early termination - stop validation for this element -->
                                             </xsl:when>
                                             <xsl:otherwise>
                                                 <!-- Context is valid, proceed with name validation -->
@@ -198,24 +211,32 @@
                                                     </xsl:choose>
                                                 </xsl:variable>
                                                 
-                                                <xsl:if test="count($definitionNames) > 0 and $hasNameMatch != 'true'">
-                                                    <validationEntry 
-                                                        lineNumber="{$line-number}" 
-                                                        elementPath="{$element-path}" 
-                                                        value="{$element-value}" 
-                                                        codeSpace="{$codeSpace}" 
-                                                        level="WARNING"
-                                                        message="The value '{$element-value}' in element {$element-name} is a name that does not match the names in the referenced Definition. Be sure that '{$element-value}' is a synonymous name."/>
-                                                </xsl:if>
-                                                
-                                                <!-- Add debug info -->
-                                                <validationEntry 
-                                                    lineNumber="{$line-number}" 
-                                                    elementPath="{$element-path}" 
-                                                    value="{$element-value}" 
-                                                    codeSpace="{$codeSpace}" 
-                                                    level="DEBUG"
-                                                    message="Successfully validated element at path '{$currentElementPath}'"/>
+                                                <xsl:choose>
+                                                    <xsl:when test="count($definitionNames) > 0 and $hasNameMatch != 'true'">
+                                                        <validationEntry 
+                                                            lineNumber="{$line-number}" 
+                                                            elementPath="{$element-path}" 
+                                                            value="{$element-value}" 
+                                                            codeSpace="{$codeSpace}" 
+                                                            level="WARNING"
+                                                            severity="Warning"
+                                                            sourceXml="{$source-xml}"
+                                                            message="The value '{$element-value}' in element {$element-name} is a name that does not match the names in the referenced Definition. Be sure that '{$element-value}' is a synonymous name."/>
+                                                        <!-- Continue with validation since this is just a warning -->
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <!-- Add debug info -->
+                                                        <validationEntry 
+                                                            lineNumber="{$line-number}" 
+                                                            elementPath="{$element-path}" 
+                                                            value="{$element-value}" 
+                                                            codeSpace="{$codeSpace}" 
+                                                            level="DEBUG"
+                                                            severity="Debug"
+                                                            sourceXml="{$source-xml}"
+                                                            message="Successfully validated element at path '{$currentElementPath}'"/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:otherwise>
@@ -224,6 +245,52 @@
                         </xsl:choose>
                     </xsl:otherwise>
                 </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!-- Helper template: Extract element as XML -->
+    <xsl:template name="get-element-xml">
+        <xsl:param name="element"/>
+        
+        <xsl:variable name="element-name" select="local-name($element)"/>
+        <xsl:variable name="prefix">
+            <xsl:choose>
+                <xsl:when test="namespace-uri($element) = 'http://diggsml.org/schema-dev'">diggs:</xsl:when>
+                <xsl:when test="namespace-uri($element) = 'http://www.opengis.net/gml/3.2'">gml:</xsl:when>
+                <xsl:when test="namespace-uri($element) = 'http://www.opengis.net/gml/3.3/ce'">g3:</xsl:when>
+                <xsl:when test="namespace-uri($element) = 'http://www.opengis.net/gml/3.3/lr'">glr:</xsl:when>
+                <xsl:when test="namespace-uri($element) = 'http://www.opengis.net/gml/3.3/lrov'">glrov:</xsl:when>
+                <xsl:otherwise></xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <!-- Create opening tag with attributes -->
+        <xsl:text>&lt;</xsl:text>
+        <xsl:value-of select="$prefix"/>
+        <xsl:value-of select="$element-name"/>
+        
+        <!-- Add attributes -->
+        <xsl:for-each select="$element/@*">
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="name()"/>
+            <xsl:text>="</xsl:text>
+            <xsl:value-of select="."/>
+            <xsl:text>"</xsl:text>
+        </xsl:for-each>
+        
+        <!-- Check if element has content -->
+        <xsl:choose>
+            <xsl:when test="normalize-space($element) != ''">
+                <xsl:text>&gt;</xsl:text>
+                <xsl:value-of select="$element"/>
+                <xsl:text>&lt;/</xsl:text>
+                <xsl:value-of select="$prefix"/>
+                <xsl:value-of select="$element-name"/>
+                <xsl:text>&gt;</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text> /&gt;</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

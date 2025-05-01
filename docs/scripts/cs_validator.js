@@ -1,5 +1,5 @@
 /**
- * DIGGS CodeSpace Validator JavaScript
+ * DIGGS CodeSpace Validator JavaScript - Updated
  * 
  * This file contains all the JavaScript functionality for the DIGGS CodeSpace Validator.
  * It handles file loading, XML validation, result display, filtering, and exporting.
@@ -63,66 +63,6 @@ function handleFileSelected() {
         xmlFileContent = null;
         xmlDoc = null;
     }
-}
-
-/**
- * Get approximate line number for an element based on its position in the XML string
- * @param {Element} element - XML element to find line number for
- * @returns {string} - Estimated line number or 'Unknown'
- */
-function getLineNumber(element) {
-    if (!xmlFileContent || !element) return 'Unknown';
-    
-    try {
-        // Use XPath to find the element
-        const elementName = element.localName || element.nodeName;
-        const allElements = xmlDoc.getElementsByTagName(elementName);
-        
-        // Find matching element by comparing attributes
-        let matchedElement = null;
-        for (let i = 0; i < allElements.length; i++) {
-            if (hasSameAttributes(element, allElements[i])) {
-                matchedElement = allElements[i];
-                break;
-            }
-        }
-        
-        if (!matchedElement) return 'Unknown';
-        
-        // Create a serialized string of element to search for
-        const serializer = new XMLSerializer();
-        const elementStr = serializer.serializeToString(matchedElement);
-        
-        // Find the position in the original file
-        const startPos = xmlFileContent.indexOf(elementStr);
-        if (startPos === -1) return 'Unknown';
-        
-        // Count newlines to determine line number
-        const contentUntilElement = xmlFileContent.substring(0, startPos);
-        const lines = contentUntilElement.split('\n');
-        return lines.length;
-    } catch (error) {
-        console.error('Error getting line number:', error);
-        return 'Unknown';
-    }
-}
-
-/**
- * Compare attributes of two elements to find matching ones
- * @param {Element} elem1 - First element to compare
- * @param {Element} elem2 - Second element to compare
- * @returns {boolean} - True if elements have matching attributes
- */
-function hasSameAttributes(elem1, elem2) {
-    if (!elem1 || !elem2) return false;
-    
-    // Compare codeSpace attribute specifically since that's what we're validating
-    if (elem1.getAttribute('codeSpace') !== elem2.getAttribute('codeSpace')) return false;
-    
-    // Compare element text content for additional matching
-    if (elem1.textContent !== elem2.textContent) return false;
-    
-    return true;
 }
 
 /**
@@ -191,16 +131,14 @@ function exportResults(format) {
     
     if (format === 'csv') {
         // Create CSV content
-        let csvContent = "Line,Element Path,Value,CodeSpace,Level,Message\n";
+        let csvContent = "Line,Source XML,Severity,Message\n";
         results.forEach(result => {
             const lineNumber = result.lineNumber.trim();
-            const elementPath = result.elementPath.trim().replace(/"/g, '""');
-            const value = result.value.trim().replace(/"/g, '""');
-            const codeSpace = result.codeSpace.trim().replace(/"/g, '""');
-            const level = result.level.trim();
+            const sourceXml = result.sourceXml.trim().replace(/"/g, '""');
+            const severity = result.severity.trim();
             const message = result.message.trim().replace(/"/g, '""');
             
-            csvContent += `"${lineNumber}","${elementPath}","${value}","${codeSpace}","${level}","${message}"\n`;
+            csvContent += `"${lineNumber}","${sourceXml}","${severity}","${message}"\n`;
         });
         
         // Download CSV file
@@ -210,10 +148,8 @@ function exportResults(format) {
         const tableRows = results.map(result => {
             return `<tr class="${result.level.toLowerCase()}">
                 <td>${result.lineNumber}</td>
-                <td><span class="code element-path">${result.elementPath}</span></td>
-                <td>${result.value}</td>
-                <td>${result.codeSpace}</td>
-                <td>${result.level}</td>
+                <td><pre class="source-xml">${escapeHtml(result.sourceXml)}</pre></td>
+                <td><span class="severity-badge ${result.level.toLowerCase()}">${result.severity}</span></td>
                 <td>${result.message}</td>
             </tr>`;
         }).join('');
@@ -226,6 +162,37 @@ function exportResults(format) {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>DIGGS CodeSpace Validation Report</title>
                 <link rel="stylesheet" href="https://diggsml.org/def/stylesheets/cs_validator.css">
+                <style>
+                    .source-xml {
+                        font-family: monospace;
+                        white-space: pre-wrap;
+                        word-break: break-all;
+                        background-color: #f5f5f5;
+                        padding: 8px;
+                        border-radius: 4px;
+                        margin: 0;
+                        max-width: 600px;
+                    }
+                    .severity-badge {
+                        display: inline-block;
+                        padding: 4px 8px;
+                        border-radius: 4px;
+                        font-weight: bold;
+                        color: white;
+                    }
+                    .severity-badge.error {
+                        background-color: #e74c3c;
+                    }
+                    .severity-badge.warning {
+                        background-color: #f39c12;
+                    }
+                    .severity-badge.info {
+                        background-color: #3498db;
+                    }
+                    .severity-badge.debug {
+                        background-color: #7f8c8d;
+                    }
+                </style>
             </head>
             <body>
                 <div class="container">
@@ -238,10 +205,8 @@ function exportResults(format) {
                         <thead>
                             <tr class="header-row">
                                 <th>Line #</th>
-                                <th>Element Path</th>
-                                <th>Value</th>
-                                <th>CodeSpace</th>
-                                <th>Level</th>
+                                <th>Source XML</th>
+                                <th>Severity</th>
                                 <th>Message</th>
                             </tr>
                         </thead>
@@ -260,6 +225,20 @@ function exportResults(format) {
 }
 
 /**
+ * Helper function to escape HTML special characters
+ * @param {string} unsafe - Text to escape
+ * @returns {string} - Escaped text
+ */
+function escapeHtml(unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+/**
  * Collect all visible validation results
  * @returns {Array} - Array of result objects
  */
@@ -269,14 +248,13 @@ function collectResults() {
     
     rows.forEach(row => {
         const cells = row.querySelectorAll('td');
-        if (cells.length >= 6) {
+        if (cells.length >= 4) {
             results.push({
                 lineNumber: cells[0].textContent,
-                elementPath: cells[1].textContent,
-                value: cells[2].textContent,
-                codeSpace: cells[3].textContent,
-                level: cells[4].textContent,
-                message: cells[5].textContent
+                sourceXml: cells[1].textContent,
+                severity: cells[2].textContent,
+                message: cells[3].textContent,
+                level: row.className
             });
         }
     });
@@ -318,17 +296,12 @@ function processValidationResults(results) {
         const row = document.createElement('tr');
         row.className = result.level.toLowerCase();
         
-        // Create cells
+        // Create cells with the improved display format
         row.innerHTML = `
             <td class="line-number">${result.lineNumber}</td>
-            <td><span class="code element-path">${result.elementPath}</span></td>
-            <td>${result.value}</td>
-            <td>${result.codeSpace}</td>
-            <td>${result.level}</td>
+            <td><pre class="source-xml">${escapeHtml(result.sourceXml)}</pre></td>
+            <td><span class="severity-badge ${result.level.toLowerCase()}">${result.severity}</span></td>
             <td>${result.message}</td>
-            <td>
-                <button class="copy-button" onclick="copyToClipboard('${result.elementPath}')">Copy Path</button>
-            </td>
         `;
         
         resultsBody.appendChild(row);
@@ -376,7 +349,7 @@ function validateXML() {
         }
         
         // Fetch the XSLT file using the fetch API
-        fetch('https://diggsml.org/def/stylesheets/cs_validator.xsl')
+        fetch('https://diggsml.org/def/stylesheets/cs_validator_clean.xsl')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Failed to load XSLT stylesheet: ${response.status} ${response.statusText}`);
@@ -430,6 +403,8 @@ function validateXML() {
                         value: entry.getAttribute('value') || '',
                         codeSpace: entry.getAttribute('codeSpace') || '',
                         level: entry.getAttribute('level') || 'INFO',
+                        severity: entry.getAttribute('severity') || 'Information',
+                        sourceXml: entry.getAttribute('sourceXml') || '',
                         message: entry.getAttribute('message') || ''
                     });
                 });
