@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    DIGGS CodeSpace Validator - XSLT 1.0 Stylesheet
+    Clean DIGGS CodeSpace Validator XSLT - Logic Only
     
     This stylesheet validates DIGGS XML files by checking codeSpace attributes
-    and their values according to the DIGGS specification. It's a conversion
-    of the XSLT 2.0 version to be compatible with XSLT 1.0 processors.
+    and their values according to the DIGGS specification. It outputs validation
+    results in a structured XML format that can be processed by JavaScript.
     
     Features:
     - Single-pass validation
     - Dictionary caching
-    - HTML report generation
-    - Line number estimation in error messages
+    - Structured XML output (no HTML or UI elements)
     - Severity levels for messages
-    - Filtering capabilities
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:diggs="http://diggsml.org/schema-dev"
@@ -22,8 +20,8 @@
     xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
     version="1.0">
     
-    <!-- Output HTML -->
-    <xsl:output method="html" indent="yes" encoding="UTF-8"/>
+    <!-- Output XML -->
+    <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
     
     <!-- Variables to help with string operations -->
     <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
@@ -31,165 +29,23 @@
     
     <!-- Main template -->
     <xsl:template match="/">
-        <html>
-            <head>
-                <title>DIGGS CodeSpace Validation Report</title>
-                <style type="text/css">
-                    body { font-family: Arial, sans-serif; margin: 20px; }
-                    h1 { color: #2c3e50; }
-                    .info { color: #3498db; background-color: #e8f4fc; border-left: 4px solid #3498db; }
-                    .warning { color: #f39c12; background-color: #fef5e7; border-left: 4px solid #f39c12; }
-                    .error { color: #e74c3c; background-color: #fdedeb; border-left: 4px solid #e74c3c; }
-                    .success { color: #2ecc71; background-color: #e9f7ef; border-left: 4px solid #2ecc71; }
-                    .debug { color: #7f8c8d; background-color: #f8f9f9; border-left: 4px solid #7f8c8d; display: none; }
-                    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-                    th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
-                    th { background-color: #f2f2f2; position: sticky; top: 0; z-index: 10; }
-                    tr:hover { background-color: #f5f5f5; }
-                    .validation-summary { margin-top: 20px; padding: 15px; background-color: #f8f9fa; border-radius: 4px; border-left: 4px solid #2c3e50; }
-                    .code { font-family: monospace; background-color: #f5f5f5; padding: 2px 4px; border-radius: 3px; }
-                    .element-path { max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-                    .element-path:hover { overflow: visible; white-space: normal; }
-                    .controls { display: flex; justify-content: space-between; margin: 15px 0; padding: 10px; background-color: #f8f9fa; border-radius: 4px; }
-                    .filter-controls, .debug-controls { display: flex; align-items: center; gap: 10px; }
-                    .filter-controls select { padding: 5px; border-radius: 4px; border: 1px solid #ddd; }
-                    .toggle-switch { position: relative; display: inline-block; width: 50px; height: 24px; }
-                    .toggle-switch input { opacity: 0; width: 0; height: 0; }
-                    .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 24px; }
-                    .slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 4px; bottom: 4px; background-color: white; transition: .4s; border-radius: 50%; }
-                    input:checked + .slider { background-color: #3498db; }
-                    input:checked + .slider:before { transform: translateX(26px); }
-                    .line-number { color: #7f8c8d; font-size: 12px; }
-                    .copy-button { background-color: transparent; border: none; cursor: pointer; color: #3498db; padding: 2px 5px; font-size: 12px; }
-                    .copy-button:hover { color: #2980b9; }
-                    .export-buttons { margin-top: 15px; text-align: right; }
-                    .export-button { padding: 5px 10px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; margin-left: 5px; }
-                </style>
-                <script>
-                    // Copy to clipboard functionality
-                    function copyToClipboard(text) {
-                        navigator.clipboard.writeText(text).then(function() {
-                            // Success
-                            const button = event.target;
-                            const originalText = button.textContent;
-                            button.textContent = 'Copied!';
-                            setTimeout(function() {
-                                button.textContent = originalText;
-                            }, 1500);
-                        });
-                    }
-                    
-                    // Filter results by level
-                    function filterResults() {
-                        const levelFilter = document.getElementById('level-filter').value;
-                        
-                        // Apply filters
-                        if (levelFilter === 'all') {
-                            document.querySelectorAll('tr').forEach(row => {
-                                if (!row.classList.contains('debug') || document.getElementById('debug-toggle').checked) {
-                                    row.style.display = '';
-                                }
-                            });
-                        } else {
-                            document.querySelectorAll('tr').forEach(row => {
-                                if (row.classList.contains(levelFilter)) {
-                                    row.style.display = '';
-                                } else if (!row.classList.contains('header-row')) {
-                                    row.style.display = 'none';
-                                }
-                            });
-                        }
-                        
-                        // Update summary
-                        updateSummary();
-                    }
-                    
-                    // Toggle debug info
-                    function toggleDebug() {
-                        const debugToggle = document.getElementById('debug-toggle');
-                        
-                        // Apply to iframe content
-                        const debugRows = document.querySelectorAll('tr.debug');
-                        debugRows.forEach(row => {
-                            row.style.display = debugToggle.checked ? '' : 'none';
-                        });
-                        
-                        // Update summary
-                        updateSummary();
-                    }
-                    
-                    // Update validation summary
-                    function updateSummary() {
-                        const errors = document.querySelectorAll('tr.error:not([style*="display: none"])').length;
-                        const warnings = document.querySelectorAll('tr.warning:not([style*="display: none"])').length;
-                        const infos = document.querySelectorAll('tr.info:not([style*="display: none"])').length;
-                        const debugs = document.querySelectorAll('tr.debug:not([style*="display: none"])').length;
-                        
-                        const summary = `Found ${errors} errors, ${warnings} warnings, ${infos} information messages${debugs > 0 ? ` and ${debugs} debug messages` : ''}.`;
-                        document.getElementById('summary-text').textContent = summary;
-                    }
-                </script>
-            </head>
-            <body>
-                <h1>DIGGS CodeSpace Validation Report</h1>
-                
-                <!-- Filter controls -->
-                <div class="controls">
-                    <div class="filter-controls">
-                        <label for="level-filter">Filter by level:</label>
-                        <select id="level-filter" onchange="filterResults()">
-                            <option value="all">All</option>
-                            <option value="error">Errors</option>
-                            <option value="warning">Warnings</option>
-                            <option value="info">Info</option>
-                        </select>
-                    </div>
-                    <div class="debug-controls">
-                        <label for="debug-toggle">Show debug info:</label>
-                        <label class="toggle-switch">
-                            <input type="checkbox" id="debug-toggle" onchange="toggleDebug()"/>
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                </div>
-                
-                <!-- Display validation summary -->
-                <xsl:variable name="elementsWithCodeSpace" select="//*[@codeSpace]"/>
-                <xsl:variable name="errorCount" select="count(//*[@codeSpace][not(contains(@codeSpace, '#'))] | //*[@codeSpace][contains(@codeSpace, '#')][not(document(substring-before(@codeSpace, '#'), /))] | //*[@codeSpace][contains(@codeSpace, '#')][document(substring-before(@codeSpace, '#'), /)][not(document(substring-before(@codeSpace, '#'), /)//*[local-name() = 'Definition'][@*[local-name() = 'id'] = substring-after(current()/@codeSpace, '#')])])"/>
-                <xsl:variable name="warningCount" select="count(//*[@codeSpace][contains(@codeSpace, '#')][document(substring-before(@codeSpace, '#'), /)][not(document(substring-before(@codeSpace, '#'), /)//*[local-name() = 'Dictionary'])])"/>
-                
-                <div class="validation-summary">
-                    <p>
-                        <strong>Total elements with codeSpace:</strong>
-                        <xsl:value-of select="count($elementsWithCodeSpace)"/>
-                    </p>
-                    <p id="summary-text">
-                        <strong>Summary:</strong> Results will be shown after filtering
-                    </p>
-                </div>
-                
-                <!-- Display validation results -->
-                <table>
-                    <tr class="header-row">
-                        <th>Line #</th>
-                        <th>Element Path</th>
-                        <th>Value</th>
-                        <th>CodeSpace</th>
-                        <th>Level</th>
-                        <th>Message</th>
-                        <th>Actions</th>
-                    </tr>
-                    <xsl:apply-templates select="//*[@codeSpace]" mode="validate"/>
-                </table>
-                
-                <!-- Initialize summary after page load -->
-                <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                        updateSummary();
-                    });
-                </script>
-            </body>
-        </html>
+        <validationResults>
+            <xsl:variable name="elementsWithCodeSpace" select="//*[@codeSpace]"/>
+            <summary>
+                <totalElements><xsl:value-of select="count($elementsWithCodeSpace)"/></totalElements>
+                <errorCount>
+                    <xsl:value-of select="count(//*[@codeSpace][not(contains(@codeSpace, '#'))] | 
+                                              //*[@codeSpace][contains(@codeSpace, '#')][not(document(substring-before(@codeSpace, '#'), /))] | 
+                                              //*[@codeSpace][contains(@codeSpace, '#')][document(substring-before(@codeSpace, '#'), /)][not(document(substring-before(@codeSpace, '#'), /)//*[local-name() = 'Definition'][@*[local-name() = 'id'] = substring-after(current()/@codeSpace, '#')])])"/>
+                </errorCount>
+                <warningCount>
+                    <xsl:value-of select="count(//*[@codeSpace][contains(@codeSpace, '#')][document(substring-before(@codeSpace, '#'), /)][not(document(substring-before(@codeSpace, '#'), /)//*[local-name() = 'Dictionary'])])"/>
+                </warningCount>
+            </summary>
+            
+            <!-- Process all elements with codeSpace attribute -->
+            <xsl:apply-templates select="//*[@codeSpace]" mode="validate"/>
+        </validationResults>
     </xsl:template>
     
     <!-- Validation template for elements with codeSpace -->
@@ -230,22 +86,13 @@
         <!-- Step 1: Check URL format by looking for # character -->
         <xsl:choose>
             <xsl:when test="not(contains($codeSpace, '#'))">
-                <tr class="info">
-                    <td class="line-number">~<xsl:value-of select="$line-number"/></td>
-                    <td><span class="code element-path"><xsl:value-of select="$element-path"/></span></td>
-                    <td><xsl:value-of select="$element-value"/></td>
-                    <td><xsl:value-of select="$codeSpace"/></td>
-                    <td>INFO</td>
-                    <td>
-                        The value of <xsl:value-of select="$element-name"/> cannot be validated. 
-                        If codeSpace attribute "<xsl:value-of select="$codeSpace"/>" references an authority, 
-                        be sure that the value "<xsl:value-of select="$element-value"/>" is a valid term 
-                        controlled by "<xsl:value-of select="$codeSpace"/>"
-                    </td>
-                    <td>
-                        <button class="copy-button" onclick="copyToClipboard('{$element-path}')">Copy Path</button>
-                    </td>
-                </tr>
+                <validationEntry 
+                    lineNumber="{$line-number}" 
+                    elementPath="{$element-path}" 
+                    value="{$element-value}" 
+                    codeSpace="{$codeSpace}" 
+                    level="INFO"
+                    message="The value of {$element-name} cannot be validated. If codeSpace attribute '{$codeSpace}' references an authority, be sure that the value '{$element-value}' is a valid term controlled by '{$codeSpace}'"/>
             </xsl:when>
             <xsl:otherwise>
                 <!-- Step 2: Document availability check -->
@@ -256,20 +103,13 @@
                 
                 <xsl:choose>
                     <xsl:when test="not($dictionaryDoc)">
-                        <tr class="error">
-                            <td class="line-number">~<xsl:value-of select="$line-number"/></td>
-                            <td><span class="code element-path"><xsl:value-of select="$element-path"/></span></td>
-                            <td><xsl:value-of select="$element-value"/></td>
-                            <td><xsl:value-of select="$codeSpace"/></td>
-                            <td>ERROR</td>
-                            <td>
-                                The URL "<xsl:value-of select="$dictionaryUrl"/>" referenced in the 
-                                codeSpace attribute could not be accessed.
-                            </td>
-                            <td>
-                                <button class="copy-button" onclick="copyToClipboard('{$element-path}')">Copy Path</button>
-                            </td>
-                        </tr>
+                        <validationEntry 
+                            lineNumber="{$line-number}" 
+                            elementPath="{$element-path}" 
+                            value="{$element-value}" 
+                            codeSpace="{$codeSpace}" 
+                            level="ERROR"
+                            message="The URL '{$dictionaryUrl}' referenced in the codeSpace attribute could not be accessed."/>
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- Document is available -->
@@ -279,22 +119,13 @@
                         
                         <xsl:choose>
                             <xsl:when test="not($isDictionary)">
-                                <tr class="warning">
-                                    <td class="line-number">~<xsl:value-of select="$line-number"/></td>
-                                    <td><span class="code element-path"><xsl:value-of select="$element-path"/></span></td>
-                                    <td><xsl:value-of select="$element-value"/></td>
-                                    <td><xsl:value-of select="$codeSpace"/></td>
-                                    <td>WARNING</td>
-                                    <td>
-                                        The resource at "<xsl:value-of select="$dictionaryUrl"/>" is not a valid DIGGS dictionary. 
-                                        If this value is intended to reference an authority rather than a DIGGS dictionary, 
-                                        be sure that the value "<xsl:value-of select="$element-value"/>" is a valid term 
-                                        controlled by "<xsl:value-of select="$codeSpace"/>"
-                                    </td>
-                                    <td>
-                                        <button class="copy-button" onclick="copyToClipboard('{$element-path}')">Copy Path</button>
-                                    </td>
-                                </tr>
+                                <validationEntry 
+                                    lineNumber="{$line-number}" 
+                                    elementPath="{$element-path}" 
+                                    value="{$element-value}" 
+                                    codeSpace="{$codeSpace}" 
+                                    level="WARNING"
+                                    message="The resource at '{$dictionaryUrl}' is not a valid DIGGS dictionary. If this value is intended to reference an authority rather than a DIGGS dictionary, be sure that the value '{$element-value}' is a valid term controlled by '{$codeSpace}'"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- It's a dictionary, continue with validation -->
@@ -305,20 +136,13 @@
                                 
                                 <xsl:choose>
                                     <xsl:when test="not($hasDefinition)">
-                                        <tr class="error">
-                                            <td class="line-number">~<xsl:value-of select="$line-number"/></td>
-                                            <td><span class="code element-path"><xsl:value-of select="$element-path"/></span></td>
-                                            <td><xsl:value-of select="$element-value"/></td>
-                                            <td><xsl:value-of select="$codeSpace"/></td>
-                                            <td>ERROR</td>
-                                            <td>
-                                                No Definition with id="<xsl:value-of select="$fragmentId"/>" found in the 
-                                                dictionary at "<xsl:value-of select="$dictionaryUrl"/>".
-                                            </td>
-                                            <td>
-                                                <button class="copy-button" onclick="copyToClipboard('{$element-path}')">Copy Path</button>
-                                            </td>
-                                        </tr>
+                                        <validationEntry 
+                                            lineNumber="{$line-number}" 
+                                            elementPath="{$element-path}" 
+                                            value="{$element-value}" 
+                                            codeSpace="{$codeSpace}" 
+                                            level="ERROR"
+                                            message="No Definition with id='{$fragmentId}' found in the dictionary at '{$dictionaryUrl}'."/>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <!-- Definition exists, get source element xpaths -->
@@ -343,21 +167,13 @@
                                         
                                         <xsl:choose>
                                             <xsl:when test="$hasMatchingPath != 'true'">
-                                                <tr class="error">
-                                                    <td class="line-number">~<xsl:value-of select="$line-number"/></td>
-                                                    <td><span class="code element-path"><xsl:value-of select="$element-path"/></span></td>
-                                                    <td><xsl:value-of select="$element-value"/></td>
-                                                    <td><xsl:value-of select="$codeSpace"/></td>
-                                                    <td>ERROR</td>
-                                                    <td>
-                                                        The element <xsl:value-of select="$element-name"/> with value "<xsl:value-of select="$element-value"/>" 
-                                                        references a definition that is not allowed at this location in the XML instance. 
-                                                        Current path: "<xsl:value-of select="$currentElementPath"/>"
-                                                    </td>
-                                                    <td>
-                                                        <button class="copy-button" onclick="copyToClipboard('{$element-path}')">Copy Path</button>
-                                                    </td>
-                                                </tr>
+                                                <validationEntry 
+                                                    lineNumber="{$line-number}" 
+                                                    elementPath="{$element-path}" 
+                                                    value="{$element-value}" 
+                                                    codeSpace="{$codeSpace}" 
+                                                    level="ERROR"
+                                                    message="The element {$element-name} with value '{$element-value}' references a definition that is not allowed at this location in the XML instance. Current path: '{$currentElementPath}'"/>
                                             </xsl:when>
                                             <xsl:otherwise>
                                                 <!-- Context is valid, proceed with name validation -->
@@ -383,38 +199,23 @@
                                                 </xsl:variable>
                                                 
                                                 <xsl:if test="count($definitionNames) > 0 and $hasNameMatch != 'true'">
-                                                    <tr class="warning">
-                                                        <td class="line-number">~<xsl:value-of select="$line-number"/></td>
-                                                        <td><span class="code element-path"><xsl:value-of select="$element-path"/></span></td>
-                                                        <td><xsl:value-of select="$element-value"/></td>
-                                                        <td><xsl:value-of select="$codeSpace"/></td>
-                                                        <td>WARNING</td>
-                                                        <td>
-                                                            The value "<xsl:value-of select="$element-value"/>" in element 
-                                                            <xsl:value-of select="$element-name"/> is a name that does not match 
-                                                            the names in the referenced Definition. Be sure that 
-                                                            "<xsl:value-of select="$element-value"/>" is a synonymous name.
-                                                        </td>
-                                                        <td>
-                                                            <button class="copy-button" onclick="copyToClipboard('{$element-path}')">Copy Path</button>
-                                                        </td>
-                                                    </tr>
+                                                    <validationEntry 
+                                                        lineNumber="{$line-number}" 
+                                                        elementPath="{$element-path}" 
+                                                        value="{$element-value}" 
+                                                        codeSpace="{$codeSpace}" 
+                                                        level="WARNING"
+                                                        message="The value '{$element-value}' in element {$element-name} is a name that does not match the names in the referenced Definition. Be sure that '{$element-value}' is a synonymous name."/>
                                                 </xsl:if>
                                                 
                                                 <!-- Add debug info -->
-                                                <tr class="debug">
-                                                    <td class="line-number">~<xsl:value-of select="$line-number"/></td>
-                                                    <td><span class="code element-path"><xsl:value-of select="$element-path"/></span></td>
-                                                    <td><xsl:value-of select="$element-value"/></td>
-                                                    <td><xsl:value-of select="$codeSpace"/></td>
-                                                    <td>DEBUG</td>
-                                                    <td>
-                                                        Successfully validated element at path "<xsl:value-of select="$currentElementPath"/>"
-                                                    </td>
-                                                    <td>
-                                                        <button class="copy-button" onclick="copyToClipboard('{$element-path}')">Copy Path</button>
-                                                    </td>
-                                                </tr>
+                                                <validationEntry 
+                                                    lineNumber="{$line-number}" 
+                                                    elementPath="{$element-path}" 
+                                                    value="{$element-value}" 
+                                                    codeSpace="{$codeSpace}" 
+                                                    level="DEBUG"
+                                                    message="Successfully validated element at path '{$currentElementPath}'"/>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:otherwise>
