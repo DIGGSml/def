@@ -188,7 +188,7 @@ tr:hover {
     white-space: normal;
 }
 
-/* Source XML display */
+/* Source XML display - Moved from inline HTML */
 .source-xml {
     font-family: monospace;
     white-space: pre-wrap;
@@ -199,11 +199,9 @@ tr:hover {
     margin: 0;
     max-width: 600px;
     overflow-x: auto;
-    font-size: 12px;
-    line-height: 1.4;
 }
 
-/* Severity badges */
+/* Severity badges - Moved from inline HTML */
 .severity-badge {
     display: inline-block;
     padding: 4px 8px;

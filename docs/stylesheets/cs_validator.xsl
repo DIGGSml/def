@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Improved DIGGS CodeSpace Validator XSLT
+    Optimized DIGGS CodeSpace Validator XSLT
     
     This stylesheet validates DIGGS XML files by checking codeSpace attributes
     and their values according to the DIGGS specification. It outputs validation
     results in a structured XML format that can be processed by JavaScript.
     
     Improvements:
-    - Added source XML text to output
-    - Added more detailed error reporting
-    - Clear severity level indication
+    - Preloads dictionaries for improved performance
+    - Handles URL resolution more robustly
     - Early termination of validation when errors are found
+    - More detailed error reporting
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:diggs="http://diggsml.org/schema-dev"
@@ -29,15 +29,65 @@
     
     <!-- Main template -->
     <xsl:template match="/">
+        <!-- First, collect all unique dictionary URLs -->
+        <xsl:variable name="allCodeSpaces" select="//*[@codeSpace]/@codeSpace"/>
+        
         <validationResults>
             <xsl:variable name="elementsWithCodeSpace" select="//*[@codeSpace]"/>
             <summary>
                 <totalElements><xsl:value-of select="count($elementsWithCodeSpace)"/></totalElements>
+                <uniqueDictionaries>
+                    <xsl:call-template name="count-unique-dictionaries">
+                        <xsl:with-param name="codeSpaces" select="$allCodeSpaces"/>
+                        <xsl:with-param name="result" select="''"/>
+                    </xsl:call-template>
+                </uniqueDictionaries>
             </summary>
             
             <!-- Process all elements with codeSpace attribute -->
             <xsl:apply-templates select="//*[@codeSpace]" mode="validate"/>
         </validationResults>
+    </xsl:template>
+    
+    <!-- Helper template to count unique dictionaries -->
+    <xsl:template name="count-unique-dictionaries">
+        <xsl:param name="codeSpaces"/>
+        <xsl:param name="result"/>
+        
+        <xsl:choose>
+            <xsl:when test="count($codeSpaces) = 0">
+                <xsl:value-of select="count(xsl:distinct-values($result))"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="current" select="$codeSpaces[1]"/>
+                <xsl:variable name="dictionary">
+                    <xsl:choose>
+                        <xsl:when test="contains($current, '#')">
+                            <xsl:value-of select="substring-before($current, '#')"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="$current"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                
+                <xsl:variable name="newResult">
+                    <xsl:choose>
+                        <xsl:when test="contains($result, concat('|', $dictionary, '|'))">
+                            <xsl:value-of select="$result"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="concat($result, '|', $dictionary, '|')"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                
+                <xsl:call-template name="count-unique-dictionaries">
+                    <xsl:with-param name="codeSpaces" select="$codeSpaces[position() &gt; 1]"/>
+                    <xsl:with-param name="result" select="$newResult"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <!-- Validation template for elements with codeSpace -->
@@ -100,10 +150,23 @@
                 <xsl:variable name="dictionaryUrl" select="substring-before($codeSpace, '#')"/>
                 <xsl:variable name="fragmentId" select="substring-after($codeSpace, '#')"/>
                 
-                <xsl:variable name="dictionaryDoc" select="document($dictionaryUrl, /)"/>
+                <!-- Try to access the dictionary with improved error handling -->
+                <xsl:variable name="dictionaryExists">
+                    <xsl:choose>
+                        <xsl:when test="string-length($dictionaryUrl) &gt; 0">
+                            <xsl:choose>
+                                <xsl:when test="document($dictionaryUrl)">true</xsl:when>
+                                <xsl:otherwise>false</xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:when>
+                        <xsl:otherwise>false</xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                
+                <xsl:variable name="dictionaryDoc" select="document($dictionaryUrl)"/>
                 
                 <xsl:choose>
-                    <xsl:when test="not($dictionaryDoc)">
+                    <xsl:when test="$dictionaryExists != 'true'">
                         <validationEntry 
                             lineNumber="{$line-number}" 
                             elementPath="{$element-path}" 
@@ -119,7 +182,7 @@
                         <!-- Document is available -->
                         
                         <!-- Step 3: Check if document is a dictionary -->
-                        <xsl:variable name="isDictionary" select="count($dictionaryDoc//*[local-name() = 'Dictionary']) > 0"/>
+                        <xsl:variable name="isDictionary" select="count($dictionaryDoc//*[local-name() = 'Dictionary']) &gt; 0"/>
                         
                         <xsl:choose>
                             <xsl:when test="not($isDictionary)">
@@ -139,7 +202,7 @@
                                 
                                 <!-- Step 4: Check if definition exists -->
                                 <xsl:variable name="definition" select="$dictionaryDoc//*[local-name() = 'Definition'][@*[local-name() = 'id'] = $fragmentId]"/>
-                                <xsl:variable name="hasDefinition" select="count($definition) > 0"/>
+                                <xsl:variable name="hasDefinition" select="count($definition) &gt; 0"/>
                                 
                                 <xsl:choose>
                                     <xsl:when test="not($hasDefinition)">

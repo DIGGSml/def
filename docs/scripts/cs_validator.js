@@ -1,5 +1,5 @@
 /**
- * DIGGS CodeSpace Validator JavaScript - Updated
+ * DIGGS CodeSpace Validator JavaScript - Updated with Reordered Columns
  * 
  * This file contains all the JavaScript functionality for the DIGGS CodeSpace Validator.
  * It handles file loading, XML validation, result display, filtering, and exporting.
@@ -131,14 +131,14 @@ function exportResults(format) {
     
     if (format === 'csv') {
         // Create CSV content
-        let csvContent = "Line,Source XML,Severity,Message\n";
+        let csvContent = "Severity,Message,Line,Source XML\n";
         results.forEach(result => {
-            const lineNumber = result.lineNumber.trim();
-            const sourceXml = result.sourceXml.trim().replace(/"/g, '""');
             const severity = result.severity.trim();
             const message = result.message.trim().replace(/"/g, '""');
+            const lineNumber = result.lineNumber.trim();
+            const sourceXml = result.sourceXml.trim().replace(/"/g, '""');
             
-            csvContent += `"${lineNumber}","${sourceXml}","${severity}","${message}"\n`;
+            csvContent += `"${severity}","${message}","${lineNumber}","${sourceXml}"\n`;
         });
         
         // Download CSV file
@@ -147,10 +147,10 @@ function exportResults(format) {
         // Create HTML content
         const tableRows = results.map(result => {
             return `<tr class="${result.level.toLowerCase()}">
-                <td>${result.lineNumber}</td>
-                <td><pre class="source-xml">${escapeHtml(result.sourceXml)}</pre></td>
                 <td><span class="severity-badge ${result.level.toLowerCase()}">${result.severity}</span></td>
                 <td>${result.message}</td>
+                <td>${result.lineNumber}</td>
+                <td><pre class="source-xml">${escapeHtml(result.sourceXml)}</pre></td>
             </tr>`;
         }).join('');
         
@@ -204,10 +204,10 @@ function exportResults(format) {
                     <table>
                         <thead>
                             <tr class="header-row">
-                                <th>Line #</th>
-                                <th>Source XML</th>
                                 <th>Severity</th>
                                 <th>Message</th>
+                                <th>Line #</th>
+                                <th>Source XML</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -250,10 +250,10 @@ function collectResults() {
         const cells = row.querySelectorAll('td');
         if (cells.length >= 4) {
             results.push({
-                lineNumber: cells[0].textContent,
-                sourceXml: cells[1].textContent,
-                severity: cells[2].textContent,
-                message: cells[3].textContent,
+                severity: cells[0].textContent,
+                message: cells[1].textContent,
+                lineNumber: cells[2].textContent,
+                sourceXml: cells[3].textContent,
                 level: row.className
             });
         }
@@ -291,17 +291,17 @@ function processValidationResults(results) {
     const resultsBody = document.getElementById('results-body');
     resultsBody.innerHTML = '';
     
-    // Add results to table
+    // Add results to table with reordered columns
     results.forEach(result => {
         const row = document.createElement('tr');
         row.className = result.level.toLowerCase();
         
-        // Create cells with the improved display format
+        // Create cells with the improved display format and reordered columns
         row.innerHTML = `
-            <td class="line-number">${result.lineNumber}</td>
-            <td><pre class="source-xml">${escapeHtml(result.sourceXml)}</pre></td>
             <td><span class="severity-badge ${result.level.toLowerCase()}">${result.severity}</span></td>
             <td>${result.message}</td>
+            <td class="line-number">${result.lineNumber}</td>
+            <td><pre class="source-xml">${escapeHtml(result.sourceXml)}</pre></td>
         `;
         
         resultsBody.appendChild(row);
@@ -348,7 +348,7 @@ function validateXML() {
             throw new Error('XML parsing error: Invalid XML format');
         }
         
-        // Fetch the XSLT file using the fetch API
+        // Fetch the XSLT file using the fetch API with the correct URL
         fetch('https://diggsml.org/def/stylesheets/cs_validator.xsl')
             .then(response => {
                 if (!response.ok) {
