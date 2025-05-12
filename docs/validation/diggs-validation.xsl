@@ -18,7 +18,7 @@
     <xsl:output method="xml" indent="yes"/>
     
     <!-- Parameters -->
-    <xsl:param name="whiteListFile" select="'whiteList.xml'"/>
+    <xsl:param name="whiteListFile" select="'https://diggsml.org/def/validation/whiteList.xml'"/>
     
     <!-- Global variables -->
     <xsl:variable name="whiteList" select="if (doc-available($whiteListFile)) then doc($whiteListFile) else ()"/>
