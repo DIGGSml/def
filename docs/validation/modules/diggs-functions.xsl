@@ -5,8 +5,9 @@
     xmlns:map="http://www.w3.org/2005/xpath-functions/map"
     xmlns:diggs="http://diggsml.org/schema-dev"
     xmlns:gml="http://www.opengis.net/gml/3.2"
-    xmlns:saxon="http://saxon.sf.net"
-    exclude-result-prefixes="xs map diggs gml">
+    xmlns:error="http://www.w3.org/2005/xqt-errors"
+    exclude-result-prefixes="xs map diggs gml error">
+
     
     <!-- Static variable to store the whitelist document - with required select attribute -->
     <xsl:variable name="diggs:storedWhiteList" as="item()*" static="yes" select="()"/>
@@ -300,19 +301,225 @@
         <xsl:param name="text" as="xs:string"/>            <!-- Message text content -->
         <xsl:param name="sourceElement" as="node()?"/>     <!-- Source element to include in the message -->
         
+        <!-- Debug output -->
+        <xsl:message>DEBUG: createMessage called with severity: <xsl:value-of select="$severity"/></xsl:message>
+        <xsl:message>DEBUG: elementPath: <xsl:value-of select="$elementPath"/></xsl:message>
+        <xsl:message>DEBUG: text: <xsl:value-of select="$text"/></xsl:message>
+        <xsl:message>DEBUG: sourceElement exists: <xsl:value-of select="exists($sourceElement)"/></xsl:message>
+        
         <message>
             <severity><xsl:value-of select="$severity"/></severity>
             <elementPath><xsl:value-of select="$elementPath"/></elementPath>
             <text><xsl:value-of select="$text"/></text>
-            <xsl:if test="exists($sourceElement)">
+            <xsl:if test="exists($sourceElement) and $sourceElement instance of element()">
                 <source>
-                    <xsl:element name="{local-name($sourceElement)}" namespace="{namespace-uri($sourceElement)}">
-                        <xsl:copy-of select="$sourceElement/@*"/>
-                        <xsl:value-of select="$sourceElement"/>
-                    </xsl:element>
+                    <xsl:try>
+                        <xsl:element name="{local-name($sourceElement)}" namespace="{namespace-uri($sourceElement)}">
+                            <xsl:copy-of select="$sourceElement/@*"/>
+                            <xsl:value-of select="$sourceElement"/>
+                        </xsl:element>
+                        <xsl:catch>
+                            <xsl:message>DEBUG: Error creating source element in createMessage</xsl:message>
+                            <xsl:element name="error">
+                                <xsl:attribute name="message">Failed to process source element</xsl:attribute>
+                            </xsl:element>
+                        </xsl:catch>
+                    </xsl:try>
                 </source>
             </xsl:if>
         </message>
     </xsl:function>
-    
+
+    <xsl:function name="diggs:evaluateXPathMatch" as="xs:boolean">
+        <xsl:param name="documentNode" as="node()"/> <!-- Document root or context node -->
+        <xsl:param name="xpathExpression" as="xs:string"/> <!-- XPath expression to evaluate -->
+        <xsl:param name="nodeToCheck" as="node()"/> <!-- Node to check for in results -->
+        <xsl:param name="isRelative" as="xs:boolean"/> <!-- Whether the XPath is relative to nodeToCheck -->
+        
+        <!-- Create a namespace-aware evaluation context -->
+        <xsl:variable name="namespaceNode">
+            <ns:context xmlns:ns="http://temp/ns">
+                <xsl:namespace name="diggs">http://diggsml.org/schema-dev</xsl:namespace>
+                <xsl:namespace name="gml">http://www.opengis.net/gml/3.2</xsl:namespace>
+            </ns:context>
+        </xsl:variable>
+        
+        <!-- For absolute paths, use original evaluation with namespaces -->
+        <xsl:choose>
+            <xsl:when test="not($isRelative)">
+                <!-- This preserves the original behavior for absolute paths, which was working -->
+                <xsl:variable name="directMatch" as="xs:boolean">
+                    <xsl:choose>
+                        <!-- For regular global XPath expressions -->
+                        <xsl:when test="starts-with($xpathExpression, '//')">
+                            <xsl:variable name="components" select="tokenize(replace($xpathExpression, '^//', ''), '//')"/>
+                            <xsl:variable name="lastComponent" select="$components[last()]"/>
+                            <xsl:variable name="elementName" select="
+                                if (contains($lastComponent, ':')) 
+                                then substring-after($lastComponent, ':') 
+                                else $lastComponent
+                                "/>
+                            <xsl:variable name="elementNamespace" select="
+                                if (contains($lastComponent, 'diggs:')) 
+                                then 'http://diggsml.org/schema-dev'
+                                else (if (contains($lastComponent, 'gml:'))
+                                then 'http://www.opengis.net/gml/3.2'
+                                else '*')
+                                "/>
+                            
+                            <!-- Check if the basic element type matches -->
+                            <xsl:sequence select="
+                                local-name($nodeToCheck) = $elementName and 
+                                (namespace-uri($nodeToCheck) = $elementNamespace or $elementNamespace = '*')
+                                "/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:sequence select="false()"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                
+                <!-- If the direct match indicates a potential match, do more detailed checking -->
+                <xsl:choose>
+                    <xsl:when test="$directMatch">
+                        <!-- Additional ancestry checks based on XPath components -->
+                        <xsl:variable name="needsAncestryCheck" as="xs:boolean" 
+                            select="contains($xpathExpression, '//') and contains($xpathExpression, ':')"/>
+                        
+                        <xsl:choose>
+                            <xsl:when test="$needsAncestryCheck">
+                                <!-- Parse the components to check ancestors -->
+                                <xsl:variable name="components" select="tokenize(replace($xpathExpression, '^//', ''), '//')"/>
+                                
+                                <!-- Check ancestors if there are multiple components -->
+                                <xsl:choose>
+                                    <xsl:when test="count($components) > 1">
+                                        <xsl:variable name="ancestorChecks" as="xs:boolean*">
+                                            <xsl:for-each select="$components[position() lt last()]">
+                                                <xsl:variable name="ancestorName" select="
+                                                    if (contains(., ':')) 
+                                                    then substring-after(., ':') 
+                                                    else .
+                                                    "/>
+                                                <xsl:variable name="ancestorNS" select="
+                                                    if (contains(., 'diggs:')) 
+                                                    then 'http://diggsml.org/schema-dev'
+                                                    else (if (contains(., 'gml:'))
+                                                    then 'http://www.opengis.net/gml/3.2'
+                                                    else '*')
+                                                    "/>
+                                                
+                                                <xsl:sequence select="
+                                                    exists($nodeToCheck/ancestor::*[
+                                                    local-name() = $ancestorName and 
+                                                    (namespace-uri() = $ancestorNS or $ancestorNS = '*')
+                                                    ])
+                                                    "/>
+                                            </xsl:for-each>
+                                        </xsl:variable>
+                                        
+                                        <!-- All ancestor checks must pass -->
+                                        <xsl:sequence select="every $check in $ancestorChecks satisfies $check"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:sequence select="true()"/> <!-- No ancestor checks needed -->
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:sequence select="true()"/> <!-- No ancestry checks needed -->
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <!-- If direct match fails, try with dynamic evaluation -->
+                        <xsl:try>
+                            <xsl:variable name="matchNodes" as="node()*">
+                                <xsl:evaluate xpath="$xpathExpression" 
+                                    context-item="$documentNode" 
+                                    namespace-context="$namespaceNode/*"/>
+                            </xsl:variable>
+                            
+                            <xsl:sequence select="$nodeToCheck = $matchNodes"/>
+                            
+                            <xsl:catch>
+                                <xsl:sequence select="false()"/>
+                            </xsl:catch>
+                        </xsl:try>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- For relative paths, convert to local-name() based expressions for reliability -->
+                <xsl:variable name="localizedXPath">
+                    <xsl:analyze-string select="$xpathExpression" regex="(ancestor::|parent::|child::|//|/)?([a-zA-Z0-9_]+):([a-zA-Z0-9_]+)">
+                        <xsl:matching-substring>
+                            <xsl:value-of select="regex-group(1)"/>
+                            <xsl:text>*[local-name()='</xsl:text>
+                            <xsl:value-of select="regex-group(3)"/>
+                            <xsl:text>']</xsl:text>
+                        </xsl:matching-substring>
+                        <xsl:non-matching-substring>
+                            <xsl:value-of select="."/>
+                        </xsl:non-matching-substring>
+                    </xsl:analyze-string>
+                </xsl:variable>
+                
+                <!-- Try to evaluate the relative XPath -->
+                <xsl:try>
+                    <!-- For relative XPath, evaluate with nodeToCheck as context -->
+                    <xsl:variable name="matchNodes">
+                        <xsl:evaluate xpath="$localizedXPath" context-item="$nodeToCheck"/>
+                    </xsl:variable>
+                    
+                    <!-- If we get here, there were results (success) -->
+                    <xsl:sequence select="exists($matchNodes/*)"/>
+                    
+                    <xsl:catch>
+                        <!-- Try alternate approach - use the original xpath with namespace context -->
+                        <xsl:try>
+                            <xsl:variable name="matchNodes">
+                                <xsl:evaluate xpath="$xpathExpression" 
+                                    context-item="$nodeToCheck" 
+                                    namespace-context="$namespaceNode/*"/>
+                            </xsl:variable>
+                            
+                            <xsl:sequence select="exists($matchNodes)"/>
+                            
+                            <xsl:catch>
+                                <!-- Handle common patterns - e.g., check for ancestor nodes -->
+                                <xsl:choose>
+                                    <xsl:when test="contains($xpathExpression, 'ancestor') and contains($xpathExpression, 'procedure')">
+                                        <!-- Extract the target element name -->
+                                        <xsl:variable name="targetName">
+                                            <xsl:analyze-string select="$xpathExpression" regex="([^/]+)$">
+                                                <xsl:matching-substring>
+                                                    <xsl:value-of select="
+                                                        if (contains(regex-group(1), ':'))
+                                                        then substring-after(regex-group(1), ':')
+                                                        else regex-group(1)
+                                                        "/>
+                                                </xsl:matching-substring>
+                                            </xsl:analyze-string>
+                                        </xsl:variable>
+                                        
+                                        <!-- Check for target element in ancestors -->
+                                        <xsl:sequence select="
+                                            exists($nodeToCheck/ancestor::*[local-name()='Test']
+                                            //*[local-name()='procedure']
+                                            //*[local-name()=$targetName])
+                                            "/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:sequence select="false()"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:catch>
+                        </xsl:try>
+                    </xsl:catch>
+                </xsl:try>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+
 </xsl:stylesheet>
