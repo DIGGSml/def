@@ -2946,7 +2946,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="volume">
-            <gml:description>The amount of material obbserved</gml:description>
+            <gml:description>The amount of material observed</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#volume</gml:identifier>
             <gml:name>Volume</gml:name>
             <diggs:dataType>double</diggs:dataType>
