@@ -4,4 +4,3 @@ geojson
 openpyxl
 plotly
 lxml
-saxonc
