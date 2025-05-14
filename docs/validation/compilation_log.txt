@@ -1,0 +1,61 @@
+XSL to SEF Compilation Log
+Run Date: 2025-05-13T09:43:13.543Z
+----------------------------------------
+
+Finding XSL files in /workspaces/def/docs/validation...
+Processing: diggs-validation.xsl
+✗ Failed to compile /workspaces/def/docs/validation/diggs-validation.xsl
+Error: Command failed: "/workspaces/def/saxon/node_modules/.bin/xslt3-he" -xsl:"/workspaces/def/docs/validation/diggs-validation.xsl" -export:"/workspaces/def/docs/validation/diggs-validation.sef.json" -t -nogo
+SaxonJS 3.0.0-beta1 from Saxonica 
+Node.js version v20.19.0
+Compiling stylesheet /workspaces/def/docs/validation/diggs-validation.xsl
+Error XTSE0165 on line 35 in validation/diggs-validation.xsl:
+  xsl:import of  https://diggsml.org/def/validation/modules/diggs-functions.xsl failed:Cannot read file https://diggsml.org/def/validation/modules/diggs-functions.xsl - Synchronous access to non-file resources is not allowed
+Failed to compile stylesheet
+
+
+Processing: modules/codeSpace-validation.xsl
+✗ Failed to compile /workspaces/def/docs/validation/modules/codeSpace-validation.xsl
+Error: Command failed: "/workspaces/def/saxon/node_modules/.bin/xslt3-he" -xsl:"/workspaces/def/docs/validation/modules/codeSpace-validation.xsl" -export:"/workspaces/def/docs/validation/modules/codeSpace-validation.sef.json" -t -nogo
+SaxonJS 3.0.0-beta1 from Saxonica 
+Node.js version v20.19.0
+Compiling stylesheet /workspaces/def/docs/validation/modules/codeSpace-validation.xsl
+Error XPST0017:
+  Static error in XPath on line 35 in modules/codeSpace-validation.xsl {diggs:get-path(.)}: Unknown function Q{http://diggsml.org/schema-dev}get-path()
+Failed to compile stylesheet
+
+
+Processing: modules/diggs-check.xsl
+✗ Failed to compile /workspaces/def/docs/validation/modules/diggs-check.xsl
+Error: Command failed: "/workspaces/def/saxon/node_modules/.bin/xslt3-he" -xsl:"/workspaces/def/docs/validation/modules/diggs-check.xsl" -export:"/workspaces/def/docs/validation/modules/diggs-check.sef.json" -t -nogo
+SaxonJS 3.0.0-beta1 from Saxonica 
+Node.js version v20.19.0
+Compiling stylesheet /workspaces/def/docs/validation/modules/diggs-check.xsl
+Error XPST0017:
+  Static error in XPath on line 56 in modules/diggs-check.xsl {diggs:createMessage( 'ERROR', '/', $errorText, $sourceElement/* )}: Unknown function Q{http://diggsml.org/schema-dev}createMessage()
+Failed to compile stylesheet
+
+
+Processing: modules/diggs-functions.xsl
+✓ Successfully compiled to /workspaces/def/docs/validation/modules/diggs-functions.sef.json
+
+Processing: modules/schema-check.xsl
+✗ Failed to compile /workspaces/def/docs/validation/modules/schema-check.xsl
+Error: Command failed: "/workspaces/def/saxon/node_modules/.bin/xslt3-he" -xsl:"/workspaces/def/docs/validation/modules/schema-check.xsl" -export:"/workspaces/def/docs/validation/modules/schema-check.sef.json" -t -nogo
+SaxonJS 3.0.0-beta1 from Saxonica 
+Node.js version v20.19.0
+Compiling stylesheet /workspaces/def/docs/validation/modules/schema-check.xsl
+Error XPST0017:
+  Static error in XPath on line 59 in modules/schema-check.xsl {diggs:createMessage( 'WARNING', '/Diggs[1]', 'The file requires a schemaLocation attribute for complete validation. Add xsi:schemaLocation attribute to the root Diggs element, run schema validation, and then recheck.', $schemaLocElement/* )}: Unknown function Q{http://diggsml.org/schema-dev}createMessage()
+Failed to compile stylesheet
+
+
+Processing: validation-report-html.xsl
+✓ Successfully compiled to /workspaces/def/docs/validation/validation-report-html.sef.json
+
+
+===== Compilation Summary =====
+Total files processed: 6
+Successfully compiled: 2
+Failed to compile: 4
+Log file: /workspaces/def/docs/validation/compilation_log.txt

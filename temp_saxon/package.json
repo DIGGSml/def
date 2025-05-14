@@ -1,0 +1,10 @@
+{
+  "name": "saxon-temp",
+  "version": "1.0.0",
+  "description": "Temporary package for SaxonJS 3",
+  "main": "index.js",
+  "dependencies": {
+    "saxonjs-he": "^3.0.0-beta1",
+    "xslt3-he": "^3.0.0-beta1"
+  }
+}
