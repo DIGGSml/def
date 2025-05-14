@@ -32,22 +32,22 @@
     </xsl:variable>
     
     <!-- Import function module first -->
-    <xsl:import href="https://diggsml.org/def/validation/modules/diggs-functions.xsl"/>
+    <xsl:import href="modules/diggs-functions.xsl"/>
     
     <!-- Initialize whitelist (this call is preserved but not actually needed) 
     <xsl:variable name="_" select="diggs:setWhiteList($whiteList)"/> -->
     
     <!-- Import DIGGS structure check module -->
-    <xsl:import href="https://diggsml.org/def/validation/modules/diggs-check.xsl"/>
+    <xsl:import href="modules/diggs-check.xsl"/>
     
     <!-- Import schema validation module -->
-    <xsl:import href="https://diggsml.org/def/validation/modules/schema-check.xsl"/>
+    <xsl:import href="modules/schema-check.xsl"/>
     
     <!-- Import codeSpace validation module -->
-    <xsl:import href="https://diggsml.org/def/validation/modules/codeSpace-validation.xsl"/>
+    <xsl:import href="modules/codeSpace-validation.xsl"/>
  
     <!-- Import schematron validation module 
-    <xsl:import href="https://diggsml.org/def/validation/modules/schematron-validation.xsl"/>
+    <xsl:import href="modules/schematron-validation.xsl"/>
     -->
  
     <!-- Import other modules here once they are developed -->
