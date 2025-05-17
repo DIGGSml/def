@@ -54,7 +54,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_abrasion_value</gml:identifier>
             <gml:name>Aggregate Abrasion Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -69,7 +68,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_crushing_value</gml:identifier>
             <gml:name>Aggregate Crushing Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -174,7 +172,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_polished_stone_value</gml:identifier>
             <gml:name>Aggregate Polished Stone Value</gml:name>
             <diggs:dataType>integer</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -282,9 +279,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -347,7 +341,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#chalk_crushing_value</gml:identifier>
             <gml:name>Chalk Crushing Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -613,7 +606,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_residual</gml:identifier>
             <gml:name>Residual Cohesion</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -639,11 +632,10 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="compression_index">
-            <gml:description>Result from a Consolidation Test. This testis performed to determine the magnitude and rate of void ratio change for a laterally confined soil specimen that is subjected to different vertical pressures. From the measured data, the consolidation curve (pressure-void ratio relationship) can be plotted. This specific value is used for a specific portion of the log vertical pressure - void ratio curve to signify virgin compression. The one-dimension consolidation curve can be used to determine other values (e.g., the recompression index (slope of recompression curve) and the preconsolidation pressure (or maximum past pressure) of the soil).</gml:description>
+            <gml:description>Result from a Consolidation Test. This test is performed to determine the magnitude and rate of void ratio change for a laterally confined soil specimen that is subjected to different vertical pressures. From the measured data, the consolidation curve (pressure-void ratio relationship) can be plotted. This specific value is used for a specific portion of the log vertical pressure - void ratio curve to signify virgin compression. The one-dimension consolidation curve can be used to determine other values (e.g., the recompression index (slope of recompression curve) and the preconsolidation pressure (or maximum past pressure) of the soil).</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#compression_index</gml:identifier>
             <gml:name>Compression Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -691,9 +683,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -703,7 +692,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#consistency_index</gml:identifier>
             <gml:name>Consistency Index</gml:name>
             <diggs:dataType>integer</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -895,9 +883,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:TemporalResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -912,9 +897,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressuremeterTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1018,9 +1000,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:syneresisTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1045,7 +1024,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#flame_ionization_measurement</gml:identifier>
             <gml:name>Flame Ionization Measurement</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1085,9 +1063,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:lugeonStepTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1102,9 +1077,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:lugeonStepTimeSeries</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1228,9 +1200,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:lugeonStepTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1265,9 +1234,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1298,9 +1264,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1316,9 +1279,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1333,9 +1293,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1397,9 +1354,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1424,7 +1378,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#line_loss_coeff_A</gml:identifier>
             <gml:name>Line Loss Coefficient A</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1439,7 +1392,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#line_loss_coeff_B</gml:identifier>
             <gml:name>Line Loss Coefficient B</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1454,7 +1406,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#line_loss_coeff_C</gml:identifier>
             <gml:name>Line Loss Coefficient C</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1469,7 +1420,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#line_loss_r2</gml:identifier>
             <gml:name>Line Loss R2</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1484,7 +1434,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#liquid_limit</gml:identifier>
             <gml:name>Liquid Limit</gml:name>
             <diggs:dataType>integer</diggs:dataType>
-            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1499,7 +1448,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#liquid_limit_oven_dried</gml:identifier>
             <gml:name>Oven Dried Liquid Limit</gml:name>
             <diggs:dataType>integer</diggs:dataType>
-            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1514,7 +1462,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#liquidity_index</gml:identifier>
             <gml:name>Liquidity Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1608,7 +1555,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#material_index</gml:identifier>
             <gml:name>Material Index     s</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1623,7 +1569,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mcv</gml:identifier>
             <gml:name>Moisture Condition Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1687,7 +1632,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#n_value</gml:identifier>
             <gml:name>N-Value (Raw)</gml:name>
             <diggs:dataType>integer</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1702,7 +1646,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#n1_60</gml:identifier>
             <gml:name>N1,60</gml:name>
             <diggs:dataType>integer</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1717,7 +1660,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#n60</gml:identifier>
             <gml:name>N60</gml:name>
             <diggs:dataType>integer</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1732,7 +1674,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#non_plastic</gml:identifier>
             <gml:name>Non Plastic</gml:name>
             <diggs:dataType>boolean</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1743,11 +1684,10 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="ocr">
-            <gml:description>A calculation that reflects the maximum past consolidation test that the in situ soil has been subjected to compared to the current vertical overburden stress on the sample in the field. This value is usually measured from the one-dimensional consolidation tests. Often referenced as the parameter to track the stress history.</gml:description>
+            <gml:description>A calculation that reflects the maximum past consolidation that the in situ soil has been subjected to compared to the current vertical overburden stress on the sample in the field. This value is usually measured from the one-dimensional consolidation tests. Often referenced as the parameter to track the stress history.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ocr</gml:identifier>
             <gml:name>Overconsolidation Ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1936,7 +1876,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pH</gml:identifier>
             <gml:name>pH</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1989,7 +1928,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#plasticity_index</gml:identifier>
             <gml:name>Plasticity Index</gml:name>
             <diggs:dataType>integer</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2004,7 +1942,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#point_load_test_index</gml:identifier>
             <gml:name>Point Load Test Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2019,7 +1956,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio</gml:identifier>
             <gml:name>Poisson Ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:quantityClass>length per length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2078,9 +2015,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -2100,9 +2034,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -2121,9 +2052,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2164,7 +2092,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#recompression_index</gml:identifier>
             <gml:name>Recompression Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2194,7 +2121,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_density</gml:identifier>
             <gml:name>Density, Relative</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2223,9 +2149,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabResistivityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -2250,7 +2173,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#schmidt_hardness_value</gml:identifier>
             <gml:name>Schmidt Hardness Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2265,7 +2187,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sensitivity</gml:identifier>
             <gml:name>Sensitivity</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:quantityClass>pressure per pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2520,9 +2442,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -2552,9 +2471,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2713,9 +2629,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -2771,18 +2684,15 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:synere+[gp_properties.xlsx]AssociatedElements!$C$161:$D$268sisTimeSeries</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:syneresisTimeSeries</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::SpatialReult</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::SpatialResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::TestResult</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2798,9 +2708,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2846,9 +2753,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:lugeonStepTimeSeries</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2955,10 +2859,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:syneresisTimeSeries</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggspropertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath></diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -3069,9 +2969,6 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -3086,9 +2983,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PorePressureDissipationTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
