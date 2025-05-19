@@ -434,7 +434,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_curvature</gml:identifier>
             <gml:name>Coefficient of Curvature</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -453,7 +452,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_earth_pressure</gml:identifier>
             <gml:name>Coefficient of Earth Pressure, In Situ</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:quantityClass>pressure per pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
