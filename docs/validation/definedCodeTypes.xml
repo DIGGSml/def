@@ -16,7 +16,7 @@
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/abundanceUSDA.xml</dictionaryURL>
   </codeType>
   <codeType>
-    <xpath>/*[local-name() = 'BoreholeConstructionMethod']/*[local-name() = 'name']</xpath>
+    <xpath>//*[local-name() = 'BoreholeConstructionMethod']/*[local-name() = 'name']</xpath>
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/boreholeMethod.xml</dictionaryURL>
   </codeType>
   <codeType>

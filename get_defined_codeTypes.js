@@ -30,7 +30,7 @@ async function fetchDictionaryFilesList() {
     }
 }
 
-// Function to convert ID to XPath (same logic as the original XSLT function)
+// Function to convert ID to XPath (corrected version)
 function constructXPath(id) {
     if (!id.includes('_')) {
         // Simple case: just a single element name
@@ -38,9 +38,15 @@ function constructXPath(id) {
     } else {
         // Complex case: path with segments
         const segments = id.split('_');
-        return segments.map(segment => 
-            `/*[local-name() = '${segment}']`
-        ).join('');
+        return segments.map((segment, index) => {
+            if (index === 0) {
+                // First segment gets // prefix
+                return `//*[local-name() = '${segment}']`;
+            } else {
+                // Subsequent segments get single / prefix
+                return `/*[local-name() = '${segment}']`;
+            }
+        }).join('');
     }
 }
 
