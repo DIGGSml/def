@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codeTypeElements>
+  <codeType>
+    <xpath>//*[local-name() = 'classificationCode']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/USCSSoilComponents.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/aashtoM145.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/astm2488Brdr.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/astmD5715.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/usda.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>//*[local-name() = 'abundanceCode']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/abundance.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/abundanceUSDA.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>/*[local-name() = 'BoreholeConstructionMethod']/*[local-name() = 'name']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/boreholeMethod.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>//*[local-name() = 'boreholePurpose']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/boreholePurpose.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>//*[local-name() = 'boreholeType']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>//*[local-name() = 'propertyClass']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/properties.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>//*[local-name() = 'classificationSymbol']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-aashtoM145.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-astm2487.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-astm2488.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2488Brdr.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>//*[local-name() = 'measurand']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/measurand.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>//*[local-name() = 'rolePerformed']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/roles.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>//*[local-name() = 'soundingPurpose']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/soundingPurpose.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>//*[local-name() = 'triaxialTestType']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml</dictionaryURL>
+  </codeType>
+</codeTypeElements>
