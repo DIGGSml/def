@@ -7,22 +7,24 @@
     xmlns:gml="http://www.opengis.net/gml/3.2"
     exclude-result-prefixes="xs map diggs gml">
     
-    
-    <!-- ************ Master stylesheet for DIGGS context validation ************** 
-         *            DIGGS files should be schema valid before running context   *
-         *            validation                                                  *
+    <!-- 
+         ************ Master stylesheet for DIGGS context validation **************
+         *                                                                        *
+         *            DIGGS files should be schema valid before                   * 
+         *            running context validation                                  *
+         *                                                                        *
          **************************************************************************
      -->
     
     <!-- Output method -->
     <xsl:output method="xml" indent="yes"/>
     
-    <!-- Parameters -->
-    <xsl:param name="whiteListFile" select="'https://diggsml.org/def/validation/whiteList.xml'"/>
-    
+   
     <!-- Global variables -->
-    <xsl:variable name="whiteList" select="if (doc-available($whiteListFile)) then doc($whiteListFile) else ()"/>
+    <xsl:variable name="whiteListFile" select="'./whiteList.xml'"/>   
     
+       <xsl:variable name="whiteList" select="if (doc-available($whiteListFile)) then doc($whiteListFile) else ()"/>
+   
     <!-- Store the original XML document -->
     <xsl:variable name="originalXml" select="/"/>
     
@@ -34,19 +36,20 @@
     <!-- Import function module first -->
     <xsl:import href="modules/diggs-functions.xsl"/>
     
-    <!-- Initialize whitelist (this call is preserved but not actually needed) 
-    <xsl:variable name="_" select="diggs:setWhiteList($whiteList)"/> -->
-    
+
     <!-- Import DIGGS structure check module -->
     <xsl:import href="modules/diggs-check.xsl"/>
     
     <!-- Import schema validation module -->
     <xsl:import href="modules/schema-check.xsl"/>
     
-    <!-- Import codeSpace validation module -->
-    <xsl:import href="modules/codeSpace-validation.xsl"/>
+    <!-- Import codeType-validation module -->
+    <xsl:import href="modules/codeType-validation.xsl"/>
+    
+    <!-- Import dictionary-validation module -->
+    <xsl:import href="modules/dictionary-validation.xsl"/>
  
-    <!-- Import schematron validation module 
+    <!-- Import schematron-validation module 
     <xsl:import href="modules/schematron-validation.xsl"/>
     -->
  
@@ -83,8 +86,13 @@
                 <!-- Only proceed with other validations if schema validation allows continuation -->
                 <xsl:if test="$schemaCheckResults/messageSet/continuable = 'true'">
                     
-                    <!-- Run codeSpace validation, passing the whitelist -->
-                    <xsl:call-template name="codeSpaceValidation">
+                    <!-- Run codeType validation -->
+                    <xsl:call-template name="codeTypeValidation">
+                        <xsl:with-param name="sourceDocument" select="$originalXml"/>
+                    </xsl:call-template>
+                    
+                    <!-- Run  dictionary validation, passing the whitelist -->
+                    <xsl:call-template name="dictionaryValidation">
                         <xsl:with-param name="whiteList" select="$whiteList"/>
                     </xsl:call-template>
                     

@@ -17,31 +17,70 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/dialog/dialog.min.css"/>
         <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/fold/foldgutter.min.css"/>
+        
         <style>
+/* CSS Variables for consistent colors and spacing */
+:root {
+    /* Severity colors */
+    --color-error-bg: #fdd5d1;
+    --color-error-border: #b02819;
+    --color-warning-bg: #fde5be;
+    --color-warning-border: #9c7008;
+    --color-info-bg: #d1e7f2;
+    --color-info-border: #0b68a7;
+    --color-success-bg: #e9f7ef;
+    --color-success-border: #2ecc71;
+    
+    /* Banner specific variations */
+    --color-error-banner: #f5b7b1;
+    --color-warning-banner: #fae5d3;
+    --color-info-banner: #d4e6f1;
+    --color-success-banner: #d4efdf;
+
+    /* Highlight Colors */
+    --color-highlight-bg: rgba(111, 172, 202, 0.5); /* Blue-gray with 50% transparency for selection */
+    --color-search-match: rgba(255, 140, 0, 0.3); /* Light orange for search matches */
+    
+    /* Common spacing values */
+    --spacing-xs: 0px;
+    --spacing-sm: 2px;
+    --spacing-md: 5px;
+    --spacing-lg: 10px;
+    --spacing-xl: 20px;
+    --spacing-xxl: 30px;
+    
+    /* Table dimensions */
+    --col-1-width: 80px;
+    --col-2-width: 100px;
+    --col-3-width: 150px;
+    --col-4-width: 600px;
+}
+
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: white;
-    padding: 20px 30px;
+    padding: 0 var(--spacing-xxl) var(--spacing-xl);
     border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Header styles */
 h1 {
     color: #2c3e50;
     text-align: center;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: var(--spacing-xs);
+    padding-bottom: var(--spacing-xs);
     width: 100%;
 }
 
@@ -49,9 +88,10 @@ h1 {
     position: relative;
     text-align: center;
     border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    height: 50px;
+    padding-bottom: var(--spacing-xs);
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+    height: auto;
 }
 
 .header-logo {
@@ -59,159 +99,107 @@ h1 {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 200px;
+    width: 150px;
 }
 
-/* Validation result styles - row shading colors */
+/* Validation result styles - base classes for colors */
 .error {
-    background-color: #fdd5d1;
-    border-left: 4px solid #b02819
+    background-color: var(--color-error-bg);
+    border-left: 4px solid var(--color-error-border);
 }
 
 .warning {
-    background-color: #fde5be;
-    border-left: 4px solid #9c7008
+    background-color: var(--color-warning-bg);
+    border-left: 4px solid var(--color-warning-border);
 }
 
 .info {
-    background-color: #d1e7f2;
-    border-left: 4px solid #0b68a7
-
+    background-color: var(--color-info-bg);
+    border-left: 4px solid var(--color-info-border);
 }
 
 .success {
-    background-color: #e9f7ef;
-    border-left: 4px solid #2ecc71;
+    background-color: var(--color-success-bg);
+    border-left: 4px solid var(--color-success-border);
 }
 
-/* Summary banner */
+/* Summary banner - override background colors */
 .summary-banner {
-    padding: 6px;
-    margin: 15px 0;
+    padding: var(--spacing-xs);
+    margin: var(--spacing-sm);
     text-align: center;
     border-radius: 4px;
     font-weight: bold;
     font-size: 18px;
 }
 
-.summary-banner.success {
-    background-color: #d4efdf;
-}
+.summary-banner.success { background-color: var(--color-success-banner); }
+.summary-banner.info { background-color: var(--color-info-banner); }
+.summary-banner.warning { background-color: var(--color-warning-banner); }
+.summary-banner.error { background-color: var(--color-error-banner); }
 
-.summary-banner.info {
-    background-color: #d4e6f1;
-}
-
-.summary-banner.warning {
-    background-color: #fae5d3;
-}
-
-.summary-banner.error {
-    background-color: #f5b7b1;
-}
-/* Table with fixed layout */
-table {
-width: 100%;
-border-collapse: collapse;
-margin-top: 20px;
-font-size: 13px; /* Slightly smaller font */
-table-layout: fixed;
-line-height: 1.2; /* Tighter line height */
-}
-
+/* Table styles */
 .table-container {
-max-height: 350px;
-overflow-y: auto;
-margin-bottom: 20px;
-overflow-x: auto;
--webkit-overflow-scrolling: touch;
+    max-height: 350px;
+    overflow-y: auto;
+    margin-bottom: var(--spacing-md);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
-table th:nth-child(1), table td:nth-child(1) { width: 80px; }
-table th:nth-child(2), table td:nth-child(2) { width: 100px; }
-table th:nth-child(3), table td:nth-child(3) { width: 150px; }
-table th:nth-child(4), table td:nth-child(4) { width: 650px; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-xs);
+    font-size: 13px;
+    table-layout: fixed;
+    line-height: 1.2;
+}
+
+/* Column widths */
+table th:nth-child(1), table td:nth-child(1) { width: var(--col-1-width); }
+table th:nth-child(2), table td:nth-child(2) { width: var(--col-2-width); }
+table th:nth-child(3), table td:nth-child(3) { width: var(--col-3-width); }
+table th:nth-child(4), table td:nth-child(4) { width: var(--col-4-width); }
 table th:nth-child(5), table td:nth-child(5) { width: auto; }
 
-/* Cell styling with reduced spacing */
 th, td {
-padding: 2px 8px; /* Minimal vertical padding */
-text-align: left;
-border-bottom: 1px solid black;
-vertical-align: middle;
-word-wrap: break-word;
-overflow-wrap: break-word;
-line-height: 1.2; /* Tighter line spacing */
-}
-
-/* Message column with preserved line breaks and word wrapping */
-table td:nth-child(4) {
-text-align: left !important; /* Explicitly left-align */
-white-space: pre-wrap;
-word-wrap: break-word;
-overflow-wrap: break-word;
-word-break: break-word;
-text-indent: 0 !important;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    vertical-align: middle;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.1;
 }
 
 /* Headers */
 th {
-background-color: #f2f2f2;
-position: sticky;
-top: 0;
-z-index: 10;
-white-space: nowrap;
-}
-
-table td:nth-child(4) pre.source-xml {
-font-family: sans-serif;
-font-size: inherit;
-white-space: pre-wrap;
-word-wrap: break-word;
-overflow-wrap: break-word;
-word-break: break-word;
-background-color: transparent;
-padding: 0 !important;
-margin: 0 !important;
-border: none;
-border-radius: 0;
-max-width: 100%;
-overflow-x: visible;
-display: block; /* Changed from inline to block */
-box-sizing: border-box;
-text-indent: 0 !important;
-line-height: 1.2;
-
-/* Additional properties to prevent indentation */
-text-align: left !important;
--webkit-text-indent: 0 !important;
--moz-text-indent: 0 !important;
-text-decoration: none;
-text-transform: none;
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    white-space: nowrap;
+    padding: 5px 8px
+    ;
 }
 
 /* Severity badges */
 .severity-badge {
     display: inline-block;
-    padding: 4px 8px;
+    padding: 2px 6px;
     border-radius: 4px;
     font-weight: bold;
     color: white;
     margin: 0 3px;
+    line-height: 1;
 }
 
-.severity-badge.error {
-    background-color: #b02819;
-}
+.severity-badge.error { background-color: var(--color-error-border); }
+.severity-badge.warning { background-color: var(--color-warning-border); }
+.severity-badge.info { background-color: var(--color-info-border); }
 
-.severity-badge.warning {
-    background-color: #9c7008;
-}
-
-.severity-badge.info {
-    background-color: #0b68a7;
-}
-
+/* XML content styles */
 /* Source XML in table - sans-serif and transparent background */
 table td pre.source-xml {
     font-family: sans-serif;
@@ -221,15 +209,11 @@ table td pre.source-xml {
     overflow-wrap: break-word;
     word-break: break-word;
     background-color: transparent;
-    padding: 0;
+    padding: 8px;
     margin: 0;
-    border: none;
-    border-radius: 0;
-    max-width: 100%;
-    overflow-x: visible;
     display: inline;
-    box-sizing: border-box;
-    text-indent: 0 !important; /* Remove first-line indent */
+    line-height: 1.1;
+    text-indent:0
 }
 
 /* Source XML outside table (editor box) - monospace */
@@ -238,8 +222,8 @@ table td pre.source-xml {
     font-size: inherit;
     white-space: pre-wrap;
     word-break: break-all;
-    background-color: #f5f5f5; /* Gray background for editor */
-    padding: 8px;
+    background-color: #f5f5f5;
+    padding: 0;
     border-radius: 4px;
     margin: 0;
     max-width: 100%;
@@ -247,24 +231,50 @@ table td pre.source-xml {
     overflow-wrap: break-word;
 }
 
-/* Controls */
+/* Controls and filter sections */
 .controls {
     display: flex;
     justify-content: space-between;
-    margin: 15px 0;
-    padding: 10px;
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm);
     background-color: #f8f9fa;
     border-radius: 4px;
+    position: relative;
 }
 
 .filter-controls {
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-right: var(--spacing-xl);
+    font-size: 16px;
+    text-align: left;
+    position: absolute;
+    left: var(--spacing-sm);
 }
 
 .export-controls {
-    display: flex;
-    align-items: center;
+    position: absolute;
+    right: var(--spacing-sm);
+}
+
+/* Common button styles */
+.button-common {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-common:hover {
+    background-color: #2980b9;
 }
 
 .export-button {
@@ -274,19 +284,21 @@ table td pre.source-xml {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: var(--spacing-lg);
+    white-space: nowrap;
 }
 
 .export-button:hover {
     background-color: #2980b9;
 }
 
+/* Validation summary section */
 .validation-summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0px;
-    padding: 15px;
+    margin-top: var(--spacing-xs);
+    padding: var(--spacing-sm);
     background-color: #f8f9fa;
     border-radius: 4px;
 }
@@ -308,7 +320,7 @@ table td pre.source-xml {
 
 /* XML Editor styles */
 .editor-container {
-    margin-top: 20px;
+    margin-top: var(--spacing-xs);
     border: 1px solid #ddd;
     border-radius: 4px;
     overflow: hidden;
@@ -362,7 +374,7 @@ table td pre.source-xml {
 
 /* CodeMirror customizations */
 .CodeMirror {
-    height: 500px;
+    height: 350px;
     font-family: monospace;
     font-size: 14px;
     line-height: 1.5;
@@ -384,36 +396,42 @@ table td pre.source-xml {
 }
 
 /* CodeMirror highlighting */
+/* Current line highlighting */
 .CodeMirror-activeline-background {
-    background-color: rgba(255, 140, 0, 0.3);
+background-color: rgba(255, 240, 220, 0.3); /* Light orange with transparency */
 }
 
+/* All search matches - make sure to use !important to override any conflicting styles */
+.CodeMirror-matchingbracket,
+.CodeMirror-matchhighlight, 
 .cm-matchhighlight {
-    background-color: rgba(255, 140, 0, 0.3);
+background-color: var(--color-search-match) !important; /* Light orange */
+color: inherit !important;
 }
 
-.CodeMirror-focused .cm-matchhighlight {
-    background-color: rgba(255, 140, 0, 0.5);
+/* Regular matching brackets */
+.CodeMirror-matchingbracket {
+color: inherit !important;
 }
 
-.cm-highlight-element {
-  //   background-color: #ffff99;
-    background-color: #FF8C00;
+/* The current search match - these are the critical selectors */
+.CodeMirror-selectedtext,
+.cm-searching,
+.CodeMirror-searching,
+span.cm-searching,
+.CodeMirror-focused .CodeMirror-selectedtext {
+background-color: var(--color-highlight-bg) !important; /* Same as regular selection */
+color: black !important;
+text-decoration: none !important;
+border-radius: 2px;
 }
 
-.xpath-highlight {
-    background-color: #FF8C00;
+/* Regular selection */
+.CodeMirror-selected {
+background-color: var(--color-highlight-bg) !important;
 }
 
-.cm-searching {
-background-color: #ffff99; /* Pale yellow for all matches */
-}
-
-.cm-searching.CodeMirror-selectedtext, 
-.CodeMirror-focused .cm-searching.CodeMirror-selectedtext {
-background-color: #FF8C00 !important; /* Orange for selected match */
-}
-
+/* XPath link styles */
 .xpath-link {
     color: #3498db;
     text-decoration: underline;
@@ -424,7 +442,7 @@ background-color: #FF8C00 !important; /* Orange for selected match */
     color: #2980b9;
 }
 
-/* Tooltip styling with auto width and max-width */
+/* Tooltip styling */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -432,8 +450,8 @@ background-color: #FF8C00 !important; /* Orange for selected match */
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: auto; /* Auto width */
-    max-width: 500px; /* Max width constraint */
+    width: auto;
+    max-width: 500px;
     background-color: #555;
     color: #fff;
     text-align: left;
@@ -456,88 +474,13 @@ background-color: #FF8C00 !important; /* Orange for selected match */
     opacity: 1;
 }
 
-/* Dialog styles */
-.dialog-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-}
-
-.dialog-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    width: 500px;
-    max-width: 90%;
-}
-
-.dialog-title {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #2c3e50;
-}
-
-.dialog-content {
-    margin-bottom: 20px;
-}
-
-.dialog-form-group {
-    margin-bottom: 15px;
-}
-
-.dialog-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.dialog-input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.dialog-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
-
-.dialog-button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.dialog-button-primary {
-    background-color: #3498db;
-    color: white;
-}
-
-.dialog-button-secondary {
-    background-color: #f2f2f2;
-    color: #333;
-}
-
 /* Responsive design */
 @media (max-width: 768px) {
     .editor-actions {
         flex-direction: column;
         gap: 5px;
     }
-    
+
     .CodeMirror {
         font-size: 12px;
     }
@@ -592,8 +535,8 @@ background-color: #FF8C00 !important; /* Orange for selected match */
           <xsl:variable name="summaryMessage">
             <xsl:choose>
               <xsl:when test="$errorCount > 0">Result: Fail. Correct errors and rescan.</xsl:when>
-              <xsl:when test="$warningCount > 0">Result: Possible Errors. Address Warnings to
-                complete validation.</xsl:when>
+              <xsl:when test="$warningCount > 0">Result: Possible Incompatibilities. Evaluate
+                warnings and address potential interoperability issues.</xsl:when>
               <xsl:when test="$infoCount > 0">Result: Success! Please review INFO
                 messages.</xsl:when>
               <xsl:otherwise>Result: Success! No issues detected.</xsl:otherwise>
@@ -604,8 +547,10 @@ background-color: #FF8C00 !important; /* Orange for selected match */
             <xsl:value-of select="$summaryMessage"/>
           </div>
 
+          <!-- Modified controls section to include title and center filter -->
           <div class="controls">
             <div class="filter-controls">
+              <span class="section-title">Validation Report</span>
               <label for="severity-filter">Filter by severity:</label>
               <select id="severity-filter">
                 <option value="all">All</option>
@@ -616,7 +561,7 @@ background-color: #FF8C00 !important; /* Orange for selected match */
             </div>
 
             <div class="export-controls">
-              <button id="export-csv" class="export-button">Export to CSV</button>
+              <button id="export-csv" class="export-button">Save Report as CSV</button>
             </div>
           </div>
 
@@ -699,794 +644,816 @@ background-color: #FF8C00 !important; /* Orange for selected match */
           </div>
         </div>
 
-        <!-- Save File Dialog -->
-        <div id="save-file-dialog" class="dialog-overlay">
-          <div class="dialog-container">
-            <h3 class="dialog-title">Save XML File</h3>
-            <div class="dialog-content">
-              <div class="dialog-form-group">
-                <label for="file-name" class="dialog-label">File name:</label>
-                <input type="text" id="file-name" class="dialog-input"/>
-              </div>
-              <div id="save-error-message" style="color: #e74c3c; margin-top: 10px; display: none;"
-              />
-            </div>
-            <div class="dialog-actions">
-              <button id="cancel-save" class="dialog-button dialog-button-secondary">Cancel</button>
-              <button id="confirm-save" class="dialog-button dialog-button-primary">Save</button>
-            </div>
-          </div>
-        </div>
-
         <!-- CodeMirror Library Scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/fold/xml-fold.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchtags.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/selection/active-line.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/search/search.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/search/searchcursor.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/search/jump-to-line.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/search/match-highlighter.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/dialog/dialog.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/fold/foldcode.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/fold/foldgutter.min.js"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/display/placeholder.min.js"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/fold/xml-fold.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchtags.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/selection/active-line.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/search/search.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/search/searchcursor.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/search/jump-to-line.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/search/match-highlighter.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/dialog/dialog.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/fold/foldcode.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/fold/foldgutter.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/display/placeholder.min.js"></script>
 
         <!-- JavaScript for functionality -->
         <script>
-        <![CDATA[
-        // Ensure DOM is fully loaded before accessing elements
-        document.addEventListener('DOMContentLoaded', function() {
-          console.log('DOM content loaded - initializing JavaScript');
-          
-          // CodeMirror instance variable, make it globally accessible
-          let codeMirror = null;
-          let editorInitialized = false;
-          
-          // Function to filter table rows by severity
-          function filterBySeverity(severity) {
-            const table = document.getElementById('validation-table');
-            if (!table) {
-              console.error('Validation table not found');
-              return;
-            }
-            
-            const tbody = table.getElementsByTagName('tbody')[0];
-            if (!tbody) {
-              console.error('Table body not found');
-              return;
-            }
-            
-            const rows = tbody.getElementsByTagName('tr');
-            
-            for (let i = 0; i < rows.length; i++) {
-              const row = rows[i];
-              if (severity === 'all') {
-                row.style.display = '';
-              } else {
-                const severityCell = row.getElementsByTagName('td')[0];
-                if (!severityCell) continue;
-                
-                const badge = severityCell.querySelector('.severity-badge');
-                if (!badge) continue;
-                
-                const severityText = badge.textContent.trim().toLowerCase();
-                
-                if (severityText === severity) {
-                  row.style.display = '';
-                } else {
-                  row.style.display = 'none';
-                }
-              }
+<![CDATA[
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM content loaded - initializing application');
+  
+  // Editor management object to centralize initialization and state
+  const EditorManager = {
+    // State properties
+    instance: null,
+    initialized: false,
+    visible: false,
+    persistentMarker: null, // Store reference to persistent highlight marker
+    
+    /**
+     * Gets the CodeMirror instance, initializing it if needed
+     * @param {boolean} [showEditor=false] - Whether to show the editor if it's hidden
+     * @returns {CodeMirror|null} - The CodeMirror instance or null if initialization failed
+     */
+    getEditor: function(showEditor = false) {
+      // If we need to show the editor and it's not visible, show it
+      if (showEditor && !this.visible) {
+        this.toggleVisibility(true);
+      }
+      
+      // If not initialized, initialize
+      if (!this.initialized) {
+        this.initialize();
+      }
+      
+      return this.instance;
+    },
+    
+    /**
+     * Initialize the CodeMirror editor
+     * @returns {CodeMirror|null} - The CodeMirror instance or null if initialization failed
+     */
+    initialize: function() {
+      if (this.initialized && this.instance) {
+        this.refresh();
+        return this.instance;
+      }
+      
+      console.log('Initializing CodeMirror editor');
+      const editor = document.getElementById('xml-editor');
+      if (!editor) {
+        console.error('XML editor element not found');
+        return null;
+      }
+      
+      try {
+        // Create CodeMirror instance
+        this.instance = CodeMirror.fromTextArea(editor, {
+          mode: 'application/xml',
+          lineNumbers: true,
+          matchBrackets: true,
+          autoCloseTags: true,
+          matchTags: {bothTags: true},
+          indentUnit: 4,
+          tabSize: 4,
+          smartIndent: true,
+          lineWrapping: true,
+          theme: 'eclipse',
+          styleActiveLine: true,
+          foldGutter: true,
+          gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+          extraKeys: {
+            "Ctrl-Space": "autocomplete",
+            "Ctrl-Q": function(cm) { cm.foldCode(cm.getCursor()); },
+            "Ctrl-F": "findPersistent",
+            "Tab": function(cm) {
+              // Insert spaces instead of tab character
+              const spaces = Array(cm.getOption("indentUnit") + 1).join(" ");
+              cm.replaceSelection(spaces);
             }
           }
+        });
+        
+        // Set up cursor position tracking
+        if (this.instance) {
+          this.instance.on('cursorActivity', this.updateCursorPosition);
+          this.initialized = true;
           
-          // Set up the severity filter dropdown
-          const severityFilter = document.getElementById('severity-filter');
-          if (severityFilter) {
-            severityFilter.addEventListener('change', function() {
-              filterBySeverity(this.value);
+          // Ensure CodeMirror is refreshed when shown
+          setTimeout(() => this.refresh(), 50);
+          return this.instance;
+        }
+        
+        return null;
+      } catch (error) {
+        console.error('Error initializing CodeMirror:', error);
+        alert('Error initializing the XML editor. Some features may be limited.');
+        return null;
+      }
+    },
+    
+    /**
+     * Toggle editor visibility
+     * @param {boolean} [show] - Force show (true) or hide (false)
+     * @returns {boolean} - Whether the editor is now visible
+     */
+    toggleVisibility: function(show = null) {
+      const editorBody = document.getElementById('editor-body');
+      if (!editorBody) {
+        console.error('Editor body not found');
+        return false;
+      }
+      
+      // If show parameter is provided, set visibility accordingly
+      if (show !== null) {
+        if (show) {
+          editorBody.classList.add('open');
+        } else {
+          editorBody.classList.remove('open');
+        }
+      } else {
+        // Otherwise toggle visibility
+        editorBody.classList.toggle('open');
+      }
+      
+      // Update state
+      this.visible = editorBody.classList.contains('open');
+      
+      // If becoming visible, ensure initialization and refresh
+      if (this.visible) {
+        if (!this.initialized) {
+          this.initialize();
+        } else {
+          this.refresh();
+        }
+      } else {
+        // If hiding, clear any persistent highlights
+        if (this.persistentMarker) {
+          if (Array.isArray(this.persistentMarker)) {
+            this.persistentMarker.forEach(marker => {
+              if (marker) marker.clear();
             });
-          } else {
-            console.error('Severity filter dropdown not found');
+          } else if (this.persistentMarker.clear) {
+            this.persistentMarker.clear();
           }
+          this.persistentMarker = null;
+        }
+      }
+      
+      console.log('Editor toggled, visible:', this.visible);
+      return this.visible;
+    },
+    
+    /**
+     * Refresh the CodeMirror instance to ensure proper rendering
+     */
+    refresh: function() {
+      if (this.instance) {
+        // Use timeout to ensure DOM updates first
+        setTimeout(() => {
+          this.instance.refresh();
+          console.log('CodeMirror refreshed');
+        }, 10);
+      }
+    },
+    
+    /**
+     * Update cursor position in status bar
+     */
+    updateCursorPosition: function() {
+      const cursorPosition = document.getElementById('cursor-position');
+      if (!cursorPosition) return;
+      
+      const cursor = EditorManager.instance.getCursor();
+      cursorPosition.textContent = `Line: ${cursor.line + 1}, Column: ${cursor.ch + 1}`;
+    },
+    
+    /**
+     * Format the XML content in the editor
+     * @returns {boolean} - Success status
+     */
+    formatXml: function() {
+      const editor = this.getEditor();
+      if (!editor) return false;
+      
+      try {
+        // Get the current XML content
+        let xmlContent = editor.getValue();
+        
+        // Basic XML formatting function
+        function prettyPrint(xml) {
+          let formatted = '';
+          let indent = '';
+          const tab = '  '; // 2 spaces for indentation
           
-          // Initialize CodeMirror editor
-          function initCodeMirror() {
-            // If already initialized, just refresh
-            if (editorInitialized && codeMirror) {
-              codeMirror.refresh();
-              return codeMirror;
-            }
-            
-            const editor = document.getElementById('xml-editor');
-            if (!editor) {
-              console.error('XML editor element not found');
-              return null;
-            }
-            
-            try {
-              // Create CodeMirror instance
-              codeMirror = CodeMirror.fromTextArea(editor, {
-                mode: 'application/xml', // XML mode
-                lineNumbers: true, // Show line numbers
-                matchBrackets: true, // Highlight matching brackets
-                autoCloseTags: true, // Auto-close tags
-                matchTags: {bothTags: true}, // Highlight matching tags
-                indentUnit: 4, // Indentation unit is 4 spaces
-                tabSize: 4, // Tab size is 4 spaces
-                smartIndent: true, // Smart indentation
-                lineWrapping: true, // Wrap long lines
-                theme: 'eclipse', // Use the Eclipse theme
-                styleActiveLine: true, // Highlight active line
-                foldGutter: true, // Code folding
-                gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
-                extraKeys: {
-                  "Ctrl-Space": "autocomplete", // Enable autocomplete
-                  "Ctrl-Q": function(cm) { cm.foldCode(cm.getCursor()); }, // Fold code
-                  "Ctrl-F": "findPersistent", // Find functionality
-                  "Tab": function(cm) {
-                    // Insert spaces instead of tab character
-                    const spaces = Array(cm.getOption("indentUnit") + 1).join(" ");
-                    cm.replaceSelection(spaces);
-                  }
-                }
-              });
-              
-              // Update cursor position in status bar
-              codeMirror.on('cursorActivity', function() {
-                updateCursorPosition();
-              });
-              
-              // Mark initialization as successful
-              editorInitialized = true;
-              
-              // Ensure CodeMirror is refreshed when shown
-              setTimeout(function() {
-                if (codeMirror) {
-                  codeMirror.refresh();
-                  console.log('CodeMirror refreshed');
-                }
-              }, 100);
-              
-              return codeMirror;
-            } catch (error) {
-              console.error('Error initializing CodeMirror:', error);
-              alert('Error initializing the XML editor. Fall back to basic editor functionality.');
-              return null;
-            }
-          }
+          xml = xml.replace(/(>)(<)(\/*)/g, '$1\n$2$3'); // Add line breaks
           
-          // Update cursor position in status bar
-          function updateCursorPosition() {
-            if (!codeMirror) return;
-            
-            const cursorPosition = document.getElementById('cursor-position');
-            if (!cursorPosition) return;
-            
-            const cursor = codeMirror.getCursor();
-            cursorPosition.textContent = `Line: ${cursor.line + 1}, Column: ${cursor.ch + 1}`;
-          }
+          const lines = xml.split('\n');
           
-          // Format XML function
-          function formatXml() {
-            if (!codeMirror) return;
+          lines.forEach(line => {
+            // Skip blank lines
+            if (line.trim() === '') return;
             
-            try {
-              // Get the current XML content
-              let xmlContent = codeMirror.getValue();
+            const match = line.match(/^.*<(\/*)(.*?)(\s.*)?>/);
+            
+            if (match) {
+              const closing = match[1];
+              const opening = line.match(/<.*?>/g).length - (line.match(/<\/.*/g)?.length || 0);
               
-              // Basic XML formatting function
-              function prettyPrint(xml) {
-                let formatted = '';
-                let indent = '';
-                const tab = '  '; // 2 spaces for indentation
-                
-                xml = xml.replace(/(>)(<)(\/*)/g, '$1\n$2$3'); // Add line breaks
-                
-                const lines = xml.split('\n');
-                
-                lines.forEach(line => {
-                  // Skip blank lines
-                  if (line.trim() === '') return;
-                  
-                  const match = line.match(/^.*<(\/*)(.*?)(\s.*)?>/);
-                  
-                  if (match) {
-                    const closing = match[1];
-                    const opening = line.match(/<.*?>/g).length - (line.match(/<\/.*/g)?.length || 0);
-                    
-                    if (closing) {
-                      // This is a closing tag, reduce indent
-                      indent = indent.substring(tab.length);
-                    }
-                    
-                    // Add the line with proper indentation
-                    formatted += indent + line.trim() + '\n';
-                    
-                    if (!closing && opening === 1) {
-                      // This is an opening tag, increase indent
-                      indent += tab;
-                    }
-                  } else {
-                    // This is content or a non-standard line, just add it with current indent
-                    formatted += indent + line.trim() + '\n';
-                  }
-                });
-                
-                return formatted.trim();
+              if (closing) {
+                // This is a closing tag, reduce indent
+                indent = indent.substring(tab.length);
               }
               
-              // Format the XML
-              const formattedXml = prettyPrint(xmlContent);
+              // Add the line with proper indentation
+              formatted += indent + line.trim() + '\n';
               
-              // Update CodeMirror with formatted XML
-              codeMirror.setValue(formattedXml);
-              
-              // Put cursor at the beginning
-              codeMirror.setCursor(0, 0);
-              
-              console.log('XML formatted successfully');
-            } catch (error) {
-              console.error('Error formatting XML:', error);
-              alert('There was an error formatting the XML. Please check if your XML is valid.');
-            }
-          }
-          
-          // Toggle CodeMirror editor visibility
-          function toggleEditor() {
-            const editorBody = document.getElementById('editor-body');
-            if (!editorBody) {
-              console.error('Editor body not found');
-              return;
-            }
-            
-            // Toggle the open class
-            editorBody.classList.toggle('open');
-            
-            // Initialize or refresh CodeMirror when opening
-            if (editorBody.classList.contains('open')) {
-              if (!editorInitialized) {
-                // First time initialization
-                codeMirror = initCodeMirror();
-              } else {
-                // Refresh to ensure proper rendering
-                setTimeout(() => {
-                  if (codeMirror) {
-                    codeMirror.refresh();
-                  }
-                }, 10);
+              if (!closing && opening === 1) {
+                // This is an opening tag, increase indent
+                indent += tab;
               }
-            }
-            
-            console.log('Editor toggled, open state:', editorBody.classList.contains('open'));
-          }
-          
-          // Function to find text in CodeMirror
-          function findInEditor() {
-            if (!codeMirror) {
-              // If editor is not initialized or visible, show it first
-              const editorBody = document.getElementById('editor-body');
-              if (editorBody && !editorBody.classList.contains('open')) {
-                toggleEditor();
-                
-                // Wait for editor to be fully initialized
-                setTimeout(() => {
-                  if (codeMirror) {
-                    codeMirror.execCommand('findPersistent');
-                  }
-                }, 200);
-                return;
-              }
-              return;
-            }
-            
-            // Use CodeMirror's built-in search functionality
-            codeMirror.execCommand('findPersistent');
-          }
-          
-          // Function to find and highlight XML element by XPath
-          function findElementByXPath(xpath) {
-            console.log('Finding element with XPath:', xpath);
-            
-            // First make sure editor is open and initialized
-            const editorBody = document.getElementById('editor-body');
-            if (!editorBody) {
-              console.error('Editor body not found');
-              return false;
-            }
-            
-            // If editor is not already open, open it first
-            if (!editorBody.classList.contains('open')) {
-              console.log('Opening editor for XPath navigation');
-              editorBody.classList.add('open');
-              
-              // Initialize CodeMirror if needed and then process XPath
-              setTimeout(() => {
-                // Initialize if needed
-                if (!editorInitialized || !codeMirror) {
-                  codeMirror = initCodeMirror();
-                } else {
-                  codeMirror.refresh();
-                }
-                
-                // Now that editor is initialized, find the element
-                setTimeout(() => {
-                  processXPathNavigation(xpath);
-                }, 200);
-              }, 100);
-              
-              return true;
             } else {
-              // Editor is already open, just find the element
-              if (!editorInitialized || !codeMirror) {
-                codeMirror = initCodeMirror();
-              }
-              
-              // Find the element directly
-              return processXPathNavigation(xpath);
+              // This is content or a non-standard line, just add it with current indent
+              formatted += indent + line.trim() + '\n';
             }
-          }
-          
-          // Helper function to process XPath navigation once editor is ready
-          function processXPathNavigation(xpath) {
-            if (!codeMirror) {
-              console.error('CodeMirror not initialized');
-              return false;
-            }
-            
-            // Parse the XPath to handle position indicators
-            const xmlContent = codeMirror.getValue();
-            const xpathParts = xpath.split('/').filter(part => part.length > 0);
-            
-            let searchPos = 0;
-            let foundElement = false;
-            
-            for (let i = 0; i < xpathParts.length; i++) {
-              const part = xpathParts[i];
-              const tagName = part.replace(/\[\d+\]$/, '');
-              const positionMatch = part.match(/\[(\d+)\]$/);
-              const position = positionMatch ? parseInt(positionMatch[1]) : 1;
-              
-              // Find the nth occurrence of the tag
-              let count = 0;
-              let tagPos = -1;
-              let match;
-              const tagRegex = new RegExp('<' + tagName + '(?:\\s|/|>)', 'g');
-              
-              while ((match = tagRegex.exec(xmlContent.substring(searchPos))) !== null && count < position) {
-                count++;
-                tagPos = searchPos + match.index;
-                
-                if (count === position) {
-                  searchPos = tagPos;
-                  
-                  // If this is the last part of the xpath, we've found our element
-                  if (i === xpathParts.length - 1) {
-                    foundElement = true;
-                  }
-                  break;
-                }
-              }
-              
-              // If we couldn't find the required occurrence, break
-              if (count < position) {
-                break;
-              }
-            }
-            
-            if (foundElement) {
-              console.log('Element found, determining boundaries');
-              // Find the closing tag to determine element boundaries
-              const lastPart = xpathParts[xpathParts.length - 1];
-              const elementName = lastPart.replace(/\[\d+\]$/, '');
-              
-              let depth = 1;
-              let endPos = searchPos;
-              
-              // Search for closing tag, considering nesting
-              for (let i = searchPos + 1; i < xmlContent.length && depth > 0; i++) {
-                // Check for opening tag
-                if (xmlContent.substring(i, i + elementName.length + 1).indexOf('<' + elementName) === 0) {
-                  // Make sure it's a tag and not part of text
-                  const nextChar = xmlContent.charAt(i + elementName.length + 1);
-                  if (nextChar === ' ' || nextChar === '/' || nextChar === '>') {
-                    depth++;
-                  }
-                }
-                // Check for closing tag
-                else if (xmlContent.substring(i, i + elementName.length + 2).indexOf('</' + elementName) === 0) {
-                  depth--;
-                  if (depth === 0) {
-                    // Find the end of the closing tag
-                    const closeTagEnd = xmlContent.indexOf('>', i);
-                    if (closeTagEnd !== -1) {
-                      endPos = closeTagEnd + 1; // Length of '>'
-                    }
-                    break;
-                  }
-                }
-              }
-              
-              console.log('Setting CodeMirror selection');
-              
-              // Convert positions to line and character positions for CodeMirror
-              const startPos = codeMirror.posFromIndex(searchPos);
-              const endPosition = codeMirror.posFromIndex(endPos);
-              
-              // Select the element in CodeMirror
-              codeMirror.setSelection(startPos, endPosition);
-              
-              // Scroll to make the selection visible
-              const middleLine = Math.floor((startPos.line + endPosition.line) / 2);
-              codeMirror.scrollIntoView({line: middleLine, ch: 0}, 100);
-              
-              // Add background highlight to the selected area
-              const marker = codeMirror.markText(startPos, endPosition, {
-                className: 'xpath-highlight'
-              });
-              
-              // Remove highlight after a few seconds
-              setTimeout(() => {
-                if (marker) marker.clear();
-              }, 3000);
-              
-              console.log('Element highlighted in editor');
-              return true;
-            } else {
-              console.log('Element not found in XML content');
-              alert('Could not find the specified element. The XML structure may have changed.');
-              return false;
-            }
-          }
-          
-          // Helper function for direct file download
-          function downloadFile(content, filename, mimeType) {
-            try {
-              const blob = new Blob([content], { type: mimeType });
-              const url = URL.createObjectURL(blob);
-              
-              const a = document.createElement('a');
-              a.href = url;
-              a.download = filename;
-              document.body.appendChild(a);
-              a.click();
-              document.body.removeChild(a);
-              
-              URL.revokeObjectURL(url);
-              console.log('File downloaded via direct method');
-              
-              return true;
-            } catch (err) {
-              console.error('Error in download:', err);
-              alert('Could not download the file: ' + err.message);
-              return false;
-            }
-          }
-          
-          // Function to generate CSV content from the table
-          function generateCsvContent() {
-            const table = document.getElementById('validation-table');
-            if (!table) {
-              console.error('Validation table not found');
-              return '';
-            }
-            
-            const rows = table.querySelectorAll('tr');
-            if (rows.length === 0) {
-              console.error('No rows found in validation table');
-              return '';
-            }
-            
-            let csv = [];
-            
-            // Get headers
-            const headers = [];
-            const headerCells = rows[0].querySelectorAll('th');
-            headerCells.forEach(cell => {
-              headers.push('"' + cell.textContent.trim() + '"');
-            });
-            csv.push(headers.join(','));
-            
-            // Get table data
-            for (let i = 1; i < rows.length; i++) {
-              // Skip hidden rows (filtered out)
-              if (rows[i].style.display === 'none') continue;
-              
-              const row = rows[i];
-              const cells = row.querySelectorAll('td');
-              const rowData = [];
-              
-              cells.forEach((cell, index) => {
-                // Special case for severity column - extract text from badge
-                if (index === 0) {
-                  const badge = cell.querySelector('.severity-badge');
-                  if (badge) {
-                    rowData.push('"' + badge.textContent.trim() + '"');
-                  } else {
-                    rowData.push('""');
-                  }
-                } 
-                // Special case for location column - extract path from tooltip
-                else if (index === 1 && cell.querySelector('.tooltip')) {
-                  const tooltip = cell.querySelector('.tooltiptext');
-                  rowData.push('"' + (tooltip ? tooltip.textContent.trim() : '') + '"');
-                }
-                // Element value column - extract text without HTML
-                else if (index === 4) {
-                  const preElement = cell.querySelector('pre');
-                  rowData.push('"' + (preElement ? preElement.textContent.replace(/"/g, '""') : '') + '"');
-                }
-                // Regular columns
-                else {
-                  rowData.push('"' + cell.textContent.trim().replace(/"/g, '""') + '"');
-                }
-              });
-              
-              csv.push(rowData.join(','));
-            }
-            
-            return csv.join('\n');
-          }
-          
-          // Function to directly save XML file using File System Access API
-          async function saveXmlDirectly() {
-            try {
-              // Make sure editor is initialized
-              if (!editorInitialized) {
-                console.error('Editor not initialized');
-                alert('Please open the editor first.');
-                return;
-              }
-              
-              if (!codeMirror) {
-                console.error('CodeMirror editor not initialized');
-                return;
-              }
-              
-              // Get original filename and prepare default save name
-              const fileInfoSpan = document.querySelector('.file-info span');
-              if (!fileInfoSpan) {
-                console.error('File info span not found');
-                alert('Error: Could not find file info element');
-                return;
-              }
-              
-              const originalFileName = fileInfoSpan.textContent.trim();
-              let suggestedName = 'edited_' + originalFileName;
-              
-              // Make sure extension is either .xml or .diggs
-              if (!suggestedName.endsWith('.xml') && !suggestedName.endsWith('.diggs')) {
-                suggestedName += '.xml';
-              }
-              
-              // Get XML content from CodeMirror
-              const xmlContent = codeMirror.getValue();
-              
-              // Try to use File System Access API
-              if ('showSaveFilePicker' in window) {
-                try {
-                  console.log('Attempting to use File System Access API directly');
-                  
-                  const opts = {
-                    suggestedName: suggestedName,
-                    types: [{
-                      description: 'XML Files',
-                      accept: {
-                        'application/xml': ['.xml', '.diggs']
-                      }
-                    }]
-                  };
-                  
-                  // Show file picker dialog directly
-                  const fileHandle = await window.showSaveFilePicker(opts);
-                  console.log('File handle obtained:', fileHandle);
-                  
-                  // Create a writable stream
-                  const writable = await fileHandle.createWritable();
-                  console.log('Writable stream created');
-                  
-                  // Write the content
-                  await writable.write(xmlContent);
-                  console.log('Content written');
-                  
-                  // Close the stream
-                  await writable.close();
-                  console.log('File saved successfully');
-                  
-                  return true;
-                } catch (err) {
-                  console.error('Error using File System Access API:', err);
-                  
-                  // If user cancelled, just return
-                  if (err.name === 'AbortError') {
-                    console.log('User cancelled the file save operation');
-                    return false;
-                  }
-                  
-                  // Fall back to direct download without dialog
-                  console.log('Falling back to direct download');
-                  downloadFile(xmlContent, suggestedName, 'application/xml');
-                }
-              } else {
-                // Fall back to direct download without dialog
-                console.log('File System Access API not supported, using direct download');
-                downloadFile(xmlContent, suggestedName, 'application/xml');
-              }
-            } catch (err) {
-              console.error('Error in direct save operation:', err);
-              alert('Error saving file: ' + err.message);
-            }
-          }
-          
-          // Function to directly save CSV file using File System Access API or direct download
-          async function saveCsvDirectly() {
-            try {
-              // Get original filename and prepare default save name
-              const fileInfoSpan = document.querySelector('.file-info span');
-              if (!fileInfoSpan) {
-                console.error('File info span not found');
-                alert('Error: Could not find file info element');
-                return;
-              }
-              
-              const originalFileName = fileInfoSpan.textContent.trim();
-              let suggestedName = originalFileName + '_validation_report.csv';
-              
-              // Make sure extension is csv
-              if (!suggestedName.endsWith('.csv')) {
-                suggestedName += '.csv';
-              }
-              
-              // Get CSV content
-              const csvData = generateCsvContent();
-              if (!csvData || csvData.length === 0) {
-                console.error('Failed to generate CSV content');
-                alert('Error: Failed to generate CSV content. No data available.');
-                return;
-              }
-              
-              console.log('CSV Data generated:', csvData.substring(0, 100) + '...');
-              
-              // Try to use File System Access API
-              if ('showSaveFilePicker' in window) {
-                try {
-                  console.log('Attempting to use File System Access API directly for CSV');
-                  
-                  const opts = {
-                    suggestedName: suggestedName,
-                    types: [{
-                      description: 'CSV Files',
-                      accept: {
-                        'text/csv': ['.csv']
-                      }
-                    }]
-                  };
-                  
-                  // Show file picker dialog directly
-                  const fileHandle = await window.showSaveFilePicker(opts);
-                  console.log('CSV file handle obtained:', fileHandle);
-                  
-                  // Create a writable stream
-                  const writable = await fileHandle.createWritable();
-                  console.log('CSV writable stream created');
-                  
-                  // Write the content
-                  await writable.write(csvData);
-                  console.log('CSV content written');
-                  
-                  // Close the stream
-                  await writable.close();
-                  console.log('CSV file saved successfully');
-                  
-                  return true;
-                } catch (err) {
-                  console.error('Error using File System Access API for CSV:', err);
-                  
-                  // If user cancelled, just return
-                  if (err.name === 'AbortError') {
-                    console.log('User cancelled the CSV file save operation');
-                    return false;
-                  }
-                  
-                  // Fall back to direct download without dialog
-                  console.log('Falling back to direct download for CSV');
-                  downloadFile(csvData, suggestedName, 'text/csv;charset=utf-8;');
-                }
-              } else {
-                // Fall back to direct download without dialog
-                console.log('File System Access API not supported, using direct download');
-                downloadFile(csvData, suggestedName, 'text/csv;charset=utf-8;');
-              }
-            } catch (err) {
-              console.error('Error in direct CSV save operation:', err);
-              alert('Error saving CSV file: ' + err.message);
-            }
-          }
-          
-          // Set up event listeners for all buttons and links
-          
-          // Set up editor toggle button
-          const toggleEditorBtn = document.getElementById('toggle-editor');
-          if (toggleEditorBtn) {
-            toggleEditorBtn.addEventListener('click', toggleEditor);
-          } else {
-            console.error('Toggle editor button not found');
-          }
-          
-          // Set up save XML button
-          const saveXmlBtn = document.getElementById('save-xml');
-          if (saveXmlBtn) {
-            saveXmlBtn.addEventListener('click', saveXmlDirectly);
-          } else {
-            console.error('Save XML button not found');
-          }
-          
-          // Set up format XML button
-          const formatXmlBtn = document.getElementById('format-xml');
-          if (formatXmlBtn) {
-            formatXmlBtn.addEventListener('click', formatXml);
-          } else {
-            console.error('Format XML button not found');
-          }
-          
-          // Set up find button
-          const findXmlBtn = document.getElementById('find-xml');
-          if (findXmlBtn) {
-            findXmlBtn.addEventListener('click', findInEditor);
-          } else {
-            console.error('Find XML button not found');
-          }
-          
-          // Set up export CSV button
-          const exportCsvBtn = document.getElementById('export-csv');
-          if (exportCsvBtn) {
-            exportCsvBtn.addEventListener('click', function() {
-              console.log('Export CSV button clicked');
-              saveCsvDirectly();
-            });
-          } else {
-            console.error('Export CSV button not found');
-          }
-          
-          // Set up XPath links - FIXED SELECTOR
-          const xpathLinks = document.querySelectorAll('.xpath-link');
-          console.log('Found XPath links:', xpathLinks.length);
-          
-          xpathLinks.forEach(function(link) {
-            link.addEventListener('click', function(e) {
-              console.log('XPath link clicked');
-              // Prevent default link behavior
-              e.preventDefault();
-              
-              const xpath = this.getAttribute('data-xpath');
-              if (!xpath) {
-                console.error('No XPath data attribute found');
-                return;
-              }
-              
-              console.log('Navigating to XPath:', xpath);
-              findElementByXPath(xpath);
-            });
           });
           
-          // Set up cancel button for XML save dialog
-          const saveDialog = document.getElementById('save-file-dialog');
-          const cancelSaveButton = document.getElementById('cancel-save');
+          return formatted.trim();
+        }
+        
+        // Format the XML
+        const formattedXml = prettyPrint(xmlContent);
+        
+        // Update CodeMirror with formatted XML
+        editor.setValue(formattedXml);
+        
+        // Put cursor at the beginning
+        editor.setCursor(0, 0);
+        
+        console.log('XML formatted successfully');
+        return true;
+      } catch (error) {
+        console.error('Error formatting XML:', error);
+        alert('There was an error formatting the XML. Please check if your XML is valid.');
+        return false;
+      }
+    },
+    
+    /**
+     * Find text in the editor
+     * @returns {boolean} - Success status
+     */
+    findInEditor: function() {
+      const editor = this.getEditor(true); // Show editor if needed
+      if (!editor) return false;
+      
+      // Use CodeMirror's built-in search functionality
+      editor.execCommand('findPersistent');
+      return true;
+    }
+  };
+  
+  //Function to find and select text based on View Element link in report record
+function findElementByXPath(xpath) {
+  console.log('Finding element with XPath:', xpath);
+  
+  // Get the editor, showing it if needed
+  const editor = EditorManager.getEditor(true);
+  if (!editor) {
+    console.error('Could not initialize editor for XPath navigation');
+    return false;
+  }
+  
+  // Clear any existing selection before starting a new search
+  editor.setCursor(editor.getCursor());
+  
+  // Parse the XPath to handle position indicators
+  const xmlContent = editor.getValue();
+  const xpathParts = xpath.split('/').filter(part => part.length > 0);
+  
+  let searchPos = 0;
+  let foundElement = false;
+  
+  for (let i = 0; i < xpathParts.length; i++) {
+    const part = xpathParts[i];
+    const tagName = part.replace(/\[\d+\]$/, '');
+    const positionMatch = part.match(/\[(\d+)\]$/);
+    const position = positionMatch ? parseInt(positionMatch[1]) : 1;
+    
+    // Find the nth occurrence of the tag
+    let count = 0;
+    let tagPos = -1;
+    let match;
+    const tagRegex = new RegExp('<' + tagName + '(?:\\s|/|>)', 'g');
+    
+    while ((match = tagRegex.exec(xmlContent.substring(searchPos))) !== null && count < position) {
+      count++;
+      tagPos = searchPos + match.index;
+      
+      if (count === position) {
+        searchPos = tagPos;
+        
+        // If this is the last part of the xpath, we've found our element
+        if (i === xpathParts.length - 1) {
+          foundElement = true;
+        }
+        break;
+      }
+    }
+    
+    // If we couldn't find the required occurrence, break
+    if (count < position) {
+      break;
+    }
+  }
+  
+  if (foundElement) {
+    console.log('Element found, determining boundaries');
+    // Find the closing tag to determine element boundaries
+    const lastPart = xpathParts[xpathParts.length - 1];
+    const elementName = lastPart.replace(/\[\d+\]$/, '');
+    
+    let depth = 1;
+    let endPos = searchPos;
+    
+    // Search for closing tag, considering nesting
+    for (let i = searchPos + 1; i < xmlContent.length && depth > 0; i++) {
+      // Check for opening tag
+      if (xmlContent.substring(i, i + elementName.length + 1).indexOf('<' + elementName) === 0) {
+        // Make sure it's a tag and not part of text
+        const nextChar = xmlContent.charAt(i + elementName.length + 1);
+        if (nextChar === ' ' || nextChar === '/' || nextChar === '>') {
+          depth++;
+        }
+      }
+      // Check for closing tag
+      else if (xmlContent.substring(i, i + elementName.length + 2).indexOf('</' + elementName) === 0) {
+        depth--;
+        if (depth === 0) {
+          // Find the end of the closing tag
+          const closeTagEnd = xmlContent.indexOf('>', i);
+          if (closeTagEnd !== -1) {
+            endPos = closeTagEnd + 1; // Length of '>'
+          }
+          break;
+        }
+      }
+    }
+    
+    console.log('Setting CodeMirror selection');
+    
+    // Convert positions to line and character positions for CodeMirror
+    const startPos = editor.posFromIndex(searchPos);
+    const endPosition = editor.posFromIndex(endPos);
+    
+    // Select the element in CodeMirror - this is all we need!
+    editor.setSelection(startPos, endPosition);
+    
+    // Calculate line positions for better centering
+    const selectionHeight = endPosition.line - startPos.line;
+    const visibleLines = Math.floor(350 / editor.defaultTextHeight()) - 4; // Estimate visible lines in 350px - buffer
+    
+    // Scroll to show the selection
+    if (selectionHeight > visibleLines) {
+      // For large selections, focus on the start of the selection with some padding above
+      const paddingLines = Math.min(Math.floor(visibleLines * 0.3), 5); // 30% of visible area or max 5 lines
+      const targetLine = Math.max(0, startPos.line - paddingLines);
+      
+      // Use scrollTo instead of scrollIntoView for more control
+      const targetPos = editor.heightAtLine(targetLine, "local");
+      editor.scrollTo(null, targetPos);
+    } else {
+      // For smaller selections that fit in the window, center it
+      const middleLine = Math.floor((startPos.line + endPosition.line) / 2);
+      
+      // Calculate the ideal position
+      const middleHeight = editor.heightAtLine(middleLine, "local");
+      const windowMiddle = editor.getScrollInfo().clientHeight / 2;
+      const targetPos = middleHeight - windowMiddle;
+      
+      // Ensure we don't scroll beyond document boundaries
+      const maxScroll = editor.getScrollInfo().height - editor.getScrollInfo().clientHeight;
+      const scrollPos = Math.max(0, Math.min(targetPos, maxScroll));
+      
+      // Apply the scroll
+      editor.scrollTo(null, scrollPos);
+    }
+    
+    // Set up a one-time listener to clear the selection when the user interacts
+    const clearSelectionOnInteraction = () => {
+      editor.setCursor(editor.getCursor()); // This clears the selection
+      editor.off('cursorActivity', clearSelectionOnInteraction);
+    };
+    
+    editor.on('cursorActivity', clearSelectionOnInteraction);
+    
+    console.log('Element found and selected in editor');
+    return true;
+  } else {
+    console.log('Element not found in XML content');
+    alert('Could not find the specified element. The XML structure may have changed.');
+    return false;
+  }
+}
+
+  /**
+   * Directly save XML file using File System Access API with fallback to direct download
+   * @returns {Promise<boolean>} True if save was successful
+   */
+  async function saveXmlDirectly() {
+    try {
+      // Get the editor from the manager
+      const editor = EditorManager.getEditor();
+      if (!editor) {
+        alert('Please open the editor first.');
+        return false;
+      }
+      
+      // Get original filename and prepare default save name
+      const fileInfoSpan = document.querySelector('.file-info span');
+      if (!fileInfoSpan) {
+        console.error('File info span not found');
+        alert('Error: Could not determine filename');
+        return false;
+      }
+      
+      // Prepare filename
+      const originalFileName = fileInfoSpan.textContent.trim();
+      let suggestedName = 'edited_' + originalFileName;
+      
+      // Ensure proper file extension
+      if (!suggestedName.endsWith('.xml') && !suggestedName.endsWith('.diggs')) {
+        suggestedName += '.xml';
+      }
+      
+      // Get XML content from CodeMirror
+      const xmlContent = editor.getValue();
+      
+      // Try to use File System Access API if available
+      if ('showSaveFilePicker' in window) {
+        try {
+          console.log('Using File System Access API');
           
-          if (cancelSaveButton && saveDialog) {
-            cancelSaveButton.addEventListener('click', function() {
-              saveDialog.style.display = 'none';
-            });
-          } else {
-            console.warn('Save dialog or cancel button not found');
+          const opts = {
+            suggestedName: suggestedName,
+            types: [{
+              description: 'XML Files',
+              accept: {
+                'application/xml': ['.xml', '.diggs']
+              }
+            }]
+          };
+          
+          // Show native file picker dialog
+          const fileHandle = await window.showSaveFilePicker(opts);
+          
+          // Create a writable stream and write content
+          const writable = await fileHandle.createWritable();
+          await writable.write(xmlContent);
+          await writable.close();
+          
+          console.log('XML file saved successfully via File System Access API');
+          return true;
+        } catch (err) {
+          console.error('Error using File System Access API:', err);
+          
+          // If user cancelled, just return
+          if (err.name === 'AbortError') {
+            console.log('User cancelled the file save operation');
+            return false;
           }
           
-          console.log('DOM fully loaded and JavaScript initialization completed');
-        });
-        ]]>
+          // Fall back to direct download
+          console.log('Falling back to direct download');
+          return downloadFile(xmlContent, suggestedName, 'application/xml');
+        }
+      } else {
+        // Fall back to direct download
+        console.log('File System Access API not supported, using direct download');
+        return downloadFile(xmlContent, suggestedName, 'application/xml');
+      }
+    } catch (err) {
+      console.error('Error in save operation:', err);
+      alert('Error saving XML file: ' + err.message);
+      return false;
+    }
+  }
+  
+  /**
+   * Directly save CSV report using File System Access API with fallback to direct download
+   * @returns {Promise<boolean>} True if save was successful
+   */
+  async function saveCsvDirectly() {
+    try {
+      // Get original filename and prepare default save name
+      const fileInfoSpan = document.querySelector('.file-info span');
+      if (!fileInfoSpan) {
+        console.error('File info span not found');
+        alert('Error: Could not determine filename');
+        return false;
+      }
+      
+      // Prepare filename
+      const originalFileName = fileInfoSpan.textContent.trim();
+      let suggestedName = originalFileName.replace(/\.[^/.]+$/, '') + '_validation_report.csv';
+      
+      // Ensure proper file extension
+      if (!suggestedName.endsWith('.csv')) {
+        suggestedName += '.csv';
+      }
+      
+      // Generate CSV content
+      const csvData = generateCsvContent();
+      if (!csvData || csvData.length === 0) {
+        console.error('Failed to generate CSV content');
+        alert('Error: No validation data available to export');
+        return false;
+      }
+      
+      // Try to use File System Access API if available
+      if ('showSaveFilePicker' in window) {
+        try {
+          console.log('Using File System Access API for CSV');
+          
+          const opts = {
+            suggestedName: suggestedName,
+            types: [{
+              description: 'CSV Files',
+              accept: {
+                'text/csv': ['.csv']
+              }
+            }]
+          };
+          
+          // Show native file picker dialog
+          const fileHandle = await window.showSaveFilePicker(opts);
+          
+          // Create a writable stream and write content
+          const writable = await fileHandle.createWritable();
+          await writable.write(csvData);
+          await writable.close();
+          
+          console.log('CSV file saved successfully via File System Access API');
+          return true;
+        } catch (err) {
+          console.error('Error using File System Access API for CSV:', err);
+          
+          // If user cancelled, just return
+          if (err.name === 'AbortError') {
+            console.log('User cancelled the CSV file save operation');
+            return false;
+          }
+          
+          // Fall back to direct download
+          console.log('Falling back to direct download for CSV');
+          return downloadFile(csvData, suggestedName, 'text/csv;charset=utf-8;');
+        }
+      } else {
+        // Fall back to direct download
+        console.log('File System Access API not supported, using direct download for CSV');
+        return downloadFile(csvData, suggestedName, 'text/csv;charset=utf-8;');
+      }
+    } catch (err) {
+      console.error('Error in CSV save operation:', err);
+      alert('Error saving CSV file: ' + err.message);
+      return false;
+    }
+  }
+  
+  /**
+   * Helper function for direct file download when File System Access API is unavailable
+   * @param {string} content - File content to download
+   * @param {string} filename - Suggested filename
+   * @param {string} mimeType - MIME type of the file
+   * @returns {boolean} True if download was initiated successfully
+   */
+  function downloadFile(content, filename, mimeType) {
+    try {
+      // Create blob and download link
+      const blob = new Blob([content], { type: mimeType });
+      const url = URL.createObjectURL(blob);
+      
+      // Create and trigger download
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      
+      // Clean up
+      URL.revokeObjectURL(url);
+      console.log(`File "${filename}" downloaded via direct method`);
+      
+      return true;
+    } catch (err) {
+      console.error('Error in download:', err);
+      alert('Could not download the file: ' + err.message);
+      return false;
+    }
+  }
+  
+  /**
+   * Function to generate CSV content from the validation table
+   * @returns {string} CSV content
+   */
+  function generateCsvContent() {
+    const table = document.getElementById('validation-table');
+    if (!table) {
+      console.error('Validation table not found');
+      return '';
+    }
+    
+    const rows = table.querySelectorAll('tr');
+    if (rows.length === 0) {
+      console.error('No rows found in validation table');
+      return '';
+    }
+    
+    let csv = [];
+    
+    // Get headers
+    const headers = [];
+    const headerCells = rows[0].querySelectorAll('th');
+    headerCells.forEach(cell => {
+      headers.push('"' + cell.textContent.trim() + '"');
+    });
+    csv.push(headers.join(','));
+    
+    // Get table data
+    for (let i = 1; i < rows.length; i++) {
+      // Skip hidden rows (filtered out)
+      if (rows[i].style.display === 'none') continue;
+      
+      const row = rows[i];
+      const cells = row.querySelectorAll('td');
+      const rowData = [];
+      
+      cells.forEach((cell, index) => {
+        // Special case for severity column - extract text from badge
+        if (index === 0) {
+          const badge = cell.querySelector('.severity-badge');
+          if (badge) {
+            rowData.push('"' + badge.textContent.trim() + '"');
+          } else {
+            rowData.push('""');
+          }
+        } 
+        // Special case for location column - extract path from tooltip
+        else if (index === 1 && cell.querySelector('.tooltip')) {
+          const tooltip = cell.querySelector('.tooltiptext');
+          rowData.push('"' + (tooltip ? tooltip.textContent.trim() : '') + '"');
+        }
+        // Element value column - extract text without HTML
+        else if (index === 4) {
+          const preElement = cell.querySelector('pre');
+          rowData.push('"' + (preElement ? preElement.textContent.replace(/"/g, '""') : '') + '"');
+        }
+        // Regular columns
+        else {
+          rowData.push('"' + cell.textContent.trim().replace(/"/g, '""') + '"');
+        }
+      });
+      
+      csv.push(rowData.join(','));
+    }
+    
+    return csv.join('\n');
+  }
+  
+  /**
+   * Filter table rows by severity
+   * @param {string} severity - Severity to filter by ('all', 'error', 'warning', 'info')
+   */
+  function filterBySeverity(severity) {
+    const table = document.getElementById('validation-table');
+    if (!table) {
+      console.error('Validation table not found');
+      return;
+    }
+    
+    const tbody = table.getElementsByTagName('tbody')[0];
+    if (!tbody) {
+      console.error('Table body not found');
+      return;
+    }
+    
+    const rows = tbody.getElementsByTagName('tr');
+    
+    for (let i = 0; i < rows.length; i++) {
+      const row = rows[i];
+      if (severity === 'all') {
+        row.style.display = '';
+      } else {
+        const severityCell = row.getElementsByTagName('td')[0];
+        if (!severityCell) continue;
+        
+        const badge = severityCell.querySelector('.severity-badge');
+        if (!badge) continue;
+        
+        const severityText = badge.textContent.trim().toLowerCase();
+        
+        if (severityText === severity) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      }
+    }
+  }
+  
+  // Set up event listeners for all interactive elements
+  function setupEventListeners() {
+    console.log('Setting up event listeners');
+    
+    // Editor toggle button
+    const toggleEditorBtn = document.getElementById('toggle-editor');
+    if (toggleEditorBtn) {
+      toggleEditorBtn.addEventListener('click', () => EditorManager.toggleVisibility());
+    } else {
+      console.error('Toggle editor button not found');
+    }
+    
+    // Save XML button
+    const saveXmlBtn = document.getElementById('save-xml');
+    if (saveXmlBtn) {
+      saveXmlBtn.addEventListener('click', saveXmlDirectly);
+    } else {
+      console.error('Save XML button not found');
+    }
+    
+    // Format XML button
+    const formatXmlBtn = document.getElementById('format-xml');
+    if (formatXmlBtn) {
+      formatXmlBtn.addEventListener('click', () => EditorManager.formatXml());
+    } else {
+      console.error('Format XML button not found');
+    }
+    
+    // Find button
+    const findXmlBtn = document.getElementById('find-xml');
+    if (findXmlBtn) {
+      findXmlBtn.addEventListener('click', () => EditorManager.findInEditor());
+    } else {
+      console.error('Find XML button not found');
+    }
+    
+    // Export CSV button
+    const exportCsvBtn = document.getElementById('export-csv');
+    if (exportCsvBtn) {
+      exportCsvBtn.addEventListener('click', () => saveCsvDirectly());
+    } else {
+      console.error('Export CSV button not found');
+    }
+    
+    // Set up XPath links
+    const xpathLinks = document.querySelectorAll('.xpath-link');
+    console.log('Found XPath links:', xpathLinks.length);
+    
+    xpathLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const xpath = link.getAttribute('data-xpath');
+        if (xpath) {
+          console.log('Navigating to XPath:', xpath);
+          findElementByXPath(xpath);
+        } else {
+          console.error('No XPath data attribute found');
+        }
+      });
+    });
+    
+    // Set up severity filter
+    const severityFilter = document.getElementById('severity-filter');
+    if (severityFilter) {
+      severityFilter.addEventListener('change', function() {
+        filterBySeverity(this.value);
+      });
+    } else {
+      console.error('Severity filter dropdown not found');
+    }
+    
+    console.log('Event listeners set up successfully');
+  }
+  
+  // Initialize everything
+  setupEventListeners();
+  
+  // Initial filter
+  const severityFilter = document.getElementById('severity-filter');
+  if (severityFilter) {
+    filterBySeverity(severityFilter.value);
+  } else {
+    console.error('Severity filter dropdown not found');
+  }
+  
+  console.log('Initialization complete');
+});
+]]>
         </script>
       </body>
     </html>

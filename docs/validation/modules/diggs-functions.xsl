@@ -6,7 +6,8 @@
     xmlns:diggs="http://diggsml.org/schema-dev"
     xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:error="http://www.w3.org/2005/xqt-errors"
-    exclude-result-prefixes="xs map diggs gml error">
+    xmlns:json="http://www.w3.org/2005/xpath-functions"
+    exclude-result-prefixes="xs map diggs gml error json">
 
     
     <!-- Static variable to store the whitelist document - with required select attribute -->
@@ -301,11 +302,12 @@
         <xsl:param name="text" as="xs:string"/>            <!-- Message text content -->
         <xsl:param name="sourceElement" as="node()?"/>     <!-- Source element to include in the message -->
         
-        <!-- Debug output -->
+        <!-- Debug output 
         <xsl:message>DEBUG: createMessage called with severity: <xsl:value-of select="$severity"/></xsl:message>
         <xsl:message>DEBUG: elementPath: <xsl:value-of select="$elementPath"/></xsl:message>
         <xsl:message>DEBUG: text: <xsl:value-of select="$text"/></xsl:message>
         <xsl:message>DEBUG: sourceElement exists: <xsl:value-of select="exists($sourceElement)"/></xsl:message>
+        -->
         
         <message>
             <severity><xsl:value-of select="$severity"/></severity>
@@ -520,6 +522,83 @@
                 </xsl:try>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:function>
+    
+    <!-- 
+    Function to extract values from a JSON API response based on a key
+    Parameters:
+      - url: The URL of the API endpoint
+      - key: The name of the key to extract values for
+    Returns:
+      - A sequence of string values
+  -->
+    <xsl:function name="diggs:extractJsonValues" as="xs:string*">
+        <xsl:param name="url" as="xs:string"/>
+        <xsl:param name="key" as="xs:string"/>
+        
+        <xsl:variable name="response">
+            <xsl:try>
+                <xsl:sequence select="unparsed-text($url)"/>
+                <xsl:catch>
+                    <xsl:message terminate="no">Error fetching from URL: <xsl:value-of select="$url"/> - <xsl:value-of select="$error:description"/></xsl:message>
+                    <xsl:sequence select="''"/>
+                </xsl:catch>
+            </xsl:try>
+        </xsl:variable>
+        
+        <xsl:if test="string-length($response) > 0">
+            <xsl:variable name="jsonXml">
+                <xsl:try>
+                    <xsl:sequence select="json-to-xml($response)"/>
+                    <xsl:catch>
+                        <xsl:message terminate="no">Error parsing JSON: <xsl:value-of select="$error:description"/></xsl:message>
+                        <xsl:sequence select="''"/>
+                    </xsl:catch>
+                </xsl:try>
+            </xsl:variable>
+            
+            <xsl:choose>
+                <!-- Case 1: The key exists as an array directly in the root -->
+                <xsl:when test="$jsonXml//json:array[@key = $key]">
+                    <xsl:for-each select="$jsonXml//json:array[@key = $key]/*">
+                        <xsl:choose>
+                            <xsl:when test="self::json:string">
+                                <xsl:sequence select="string()"/>
+                            </xsl:when>
+                            <xsl:when test="self::json:number">
+                                <xsl:sequence select="string()"/>
+                            </xsl:when>
+                            <xsl:when test="self::json:boolean">
+                                <xsl:sequence select="string()"/>
+                            </xsl:when>
+                            <xsl:when test="self::json:null">
+                                <xsl:sequence select="'null'"/>
+                            </xsl:when>
+                            <!-- Handle objects in the array that have the key we want -->
+                            <xsl:when test="self::json:map and ./*[@key = $key]">
+                                <xsl:sequence select="./*[@key = $key]/string()"/>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:for-each>
+                </xsl:when>
+                
+                <!-- Case 2: Array directly in the root object (no specific key) -->
+                <xsl:when test="$jsonXml/json:array">
+                    <xsl:for-each select="$jsonXml/json:array/json:map">
+                        <xsl:if test="./*[@key = $key]">
+                            <xsl:sequence select="./*[@key = $key]/string()"/>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:when>
+                
+                <!-- Case 3: The key appears in multiple objects at any level -->
+                <xsl:otherwise>
+                    <xsl:for-each select="$jsonXml/descendant::*[@key = $key]">
+                        <xsl:sequence select="string()"/>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
     </xsl:function>
 
 </xsl:stylesheet>
