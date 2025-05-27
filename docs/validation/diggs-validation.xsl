@@ -21,7 +21,7 @@
     
    
     <!-- Global variables -->
-    <xsl:variable name="whiteListFile" select="'https://diggsml.org/def/validation/whiteList.xml'"/>   
+    <xsl:variable name="whiteListFile" select="'./whiteList.xml'"/>   
     
        <xsl:variable name="whiteList" select="if (doc-available($whiteListFile)) then doc($whiteListFile) else ()"/>
    
