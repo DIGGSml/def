@@ -21,7 +21,7 @@
     
    
     <!-- Global variables -->
-    <xsl:variable name="whiteListFile" select="'./whiteList.xml'"/>   
+    <xsl:variable name="whiteListFile" select="'https://diggsml.org/def/validation/whiteList.xml'"/>   
     
        <xsl:variable name="whiteList" select="if (doc-available($whiteListFile)) then doc($whiteListFile) else ()"/>
    
@@ -49,9 +49,9 @@
     <!-- Import dictionary-validation module -->
     <xsl:import href="modules/dictionary-validation.xsl"/>
  
-    <!-- Import schematron-validation module 
+    <!-- Import schematron-validation module     -->
     <xsl:import href="modules/schematron-validation.xsl"/>
-    -->
+
  
     <!-- Import other modules here once they are developed -->
     
@@ -96,11 +96,11 @@
                         <xsl:with-param name="whiteList" select="$whiteList"/>
                     </xsl:call-template>
                     
-                    <!-- Run schematron validation, passing the whitelist
+                    <!-- Run schematron validation, passing the whitelist ans xoriginalXML -->
                     <xsl:call-template name="schematronValidation">
                         <xsl:with-param name="whiteList" select="$whiteList"/>
+                        <xsl:with-param name="sourceDocument" select="$originalXml"/>
                     </xsl:call-template>
-                     -->
                    
                     <!-- Other validation modules will be called here as they are developed -->
                 </xsl:if>
