@@ -18,8 +18,8 @@
             
             <xsl:try>
                 <!-- Step 1: Load and compile the Schematron rules -->
-                <xsl:variable name="schematronRulesPath" select="resolve-uri('modules/diggs_schematron_rules.sch', base-uri(/))"/>
-                <xsl:variable name="pipelineStylesheetPath" select="resolve-uri('modules/schxslt_2.0/pipeline-for-svrl.xsl', base-uri(/))"/>
+                <xsl:variable name="schematronRulesPath" select="'modules/diggs_schematron_rules.sch'"/>
+                <xsl:variable name="pipelineStylesheetPath" select="'modules/schxslt_2.0/pipeline-for-svrl.xsl'"/>
                 
                 <!-- Check if the Schematron rules file exists -->
                 <xsl:choose>
