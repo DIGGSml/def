@@ -316,10 +316,19 @@
             <xsl:if test="exists($sourceElement) and $sourceElement instance of element()">
                 <source>
                     <xsl:try>
-                        <xsl:element name="{local-name($sourceElement)}" namespace="{namespace-uri($sourceElement)}">
-                            <xsl:copy-of select="$sourceElement/@*"/>
-                            <xsl:value-of select="$sourceElement"/>
-                        </xsl:element>
+                        <xsl:choose>
+                            <!-- If element has child elements, just output the element name -->
+                            <xsl:when test="$sourceElement/*">
+                                <xsl:value-of select="local-name($sourceElement)"/>
+                            </xsl:when>
+                            <!-- If element has no child elements, copy normally -->
+                            <xsl:otherwise>
+                                <xsl:element name="{local-name($sourceElement)}" namespace="{namespace-uri($sourceElement)}">
+                                    <xsl:copy-of select="$sourceElement/@*"/>
+                                    <xsl:value-of select="$sourceElement"/>
+                                </xsl:element>
+                            </xsl:otherwise>
+                        </xsl:choose>
                         <xsl:catch>
                             <xsl:message>DEBUG: Error creating source element in createMessage</xsl:message>
                             <xsl:element name="error">
@@ -535,7 +544,6 @@
     <xsl:function name="diggs:extractJsonValues" as="xs:string*">
         <xsl:param name="url" as="xs:string"/>
         <xsl:param name="key" as="xs:string"/>
-        
         <xsl:variable name="response">
             <xsl:try>
                 <xsl:sequence select="unparsed-text($url)"/>
