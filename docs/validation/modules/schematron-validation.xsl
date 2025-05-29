@@ -17,34 +17,51 @@
             <step>Schematron Validation</step>
             
             <xsl:try>
-                <!-- Step 1: Load and compile the Schematron rules -->
-                <xsl:variable name="schematronRulesPath" select="'./modules/diggs_schematron_rules.sch'"/>
-                <xsl:variable name="pipelineStylesheetPath" select="'./modules/schxslt_2.0/pipeline-for-svrl.xsl'"/>
+                <!-- Load and compile the Schematron rules -->
+                <xsl:variable name="schematronRulesPath" select="'modules/diggs_schematron_rules.sch'"/>
+                <xsl:variable name="pipelineStylesheetPath" select="'modules/schxslt_2.0/pipeline-for-svrl.xsl'"/>
+                <xsl:variable name="schematronRulesFallback" select="'https://diggsml.org/def/validation/modules/diggs_schematron_rules.sch'"/>
+                <xsl:variable name="pipelineStylesheetFallback" select="'https://diggsml.org/def/validation/modules/schxslt_2.0/pipeline-for-svrl.xsl'"/>
                 
-                <!-- Check if the Schematron rules file exists -->
+                <!-- Determine the actual paths to use (primary or fallback) -->
+                <xsl:variable name="actualSchematronPath" select="
+                    if (doc-available($schematronRulesPath)) 
+                    then $schematronRulesPath 
+                    else if (doc-available($schematronRulesFallback)) 
+                    then $schematronRulesFallback 
+                    else ''"/>
+                
+                <xsl:variable name="actualPipelinePath" select="
+                    if (doc-available($pipelineStylesheetPath)) 
+                    then $pipelineStylesheetPath 
+                    else if (doc-available($pipelineStylesheetFallback)) 
+                    then $pipelineStylesheetFallback 
+                    else ''"/>
+                
+                <!-- Check if files are accessible (with fallback) -->
                 <xsl:choose>
-                    <xsl:when test="not(doc-available($schematronRulesPath))">
+                    <xsl:when test="$actualSchematronPath = ''">
                         <xsl:sequence select="
                             diggs:createMessage(
                             'WARNING',
                             '/',
-                            concat('Schematron validation could not be performed. The Schematron rules file at &quot;', $schematronRulesPath, '&quot; could not be accessed.'),
+                            concat('Schematron validation could not be performed. The Schematron rules file could not be accessed at either &quot;', $schematronRulesPath, '&quot; or fallback location &quot;', $schematronRulesFallback, '&quot;.'),
                             $sourceDocument
                             )"/>
                     </xsl:when>
-                    <xsl:when test="not(doc-available($pipelineStylesheetPath))">
+                    <xsl:when test="$actualPipelinePath = ''">
                         <xsl:sequence select="
                             diggs:createMessage(
                             'WARNING',
                             '/',
-                            concat('Schematron validation could not be performed. The SchXslt pipeline stylesheet at &quot;', $pipelineStylesheetPath, '&quot; could not be accessed.'),
+                            concat('Schematron validation could not be performed. The SchXslt pipeline stylesheet could not be accessed at either &quot;', $pipelineStylesheetPath, '&quot; or fallback location &quot;', $pipelineStylesheetFallback, '&quot;.'),
                             $sourceDocument
                             )"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <!-- Load the Schematron rules and pipeline stylesheet -->
-                        <xsl:variable name="schematronDoc" select="doc($schematronRulesPath)"/>
-                        <xsl:variable name="pipelineDoc" select="doc($pipelineStylesheetPath)"/>
+                        <!-- Load the Schematron rules and pipeline stylesheet from actual locations -->
+                        <xsl:variable name="schematronDoc" select="doc($actualSchematronPath)"/>
+                        <xsl:variable name="pipelineDoc" select="doc($actualPipelinePath)"/> 
                         
                         <!-- Step 1: Transform Schematron rules using SchXslt pipeline -->
                         <xsl:variable name="compiledSchematron" select="transform(
