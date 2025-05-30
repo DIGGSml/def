@@ -608,5 +608,203 @@
             </xsl:choose>
         </xsl:if>
     </xsl:function>
+    
+    <!-- Function to access and validate CRS definitions-->
+    <xsl:function name="diggs:isCRS" as="item()*">
+        <xsl:param name="inputURI" as="xs:string"/>
+        <xsl:param name="sourceDocument" as="node()"/>
+        <xsl:param name="whiteList" as="node()"/>
+        
+        <xsl:choose>
+            <!-- Form 3: Comma-separated phrases in brackets -->
+            <xsl:when test="starts-with($inputURI, '[') and contains($inputURI, ']')">
+                <xsl:variable name="constructedURI">
+                    <xsl:call-template name="constructURIFromPhrases">
+                        <xsl:with-param name="inputURI" select="$inputURI"/>
+                    </xsl:call-template>
+                </xsl:variable>
+                
+                <!-- Process constructed URI as standard URI (skip whitelist check) -->
+                <xsl:call-template name="processStandardURI">
+                    <xsl:with-param name="uri" select="$constructedURI"/>
+                    <xsl:with-param name="whiteList" select="$whiteList"/>
+                    <xsl:with-param name="skipWhitelist" select="true()"/>
+                    <xsl:with-param name="sourceDocument" select="$sourceDocument"/>
+                </xsl:call-template>
+            </xsl:when>
+            
+            <!-- Form 2: Fragment reference (starts with #) -->
+            <xsl:when test="starts-with($inputURI, '#')">
+                <xsl:variable name="fragmentId" select="substring($inputURI, 2)"/>
+                <xsl:variable name="crsDefinition" select="$sourceDocument//*[@*[local-name() = 'id'] = $fragmentId]"/>
+                
+                <xsl:choose>
+                    <xsl:when test="$crsDefinition and (local-name($crsDefinition) = 'LinearSpatialReferenceSystem' or local-name($crsDefinition) = 'VectorLinearSpatialReferenceSystem')">
+                        <crsDefinition>
+                            <xsl:copy-of select="$crsDefinition"/>
+                        </crsDefinition>
+                        <message></message>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <crsDefinition></crsDefinition>
+                        <message><xsl:value-of select="concat('The CRS definition at &quot;', $inputURI, '&quot; is not valid')"/></message>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            
+            <!-- Form 1: Standard URI -->
+            <xsl:otherwise>
+                <xsl:call-template name="processStandardURI">
+                    <xsl:with-param name="uri" select="$inputURI"/>
+                    <xsl:with-param name="whiteList" select="$whiteList"/>
+                    <xsl:with-param name="skipWhitelist" select="false()"/>
+                    <xsl:with-param name="sourceDocument" select="$sourceDocument"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <!-- Template to construct URI from bracketed phrases -->
+    <xsl:template name="constructURIFromPhrases">
+        <xsl:param name="inputURI" as="xs:string"/>
+        
+        <xsl:variable name="phrases" select="tokenize($inputURI, ',')"/>
+        <xsl:variable name="phraseCount" select="count($phrases)"/>
+        
+        <xsl:choose>
+            <!-- Single phrase -->
+            <xsl:when test="$phraseCount = 1">
+                <xsl:variable name="cleanPhrase" select="translate($phrases[1], '[]', '')"/>
+                <xsl:variable name="authority" select="substring-before($cleanPhrase, ':')"/>
+                <xsl:variable name="code" select="substring-after($cleanPhrase, ':')"/>
+                <xsl:value-of select="concat('http://www.opengis.net/def/crs/', $authority, '/0/', $code)"/>
+            </xsl:when>
+            
+            <!-- Multiple phrases -->
+            <xsl:otherwise>
+                <xsl:variable name="baseURL" select="'http://www.opengis.net/def/crs-compound?'"/>
+                <xsl:variable name="constructedParams">
+                    <xsl:for-each select="$phrases">
+                        <xsl:variable name="position" select="position()"/>
+                        <xsl:variable name="cleanPhrase" select="translate(., '[]', '')"/>
+                        <xsl:variable name="authority" select="substring-before($cleanPhrase, ':')"/>
+                        <xsl:variable name="code" select="substring-after($cleanPhrase, ':')"/>
+                        <xsl:variable name="paramURL" select="concat('http://www.opengis.net/def/crs/', $authority, '/0/', $code)"/>
+                        
+                        <xsl:if test="$position > 1">
+                            <xsl:text>&amp;</xsl:text>
+                        </xsl:if>
+                        <xsl:value-of select="concat($position, '=', $paramURL)"/>
+                    </xsl:for-each>
+                </xsl:variable>
+                <xsl:value-of select="concat($baseURL, $constructedParams)"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!-- Template to normalize various ampersand encodings to &amp; -->
+    <xsl:template name="normalizeAmpersands">
+        <xsl:param name="uri" as="xs:string"/>
+        
+        <!-- Chain of replacements to handle different ampersand encodings -->
+        <xsl:variable name="step1" select="replace($uri, '%26', '&amp;')"/>           <!-- URL encoded -->
+        <xsl:variable name="step2" select="replace($step1, '&amp;amp;', '&amp;')"/>   <!-- Double XML escaped -->
+        <xsl:variable name="step3" select="replace($step2, '&#38;', '&amp;')"/>       <!-- Numeric character reference -->
+        <xsl:variable name="step4" select="replace($step3, '&#x26;', '&amp;')"/>      <!-- Hex character reference -->
+        
+        <xsl:value-of select="$step4"/>
+    </xsl:template>
+    
+    <!-- Template to process standard URI -->
+    <xsl:template name="processStandardURI">
+        <xsl:param name="uri" as="xs:string"/>
+        <xsl:param name="whiteList" as="node()"/>
+        <xsl:param name="skipWhitelist" as="xs:boolean"/>
+        <xsl:param name="sourceDocument" as="node()"/>
+        
+        <!-- Normalize ampersands in the URI -->
+        <xsl:variable name="normalizedUri">
+            <xsl:call-template name="normalizeAmpersands">
+                <xsl:with-param name="uri" select="$uri"/>
+            </xsl:call-template>
+        </xsl:variable>
+        
+        <!-- Split URI on # character -->
+        <xsl:variable name="baseUrl">
+            <xsl:choose>
+                <xsl:when test="contains($normalizedUri, '#')">
+                    <xsl:value-of select="substring-before($normalizedUri, '#')"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$normalizedUri"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:variable name="fragment">
+            <xsl:if test="contains($normalizedUri, '#')">
+                <xsl:value-of select="substring-after($normalizedUri, '#')"/>
+            </xsl:if>
+        </xsl:variable>
+        
+        <!-- Check whitelist (unless skipped for constructed URIs) -->
+        <xsl:variable name="isWhitelisted">
+            <xsl:choose>
+                <xsl:when test="$skipWhitelist">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="diggs:isWhitelisted($baseUrl, $whiteList)"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:choose>
+            <xsl:when test="$isWhitelisted = false()">
+                <crsDefinition></crsDefinition>
+                <message><xsl:value-of select="concat('The srsName reference: &quot;', $baseUrl, '&quot; is either malformed or is not on the white list of approved URLs. If this is a reference to a linear reference system within the DIGGS instance, be sure to preface the value with &quot;#&quot;. Otherwise, choose an OGC CRS definition or add this URL to a whiteList.xml parameter file and validate locally.')"/></message>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- Get resource -->
+                <xsl:variable name="crsResource" select="diggs:getResource($baseUrl, base-uri(/))"/>
+                
+                <xsl:choose>
+                    <xsl:when test="not($crsResource) or $crsResource = ''">
+                        <crsDefinition></crsDefinition>
+                        <message><xsl:value-of select="concat('The resource at &quot;', $baseUrl, '&quot; could not be accessed.')"/></message>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <!-- Extract CRS definition -->
+                        <xsl:variable name="crsDefinition">
+                            <xsl:choose>
+                                <xsl:when test="$fragment != ''">
+                                    <xsl:copy-of select="$crsResource//*[@*[local-name() = 'id'] = $fragment]"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:copy-of select="$crsResource"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:variable>
+                        
+                        <!-- Validate CRS definition -->
+                        <xsl:variable name="rootElementName" select="local-name($crsDefinition/*[1])"/>
+                        <xsl:choose>
+                            <xsl:when test="substring($rootElementName, string-length($rootElementName) - 2) = 'CRS'">
+                                <crsDefinition>
+                                    <xsl:copy-of select="$crsDefinition"/>
+                                </crsDefinition>
+                                <message></message>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <crsDefinition></crsDefinition>
+                                <message><xsl:value-of select="concat('The CRS definition at &quot;', $normalizedUri, '&quot; is not valid')"/></message>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
 
 </xsl:stylesheet>
