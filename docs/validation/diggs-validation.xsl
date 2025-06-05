@@ -58,6 +58,9 @@
     <!-- Import CRS-validation module -->
     <xsl:import href="modules/crs-validation.xsl"/>
     
+    <!-- Import coordinate-validation.xsl -->
+    <xsl:import href="modules/coordinate-validation.xsl"/>
+    
     <!-- Import other modules here once they are developed -->
     
     <!-- Main template -->
@@ -115,6 +118,11 @@
                     <!-- Run CRS validation -->
                     <xsl:call-template name="crsValidation">
                         <xsl:with-param name="whiteList" select="$whiteList"/>
+                        <xsl:with-param name="sourceDocument" select="$originalXml"/>
+                    </xsl:call-template>
+                    
+                    <!-- Run coordinate validation -->
+                    <xsl:call-template name="coordinateValidation">
                         <xsl:with-param name="sourceDocument" select="$originalXml"/>
                     </xsl:call-template>
                         

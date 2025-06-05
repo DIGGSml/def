@@ -608,7 +608,6 @@
             </xsl:choose>
         </xsl:if>
     </xsl:function>
-    
     <!-- Function to access and validate CRS definitions-->
     <xsl:function name="diggs:isCRS" as="item()*">
         <xsl:param name="inputURI" as="xs:string"/>
@@ -616,8 +615,8 @@
         <xsl:param name="whiteList" as="node()"/>
         
         <xsl:choose>
-            <!-- Form 3: Comma-separated phrases in brackets -->
-            <xsl:when test="starts-with($inputURI, '[') and contains($inputURI, ']')">
+            <!-- Form 3: Comma-separated phrases with authority codes (without brackets) -->
+            <xsl:when test="diggs:isAuthorityCodeFormat($inputURI)">
                 <xsl:variable name="constructedURI">
                     <xsl:call-template name="constructURIFromPhrases">
                         <xsl:with-param name="inputURI" select="$inputURI"/>
@@ -664,7 +663,30 @@
         </xsl:choose>
     </xsl:function>
     
-    <!-- Template to construct URI from bracketed phrases -->
+    <!-- Function to detect if string is in authority:code format -->
+    <xsl:function name="diggs:isAuthorityCodeFormat" as="xs:boolean">
+        <xsl:param name="inputURI" as="xs:string"/>
+        
+        <!-- Check if string contains comma-separated phrases with valid authority codes -->
+        <xsl:variable name="phrases" select="tokenize($inputURI, ',')"/>
+        <xsl:variable name="validPhrases">
+            <xsl:for-each select="$phrases">
+                <xsl:variable name="trimmedPhrase" select="normalize-space(.)"/>
+                <xsl:variable name="hasColon" select="contains($trimmedPhrase, ':')"/>
+                <xsl:variable name="authority" select="upper-case(substring-before($trimmedPhrase, ':'))"/>
+                <xsl:variable name="hasValidAuthority" select="$authority = 'EPSG' or $authority = 'OGC' or $authority = 'DIGGS'"/>
+                
+                <xsl:if test="$hasColon and $hasValidAuthority">
+                    <valid/>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:variable>
+        
+        <!-- Return true if all phrases are valid and at least one phrase exists -->
+        <xsl:value-of select="count($phrases) > 0 and count($validPhrases/valid) = count($phrases)"/>
+    </xsl:function>
+    
+    <!-- Template to construct URI from authority:code phrases (without brackets) -->
     <xsl:template name="constructURIFromPhrases">
         <xsl:param name="inputURI" as="xs:string"/>
         
@@ -674,7 +696,7 @@
         <xsl:choose>
             <!-- Single phrase -->
             <xsl:when test="$phraseCount = 1">
-                <xsl:variable name="cleanPhrase" select="translate($phrases[1], '[]', '')"/>
+                <xsl:variable name="cleanPhrase" select="normalize-space($phrases[1])"/>
                 <xsl:variable name="authority" select="substring-before($cleanPhrase, ':')"/>
                 <xsl:variable name="code" select="substring-after($cleanPhrase, ':')"/>
                 <xsl:value-of select="concat('http://www.opengis.net/def/crs/', $authority, '/0/', $code)"/>
@@ -686,7 +708,7 @@
                 <xsl:variable name="constructedParams">
                     <xsl:for-each select="$phrases">
                         <xsl:variable name="position" select="position()"/>
-                        <xsl:variable name="cleanPhrase" select="translate(., '[]', '')"/>
+                        <xsl:variable name="cleanPhrase" select="normalize-space(.)"/>
                         <xsl:variable name="authority" select="substring-before($cleanPhrase, ':')"/>
                         <xsl:variable name="code" select="substring-after($cleanPhrase, ':')"/>
                         <xsl:variable name="paramURL" select="concat('http://www.opengis.net/def/crs/', $authority, '/0/', $code)"/>
