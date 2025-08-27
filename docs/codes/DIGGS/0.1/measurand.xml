@@ -375,7 +375,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurand.xml#chloride_content</gml:identifier>
             <gml:name>Chloride Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:measurand</diggs:sourceElementXpath>
