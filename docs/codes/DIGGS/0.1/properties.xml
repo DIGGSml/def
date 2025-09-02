@@ -1572,6 +1572,34 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
+        <diggs:Definition gml:id="mean_micro_deval_dry">
+            <gml:description>Needs description</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mean_micro_deval_dry</gml:identifier>
+            <gml:name>Mean Micro Deval Value, dry</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MicroDevalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="mean_micro_deval_wet">
+            <gml:description>Needs description</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mean_micro_deval_wet</gml:identifier>
+            <gml:name>Mean Micro Deval Value, wet</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MicroDevalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
         <diggs:Definition gml:id="modulus_shear">
             <gml:description>Shear modulus, denoted by G, is defined as the ratio of shear stress to the shear strain.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_shear</gml:identifier>
@@ -2503,7 +2531,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#specific_gravity_apparent</gml:identifier>
             <gml:name>Apparent Specific Gravity</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2518,7 +2545,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#specific_gravity_bulk</gml:identifier>
             <gml:name>Bulk Specific Gravity</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2533,7 +2559,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#specific_gravity_solids</gml:identifier>
             <gml:name>Specific Gravity of Solids</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2991,34 +3016,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FluidLevelMonitoring</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="mean_micro_deval_wet">
-            <gml:description>Needs description</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mean_micro_deval_wet</gml:identifier>
-            <gml:name>Mean Micro Deval Value, wet</gml:name>
-            <diggs:dataType>integer</diggs:dataType>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MicroDevalTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="mean_micro_deval_dry">
-            <gml:description>Needs description</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mean_micro_deval_dry</gml:identifier>
-            <gml:name>Mean Micro Deval Value, dry</gml:name>
-            <diggs:dataType>integer</diggs:dataType>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MicroDevalTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
