@@ -6,15 +6,15 @@
     xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
 
     <description>A collection of authorities used within the DIGGS namespace</description>
-    <identifier codeSpace="urn:diggs:def:codelist:DIGGS">urn:diggs:def:codelist:DIGGS:authorities</identifier>
+    <identifier codeSpace="https://diggsml.org/def/authorities.xml">https://diggsml.org/def/authorities.xml</identifier>
     <dictionaryEntry>
         <Definition gml:id="DIGGS">
             <description>DIGGS is an ASCE Geoinstitute Special Project that involves the  development of a GML (XML-based) 
                 geospatial standard schema for the transfer of geotechnical and geoenvironmental data within an organization or between multiple organizations.
                 DIGGS can work with existing software, hardware, databases and data storage facilities to easily transfer and share your data.
             </description>
-            <identifier codeSpace="urn:diggs:def:codelist:DIGGS:authorities:DIGGS">urn:diggs:def:codelist:DIGGS:authorities:DIGGS</identifier>
-            <name codeSpace="http:diggsml.org">DIGGS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </name>
+            <identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/authorities.xml#DIGGS</identifier>
+            <name>DIGGS</name>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </name>
         </Definition>
     </dictionaryEntry>
 </Dictionary>
