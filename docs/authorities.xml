@@ -14,7 +14,7 @@
                 DIGGS can work with existing software, hardware, databases and data storage facilities to easily transfer and share your data.
             </description>
             <identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/authorities.xml#DIGGS</identifier>
-            <name>DIGGS</name>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </name>
+            <name>DIGGS</name>
         </Definition>
     </dictionaryEntry>
 </Dictionary>
