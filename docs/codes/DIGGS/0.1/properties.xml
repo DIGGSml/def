@@ -92,10 +92,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="aggregate_flakiness_index">
-            <gml:description>The ratio (by weight) of aggregate particles whose least dimension is less than 0.6 times their mean size, to the total sample weight.</gml:description>
+            <gml:description>Percentage (by weight) of aggregate particles whose least dimension is less than 0.6 times their mean size, to the total sample weight.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_flakiness_index</gml:identifier>
             <gml:name>Aggregate Flakiness Index</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -106,10 +107,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="aggregate_impact_value">
-            <gml:description>The resistance to impact of aggregates and is measured as the raio  of aggregates passing to the total weight of the sample.</gml:description>
+            <gml:description>The resistance to impact of aggregates and is measured as the fraction  of aggregates passing to the total weight of the sample.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_impact_value</gml:identifier>
             <gml:name>Aggregate Impact Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -120,10 +122,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="aggregate_LA_abrasion_loss">
-            <gml:description>The actual measured loss (difference between the original weight and the final weight of the test sample), expressed as a ratio to the original weight of the test sample.</gml:description>
+            <gml:description>The actual measured loss (difference between the original weight and the final weight of the test sample), expressed as a percentage of the original weight of the test sample.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_LA_abrasion_loss</gml:identifier>
             <gml:name>Aggregate Los Angeles Abrasion Loss</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -176,10 +179,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="aggregate_soundness_value">
-            <gml:description>The amount of mass  (expressed as a ratio to the total sample mass) lost by degradation as determined by sieving and weighing the samples after the test cycles.</gml:description>
+            <gml:description>The amount of mass  ost by degradation as determined by sieving and weighing the samples after the test cycles.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_soundness_value</gml:identifier>
             <gml:name>Aggregate Soundness Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -194,6 +198,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aggregate_water_absorption</gml:identifier>
             <gml:name>Aggregate Water Absorption</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -385,10 +390,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="clay_percent_2_micron">
-            <gml:description>represents the total amount of clay sized particles (&lt;2 microns) in a test samples, expressed as a ratio by weight, to the total sample</gml:description>
+            <gml:description>Represents the total amount of clay sized particles (&lt;2 microns) in a test samples, expressed as a percentage by weight, to the total sample</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#clay_percent_2_micron</gml:identifier>
             <gml:name>Clay Fraction &lt; 2 Micron</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -399,10 +405,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="clay_percent_5_micron">
-            <gml:description>represents the total amount of clay sized particles (&lt;5 microns) in a test samples, expressed as a ratio by weight, to the total sample</gml:description>
+            <gml:description>Represents the total amount of clay sized particles (&lt;5 microns) in a test samples, expressed as a percentage by weight, to the total sample</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#clay_percent_5_micron</gml:identifier>
             <gml:name>Clay Fraction &lt; 5 Micron</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -631,10 +638,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="colloid_percent">
-            <gml:description>represents the total amount of &lt;1 micron size particles in a test sample, as a ratio to the total sample weight</gml:description>
+            <gml:description>represents the total amount of &lt;1 micron size particles in a test sample, as a percentage of the total sample weight</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#colloid_percent</gml:identifier>
             <gml:name>Colloid Fraction</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1521,6 +1529,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#LOI</gml:identifier>
             <gml:name>Organic Content of Soil</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1681,11 +1690,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="mud_balance_density">
-            <gml:description>Grout or mud density determined using a mud balance. Should this also be a force per volume?</gml:description>
+            <gml:description>Grout or mud density determined using a mud balance. While called a density, measurement is a force (weight) / voume and should use those units.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mud_balance_density</gml:identifier>
             <gml:name>Mud Balance Density</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>mass per volume</diggs:quantityClass>
+            <diggs:quantityClass>force per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1849,6 +1858,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#percent_cobbles</gml:identifier>
             <gml:name>Percent Cobbles</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1863,10 +1873,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="percent_fines">
-            <gml:description>The percentage of particles that pass through the #200 sieve (&lt;0.075-mm). Why is this not force per force?</gml:description>
+            <gml:description>The percentage of particles that pass through the #200 sieve (&lt;0.075-mm).</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#percent_fines</gml:identifier>
             <gml:name>Percent Fines</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1881,10 +1892,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="percent_gravel">
-            <gml:description>The percentage of particles that are retained on the #4 and larger sizes (&gt;4.75 mm). Why is this not force per force?</gml:description>
+            <gml:description>The percentage of particles that are retained on the #4 and larger sizes (&gt;4.75 mm).</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#percent_gravel</gml:identifier>
             <gml:name>Percent Gravel</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1899,10 +1911,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="percent_sand">
-            <gml:description>The percentage of particles thatpass the #4 sieve and are retained on the #200 sieve (&lt;4.75 mm and &gt;0.075-mm).Why is this not force per force?</gml:description>
+            <gml:description>The percentage of particles thatpass the #4 sieve and are retained on the #200 sieve (&lt;4.75 mm and &gt;0.075-mm).</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#percent_sand</gml:identifier>
             <gml:name>Percent Sand</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1917,10 +1930,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="percent_silt">
-            <gml:description>The percentage of particles smaller than 0.075 mm (No. 200 sieve) and larger than 0.002 mm and have a plotting position below the A-line on the plasticity chart as well as a plasticity index less than 4. The percent silt is determined by the difference between the total percent passing the No. 200 sieve (fines) and the percent clay (determined through plasticity testing of the fines fraction). Why is this not force per force?</gml:description>
+            <gml:description>The percentage of particles smaller than 0.075 mm (No. 200 sieve) and larger than 0.002 mm and have a plotting position below the A-line on the plasticity chart as well as a plasticity index less than 4. The percent silt is determined by the difference between the total percent passing the No. 200 sieve (fines) and the percent clay (determined through plasticity testing of the fines fraction).</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#percent_silt</gml:identifier>
             <gml:name>Percent Silt</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1953,10 +1967,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="pid_result">
-            <gml:description>Measures volatile organic compounds and other gases, expressed in parts per million. If expressed as ppm, should this not be amount of subtance per amount of substance? This would allow for both ppm and % as allowable units.</gml:description>
+            <gml:description>Measures volatile organic compounds and other gases, expressed in parts per million or percent LEL</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pid_result</gml:identifier>
             <gml:name>Photoionization Detector Result</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2218,7 +2233,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#rock_porosity</gml:identifier>
             <gml:name>Rock Porosity</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>unitless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2431,6 +2445,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shrinkage</gml:identifier>
             <gml:name>Shrinkage</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2925,6 +2940,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#volumetric_shrinkage</gml:identifier>
             <gml:name>Volumetric Shrinkage</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>volume per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2953,6 +2969,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_content_natural</gml:identifier>
             <gml:name>Natural Water Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2987,6 +3004,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_content_optimum</gml:identifier>
             <gml:name>Optimum Water Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
