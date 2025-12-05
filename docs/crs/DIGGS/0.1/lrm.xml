@@ -265,7 +265,7 @@
                 <diggs:OffsetParameters>
                     <diggs:offsetType>perpendicular</diggs:offsetType>
                     <diggs:offsetDirection>left</diggs:offsetDirection>
-                    <diggs:offsetUnits>m</diggs:offsetUnits>
+                    <diggs:offsetUnits>ft</diggs:offsetUnits>
                 </diggs:OffsetParameters>
             </diggs:offsetParameters>
         </diggs:LRMethod>
