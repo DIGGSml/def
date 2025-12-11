@@ -12,7 +12,7 @@
         DIGGS Standard Linear Referencing Methods Dictionary
         
         This dictionary provides a comprehensive collection of standardized Linear Referencing Methods 
-        (LinearReferencingMethods) for use with DIGGS linear sampling features including boreholes, wells, soundings, 
+        (LinearReferencingMethod) for use with DIGGS linear sampling features including boreholes, wells, soundings, 
         geophysical tracklines, transects, and core samples. These methods define how positions are 
         determined and measured along linear features in compliance with ISO 19148:2021.
         
@@ -32,10 +32,10 @@
            
          4. TRIAL PIT METHODS WITH OFFSET: Specialized methods that allow for positioning of observations and samples offset from a trial pit centerline
                 
-        Usage: These methods should be referenced in LinearSRS definitions to establish complete 
+        Usage: These methods should be referenced in diggs:LinearReferencSystem definitions to establish complete 
         coordinate reference systems for linear features, eg.
-              &lt;lrm xlink:href="https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_ft"/&gt;
-        Project-specific linear referencing methods should be explicitly defined within the &lt;lrm&gt; element in a DIGGS instance or defined within an extension of this dictionary.     
+              &lt;diggs:lrm xlink:href="https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_ft"/&gt;
+        Project-specific linear referencing methods should be explicitly defined within the &lt;diggs:lrm&gt; element in a DIGGS instance or defined within an extension of this dictionary.     
         
         Version: 0.1
         Maintained by: DIGGS Technical Committee
