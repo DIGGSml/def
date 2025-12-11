@@ -6,13 +6,13 @@
     xmlns:gml="http://www.opengis.net/gml/3.2" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://diggsml.org/schemas/3.0 https://raw.githubusercontent.com/DIGGSml/schema-dev/refs/heads/3.0/Diggs.xsd"
-    gml:id="diggs-lrmethod-dictionary">
+    gml:id="diggs-LinearReferencingMethod-dictionary">
     
     <gml:description>
         DIGGS Standard Linear Referencing Methods Dictionary
         
         This dictionary provides a comprehensive collection of standardized Linear Referencing Methods 
-        (LRMethods) for use with DIGGS linear sampling features including boreholes, wells, soundings, 
+        (LinearReferencingMethods) for use with DIGGS linear sampling features including boreholes, wells, soundings, 
         geophysical tracklines, transects, and core samples. These methods define how positions are 
         determined and measured along linear features in compliance with ISO 19148:2021.
         
@@ -50,55 +50,49 @@
     <!-- ============================================================ -->
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="md_ft">
+        <diggs:LinearReferencingMethod gml:id="md_ft">
             <gml:description>Absolute measured depth from top of borehole or sounding in feet. Measurements are cumulative 3D distance along the borehole/sounding centerline from the first coordinate (typically top of hole or rig datum) proceeding downward through the hole. Suitable for vertical, slanted, and deviated boreholes and soundings.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_ft</gml:identifier>
-            <gml:name>Absolute Measured Depth (ft)</gml:name>
+            <diggs:name>trueFootage</diggs:name>
             <diggs:type>absolute</diggs:type>
             <diggs:units>ft</diggs:units>
             <diggs:positiveDirection>downward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in feet from the first coordinate of the centerline LinearExtent, which represents "top of hole" (or rig datum such as kelly bushing) with positive downward along the borehole path</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="md_m">
+        <diggs:LinearReferencingMethod gml:id="md_m">
             <gml:description>Absolute measured depth from top of borehole or sounding in meters. Measurements are cumulative 3D distance along the borehole/sounding centerline from the first coordinate (typically top of hole or rig datum) proceeding downward through the hole. Suitable for vertical, slanted, and deviated boreholes and soundings.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_m</gml:identifier>
-            <gml:name>Absolute Measured Depth (m)</gml:name>
+            <diggs:name>trueMeters</diggs:name>
             <diggs:type>absolute</diggs:type>
             <diggs:units>m</diggs:units>
             <diggs:positiveDirection>downward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in meters from the first coordinate of the centerline LinearExtent, which represents "top of hole" (or rig datum such as kelly bushing) with positive downward along the borehole path</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="relative_md_ft">
+        <diggs:LinearReferencingMethod gml:id="reference_md_ft">
             <gml:description>Measured depth relative to a specified referent location within a borehole or sounding in feet. The referent (e.g., ground surface, casing top, seafloor) must be defined in the LinearSRS. Positive direction is downward from the referent. Commonly used for depth below ground surface or depth below seafloor.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#relative_md_ft</gml:identifier>
-            <gml:name>Relative Measured Depth (ft)</gml:name>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#reference_md_ft</gml:identifier>
+            <diggs:name>referenceFootage</diggs:name>
             <diggs:type>relative</diggs:type>
             <diggs:units>ft</diggs:units>
             <diggs:positiveDirection>downward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in feet relative to a specified referent point (defined in LinearSRS), with positive downward from the referent location</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+            <diggs:constraint>This method cannot be associated with a referent of type "line start" or type "line end"</diggs:constraint>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="relative_md_m">
+        <diggs:LinearReferencingMethod gml:id="reference_md_m">
             <gml:description>Measured depth relative to a specified referent location within a borehole or sounding in meters. The referent (e.g., ground surface, casing top, seafloor) must be defined in the LinearSRS. Positive direction is downward from the referent. Commonly used for depth below ground surface or depth below seafloor.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#relative_md_m</gml:identifier>
-            <gml:name>Relative Measured Depth (m)</gml:name>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#reference_md_m</gml:identifier>
+            <diggs:name>referenceMeters</diggs:name>
             <diggs:type>relative</diggs:type>
             <diggs:units>m</diggs:units>
             <diggs:positiveDirection>downward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in meters relative to a specified referent point (defined in LinearSRS), with positive downward from the referent location</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+            <diggs:constraint>This method cannot be associated with a referent of type "line start" or type "line end"</diggs:constraint>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <!-- ============================================================ -->
@@ -106,55 +100,64 @@
     <!-- ============================================================ -->
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="distance_ft">
-            <gml:description>Absolute distance along a geophysical trackline or survey transect in feet. Measurements are cumulative distance from the start of the feature (first coordinate) proceeding forward along the trackline path. Suitable for marine geophysical surveys, land transects, and linear traverses.</gml:description>
+        <diggs:LinearReferencingMethod gml:id="distance_ft">
+            <gml:description>
+                Absolute distance along a geophysical trackline or survey transect in feet. Measurements are cumulative distance from the 
+                start of the feature (first coordinate) proceeding forward along the trackline path. Suitable for marine geophysical surveys, 
+                land transects, and linear traverses.
+            </gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#distance_ft</gml:identifier>
-            <gml:name>Absolute Distance (ft)</gml:name>
+            <diggs:name>trueFootage</diggs:name>
             <diggs:type>absolute</diggs:type>
             <diggs:units>ft</diggs:units>
             <diggs:positiveDirection>forward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in feet from the first coordinate (start) of the trackline or transect LinearExtent, with positive forward along the survey line</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="distance_m">
-            <gml:description>Absolute distance along a geophysical trackline or survey transect in meters. Measurements are cumulative distance from the start of the feature (first coordinate) proceeding forward along the trackline path. Suitable for marine geophysical surveys, land transects, and linear traverses.</gml:description>
+        <diggs:LinearReferencingMethod gml:id="distance_m">
+            <gml:description>
+                Absolute distance along a geophysical trackline or survey transect in meters. Measurements are cumulative distance from the start
+                of the feature (first coordinate) proceeding forward along the trackline path. Suitable for marine geophysical surveys, land transects, 
+                and linear traverses.
+             </gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#distance_m</gml:identifier>
-            <gml:name>Absolute Distance (m)</gml:name>
+            <diggs:name>trueMeters</diggs:name>
             <diggs:type>absolute</diggs:type>
             <diggs:units>m</diggs:units>
             <diggs:positiveDirection>forward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in meters from the first coordinate (start) of the trackline or transect LinearExtent, with positive forward along the survey line</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="relative_distance_ft">
-            <gml:description>Distance along trackline or transect relative to a specified referent in feet. The referent (e.g., benchmark, line intersection, waypoint) must be defined in the LinearSRS. Useful for referencing positions from intermediate control points or for tying multiple survey lines together at intersections.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#relative_distance_ft</gml:identifier>
-            <gml:name>Relative Distance (ft)</gml:name>
+        <diggs:LinearReferencingMethod gml:id="reference_distance_ft">
+            <gml:description>
+                Distance along trackline or transect relative to a specified referent in feet. The referent (e.g., benchmark, 
+                line intersection, waypoint) must be defined in the LinearSRS. Useful for referencing positions from intermediate 
+                control points or for tying multiple survey lines together at intersections.
+            </gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#reference_distance_ft</gml:identifier>
+            <diggs:name>referenceFootage</diggs:name>
             <diggs:type>relative</diggs:type>
             <diggs:units>ft</diggs:units>
             <diggs:positiveDirection>forward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in feet relative to a specified referent point (defined in LinearSRS) along the trackline, with positive forward from the referent</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+            <diggs:constraint>This method cannot be associated with a referent of type "line start" or type "line end"</diggs:constraint>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="relative_distance_m">
-            <gml:description>Distance along trackline or transect relative to a specified referent in meters. The referent (e.g., benchmark, line intersection, waypoint) must be defined in the LinearSRS. Useful for referencing positions from intermediate control points or for tying multiple survey lines together at intersections.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#relative_distance_m</gml:identifier>
-            <gml:name>Relative Distance (m)</gml:name>
+        <diggs:LinearReferencingMethod gml:id="reference_distance_m">
+            <gml:description>
+                Distance along trackline or transect relative to a specified referent in meters. The referent (e.g., benchmark, 
+                line intersection, waypoint) must be defined in the LinearSRS. Useful for referencing positions from intermediate 
+                control points or for tying multiple survey lines together at intersections.
+            </gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#reference_distance_m</gml:identifier>
+            <diggs:name>referenceMeters</diggs:name>
             <diggs:type>relative</diggs:type>
             <diggs:units>m</diggs:units>
             <diggs:positiveDirection>forward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in meters relative to a specified referent point (defined in LinearSRS) along the trackline, with positive forward from the referent</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+            <diggs:constraint>This method cannot be associated with a referent of type "line start" or type "line end"</diggs:constraint>        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <!-- ============================================================ -->
@@ -162,29 +165,34 @@
     <!-- ============================================================ -->
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="core_top_down_in">
-            <gml:description>Absolute distance from top of core sample downward in inches. Standard method for core logging when the top of the core interval is well-defined. Measurements proceed from the top surface (first coordinate) downward through the recovered core. Used for recovered core samples that may be handled and logged separately from the parent borehole.</gml:description>
+        <diggs:LinearReferencingMethod gml:id="core_top_down_in">
+            <gml:description>
+                Absolute distance from top of core sample downward in inches. Standard method for core logging when the top of the core interval is well-defined. 
+                Measurements proceed from the top surface (first coordinate) downward through the recovered core. 
+                Used for recovered core samples that may be handled and logged separately from the parent borehole.
+            </gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#core_top_down_in</gml:identifier>
-            <gml:name>Core Top-Down Absolute (in)</gml:name>
+            <diggs:name>trueInches</diggs:name>
             <diggs:type>absolute</diggs:type>
             <diggs:units>in</diggs:units>
             <diggs:positiveDirection>downward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in inches from the top of core (first coordinate of core LinearExtent) downward through the recovered sample</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="core_top_down_cm">
-            <gml:description>Absolute distance from top of core sample downward in centimeters. Standard method for core logging when the top of the core interval is well-defined. Measurements proceed from the top surface (first coordinate) downward through the recovered core. Used for recovered core samples that may be handled and logged separately from the parent borehole.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#core_top_down_cm</gml:identifier>
-            <gml:name>Core Top-Down Absolute (cm)</gml:name>
+        <diggs:LinearReferencingMethod gml:id="core_top_down_cm">
+            <gml:description>
+                Absolute distance from top of core sample downward in centimeters. Standard method for core logging when the top of the core interval is well-defined. 
+                Measurements proceed from the top surface (first coordinate) downward through the recovered core.
+                Used for recovered core samples that may be handled and logged separately from the parent borehole.
+            </gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#core_top_down_cm
+            </gml:identifier>
+            <diggs:name>trueCentimeters</diggs:name>
             <diggs:type>absolute</diggs:type>
             <diggs:units>cm</diggs:units>
             <diggs:positiveDirection>downward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in centimeters from the top of core (first coordinate of core LinearExtent) downward through the recovered sample</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <!-- ============================================================ -->
@@ -192,29 +200,33 @@
     <!-- ============================================================ -->
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="core_bottom_up_in">
-            <gml:description>Absolute distance from bottom of core sample upward in inches. Alternative method for core logging when the bottom of the core provides a better-defined reference surface than the top, commonly due to slough or disturbance at the top of the cored interval. Measurements proceed from the bottom surface (bottommost coordinate) upward through the recovered core. The coordinate order in LinearExtent should reflect bottom-to-top direction.</gml:description>
+        <diggs:LinearReferencingMethod gml:id="core_bottom_up_in">
+            <gml:description>
+                Absolute distance from bottom of core sample upward in inches. Alternative method for core logging when the bottom of the core provides 
+                a better-defined reference surface than the top, commonly due to slough or disturbance at the top of the cored interval. 
+                Measurements proceed from the bottom surface (bottommost coordinate) upward through the recovered core. The coordinate order in LinearExtent
+                must reflect bottom-to-top direction.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#core_bottom_up_in</gml:identifier>
-            <gml:name>Core Bottom-Up Absolute (in)</gml:name>
+            <diggs:name>trueInches</diggs:name>
             <diggs:type>absolute</diggs:type>
             <diggs:units>in</diggs:units>
             <diggs:positiveDirection>upward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in inches from the bottom of core (first coordinate of bottom-up core LinearExtent) upward through the recovered sample toward the top</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+       </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="core_bottom_up_cm">
-            <gml:description>Absolute distance from bottom of core sample upward in centimeters. Alternative method for core logging when the bottom of the core provides a better-defined reference surface than the top, commonly due to slough or disturbance at the top of the cored interval. Measurements proceed from the bottom surface (bottommost coordinate) upward through the recovered core. The coordinate order in LinearExtent should reflect bottom-to-top direction.</gml:description>
+        <diggs:LinearReferencingMethod gml:id="core_bottom_up_cm">
+            <gml:description>
+                Absolute distance from bottom of core sample upward in centimeters. Alternative method for core logging when the bottom of the core provides 
+                a better-defined reference surface than the top, commonly due to slough or disturbance at the top of the cored interval. 
+                Measurements proceed from the bottom surface (bottommost coordinate) upward through the recovered core. The coordinate order in LinearExtent 
+                must reflect bottom-to-top direction.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#core_bottom_up_m</gml:identifier>
-            <gml:name>Core Bottom-Up Absolute (cm)</gml:name>
+            <diggs:name>trueCentimeters</diggs:name>
             <diggs:type>absolute</diggs:type>
             <diggs:units>cm</diggs:units>
             <diggs:positiveDirection>upward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in centimeters from the bottom of core (first coordinate of bottom-up core LinearExtent) upward through the recovered sample toward the top</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
-        </diggs:LRMethod>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <!-- ============================================================ -->
@@ -222,45 +234,52 @@
     <!-- ============================================================ -->
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="core_interpolative_in">
-            <gml:description>Interpolative positioning for core samples accounting for stretch or compression in inches. Used when the physical length of recovered core differs from the drilled interval length and where no sample loss occurred, i.e. caused to expansion (common in clay-rich soils) or compression due to sampling disturbance or dessication. Requires anchor points at core top and bottom to scale positions between the physical core length and the nominal borehole depth interval. This method adjusts all intermediate positions proportionally.</gml:description>
+        <diggs:LinearReferencingMethod gml:id="core_interpolative_in">
+            <gml:description>
+                Interpolative positioning for core samples accounting for stretch or compression in inches. Used when the physical length of recovered core
+                differs from the drilled interval length and where no sample loss occurred, i.e. caused to expansion (common in clay-rich soils) or compression
+                due to sampling disturbance or dessication. Requires anchor points at core top and bottom to scale positions between the physical core length 
+                and the nominal borehole depth interval. This method adjusts all intermediate positions proportionally.
+            </gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#core_interpolative_in</gml:identifier>
-            <gml:name>Core Interpolative (in)</gml:name>
+            <diggs:name>inchMeasure</diggs:name>
             <diggs:type>interpolative</diggs:type>
             <diggs:units>in</diggs:units>
-            <diggs:positiveDirection>downward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in cm interpolated between anchor points at core top and bottom to account for core expansion or compression relative to the drilled interval</diggs:anchorDefinition>
-            <diggs:requiresCalibration>true</diggs:requiresCalibration>
-        </diggs:LRMethod>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
 
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="core_interpolative_cm">
-            <gml:description>Interpolative positioning for core samples accounting for stretch or compression in centimeters. Used when the physical length of recovered core differs from the drilled interval length and where no sample loss occurred, i.e. caused by expansion (common in clay-rich soils) or compression due to sampling disturbance or dessication. Requires anchor points at core top and bottom to scale positions between the physical core length and the nominal borehole depth interval. This method adjusts all intermediate positions proportionally.</gml:description>
+        <diggs:LinearReferencingMethod gml:id="core_interpolative_cm">
+            <gml:description>
+                Interpolative positioning for core samples accounting for stretch or compression in centimeters. Used when the physical length of recovered core 
+                differs from the drilled interval length and where no sample loss occurred, i.e. caused by expansion (common in clay-rich soils) or compression 
+                due to sampling disturbance or dessication. Requires anchor points at core top and bottom to scale positions between the physical core length 
+                and the nominal borehole depth interval. This method adjusts all intermediate positions proportionally.
+            </gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#core_interpolative_cm</gml:identifier>
-            <gml:name>Core Interpolative (cm)</gml:name>
+            <diggs:name>cmMeasure</diggs:name>
             <diggs:type>interpolative</diggs:type>
             <diggs:units>cm</diggs:units>
-            <diggs:positiveDirection>downward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in meters interpolated between anchor points at core top and bottom to account for core expansion or compression relative to the drilled interval</diggs:anchorDefinition>
-            <diggs:requiresCalibration>true</diggs:requiresCalibration>
-        </diggs:LRMethod>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
     
     <!-- ============================================================ -->
-    <!-- TRIAL PIT METHODS WITH LATERAL OFFSET                     -->
+    <!-- TRIAL PIT METHODS WITH LATERAL OFFSET                        -->
     <!-- ============================================================ -->
     
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="trial_pit_md_ft">
-            <gml:description>Absolute measured depth from top of a trial pit and lateral offsets in feet. Measurements are cumulative 3D distance down the trial pit centerline from the first coordinate proceeding downward through the trial pit. Lateral offsets are measured in feet perpendicular to the centerline LinearExten, with positive offsets to the left facing the centerline positive direction. Coordinates using this method are 2D with the first coordinate the measured depth and the second coordinate the offset amount.</gml:description>
+        <diggs:LinearReferencingMethod gml:id="trial_pit_md_ft">
+            <gml:description>
+                Absolute measured depth from top of a trial pit and lateral offsets in feet. Measurements are cumulative 3D distance down 
+                the trial pit centerline from the first coordinate proceeding downward through the trial pit. Lateral offsets are measured in feet
+                perpendicular to the centerline LinearExten, with positive offsets to the left facing the centerline positive direction. Coordinates 
+                using this method are 2D with the first coordinate the measured depth and the second coordinate the offset amount.
+            </gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#trial_pit_md_ft</gml:identifier>
-            <gml:name>Trial Pit Depth With Offset (ft)</gml:name>
+            <diggs:name>trueFootageWithOffset</diggs:name>
             <diggs:type>absolute</diggs:type>
             <diggs:units>ft</diggs:units>
             <diggs:positiveDirection>downward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in feet from the first coordinate of the centerline LinearExtent, which represents the top of the trial pit with positive trial pit centerline and positive left offsets in feet while facing the positive centerline direction.</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
             <diggs:offsetParameters>
                 <diggs:OffsetParameters>
                     <diggs:offsetType>perpendicular</diggs:offsetType>
@@ -268,28 +287,30 @@
                     <diggs:offsetUnits>ft</diggs:offsetUnits>
                 </diggs:OffsetParameters>
             </diggs:offsetParameters>
-        </diggs:LRMethod>
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
     
     <gml:dictionaryEntry>
-        <diggs:LRMethod gml:id="trial_pit_md_m">
-            <gml:description>Absolute measured depth from top of a trial pit and lateral offsets in meters. Measurements are cumulative 3D distance down the trial pit centerline from the first coordinate proceeding downward through the trial pit. Lateral offsets are measured in meters perpendicular to the centerline LinearExten, with positive offsets to the left facing the centerline positive direction. Coordinates using this method are 2D with the first coordinate the measured depth and the second coordinate the offset amount.</gml:description>
+        <diggs:LinearReferencingMethod gml:id="trial_pit_md_m">
+            <gml:description>
+                Absolute measured depth from top of a trial pit and lateral offsets in meters. Measurements are cumulative 3D distance down 
+                the trial pit centerline from the first coordinate proceeding downward through the trial pit. Lateral offsets are measured in meters 
+                perpendicular to the centerline LinearExten, with positive offsets to the left facing the centerline positive direction. Coordinates 
+                using this method are 2D with the first coordinate the measured depth and the second coordinate the offset amount.
+            </gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#trial_pit_md_m</gml:identifier>
-            <gml:name>Trial Pit Depth With Offset (ft)</gml:name>
+            <diggs:name>trueMetersWithOffset</diggs:name>
             <diggs:type>absolute</diggs:type>
             <diggs:units>m</diggs:units>
             <diggs:positiveDirection>downward</diggs:positiveDirection>
-            <diggs:anchorDefinition>Measurement in meters from the first coordinate of the centerline LinearExtent, which represents the top of the trial pit with positive trial pit centerline and positive left offsets in meters while facing the positive centerline direction.</diggs:anchorDefinition>
-            <diggs:requiresCalibration>false</diggs:requiresCalibration>
             <diggs:offsetParameters>
                 <diggs:OffsetParameters>
                     <diggs:offsetType>perpendicular</diggs:offsetType>
                     <diggs:offsetDirection>left</diggs:offsetDirection>
                     <diggs:offsetUnits>m</diggs:offsetUnits>
                 </diggs:OffsetParameters>
-            </diggs:offsetParameters>
-                
-        </diggs:LRMethod>
+            </diggs:offsetParameters>                
+        </diggs:LinearReferencingMethod>
     </gml:dictionaryEntry>
     
     
