@@ -17019,6 +17019,12 @@
 			<B>4.4482216152605E3</B>
 			<C>1</C>
 			<D>0</D>
+			<description>
+				Known commonly in the US as a kip, it is a non-SI unit of force used primarily by 
+				American architects and engineers to express large loads, such as those found in 
+				bridge or building construction. The name is a portmanteau of "kilo-pound". It is
+				exactly equal to 1,000 pounds-force (lbf) and approximately equal to 4,448.22 Newtons.				
+			</description>
 		</unit>
 		<unit>
 			<symbol>kN</symbol>
