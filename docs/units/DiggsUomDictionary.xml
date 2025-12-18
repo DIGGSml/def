@@ -18398,6 +18398,7 @@
 			<B>907.18474</B>
 			<C>0.09290304</C>
 			<D>0</D>
+			<description>Sometimes symbolized as tsf</description>
 		</unit>
 		<unit>
 			<symbol>kg/(m2.s)</symbol>
@@ -18652,6 +18653,7 @@
 			<B>4.4482216152605</B>
 			<C>0.028316846592</C>
 			<D>0</D>
+			<description>Sometimes symbolized as pcf.</description>
 		</unit>
 		<unit>
 			<symbol>lbf/gal[US]</symbol>
