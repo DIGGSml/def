@@ -254,38 +254,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="bulk_density">
-            <gml:description>Total weight (of solids and water) divided by total volume of material, representing natural conditions. This is technically a unit weight not a density, but it is using the industry standard terminology assuming earth gravity.</gml:description>
+            <gml:description>Total weight (of solids and water) divided by total volume of material, representing natural conditions. This is technically a unit weight not a density, but it is using the industry standard terminology assuming earth gravity. Value can also be reported in true density units (mass/volume)</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density</gml:identifier>
             <gml:name>Density, Bulk (Natural)</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force per volume</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituCBRTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituDensityTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCBRTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="bulk_density_true">
-            <gml:description>Total mass (of solids and water) divided by total volume of material, representing natural conditions. A true bulk density using mass units</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density_true</gml:identifier>
-            <gml:name>True Bulk Density</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>mass per volume</diggs:quantityClass>
+            <diggs:quantityClass>force or mass per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -952,26 +925,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="dry_density">
-            <gml:description>Weight of solids divided by total volume. This is technically a unit weight not a density, but it is using the industry standard terminology assuming earth gravity.</gml:description>
+            <gml:description>Weight or mass of solids divided by total volume. This is technically a unit weight not a density, the value can also be reported in true density units.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_density</gml:identifier>
             <gml:name>Density, Dry</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force per volume</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="dry_density_true">
-            <gml:description>Mass of solids divided by total volume This is a true dry density using mass units</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_density_true</gml:identifier>
-            <gml:name>Density, Dry, True</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>mass per volume</diggs:quantityClass>
+            <diggs:quantityClass>force or mass per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -982,26 +940,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="dry_density_max">
-            <gml:description>This is a result of a compaction test. It is defined as the maximum dry density that is measured when a specific type and amount of energy is used for the compaction test. This is also the value of the compacted dry density when the soil is at the optimum moisture content. This is technically a unit weight not a density, but it is using the industry standard terminology assuming earth gravity.</gml:description>
+            <gml:description>This is a result of a compaction test. It is defined as the maximum dry density that is measured when a specific type and amount of energy is used for the compaction test. This is also the value of the compacted dry density when the soil is at the optimum moisture content. This is technically a unit weight not a density, but ithe value can also be reported in true density units.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_density_max</gml:identifier>
             <gml:name>Maximum Dry Density</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force per volume</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="dry_density_max_true">
-            <gml:description>This is a result of a compaction test. It is defined as the maximum dry density that is measured when a specific type and amount of energy is used for the compaction test. This is also the value of the compacted dry density when the soil is at the optimum moisture content. This is a true maximum dry density where mass units are used.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_density_max_true</gml:identifier>
-            <gml:name>Maximum Dry Density, True</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>mass per volume</diggs:quantityClass>
+            <diggs:quantityClass>force or mass per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -1628,7 +1571,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="mean_micro_deval_dry">
-            <gml:description>Needs description</gml:description>
+            <gml:description>A measure of mass loss in dry aggregate</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mean_micro_deval_dry</gml:identifier>
             <gml:name>Mean Micro Deval Value, dry</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -1642,7 +1585,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="mean_micro_deval_wet">
-            <gml:description>Needs description</gml:description>
+            <gml:description>A measure of mass loss in wet aggregate</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mean_micro_deval_wet</gml:identifier>
             <gml:name>Mean Micro Deval Value, wet</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -1690,11 +1633,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="mud_balance_density">
-            <gml:description>Grout or mud density determined using a mud balance. While called a density, measurement is a force (weight) / voume and should use those units.</gml:description>
+            <gml:description>Grout or mud density determined using a mud balance. While called a density, measurement is a force (weight) / voume but can also report this value in true density units (mass/volume)</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mud_balance_density</gml:identifier>
             <gml:name>Mud Balance Density</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force per volume</diggs:quantityClass>
+            <diggs:quantityClass>force or mass per volume</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2147,16 +2090,31 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="pressure_filtration_value">
+        <diggs:Definition gml:id="pressure_filtration_coeff">
             <gml:description>Value derived from a pressure filtration test</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pressure_filtration_value</gml:identifier>
-            <gml:name>Pressure Filtration Value</gml:name>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pressure_filtration_coeff</gml:identifier>
+            <gml:name>Pressure Filtration Coefficient</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>reciprocal time squared</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PressureFiltrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="pumping_rate">
+            <gml:description>Flow of water produced by pumping; recorded in pump tests</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pumping_rate</gml:identifier>
+            <gml:name>Pumping rate</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per time</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PumpingTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2441,7 +2399,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="shrinkage">
-            <gml:description>The amount of grout shrinkage, reported as a percentage of total volume</gml:description>
+            <gml:description>The amount specimen shrinkage, reported as a percentage of total volume</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shrinkage</gml:identifier>
             <gml:name>Shrinkage</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -2464,6 +2422,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shrinkage_limit</gml:identifier>
             <gml:name>Shrinkage Limit</gml:name>
             <diggs:dataType>integer</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2478,7 +2437,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#shrinkage_ratio</gml:identifier>
             <gml:name>Shrinkage Ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2613,11 +2571,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SpecificGravityTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SpecificGravityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2643,6 +2601,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#syneresis</gml:identifier>
             <gml:name>Syneresis</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -2699,11 +2658,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:WaterLevelMonitoring</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FluidLevelMonitoring</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -2718,6 +2677,21 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:AggregateTenPercentFinesTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="tensile_strength">
+            <gml:description>The maximum stress a material can withstand before breaking under tensile (pulling) forces</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#tensile_strength</gml:identifier>
+            <gml:name>Tensile strength</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:TensileStrengthTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -3027,16 +3001,20 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FluidLevelMonitoring</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PumpingTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:WaterLevelMonitoring</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="water_elev">
-            <gml:description>Measured elevation of water level, typically directly observed or computed from a pressure transducer</gml:description>
+            <gml:description>Measured elevation of water level, typically directly observed or computed from a pressure transducer.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_elev</gml:identifier>
-            <gml:name>Water elevation</gml:name>
+            <gml:name>Water Elevation</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>length</diggs:quantityClass>
             <diggs:occurrences>
@@ -3046,7 +3024,146 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:FluidLevelMonitoring</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PumpingTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:WaterLevelMonitoring</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="easily_oxidized_carbon">
+            <gml:description>Amount of carbon (as a percent) in a soil that is easily oxidized as defined in AASHTO Standard T 194.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#easily_oxidized_carbon</gml:identifier>
+            <gml:name>Easily Oxidized Carbon</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:OrganicMatterByWetCombustionTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="total_carbon">
+            <gml:description>Amount of carbon in a soil (as a percent) as defined in AASHTO Standard T 194.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#total_carbon</gml:identifier>
+            <gml:name>Total Carbon</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:OrganicMatterByWetCombustionTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="easily_oxidized_matter">
+            <gml:description>Amount of easily oxidized organic matter (as a percent) in a soil  as defined in AASHTO Standard T 194.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#easily_oxidized_matter</gml:identifier>
+            <gml:name>Easily Oxidized Organic Matter</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:OrganicMatterByWetCombustionTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="total_organic_matter">
+            <gml:description>Amount of organic matter (as a percent) in a soil as defined in AASHTO Standard T 194.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#total_organic_matter</gml:identifier>
+            <gml:name>Total Organic Matter</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:OrganicMatterByWetCombustionTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="free_swell_value">
+            <gml:description>Determined by a one-dimensional swell or collapse test, this is the swell strain corresponding to a vertical stress of 1 kPa (20 lbf/ft2).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#free_swell_value</gml:identifier>
+            <gml:name>Free Swell Value</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length per length</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SwellOrCollapseTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="swell_pressure">
+            <gml:description>Determined by a one-dimensional swell or collapse test, this is stress corresponding to zero strain.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#swell_pressure</gml:identifier>
+            <gml:name>Swell Pressure</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:SwellOrCollapseTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="d_value">
+            <gml:description>The rapid method equivalent of percent compaction; the comparison of in-place density to laboratory derived maximum density.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#d_value</gml:identifier>
+            <gml:name>D Value</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="c_value">
+            <gml:description>The comparison of field compactive effort to standard laboratory compactive effort.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#c_value</gml:identifier>
+            <gml:name>C Value</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="water_content_difference">
+            <gml:description>The difference in water content between the field and the optimum water content of a soil.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_content_difference</gml:identifier>
+            <gml:name>Water Content Difference</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per force</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

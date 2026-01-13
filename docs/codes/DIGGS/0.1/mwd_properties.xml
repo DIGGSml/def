@@ -11,7 +11,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#alteration_index</gml:identifier>
             <gml:name>Alteration index</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>Pfister, P. 1985. “Recording Drilling Parameters in Ground Engineering.” Journal of Ground Engineering, 18(3), 16–21.</diggs:authority>
             <diggs:reference>https://emap-romulus-prod.s3.eu-west-1.amazonaws.com/wp-content/uploads/sites/13/1985/04/1985-04_Pages_16-21.pdf</diggs:reference>
             <diggs:occurrences>
@@ -28,7 +27,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#calibration_flag</gml:identifier>
             <gml:name>Calibration flag</gml:name>
             <diggs:dataType>boolean</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -105,7 +103,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#exponent_method</gml:identifier>
             <gml:name>Exponent method</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>Jorden, J., and Shirley, O. 1966. “Application of Drilling Performance Data to Overpressure Detection.” Journal of Petroleum Technology, 7, 987–991.</diggs:authority>
             <diggs:reference>https://doi.org/10.2118/1407-PA</diggs:reference>
             <diggs:occurrences>
@@ -182,7 +179,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#gear_number</gml:identifier>
             <gml:name>Gear Number</gml:name>
             <diggs:dataType>integer</diggs:dataType>
-            <diggs:quantityClass>unitless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -212,7 +208,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hardness_parameter</gml:identifier>
             <gml:name>Hardness parameter</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>Bingham, M. 1965. “A New Approach to Interpreting Rock Drillability.” Petroleum Publishing Company.</diggs:authority>
             <diggs:reference>https://books.google.com/books/about/A_New_Approach_to_Interpreting_Rock_Dril.html?id=8KcRnQEACAAJ</diggs:reference>
             <diggs:occurrences>
@@ -260,6 +255,21 @@
             <gml:name>Hydraulic torque operating pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="hydraulic_fluid_flow_rate">
+            <gml:description>Rate of flow of the rig hydraulic fluid.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_fluid_flow_rate</gml:identifier>
+            <gml:name>Hydraulic fluid flow rate</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -349,7 +359,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#event_new_rod</gml:identifier>
             <gml:name>New rod event</gml:name>
             <diggs:dataType>boolean</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -443,7 +452,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#somerton_index</gml:identifier>
             <gml:name>Somerton index</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>Somerton W.H. 1959. “A laboratory study of rock breakage by rotary drilling.” J. Pet. Technol, 216 pp. 92-97.</diggs:authority>
             <diggs:reference>https://doi.org/10.2118/1163-G</diggs:reference>
             <diggs:occurrences>
@@ -477,7 +485,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#stop_flag</gml:identifier>
             <gml:name>Stop Flag</gml:name>
             <diggs:dataType>boolean</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -505,7 +512,7 @@
         <diggs:Definition gml:id="torque_tach">
             <gml:description>The percentage of the maximum available torque being used by the drill rig.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#torque_tach</gml:identifier>
-            <gml:name>Torque Tach (%)</gml:name>
+            <gml:name>Torque Tach</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
@@ -582,7 +589,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#eccentric_rotation</gml:identifier>
             <gml:name>Eccentric rotation</gml:name>
             <diggs:dataType>boolean</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
