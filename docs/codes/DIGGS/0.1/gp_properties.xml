@@ -361,7 +361,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml#gravity_gradient</gml:identifier>
             <gml:name>Gravity Gradient</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>reciprocal time squared</diggs:quantityClass>
+            <diggs:quantityClass>gravitational gradient</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
