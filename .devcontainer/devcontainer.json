@@ -4,6 +4,9 @@
     "context": "..",
     "dockerfile": "../dockerfile"
   },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": ["ms-python.python"]
