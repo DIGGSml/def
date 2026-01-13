@@ -1,4 +1,5 @@
 requests
+urllib3>=2.6.3
 pandas
 geojson
 openpyxl
