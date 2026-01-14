@@ -7,7 +7,7 @@
   <xsl:template match="/">
     <html>
       <head>
-        <title>DIGGS Validation Report</title>
+        <title>DIGGS Semantic Validation Report</title>
         <!-- Add CodeMirror CSS -->
         <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css"/>
