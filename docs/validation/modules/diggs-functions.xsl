@@ -365,23 +365,29 @@
                         <xsl:when test="starts-with($xpathExpression, '//')">
                             <xsl:variable name="components" select="tokenize(replace($xpathExpression, '^//', ''), '//')"/>
                             <xsl:variable name="lastComponent" select="$components[last()]"/>
+                            <!-- Extract just the last element name, handling both // and / separators -->
+                            <xsl:variable name="lastSegment" select="tokenize($lastComponent, '/')[last()]"/>
                             <xsl:variable name="elementName" select="
-                                if (contains($lastComponent, ':')) 
-                                then substring-after($lastComponent, ':') 
-                                else $lastComponent
+                                if (contains($lastSegment, ':')) 
+                                then substring-after($lastSegment, ':') 
+                                else $lastSegment
                                 "/>
-                            <xsl:variable name="elementNamespace" select="
-                                if (contains($lastComponent, 'diggs:')) 
-                                then 'http://diggsml.org/schema-dev'
-                                else (if (contains($lastComponent, 'gml:'))
-                                then 'http://www.opengis.net/gml/3.2'
-                                else '*')
+                            <xsl:variable name="elementNamespaceType" select="
+                                if (contains($lastSegment, 'diggs:')) 
+                                then 'diggs'
+                                else (if (contains($lastSegment, 'gml:'))
+                                then 'gml'
+                                else 'any')
                                 "/>
                             
                             <!-- Check if the basic element type matches -->
+                            <!-- For DIGGS elements, accept any diggsml.org namespace variant -->
+                            <!-- For GML elements, require exact namespace match -->
                             <xsl:sequence select="
                                 local-name($nodeToCheck) = $elementName and 
-                                (namespace-uri($nodeToCheck) = $elementNamespace or $elementNamespace = '*')
+                                ($elementNamespaceType = 'any' or
+                                 ($elementNamespaceType = 'diggs' and contains(namespace-uri($nodeToCheck), 'diggsml.org')) or
+                                 ($elementNamespaceType = 'gml' and namespace-uri($nodeToCheck) = 'http://www.opengis.net/gml/3.2'))
                                 "/>
                         </xsl:when>
                         <xsl:otherwise>
@@ -402,28 +408,38 @@
                                 <!-- Parse the components to check ancestors -->
                                 <xsl:variable name="components" select="tokenize(replace($xpathExpression, '^//', ''), '//')"/>
                                 
-                                <!-- Check ancestors if there are multiple components -->
+                                <!-- For each component, split by / to get individual path segments -->
+                                <xsl:variable name="allSegments" as="xs:string*">
+                                    <xsl:for-each select="$components">
+                                        <xsl:sequence select="tokenize(., '/')"/>
+                                    </xsl:for-each>
+                                </xsl:variable>
+                                
+                                <!-- Check ancestors if there are multiple segments -->
                                 <xsl:choose>
-                                    <xsl:when test="count($components) > 1">
+                                    <xsl:when test="count($allSegments) > 1">
                                         <xsl:variable name="ancestorChecks" as="xs:boolean*">
-                                            <xsl:for-each select="$components[position() lt last()]">
+                                            <xsl:for-each select="$allSegments[position() lt last()]">
+                                                <xsl:variable name="ancestorSegment" select="."/>
                                                 <xsl:variable name="ancestorName" select="
-                                                    if (contains(., ':')) 
-                                                    then substring-after(., ':') 
-                                                    else .
+                                                    if (contains($ancestorSegment, ':')) 
+                                                    then substring-after($ancestorSegment, ':') 
+                                                    else $ancestorSegment
                                                     "/>
-                                                <xsl:variable name="ancestorNS" select="
-                                                    if (contains(., 'diggs:')) 
-                                                    then 'http://diggsml.org/schema-dev'
-                                                    else (if (contains(., 'gml:'))
-                                                    then 'http://www.opengis.net/gml/3.2'
-                                                    else '*')
+                                                <xsl:variable name="ancestorNSType" select="
+                                                    if (contains($ancestorSegment, 'diggs:')) 
+                                                    then 'diggs'
+                                                    else (if (contains($ancestorSegment, 'gml:'))
+                                                    then 'gml'
+                                                    else 'any')
                                                     "/>
                                                 
                                                 <xsl:sequence select="
                                                     exists($nodeToCheck/ancestor::*[
                                                     local-name() = $ancestorName and 
-                                                    (namespace-uri() = $ancestorNS or $ancestorNS = '*')
+                                                    ($ancestorNSType = 'any' or
+                                                     ($ancestorNSType = 'diggs' and contains(namespace-uri(), 'diggsml.org')) or
+                                                     ($ancestorNSType = 'gml' and namespace-uri() = 'http://www.opengis.net/gml/3.2'))
                                                     ])
                                                     "/>
                                             </xsl:for-each>

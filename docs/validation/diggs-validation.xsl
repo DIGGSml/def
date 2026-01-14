@@ -8,10 +8,10 @@
     exclude-result-prefixes="xs map diggs gml">
     
     <!-- 
-         ************ Master stylesheet for DIGGS context validation **************
+         ************ Master stylesheet for DIGGS semantic validation *************
          *                                                                        *
          *            DIGGS files should be schema valid before                   * 
-         *            running context validation                                  *
+         *            running symantic validation                                  *
          *                                                                        *
          **************************************************************************
      -->

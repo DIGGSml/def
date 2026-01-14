@@ -742,93 +742,198 @@
         <!-- Get the uom value -->
         <xsl:variable name="uomValue" select="string($siblingUom)"/>
         
-        <!-- Get the quantityClass value and encode spaces as %20 for the URL -->
+        <!-- Get the quantityClass value -->
         <xsl:variable name="quantityClassValue" select="string($quantityClass)"/>
-        <xsl:variable name="encodedQuantityClass" select="replace($quantityClassValue, ' ', '%20')"/>
         
-        <!-- Construct the API URL -->
-        <xsl:variable name="apiUrl" select="concat('https://diggs.geosetta.org/api/units/classes/', $encodedQuantityClass)"/>
-        
-        <!-- Call the extractJsonValues function to get the allowed units -->
-        <xsl:variable name="allowedUnits" select="diggs:extractJsonValues($apiUrl, 'units')"/>
-        
-        <!-- Check if the uom value matches any of the allowed units (case-sensitive) -->
-        <xsl:variable name="isValidUnit" as="xs:boolean">
-            <xsl:choose>
-                <xsl:when test="empty($allowedUnits)">
-                    <!-- If no units are returned, consider it valid to avoid false failures -->
-                    <xsl:sequence select="true()"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <!-- Check if the uom value is in the allowed units -->
-                    <xsl:sequence select="exists($allowedUnits[. = $uomValue])"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-        
+        <!-- Special case: handle "force or mass per volume" quantity class -->
         <xsl:choose>
-            <!-- If API call failed or returned no units, issue a warning but don't fail validation -->
-            <xsl:when test="empty($allowedUnits)">
-                <xsl:sequence select="diggs:createMessage(
-                    'WARNING',
-                    $elementPath,
-                    concat('Check 12:&#10;Unable to validate unit of measure &quot;', $uomValue, '&quot; for quantity class &quot;', 
-                    $quantityClassValue, '&quot;. The units API could not be accessed at &quot;', $apiUrl, '&quot;.'),
-                    $currentElement
-                    )"/>
-                <!-- Continue to Step 14 despite the warning -->
-                <xsl:apply-templates select="." mode="step14">
-                    <xsl:with-param name="elementPath" select="$elementPath"/>
-                    <xsl:with-param name="codeSpaceValue" select="$codeSpaceValue"/>
-                    <xsl:with-param name="baseUrl" select="$baseUrl"/>
-                    <xsl:with-param name="fragment" select="$fragment"/>
-                    <xsl:with-param name="definitionNode" select="$definitionNode"/>
-                    <xsl:with-param name="dictionaryResource" select="$dictionaryResource"/>
-                    <xsl:with-param name="whiteList" select="$whiteList"/>
-                    <xsl:with-param name="quantityClass" select="$quantityClass"/>
-                    <xsl:with-param name="definitionName" select="$definitionName"/>
-                    <xsl:with-param name="siblingUom" select="$siblingUom"/>
-                </xsl:apply-templates>
-            </xsl:when>
-            <!-- If the uom value is not in the list of allowed units -->
-            <xsl:when test="not($isValidUnit)">
-                <!-- Format the list of allowed units for readable error message -->
-                <xsl:variable name="formattedAllowedUnits">
-                    <xsl:for-each select="$allowedUnits[position() &lt;= 10]">
-                        <xsl:if test="position() > 1">, </xsl:if>
-                        <xsl:value-of select="."/>
-                    </xsl:for-each>
-                    <xsl:if test="count($allowedUnits) > 10">
-                        <xsl:text>, ... and </xsl:text>
-                        <xsl:value-of select="count($allowedUnits) - 10"/>
-                        <xsl:text> more</xsl:text>
-                    </xsl:if>
+            <xsl:when test="$quantityClassValue = 'force or mass per volume'">
+                <!-- Check against both "force per volume" and "mass per volume" -->
+                <xsl:variable name="encodedForcePerVolume" select="'force%20per%20volume'"/>
+                <xsl:variable name="encodedMassPerVolume" select="'mass%20per%20volume'"/>
+                
+                <!-- Construct API URLs for both quantity classes -->
+                <xsl:variable name="forceApiUrl" select="concat('https://diggs.geosetta.org/api/units/classes/', $encodedForcePerVolume)"/>
+                <xsl:variable name="massApiUrl" select="concat('https://diggs.geosetta.org/api/units/classes/', $encodedMassPerVolume)"/>
+                
+                <!-- Get allowed units for both quantity classes -->
+                <xsl:variable name="forceAllowedUnits" select="diggs:extractJsonValues($forceApiUrl, 'units')"/>
+                <xsl:variable name="massAllowedUnits" select="diggs:extractJsonValues($massApiUrl, 'units')"/>
+                
+                <!-- Combine the allowed units from both classes -->
+                <xsl:variable name="combinedAllowedUnits" select="($forceAllowedUnits, $massAllowedUnits)"/>
+                
+                <!-- Check if the uom value matches any unit from either class -->
+                <xsl:variable name="isValidUnit" as="xs:boolean">
+                    <xsl:choose>
+                        <xsl:when test="empty($combinedAllowedUnits)">
+                            <!-- If no units are returned from either API, consider it valid to avoid false failures -->
+                            <xsl:sequence select="true()"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <!-- Check if the uom value is in the combined allowed units -->
+                            <xsl:sequence select="exists($combinedAllowedUnits[. = $uomValue])"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:variable>
                 
-                <!-- Error: uom value is not in the list of allowed units -->
-                <xsl:sequence select="diggs:createMessage(
-                    'ERROR',
-                    $elementPath,
-                    concat('Check 12:&#10;The unit of measure &quot;', $uomValue, '&quot; is not valid for quantity class &quot;', 
-                    $quantityClassValue, '&quot;. Valid units include: ', $formattedAllowedUnits, '.'),
-                    $currentElement
-                    )"/>
-                <!-- Terminate processing on error -->
+                <xsl:choose>
+                    <!-- If both API calls failed or returned no units, issue a warning -->
+                    <xsl:when test="empty($combinedAllowedUnits)">
+                        <xsl:sequence select="diggs:createMessage(
+                            'WARNING',
+                            $elementPath,
+                            concat('Check 12:&#10;Unable to validate unit of measure &quot;', $uomValue, '&quot; for quantity class &quot;', 
+                            $quantityClassValue, '&quot;. The units API could not be accessed for either &quot;force per volume&quot; or &quot;mass per volume&quot;.'),
+                            $currentElement
+                            )"/>
+                        <!-- Continue to Step 14 despite the warning -->
+                        <xsl:apply-templates select="." mode="step14">
+                            <xsl:with-param name="elementPath" select="$elementPath"/>
+                            <xsl:with-param name="codeSpaceValue" select="$codeSpaceValue"/>
+                            <xsl:with-param name="baseUrl" select="$baseUrl"/>
+                            <xsl:with-param name="fragment" select="$fragment"/>
+                            <xsl:with-param name="definitionNode" select="$definitionNode"/>
+                            <xsl:with-param name="dictionaryResource" select="$dictionaryResource"/>
+                            <xsl:with-param name="whiteList" select="$whiteList"/>
+                            <xsl:with-param name="quantityClass" select="$quantityClass"/>
+                            <xsl:with-param name="definitionName" select="$definitionName"/>
+                            <xsl:with-param name="siblingUom" select="$siblingUom"/>
+                        </xsl:apply-templates>
+                    </xsl:when>
+                    <!-- If the uom value is not in either list of allowed units -->
+                    <xsl:when test="not($isValidUnit)">
+                        <!-- Format the combined list of allowed units for readable error message -->
+                        <xsl:variable name="formattedAllowedUnits">
+                            <xsl:for-each select="$combinedAllowedUnits[position() &lt;= 15]">
+                                <xsl:if test="position() > 1">, </xsl:if>
+                                <xsl:value-of select="."/>
+                            </xsl:for-each>
+                            <xsl:if test="count($combinedAllowedUnits) > 15">
+                                <xsl:text>, ... and </xsl:text>
+                                <xsl:value-of select="count($combinedAllowedUnits) - 15"/>
+                                <xsl:text> more</xsl:text>
+                            </xsl:if>
+                        </xsl:variable>
+                        
+                        <!-- Error: uom value is not in either list of allowed units -->
+                        <xsl:sequence select="diggs:createMessage(
+                            'ERROR',
+                            $elementPath,
+                            concat('Check 12:&#10;The unit of measure &quot;', $uomValue, '&quot; is not valid for quantity class &quot;', 
+                            $quantityClassValue, '&quot;. Valid units include: ', $formattedAllowedUnits, '.'),
+                            $currentElement
+                            )"/>
+                        <!-- Terminate processing on error -->
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <!-- uom value is in one of the lists of allowed units - continue to Step 14 -->
+                        <xsl:apply-templates select="." mode="step14">
+                            <xsl:with-param name="elementPath" select="$elementPath"/>
+                            <xsl:with-param name="codeSpaceValue" select="$codeSpaceValue"/>
+                            <xsl:with-param name="baseUrl" select="$baseUrl"/>
+                            <xsl:with-param name="fragment" select="$fragment"/>
+                            <xsl:with-param name="definitionNode" select="$definitionNode"/>
+                            <xsl:with-param name="dictionaryResource" select="$dictionaryResource"/>
+                            <xsl:with-param name="whiteList" select="$whiteList"/>
+                            <xsl:with-param name="quantityClass" select="$quantityClass"/>
+                            <xsl:with-param name="definitionName" select="$definitionName"/>
+                            <xsl:with-param name="siblingUom" select="$siblingUom"/>
+                        </xsl:apply-templates>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:when>
+            
+            <!-- Normal case: single quantity class validation -->
             <xsl:otherwise>
-                <!-- uom value is in the list of allowed units - continue to Step 14 -->
-                <xsl:apply-templates select="." mode="step14">
-                    <xsl:with-param name="elementPath" select="$elementPath"/>
-                    <xsl:with-param name="codeSpaceValue" select="$codeSpaceValue"/>
-                    <xsl:with-param name="baseUrl" select="$baseUrl"/>
-                    <xsl:with-param name="fragment" select="$fragment"/>
-                    <xsl:with-param name="definitionNode" select="$definitionNode"/>
-                    <xsl:with-param name="dictionaryResource" select="$dictionaryResource"/>
-                    <xsl:with-param name="whiteList" select="$whiteList"/>
-                    <xsl:with-param name="quantityClass" select="$quantityClass"/>
-                    <xsl:with-param name="definitionName" select="$definitionName"/>
-                    <xsl:with-param name="siblingUom" select="$siblingUom"/>
-                </xsl:apply-templates>
+                <!-- Encode spaces as %20 for the URL -->
+                <xsl:variable name="encodedQuantityClass" select="replace($quantityClassValue, ' ', '%20')"/>
+                
+                <!-- Construct the API URL -->
+                <xsl:variable name="apiUrl" select="concat('https://diggs.geosetta.org/api/units/classes/', $encodedQuantityClass)"/>
+                
+                <!-- Call the extractJsonValues function to get the allowed units -->
+                <xsl:variable name="allowedUnits" select="diggs:extractJsonValues($apiUrl, 'units')"/>
+                
+                <!-- Check if the uom value matches any of the allowed units (case-sensitive) -->
+                <xsl:variable name="isValidUnit" as="xs:boolean">
+                    <xsl:choose>
+                        <xsl:when test="empty($allowedUnits)">
+                            <!-- If no units are returned, consider it valid to avoid false failures -->
+                            <xsl:sequence select="true()"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <!-- Check if the uom value is in the allowed units -->
+                            <xsl:sequence select="exists($allowedUnits[. = $uomValue])"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                
+                <xsl:choose>
+                    <!-- If API call failed or returned no units, issue a warning but don't fail validation -->
+                    <xsl:when test="empty($allowedUnits)">
+                        <xsl:sequence select="diggs:createMessage(
+                            'WARNING',
+                            $elementPath,
+                            concat('Check 12:&#10;Unable to validate unit of measure &quot;', $uomValue, '&quot; for quantity class &quot;', 
+                            $quantityClassValue, '&quot;. The units API could not be accessed at &quot;', $apiUrl, '&quot;.'),
+                            $currentElement
+                            )"/>
+                        <!-- Continue to Step 14 despite the warning -->
+                        <xsl:apply-templates select="." mode="step14">
+                            <xsl:with-param name="elementPath" select="$elementPath"/>
+                            <xsl:with-param name="codeSpaceValue" select="$codeSpaceValue"/>
+                            <xsl:with-param name="baseUrl" select="$baseUrl"/>
+                            <xsl:with-param name="fragment" select="$fragment"/>
+                            <xsl:with-param name="definitionNode" select="$definitionNode"/>
+                            <xsl:with-param name="dictionaryResource" select="$dictionaryResource"/>
+                            <xsl:with-param name="whiteList" select="$whiteList"/>
+                            <xsl:with-param name="quantityClass" select="$quantityClass"/>
+                            <xsl:with-param name="definitionName" select="$definitionName"/>
+                            <xsl:with-param name="siblingUom" select="$siblingUom"/>
+                        </xsl:apply-templates>
+                    </xsl:when>
+                    <!-- If the uom value is not in the list of allowed units -->
+                    <xsl:when test="not($isValidUnit)">
+                        <!-- Format the list of allowed units for readable error message -->
+                        <xsl:variable name="formattedAllowedUnits">
+                            <xsl:for-each select="$allowedUnits[position() &lt;= 10]">
+                                <xsl:if test="position() > 1">, </xsl:if>
+                                <xsl:value-of select="."/>
+                            </xsl:for-each>
+                            <xsl:if test="count($allowedUnits) > 10">
+                                <xsl:text>, ... and </xsl:text>
+                                <xsl:value-of select="count($allowedUnits) - 10"/>
+                                <xsl:text> more</xsl:text>
+                            </xsl:if>
+                        </xsl:variable>
+                        
+                        <!-- Error: uom value is not in the list of allowed units -->
+                        <xsl:sequence select="diggs:createMessage(
+                            'ERROR',
+                            $elementPath,
+                            concat('Check 12:&#10;The unit of measure &quot;', $uomValue, '&quot; is not valid for quantity class &quot;', 
+                            $quantityClassValue, '&quot;. Valid units include: ', $formattedAllowedUnits, '.'),
+                            $currentElement
+                            )"/>
+                        <!-- Terminate processing on error -->
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <!-- uom value is in the list of allowed units - continue to Step 14 -->
+                        <xsl:apply-templates select="." mode="step14">
+                            <xsl:with-param name="elementPath" select="$elementPath"/>
+                            <xsl:with-param name="codeSpaceValue" select="$codeSpaceValue"/>
+                            <xsl:with-param name="baseUrl" select="$baseUrl"/>
+                            <xsl:with-param name="fragment" select="$fragment"/>
+                            <xsl:with-param name="definitionNode" select="$definitionNode"/>
+                            <xsl:with-param name="dictionaryResource" select="$dictionaryResource"/>
+                            <xsl:with-param name="whiteList" select="$whiteList"/>
+                            <xsl:with-param name="quantityClass" select="$quantityClass"/>
+                            <xsl:with-param name="definitionName" select="$definitionName"/>
+                            <xsl:with-param name="siblingUom" select="$siblingUom"/>
+                        </xsl:apply-templates>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
