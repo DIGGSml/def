@@ -25,7 +25,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/USCSSoilComponents.xml#cobbles</gml:identifier>
             <gml:name>Cobbles</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>ASTM D2488</diggs:authority>
+            <diggs:authority>ASTM D2487</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:ComponentLith/classificationCode</diggs:sourceElementXpath>
@@ -39,7 +39,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/USCSSoilComponents.xml#gravel</gml:identifier>
             <gml:name>Gravel</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>ASTM D2489</diggs:authority>
+            <diggs:authority>ASTM D2487</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:ComponentLith/classificationCode</diggs:sourceElementXpath>
@@ -53,7 +53,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/USCSSoilComponents.xml#sand</gml:identifier>
             <gml:name>Sand</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>ASTM D2490</diggs:authority>
+            <diggs:authority>ASTM D2487</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:ComponentLith/classificationCode</diggs:sourceElementXpath>
@@ -67,7 +67,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/USCSSoilComponents.xml#fines</gml:identifier>
             <gml:name>Fines</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>ASTM D2491</diggs:authority>
+            <diggs:authority>ASTM D2487</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:ComponentLith/classificationCode</diggs:sourceElementXpath>
@@ -81,7 +81,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/USCSSoilComponents.xml#silt</gml:identifier>
             <gml:name>Silt</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>ASTM D2492</diggs:authority>
+            <diggs:authority>ASTM D2487</diggs:authority>
             <diggs:reference>Particle sizes only. Silt and clay are distinguished in ASTM by their plasticity characteristics.</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -96,7 +96,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/USCSSoilComponents.xml#clay</gml:identifier>
             <gml:name>Clay</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>ASTM D2493</diggs:authority>
+            <diggs:authority>ASTM D2487</diggs:authority>
             <diggs:reference>Particle sizes only. Silt and clay are distinguished in ASTM by their plasticity characteristics.</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
