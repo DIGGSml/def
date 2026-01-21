@@ -34,14 +34,17 @@
   <codeType>
     <xpath>//*[local-name() = 'classificationSymbol']</xpath>
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-aashtoM145.xml</dictionaryURL>
-    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-astm2487.xml</dictionaryURL>
-    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-astm2488.xml</dictionaryURL>
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml</dictionaryURL>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2488.xml</dictionaryURL>
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2488Brdr.xml</dictionaryURL>
   </codeType>
   <codeType>
     <xpath>//*[local-name() = 'measurand']</xpath>
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/measurand.xml</dictionaryURL>
+  </codeType>
+  <codeType>
+    <xpath>//*[local-name() = 'state']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/progressState.xml</dictionaryURL>
   </codeType>
   <codeType>
     <xpath>//*[local-name() = 'rolePerformed']</xpath>

@@ -15,7 +15,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -30,7 +30,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -45,7 +45,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -60,7 +60,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -75,7 +75,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -90,7 +90,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -105,7 +105,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -120,7 +120,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -135,7 +135,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -150,7 +150,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -165,7 +165,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -180,7 +180,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -195,7 +195,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -210,7 +210,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -225,7 +225,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -240,7 +240,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -255,7 +255,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -270,7 +270,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -285,7 +285,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -300,7 +300,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -315,7 +315,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -330,7 +330,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -345,7 +345,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -360,7 +360,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -375,7 +375,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -390,7 +390,7 @@
             <diggs:reference>https://www.astm.org/d2487-17.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Lithology/diggs:classificationSymbol</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

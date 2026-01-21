@@ -11,7 +11,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#AP</gml:identifier>
             <gml:name>Auger Probe</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -26,7 +25,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#CP</gml:identifier>
             <gml:name>Cable Percussion</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -41,7 +39,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#CP-RC</gml:identifier>
             <gml:name>Cable Percussion to Rotary Coring</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -56,7 +53,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#GP</gml:identifier>
             <gml:name>Geoprobe</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -71,7 +67,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#HA</gml:identifier>
             <gml:name>Hand Auger</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -86,7 +81,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#PP</gml:identifier>
             <gml:name>Push Probe</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -101,7 +95,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#RC</gml:identifier>
             <gml:name>Rotary Cored</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -116,7 +109,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#SNC</gml:identifier>
             <gml:name>Sonic Core Drilling</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -131,7 +123,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#VE</gml:identifier>
             <gml:name>Vacuum Excavation</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -146,7 +137,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#VC</gml:identifier>
             <gml:name>Vibracore</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -161,7 +151,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#MR</gml:identifier>
             <gml:name>Mud Rotary</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -176,7 +165,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#REV</gml:identifier>
             <gml:name>Reverse Circulation</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -191,7 +179,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#BA</gml:identifier>
             <gml:name>Bucket Auger</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -206,7 +193,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#AR</gml:identifier>
             <gml:name>Air Rotary</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -221,7 +207,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#HSA</gml:identifier>
             <gml:name>Hollow Stem Auger</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -236,7 +221,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#SSA</gml:identifier>
             <gml:name>Solid Stem Auger</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -251,7 +235,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml#BH</gml:identifier>
             <gml:name>Borehole</gml:name>
             <diggs:dataType>string</diggs:dataType>
-            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
