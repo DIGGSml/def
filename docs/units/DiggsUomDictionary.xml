@@ -10,7 +10,7 @@
 		project follow the Energistics Unit of Measure Standard and are identified as DIGGS extensions in the description for each DIGGS unit or quantity class. 
 		All other unit and quantity class definitions derive directly from the Energistics v1.0 dictionary without modification.
 		
-		<!-- Explanatory text from the Energistic Unit of Measure Dictionary Description 
+        Explanatory text from the Energistic Unit of Measure Dictionary Description 
 
 		In the DIMENSION portion, each unitDimension element defines dimensional concepts where each concept 
 		represents a unique unit of measure dimensional analysis. 
@@ -44,7 +44,7 @@
 		Use of this data constitutes agreement with the Energistics License Agreement. 
 		Copyright (c) 2014 Energistics. 
 		All rights reserved.
-				-->
+		
 	</description>
 	<unitDimensionSet version="Energistics-UOM-V1.0">
 		<unitDimension>
