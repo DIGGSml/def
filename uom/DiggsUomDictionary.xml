@@ -3350,6 +3350,20 @@
   </quantityClassSet>
   <unitSet version="1.0">
     <unit>
+      <symbol>(bbl/d)/(bbl/d)</symbol>
+      <name>(barrel per day) per (barrel per day)</name>
+      <dimension>1</dimension>
+      <isSI>false</isSI>
+      <category>derived</category>
+      <baseUnit>(m3/s)/(m3/s)</baseUnit>
+      <conversionRef>DERIVED</conversionRef>
+      <isExact>true</isExact>
+      <A>0</A>
+      <B>1</B>
+      <C>1</C>
+      <D>0</D>
+    </unit>
+    <unit>
       <symbol>(kN/m2)/(kN/m2)</symbol>
       <name>kilonewton per square metre per kilonewton per square metre</name>
       <dimension>1</dimension>
