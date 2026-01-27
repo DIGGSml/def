@@ -3497,7 +3497,7 @@
       <B>0.01</B>
       <C>86400</C>
       <D/>
-      <description>Diggs addition. Percent per day. Rate of relative change per day.</description>
+      <description>Diggs addition.Rate of relative change per day.</description>
     </unit>
     <unit>
       <symbol>%/h</symbol>
@@ -3512,7 +3512,7 @@
       <B>0.01</B>
       <C>3600</C>
       <D/>
-      <description>Diggs addition. Percent per hour. Rate of relative change per hour.</description>
+      <description>Diggs addition. Rate of relative change per hour.</description>
     </unit>
     <unit>
       <symbol>%/ky</symbol>
@@ -3527,7 +3527,7 @@
       <B>0.01</B>
       <C>31557600000</C>
       <D/>
-      <description>Diggs addition. Percent per thousand years. Rate of relative change per kiloyear.</description>
+      <description>Diggs addition. Rate of relative change per kiloyear.</description>
     </unit>
     <unit>
       <symbol>%/m</symbol>
@@ -3542,7 +3542,7 @@
       <B>0.01</B>
       <C>2629800</C>
       <D/>
-      <description>Diggs addition. Percent per month (average month = 30.4375 days). Rate of relative change per month.</description>
+      <description>Diggs addition. Average month = 30.4375 days. Rate of relative change per month.</description>
     </unit>
     <unit>
       <symbol>%/min</symbol>
@@ -3557,7 +3557,7 @@
       <B>0.01</B>
       <C>60</C>
       <D/>
-      <description>Diggs addition. Percent per minute. Rate of relative change per minute.</description>
+      <description>Diggs addition. Rate of relative change per minute.</description>
     </unit>
     <unit>
       <symbol>%/s</symbol>
@@ -3572,7 +3572,7 @@
       <B>0.01</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Percent per second. Rate of relative change per second.</description>
+      <description>Diggs addition. Rate of relative change per second.</description>
     </unit>
     <unit>
       <symbol>%/y</symbol>
@@ -3587,7 +3587,7 @@
       <B>0.01</B>
       <C>31557600</C>
       <D/>
-      <description>Diggs addition. Percent per year (Julian year = 365.25 days). Rate of relative change per year.</description>
+      <description>Diggs addition. Julian year = 365.25 days. Rate of relative change per year.</description>
     </unit>
     <unit>
       <symbol>0.001 bbl/ft3</symbol>
@@ -4515,7 +4515,7 @@
       <B>1</B>
       <C>60</C>
       <D/>
-      <description>Diggs addition. Per square root of hour. Used in pressure filtration coefficient calculations.</description>
+      <description>Diggs addition. Used in pressure filtration coefficient calculations.</description>
     </unit>
     <unit>
       <symbol>1/in</symbol>
@@ -4688,7 +4688,7 @@
       <B>1</B>
       <C>7.74596669241483</C>
       <D/>
-      <description>Diggs addition. Per square root of minute. Used in pressure filtration coefficient calculations.</description>
+      <description>Diggs addition. Used in pressure filtration coefficient calculations.</description>
     </unit>
     <unit>
       <symbol>1/mm</symbol>
@@ -4791,7 +4791,7 @@
       <isSI>true</isSI>
       <category>derived</category>
       <isBase/>
-      <description>Diggs addition. Per square root of second. SI unit for reciprocal square root time used in pressure filtration analysis.</description>
+      <description>Diggs addition. SI unit for reciprocal square root time used in pressure filtration analysis.</description>
     </unit>
     <unit>
       <symbol>1/s2</symbol>
@@ -5942,7 +5942,7 @@
       <B>98066.5</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Technical atmosphere per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>atm</symbol>
@@ -6048,7 +6048,7 @@
       <B>101325</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Standard atmosphere per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>b</symbol>
@@ -6208,7 +6208,7 @@
       <B>100000</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Bar per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>bar2</symbol>
@@ -8168,7 +8168,7 @@
       <B>98.0638</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Centimeter of water column at 4°C per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>cN</symbol>
@@ -9638,7 +9638,7 @@
       <B>0.1</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Decipascal per second. Rate of pressure change.</description>
+      <description>Diggs addition. 0Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>drd</symbol>
@@ -11617,7 +11617,7 @@
       <B>2988.98</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Foot of water column at 39°F. Pressure unit based on height of water column.</description>
+      <description>Diggs addition. Pressure unit based on height of water column.</description>
     </unit>
     <unit>
       <symbol>ftH2O[60degF]</symbol>
@@ -11632,7 +11632,7 @@
       <B>2986.116</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Foot of water column at 60°F. Pressure unit based on height of water column.</description>
+      <description>Diggs addition. Pressure unit based on height of water column.</description>
     </unit>
     <unit>
       <symbol>fur[US]</symbol>
@@ -12806,7 +12806,7 @@
       <B>1000000000</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Gigapascal per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>GPa2</symbol>
@@ -13108,7 +13108,7 @@
       <B>10000000</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Hundred bar per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>hg</symbol>
@@ -13653,7 +13653,7 @@
       <B>249.082</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Inch of water column at 39°F per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>inH2O[4degC]</symbol>
@@ -13668,7 +13668,7 @@
       <B>249.0889083078</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Inch of water column at 4°C. Pressure unit based on height of water column.</description>
+      <description>Diggs addition. Pressure unit based on height of water column.</description>
     </unit>
     <unit>
       <symbol>inH2O[60degF]</symbol>
@@ -13702,7 +13702,7 @@
       <B>248.843</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Inch of water column at 60°F per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>inHg[32degF]</symbol>
@@ -13736,7 +13736,7 @@
       <B>3386.389</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Inch of mercury at 32°F per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>inHg[60degF]</symbol>
@@ -13770,7 +13770,7 @@
       <B>3376.85</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Inch of mercury at 60°F per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>J</symbol>
@@ -14638,7 +14638,7 @@
       <B>9.80665</B>
       <C>0.0001</C>
       <D/>
-      <description>Diggs addition. Kilogram-force per square centimeter per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>kgf/(mm2.s)</symbol>
@@ -14653,7 +14653,7 @@
       <B>9.80665</B>
       <C>1e-06</C>
       <D/>
-      <description>Diggs addition. Kilogram-force per square millimeter per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>kgf/cm</symbol>
@@ -14956,7 +14956,7 @@
       <B>4448.2216152605</B>
       <C>0.09290304</C>
       <D/>
-      <description>Diggs addition. Thousand pound-force (kip) per square foot (ksf). Pressure or stress unit.</description>
+      <description>Diggs addition. Pressure or stress unit.</description>
     </unit>
     <unit>
       <symbol>klbf/ft3</symbol>
@@ -14971,7 +14971,7 @@
       <B>4448221.6152605</B>
       <C>0.028316846592</C>
       <D/>
-      <description>Diggs addition. Thousand pound-force (kips) per cubic foot. Force per unit volume in US customary units.</description>
+      <description>Diggs addition. Force per unit volume in US customary units.</description>
     </unit>
     <unit>
       <symbol>klbf/in2</symbol>
@@ -14986,7 +14986,7 @@
       <B>4448.2216152605</B>
       <C>0.00064516</C>
       <D/>
-      <description>Diggs addition. Thousand pound-force (kip) per square inch (ksi). Pressure or stress unit.</description>
+      <description>Diggs addition. Pressure or stress unit.</description>
     </unit>
     <unit>
       <symbol>klbm</symbol>
@@ -15282,7 +15282,7 @@
       <B>1000</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Kilonewton per cubic meter. Force per unit volume</description>
+      <description>Diggs addition. Force per unit volume</description>
     </unit>
     <unit>
       <symbol>knot</symbol>
@@ -15454,7 +15454,7 @@
       <B>1000</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Kilopascal per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>kPa2</symbol>
@@ -15511,7 +15511,7 @@
       <B>4448.2216152605</B>
       <C>0.00064516</C>
       <D/>
-      <description>Diggs addition. Thousand pounds per square inch per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>kpsi2</symbol>
@@ -16199,7 +16199,7 @@
       <B>4.4482216152605</B>
       <C>0.9290304</C>
       <D/>
-      <description>Diggs addition. Pound-force per hundred square feet per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>lbf/ft</symbol>
@@ -16285,7 +16285,7 @@
       <B>4.4482216152605</B>
       <C>0.00064516</C>
       <D/>
-      <description>Diggs addition. Pound-force per square inch. Pressure or stress unit. Commonly abbreviated as psi.</description>
+      <description>Diggs addition. Commonly abbreviated as psi.</description>
     </unit>
     <unit>
       <symbol>lbf/lbf</symbol>
@@ -17892,7 +17892,7 @@
       <B>100</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Millibar per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>MBq</symbol>
@@ -19366,7 +19366,7 @@
       <B>133.322387415</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Millimeter of mercury at 0°C per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>mmol</symbol>
@@ -19683,7 +19683,7 @@
       <B>0.001</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Millipascal per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>MPa/s</symbol>
@@ -19698,7 +19698,7 @@
       <B>0.001</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Megapascal per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>Mpsi</symbol>
@@ -19727,7 +19727,7 @@
       <B>4448221.6152605</B>
       <C>0.00064516</C>
       <D/>
-      <description>Diggs addition. Million pounds per square inch per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>Mrad</symbol>
@@ -20240,7 +20240,7 @@
       <B>1</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Newton per square meter per second. Rate of pressure change. Equivalent to Pa/s.</description>
+      <description>Diggs addition. Rate of pressure change. Equivalent to Pa/s.</description>
     </unit>
     <unit>
       <symbol>N/(mm2.s)</symbol>
@@ -20255,7 +20255,7 @@
       <B>1</B>
       <C>1e-06</C>
       <D/>
-      <description>Diggs addition. Newton per square millimeter per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>N/m</symbol>
@@ -20627,20 +20627,6 @@
       <B>1E-15</B>
       <C>1</C>
       <D>0</D>
-    </unit>
-    <unit>
-      <symbol>Note: If &quot;Is Base&quot; = TRUE, leave Base Unit and conversion params empty</symbol>
-      <name/>
-      <dimension/>
-      <isSI/>
-      <category/>
-      <baseUnit/>
-      <conversionRef/>
-      <isExact/>
-      <A/>
-      <B/>
-      <C/>
-      <D/>
     </unit>
     <unit>
       <symbol>nP</symbol>
@@ -21021,7 +21007,7 @@
       <B>1</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Pascal gauge per second. Rate of gauge pressure change.</description>
+      <description>Diggs addition. Rate of gauge pressure change.</description>
     </unit>
     <unit>
       <symbol>Pa/h</symbol>
@@ -21304,7 +21290,8 @@
       <isSI>false</isSI>
       <category>atom</category>
       <isBase/>
-      <underlyingDef>Diggs addition. Logarithmic grain size scale where phi = -log2(D/1mm). Used in sedimentology for particle size analysis. Grain diameter D in millimeters equals 2^(-phi) mm.</underlyingDef>
+      <underlyingDef> c</underlyingDef>
+      <description>Diggs addition.  Logarithmic grain size scale where phi = -log2(D/1mm). Used in sedimentology for particle size analysis. Grain diameter D in millimeters equals 2^(-phi) mm.</description>
     </unit>
     <unit>
       <symbol>pHz</symbol>
@@ -21417,7 +21404,7 @@
       <B>1e-12</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Picopascal per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>ppk</symbol>
@@ -21617,7 +21604,7 @@
       <B>4.4482216152605</B>
       <C>0.00064516</C>
       <D/>
-      <description>Diggs addition. Pound per square inch absolute per second. Rate of absolute pressure change.</description>
+      <description>Diggs addition. Rate of absolute pressure change.</description>
     </unit>
     <unit>
       <symbol>psi[g]/s</symbol>
@@ -21632,7 +21619,7 @@
       <B>4.4482216152605</B>
       <C>0.00064516</C>
       <D/>
-      <description>Diggs addition. Pound per square inch gauge per second. Rate of gauge pressure change.</description>
+      <description>Diggs addition. Rate of gauge pressure change.</description>
     </unit>
     <unit>
       <symbol>psi/ft</symbol>
@@ -21718,7 +21705,7 @@
       <B>4.4482216152605</B>
       <C>0.00064516</C>
       <D/>
-      <description>Diggs addition. Pound per square inch per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>psi2</symbol>
@@ -22395,7 +22382,7 @@
       <B>14.5939029372</B>
       <C>0.028316846592</C>
       <D/>
-      <description>Diggs addition. Slug (mass) per cubic foot. Mass per unit volume in US customary units.</description>
+      <description>Diggs addition. Mass per unit volume in US customary units.</description>
     </unit>
     <unit>
       <symbol>sr</symbol>
@@ -23225,7 +23212,7 @@
       <B>8896.443230521</B>
       <C>0.09290304</C>
       <D/>
-      <description>Diggs addition. US ton-force per square foot per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>tonf[US]/(in2.s)</symbol>
@@ -23240,7 +23227,7 @@
       <B>8896.443230521</B>
       <C>0.00064516</C>
       <D/>
-      <description>Diggs addition. US ton-force per square inch per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>tonf[US]/ft</symbol>
@@ -23331,7 +23318,7 @@
       <B>133.322368421053</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Torr per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>TP</symbol>
@@ -23528,7 +23515,7 @@
       <B>0.1</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Microbar per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>uC</symbol>
@@ -23886,7 +23873,7 @@
       <B>0.133322387415</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Micrometer of mercury at 0°C per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>umol</symbol>
@@ -23999,7 +23986,7 @@
       <B>1e-06</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Micropascal per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>upsi</symbol>
@@ -24028,7 +24015,7 @@
       <B>4.4482216152605e-06</B>
       <C>0.00064516</C>
       <D/>
-      <description>Diggs addition. Micropound per square inch per second. Rate of pressure change.</description>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>urad</symbol>
