@@ -7,7 +7,7 @@
 		geoenviromnental communities, and is not intended to cover all possible quantity categories or individual units. Unit symbols, quantity classes and definitions created by the DIGGS 
 		project follow the Energistics Unit of Measure Standard and are identified as DIGGS extensions in the description for each DIGGS unit or quantity class. 
 		All other unit and quantity class definitions derive directly from the Energistics v1.0 dictionary without modification.
-		
+	<!--	
         Explanatory text from the Energistic Unit of Measure Dictionary Description 
 
 		In the DIMENSION portion, each unitDimension element defines dimensional concepts where each concept 
@@ -42,7 +42,7 @@
 		Use of this data constitutes agreement with the Energistics License Agreement. 
 		Copyright (c) 2014 Energistics. 
 		All rights reserved.
-		
+	-->	
 	</description>
   <unitDimensionSet version="1.0">
     <unitDimension>
@@ -1420,7 +1420,7 @@
     <quantityClass>
       <name>electric current density</name>
       <dimension>I/L2</dimension>
-      <baseForConversion>A/m2 </baseForConversion>
+      <baseForConversion>A/m2</baseForConversion>
       <memberUnit>A/cm2</memberUnit>
       <memberUnit>A/ft2</memberUnit>
       <memberUnit>A/m2</memberUnit>
@@ -3119,7 +3119,7 @@
     <quantityClass>
       <name>time per volume</name>
       <dimension>T/L3</dimension>
-      <baseForConversion/>
+      <baseForConversion>s/m3</baseForConversion>
       <memberUnit>0.001 d/ft3</memberUnit>
       <memberUnit>d/bbl</memberUnit>
       <memberUnit>d/ft3</memberUnit>
@@ -3971,10 +3971,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4.4482216152605</B>
       <C>0.9290304</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -4806,11 +4806,11 @@
       <category>derived</category>
       <baseUnit>1/rtS</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
-      <A/>
+      <isExact>true</isExact>
+      <A>0</A>
       <B>1</B>
       <C>60</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Used in pressure filtration coefficient calculations. Used in pressure filtration tests.</description>
     </unit>
     <unit>
@@ -4821,11 +4821,11 @@
       <category>derived</category>
       <baseUnit>1/rtS</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
-      <A/>
+      <isExact>true</isExact>
+      <A>0</A>
       <B>1</B>
       <C>7.74596669241483</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Used in pressure filtration coefficient calculations. Used in pressure filtration tests.</description>
     </unit>
     <unit>
@@ -11327,10 +11327,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.09290304</B>
       <C>60</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -11665,10 +11665,10 @@
       <baseUnit>Pa</baseUnit>
       <conversionRef>DEFINITION</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>2988.98</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Pressure unit based on height of water column.</description>
     </unit>
     <unit>
@@ -11680,10 +11680,10 @@
       <baseUnit>Pa</baseUnit>
       <conversionRef>DEFINITION</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>2986.116</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Pressure unit based on height of water column.</description>
     </unit>
     <unit>
@@ -12495,10 +12495,10 @@
       <baseUnit>1/s2</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.01</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Gravitational gradient expressed as change in acceleration per unit distance.</description>
     </unit>
     <unit>
@@ -12854,10 +12854,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1000000000</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -13156,10 +13156,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>10000000</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -13538,10 +13538,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.00064516</B>
       <C>31557600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -13553,10 +13553,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.00064516</B>
       <C>86400</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -13582,10 +13582,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.00064516</B>
       <C>3600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -13611,10 +13611,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.00064516</B>
       <C>60</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -13701,10 +13701,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>249.082</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -13716,10 +13716,10 @@
       <baseUnit>Pa</baseUnit>
       <conversionRef>DEFINITION</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>249.0889083078</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Pressure unit based on height of water column.</description>
     </unit>
     <unit>
@@ -13750,10 +13750,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>248.843</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -13784,10 +13784,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>3386.389</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -13818,10 +13818,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>3376.85</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -13965,10 +13965,10 @@
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1</B>
       <C>0.001</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -14231,10 +14231,10 @@
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4184</B>
       <C>0.001</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -14686,10 +14686,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>9.80665</B>
       <C>0.0001</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -14701,10 +14701,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>9.80665</B>
       <C>1e-06</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -14955,10 +14955,10 @@
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1000</B>
       <C>0.001</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -15004,10 +15004,10 @@
       <baseUnit>Pa</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4448.2216152605</B>
       <C>0.09290304</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Pressure or stress unit.</description>
     </unit>
     <unit>
@@ -15019,10 +15019,10 @@
       <baseUnit>N/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4448221.6152605</B>
       <C>0.028316846592</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Force per unit volume in US customary units.</description>
     </unit>
     <unit>
@@ -15034,10 +15034,10 @@
       <baseUnit>Pa</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4448.2216152605</B>
       <C>0.00064516</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Pressure or stress unit.</description>
     </unit>
     <unit>
@@ -15330,10 +15330,10 @@
       <baseUnit>N/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1000</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Force per unit volume</description>
     </unit>
     <unit>
@@ -15502,10 +15502,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1000</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -15559,10 +15559,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4448.2216152605</B>
       <C>0.00064516</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -15742,10 +15742,10 @@
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>3600000</B>
       <C>0.001</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -16318,10 +16318,10 @@
       <baseUnit>Pa</baseUnit>
       <conversionRef>DEFINITION</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4.4482216152605</B>
       <C>0.00064516</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Commonly abbreviated as psi.</description>
     </unit>
     <unit>
@@ -16968,10 +16968,10 @@
       <baseUnit>m2/(Pa.s)</baseUnit>
       <conversionRef>DEFINITION</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.001</B>
       <C>60000000</C>
-      <D/>
+      <D>0</D>
       <underlyingDef>1 L/(min.m.MPa)</underlyingDef>
       <description>Diggs addition. Lugeon unit. Measure of rock permeability defined as 1 liter per minute per meter of borehole at 1 megapascal injection pressure. Used in water pressure testing of rock formations.</description>
     </unit>
@@ -17225,10 +17225,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1</B>
       <C>31557600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -17322,10 +17322,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1</B>
       <C>60</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -17925,10 +17925,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>100</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -18460,10 +18460,10 @@
       <baseUnit>1/s2</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1e-05</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Gravitational gradient expressed as change in acceleration per unit distance.</description>
     </unit>
     <unit>
@@ -18992,10 +18992,10 @@
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1000000</B>
       <C>0.001</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -19007,10 +19007,10 @@
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.001</B>
       <C>0.001</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -19064,10 +19064,10 @@
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.001</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -19191,10 +19191,10 @@
       <baseUnit>m/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.001</B>
       <C>86400</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -19206,10 +19206,10 @@
       <baseUnit>m/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.001</B>
       <C>3600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -19221,10 +19221,10 @@
       <baseUnit>m/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.001</B>
       <C>60</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -19264,10 +19264,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1e-06</B>
       <C>31557600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -19279,10 +19279,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1e-06</B>
       <C>86400</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -19294,10 +19294,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1e-06</B>
       <C>3600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -19309,10 +19309,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1e-06</B>
       <C>60</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -19399,10 +19399,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>133.322387415</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -19716,10 +19716,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.001</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -19731,10 +19731,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.001</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -19760,10 +19760,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4448221.6152605</B>
       <C>0.00064516</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -20273,10 +20273,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change. Equivalent to Pa/s.</description>
     </unit>
     <unit>
@@ -20288,10 +20288,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1</B>
       <C>1e-06</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -21040,10 +21040,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of gauge pressure change.</description>
     </unit>
     <unit>
@@ -21437,10 +21437,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1e-12</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -21637,10 +21637,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4.4482216152605</B>
       <C>0.00064516</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of absolute pressure change.</description>
     </unit>
     <unit>
@@ -21652,10 +21652,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4.4482216152605</B>
       <C>0.00064516</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of gauge pressure change.</description>
     </unit>
     <unit>
@@ -21738,10 +21738,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4.4482216152605</B>
       <C>0.00064516</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -22186,10 +22186,10 @@
       <baseUnit>rtS</baseUnit>
       <conversionRef>DEFINITION</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>60</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Used for reciprocal square root time calculations. sqrt(3600) = 60.</description>
     </unit>
     <unit>
@@ -22201,10 +22201,10 @@
       <baseUnit>rtS</baseUnit>
       <conversionRef>DEFINITION</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>7.74596669241483</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Used for reciprocal square root time calculations. sqrt(60) ≈ 7.746.</description>
     </unit>
     <unit>
@@ -22438,10 +22438,10 @@
       <baseUnit>kg</baseUnit>
       <conversionRef>DEFINITION</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>14.5939029372</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <underlyingDef>1 lbf.s2/ft</underlyingDef>
       <description>Diggs addition. Imperial unit of mass defined as the mass that accelerates at 1 ft/s² when a force of 1 pound-force is applied. Equal to approximately 14.59390 kilograms.</description>
     </unit>
@@ -22454,10 +22454,10 @@
       <baseUnit>kg/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>14.5939029372</B>
       <C>0.028316846592</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Mass per unit volume in US customary units.</description>
     </unit>
     <unit>
@@ -23284,10 +23284,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>8896.443230521</B>
       <C>0.09290304</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -23299,10 +23299,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>8896.443230521</B>
       <C>0.00064516</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -23390,10 +23390,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>133.322368421053</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -23587,10 +23587,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.1</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -23945,10 +23945,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.133322387415</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -24058,10 +24058,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>1e-06</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -24087,10 +24087,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>4.4482216152605e-06</B>
       <C>0.00064516</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -24350,10 +24350,10 @@
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>3600</B>
       <C>0.001</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -24365,10 +24365,10 @@
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>3600</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
