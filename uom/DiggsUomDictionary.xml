@@ -1,17 +1,13 @@
 <?xml version="1.0" ?>
-<uomDictionary xmlns="http://www.energistics.org/energyml/data/uomv1"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
-  xsi:schemaLocation="http://www.energistics.org/energyml/data/uomv1 https://diggsml.org/schema-dev/energistics/EnergisticsUnitOfMeasureDictionary_V1.0.xsd">
+<uomDictionary xmlns="http://www.energistics.org/energyml/data/uomv1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.energistics.org/energyml/data/uomv1 https://diggsml.org/schema-dev/energistics/EnergisticsUnitOfMeasureDictionary_V1.0.xsd">
   <title>DIGGS Unit of Measure Dictionary</title>
   <originator>Energistics/DIGGS</originator>
-  <description>This dictionary defines units of measure and related supporting information that are
-    intended for use in application of the DIGGS interchange standard. This product extemds the
-    Energistics (c) Unit of Measure Dictionary v1.0 for use by the geotechnical and geoenviromnental
-    communities, and is not intended to cover all possible quantity categories or individual units.
-    Unit symbols, quantity classes and definitions created by the DIGGS project follow the
-    Energistics Unit of Measure Standard and are identified as DIGGS extensions in the description
-    for each DIGGS unit or quantity class. All other unit and quantity class definitions derive
-    directly from the Energistics v1.0 dictionary without modification. <!--		
+  <description>This dictionary defines units of measure and related supporting information that are intended for use in application of the DIGGS interchange standard.
+		This product extemds the Energistics (c) Unit of Measure Dictionary v1.0 for use by the geotechnical and 
+		geoenviromnental communities, and is not intended to cover all possible quantity categories or individual units. Unit symbols, quantity classes and definitions created by the DIGGS 
+		project follow the Energistics Unit of Measure Standard and are identified as DIGGS extensions in the description for each DIGGS unit or quantity class. 
+		All other unit and quantity class definitions derive directly from the Energistics v1.0 dictionary without modification.
+		
         Explanatory text from the Energistic Unit of Measure Dictionary Description 
 
 		In the DIMENSION portion, each unitDimension element defines dimensional concepts where each concept 
@@ -46,8 +42,8 @@
 		Use of this data constitutes agreement with the Energistics License Agreement. 
 		Copyright (c) 2014 Energistics. 
 		All rights reserved.
--->
-  </description>
+		
+	</description>
   <unitDimensionSet version="1.0">
     <unitDimension>
       <name>(amount of substance per time) per area</name>
@@ -540,9 +536,9 @@
       <dimension>none</dimension>
       <baseForConversion>0</baseForConversion>
       <canonicalUnit>0</canonicalUnit>
-      <description>The &quot;0&quot; values indicate that there is no valid symbol for the base unit
-        or canonical unit because a normal dimensional analysis is not possible for this category of
-        quantity. </description>
+      <description>The &quot;0&quot; values indicate that there is no valid symbol for the base unit or canonical unit because a 
+				normal dimensional analysis is not possible for this category of quantity.
+			</description>
     </unitDimension>
     <unitDimension>
       <name>permittivity</name>
@@ -653,6 +649,12 @@
       <canonicalUnit>1/deltaK</canonicalUnit>
     </unitDimension>
     <unitDimension>
+      <name>reciprocal square root time</name>
+      <dimension>1/T0.5</dimension>
+      <baseForConversion>1/rtS</baseForConversion>
+      <canonicalUnit>1/rtS</canonicalUnit>
+    </unitDimension>
+    <unitDimension>
       <name>reciprocal time</name>
       <dimension>1/T</dimension>
       <baseForConversion>1/s</baseForConversion>
@@ -687,6 +689,12 @@
       <dimension>L2/DT2</dimension>
       <baseForConversion>J/(kg.deltaK)</baseForConversion>
       <canonicalUnit>m2/(deltaK.s2)</canonicalUnit>
+    </unitDimension>
+    <unitDimension>
+      <name>square root time</name>
+      <dimension>T0.5</dimension>
+      <baseForConversion>rtS</baseForConversion>
+      <canonicalUnit>rtS</canonicalUnit>
     </unitDimension>
     <unitDimension>
       <name>temperature difference</name>
@@ -1092,8 +1100,7 @@
       <name>API gamma ray</name>
       <dimension>none</dimension>
       <baseForConversion>gAPI</baseForConversion>
-      <description>This class is defined by the API, and is used for units of gamma ray log
-        response.</description>
+      <description>This class is defined by the API, and is used for units of gamma ray log response.</description>
       <memberUnit>gAPI</memberUnit>
     </quantityClass>
     <quantityClass>
@@ -1202,8 +1209,10 @@
       <name>attenuation per frequency interval</name>
       <dimension>none</dimension>
       <baseForConversion>B/O</baseForConversion>
-      <description>A logarithmic, fractional change of some measure, generally power or amplitude,
-        over a standard range. This is generally used for frequency attenuation over an octave. </description>
+      <description>A logarithmic, fractional change of some measure, generally power or amplitude, over a standard 
+				range. 
+				This is generally used for frequency attenuation over an octave.
+			</description>
       <memberUnit>B/O</memberUnit>
       <memberUnit>dB/O</memberUnit>
     </quantityClass>
@@ -1253,11 +1262,12 @@
       <name>dimensionless</name>
       <dimension>1</dimension>
       <baseForConversion>Euc</baseForConversion>
-      <description>A dimensionless quantity is the ratio of two alike dimensional quantities. This
-        class must not be used when a suitable ratio variation exists - such as &quot;area per
-        area&quot;, &quot;volume per volume&quot;, &quot; mass per mass&quot;, etc. That is, the
-        more specialized class must be used when it is available because it provides additional
-        semantic information. </description>
+      <description>A dimensionless quantity is the ratio of two alike dimensional quantities. 
+				This class must not be used when a suitable ratio variation exists - such as &quot;area per area&quot;, 
+				&quot;volume per volume&quot;, &quot; mass per mass&quot;, etc. 
+				That is, the more specialized class must be used when it is available because it provides additional 
+				semantic information.
+			</description>
       <memberUnit>%</memberUnit>
       <memberUnit>EEuc</memberUnit>
       <memberUnit>Euc</memberUnit>
@@ -1410,7 +1420,7 @@
     <quantityClass>
       <name>electric current density</name>
       <dimension>I/L2</dimension>
-      <baseForConversion>A/m2</baseForConversion>
+      <baseForConversion>A/m2 </baseForConversion>
       <memberUnit>A/cm2</memberUnit>
       <memberUnit>A/ft2</memberUnit>
       <memberUnit>A/m2</memberUnit>
@@ -1477,8 +1487,7 @@
       <name>electrical resistivity</name>
       <dimension>L3M/I2T3</dimension>
       <baseForConversion>ohm.m</baseForConversion>
-      <description>The resistance , times the cross-sectional area , divided by the
-        length.</description>
+      <description>The resistance , times the cross-sectional area , divided by the length.</description>
       <memberUnit>kohm.m</memberUnit>
       <memberUnit>nohm.mil2/ft</memberUnit>
       <memberUnit>nohm.mm2/m</memberUnit>
@@ -1788,18 +1797,14 @@
       <name>grain size (phi scale)</name>
       <dimension>none</dimension>
       <baseForConversion>phi</baseForConversion>
-      <description>Diggs addition. Logarithmic scale for expressing grain size in sedimentology.
-        Values are not directly convertible to length units. phi = -log₂(grain diameter in
-        mm).</description>
+      <description>Diggs addition. Logarithmic scale for expressing grain size in sedimentology. Values are not directly convertible to length units. phi = -log₂(grain diameter in mm).</description>
       <memberUnit>phi</memberUnit>
     </quantityClass>
     <quantityClass>
       <name>gravitational gradient</name>
       <dimension>1/T2</dimension>
       <baseForConversion>1/s2</baseForConversion>
-      <description>Diggs addition. Gravitational gradient representing the spatial rate of change of
-        gravitational acceleration. Used in gravity surveys for geophysical
-        exploration.</description>
+      <description>Diggs addition. Gravitational gradient representing the spatial rate of change of gravitational acceleration. Used in gravity surveys for geophysical exploration.</description>
       <memberUnit>1/s2</memberUnit>
       <memberUnit>E</memberUnit>
       <memberUnit>mGal/m</memberUnit>
@@ -2670,8 +2675,7 @@
       <dimension>1</dimension>
       <baseForConversion>Pa/Pa</baseForConversion>
       <alternativeBase>Euc</alternativeBase>
-      <description>This quantity class comes from the WITSML 2.0 schema but was not included in the
-        Energistics v 1.0 dictioary</description>
+      <description>This quantity class comes from the WITSML 2.0 schema but was not included in the Energistics v 1.0 dictioary</description>
       <memberUnit>atm/atm</memberUnit>
       <memberUnit>bar/bar</memberUnit>
       <memberUnit>Euc</memberUnit>
@@ -2711,7 +2715,7 @@
       <memberUnit>kgf/(mm2.s)</memberUnit>
       <memberUnit>kPa/s</memberUnit>
       <memberUnit>kpsi/s</memberUnit>
-      <memberUnit>lbf/(100.ft2.s)</memberUnit>
+      <memberUnit>0.01 lbf/(ft2.s)</memberUnit>
       <memberUnit>mbar/s</memberUnit>
       <memberUnit>mmHg[0degC]/s</memberUnit>
       <memberUnit>mPa/s</memberUnit>
@@ -2853,18 +2857,17 @@
     <quantityClass>
       <name>reciprocal square root time</name>
       <dimension>1/T0.5</dimension>
-      <baseForConversion>1/s0.5</baseForConversion>
-      <description>Diggs addition. Reciprocal square root of time. Used for pressure filtration
-        coefficients in geotechnical testing where fluid loss is proportional to the square root of
-        elapsed time.</description>
-      <memberUnit>1/s0.5</memberUnit>
-      <memberUnit>1/min0.5</memberUnit>
-      <memberUnit>1/h0.5</memberUnit>
+      <baseForConversion>1/rtS</baseForConversion>
+      <description>Diggs addition. Reciprocal square root of time. Used for pressure filtration coefficients in geotechnical testing where fluid loss is proportional to the square root of elapsed time.</description>
+      <memberUnit>1/rtS</memberUnit>
+      <memberUnit>1/rtMin</memberUnit>
+      <memberUnit>1/rtH</memberUnit>
     </quantityClass>
     <quantityClass>
       <name>reciprocal time</name>
       <dimension>1/T</dimension>
       <baseForConversion>1/s</baseForConversion>
+      <alternativeBase>s/m3</alternativeBase>
       <memberUnit>1/a</memberUnit>
       <memberUnit>1/d</memberUnit>
       <memberUnit>1/h</memberUnit>
@@ -2889,9 +2892,7 @@
       <name>relative rate</name>
       <dimension>1/T</dimension>
       <baseForConversion>1/s</baseForConversion>
-      <description>Diggs addition. Rate of relative change expressed as percentage per unit time.
-        Used for strain rates and other dimensionless rates of change in geotechnical
-        testing.</description>
+      <description>Diggs addition. Rate of relative change expressed as percentage per unit time. Used for strain rates and other dimensionless rates of change in geotechnical testing.</description>
       <memberUnit>%/s</memberUnit>
       <memberUnit>%/min</memberUnit>
       <memberUnit>%/hm</memberUnit>
@@ -2940,12 +2941,22 @@
       <memberUnit>kcal[th]/(kg.deltaC)</memberUnit>
     </quantityClass>
     <quantityClass>
+      <name>sauare root time</name>
+      <dimension>T0.5</dimension>
+      <baseForConversion>rtS</baseForConversion>
+      <description>Diggs addition. Square root time. Atomic units.</description>
+      <memberUnit>rtS</memberUnit>
+      <memberUnit>rtMin</memberUnit>
+      <memberUnit>rtH</memberUnit>
+    </quantityClass>
+    <quantityClass>
       <name>temperature interval</name>
       <dimension>D</dimension>
       <baseForConversion>deltaK</baseForConversion>
-      <description>Delta temperature refers to temperature differences. For non-zero offset
-        temperature scales, Fahrenheit and Celsius, the conversion formulas are different than for
-        absolute temperatures. </description>
+      <description>Delta temperature refers to temperature differences. 
+				For non-zero offset temperature scales, Fahrenheit and Celsius, the conversion formulas are 
+				different than for absolute temperatures.
+			</description>
       <memberUnit>deltaC</memberUnit>
       <memberUnit>deltaF</memberUnit>
       <memberUnit>deltaK</memberUnit>
@@ -3108,7 +3119,7 @@
     <quantityClass>
       <name>time per volume</name>
       <dimension>T/L3</dimension>
-      <baseForConversion>s/m3</baseForConversion>
+      <baseForConversion/>
       <memberUnit>0.001 d/ft3</memberUnit>
       <memberUnit>d/bbl</memberUnit>
       <memberUnit>d/ft3</memberUnit>
@@ -3442,9 +3453,10 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1/100 Euc</underlyingDef>
-      <description>Parts per hundred. This is one of the few symbols which can be used with multiple
-        unit classes. It can be used with each class that represent a ratio of like quantities
-        (e.g., mass per mass). </description>
+      <description>Parts per hundred. 
+				This is one of the few symbols which can be used with multiple unit classes. 
+				It can be used with each class that represent a ratio of like quantities (e.g., mass per mass).
+			</description>
     </unit>
     <unit>
       <symbol>%[area]</symbol>
@@ -3473,8 +3485,9 @@
       <B>0.01</B>
       <C>1</C>
       <D>0</D>
-      <description>The percent of mass relative to mass. That is, mass divided by mass divided 100
-        where the original mass values were in the same units. </description>
+      <description>The percent of mass relative to mass. 
+				That is, mass divided by mass divided 100 where the original mass values were in the same units.
+			</description>
     </unit>
     <unit>
       <symbol>%[molar]</symbol>
@@ -3504,8 +3517,9 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1/100 m3/m3</underlyingDef>
-      <description>The percent of volume relative to volume That is, volume divided by volume
-        divided by 100 where the original volume values were in the same units. </description>
+      <description>The percent of volume relative to volume That is, volume divided by volume divided by 100 where the 
+				original volume values were in the same units.
+			</description>
     </unit>
     <unit>
       <symbol>%/d</symbol>
@@ -3515,11 +3529,11 @@
       <category>derived</category>
       <baseUnit>1/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
-      <A/>
+      <isExact>true</isExact>
+      <A>0</A>
       <B>0.01</B>
       <C>86400</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.Rate of relative change per day.</description>
     </unit>
     <unit>
@@ -3530,11 +3544,11 @@
       <category>derived</category>
       <baseUnit>1/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
-      <A/>
+      <isExact>true</isExact>
+      <A>0</A>
       <B>0.01</B>
       <C>3600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of relative change per hour.</description>
     </unit>
     <unit>
@@ -3546,10 +3560,10 @@
       <baseUnit>1/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.01</B>
       <C>31557600000</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of relative change per kiloyear.</description>
     </unit>
     <unit>
@@ -3560,13 +3574,12 @@
       <category>derived</category>
       <baseUnit>1/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
-      <A/>
+      <isExact>true</isExact>
+      <A>0</A>
       <B>0.01</B>
       <C>2629800</C>
-      <D/>
-      <description>Diggs addition. Average month = 30.4375 days. Rate of relative change per
-        month.</description>
+      <D>0</D>
+      <description>Diggs addition. Average month = 30.4375 days. Rate of relative change per month.</description>
     </unit>
     <unit>
       <symbol>%/min</symbol>
@@ -3576,11 +3589,11 @@
       <category>derived</category>
       <baseUnit>1/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
-      <A/>
+      <isExact>true</isExact>
+      <A>0</A>
       <B>0.01</B>
       <C>60</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of relative change per minute.</description>
     </unit>
     <unit>
@@ -3591,11 +3604,11 @@
       <category>derived</category>
       <baseUnit>1/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
-      <A/>
+      <isExact>true</isExact>
+      <A>0</A>
       <B>0.01</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of relative change per second.</description>
     </unit>
     <unit>
@@ -3606,13 +3619,12 @@
       <category>derived</category>
       <baseUnit>1/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
-      <A/>
+      <isExact>true</isExact>
+      <A>0</A>
       <B>0.01</B>
       <C>31557600</C>
-      <D/>
-      <description>Diggs addition. Julian year = 365.25 days. Rate of relative change per
-        year.</description>
+      <D>0</D>
+      <description>Diggs addition. Julian year = 365.25 days. Rate of relative change per year.</description>
     </unit>
     <unit>
       <symbol>0.001 bbl/ft3</symbol>
@@ -3949,6 +3961,21 @@
       <B>1E-8</B>
       <C>1</C>
       <D>0</D>
+    </unit>
+    <unit>
+      <symbol>0.01 lbf/(ft2.s)</symbol>
+      <name>pound-force per hundred square foot per second</name>
+      <dimension>M/LT3</dimension>
+      <isSI>false</isSI>
+      <category>derived</category>
+      <baseUnit>Pa/s</baseUnit>
+      <conversionRef>DERIVED</conversionRef>
+      <isExact>true</isExact>
+      <A/>
+      <B>4.4482216152605</B>
+      <C>0.9290304</C>
+      <D/>
+      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>0.01 lbf/ft</symbol>
@@ -4528,22 +4555,6 @@
       <isBase/>
     </unit>
     <unit>
-      <symbol>1/h0.5</symbol>
-      <name>per square root of hour</name>
-      <dimension>1/T0.5</dimension>
-      <isSI>false</isSI>
-      <category>derived</category>
-      <baseUnit>1/s0.5</baseUnit>
-      <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
-      <A/>
-      <B>1</B>
-      <C>60</C>
-      <D/>
-      <description>Diggs addition. Used in pressure filtration coefficient
-        calculations.</description>
-    </unit>
-    <unit>
       <symbol>1/in</symbol>
       <name>per inch</name>
       <dimension>1/L</dimension>
@@ -4702,22 +4713,6 @@
       <D>0</D>
     </unit>
     <unit>
-      <symbol>1/min0.5</symbol>
-      <name>per square root of minute</name>
-      <dimension>1/T0.5</dimension>
-      <isSI>false</isSI>
-      <category>derived</category>
-      <baseUnit>1/s0.5</baseUnit>
-      <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
-      <A/>
-      <B>1</B>
-      <C>7.74596669241483</C>
-      <D/>
-      <description>Diggs addition. Used in pressure filtration coefficient
-        calculations.</description>
-    </unit>
-    <unit>
       <symbol>1/mm</symbol>
       <name>per millimetre</name>
       <dimension>1/L</dimension>
@@ -4804,22 +4799,51 @@
       <D>0</D>
     </unit>
     <unit>
+      <symbol>1/rtH</symbol>
+      <name>per square root of hour</name>
+      <dimension>1/T0.5</dimension>
+      <isSI>false</isSI>
+      <category>derived</category>
+      <baseUnit>1/rtS</baseUnit>
+      <conversionRef>DERIVED</conversionRef>
+      <isExact>True</isExact>
+      <A/>
+      <B>1</B>
+      <C>60</C>
+      <D/>
+      <description>Diggs addition. Used in pressure filtration coefficient calculations. Used in pressure filtration tests.</description>
+    </unit>
+    <unit>
+      <symbol>1/rtMin</symbol>
+      <name>per square root of minute</name>
+      <dimension>1/T0.5</dimension>
+      <isSI>false</isSI>
+      <category>derived</category>
+      <baseUnit>1/rtS</baseUnit>
+      <conversionRef>DERIVED</conversionRef>
+      <isExact>True</isExact>
+      <A/>
+      <B>1</B>
+      <C>7.74596669241483</C>
+      <D/>
+      <description>Diggs addition. Used in pressure filtration coefficient calculations. Used in pressure filtration tests.</description>
+    </unit>
+    <unit>
+      <symbol>1/rtS</symbol>
+      <name>per square root of second</name>
+      <dimension>1/T0.5</dimension>
+      <isSI>false</isSI>
+      <category>derived</category>
+      <isBase/>
+      <description>Diggs addition. SI base unit for reciprocal square root time. Used in pressure filtration tests.</description>
+    </unit>
+    <unit>
       <symbol>1/s</symbol>
       <name>per second</name>
       <dimension>1/T</dimension>
       <isSI>true</isSI>
       <category>derived</category>
       <isBase/>
-    </unit>
-    <unit>
-      <symbol>1/s0.5</symbol>
-      <name>per square root of second</name>
-      <dimension>1/T0.5</dimension>
-      <isSI>true</isSI>
-      <category>derived</category>
-      <isBase/>
-      <description>Diggs addition. SI unit for reciprocal square root time used in pressure
-        filtration analysis.</description>
     </unit>
     <unit>
       <symbol>1/s2</symbol>
@@ -5686,10 +5710,10 @@
       <isSI>true</isSI>
       <category>atom-base</category>
       <isBase/>
-      <description>The ampere is that constant current which, if maintained in two straight parallel
-        conductors of infinite length, of negligible circular cross section, and placed 1 metre
-        apart in vacuum, would produce between these conductors a force equal to 2 x 10**-7 newton
-        per metre of length. </description>
+      <description>The ampere is that constant current which, if maintained in two straight parallel conductors of 
+				infinite length, of negligible circular cross section, and placed 1 metre apart in vacuum, would 
+				produce between these conductors a force equal to 2 x 10**-7 newton per metre of length.
+			</description>
     </unit>
     <unit>
       <symbol>a</symbol>
@@ -5705,8 +5729,7 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>365.25 d</underlyingDef>
-      <description>The underlying definition taken from NIST statement that &quot;Julian century =
-        36 525 d&quot;.</description>
+      <description>The underlying definition taken from NIST statement that &quot;Julian century = 36 525 d&quot;.</description>
     </unit>
     <unit>
       <symbol>A.h</symbol>
@@ -5785,11 +5808,12 @@
       <B>3.1556925445E7</B>
       <C>1</C>
       <D>0</D>
-      <description>The year as a defined multiple of the second that minimizes time-dependent
-        inaccuracy. Used for expressing very long time intervals both for earth scientists and
-        nuclear physicists alike. Takes into account the non-relativistic estimate of astronomical
-        decrease by 0.530 s per century, for the epoch 2000.0. From &quot;International Union of
-        Geological Sciences&quot; (IUPAC Recommendation 2011). </description>
+      <description>The year as a defined multiple of the second that minimizes time-dependent inaccuracy. 
+				Used for expressing very long time intervals both for earth scientists and nuclear physicists alike. 
+				Takes into account the non-relativistic estimate of astronomical decrease by 0.530 s per century, 
+				for the epoch 2000.0. 
+				From &quot;International Union of Geological Sciences&quot; (IUPAC Recommendation 2011).
+			</description>
     </unit>
     <unit>
       <symbol>A/cm2</symbol>
@@ -5877,8 +5901,7 @@
       <C>1.5499969E7</C>
       <D>0</D>
       <underlyingDef>43560 ft[US]2</underlyingDef>
-      <description>US survey acre. Equal to 43,560 square survey foot (exactly). From
-        NIST.</description>
+      <description>US survey acre. Equal to 43,560 square survey foot (exactly). From NIST.</description>
     </unit>
     <unit>
       <symbol>acre.ft</symbol>
@@ -5936,8 +5959,9 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>0.1 nm</underlyingDef>
-      <description>The angstrom is widely used by x-ray crystallographers and structural chemists
-        because all chemical bonds lie in the range 1 to 3 angstroms. </description>
+      <description>The angstrom is widely used by x-ray crystallographers and structural chemists because all chemical 
+				bonds lie in the range 1 to 3 angstroms.
+			</description>
     </unit>
     <unit>
       <symbol>at</symbol>
@@ -5953,8 +5977,9 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>kgf/cm2</underlyingDef>
-      <description>One technical atmosphere equals one kilogram-force per square centimeter (1 at =
-        1 kgf/cm2). From NIST. </description>
+      <description>One technical atmosphere equals one kilogram-force per square centimeter (1 at = 1 kgf/cm2). 
+				From NIST.
+			</description>
     </unit>
     <unit>
       <symbol>at/s</symbol>
@@ -5965,10 +5990,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>98066.5</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -5985,10 +6010,11 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>101.325 kPa</underlyingDef>
-      <description>An international reference pressure defined as 101.325 kPa and formerly used as
-        unit of pressure. For practical purposes it has been replaced by the bar which is 100 kPa.
-        The difference of about 1% is not significant for many applications, and is within the error
-        range of common pressure gauges. </description>
+      <description>An international reference pressure defined as 101.325 kPa and formerly used as unit of pressure. 
+				For practical purposes it has been replaced by the bar which is 100 kPa. 
+				The difference of about 1% is not significant for many applications, and is within the error range 
+				of common pressure gauges.
+			</description>
     </unit>
     <unit>
       <symbol>atm/atm</symbol>
@@ -6070,10 +6096,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>101325</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -6090,8 +6116,7 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>100 fm2</underlyingDef>
-      <description>The barn is a unit of area employed to express cross sections in nuclear
-        physics.</description>
+      <description>The barn is a unit of area employed to express cross sections in nuclear physics.</description>
     </unit>
     <unit>
       <symbol>B</symbol>
@@ -6100,9 +6125,11 @@
       <isSI>true</isSI>
       <category>atom-allowed</category>
       <isBase/>
-      <description>A unit of intensity. A bel is the base 10 logarithm of a power or amplitude
-        ratio. In using this unit it is important that the nature of the quantity be specified, and
-        that any reference value used be specified. </description>
+      <description>A unit of intensity. 
+				A bel is the base 10 logarithm of a power or amplitude ratio. 
+				In using this unit it is important that the nature of the quantity be specified, and that any 
+				reference value used be specified.
+			</description>
     </unit>
     <unit>
       <symbol>B.W</symbol>
@@ -6141,8 +6168,7 @@
       <isSI>true</isSI>
       <category>derived</category>
       <isBase/>
-      <description>The power or amplitude variation that occurs over a doubling of the domain
-        variable.</description>
+      <description>The power or amplitude variation that occurs over a doubling of the domain variable.</description>
     </unit>
     <unit>
       <symbol>bar</symbol>
@@ -6158,9 +6184,11 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>100 kPa</underlyingDef>
-      <description>100 kPa. Since 1982 one bar has been used as the standard pressure for tabulating
-        all thermodynamic data. Prior to 1982 the standard pressure used to be the standard
-        atmosphere, equal to 1.013 25 bar, or 101 325 Pa. </description>
+      <description>100 kPa. 
+				Since 1982 one bar has been used as the standard pressure for tabulating all thermodynamic data. 
+				Prior to 1982 the standard pressure used to be the standard atmosphere, equal to 1.013 25 bar, or 
+				101 325 Pa.
+			</description>
     </unit>
     <unit>
       <symbol>bar/bar</symbol>
@@ -6228,10 +6256,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>100000</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -6276,11 +6304,13 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>42 gal[US]</underlyingDef>
-      <description>42 US gallons. 1 barrel of oil (bbl) is defined as exactly 42 US liquid gallons.
-        1 US liquid gallon is defined as exactly 231 cubic inches (see NIST-130 reference). 1 inch
-        is defined as exactly 0.0254 metres. Therefore, 1 bbl = (42 x 231 x 0.0254**3) m3 =
-        0.158987294928 m3 exactly. Note that this definition is based in the international inch and
-        NOT the older US survey inch. </description>
+      <description>42 US gallons. 
+				1 barrel of oil (bbl) is defined as exactly 42 US liquid gallons. 
+				1 US liquid gallon is defined as exactly 231 cubic inches (see NIST-130 reference). 
+				1 inch is defined as exactly 0.0254 metres. 
+				Therefore, 1 bbl = (42 x 231 x 0.0254**3) m3 = 0.158987294928 m3 exactly. 
+				Note that this definition is based in the international inch and NOT the older US survey inch.
+			</description>
     </unit>
     <unit>
       <symbol>bbl/(acre.ft)</symbol>
@@ -6584,12 +6614,12 @@
       <category>atom-allowed</category>
       <isBase/>
       <underlyingDef>1/s</underlyingDef>
-      <description>The baud rate is the number of distinct symbols transmitted per second, that is,
-        the number of times per second the signal carrying the communication varies in strength or
-        frequency. If the symbols transmitted have only two states (on or off) then the baud rate is
-        the same as the transmission rate in bits per second. (Adapted from Russ Rowlett's &quot;A
-        Dictionary of Units of Measurement&quot; at http://www.unc.edu/~rowlett/units/)
-      </description>
+      <description>The baud rate is the number of distinct symbols transmitted per second, that is, the number of times 
+				per second the signal carrying the communication varies in strength or frequency. 
+				If the symbols transmitted have only two states (on or off) then the baud rate is the same as the 
+				transmission rate in bits per second. 
+				(Adapted from Russ Rowlett's &quot;A Dictionary of Units of Measurement&quot; at http://www.unc.edu/~rowlett/units/)
+			</description>
     </unit>
     <unit>
       <symbol>bit</symbol>
@@ -6599,9 +6629,10 @@
       <category>atom-allowed</category>
       <isBase/>
       <underlyingDef>Euc</underlyingDef>
-      <description>A bit (a contraction of binary digit) is the basic unit of information in
-        computing and telecommunications. A bit can have only two values: either 1 or 0.
-      </description>
+      <description>A bit (a contraction of binary digit) is the basic unit of information in computing and 
+				telecommunications. 
+				A bit can have only two values: either 1 or 0.
+			</description>
     </unit>
     <unit>
       <symbol>bit/s</symbol>
@@ -6621,8 +6652,7 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>1/s</underlyingDef>
-      <description>The activity of a radionuclide decaying at the rate of one spontaneous nuclear
-        transition per second</description>
+      <description>The activity of a radionuclide decaying at the rate of one spontaneous nuclear transition per second</description>
     </unit>
     <unit>
       <symbol>Bq/kg</symbol>
@@ -6646,14 +6676,15 @@
       <B>1055.05585262</B>
       <C>1</C>
       <D>0</D>
-      <description>The amount of heat required to raise the temperature of 1 pound-mass of water 1
-        degree Fahrenheit. Uses the International Table (IT) calorie which was defined by the Fifth
-        International Conference on the Properties of Steam (London, July 1956) to be exactly 4.1868
-        J. In order to convert from calorie to BTU, multiply by the conversion from gram to
-        pound-mass and multiply by the conversion from Celsius interval to Fahrenheit interval. That
-        is, 1 calorie= (1e-3/ 0.45359237)*(1/(5/9)) BTU= (.001*9)/(5*0.45359237) BTU=
-        (9/2.26796185e+3) BTU. Given, cal[IT]=4.1868 J, it follows that Btu[IT] =
-        (4.1868*2.26796185e+3)/9 = 1,055.05585262 J. </description>
+      <description>The amount of heat required to raise the temperature of 1 pound-mass of water 1 degree Fahrenheit. 
+				Uses the International Table (IT) calorie which was defined by the Fifth International Conference on 
+				the Properties of Steam (London, July 1956) to be exactly 4.1868 J. 
+				In order to convert from calorie to BTU, multiply by the conversion from gram to pound-mass and 
+				multiply by the conversion from Celsius interval to Fahrenheit interval. 
+				That is, 1 calorie= (1e-3/ 0.45359237)*(1/(5/9)) BTU= (.001*9)/(5*0.45359237) BTU= (9/2.26796185e+3) 
+				BTU. 
+				Given, cal[IT]=4.1868 J, it follows that Btu[IT] = (4.1868*2.26796185e+3)/9 = 1,055.05585262 J.
+			</description>
     </unit>
     <unit>
       <symbol>Btu[IT].in/(h.ft2.deltaF)</symbol>
@@ -7018,13 +7049,15 @@
       <B>9.4891523804E3</B>
       <C>9</C>
       <D>0</D>
-      <description>The amount of heat required to raise the temperature of 1 pound-mass of water 1
-        degree Fahrenheit. Based on the thermochemical calorie. In order to convert from calorie to
-        BTU, multiply by the conversion from gram to pound-mass and multiply by the conversion from
-        Celsius interval to Fahrenheit interval. That is, calorie = (1e-3/ 0.45359237)*(1/(5/9)) BTU
-        = (.001*9)/(5*0.45359237) BTU = (9/2.26796185e+3) BTU. Given, cal[th] = 4.184 J, it follows
-        that Btu[th] = (4.184*2.26796185e+3)/9 J = (9.4891523804e+3)/9 J which is approximately
-        1.0543502644888888888888888888889e+3 J. </description>
+      <description>The amount of heat required to raise the temperature of 1 pound-mass of water 1 degree Fahrenheit. 
+				Based on the thermochemical calorie. 
+				In order to convert from calorie to BTU, multiply by the conversion from gram to pound-mass and 
+				multiply by the conversion from Celsius interval to Fahrenheit interval. 
+				That is, calorie = (1e-3/ 0.45359237)*(1/(5/9)) BTU = (.001*9)/(5*0.45359237) BTU = 
+				(9/2.26796185e+3) BTU. 
+				Given, cal[th] = 4.184 J, it follows that Btu[th] = (4.184*2.26796185e+3)/9 J = (9.4891523804e+3)/9 
+				J which is approximately 1.0543502644888888888888888888889e+3 J.
+			</description>
     </unit>
     <unit>
       <symbol>Btu[UK]</symbol>
@@ -7224,9 +7257,10 @@
       <B>4.1868</B>
       <C>1</C>
       <D>0</D>
-      <description>This uses the International Table definition. The amount of heat required at a
-        pressure of one atmosphere to raise the temperature of one gram of water one degree Celsius.
-      </description>
+      <description>This uses the International Table definition. 
+				The amount of heat required at a pressure of one atmosphere to raise the temperature of one gram of 
+				water one degree Celsius.
+			</description>
     </unit>
     <unit>
       <symbol>cal[th]</symbol>
@@ -7241,9 +7275,10 @@
       <B>4.184</B>
       <C>1</C>
       <D>0</D>
-      <description>This uses the thermochemical definition. The amount of heat required at a
-        pressure of one atmosphere to raise the temperature of one gram of water one degree Celsius.
-      </description>
+      <description>This uses the thermochemical definition. 
+				The amount of heat required at a pressure of one atmosphere to raise the temperature of one gram of 
+				water one degree Celsius.
+			</description>
     </unit>
     <unit>
       <symbol>cal[th]/(g.deltaK)</symbol>
@@ -7520,9 +7555,10 @@
       <isSI>true</isSI>
       <category>atom-base</category>
       <isBase/>
-      <description>The candela is the luminous intensity, in a given direction, of a source that
-        emits monochromatic radiation of frequency 540 X 10**12 hertz and that has a radian
-        intensity in that direction of 1/683 watt per steradian. </description>
+      <description>The candela is the luminous intensity, in a given direction, of a source that emits monochromatic 
+				radiation of frequency 540 X 10**12 hertz and that has a radian intensity in that direction of 1/683 
+				watt per steradian.
+			</description>
     </unit>
     <unit>
       <symbol>cd/m2</symbol>
@@ -7617,8 +7653,7 @@
       <C>2E4</C>
       <D>0</D>
       <underlyingDef>1/100 gon</underlyingDef>
-      <description>One hundredth of a centesimal degree (also known as grad, grade or
-        gon)</description>
+      <description>One hundredth of a centesimal degree (also known as grad, grade or gon)</description>
     </unit>
     <unit>
       <symbol>cGy</symbol>
@@ -7662,8 +7697,7 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>66 ft</underlyingDef>
-      <description>international chain equal to 22 international yards or 66 international feet.
-        From EPSG.</description>
+      <description>international chain equal to 22 international yards or 66 international feet. From EPSG.</description>
     </unit>
     <unit>
       <symbol>chain[BnA]</symbol>
@@ -7775,8 +7809,7 @@
       <C>39.37</C>
       <D>0</D>
       <underlyingDef>66 ft[US]</underlyingDef>
-      <description>66 US survey feet (exactly). Also called Gunter's chain. From
-        NIST-44.</description>
+      <description>66 US survey feet (exactly). Also called Gunter's chain. From NIST-44.</description>
     </unit>
     <unit>
       <symbol>cHz</symbol>
@@ -7806,9 +7839,10 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>3.7E10 Bq</underlyingDef>
-      <description>The Curie (symbol Ci) is a non-SI unit of radioactivity, named after Marie and
-        Pierre Curie. It is defined as 3.7E10 decays per second. The SI derived unit of
-        radioactivity is the becquerel (Bq), which equates to one decay per second. </description>
+      <description>The Curie (symbol Ci) is a non-SI unit of radioactivity, named after Marie and Pierre Curie. 
+				It is defined as 3.7E10 decays per second. 
+				The SI derived unit of radioactivity is the becquerel (Bq), which equates to one decay per second.
+			</description>
     </unit>
     <unit>
       <symbol>cJ</symbol>
@@ -7861,10 +7895,10 @@
       <baseUnit>m/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.01</B>
       <C>86400</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -7876,10 +7910,10 @@
       <baseUnit>m/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.01</B>
       <C>3600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -7891,10 +7925,10 @@
       <baseUnit>m/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.01</B>
       <C>60</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -7948,10 +7982,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.0001</B>
       <C>31557600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -7963,10 +7997,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.0001</B>
       <C>86400</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -7992,10 +8026,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.0001</B>
       <C>3600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -8007,10 +8041,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.0001</B>
       <C>60</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -8167,11 +8201,11 @@
       <B>98.0638</B>
       <C>1</C>
       <D>0</D>
-      <description>NIST-SI gives a limited number of digits of precision and states the following:
-        &quot;Additional digits are not justified because the definitions of the units do not take
-        into account the compressibility of mercury or the change in density caused by the revised
-        practical temperature scale, ITS-90. Similar comments also apply to water manometer pressure
-        units.&quot; </description>
+      <description>NIST-SI gives a limited number of digits of precision and states the following: &quot;Additional digits 
+				are not justified because the definitions of the units do not take into account the compressibility 
+				of mercury or the change in density caused by the revised practical temperature scale, ITS-90. 
+				Similar comments also apply to water manometer pressure units.&quot;
+			</description>
     </unit>
     <unit>
       <symbol>cmH2O[4degC]/s</symbol>
@@ -8182,10 +8216,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>98.0638</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
@@ -8344,10 +8378,11 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1E-3 cm2/cm3</underlyingDef>
-      <description>The macroscopic capture cross section is the sum of all the various weighted
-        elemental capture cross sections. The are &quot;1E-3 cm2/cm3&quot; often referred to as
-        capture unit (c.u.) or sigma unit (s.u.). (Adapted from Ransom, Robert C,&quot; Practical
-        Formation Evaluation&quot;, New York: J Wiley, 1995.) </description>
+      <description>The macroscopic capture cross section is the sum of all the various weighted elemental capture cross 
+				sections. 
+				The are &quot;1E-3 cm2/cm3&quot; often referred to as capture unit (c.u.) or sigma unit (s.u.). 
+				(Adapted from Ransom, Robert C,&quot; Practical Formation Evaluation&quot;, New York: J Wiley, 1995.)
+			</description>
     </unit>
     <unit>
       <symbol>cV</symbol>
@@ -8405,8 +8440,7 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>112 lbm</underlyingDef>
-      <description>United Kingdom 112 pound-mass Gross or long hundredweight. From
-        NIST-44.</description>
+      <description>United Kingdom 112 pound-mass Gross or long hundredweight. From NIST-44.</description>
     </unit>
     <unit>
       <symbol>cwt[US]</symbol>
@@ -8437,16 +8471,18 @@
       <B>1E-12</B>
       <C>1.01325</C>
       <D>0</D>
-      <description>The darcy is a unit for expressing the permeability of porous solids, not area
-        (from NIST-SI). One darcy is the permeability of a solid through which one cubic centimeter
-        of fluid, having a viscosity of one centipoise, will flow in one second through a section
-        one centimeter thick and one square centimeter in cross section, if the pressure difference
-        between the two sides of the solid is one atmosphere (from Russ Rowlett's &quot;A Dictionary
-        of Units of Measurement&quot; at http://www.unc.edu/~rowlett/units/). Thus, 1 D=(1 cm3)(1
-        cP)/((1 s)(1 cm2)(1 atm/cm))=1 cm.cP/(atm.s/cm)=1 cm2.cP/atm.s=(1E-4 m2)(1E-3
-        Pa.s)/(1.01325E5 Pa.s)=1E-12/1.01325 m2 [exactly]. Also see, Wangen, Magnus (2010) Physical
-        Principles of Sedimentary Basin Analysis (page 12), Cambridge, UK New York: Cambridge
-        University Press, 2010. ISBN 978-0-511-71237-1. </description>
+      <description>The darcy is a unit for expressing the permeability of porous solids, not area (from NIST-SI). 
+				One darcy is the permeability of a solid through which one cubic centimeter of fluid, having a 
+				viscosity of one centipoise, will flow in one second through a section one centimeter thick and one 
+				square centimeter in cross section, if the pressure difference between the two sides of the solid is 
+				one atmosphere (from Russ Rowlett's &quot;A Dictionary of Units of Measurement&quot; at 
+				http://www.unc.edu/~rowlett/units/). 
+				Thus, 1 D=(1 cm3)(1 cP)/((1 s)(1 cm2)(1 atm/cm))=1 cm.cP/(atm.s/cm)=1 cm2.cP/atm.s=(1E-4 m2)(1E-3 
+				Pa.s)/(1.01325E5 Pa.s)=1E-12/1.01325 m2 [exactly]. 
+				Also see, Wangen, Magnus (2010) Physical Principles of Sedimentary Basin Analysis (page 12), 
+				Cambridge, UK New York: Cambridge University Press, 2010. 
+				ISBN 978-0-511-71237-1.
+			</description>
     </unit>
     <unit>
       <symbol>d</symbol>
@@ -8506,12 +8542,13 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>um2</underlyingDef>
-      <description>The darcy is a unit of permeability in fluid flow through a porous medium, having
-        the dimensions of dynamic viscosity multiplied by volume flowrate per unit area and divided
-        by pressure gradient, which simplifies to a dimension of area. A darcy is defined as being
-        exactly equal to 1 um2. A permeability of one darcy will permit a flow of 1 m3/s of fluid of
-        1 Pa.s viscosity through an area of 1 m2 under a pressure gradient of 10**12 Pa/m.
-      </description>
+      <description>The darcy is a unit of permeability in fluid flow through a porous medium, having the dimensions of 
+				dynamic viscosity multiplied by volume flowrate per unit area and divided by pressure gradient, 
+				which simplifies to a dimension of area. 
+				A darcy is defined as being exactly equal to 1 um2. 
+				A permeability of one darcy will permit a flow of 1 m3/s of fluid of 1 Pa.s viscosity through an 
+				area of 1 m2 under a pressure gradient of 10**12 Pa/m.
+			</description>
     </unit>
     <unit>
       <symbol>D/(Pa.s)</symbol>
@@ -8646,9 +8683,10 @@
       <isSI>true</isSI>
       <category>atom-allowed</category>
       <isBase/>
-      <description>A unit defined by the American Petroleum Institute for gravity of crude petroleum
-        measurements. See the API's Manual of Petroleum Measurement Standards (MPMS) chapter 9.1 and
-        chapter 11.1 for information on this concept. </description>
+      <description>A unit defined by the American Petroleum Institute for gravity of crude petroleum measurements. 
+				See the API's Manual of Petroleum Measurement Standards (MPMS) chapter 9.1 and chapter 11.1 for 
+				information on this concept.
+			</description>
     </unit>
     <unit>
       <symbol>dB</symbol>
@@ -8937,11 +8975,12 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>deltaK</underlyingDef>
-      <description>Change in degree Celsius. The degree Celsius and the kelvin are equal in size, so
-        that the numerical value of a temperature difference or temperature interval is the same
-        when expressed in either degrees Celsius or in kelvins (because the offset cancels). For
-        temperature intervals rather than specific temperatures, 1 deltaF = 1 deltaR = 5/9 deltaC =
-        5/9 deltaK. </description>
+      <description>Change in degree Celsius. 
+				The degree Celsius and the kelvin are equal in size, so that the numerical value of a temperature 
+				difference or temperature interval is the same when expressed in either degrees Celsius or in 
+				kelvins (because the offset cancels). 
+				For temperature intervals rather than specific temperatures, 1 deltaF = 1 deltaR = 5/9 deltaC = 5/9 deltaK.
+			</description>
     </unit>
     <unit>
       <symbol>deltaC.m2.h/kcal[th]</symbol>
@@ -9082,9 +9121,11 @@
       <B>5</B>
       <C>9</C>
       <D>0</D>
-      <description>Change in degrees Fahrenheit. Kelvin=(Fahrenheit + 459.67) x 5/9 so a difference
-        in Fahrenheit temperature cancels out the 459.67 offset. For temperature intervals rather
-        than specific temperatures, 1 deltaF = 1 deltaR = 5/9 deltaC = 5/9 deltaK. </description>
+      <description>Change in degrees Fahrenheit. 
+				Kelvin=(Fahrenheit + 459.67) x 5/9 so a difference in Fahrenheit temperature cancels out the 459.67 
+				offset. 
+				For temperature intervals rather than specific temperatures, 1 deltaF = 1 deltaR = 5/9 deltaC = 5/9 deltaK.
+			</description>
     </unit>
     <unit>
       <symbol>deltaF.ft2.h/Btu[IT]</symbol>
@@ -9191,10 +9232,12 @@
       <isSI>true</isSI>
       <category>atom-special</category>
       <isBase/>
-      <description>Change in kelvin. A zero difference in Kelvin temperature is not the same as
-        being at zero on the Kelvin temperature scale. The degree Celsius and the kelvin are equal
-        in size, so that the numerical value of a temperature difference or temperature interval is
-        the same when expressed in either degrees Celsius or in kelvins. </description>
+      <description>Change in kelvin. 
+				A zero difference in Kelvin temperature is not the same as being at zero on the Kelvin temperature 
+				scale. 
+				The degree Celsius and the kelvin are equal in size, so that the numerical value of a temperature 
+				difference or temperature interval is the same when expressed in either degrees Celsius or in kelvins.
+			</description>
     </unit>
     <unit>
       <symbol>deltaK.m2/kW</symbol>
@@ -9277,9 +9320,11 @@
       <B>5</B>
       <C>9</C>
       <D>0</D>
-      <description>Change in degrees Rankine. Rankine = (Celsius + 273.15) x 9/5 so a difference in
-        Fahrenheit temperature cancels out the 273.15 offset. For temperature intervals rather than
-        specific temperatures, 1 deltaF = 1 deltaR = 5/9 deltaC = 5/9 deltaK. </description>
+      <description>Change in degrees Rankine. 
+				Rankine = (Celsius + 273.15) x 9/5 so a difference in Fahrenheit temperature cancels out the 273.15 
+				offset. 
+				For temperature intervals rather than specific temperatures, 1 deltaF = 1 deltaR = 5/9 deltaC = 5/9 deltaK.
+			</description>
     </unit>
     <unit>
       <symbol>dEuc</symbol>
@@ -9641,10 +9686,10 @@
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.1</B>
       <C>1</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition. 0Rate of pressure change.</description>
     </unit>
     <unit>
@@ -9759,9 +9804,9 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>(g.cm)/s2</underlyingDef>
-      <description>A unit of force in the centimetre-gram-second system of physical units, equal to
-        the force that would give a free mass of one gram an acceleration of one centimetre per
-        second per second. </description>
+      <description>A unit of force in the centimetre-gram-second system of physical units, equal to the force that 
+				would give a free mass of one gram an acceleration of one centimetre per second per second.
+			</description>
     </unit>
     <unit>
       <symbol>dyne.cm2</symbol>
@@ -9827,13 +9872,12 @@
       <category>atom</category>
       <baseUnit>1/s2</baseUnit>
       <conversionRef>DEFINITION</conversionRef>
-      <isExact>True</isExact>
-      <A/>
+      <isExact>true</isExact>
+      <A>0</A>
       <B>1e-09</B>
       <C>1</C>
-      <D/>
-      <description>Diggs addition. The Eötvös unit named after Hungarian physicist Loránd
-        Eötvös</description>
+      <D>0</D>
+      <description>Diggs addition. The Eötvös unit  named after Hungarian physicist Loránd Eötvös</description>
     </unit>
     <unit>
       <symbol>EA</symbol>
@@ -10130,8 +10174,7 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>dyne.cm</underlyingDef>
-      <description>An erg is the amount of work done by a force of one dyne exerted for a distance
-        of one centimeter.</description>
+      <description>An erg is the amount of work done by a force of one dyne exerted for a distance of one centimeter.</description>
     </unit>
     <unit>
       <symbol>erg/a</symbol>
@@ -10252,9 +10295,9 @@
       <isSI>true</isSI>
       <category>atom-allowed</category>
       <isBase/>
-      <description>A dimensionless unit of proportion, named after the Greek mathematician, Euclid.
-        It represents the SI implied unit of &quot;1&quot; which is sometimes called a
-        &quot;dimensionless derived unit&quot;. </description>
+      <description>A dimensionless unit of proportion, named after the Greek mathematician, Euclid. 
+				It represents the SI implied unit of &quot;1&quot; which is sometimes called a &quot;dimensionless derived unit&quot;.
+			</description>
     </unit>
     <unit>
       <symbol>eV</symbol>
@@ -10269,10 +10312,12 @@
       <B>1.602176487E-19</B>
       <C>1</C>
       <D>0</D>
-      <description>The electronvolt is the kinetic energy acquired by an electron in passing through
-        a potential difference of 1 V in vacuum, 1.602 176 487(40) x 10-19 J. This value of 1 eV is
-        the 2006 CODATA recommended value with the standard uncertainty in the last two digits given
-        in parenthesis. From NIST-SI. </description>
+      <description>The electronvolt is the kinetic energy acquired by an electron in passing through a potential 
+				difference of 1 V in vacuum, 1.602 176 487(40) x 10-19 J. 
+				This value of 1 eV is the 2006 CODATA recommended value with the standard uncertainty in the last 
+				two digits given in parenthesis. 
+				From NIST-SI.
+			</description>
     </unit>
     <unit>
       <symbol>EW</symbol>
@@ -10310,9 +10355,9 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>C/V</underlyingDef>
-      <description>The capacitance of a capacitor between the plates of which there appears a
-        difference of potential of 1 V when it is charged by a quantity of electricity equal to 1 C.
-      </description>
+      <description>The capacitance of a capacitor between the plates of which there appears a difference of potential 
+				of 1 V when it is charged by a quantity of electricity equal to 1 C.
+			</description>
     </unit>
     <unit>
       <symbol>F/m</symbol>
@@ -10535,8 +10580,10 @@
       <C>160</C>
       <D>0</D>
       <underlyingDef>1/20 pt[UK]</underlyingDef>
-      <description>United Kingdom 1/20 of UK pint. Therefore, 1/160 of UK gallon or (1/160)* 4.54609
-        cubic decimetres. From UK-1985. </description>
+      <description>United Kingdom 1/20 of UK pint. 
+				Therefore, 1/160 of UK gallon or (1/160)* 4.54609 cubic decimetres. 
+				From UK-1985.
+			</description>
     </unit>
     <unit>
       <symbol>floz[US]</symbol>
@@ -10552,8 +10599,7 @@
       <C>128</C>
       <D>0</D>
       <underlyingDef>1/128 gal[US]</underlyingDef>
-      <description>1/16 of US pint which is 1/8 of US gallon. Therefore, 1/128 of US
-        gallon.</description>
+      <description>1/16 of US pint which is 1/8 of US gallon. Therefore, 1/128 of US gallon.</description>
     </unit>
     <unit>
       <symbol>fm</symbol>
@@ -10611,10 +10657,10 @@
       <C>0.09290304</C>
       <D>0</D>
       <underlyingDef>lm/ft2</underlyingDef>
-      <description>A unit of illuminance on a surface that is everywhere one foot from a uniform
-        point source of light of one candle and equal to one lumen per square foot (from
-        www.merriam-webster.com). To convert to Lux, convert the square foot component to square
-        meter (i.e., 1/( 0.3048)**2). </description>
+      <description>A unit of illuminance on a surface that is everywhere one foot from a uniform point source of light 
+				of one candle and equal to one lumen per square foot (from www.merriam-webster.com). 
+				To convert to Lux, convert the square foot component to square meter (i.e., 1/( 0.3048)**2).
+			</description>
     </unit>
     <unit>
       <symbol>footcandle.s</symbol>
@@ -10729,8 +10775,9 @@
       <B>0.9143992</B>
       <C>3</C>
       <D>0</D>
-      <description>Uses Benoit's 1895 British yard-metre ratio as given by Clark as 0.9143992
-        metre.s per yard. Used for deriving metric size of ellipsoid in Palestine. </description>
+      <description>Uses Benoit's 1895 British yard-metre ratio as given by Clark as 0.9143992 metre.s per yard. 
+				Used for deriving metric size of ellipsoid in Palestine.
+			</description>
     </unit>
     <unit>
       <symbol>ft[BnB]</symbol>
@@ -10745,8 +10792,9 @@
       <B>12</B>
       <C>39.370113</C>
       <D>0</D>
-      <description>Uses Benoit's 1895 British yard-metre ratio as given by Bomford as 39.370113
-        inches per metre. Used in West Malaysian mapping. </description>
+      <description>Uses Benoit's 1895 British yard-metre ratio as given by Bomford as 39.370113 inches per metre. 
+				Used in West Malaysian mapping.
+			</description>
     </unit>
     <unit>
       <symbol>ft[Br36]</symbol>
@@ -10761,9 +10809,11 @@
       <B>0.3048007491</B>
       <C>1</C>
       <D>0</D>
-      <description>For the 1936 retriangulation OSGB defines the relationship of 10 feet of 1796 to
-        the International metre through the logarithmic relationship (10^0.48401603 exactly). 1 ft =
-        0.3048007491...m. Also used for metric conversions in Ireland. </description>
+      <description>For the 1936 retriangulation OSGB defines the relationship of 10 feet of 1796 to the International 
+				metre through the logarithmic relationship (10^0.48401603 exactly). 
+				1 ft = 0.3048007491...m. 
+				Also used for metric conversions in Ireland.
+			</description>
     </unit>
     <unit>
       <symbol>ft[Br65]</symbol>
@@ -10778,8 +10828,9 @@
       <B>0.9144025</B>
       <C>3</C>
       <D>0</D>
-      <description>Uses Clark's estimate of 1853-1865 British foot-metre ratio of 0.9144025 metres
-        per yard. Used in 1962 and 1975 estimates of Indian foot. </description>
+      <description>Uses Clark's estimate of 1853-1865 British foot-metre ratio of 0.9144025 metres per yard. 
+				Used in 1962 and 1975 estimates of Indian foot.
+			</description>
     </unit>
     <unit>
       <symbol>ft[Cla]</symbol>
@@ -10794,8 +10845,9 @@
       <B>0.3047972654</B>
       <C>1</C>
       <D>0</D>
-      <description>Assumes Clarke's 1865 ratio of 1 British foot = 0.3047972654 French legal metres
-        applies to the international metre. </description>
+      <description>Assumes Clarke's 1865 ratio of 1 British foot = 0.3047972654 French legal metres applies to the 
+				international metre.
+			</description>
     </unit>
     <unit>
       <symbol>ft[GC]</symbol>
@@ -10810,9 +10862,9 @@
       <B>6378300</B>
       <C>20926201</C>
       <D>0</D>
-      <description>Used in Ghana and some adjacent parts of British west Africa prior to
-        metrication, except for the metrication of projection defining parameters when British foot
-        (Sears 1922) used. </description>
+      <description>Used in Ghana and some adjacent parts of British west Africa prior to metrication, except for the 
+				metrication of projection defining parameters when British foot (Sears 1922) used.
+			</description>
     </unit>
     <unit>
       <symbol>ft[Ind]</symbol>
@@ -10827,8 +10879,9 @@
       <B>12</B>
       <C>39.370142</C>
       <D>0</D>
-      <description>Indian Foot = 0.99999566 British feet (A.R.Clarke 1865). British yard (= 3
-        British feet) taken to be J.S.Clark's 1865 value of 0.9144025 metres. </description>
+      <description>Indian Foot = 0.99999566 British feet (A.R.Clarke 1865). 
+				British yard (= 3 British feet) taken to be J.S.Clark's 1865 value of 0.9144025 metres.
+			</description>
     </unit>
     <unit>
       <symbol>ft[Ind37]</symbol>
@@ -10843,9 +10896,12 @@
       <B>0.30479841</B>
       <C>1</C>
       <D>0</D>
-      <description>Indian Foot = 0.99999566 British feet (A.R.Clarke 1865). British foot taken to be
-        1895 Benoit value of 12/39.370113m. Rounded to 8 decimal places as 0.30479841. Used from
-        Bangladesh to Vietnam. Previously used in India and Pakistan but superseded. </description>
+      <description>Indian Foot = 0.99999566 British feet (A.R.Clarke 1865). 
+				British foot taken to be 1895 Benoit value of 12/39.370113m. 
+				Rounded to 8 decimal places as 0.30479841. 
+				Used from Bangladesh to Vietnam. 
+				Previously used in India and Pakistan but superseded.
+			</description>
     </unit>
     <unit>
       <symbol>ft[Ind62]</symbol>
@@ -10860,9 +10916,12 @@
       <B>0.3047996</B>
       <C>1</C>
       <D>0</D>
-      <description>Indian Foot = 0.99999566 British feet (A.R.Clarke 1865). British yard (3 feet)
-        taken to be J.S. Clark's 1865 value of 0.9144025m. Rounded to 7 significant figures with a
-        small error as 1 Ind ft=0.3047996m. Used in Pakistan since metrication. </description>
+      <description>Indian Foot = 0.99999566 British feet (A.R.Clarke 1865). 
+				British yard (3 feet) taken to be J.S. 
+				Clark's 1865 value of 0.9144025m. 
+				Rounded to 7 significant figures with a small error as 1 Ind ft=0.3047996m. 
+				Used in Pakistan since metrication.
+			</description>
     </unit>
     <unit>
       <symbol>ft[Ind75]</symbol>
@@ -10877,9 +10936,12 @@
       <B>0.3047995</B>
       <C>1</C>
       <D>0</D>
-      <description>Indian Foot = 0.99999566 British feet (A.R.Clarke 1865). British yard (3 feet)
-        taken to be J.S. Clark's 1865 value of 0.9144025m. Rounded to 7 significant figures as 1 Ind
-        ft=0.3047995m. Used in India since metrication. </description>
+      <description>Indian Foot = 0.99999566 British feet (A.R.Clarke 1865). 
+				British yard (3 feet) taken to be J.S. 
+				Clark's 1865 value of 0.9144025m. 
+				Rounded to 7 significant figures as 1 Ind ft=0.3047995m. 
+				Used in India since metrication.
+			</description>
     </unit>
     <unit>
       <symbol>ft[Se]</symbol>
@@ -10894,8 +10956,9 @@
       <B>12</B>
       <C>39.370147</C>
       <D>0</D>
-      <description>Uses Sear's 1922 British yard-metre ratio as given by Bomford as 39.370147 inches
-        per metre. Used in East Malaysian and older New Zealand mapping. </description>
+      <description>Uses Sear's 1922 British yard-metre ratio as given by Bomford as 39.370147 inches per metre. 
+				Used in East Malaysian and older New Zealand mapping.
+			</description>
     </unit>
     <unit>
       <symbol>ft[SeT]</symbol>
@@ -10910,9 +10973,10 @@
       <B>0.914398</B>
       <C>3</C>
       <D>0</D>
-      <description>Uses Sear's 1922 British yard-metre ratio (UoM code 9040) truncated to 6
-        significant figures; this truncated ratio (0.914398, UoM code 9099) then converted to other
-        imperial units. 3 ftSe(T) = 1 ydSe(T). </description>
+      <description>Uses Sear's 1922 British yard-metre ratio (UoM code 9040) truncated to 6 significant figures; this 
+				truncated ratio (0.914398, UoM code 9099) then converted to other imperial units. 
+				3 ftSe(T) = 1 ydSe(T).
+			</description>
     </unit>
     <unit>
       <symbol>ft[US]</symbol>
@@ -11191,10 +11255,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.09290304</B>
       <C>31557600</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -11206,10 +11270,10 @@
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
       <isExact>true</isExact>
-      <A/>
+      <A>0</A>
       <B>0.09290304</B>
       <C>86400</C>
-      <D/>
+      <D>0</D>
       <description>Diggs addition.</description>
     </unit>
     <unit>
@@ -11920,8 +11984,7 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>cm/s2</underlyingDef>
-      <description>The gal is employed in geodesy and geophysics to express acceleration due to
-        gravity.</description>
+      <description>The gal is employed in geodesy and geophysics to express acceleration due to gravity.</description>
     </unit>
     <unit>
       <symbol>gal[UK]</symbol>
@@ -11937,9 +12000,10 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>4.54609 dm3</underlyingDef>
-      <description>United Kingdom Imperial gallon. In Great Britain, a unit of capacity, by the
-        Weights and Measures Act of 1985, exactly &quot;4.54609 cubic decimeters&quot;.
-      </description>
+      <description>United Kingdom Imperial gallon. 
+				In Great Britain, a unit of capacity, by the Weights and Measures Act of 1985, exactly &quot;4.54609 
+				cubic decimeters&quot;.
+			</description>
     </unit>
     <unit>
       <symbol>gal[UK]/(h.ft)</symbol>
@@ -12151,9 +12215,10 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>231 in3</underlyingDef>
-      <description>The United States liquid gallon is legally defined as 231 cubic inches, and is
-        equal to exactly 3.785411784 litres. Authorized tables, US Code, Title 15, chapter 6,
-        subchapter I, section 205. </description>
+      <description>The United States liquid gallon is legally defined as 231 cubic inches, and is equal to exactly 
+				3.785411784 litres. 
+				Authorized tables, US Code, Title 15, chapter 6, subchapter I, section 205.
+			</description>
     </unit>
     <unit>
       <symbol>gal[US]/(h.ft)</symbol>
@@ -12429,13 +12494,12 @@
       <category>derived</category>
       <baseUnit>1/s2</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>0.01</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Gravitational gradient expressed as change in acceleration per
-        unit distance.</description>
+      <description>Diggs addition. Gravitational gradient expressed as change in acceleration per unit distance.</description>
     </unit>
     <unit>
       <symbol>gAPI</symbol>
@@ -12444,8 +12508,7 @@
       <isSI>true</isSI>
       <category>atom-allowed</category>
       <isBase/>
-      <description>A unit defined by the American Petroleum Institute for gamma ray log
-        measurements.</description>
+      <description>A unit defined by the American Petroleum Institute for gamma ray log measurements.</description>
     </unit>
     <unit>
       <symbol>gauss</symbol>
@@ -12461,9 +12524,10 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1E-4 T</underlyingDef>
-      <description>This unit is part of the so-called electromagnetic three-dimensional CGS system
-        and cannot strictly speaking be compared to the corresponding SI unit, which has four
-        dimensions when only mechanical and electric quantities are considered. </description>
+      <description>This unit is part of the so-called electromagnetic three-dimensional CGS system and cannot strictly 
+				speaking be compared to the corresponding SI unit, which has four dimensions when only mechanical 
+				and electric quantities are considered.
+			</description>
     </unit>
     <unit>
       <symbol>gauss/cm</symbol>
@@ -12578,9 +12642,9 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>g.gn</underlyingDef>
-      <description>The gram-force is equal to a mass of one gram multiplied by the standard
-        acceleration due to gravity on Earth, which is defined as exactly 9.80665 meter per second
-        squared. </description>
+      <description>The gram-force is equal to a mass of one gram multiplied by the standard acceleration due to gravity 
+				on Earth, which is defined as exactly 9.80665 meter per second squared.
+			</description>
     </unit>
     <unit>
       <symbol>Gg</symbol>
@@ -12737,8 +12801,7 @@
       <C>200</C>
       <D>0</D>
       <underlyingDef>360/400 dega</underlyingDef>
-      <description>1/400 of a turn (full circle). Also known as gradian, grad, or
-        grade.</description>
+      <description>1/400 of a turn (full circle). Also known as gradian, grad, or grade.</description>
     </unit>
     <unit>
       <symbol>GP</symbol>
@@ -12824,8 +12887,7 @@
       <B>6.479891E-5</B>
       <C>1</C>
       <D>0</D>
-      <description>The &quot;grain&quot; is the same in avoirdupois, troy, and apothecaries units of
-        mass.</description>
+      <description>The &quot;grain&quot; is the same in avoirdupois, troy, and apothecaries units of mass.</description>
     </unit>
     <unit>
       <symbol>grain/ft3</symbol>
@@ -12961,8 +13023,7 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>J/kg</underlyingDef>
-      <description>The absorbed dose when the energy per unit mass imparted to matter by ionizing
-        radiation is 1 J/kg</description>
+      <description>The absorbed dose when the energy per unit mass imparted to matter by ionizing radiation is 1 J/kg</description>
     </unit>
     <unit>
       <symbol>H</symbol>
@@ -12972,9 +13033,9 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>Wb/A</underlyingDef>
-      <description>The inductance of a closed circuit in which an electromotive force of 1 V is
-        produced when the electric current in the circuit varies uniformly at a rate of 1 A/s.
-      </description>
+      <description>The inductance of a closed circuit in which an electromotive force of 1 V is produced when the 
+				electric current in the circuit varies uniformly at a rate of 1 A/s.
+			</description>
     </unit>
     <unit>
       <symbol>h</symbol>
@@ -13171,8 +13232,8 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>550 lbf.ft/s</underlyingDef>
-      <description>The mechanical horsepower, also known as imperial horsepower, of exactly 550 foot
-        pound-force per second. </description>
+      <description>The mechanical horsepower, also known as imperial horsepower, of exactly 550 foot pound-force per second.
+			</description>
     </unit>
     <unit>
       <symbol>hp.h</symbol>
@@ -13230,8 +13291,9 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>746 W</underlyingDef>
-      <description>The horsepower used for electrical machines is defined as exactly 746 W. Outside
-        the United States watts are generally used for electrical power applications. </description>
+      <description>The horsepower used for electrical machines is defined as exactly 746 W. 
+				Outside the United States watts are generally used for electrical power applications.
+			</description>
     </unit>
     <unit>
       <symbol>hp[hyd]</symbol>
@@ -13246,10 +13308,11 @@
       <B>746.043</B>
       <C>1</C>
       <D>0</D>
-      <description>Also called water horsepower (from NIST-SI). Commonly calculated with the
-        equation HHP=P*Q/1714, where P stands for pressure in pounds per square inch, Q stands for
-        flow rate in gallons per minute, and 1714 is a conversion factor necessary to yield HHP in
-        terms of horsepower (from Schlumberger Oilfield Glossary). </description>
+      <description>Also called water horsepower (from NIST-SI). 
+				Commonly calculated with the equation HHP=P*Q/1714, where P stands for pressure in pounds per square 
+				inch, Q stands for flow rate in gallons per minute, and 1714 is a conversion factor necessary to 
+				yield HHP in terms of horsepower (from Schlumberger Oilfield Glossary).
+			</description>
     </unit>
     <unit>
       <symbol>hp[hyd]/in2</symbol>
@@ -13278,9 +13341,11 @@
       <B>735.49875</B>
       <C>1</C>
       <D>0</D>
-      <description>The power to raise a mass of 75 kilograms against the earth's gravitational force
-        over a distance of one metre in one second. Also known as the Pferdestarke (PS), the
-        paardenkracht (pk), the cheval vapeur (CV) and the cavallo vapore (cv). </description>
+      <description>The power to raise a mass of 75 kilograms against the earth's gravitational force over a distance of 
+				one metre in one second. 
+				Also known as the Pferdestarke (PS), the paardenkracht (pk), the cheval vapeur (CV) and the cavallo 
+				vapore (cv).
+			</description>
     </unit>
     <unit>
       <symbol>hp[metric].h</symbol>
@@ -13346,8 +13411,7 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>1/s</underlyingDef>
-      <description>The frequency of a periodic phenomenon of which the period is 1
-        second.</description>
+      <description>The frequency of a periodic phenomenon of which the period is 1 second.</description>
     </unit>
     <unit>
       <symbol>in</symbol>
@@ -13622,11 +13686,11 @@
       <B>249.082</B>
       <C>1</C>
       <D>0</D>
-      <description>NIST-SI gives a limited number of digits of precision and states the following:
-        &quot;Additional digits are not justified because the definitions of the units do not take
-        into account the compressibility of mercury or the change in density caused by the revised
-        practical temperature scale, ITS-90. Similar comments also apply to water manometer pressure
-        units.&quot; </description>
+      <description>NIST-SI gives a limited number of digits of precision and states the following: &quot;Additional digits 
+				are not justified because the definitions of the units do not take into account the compressibility 
+				of mercury or the change in density caused by the revised practical temperature scale, ITS-90. 
+				Similar comments also apply to water manometer pressure units.&quot;
+			</description>
     </unit>
     <unit>
       <symbol>inH2O[39degF]/s</symbol>
@@ -13671,11 +13735,11 @@
       <B>248.84</B>
       <C>1</C>
       <D>0</D>
-      <description>NIST-SI gives a limited number of digits of precision and states the following:
-        &quot;Additional digits are not justified because the definitions of the units do not take
-        into account the compressibility of mercury or the change in density caused by the revised
-        practical temperature scale, ITS-90. Similar comments also apply to water manometer pressure
-        units.&quot; </description>
+      <description>NIST-SI gives a limited number of digits of precision and states the following: &quot;Additional digits 
+				are not justified because the definitions of the units do not take into account the compressibility 
+				of mercury or the change in density caused by the revised practical temperature scale, ITS-90. 
+				Similar comments also apply to water manometer pressure units.&quot;
+			</description>
     </unit>
     <unit>
       <symbol>inH2O[60degF]/s</symbol>
@@ -13705,11 +13769,11 @@
       <B>3.38638E3</B>
       <C>1</C>
       <D>0</D>
-      <description>NIST-SI gives a limited number of digits of precision and states the following:
-        &quot;Additional digits are not justified because the definitions of the units do not take
-        into account the compressibility of mercury or the change in density caused by the revised
-        practical temperature scale, ITS-90. Similar comments also apply to water manometer pressure
-        units.&quot; </description>
+      <description>NIST-SI gives a limited number of digits of precision and states the following: &quot;Additional digits 
+				are not justified because the definitions of the units do not take into account the compressibility 
+				of mercury or the change in density caused by the revised practical temperature scale, ITS-90. 
+				Similar comments also apply to water manometer pressure units.&quot;
+			</description>
     </unit>
     <unit>
       <symbol>inHg[32degF]/s</symbol>
@@ -13739,11 +13803,11 @@
       <B>3.37685E3</B>
       <C>1</C>
       <D>0</D>
-      <description>NIST-SI gives a limited number of digits of precision and states the following:
-        &quot;Additional digits are not justified because the definitions of the units do not take
-        into account the compressibility of mercury or the change in density caused by the revised
-        practical temperature scale, ITS-90. Similar comments also apply to water manometer pressure
-        units.&quot; </description>
+      <description>NIST-SI gives a limited number of digits of precision and states the following: &quot;Additional digits 
+				are not justified because the definitions of the units do not take into account the compressibility 
+				of mercury or the change in density caused by the revised practical temperature scale, ITS-90. 
+				Similar comments also apply to water manometer pressure units.&quot;
+			</description>
     </unit>
     <unit>
       <symbol>inHg[60degF]/s</symbol>
@@ -13768,8 +13832,9 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>N.m</underlyingDef>
-      <description>The work done when the point of application of a force of 1 N is displaced a
-        distance of 1 m in the direction of the force. </description>
+      <description>The work done when the point of application of a force of 1 N is displaced a distance of 1 m in the 
+				direction of the force.
+			</description>
     </unit>
     <unit>
       <symbol>J.m/(s.m2.deltaK)</symbol>
@@ -13899,7 +13964,7 @@
       <category>derived</category>
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>1</B>
       <C>0.001</C>
@@ -13956,8 +14021,9 @@
       <isSI>true</isSI>
       <category>atom-base</category>
       <isBase/>
-      <description>The kelvin, unit of thermodynamic temperature, is the fraction 1/273.16 of the
-        thermodynamic temperature of the triple point of water. </description>
+      <description>The kelvin, unit of thermodynamic temperature, is the fraction 1/273.16 of the thermodynamic 
+				temperature of the triple point of water.
+			</description>
     </unit>
     <unit>
       <symbol>kA</symbol>
@@ -14164,7 +14230,7 @@
       <category>derived</category>
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>4184</B>
       <C>0.001</C>
@@ -14249,8 +14315,9 @@
       <isSI>true</isSI>
       <category>prefixed</category>
       <isBase/>
-      <description>The kilogram is the unit of mass (not force); it is equal to the mass of the
-        international prototype of the kilogram. </description>
+      <description>The kilogram is the unit of mass (not force); it is equal to the mass of the international prototype 
+				of the kilogram.
+			</description>
     </unit>
     <unit>
       <symbol>kg.m</symbol>
@@ -14887,7 +14954,7 @@
       <category>derived</category>
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>1000</B>
       <C>0.001</C>
@@ -14921,11 +14988,12 @@
       <B>4.4482216152605E3</B>
       <C>1</C>
       <D>0</D>
-      <description> Known commonly in the US as a kip, it is a non-SI unit of force used primarily
-        by American architects and engineers to express large loads, such as those found in bridge
-        or building construction. The name is a portmanteau of &quot;kilo-pound&quot;. It is exactly
-        equal to 1,000 pounds-force (lbf) and approximately equal to 4,448.22 Newtons.
-      </description>
+      <description>
+				Known commonly in the US as a kip, it is a non-SI unit of force used primarily by 
+				American architects and engineers to express large loads, such as those found in 
+				bridge or building construction. The name is a portmanteau of &quot;kilo-pound&quot;. It is
+				exactly equal to 1,000 pounds-force (lbf) and approximately equal to 4,448.22 Newtons.				
+			</description>
     </unit>
     <unit>
       <symbol>klbf/ft2</symbol>
@@ -14950,7 +15018,7 @@
       <category>derived</category>
       <baseUnit>N/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>4448221.6152605</B>
       <C>0.028316846592</C>
@@ -15261,7 +15329,7 @@
       <category>derived</category>
       <baseUnit>N/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>1000</B>
       <C>1</C>
@@ -15673,7 +15741,7 @@
       <category>derived</category>
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>3600000</B>
       <C>0.001</C>
@@ -15792,9 +15860,11 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>dm3</underlyingDef>
-      <description>Liquid volume. In the US, this is called a liter. By action of the 12th General
-        Conference on Weights and Measures (1964), the liter is a special name for the cubic
-        decimeter. </description>
+      <description>Liquid volume. 
+				In the US, this is called a liter. 
+				By action of the 12th General Conference on Weights and Measures (1964), the liter is a special name 
+				for the cubic decimeter.
+			</description>
     </unit>
     <unit>
       <symbol>L/(bar.min)</symbol>
@@ -15978,11 +16048,12 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>lbm.gn</underlyingDef>
-      <description>The pound-force is equal to the gravitational force exerted on a mass of one
-        avoirdupois pound on the surface of Earth. The exact conversion factor is 4.448 221 615 260
-        5 E+00 since the standard value of the acceleration due to gravity, gn = 9.806 65 m/s2
-        exactly, is used to define the kilogram-force: 1 kgf = 9.806 65 E+00 N exactly.
-      </description>
+      <description>The pound-force is equal to the gravitational force exerted on a mass of one avoirdupois pound on 
+				the surface of Earth. 
+				The exact conversion factor is 4.448 221 615 260 5 E+00 since the standard value of the acceleration 
+				due to gravity, gn = 9.806 65 m/s2 exactly, is used to define the kilogram-force: 1 kgf = 9.806 65 
+				E+00 N exactly.
+			</description>
     </unit>
     <unit>
       <symbol>lbf.ft</symbol>
@@ -16166,21 +16237,6 @@
       <B>4.4482216152605</B>
       <C>6.4516E-4</C>
       <D>0</D>
-    </unit>
-    <unit>
-      <symbol>lbf/(100.ft2.s)</symbol>
-      <name>pound-force per hundred square foot per second</name>
-      <dimension>M/LT3</dimension>
-      <isSI>false</isSI>
-      <category>derived</category>
-      <baseUnit>Pa/s</baseUnit>
-      <conversionRef>DERIVED</conversionRef>
-      <isExact>true</isExact>
-      <A/>
-      <B>4.4482216152605</B>
-      <C>0.9290304</C>
-      <D/>
-      <description>Diggs addition. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>lbf/ft</symbol>
@@ -16646,9 +16702,10 @@
       <B>453.59237</B>
       <C>1</C>
       <D>0</D>
-      <description>The amount (in pound-mass) of substance of a system which contains as many
-        elementary entities as there are atoms in 0.012 kilogram of carbon 12. The conversion
-        involves converting pound-mass to kilograms. </description>
+      <description>The amount (in pound-mass) of substance of a system which contains as many elementary entities as 
+				there are atoms in 0.012 kilogram of carbon 12. 
+				The conversion involves converting pound-mass to kilograms.
+			</description>
     </unit>
     <unit>
       <symbol>lbmol/(h.ft2)</symbol>
@@ -16868,8 +16925,8 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>cd.sr</underlyingDef>
-      <description>The luminous flux emitted in a solid angle of 1 sr by a point source having a
-        uniform intensity of 1 cd. </description>
+      <description>The luminous flux emitted in a solid angle of 1 sr by a point source having a uniform intensity of 1 cd.
+			</description>
     </unit>
     <unit>
       <symbol>lm.s</symbol>
@@ -16916,9 +16973,7 @@
       <C>60000000</C>
       <D/>
       <underlyingDef>1 L/(min.m.MPa)</underlyingDef>
-      <description>Diggs addition. Lugeon unit. Measure of rock permeability defined as 1 liter per
-        minute per meter of borehole at 1 megapascal injection pressure. Used in water pressure
-        testing of rock formations.</description>
+      <description>Diggs addition. Lugeon unit. Measure of rock permeability defined as 1 liter per minute per meter of borehole at 1 megapascal injection pressure. Used in water pressure testing of rock formations.</description>
     </unit>
     <unit>
       <symbol>lx</symbol>
@@ -16928,8 +16983,7 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>lm/m2</underlyingDef>
-      <description>The illuminance produced by a luminous flux of 1 lm uniformly distributed over a
-        surface of 1 m2.</description>
+      <description>The illuminance produced by a luminous flux of 1 lm uniformly distributed over a surface of 1 m2.</description>
     </unit>
     <unit>
       <symbol>lx.s</symbol>
@@ -16946,9 +17000,10 @@
       <isSI>true</isSI>
       <category>atom-base</category>
       <isBase/>
-      <description>The metre is the length equal to 1 650 763.73 wavelengths in vacuum of the
-        radiation corresponding to the transition between the levels 2p10 and 5d5 of the krypton-86
-        atom. In the US, this is called a meter. </description>
+      <description>The metre is the length equal to 1 650 763.73 wavelengths in vacuum of the radiation corresponding 
+				to the transition between the levels 2p10 and 5d5 of the krypton-86 atom. 
+				In the US, this is called a meter.
+			</description>
     </unit>
     <unit>
       <symbol>m[Ger]</symbol>
@@ -17262,7 +17317,7 @@
       <symbol>m2/min</symbol>
       <name>square metre per minute</name>
       <dimension>L2/T</dimension>
-      <isSI>True</isSI>
+      <isSI>true</isSI>
       <category>derived</category>
       <baseUnit>m2/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
@@ -18409,8 +18464,7 @@
       <B>1e-05</B>
       <C>1</C>
       <D/>
-      <description>Diggs addition. Gravitational gradient expressed as change in acceleration per
-        unit distance.</description>
+      <description>Diggs addition. Gravitational gradient expressed as change in acceleration per unit distance.</description>
     </unit>
     <unit>
       <symbol>Mgauss</symbol>
@@ -18582,11 +18636,11 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1852 m</underlyingDef>
-      <description>The nautical mile is a special unit employed for marine and aerial navigation to
-        express distance. The unit was originally chosen, and continues to be used, because one
-        nautical mile on the surface of the Earth subtends approximately one minute of angle at the
-        centre of the Earth, which is convenient when latitude and longitude are measured in degrees
-        and minutes of angle. </description>
+      <description>The nautical mile is a special unit employed for marine and aerial navigation to express distance. 
+				The unit was originally chosen, and continues to be used, because one nautical mile on the surface 
+				of the Earth subtends approximately one minute of angle at the centre of the Earth, which is 
+				convenient when latitude and longitude are measured in degrees and minutes of angle.
+			</description>
     </unit>
     <unit>
       <symbol>mi[nautUK]</symbol>
@@ -18602,10 +18656,11 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1853 m</underlyingDef>
-      <description>The Imperial (UK) nautical mile, also known as the Admiralty mile, was defined in
-        terms of the knot, such that one nautical mile was exactly 6,080 international feet
-        (1,853.184 m):[6] it was abandoned in 1970[6] and, for legal purposes, old references to the
-        obsolete unit are now converted to 1,853 metres exactly. </description>
+      <description>The Imperial (UK) nautical mile, also known as the Admiralty mile, was defined in terms of the knot, 
+				such that one nautical mile was exactly 6,080 international feet (1,853.184 m):[6] it was abandoned 
+				in 1970[6] and, for legal purposes, old references to the obsolete unit are now converted to 1,853 
+				metres exactly.
+			</description>
     </unit>
     <unit>
       <symbol>mi[US]</symbol>
@@ -18621,8 +18676,7 @@
       <C>3937</C>
       <D>0</D>
       <underlyingDef>5280 ft[US]</underlyingDef>
-      <description>United States survey mile is 5280 feet survey (exactly). From
-        NIST-55.</description>
+      <description>United States survey mile is 5280 feet survey (exactly). From NIST-55.</description>
     </unit>
     <unit>
       <symbol>mi[US]2</symbol>
@@ -18735,8 +18789,9 @@
       <B>8388608</B>
       <C>1</C>
       <D>0</D>
-      <description>1048576 bytes. Commonly called a megabyte but mega refers to powers of ten rather
-        than powers of two. </description>
+      <description>1048576 bytes. 
+				Commonly called a megabyte but mega refers to powers of ten rather than powers of two.
+			</description>
     </unit>
     <unit>
       <symbol>mil</symbol>
@@ -18936,7 +18991,7 @@
       <category>derived</category>
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>1000000</B>
       <C>0.001</C>
@@ -18951,7 +19006,7 @@
       <category>derived</category>
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>0.001</B>
       <C>0.001</C>
@@ -19008,7 +19063,7 @@
       <category>derived</category>
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>0.001</B>
       <C>1</C>
@@ -19329,11 +19384,11 @@
       <B>133.322</B>
       <C>1</C>
       <D>0</D>
-      <description>NIST-SI gives a limited number of digits of precision and states the following:
-        &quot;Additional digits are not justified because the definitions of the units do not take
-        into account the compressibility of mercury or the change in density caused by the revised
-        practical temperature scale, ITS-90. Similar comments also apply to water manometer pressure
-        units.&quot; </description>
+      <description>NIST-SI gives a limited number of digits of precision and states the following: &quot;Additional digits 
+				are not justified because the definitions of the units do not take into account the compressibility 
+				of mercury or the change in density caused by the revised practical temperature scale, ITS-90. 
+				Similar comments also apply to water manometer pressure units.&quot;
+			</description>
     </unit>
     <unit>
       <symbol>mmHg[0degC]/s</symbol>
@@ -19469,10 +19524,11 @@
       <isSI>true</isSI>
       <category>atom-base</category>
       <isBase/>
-      <description>The mole is the amount (in grams) of substance of a system that contains as many
-        elementary entities as there are atoms in 0.012 kilogram of carbon-12. When the mole is
-        used, the elementary entities must be specified and may be atoms, molecules, ions,
-        electrons, other particles, or specified groups of such particles. </description>
+      <description>The mole is the amount (in grams) of substance of a system that contains as many elementary entities 
+				as there are atoms in 0.012 kilogram of carbon-12. 
+				When the mole is used, the elementary entities must be specified and may be atoms, molecules, ions, 
+				electrons, other particles, or specified groups of such particles.
+			</description>
     </unit>
     <unit>
       <symbol>mol.m2/(mol.s)</symbol>
@@ -20166,8 +20222,7 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>m.kg/s2</underlyingDef>
-      <description>That force which, when applied to a body having a mass of 1 kg, gives it an
-        acceleration of 1 m/s2.</description>
+      <description>That force which, when applied to a body having a mass of 1 kg, gives it an acceleration of 1 m/s2.</description>
     </unit>
     <unit>
       <symbol>N.m</symbol>
@@ -20327,8 +20382,7 @@
       <isSI>true</isSI>
       <category>atom-allowed</category>
       <isBase/>
-      <description>A unit defined by the American Petroleum Institute for neutron log
-        measurements.</description>
+      <description>A unit defined by the American Petroleum Institute for neutron log measurements.</description>
     </unit>
     <unit>
       <symbol>nC</symbol>
@@ -20772,8 +20826,7 @@
       <isSI>true</isSI>
       <category>atom-allowed</category>
       <isBase/>
-      <description>The number of octaves between two positive values is the base two logarithm of
-        their ratio.</description>
+      <description>The number of octaves between two positive values is the base two logarithm of their ratio.</description>
     </unit>
     <unit>
       <symbol>Oe</symbol>
@@ -20788,10 +20841,11 @@
       <B>1000</B>
       <C>4*PI</C>
       <D>0</D>
-      <description>1 Oe corresponds to (1000/(4*pi)) A/m. This unit is part of the so-called
-        electromagnetic three-dimensional CGS system and cannot strictly speaking be compared to the
-        corresponding SI unit, which has four dimensions when only mechanical and electric
-        quantities are considered. </description>
+      <description>1 Oe corresponds to (1000/(4*pi)) A/m. 
+				This unit is part of the so-called electromagnetic three-dimensional CGS system and cannot strictly 
+				speaking be compared to the corresponding SI unit, which has four dimensions when only mechanical 
+				and electric quantities are considered.
+			</description>
     </unit>
     <unit>
       <symbol>ohm</symbol>
@@ -20801,10 +20855,10 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>V/A</underlyingDef>
-      <description>The electric resistance between two points of a conductor when a constant
-        difference of potential of 1 V, applied between these two points, produces in this conductor
-        a current of 1 A, this conductor not being the source of any electromotive force.
-      </description>
+      <description>The electric resistance between two points of a conductor when a constant difference of potential of 
+				1 V, applied between these two points, produces in this conductor a current of 1 A, this conductor 
+				not being the source of any electromotive force.
+			</description>
     </unit>
     <unit>
       <symbol>ohm.cm</symbol>
@@ -20912,8 +20966,7 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>dyne.s/cm2</underlyingDef>
-      <description>The poise is the CGS unit for viscosity (also called dynamic
-        viscosity).</description>
+      <description>The poise is the CGS unit for viscosity (also called dynamic viscosity).</description>
     </unit>
     <unit>
       <symbol>pA</symbol>
@@ -21134,9 +21187,11 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>(lbm.ft)/s2</underlyingDef>
-      <description>A unit of force equal to the force that would give a free mass of one pound an
-        acceleration of one foot per second per second [i.e., &quot;(lbm.ft)/s2&quot;]. Therefore, 1
-        pdl = 0.138254954376 N exactly. From merriam-webster.com. </description>
+      <description>A unit of force equal to the force that would give a free mass of one pound an acceleration of one 
+				foot per second per second [i.e., &quot;(lbm.ft)/s2&quot;]. 
+				Therefore, 1 pdl = 0.138254954376 N exactly. 
+				From merriam-webster.com.
+			</description>
     </unit>
     <unit>
       <symbol>pdl.cm2</symbol>
@@ -21273,9 +21328,7 @@
       <category>atom</category>
       <isBase/>
       <underlyingDef> c</underlyingDef>
-      <description>Diggs addition. Logarithmic grain size scale where phi = -log2(D/1mm). Used in
-        sedimentology for particle size analysis. Grain diameter D in millimeters equals 2^(-phi)
-        mm.</description>
+      <description>Diggs addition.  Logarithmic grain size scale where phi = -log2(D/1mm). Used in sedimentology for particle size analysis. Grain diameter D in millimeters equals 2^(-phi) mm.</description>
     </unit>
     <unit>
       <symbol>pHz</symbol>
@@ -21403,8 +21456,7 @@
       <B>1E-3</B>
       <C>1</C>
       <D>0</D>
-      <description>A ratio of values divided by 1000 where the original values were in the same
-        units.</description>
+      <description>A ratio of values divided by 1000 where the original values were in the same units.</description>
     </unit>
     <unit>
       <symbol>ppm</symbol>
@@ -21419,8 +21471,7 @@
       <B>1E-6</B>
       <C>1</C>
       <D>0</D>
-      <description>A ratio of values divided by 1E6 where the original values were in the same
-        units.</description>
+      <description>A ratio of values divided by 1E6 where the original values were in the same units.</description>
     </unit>
     <unit>
       <symbol>ppm[mass]</symbol>
@@ -21436,8 +21487,9 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1E-6 kg/kg</underlyingDef>
-      <description>The parts per million of mass relative to mass. That is, mass divided by mass
-        divided by 1E6 where the original mass values were in the same units. </description>
+      <description>The parts per million of mass relative to mass. 
+				That is, mass divided by mass divided by 1E6 where the original mass values were in the same units.
+			</description>
     </unit>
     <unit>
       <symbol>ppm[vol]</symbol>
@@ -21453,9 +21505,9 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1E-6 m3/m3</underlyingDef>
-      <description>The parts per million of volume relative to volume That is, volume divided by
-        volume divided by 1E6 where the original volume values were in the same units.
-      </description>
+      <description>The parts per million of volume relative to volume That is, volume divided by volume divided by 1E6 
+				where the original volume values were in the same units.
+			</description>
     </unit>
     <unit>
       <symbol>ppm[vol]/deltaC</symbol>
@@ -21543,9 +21595,10 @@
       <C>6.4516E-4</C>
       <D>0</D>
       <underlyingDef>lbf/in2</underlyingDef>
-      <description>Pound-force per square inch. A unit of pressure or of stress based on avoirdupois
-        units. It is the pressure resulting from a force of one pound-force applied to an area of
-        one square inch. </description>
+      <description>Pound-force per square inch. 
+				A unit of pressure or of stress based on avoirdupois units. 
+				It is the pressure resulting from a force of one pound-force applied to an area of one square inch.
+			</description>
     </unit>
     <unit>
       <symbol>psi.d/bbl</symbol>
@@ -21881,8 +21934,7 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1e15 Btu[IT]</underlyingDef>
-      <description>A quad is a unit of energy equal to 1E+15 (international table)
-        BTU.</description>
+      <description>A quad is a unit of energy equal to 1E+15 (international table) BTU.</description>
     </unit>
     <unit>
       <symbol>quad/a</symbol>
@@ -21905,8 +21957,9 @@
       <isSI>true</isSI>
       <category>atom-special</category>
       <isBase/>
-      <description>The radian is the plane angle between two radii of a circle that cut of, on the
-        circumference,an arc equal in length to the radius. </description>
+      <description>The radian is the plane angle between two radii of a circle that cut of, on the circumference,an arc 
+				equal in length to the radius.
+			</description>
     </unit>
     <unit>
       <symbol>rad/ft</symbol>
@@ -21982,9 +22035,11 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1/100 Gy</underlyingDef>
-      <description>A obsolete unit of absorbed radiation dose. It was originally defined in CGS
-        units in 1953 as the dose causing 100 ergs of energy to be absorbed by one gram of matter.
-        It has been replaced by the gray in most of the world. </description>
+      <description>A obsolete unit of absorbed radiation dose. 
+				It was originally defined in CGS units in 1953 as the dose causing 100 ergs of energy to be absorbed 
+				by one gram of matter. 
+				It has been replaced by the gray in most of the world.
+			</description>
     </unit>
     <unit>
       <symbol>rem</symbol>
@@ -22000,10 +22055,10 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1/100 Sv</underlyingDef>
-      <description>A unit of radiation dosage (such as from X rays) applied to humans. Derived from
-        the phrase Roentgen equivalent man, the rem is now defined as the dosage in rads that will
-        cause the same amount of biological injury as one rad of X rays or gamma rays.
-      </description>
+      <description>A unit of radiation dosage (such as from X rays) applied to humans. 
+				Derived from the phrase Roentgen equivalent man, the rem is now defined as the dosage in rads that 
+				will cause the same amount of biological injury as one rad of X rays or gamma rays.
+			</description>
     </unit>
     <unit>
       <symbol>rem/h</symbol>
@@ -22123,6 +22178,45 @@
       <D>0</D>
     </unit>
     <unit>
+      <symbol>rtH</symbol>
+      <name>square root of hour</name>
+      <dimension>T0.5</dimension>
+      <isSI>false</isSI>
+      <category>atom</category>
+      <baseUnit>rtS</baseUnit>
+      <conversionRef>DEFINITION</conversionRef>
+      <isExact>true</isExact>
+      <A/>
+      <B>60</B>
+      <C>1</C>
+      <D/>
+      <description>Diggs addition. Used for reciprocal square root time calculations. sqrt(3600) = 60.</description>
+    </unit>
+    <unit>
+      <symbol>rtMin</symbol>
+      <name>square root of minute</name>
+      <dimension>T0.5</dimension>
+      <isSI>false</isSI>
+      <category>atom</category>
+      <baseUnit>rtS</baseUnit>
+      <conversionRef>DEFINITION</conversionRef>
+      <isExact>true</isExact>
+      <A/>
+      <B>7.74596669241483</B>
+      <C>1</C>
+      <D/>
+      <description>Diggs addition. Used for reciprocal square root time calculations. sqrt(60) ≈ 7.746.</description>
+    </unit>
+    <unit>
+      <symbol>rtS</symbol>
+      <name>square root of second</name>
+      <dimension>T0.5</dimension>
+      <isSI>false</isSI>
+      <category>atom</category>
+      <isBase/>
+      <description>Diggs addition. Used for reciprocal square root time calculations.</description>
+    </unit>
+    <unit>
       <symbol>S</symbol>
       <name>siemens</name>
       <dimension>I2T3/L2M</dimension>
@@ -22130,8 +22224,10 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>A/V</underlyingDef>
-      <description>The electric conductance of a conductor in which a current of 1 A is produced by
-        an electric potential difference of 1 V. Also known as a mho. </description>
+      <description>The electric conductance of a conductor in which a current of 1 A is produced by an electric 
+				potential difference of 1 V. 
+				Also known as a mho.
+			</description>
     </unit>
     <unit>
       <symbol>s</symbol>
@@ -22140,9 +22236,9 @@
       <isSI>true</isSI>
       <category>atom-base</category>
       <isBase/>
-      <description>The second is the duration of 9 192 631 770 periods of the radiation
-        corresponding to the transition between the two hyperfine levels of the ground state of the
-        cesium-133 atom. </description>
+      <description>The second is the duration of 9 192 631 770 periods of the radiation corresponding to the transition 
+				between the two hyperfine levels of the ground state of the cesium-133 atom.
+			</description>
     </unit>
     <unit>
       <symbol>s/cm</symbol>
@@ -22297,8 +22393,9 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>94 lbm</underlyingDef>
-      <description>A sack with a nominal weight of 94 pound-mass. While the conversion of 94 lbm is
-        exact, the weight of the sack is not exactly 94 lbm. </description>
+      <description>A sack with a nominal weight of 94 pound-mass. 
+				While the conversion of 94 lbm is exact, the weight of the sack is not exactly 94 lbm.
+			</description>
     </unit>
     <unit>
       <symbol>seca</symbol>
@@ -22346,9 +22443,7 @@
       <C>1</C>
       <D/>
       <underlyingDef>1 lbf.s2/ft</underlyingDef>
-      <description>Diggs addition. Imperial unit of mass defined as the mass that accelerates at 1
-        ft/s² when a force of 1 pound-force is applied. Equal to approximately 14.59390
-        kilograms.</description>
+      <description>Diggs addition. Imperial unit of mass defined as the mass that accelerates at 1 ft/s² when a force of 1 pound-force is applied. Equal to approximately 14.59390 kilograms.</description>
     </unit>
     <unit>
       <symbol>slug/ft3</symbol>
@@ -22358,7 +22453,7 @@
       <category>derived</category>
       <baseUnit>kg/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>14.5939029372</B>
       <C>0.028316846592</C>
@@ -22372,9 +22467,10 @@
       <isSI>true</isSI>
       <category>atom-special</category>
       <isBase/>
-      <description>The steradian is the solid angle that, having its vertex in the center of a
-        circle, cuts of an area of the surface of the sphere equal to that of a square with sides of
-        length equal to the radius of the sphere. </description>
+      <description>The steradian is the solid angle that, having its vertex in the center of a circle, cuts of an area 
+				of the surface of the sphere equal to that of a square with sides of length equal to the radius of 
+				the sphere.
+			</description>
     </unit>
     <unit>
       <symbol>St</symbol>
@@ -22400,10 +22496,10 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>J/kg</underlyingDef>
-      <description>The dose equivalent when the absorbed dose of ionizing radiation multiplied by
-        the dimensionless factors Q (quality factor) and N (product of any of the multiplying
-        factors) stipulated by the International Commission on Radiological Protection is 1.0 J/kg.
-      </description>
+      <description>The dose equivalent when the absorbed dose of ionizing radiation multiplied by the dimensionless 
+				factors Q (quality factor) and N (product of any of the multiplying factors) stipulated by the 
+				International Commission on Radiological Protection is 1.0 J/kg.
+			</description>
     </unit>
     <unit>
       <symbol>Sv/h</symbol>
@@ -22426,8 +22522,9 @@
       <isSI>true</isSI>
       <category>derived</category>
       <isBase/>
-      <description>The dose equivalent rate when the absorbed dose per second of ionizing radiation
-        multiplied by the appropriate factors is equivalent to 1 Sievert per second. </description>
+      <description>The dose equivalent rate when the absorbed dose per second of ionizing radiation multiplied by the 
+				appropriate factors is equivalent to 1 Sievert per second.
+			</description>
     </unit>
     <unit>
       <symbol>t</symbol>
@@ -22453,11 +22550,12 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>Wb/m2</underlyingDef>
-      <description>The magnetic flux density of 1 Wb/m2. Alternatively, it is defined as the
-        magnetic flux density that produces on a 1-m length of wire carrying a current of 1A,
-        oriented normal to the flux density, a force of 1 N, magnetic flux density being defined as
-        an axial vector quantity such that the force exerted on an element of current is equal to
-        the vector product of this element and the magnetic flux density. </description>
+      <description>The magnetic flux density of 1 Wb/m2. 
+				Alternatively, it is defined as the magnetic flux density that produces on a 1-m length of wire 
+				carrying a current of 1A, oriented normal to the flux density, a force of 1 N, magnetic flux density 
+				being defined as an axial vector quantity such that the force exerted on an element of current is 
+				equal to the vector product of this element and the magnetic flux density.
+			</description>
     </unit>
     <unit>
       <symbol>t/a</symbol>
@@ -22747,10 +22845,11 @@
       <B>1.05506E8</B>
       <C>1</C>
       <D>0</D>
-      <description>A therm is one hundred thousand BTU (but depends on the definition of BTU). The
-        therm (EC) is legally defined in the Council Directive of 20 December 1979, Council of the
-        European Communities (now the European Union, EU). It is based on the International Table
-        Btu. </description>
+      <description>A therm is one hundred thousand BTU (but depends on the definition of BTU). 
+				The therm (EC) is legally defined in the Council Directive of 20 December 1979, Council of the 
+				European Communities (now the European Union, EU). 
+				It is based on the International Table Btu.
+			</description>
     </unit>
     <unit>
       <symbol>therm[UK]</symbol>
@@ -22766,8 +22865,7 @@
       <C>1</C>
       <D>0</D>
       <underlyingDef>1E5 Btu[UK]</underlyingDef>
-      <description>A therm is one hundred thousand BTU (but depends on the definition of
-        BTU).</description>
+      <description>A therm is one hundred thousand BTU (but depends on the definition of BTU).</description>
     </unit>
     <unit>
       <symbol>therm[US]</symbol>
@@ -22782,11 +22880,12 @@
       <B>1.054804E8</B>
       <C>1</C>
       <D>0</D>
-      <description>A therm is one hundred thousand BTU (but depends on the definition of BTU). The
-        therm (US) is legally defined in the Federal Register of July 27, 1968. Although the therm
-        (EC), which is based on the International Table Btu, is frequently used by engineers in the
-        United States, the therm (US) is the legal unit used by the U.S. natural gas industry.
-      </description>
+      <description>A therm is one hundred thousand BTU (but depends on the definition of BTU). 
+				The therm (US) is legally defined in the Federal Register of July 27, 1968. 
+				Although the therm (EC), which is based on the International Table Btu, is frequently used by 
+				engineers in the United States, the therm (US) is the legal unit used by the U.S. 
+				natural gas industry.
+			</description>
     </unit>
     <unit>
       <symbol>THz</symbol>
@@ -23278,8 +23377,9 @@
       <C>760</C>
       <D>0</D>
       <underlyingDef>1/760 atm</underlyingDef>
-      <description>The torr is defined as 1/760 of one atmosphere, while the atmosphere is defined
-        as 101.325 kPa. Therefore, 1 Torr is equal to 101325/760 Pa (from Wikipedia). </description>
+      <description>The torr is defined as 1/760 of one atmosphere, while the atmosphere is defined as 101.325 kPa. 
+				Therefore, 1 Torr is equal to 101325/760 Pa (from Wikipedia).
+			</description>
     </unit>
     <unit>
       <symbol>torr/s</symbol>
@@ -23830,11 +23930,11 @@
       <B>0.133322</B>
       <C>1</C>
       <D>0</D>
-      <description>NIST-SI gives a limited number of digits of precision and states the following:
-        &quot;Additional digits are not justified because the definitions of the units do not take
-        into account the compressibility of mercury or the change in density caused by the revised
-        practical temperature scale, ITS-90. Similar comments also apply to water manometer pressure
-        units.&quot; </description>
+      <description>NIST-SI gives a limited number of digits of precision and states the following: &quot;Additional digits 
+				are not justified because the definitions of the units do not take into account the compressibility 
+				of mercury or the change in density caused by the revised practical temperature scale, ITS-90. 
+				Similar comments also apply to water manometer pressure units.&quot;
+			</description>
     </unit>
     <unit>
       <symbol>umHg[0degC]/s</symbol>
@@ -24197,9 +24297,9 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>W/A</underlyingDef>
-      <description>The difference of electric potential between two points of a conductor carrying a
-        constant current of 1 A when the power dissipated between these points is equal to 1 W.
-      </description>
+      <description>The difference of electric potential between two points of a conductor carrying a constant current 
+				of 1 A when the power dissipated between these points is equal to 1 W.
+			</description>
     </unit>
     <unit>
       <symbol>V/B</symbol>
@@ -24249,7 +24349,7 @@
       <category>derived</category>
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>3600</B>
       <C>0.001</C>
@@ -24264,7 +24364,7 @@
       <category>derived</category>
       <baseUnit>J/m3</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>True</isExact>
+      <isExact>true</isExact>
       <A/>
       <B>3600</B>
       <C>1</C>
@@ -24403,8 +24503,9 @@
       <category>atom-special</category>
       <isBase/>
       <underlyingDef>V.s</underlyingDef>
-      <description>The magnetic flux which, linking a circuit of one turn, produces in it an
-        electromotive force of 1 V as it is reduced to zero at a uniform rate in 1 s. </description>
+      <description>The magnetic flux which, linking a circuit of one turn, produces in it an electromotive force of 1 V 
+				as it is reduced to zero at a uniform rate in 1 s.
+			</description>
     </unit>
     <unit>
       <symbol>Wb.m</symbol>
@@ -24660,68 +24761,74 @@
   <referenceSet version="1.0">
     <reference>
       <ID>DEFINITION</ID>
-      <description>The conversion information was calculated from the underlying definition which
-        implies some combination of atoms. </description>
+      <description>The conversion information was calculated from the underlying definition which implies some 
+				combination of atoms.
+			</description>
     </reference>
     <reference>
       <ID>DERIVED</ID>
-      <description>The conversion information was derived from the conversion information of the
-        underlying atoms. No division was performed as part of the derivation. </description>
+      <description>The conversion information was derived from the conversion information of the underlying atoms. 
+				No division was performed as part of the derivation.
+			</description>
     </reference>
     <reference>
       <ID>EEC-71-354</ID>
-      <description>Conversion information in &quot;Council Directive 71/354/EEC: On the
-        approximation of the laws of the Member States relating to units of measurement&quot;. The
-        Council of the European Communities, 18 October 1971, Latest amendment in 2009.
-      </description>
+      <description>Conversion information in &quot;Council Directive 71/354/EEC: On the approximation of the laws of the 
+				Member States relating to units of measurement&quot;. 
+				The Council of the European Communities, 18 October 1971, Latest amendment in 2009.
+			</description>
     </reference>
     <reference>
       <ID>EPSG</ID>
-      <description>Conversion information in the European Petroleum Survey Group's (EPSG) data base
-        (see http://www.epsg.org) version 8.1 (26 Nov 2012) as maintained by the International
-        Association of Oil &amp; Gas producers (OGP) Geomatics Committee. </description>
+      <description>Conversion information in the European Petroleum Survey Group's (EPSG) data base (see 
+				http://www.epsg.org) version 8.1 (26 Nov 2012) as maintained by the International Association of Oil 
+				&amp; Gas producers (OGP) Geomatics Committee.
+			</description>
     </reference>
     <reference>
       <ID>NIST-44</ID>
-      <description>Conversion information in National Institute of Standards and Technology's
-        (NIST), &quot;Appendix C&quot; of &quot;NIST Handbook 44, 2012 edition, Specifications,
-        Tolerances, and Other Technical Requirements for Weighing and Measuring Devices, General
-        Tables of Units of Measurement&quot;. </description>
+      <description>Conversion information in National Institute of Standards and Technology's (NIST), &quot;Appendix C&quot; of 
+				&quot;NIST Handbook 44, 2012 edition, Specifications, Tolerances, and Other Technical Requirements for 
+				Weighing and Measuring Devices, General Tables of Units of Measurement&quot;.
+			</description>
     </reference>
     <reference>
       <ID>NIST-SI</ID>
-      <description>Conversion information in National Institute of Standards and Technology's
-        (NIST), &quot;Guide for the Use of the International System of Units (SI)&quot;, NIST
-        Special Publication 811, 2008 Edition. </description>
+      <description>Conversion information in National Institute of Standards and Technology's (NIST), &quot;Guide for the 
+				Use of the International System of Units (SI)&quot;, NIST Special Publication 811, 2008 Edition.
+			</description>
     </reference>
     <reference>
       <ID>UK-1985</ID>
-      <description>Conversion information in &quot;Weights and Measures Act 1985&quot;, &quot;Part I
-        Units and Standards of Measurement&quot; (see http://www.legislation.gov.uk). </description>
+      <description>Conversion information in &quot;Weights and Measures Act 1985&quot;, &quot;Part I Units and Standards of 
+				Measurement&quot; (see http://www.legislation.gov.uk).
+			</description>
     </reference>
     <reference>
       <ID>UK-1995</ID>
-      <description>Conversion information in &quot;The Units of Measurement Regulations 1995&quot;
-        (1995 No. 1804), SCHEDULE regulations 2 and 3, RELEVANT IMPERIAL UNITS, CORRESPONDING METRIC
-        UNITS AND METRIC EQUIVALENTS (see http://www.legislation.gov.uk). </description>
+      <description>Conversion information in &quot;The Units of Measurement Regulations 1995&quot; (1995 No. 
+				1804), SCHEDULE regulations 2 and 3, RELEVANT IMPERIAL UNITS, CORRESPONDING METRIC UNITS AND METRIC 
+				EQUIVALENTS (see http://www.legislation.gov.uk).
+			</description>
     </reference>
     <reference>
       <ID>IUGS-year</ID>
-      <description>Conversion information in &quot;IUPAC-IUGS common definition and convention on
-        the use of the year as a derived unit of time&quot;, Pure Applied Chemistry, Volume 83,
-        Number 5, pages 1159-1162, 2011. </description>
+      <description>Conversion information in &quot;IUPAC-IUGS common definition and convention on the use of the year as a 
+				derived unit of time&quot;, Pure Applied Chemistry, Volume 83, Number 5, pages 1159-1162, 2011.
+			</description>
     </reference>
     <reference>
       <ID>API-MPMS15</ID>
-      <description>American Petroleum Institute, &quot;Manual of Petroleum Measurement
-        Standards&quot; (MPMS), Chapter 15 &quot;Guidelines for the Use of the International System
-        of Units (SI) in the Petroleum and Allied Industries&quot;, 3rd Edition, December 2001,
-        Reaffirmed: May 2007. </description>
+      <description>American Petroleum Institute, &quot;Manual of Petroleum Measurement Standards&quot; (MPMS), Chapter 15 
+				&quot;Guidelines for the Use of the International System of Units (SI) in the Petroleum and Allied 
+				Industries&quot;, 3rd Edition, December 2001, Reaffirmed: May 2007.
+			</description>
     </reference>
     <reference>
       <ID>SPE-1984</ID>
-      <description>Conversion information in Society of Petroleum Engineers' (SPE), &quot;The SI
-        Metric System of Units and SPE METRIC STANDARD&quot;, 1984. </description>
+      <description>Conversion information in Society of Petroleum Engineers' (SPE), &quot;The SI Metric System of Units and 
+				SPE METRIC STANDARD&quot;, 1984.
+			</description>
     </reference>
   </referenceSet>
   <prefixSet version="1.0">
