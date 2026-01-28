@@ -2941,7 +2941,7 @@
       <memberUnit>kcal[th]/(kg.deltaC)</memberUnit>
     </quantityClass>
     <quantityClass>
-      <name>sauare root time</name>
+      <name>square root time</name>
       <dimension>T0.5</dimension>
       <baseForConversion>rtS</baseForConversion>
       <description>DIGGS extension.</description>
