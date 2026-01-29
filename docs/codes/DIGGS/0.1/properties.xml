@@ -1156,7 +1156,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_ratio</gml:identifier>
             <gml:name>Friction Ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure per pressure</diggs:quantityClass>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>

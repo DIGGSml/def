@@ -2289,7 +2289,7 @@
         <diggs:Definition gml:id="GP-GCscb">
             <gml:description>GP-GC with ≥ 15% sand. Field sample contains visible cobbles and boulders.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/astmD2488.xml#GP-GCscb</gml:identifier>
-            <gml:name>Poorly graded gravel with clay and sand , cobbles and boulders</gml:name>
+            <gml:name>Poorly graded gravel with clay and sand, cobbles and boulders</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D2488</diggs:authority>
             <diggs:reference>https://www.astm.org/d2488-17e01.html</diggs:reference>
