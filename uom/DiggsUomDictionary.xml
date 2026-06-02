@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<uomDictionary xmlns="http://www.energistics.org/energyml/data/uomv1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.energistics.org/energyml/data/uomv1 https://diggsml.org/schemas/3.0.0/energistics/EnergisticsUnitOfMeasureDictionary_V1.0.xsd">
+<uomDictionary xmlns="http://www.energistics.org/energyml/data/uomv1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.energistics.org/energyml/data/uomv1 https://diggsml.org/schema-dev/energistics/EnergisticsUnitOfMeasureDictionary_V1.0.xsd">
   <title>DIGGS Unit of Measure Dictionary</title>
   <originator>Energistics/DIGGS</originator>
   <description>This dictionary defines units of measure and related supporting information that are intended for use in application of the DIGGS interchange standard.
@@ -2669,6 +2669,7 @@
       <memberUnit>ftH2O[60degF]</memberUnit>
       <memberUnit>inH2O[4degC]</memberUnit>
       <memberUnit>lbf/in2</memberUnit>
+      <memberUnit>mH2O[4degC]</memberUnit>
     </quantityClass>
     <quantityClass>
       <name>pressure per pressure</name>
@@ -2735,6 +2736,7 @@
       <memberUnit>umHg[0degC]/s</memberUnit>
       <memberUnit>uPa/s</memberUnit>
       <memberUnit>upsi/s</memberUnit>
+      <memberUnit>mH2O[4degC]/s</memberUnit>
     </quantityClass>
     <quantityClass>
       <name>pressure per volume</name>
@@ -8215,7 +8217,7 @@
       <category>derived</category>
       <baseUnit>Pa/s</baseUnit>
       <conversionRef>DERIVED</conversionRef>
-      <isExact>true</isExact>
+      <isExact>false</isExact>
       <A>0</A>
       <B>98.0638</B>
       <C>1</C>
@@ -18577,6 +18579,40 @@
       <B>1E-3</B>
       <C>1</C>
       <D>0</D>
+    </unit>
+    <unit>
+      <symbol>mH2O[4degC]</symbol>
+      <name>metre of water at 4 degree Celsius</name>
+      <dimension>M/LT2</dimension>
+      <isSI>false</isSI>
+      <category>derived</category>
+      <baseUnit>Pa</baseUnit>
+      <conversionRef>DERIVED</conversionRef>
+      <isExact>false</isExact>
+      <A>0</A>
+      <B>9806.38</B>
+      <C>1</C>
+      <D>0</D>
+      <description>DIGGS extension. As with cmH2O[4degC], NIST-SI gives a limited number of digits of precision and states the following: &quot;Additional digits 
+				are not justified because the definitions of the units do not take into account the compressibility 
+				of mercury or the change in density caused by the revised practical temperature scale, ITS-90. 
+				Similar comments also apply to water manometer pressure units.&quot;
+			</description>
+    </unit>
+    <unit>
+      <symbol>mH2O[4degC]/s</symbol>
+      <name>metre of water at 4 degrees Celsius per second</name>
+      <dimension>M/LT3</dimension>
+      <isSI>false</isSI>
+      <category>derived</category>
+      <baseUnit>Pa/s</baseUnit>
+      <conversionRef>DERIVED</conversionRef>
+      <isExact>false</isExact>
+      <A>0</A>
+      <B>9806.38</B>
+      <C>1</C>
+      <D>0</D>
+      <description>DIGGS extension. Rate of pressure change.</description>
     </unit>
     <unit>
       <symbol>MHz</symbol>
