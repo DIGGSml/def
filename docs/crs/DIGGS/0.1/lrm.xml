@@ -2,10 +2,10 @@
 <!--  
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 -->
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3.0"
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3"
     xmlns:gml="http://www.opengis.net/gml/3.2" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://diggsml.org/schemas/3.0 https://raw.githubusercontent.com/DIGGSml/schema-dev/refs/heads/3.0/Diggs.xsd"
+    xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd"
     gml:id="diggs-LinearReferencingMethod-dictionary">
     
     <gml:description>
