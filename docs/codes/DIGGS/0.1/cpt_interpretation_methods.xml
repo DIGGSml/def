@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="cpt_interpretation_methods">
+    <gml:description>This dictionary contains named correlation methods used to derive interpreted CPT parameters (soil behavior type, Ic, relative density, undrained shear strength, soil unit weight, peak friction angle). A calculated CPT parameter should reference the method used so that consumers can reproduce and qualify the result, per the interpretation reporting practice recommended by CPT vendors.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml</gml:identifier>
+    <gml:name>DIGGS CPT Interpretation Methods</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="robertson_1986">
+            <gml:description>Non-normalized soil behavior type chart (qt vs friction ratio, 12 zones).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml#robertson_1986</gml:identifier>
+            <gml:name>Robertson et al. 1986</gml:name>
+            <diggs:reference>Robertson, Campanella, Gillespie &amp; Greig, 1986</diggs:reference>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="robertson_wride_1998">
+            <gml:description>Normalized soil behavior type index (Ic) framework for CPT-based soil classification.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml#robertson_wride_1998</gml:identifier>
+            <gml:name>Robertson &amp; Wride 1998</gml:name>
+            <diggs:reference>Robertson &amp; Wride, 1998</diggs:reference>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="robertson_1990">
+            <gml:description>Normalized soil behavior type (SBTn) chart, Qt vs Fr.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml#robertson_1990</gml:identifier>
+            <gml:name>Robertson 1990</gml:name>
+            <diggs:reference>Robertson, 1990</diggs:reference>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="robertson_2009">
+            <gml:description>Normalized soil behavior type using Qtn vs Fr (CPT 2009 update); default SBT method when unit weights and stresses are reported.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml#robertson_2009</gml:identifier>
+            <gml:name>Robertson 2009</gml:name>
+            <diggs:reference>Robertson, 2009</diggs:reference>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="robertson_2010">
+            <gml:description>Revised simplified soil behavior type chart, qt/pa vs Rf.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml#robertson_2010</gml:identifier>
+            <gml:name>Robertson 2010 (CPT10)</gml:name>
+            <diggs:reference>Robertson, 2010</diggs:reference>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="jamiolkowski_2003">
+            <gml:description>Relative density (Dr) correlation for sands from normalized cone resistance.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml#jamiolkowski_2003</gml:identifier>
+            <gml:name>Jamiolkowski et al. 2003</gml:name>
+            <diggs:reference>Jamiolkowski, Lo Presti &amp; Manassero, 2003</diggs:reference>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="kulhawy_mayne_1990">
+            <gml:description>Peak effective friction angle for sands from normalized cone tip resistance qc1.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml#kulhawy_mayne_1990</gml:identifier>
+            <gml:name>Kulhawy &amp; Mayne 1990</gml:name>
+            <diggs:reference>Kulhawy &amp; Mayne, 1990</diggs:reference>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="su_nkt">
+            <gml:description>Undrained shear strength from Su = (qt - sigma_v)/Nkt, where Nkt is selected or derived from Bq or Fr.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml#su_nkt</gml:identifier>
+            <gml:name>Undrained Shear Strength via Nkt</gml:name>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="unit_weight_sbt_zone">
+            <gml:description>Soil unit weight assigned per Robertson SBT zone. Note: CPT vendors apply multiple unit-weight methods; the full set should be enumerated with vendor input.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml#unit_weight_sbt_zone</gml:identifier>
+            <gml:name>Unit Weight by SBT Zone</gml:name>
+            <diggs:reference>Robertson, 2009</diggs:reference>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>

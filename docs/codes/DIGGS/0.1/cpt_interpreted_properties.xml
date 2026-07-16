@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/propertylists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="cpt_interpreted_properties">
+    <gml:description>This dictionary contains interpreted (derived) geotechnical parameters computed from Cone Penetration Test (CPT/CPTu) data, as distinct from the raw measured channels (tip resistance, sleeve friction, pore pressure) held in the properties dictionary. Because every interpreted value depends on the correlation method and its input assumptions, each value should be reported together with the applicable method from the CPT Interpretation Methods dictionary and the supporting inputs it requires (e.g. Nkt, unit-weight source, equilibrium pore pressure profile).</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml</gml:identifier>
+    <gml:name>DIGGS CPT Interpreted Properties</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="soil_behavior_type">
+            <gml:description>Soil behavior type zone or class interpreted from CPT data (e.g. Robertson normalized SBTn charts). The zone scheme is defined by the interpretation method reported alongside the value.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#soil_behavior_type</gml:identifier>
+            <gml:name>Soil Behavior Type (SBT)</gml:name>
+            <diggs:dataType>token</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="soil_behavior_type_index">
+            <gml:description>Dimensionless soil behavior type index computed from normalized cone resistance and normalized friction ratio, used to classify soil behavior from CPT data.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#soil_behavior_type_index</gml:identifier>
+            <gml:name>Soil Behavior Type Index (Ic)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="cone_resistance_normalized">
+            <gml:description>Stress-normalized, dimensionless cone tip resistance used in SBTn classification and downstream CPT correlations.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#cone_resistance_normalized</gml:identifier>
+            <gml:name>Normalized Cone Resistance (Qtn)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="friction_ratio_normalized">
+            <gml:description>Normalized sleeve friction expressed relative to net cone resistance, used in SBTn classification.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#friction_ratio_normalized</gml:identifier>
+            <gml:name>Normalized Friction Ratio (Fr)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="pore_pressure_ratio">
+            <gml:description>Normalized excess pore-pressure parameter derived from u2, used in soil behavior and consolidation interpretation.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#pore_pressure_ratio</gml:identifier>
+            <gml:name>Pore Pressure Ratio (Bq)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="soil_unit_weight">
+            <gml:description>Total soil unit weight interpreted from CPT data, used to compute total and effective overburden stresses for parameter normalization. The estimation method should be reported.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#soil_unit_weight</gml:identifier>
+            <gml:name>Soil Unit Weight</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per volume</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="relative_density">
+            <gml:description>Relative density interpreted from CPT data (e.g. Jamiolkowski et al. 2003), reported as a percentage.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#relative_density</gml:identifier>
+            <gml:name>Relative Density (Dr)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="shear_strength_undrained">
+            <gml:description>Undrained shear strength interpreted from CPT data as (qt - sigma_v)/Nkt. Should be reported together with the Nkt value used and the method by which total stress was derived.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#shear_strength_undrained</gml:identifier>
+            <gml:name>Undrained Shear Strength (Su)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="friction_angle_peak">
+            <gml:description>Peak effective (drained) friction angle interpreted from CPT data (e.g. Kulhawy &amp; Mayne 1990). Depends on the derivation of soil unit weight and equilibrium pore pressures used in stress normalization.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#friction_angle_peak</gml:identifier>
+            <gml:name>Peak Effective Friction Angle</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>plane angle</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="state_parameter">
+            <gml:description>Soil state parameter interpreted from CPT data.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#state_parameter</gml:identifier>
+            <gml:name>State Parameter</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="youngs_modulus">
+            <gml:description>Young's modulus interpreted from CPT data (e.g. for sands).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#youngs_modulus</gml:identifier>
+            <gml:name>Young's Modulus</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
