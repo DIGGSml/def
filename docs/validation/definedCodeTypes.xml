@@ -24,7 +24,12 @@
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/boreholeType.xml</dictionaryURL>
   </codeType>
   <codeType>
+    <xpath>//*[local-name() = 'correctionUsed']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpretation_methods.xml</dictionaryURL>
+  </codeType>
+  <codeType>
     <xpath>//*[local-name() = 'propertyClass']</xpath>
+    <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml</dictionaryURL>
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/gp_properties.xml</dictionaryURL>
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml</dictionaryURL>
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml</dictionaryURL>
