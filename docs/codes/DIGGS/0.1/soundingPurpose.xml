@@ -14,7 +14,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:SoundingPurpose</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:soundingPurpose</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -28,7 +28,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:SoundingPurpose</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:soundingPurpose</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -42,7 +42,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:SoundingPurpose</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:soundingPurpose</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -56,7 +56,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:SoundingPurpose</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:soundingPurpose</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -70,7 +70,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:SoundingPurpose</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:soundingPurpose</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -82,7 +82,7 @@
             <gml:name>Driven Pile Installation</gml:name>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:SoundingPurpose</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Sounding/diggs:soundingPurpose</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
