@@ -17,7 +17,7 @@ intact and easily identifiable. No amorphous material is present.</gml:descripti
             <diggs:reference>https://www.astm.org/d5715-00.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:LithologyObservation//diggs:classificationCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -34,7 +34,7 @@ still relatively intact. No amorphous material is present.</gml:description>
             <diggs:reference>https://www.astm.org/d5715-00.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:LithologyObservation//diggs:classificationCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -51,7 +51,7 @@ amorphous peat passes between the fingers.</gml:description>
             <diggs:reference>https://www.astm.org/d5715-00.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:LithologyObservation//diggs:classificationCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -69,7 +69,7 @@ distinct. The residue left in hand appears slightly pasty.</gml:description>
             <diggs:reference>https://www.astm.org/d5715-00.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:LithologyObservation//diggs:classificationCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -88,7 +88,7 @@ tissues of the original source plants are difficult to recognize.</gml:descripti
             <diggs:reference>https://www.astm.org/d5715-00.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:LithologyObservation//diggs:classificationCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -108,7 +108,7 @@ squeezing.</gml:description>
             <diggs:reference>https://www.astm.org/d5715-00.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:LithologyObservation//diggs:classificationCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -127,7 +127,7 @@ little recognizable plant tissue.</gml:description>
             <diggs:reference>https://www.astm.org/d5715-00.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:LithologyObservation//diggs:classificationCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -146,7 +146,7 @@ tissue.</gml:description>
             <diggs:reference>https://www.astm.org/d5715-00.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:LithologyObservation//diggs:classificationCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -164,7 +164,7 @@ are evident in the residue.</gml:description>
             <diggs:reference>https://www.astm.org/d5715-00.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:LithologyObservation//diggs:classificationCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -181,7 +181,7 @@ releases through the fingers as a uniform dark paste.</gml:description>
             <diggs:reference>https://www.astm.org/d5715-00.html</diggs:reference>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>/diggs:Lithology/diggs:classificationCode</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:LithologyObservation//diggs:classificationCode</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
