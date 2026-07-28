@@ -48,7 +48,7 @@
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/measurand.xml</dictionaryURL>
   </codeType>
   <codeType>
-    <xpath>//*[local-name() = 'state']</xpath>
+    <xpath>//*[local-name() = 'progressState']</xpath>
     <dictionaryURL>https://diggsml.org/def/codes/DIGGS/0.1/progressState.xml</dictionaryURL>
   </codeType>
   <codeType>

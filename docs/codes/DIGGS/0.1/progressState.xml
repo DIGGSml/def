@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="state">
-    <gml:description>This dictionary contains standard code values for the state property of the diggs:ProgressEvent object when used within a program. These values serve to define the values used in reporting the status of a workflow chain. Certain terms are only applicable to specific contexts as specified in the sourceelementXpath</gml:description>
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="progressState">
+    <gml:description>This dictionary contains standard code values for the progressState property of the diggs:ProgressEvent object when used within a program. These values serve to define the values used in reporting the status of a workflow chain. Certain terms are only applicable to specific contexts as specified in the sourceelementXpath</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/progressState.xml</gml:identifier>
     <gml:name>DIGGS Progress Event State Code Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -13,10 +13,10 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:scheduleProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:scheduleProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -29,10 +29,10 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:scheduleProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:scheduleProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -45,7 +45,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -58,7 +58,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -71,7 +71,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -84,7 +84,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:scheduleProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:scheduleProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -97,7 +97,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -110,7 +110,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -123,7 +123,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -136,7 +136,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -149,7 +149,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -162,7 +162,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -175,10 +175,10 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:scheduleProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:scheduleProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -191,7 +191,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -204,7 +204,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -217,7 +217,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -230,7 +230,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:state</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:testingProgress//diggs:progressState</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
