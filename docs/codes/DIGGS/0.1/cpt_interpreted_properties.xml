@@ -209,4 +209,72 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sbt_robertson_2009_qtn">
+            <gml:description>Numeric normalized soil behaviour type (SBTn) zone assigned from the normalized cone resistance (Qtn) versus normalized friction ratio (Fr) chart polygons per Robertson (2009). This chart-polygon variant is distinct from the Ic-band variant (sbt_robertson_2009_ic); ConeTec's SCREENzW 'SBT Qtn' output uses this chart.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#sbt_robertson_2009_qtn</gml:identifier>
+            <gml:name>Soil Behaviour Type Zone (Robertson 2009, Qtn-Fr chart)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>Robertson, P.K. 2009. &quot;Interpretation of cone penetration tests - a unified approach.&quot; Canadian Geotechnical Journal 46(11): 1337-1355.</diggs:authority>
+            <diggs:reference>https://doi.org/10.1139/T09-065</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="n60_ic_rw1998">
+            <gml:description>Equivalent SPT blow count at 60% energy ratio estimated from corrected tip resistance using a soil behaviour type index (Ic) dependent qt/N60 ratio per Robertson and Wride (1998). Distinct from n60_ic_based (Jefferies &amp; Davies 1993) and from SBT-zone-based N60.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#n60_ic_rw1998</gml:identifier>
+            <gml:name>Equivalent SPT N60 (Ic, Robertson &amp; Wride 1998)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>Robertson, P.K. and Wride, C.E. 1998. &quot;Evaluating cyclic liquefaction potential using the cone penetration test.&quot; Canadian Geotechnical Journal 35(3): 442-459.</diggs:authority>
+            <diggs:reference>https://doi.org/10.1139/t98-017</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="gamma_sbt_qtn_zone">
+            <gml:description>Total soil unit weight assigned per normalized soil behaviour type (Qtn) zone, as used in ConeTec SCREENzW ('SBT Qtn zone assigned unit weights'). PROVISIONAL AUTHORITY - pending ConeTec/Jim Greig confirmation of the exact zone-unit-weight table and reference; one of the nine unit-weight methods to be registered.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#gamma_sbt_qtn_zone</gml:identifier>
+            <gml:name>Soil Unit Weight (SBT Qtn zone assigned)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per volume</diggs:quantityClass>
+            <diggs:authority>Robertson, P.K. 2010. &quot;Soil behaviour type from the CPT: an update.&quot; 2nd International Symposium on Cone Penetration Testing (CPT'10), Huntington Beach, California. [PROVISIONAL - confirm with ConeTec]</diggs:authority>
+            <diggs:reference>https://www.cpt-robertson.com/publications/</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="ocr_pkr2015">
+            <gml:description>Overconsolidation ratio estimated from CPT per Robertson (2015), corresponding to ConeTec SCREENzW 'OCR (PKR2015)'. PROVISIONAL AUTHORITY - pending ConeTec/Jim Greig confirmation of reference; ConeTec also reports an 'OCR (JS1978)' variant whose citation is to be resolved.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cpt_interpreted_properties.xml#ocr_pkr2015</gml:identifier>
+            <gml:name>Overconsolidation Ratio (Robertson 2015)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>Robertson, P.K. and Cabal, K.L. 2015. Guide to Cone Penetration Testing for Geotechnical Engineering, 6th ed. Gregg Drilling &amp; Testing, Inc. [PROVISIONAL - confirm with ConeTec]</diggs:authority>
+            <diggs:reference>https://www.cpt-robertson.com/publications/</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
