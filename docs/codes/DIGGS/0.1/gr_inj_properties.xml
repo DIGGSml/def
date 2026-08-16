@@ -250,6 +250,10 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:ContinuousGrouting</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:constructionActivity//diggs:RIInstallationRecord</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -268,6 +272,10 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:ContinuousGrouting</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:constructionActivity//diggs:RIInstallationRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -433,13 +441,17 @@
         <diggs:Definition gml:id="pull_speed">
             <gml:description>Lift rate of the monitor while grouting</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml#pull_speed</gml:identifier>
-            <gml:name>pull speed</gml:name>
+            <gml:name>pull speed|withdrawal rate</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:ContinuousGrouting</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:constructionActivity//diggs:RIInstallationRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

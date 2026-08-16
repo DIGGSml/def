@@ -105,10 +105,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;borehole seismic surface source&quot;]</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs_geo:WirelineLog</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
@@ -717,10 +713,6 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:GeophysicalProcessing/diggs:geophysicalMethod[text()=&quot;borehole seismic surface source&quot;]</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Property/diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs_geo:WirelineLog</diggs:conditionalElementXpath>

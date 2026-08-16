@@ -66,12 +66,27 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="rotation_tool">
-            <gml:description>The number of revolutions per unit time measured on the drill bit or cutting tool.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#rotation_tool</gml:identifier>
-            <gml:name>Cutting tool rotational speed</gml:name>
+        <diggs:Definition gml:id="depth">
+            <gml:description>The measured depth downhole reached by the drill bit; a positive number.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#depth</gml:identifier>
+            <gml:name>Measured Depth</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>angular velocity</diggs:quantityClass>
+            <diggs:quantityClass>length</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="drill_rod_weight">
+            <gml:description>Total weight of the drill rod or drill string; increases as a new section Is added.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#drill_rod_weight</gml:identifier>
+            <gml:name>Weight of drill rod or drill string</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -89,6 +104,34 @@
             <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:authority>Karasawa, H., Ohno, T., Kosugi, M., and Rowley, J. C., 2002, “Methods to Estimate the Rock Strength and Tooth Wear While Drilling With Roller-Bits, Part 1: Milled-Tooth Bits,” ASME J. Energy Resour. Technol., 124, pp. 125–132.</diggs:authority>
             <diggs:reference>http://dx.doi.org/10.1115/1.1482405</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="eccentric_rotation">
+            <gml:description>A logical flag; true when observation and/or rig vibration indicates significant offset between the bit axis of rotation and the wellbore center.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#eccentric_rotation</gml:identifier>
+            <gml:name>Eccentric rotation</gml:name>
+            <diggs:dataType>boolean</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="event_new_rod">
+            <gml:description>Set to true at the time or depth where a new rod is added to the drill string</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#event_new_rod</gml:identifier>
+            <gml:name>New rod event</gml:name>
+            <diggs:dataType>boolean</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -174,6 +217,21 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fluid_temperature">
+            <gml:description>The temperature of the drilling fluid.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_temperature</gml:identifier>
+            <gml:name>Fluid temperature</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
         <diggs:Definition gml:id="gear_number">
             <gml:description>The number of the gear that is engaged.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#gear_number</gml:identifier>
@@ -249,12 +307,12 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="hydraulic_torque_pressure">
-            <gml:description>Hydraulic torque operating pressure. The pressure at which the hydraulic system operates to deliver torque.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_torque_pressure</gml:identifier>
-            <gml:name>Hydraulic torque operating pressure</gml:name>
+        <diggs:Definition gml:id="hydraulic_fluid_flow_rate">
+            <gml:description>Rate of flow of the rig hydraulic fluid.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_fluid_flow_rate</gml:identifier>
+            <gml:name>Hydraulic fluid flow rate</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:quantityClass>volume per time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -264,12 +322,12 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="hydraulic_fluid_flow_rate">
-            <gml:description>Rate of flow of the rig hydraulic fluid.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_fluid_flow_rate</gml:identifier>
-            <gml:name>Hydraulic fluid flow rate</gml:name>
+        <diggs:Definition gml:id="hydraulic_torque_pressure">
+            <gml:description>Hydraulic torque operating pressure. The pressure at which the hydraulic system operates to deliver torque.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_torque_pressure</gml:identifier>
+            <gml:name>Hydraulic torque operating pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>volume per time</diggs:quantityClass>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -309,56 +367,12 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="depth">
-            <gml:description>The measured depth downhole reached by the drill bit; a positive number.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#depth</gml:identifier>
-            <gml:name>Measured Depth</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>length</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="time">
-            <gml:description>The time noted for a certain driling operation or when a measurement is obtained, measured as an elapsed time from the start of drilling increment.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#time</gml:identifier>
-            <gml:name>Measured Time</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>time</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="net_crowd_pressure">
             <gml:description>The difference between the crowd pressure and holdback pressure</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#net_crowd_pressure</gml:identifier>
             <gml:name>Net crowd pressure</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>pressure</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="event_new_rod">
-            <gml:description>Set to true at the time or depth where a new rod is added to the drill string</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#event_new_rod</gml:identifier>
-            <gml:name>New rod event</gml:name>
-            <diggs:dataType>boolean</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -383,6 +397,25 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
+        <diggs:Definition gml:id="penetration_per_revolution">
+            <gml:description>Penetration per revolution: the axial advance of the drill string or auger per full rotation of the drive - a feed-per-rotation efficiency indicator, distinct from penetration_rate (advance per unit time) and normally reported alongside rotational speed so the two can be cross-checked against each other.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_per_revolution</gml:identifier>
+            <gml:name>Penetration per revolution</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:constructionActivity//diggs:RIInstallationRecord</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
         <diggs:Definition gml:id="penetration_rate">
             <gml:description>Penetration rate: The speed at which the drill bit penetrates the soil or rock.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_rate</gml:identifier>
@@ -390,6 +423,10 @@
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>length per time</diggs:quantityClass>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:constructionActivity//diggs:RIInstallationRecord</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
@@ -425,6 +462,29 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:constructionActivity//diggs:RIInstallationRecord</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="rotation_tool">
+            <gml:description>The number of revolutions per unit time measured on the drill bit or cutting tool.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#rotation_tool</gml:identifier>
+            <gml:name>Cutting tool rotational speed</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>angular velocity</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:constructionActivity//diggs:RIInstallationRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -494,6 +554,21 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
+        <diggs:Definition gml:id="time">
+            <gml:description>The time noted for a certain driling operation or when a measurement is obtained, measured as an elapsed time from the start of drilling increment.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#time</gml:identifier>
+            <gml:name>Measured Time</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
         <diggs:Definition gml:id="torque">
             <gml:description>Torque: The rotational force applied to the drill rod.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#torque</gml:identifier>
@@ -504,6 +579,10 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:constructionActivity//diggs:RIInstallationRecord</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -545,50 +624,6 @@
             <gml:name>Vibration frequency</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>frequency</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="drill_rod_weight">
-            <gml:description>Total weight of the drill rod or drill string; increases as a new section Is added.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#drill_rod_weight</gml:identifier>
-            <gml:name>Weight of drill rod or drill string</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="fluid_temperature">
-            <gml:description>The temperature of the drilling fluid.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_temperature</gml:identifier>
-            <gml:name>Fluid temperature</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:MWDProcedure</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="eccentric_rotation">
-            <gml:description>A logical flag; true when observation and/or rig vibration indicates significant offset between the bit axis of rotation and the wellbore center.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#eccentric_rotation</gml:identifier>
-            <gml:name>Eccentric rotation</gml:name>
-            <diggs:dataType>boolean</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
