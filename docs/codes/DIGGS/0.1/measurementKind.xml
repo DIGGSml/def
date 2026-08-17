@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="measurementKind">
+    <gml:description>Codes naming the kind of measurement a diggs:TargetMeasurement plans, for use where no measurementMethod is cited or where the cited method admits several kinds of measurement. Seeded here with the load-verification and integrity-testing kinds referenced by rigid inclusion acceptance testing (ASIRI; FHWA-KS-25-02); TargetMeasurement is general DIGGS infrastructure covering every planned Test, Monitor, MaterialTest, MeasurementWhileDrilling and GeophysicalFieldSurvey, so the list is expected to grow well beyond this starting set as other domains populate it. Expect this element to be omitted in the common case, per its own documentation.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml</gml:identifier>
+    <gml:name>DIGGS Target Measurement Kind Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="static_load_test">
+            <gml:description>A slow-maintained or constant-rate-of-penetration axial load test applying load directly to the element and measuring load-movement response, per ASTM D1143 or equivalent.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#static_load_test</gml:identifier>
+            <gml:name>Static load test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D1143</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="rapid_load_test">
+            <gml:description>An axial load test applying load over roughly one to several seconds, faster than a static test and slower than a dynamic impact test, per ASTM D7383 or equivalent.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#rapid_load_test</gml:identifier>
+            <gml:name>Rapid load test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D7383</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="dynamic_load_test">
+            <gml:description>An axial load test in which the element is struck by an impact device and force and velocity are measured to estimate capacity by wave-equation analysis, per ASTM D4945 or equivalent.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#dynamic_load_test</gml:identifier>
+            <gml:name>High-strain dynamic load test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D4945</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="low_strain_integrity_test">
+            <gml:description>A low-strain impact (pulse-echo or transient-response) test used to detect discontinuities, necking or changes in cross-section along the length of a completed element, per ASTM D5882 or equivalent.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#low_strain_integrity_test</gml:identifier>
+            <gml:name>Low-strain integrity test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D5882</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="lateral_load_test">
+            <gml:description>A test applying lateral load to the element and measuring lateral load-deflection response, per ASTM D3966 or equivalent.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#lateral_load_test</gml:identifier>
+            <gml:name>Lateral load test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D3966</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
