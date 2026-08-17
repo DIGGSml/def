@@ -1,87 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/propertylists.xsl"?>
-<!--
-    ================================================================
-    C2 item 5 (dictionary half) — DRAFT for the `def` repo
-    TARGET PATH:  def  docs/codes/DIGGS/0.1/ri_properties.xml
-    STATUS:       DRAFT. Nothing is written to `def` by this build; Dan places it.
-    Plan:         RI_Build_Plan.md C2 item 5
-    Architecture: §2.3 "Direction set by Dan", second tool
-    Origin:       docs/build/B8/RITestingRegime_B8.xml, whose otherProperty entries
-                  used ad-hoc urn:x-example codeSpaces with nothing behind them
-    ================================================================
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-    WHAT THIS COVERS AND WHAT IT DOES NOT. C2 item 5 asked that each of B8's six
-    ungoverned measurement-plan properties be routed to one of two tools. Three of
-    them - reading frequency, duration and measurement kind - turned out not to be
-    RI-specific at all and became typed elements on core TargetMeasurementType
-    instead; see docs/build/C2/snippet-core-Core.xsd. This dictionary is the other
-    half: the properties that genuinely vary by project or by RI practice, where a
-    schema element would be too rigid but free-text diggs:Parameter is too loose.
-
-    Carried in an otherProperty slot as diggs:AuthorizedParameter (B2) or
-    diggs:ProvenancedParameter (B4), never as plain diggs:Parameter - that is the
-    point of the exercise. Both of those types make parameterName a
-    gml:CodeWithAuthorityType, so the codeSpace compelling a binding to an entry
-    below is mandatory rather than optional, and both make typeData mandatory, so
-    the dataType declared here is checkable against what the instance states.
-
-    ONE ENTRY FROM B8 IS DELIBERATELY ABSENT: test_type. It is fully subsumed by
-    the new core measurementKind element and would be a second, weaker way to say
-    the same thing.
-
-    ONE IS RENAMED: B8 wrote sampling_rate for "5% of production RIs". That is a
-    misnomer - it is a fraction of a POPULATION, not a rate in time - and it read
-    confusingly beside the genuine temporal sampling rate that is now core
-    readingFrequency. It appears below as tested_fraction.
-
-    NOT IN SCOPE HERE: the method-specific arching coefficients (Marston, Hewlett-
-    Randolph, Zaeske, adapted-Terzaghi, ASIRI punching), which are the larger and
-    better-understood RI dictionary case and belong to build step 7 with the rest
-    of the dictionary work. They need Occurrence conditions keyed on the arching
-    model, which is machinery this file does not yet exercise.
-
-    THE 2.6 NAMESPACE ON diggs: IS COPIED, NOT CHOSEN. Every dictionary already in
-    def/docs/codes/DIGGS/0.1/ declares xmlns:diggs="http://diggsml.org/schemas/2.6",
-    including the ones added most recently. It looks stale for a 3.x deliverable,
-    but making this file the lone exception would be worse than being consistent;
-    if the dictionaries are to be renamespaced that is one sweep, not a decision to
-    take here.
-
-    THE OCCURRENCE ENTRIES WILL NOT BE CHECKED YET, and that is a known gap rather
-    than a defect in this file. dictionary-validation.xsl step 8 gates steps 9-13 on
-    propertyClass and terminates silently for parameterName, so nothing downstream
-    of it runs for any AuthorizedParameter. The three XSL edits that fix it are
-    recorded as the B2 companion note (RI_Build_Plan.md B2, architecture §6.2.1) and
-    live in the `validation` repo. The //diggs:parameterName sourceElementXpath used
-    below is not novel - gp_properties.xml already uses exactly that form.
--->
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6"
-    xmlns:gml="http://www.opengis.net/gml/3.2"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd"
-    gml:id="propertyClass">
-    <gml:description>This dictionary contains values for properties of rigid inclusion ground
-        improvement programs that are carried as parameters rather than as schema elements -
-        principally the measurement-plan properties of diggs:TargetMeasurement and
-        diggs:TargetSamplingFeature objects within a diggs:RigidInclusionProgram.</gml:description>
-    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
-        >https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml</gml:identifier>
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="propertyClass">
+    <gml:description>This dictionary contains values for properties of rigid inclusion ground improvement programs that are carried as parameters rather than as schema elements - principally the measurement-plan properties of diggs:TargetMeasurement and diggs:TargetSamplingFeature objects within a diggs:RigidInclusionProgram.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml</gml:identifier>
     <gml:name>DIGGS Properties for Rigid Inclusion Programs</gml:name>
-
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="element_class">
-            <gml:description>The role a planned or constructed rigid inclusion plays in the works,
-                as distinct from what it is made of or how it is built. A trial element is
-                installed before production to prove the method or calibrate the design and is
-                normally not part of the permanent works; a test element is a production element
-                selected for verification testing; a production element carries permanent load and
-                is not tested destructively; a sacrificial element is installed to be tested to
-                failure. The distinction governs which acceptance criteria apply and how a test
-                result may be extrapolated, which is why it needs to be stated rather than
-                inferred from whether a test happens to be attached.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
-                >https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#element_class</gml:identifier>
+            <gml:description>The role a planned or constructed rigid inclusion plays in the works, as distinct from what it is made of or how it is built. A trial element is installed before production to prove the method or calibrate the design and is normally not part of the permanent works; a test element is a production element selected for verification testing; a production element carries permanent load and is not tested destructively; a sacrificial element is installed to be tested to failure. The distinction governs which acceptance criteria apply and how a test result may be extrapolated, which is why it needs to be stated rather than inferred from whether a test happens to be attached.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#element_class</gml:identifier>
             <gml:name>Element class</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
@@ -91,21 +18,10 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
-
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="tested_fraction">
-            <gml:description>The proportion of a planned population of elements that is to be
-                tested, where a testing provision is scoped to a population rather than to named
-                elements - "5 percent of production rigid inclusions". A FRACTION OF A POPULATION,
-                NOT A RATE IN TIME: it answers "how many of them" and not "how often", and it is
-                deliberately named to keep it distinct from the temporal reading frequency carried
-                by diggs:TargetMeasurementType/readingFrequency. diggs:ProgramScopeType states
-                WHICH features a provision governs, by geometry, layout or feature type, and has
-                no fraction concept by design; this parameter states what share of that scoped
-                population is sampled. The two are complementary and both are normally
-                needed.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
-                >https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#tested_fraction</gml:identifier>
+            <gml:description>The proportion of a planned population of elements that is to be tested, where a testing provision is scoped to a population rather than to named elements - "5 percent of production rigid inclusions". A FRACTION OF A POPULATION, NOT A RATE IN TIME: it answers "how many of them" and not "how often", and it is deliberately named to keep it distinct from the temporal reading frequency carried by diggs:TargetMeasurementType/readingFrequency. diggs:ProgramScopeType states WHICH features a provision governs, by geometry, layout or feature type, and has no fraction concept by design; this parameter states what share of that scoped population is sampled. The two are complementary and both are normally needed.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#tested_fraction</gml:identifier>
             <gml:name>Tested fraction of population</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
@@ -116,20 +32,10 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
-
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="test_load_pct_design_load">
-            <gml:description>The maximum load a planned load test is to reach, expressed as a
-                percentage of the design working load of the element being tested. Stated as a
-                ratio rather than as a force because the test requirement is written that way in
-                practice and because the absolute value differs per element while the ratio does
-                not, which is what lets one population-scoped test provision govern a whole zone.
-                Where the provision is adopted from a standard or a published recommendation
-                rather than derived for the project, carry it as a
-                diggs:ProvenancedParameter and state that in the derivation
-                property.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
-                >https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#test_load_pct_design_load</gml:identifier>
+            <gml:description>The maximum load a planned load test is to reach, expressed as a percentage of the design working load of the element being tested. Stated as a ratio rather than as a force because the test requirement is written that way in practice and because the absolute value differs per element while the ratio does not, which is what lets one population-scoped test provision govern a whole zone. Where the provision is adopted from a standard or a published recommendation rather than derived for the project, carry it as a diggs:ProvenancedParameter and state that in the derivation property.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#test_load_pct_design_load</gml:identifier>
             <gml:name>Test load as percentage of design load</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
@@ -140,36 +46,16 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
-
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="instrument_type">
-            <gml:description>The kind of instrument a planned monitoring measurement is to be
-                taken with.
+            <gml:description>The kind of instrument a planned monitoring measurement is to be taken with.
 
-                THE PROPERTY IS DEFINED HERE; ITS VALUES COME FROM equipmentClass.xml. The two are
-                not competing and neither is redundant. This entry declares that a planned
-                measurement may state which instrument it is to be taken with, and that the value
-                is a string; equipmentClass.xml declares what the permitted instrument names are.
-                Take the value from
-                https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml - piezometer,
-                inclinometer, extensometer, earth_pressure_cell and the rest.
+THE PROPERTY IS DEFINED HERE; ITS VALUES COME FROM equipmentClass.xml. The two are not competing and neither is redundant. This entry declares that a planned measurement may state which instrument it is to be taken with, and that the value is a string; equipmentClass.xml declares what the permitted instrument names are. Take the value from https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml - piezometer, inclinometer, extensometer, earth_pressure_cell and the rest.
 
-                Why the property stays here rather than moving wholesale. The vocabulary is
-                entirely generic - a piezometer is a piezometer on any project - and it now lives
-                in the generic codelist accordingly. But the PROPERTY is a parameter on a planned
-                measurement, and there is no equipment reference on
-                diggs:TargetMeasurementType for it to become instead: a plan cannot cite an
-                Equipment feature that will not exist until the instrument is installed, and a
-                plan-to-realized reference is forbidden outright. So the instrument kind is stated
-                as a parameter, with its value governed by the equipment codelist. If a planned
-                equipment object is ever added to the Target family, this entry becomes redundant
-                and should be deprecated in favour of it.
+Why the property stays here rather than moving wholesale. The vocabulary is entirely generic - a piezometer is a piezometer on any project - and it now lives in the generic codelist accordingly. But the PROPERTY is a parameter on a planned measurement, and there is no equipment reference on diggs:TargetMeasurementType for it to become instead: a plan cannot cite an Equipment feature that will not exist until the instrument is installed, and a plan-to-realized reference is forbidden outright. So the instrument kind is stated as a parameter, with its value governed by the equipment codelist. If a planned equipment object is ever added to the Target family, this entry becomes redundant and should be deprecated in favour of it.
 
-                Superseded the earlier plan to promote this entry out of the RI dictionary
-                (2026-08-16): promoting the VOCABULARY was right and has been done; promoting the
-                property had nowhere to go.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
-                >https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#instrument_type</gml:identifier>
+Superseded the earlier plan to promote this entry out of the RI dictionary (2026-08-16): promoting the VOCABULARY was right and has been done; promoting the property had nowhere to go.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#instrument_type</gml:identifier>
             <gml:name>Instrument type</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
