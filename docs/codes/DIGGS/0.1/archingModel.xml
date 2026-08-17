@@ -16,6 +16,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:archingModel</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -29,6 +32,9 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -44,6 +50,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:archingModel</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -58,6 +67,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:archingModel</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -71,6 +83,9 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

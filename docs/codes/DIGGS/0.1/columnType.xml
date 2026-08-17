@@ -19,6 +19,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -35,6 +38,9 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -53,6 +59,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -69,6 +78,9 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -87,6 +99,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -103,6 +118,9 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -121,6 +139,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -137,6 +158,9 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -155,6 +179,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -172,6 +199,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -188,6 +218,9 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

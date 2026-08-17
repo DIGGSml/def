@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="designMethod">
+    <gml:description>Codes naming the analytical approach a rigid inclusion design was calculated by. Used for the value of the designMethod property of diggs:RISystemBasis. RI_Design_Parameter_Analysis.md Group A row 3 names four approaches in current practice; the list is open, since design methods are not a closed set.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designMethod.xml</gml:identifier>
+    <gml:name>DIGGS Rigid Inclusion Design Method Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="unit_cell">
+            <gml:description>An axisymmetric or plane-strain analysis of a single inclusion and its tributary soil area, treated as a repeating unit cell.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designMethod.xml#unit_cell</gml:identifier>
+            <gml:name>Unit-cell method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:designMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="arching">
+            <gml:description>An analysis based on a limit-equilibrium or empirical arching model - Marston, Hewlett-Randolph, Zaeske, adapted-Terzaghi, Prandtl or similar - that partitions embankment load between the inclusion heads and the soil between them.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designMethod.xml#arching</gml:identifier>
+            <gml:name>Arching (load-transfer) method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:designMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fem">
+            <gml:description>A numerical (finite element or finite difference) analysis modelling the inclusions, platform and supported structure explicitly rather than through a closed-form or limit-equilibrium formulation.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designMethod.xml#fem</gml:identifier>
+            <gml:name>Finite element method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:designMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="ldc">
+            <gml:description>An analysis enforcing compatible displacement between the inclusions and the soil between them, typically via t-z/q-z or similar load-transfer curves, rather than a fixed arching ratio.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designMethod.xml#ldc</gml:identifier>
+            <gml:name>Load-displacement-compatibility method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:designMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
