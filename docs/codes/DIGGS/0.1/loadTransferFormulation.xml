@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="loadTransferFormulation">
+    <gml:description>Codes for the load-transfer curve shape adopted for a diggs:LoadTransferRelation - Frank-Zhao, linear-elastic-perfectly-plastic, user-defined, or the API offshore-pile formulation. Used for the value of diggs:LoadTransferRelationType/diggs:formulation.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/loadTransferFormulation.xml</gml:identifier>
+    <gml:name>DIGGS Load Transfer Relation Formulation Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="frank_zhao">
+            <gml:description>The Frank &amp; Zhao (1982) hyperbolic t-z/q-z formulation, widely used for bored piles in fine-grained soils.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/loadTransferFormulation.xml#frank_zhao</gml:identifier>
+            <gml:name>Frank-Zhao</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:LoadTransferRelation/diggs:formulation</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="linear_elastic_perfectly_plastic">
+            <gml:description>A bilinear load-transfer curve: linear elastic up to the limit value, then perfectly plastic.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/loadTransferFormulation.xml#linear_elastic_perfectly_plastic</gml:identifier>
+            <gml:name>Linear elastic - perfectly plastic</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:LoadTransferRelation/diggs:formulation</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="user_defined">
+            <gml:description>A load-transfer curve shape stated directly by the discretised curve field, not derived from a named closed-form formulation.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/loadTransferFormulation.xml#user_defined</gml:identifier>
+            <gml:name>User-defined</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:LoadTransferRelation/diggs:formulation</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="api">
+            <gml:description>The American Petroleum Institute RP 2A t-z/q-z formulation developed for offshore driven piles.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/loadTransferFormulation.xml#api</gml:identifier>
+            <gml:name>API (offshore pile)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:LoadTransferRelation/diggs:formulation</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
