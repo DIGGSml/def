@@ -175,10 +175,10 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="rigid_inclusion">
-            <gml:description>A single rigid inclusion element (CMC) - the location and properties of one column in a rigid inclusion ground improvement program.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#rigid_inclusion</gml:identifier>
-            <gml:name>Rigid inclusion</gml:name>
+        <diggs:Definition gml:id="ri_column">
+            <gml:description>A single rigid inclusion column (CMC) - the location and properties of one column in a rigid inclusion ground improvement program.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column</gml:identifier>
+            <gml:name>RI column</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -240,10 +240,10 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="ri_foundation_system">
-            <gml:description>A top-level, complex sampling feature describing the components of a rigid inclusion foundation system - the load transfer platform and the individual rigid inclusion columns constructed within the soil below it.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_foundation_system</gml:identifier>
-            <gml:name>Rigid inclusion foundation system</gml:name>
+        <diggs:Definition gml:id="rigid_inclusion_system">
+            <gml:description>A top-level, complex sampling feature describing the components of a rigid inclusion system - the load transfer platform and the individual rigid inclusion columns constructed within the soil below it.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#rigid_inclusion_system</gml:identifier>
+            <gml:name>Rigid inclusion system</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
