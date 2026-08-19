@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/propertylists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="propertyClass">
-    <gml:description>This dictionary defines quantities produced or consumed by a rigid inclusion design that are carried as parameters rather than as schema elements. Two kinds of entry are present. The first are the method-specific arching coefficients, which exist only inside one named arching model and are carried in the coefficient property of a diggs:ArchingCoefficients object; each is conditioned on the arching model that defines it, so a file reporting a Hewlett-Randolph efficiency under a Zaeske design does not validate. The second are design quantities that are common to several practices and are carried in the otherProperty escape hatch of diggs:RIColumnDesignType or diggs:RILTPDesignType, whichever the quantity belongs to. Quantities that every arching practice ultimately produces - the stress delivered to the column head and the stress reaching the soil between heads - are deliberately NOT here: they are typed elements on diggs:RILTPDesignType, because they are the two values on which designs prepared under different standards can actually be compared.</gml:description>
+    <gml:description>This dictionary defines quantities produced or consumed by a rigid inclusion design that are carried as parameters rather than as fixed schema elements. Two kinds of entry are present. The first are the method-specific arching coefficients, which exist only inside one named arching model and are carried in the coefficient property of a diggs:ArchingCoefficients object; each is conditioned on the arching model that defines it, so a file reporting a Hewlett-Randolph efficiency under a Zaeske design does not validate. The second are design quantities that are common to several practices or vary too freely to justify a fixed schema element - the geometry and stiffness ratios that gate whether an arching method's unit-cell idealisation applies to a given layout, open-ended since a future method may add its own - carried in diggs:RISystemDesignType/methodApplicabilityRatio. The active earth pressure coefficient, once considered for this dictionary, turned out not to need it: a single, always-the-same-formula quantity, now the typed element diggs:RILTPDesignType/activeEarthPressureCoefficient instead. Quantities that every arching practice ultimately produces - the stress delivered to the column head and the stress reaching the soil between heads - are deliberately NOT here: they are typed elements on diggs:RILTPDesignType, because they are the two values on which designs prepared under different standards can actually be compared.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_design_properties.xml</gml:identifier>
     <gml:name>DIGGS Rigid Inclusion Design Properties</gml:name>
     <gml:dictionaryEntry>
@@ -150,54 +150,6 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="active_earth_pressure_coefficient">
-            <gml:description>The active earth pressure coefficient Ka = tan^2(45 deg - phi'/2) of the embankment fill, used in the lateral thrust and lateral spreading checks. Unlike the arching coefficients in this dictionary it is not tied to any one arching model, so it is carried as a general design property rather than inside a diggs:ArchingCoefficients object.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_design_properties.xml#active_earth_pressure_coefficient</gml:identifier>
-            <gml:name>Active earth pressure coefficient</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure per pressure</diggs:quantityClass>
-            <diggs:authority>BS 8006-1:2010+A1:2016</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RILTPDesign</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="equivalent_diameter">
-            <gml:description>The diameter dErs (EBGEO) or De (FHWA) of the equivalent circular unit cell assigned to one inclusion - the circle of equal area to the tributary area the inclusion supports. Derived from the spacing and grid pattern, and reported because the unit-cell radius rather than the centre-to-centre spacing is what enters most arching and settlement formulations.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_design_properties.xml#equivalent_diameter</gml:identifier>
-            <gml:name>Equivalent tributary diameter</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>length</diggs:quantityClass>
-            <diggs:authority>EBGEO (DGGT), Chapter 6.9</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnDesign</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="column_axial_utilization">
-            <gml:description>The ratio N/Rc of axial demand on an inclusion to its structural axial resistance. Reported as a ratio of two forces rather than as a dimensionless number so that the quantity class records what is being compared; a utilization above unity is a failed check, which is why the quantity is worth carrying explicitly rather than leaving a reader to divide two other reported values.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_design_properties.xml#column_axial_utilization</gml:identifier>
-            <gml:name>Column axial utilization</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force per force</diggs:quantityClass>
-            <diggs:authority>ASIRI National Project Recommendations (IREX)</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnDesign</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="arching_height_ratio">
             <gml:description>The geometric ratio h/(s-d) of platform or embankment height above the inclusion heads to the clear spacing between inclusions. One of the geometric limits that determine whether a given arching method is applicable to a given layout; a method used outside the ratio range it was validated over is not defensible, which is what makes this worth stating rather than leaving to be recomputed.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_design_properties.xml#arching_height_ratio</gml:identifier>
@@ -208,7 +160,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnDesign</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:methodApplicabilityRatio</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -224,7 +176,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnDesign</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:methodApplicabilityRatio</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -240,7 +192,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnDesign</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:methodApplicabilityRatio</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -256,7 +208,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnDesign</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:methodApplicabilityRatio</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
