@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="elementClass">
+    <gml:description>Codes naming the role a rigid inclusion column plays in the works, as distinct from what it is made of or how it is built - trial, test, production, or sacrificial. Shared by the as-built record (diggs:RIColumn/elementClass) and the planned record (diggs:TargetRIColumn/elementClass) so design-stage and as-built statements of an element's role do not drift into different vocabularies for the same concept. Both host elements are mandatory: the distinction governs which acceptance criteria apply and how a test result may be extrapolated, so it must be stated rather than inferred - superseding the earlier convention of inferring a trial column from the absence of diggs:RIColumnType/samplingFeatureRef, which remains valid as description but is no longer the identifying signal.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/elementClass.xml</gml:identifier>
+    <gml:name>DIGGS Rigid Inclusion Element Class Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="trial">
+            <gml:description>An element installed before production begins, to prove the installation method or calibrate the design. Normally not part of the permanent works. Constructed independently of any rigid inclusion system by definition - diggs:RIColumnType/samplingFeatureRef is correspondingly irrelevant for a trial element, not merely omitted, since there is no parent system for it to cite.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/elementClass.xml#trial</gml:identifier>
+            <gml:name>Trial</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumn/diggs:elementClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetRIColumn/diggs:elementClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="test">
+            <gml:description>A production element selected for verification testing. Distinct from a trial element (which precedes and is independent of production) and from a sacrificial element (which is destroyed by the test): a test element is a permanent, in-service element that also happens to be tested, and is expected to remain in service afterward.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/elementClass.xml#test</gml:identifier>
+            <gml:name>Test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumn/diggs:elementClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetRIColumn/diggs:elementClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="production">
+            <gml:description>An element that carries permanent load and is not tested destructively. The default, unremarkable case - most elements in a rigid inclusion system are production elements.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/elementClass.xml#production</gml:identifier>
+            <gml:name>Production</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumn/diggs:elementClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetRIColumn/diggs:elementClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sacrificial">
+            <gml:description>An element installed specifically to be tested to failure, and not relied on to carry permanent load either during or after the test.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/elementClass.xml#sacrificial</gml:identifier>
+            <gml:name>Sacrificial</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumn/diggs:elementClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetRIColumn/diggs:elementClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>

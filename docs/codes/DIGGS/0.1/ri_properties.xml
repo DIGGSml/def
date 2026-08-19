@@ -6,19 +6,6 @@
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml</gml:identifier>
     <gml:name>DIGGS Properties for Rigid Inclusion Programs</gml:name>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="element_class">
-            <gml:description>The role a planned or constructed rigid inclusion plays in the works, as distinct from what it is made of or how it is built. A trial element is installed before production to prove the method or calibrate the design and is normally not part of the permanent works; a test element is a production element selected for verification testing; a production element carries permanent load and is not tested destructively; a sacrificial element is installed to be tested to failure. The distinction governs which acceptance criteria apply and how a test result may be extrapolated, which is why it needs to be stated rather than inferred from whether a test happens to be attached.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#element_class</gml:identifier>
-            <gml:name>Element class</gml:name>
-            <diggs:dataType>string</diggs:dataType>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="tested_fraction">
             <gml:description>The proportion of a planned population of elements that is to be tested, where a testing provision is scoped to a population rather than to named elements - "5 percent of production rigid inclusions". A FRACTION OF A POPULATION, NOT A RATE IN TIME: it answers "how many of them" and not "how often", and it is deliberately named to keep it distinct from the temporal reading frequency carried by diggs:TargetMeasurementType/readingFrequency. diggs:ProgramScopeType states WHICH features a provision governs, by geometry, layout or feature type, and has no fraction concept by design; this parameter states what share of that scoped population is sampled. The two are complementary and both are normally needed.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#tested_fraction</gml:identifier>
@@ -39,25 +26,6 @@
             <gml:name>Test load as percentage of design load</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="instrument_type">
-            <gml:description>The kind of instrument a planned monitoring measurement is to be taken with.
-
-THE PROPERTY IS DEFINED HERE; ITS VALUES COME FROM equipmentClass.xml. The two are not competing and neither is redundant. This entry declares that a planned measurement may state which instrument it is to be taken with, and that the value is a string; equipmentClass.xml declares what the permitted instrument names are. Take the value from https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml - piezometer, inclinometer, extensometer, earth_pressure_cell and the rest.
-
-Why the property stays here rather than moving wholesale. The vocabulary is entirely generic - a piezometer is a piezometer on any project - and it now lives in the generic codelist accordingly. But the PROPERTY is a parameter on a planned measurement, and there is no equipment reference on diggs:TargetMeasurementType for it to become instead: a plan cannot cite an Equipment feature that will not exist until the instrument is installed, and a plan-to-realized reference is forbidden outright. So the instrument kind is stated as a parameter, with its value governed by the equipment codelist. If a planned equipment object is ever added to the Target family, this entry becomes redundant and should be deprecated in favour of it.
-
-Superseded the earlier plan to promote this entry out of the RI dictionary (2026-08-16): promoting the VOCABULARY was right and has been done; promoting the property had nowhere to go.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#instrument_type</gml:identifier>
-            <gml:name>Instrument type</gml:name>
-            <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
