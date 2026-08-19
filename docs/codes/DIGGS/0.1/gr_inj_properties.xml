@@ -627,4 +627,34 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="grout_level">
+            <gml:description>The elevation or depth of the grout surface within the column bore or annulus at a given reading, used to detect an in-progress drop in grout level - a sign the column is losing grout into the surrounding ground and is at risk of an 'uncovered column' condition (V2 Installation row 31). Where a drop triggers a corrective action, that outcome is recorded separately as diggs:RIConstructionActivityType/groutLevelCorrectiveAction; this entry carries only the level reading itself.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml#grout_level</gml:identifier>
+            <gml:name>grout level</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:constructionActivity//diggs:RIInstallationRecord</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="grout_return_volume">
+            <gml:description>The volume of grout or slurry returning to the surface during installation - a 'wet squeeze' - distinct from volume_overconsumption (excess grout pumped versus theoretical, in-bore and depth-indexed): this is fluid actually emerging at the surface, and is often observed at an already-installed neighbouring column rather than the one currently being drilled or grouted. Where that is the case, record this reading against whichever column's installationRecord the observer is logging against, and use remark to note which column the return was actually attributed to if it differs (V2 Installation row 32).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml#grout_return_volume</gml:identifier>
+            <gml:name>Grout return (wet-squeeze) volume</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>volume</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:constructionActivity//diggs:RIInstallationRecord</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="platformType">
+    <gml:description>Codes classifying the construction type of a load transfer platform (LTP), planned or as-built - unreinforced granular fill, geogrid-reinforced fill, soil-mixed/cemented raft, or a structural concrete slab. Used for the value of diggs:RILTPSpecificationType/platformType (planned) and diggs:LoadTransferPlatformType/platformType (as-built) so design and as-built share one vocabulary. Distinct from materialType (diggs:LithologyPropertyType), which classifies what the fill is made of geologically and cannot express a structural concrete slab or a soil-mixed raft, neither of which is a lithology (V2 Design row 50).</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/platformType.xml</gml:identifier>
+    <gml:name>DIGGS Load Transfer Platform Type Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="unreinforced_granular_fill">
+            <gml:description>A compacted granular fill platform with no geosynthetic reinforcement or cementitious binder.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/platformType.xml#unreinforced_granular_fill</gml:identifier>
+            <gml:name>Unreinforced Granular Fill</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RILTPSpecification/diggs:platformType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:LoadTransferPlatform/diggs:platformType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="geogrid_reinforced_fill">
+            <gml:description>A granular fill platform reinforced with one or more geogrid or geotextile layers. Recorded here as an explicit classification even though it is also derivable from whether diggs:LoadTransferPlatformType/geosynthetics (as-built) or diggs:GeosyntheticLayerDesign (design) is populated - stating it directly lets a reviewer read the platform's construction type from one field rather than checking for the presence of a child array.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/platformType.xml#geogrid_reinforced_fill</gml:identifier>
+            <gml:name>Geogrid-Reinforced Fill</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RILTPSpecification/diggs:platformType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:LoadTransferPlatform/diggs:platformType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="soil_mixed_cemented_raft">
+            <gml:description>In-situ soil mixed with a cementitious binder to form a stiffened raft, rather than a granular fill placed above grade.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/platformType.xml#soil_mixed_cemented_raft</gml:identifier>
+            <gml:name>Soil-Mixed / Cemented Raft</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RILTPSpecification/diggs:platformType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:LoadTransferPlatform/diggs:platformType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="structural_concrete_slab">
+            <gml:description>A reinforced or unreinforced structural concrete slab used as the load transfer platform, the extreme case among the platform types this list covers.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/platformType.xml#structural_concrete_slab</gml:identifier>
+            <gml:name>Structural Concrete Slab</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RILTPSpecification/diggs:platformType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:LoadTransferPlatform/diggs:platformType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>

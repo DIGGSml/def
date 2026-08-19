@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="groutLevelCorrectiveAction">
+    <gml:description>Codes for the corrective action taken where in-progress grout-level monitoring found the grout level in a rigid inclusion column had dropped below the expected level - an 'uncovered column' condition indicating grout loss into the surrounding ground (V2 Installation row 31). Used for the value of diggs:RIConstructionActivityType/groutLevelCorrectiveAction.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/groutLevelCorrectiveAction.xml</gml:identifier>
+    <gml:name>DIGGS Grout Level Corrective Action Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="topping_off">
+            <gml:description>Additional grout added at the head of the column to restore the grout level to the design level, without re-drilling.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/groutLevelCorrectiveAction.xml#topping_off</gml:identifier>
+            <gml:name>Topping Off</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:groutLevelCorrectiveAction</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="redrill_and_regrout">
+            <gml:description>The column is re-drilled and re-grouted in response to a grout level drop that topping off alone did not correct.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/groutLevelCorrectiveAction.xml#redrill_and_regrout</gml:identifier>
+            <gml:name>Re-drill and Re-grout</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:groutLevelCorrectiveAction</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="no_action_required">
+            <gml:description>A grout level drop was observed during monitoring but was within tolerance or self-corrected, so no corrective action was taken.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/groutLevelCorrectiveAction.xml#no_action_required</gml:identifier>
+            <gml:name>No Action Required</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:groutLevelCorrectiveAction</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>

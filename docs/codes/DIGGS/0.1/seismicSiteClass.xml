@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="seismicSiteClass">
+    <gml:description>Seismic site classification codes (IBC/ASCE 7 Site Class A-F, based on the average properties of the upper profile at the site) applied to the treated ground mass after rigid inclusion ground improvement (V2 Post-installation row 31). Used for the value of diggs:RigidInclusionSystemType/seismicSiteClass. States the interpreted classification only; the composite shear-wave velocity a determination is based on is a separate, already-expressible measurement (diggs:LabVelocityTest, diggs:GeophysicalFieldSurvey). PROVISIONAL: the six class descriptions are stated from the standard's general definition and have not been checked line-by-line against a specific ASCE 7 edition's table - flagged for SME confirmation like the project's other provisional dictionary entries.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/seismicSiteClass.xml</gml:identifier>
+    <gml:name>DIGGS Seismic Site Class Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="class_a">
+            <gml:description>Hard rock with high shear-wave velocity, at the stiff end of the site class range.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/seismicSiteClass.xml#class_a</gml:identifier>
+            <gml:name>Site Class A - Hard Rock</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASCE 7</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="class_b">
+            <gml:description>Rock of moderate to high shear-wave velocity, softer than Site Class A.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/seismicSiteClass.xml#class_b</gml:identifier>
+            <gml:name>Site Class B - Rock</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASCE 7</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="class_c">
+            <gml:description>Very dense soil or soft rock, typically high blow count or high undrained shear strength.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/seismicSiteClass.xml#class_c</gml:identifier>
+            <gml:name>Site Class C - Very Dense Soil and Soft Rock</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASCE 7</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="class_d">
+            <gml:description>Stiff soil, the default classification where site-specific data is insufficient to assign another class.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/seismicSiteClass.xml#class_d</gml:identifier>
+            <gml:name>Site Class D - Stiff Soil</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASCE 7</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="class_e">
+            <gml:description>Soft clay soil, or any profile with a sufficient thickness of soft clay meeting the standard's plasticity, moisture and strength thresholds.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/seismicSiteClass.xml#class_e</gml:identifier>
+            <gml:name>Site Class E - Soft Clay Soil</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASCE 7</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="class_f">
+            <gml:description>Soils requiring a site-specific geotechnical investigation and dynamic site response analysis - liquefaction-vulnerable soils, peats, highly organic clays, very high plasticity clays, or very thick soft-to-medium-stiff clays.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/seismicSiteClass.xml#class_f</gml:identifier>
+            <gml:name>Site Class F - Site-Specific</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASCE 7</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>

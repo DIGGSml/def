@@ -65,4 +65,17 @@ Superseded the earlier plan to promote this entry out of the RI dictionary (2026
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="testing_density">
+            <gml:description>How densely a planned measurement is to be spaced across a population or an area, where the provision is a spatial or count-based density rather than a rate in time - one test per footing, one per linear foot of wall, one per unit area of slab (V2 Post-installation row 22: LTP special-inspection frequency/regime). DISTINCT FROM tested_fraction (what share of a population is tested) and from diggs:TargetMeasurementType/readingFrequency (a temporal rate): this states how closely spaced testing is in space or by count, which readingFrequency's reciprocal-time unit cannot express. The unit varies with what is being inspected - reciprocal length, reciprocal area, or a bare count per discrete element - so no single quantityClass is stated here; give the value with whatever unit fits the foundation type being described.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_properties.xml#testing_density</gml:identifier>
+            <gml:name>Testing density</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

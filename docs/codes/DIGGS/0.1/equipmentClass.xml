@@ -281,4 +281,16 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="shape_array">
+            <gml:description>A multi-segment in-place inclinometer-type instrument (for example a Shape Accel Array) that measures its own 3-D shape continuously along its length, giving a displacement profile against depth over time without the manual probe traverses a conventional inclinometer requires. Distinct from inclinometer: functionally close enough that inclinometer may be an acceptable stand-in where a shape array is not separately identified, but this entry lets an instrument genuinely of this kind be named precisely (V2 Post-installation row 32: LTP shear-deformation monitoring).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#shape_array</gml:identifier>
+            <gml:name>Shape Array (SAA)</gml:name>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Sensor/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
