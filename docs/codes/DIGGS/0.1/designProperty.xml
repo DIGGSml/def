@@ -75,4 +75,30 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="bearing_stratum_embedment">
+            <gml:description>The as-built depth to which the element penetrates its designated bearing stratum, measured against the minimum embedment the design requires. Commonly expressed as a multiple of the element diameter, in which case the criterion's basis is per_diameter and baseLength carries the diameter.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#bearing_stratum_embedment</gml:identifier>
+            <gml:name>Bearing-stratum embedment</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="method_applicability">
+            <gml:description>Whether the geometry and stiffness ratios of the as-designed layout fall within the range over which the chosen arching or load-transfer method's unit-cell idealisation is valid. The ratios themselves are carried by diggs:RITreatedAreaDesignType/methodApplicabilityRatio; this code names the pass/fail gate evaluated against them, so the verdict is a conformance criterion rather than a further ratio.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#method_applicability</gml:identifier>
+            <gml:name>Design-method applicability</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

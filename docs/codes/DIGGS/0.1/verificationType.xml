@@ -119,11 +119,37 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="termination_criterion_trial_validation">
-            <gml:description>Records the outcome of a pre-production indicator or trial column programme run to correlate drilling response against stratigraphy and confirm that the design's termination/refusal criterion is appropriate before production installation begins (V2 Installation row 43). Reuses diggs:DesignVerification's generic demand/capacity/outcome shape rather than a bespoke trial-programme object: the trial columns it draws on are already identifiable as diggs:RIColumn features whose samplingFeatureRef is absent (the schema's existing convention for a trial column), and this entry lets the correlation and validation performed against them be recorded as a verification like any other design check, with the specific columns and correlation reasoning carried in remark.</gml:description>
+            <gml:description>Records the outcome of a pre-production indicator or trial column programme run to correlate drilling response against stratigraphy and confirm that the design's termination/refusal criterion is appropriate before production installation begins (V2 Installation row 43). Reuses diggs:DesignVerification's generic demand/capacity/outcome shape rather than a bespoke trial-programme object: the trial columns it draws on are already identifiable as diggs:RIColumn features whose mandatory elementClass is 'trial' (elementClass.xml, task EC1 - this superseded the earlier convention of an absent samplingFeatureRef, an element GR2 has since removed outright), and this entry lets the correlation and validation performed against them be recorded as a verification like any other design check, with the specific columns and correlation reasoning carried in remark.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/verificationType.xml#termination_criterion_trial_validation</gml:identifier>
             <gml:name>Pre-production trial validation of termination criterion</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignVerification/diggs:verificationType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="bending">
+            <gml:description>A structural check of the column's flexural capacity against the applied bending-moment demand. Distinct from the shear and structural_axial checks beside it: a rigid inclusion attracts moment wherever the ground moves laterally relative to it - alongside an embankment toe, across a liquefiable layer, or under a laterally loaded footing - and that demand is not derivable from the axial case. Carry the moment itself in demand/capacity, whose quantity class is then moment of force.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/verificationType.xml#bending</gml:identifier>
+            <gml:name>Bending / flexural check</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignVerification/diggs:verificationType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="lateral">
+            <gml:description>A structural check of the column's lateral capacity against the applied lateral-force demand. Paired with bending, since the two are produced by the same load case and usually reported together, but kept separate because a section can satisfy one and fail the other. Distinct from lateral_spreading, which is a check on the GROUND mass moving, not on the column's capacity to resist a lateral force.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/verificationType.xml#lateral</gml:identifier>
+            <gml:name>Lateral load check</gml:name>
+            <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignVerification/diggs:verificationType</diggs:sourceElementXpath>
