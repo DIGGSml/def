@@ -20,7 +20,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -40,7 +40,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -60,7 +60,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -80,7 +80,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -100,7 +100,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -120,7 +120,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -140,7 +140,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -160,7 +160,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -180,7 +180,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -200,7 +200,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -220,7 +220,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

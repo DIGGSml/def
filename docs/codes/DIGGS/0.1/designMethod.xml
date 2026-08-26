@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="designMethod">
-    <gml:description>Codes naming the analytical approach a rigid inclusion design was calculated by. Used for the value of the designMethod property of diggs:RISystemBasis. RI_Design_Parameter_Analysis.md Group A row 3 names four approaches in current practice; the list is open, since design methods are not a closed set.</gml:description>
+    <gml:description>Codes naming the analytical approach a rigid inclusion design was calculated by. Used for the value of the designMethod property of diggs:RIProgramBasis. RI_Design_Parameter_Analysis.md Group A row 3 names four approaches in current practice; the list is open, since design methods are not a closed set.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designMethod.xml</gml:identifier>
     <gml:name>DIGGS Rigid Inclusion Design Method Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -14,7 +14,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:designMethod</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:designMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -28,7 +28,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:designMethod</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:designMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -42,7 +42,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:designMethod</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:designMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -56,7 +56,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:designMethod</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:designMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

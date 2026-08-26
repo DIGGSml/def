@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="supportedStructureType">
-    <gml:description>Codes naming what a rigid inclusion program supports - the load source the design is prepared for. Used for the value of the supportedStructureType property of diggs:RISystemBasis, which RI_Design_Parameter_Analysis.md Group A row 4 identifies as the master conditional a large part of the Design and Post-installation parameter groups key on: several other properties are meaningful only for an embankment or wall, others only for a slab or mat. The list is open.</gml:description>
+    <gml:description>Codes naming what a rigid inclusion program supports - the load source the design is prepared for. Used for the value of the supportedStructureType property of diggs:RIProgramBasis, which RI_Design_Parameter_Analysis.md Group A row 4 identifies as the master conditional a large part of the Design and Post-installation parameter groups key on: several other properties are meaningful only for an embankment or wall, others only for a slab or mat. The list is open.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml</gml:identifier>
     <gml:name>DIGGS Rigid Inclusion Supported Structure Type Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -14,7 +14,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -28,7 +28,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -42,7 +42,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -56,7 +56,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -70,7 +70,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -84,7 +84,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -98,7 +98,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -112,7 +112,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RISystemBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:supportedStructureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
