@@ -4,10 +4,13 @@
  *
  * Two jobs:
  *   1. Search - filter the entry cards on any visible text (name, id, title,
- *      accrediting body, XPath, ...), so a provider can confirm a standard is
+ *      accrediting body, ...), so a provider can confirm a standard is
  *      registered before citing it.
- *   2. Citation - build and copy the exact xlink:href a provider must paste
- *      into an instance document.
+ *   2. Citation - build a ready-to-paste xlink:href for EVERY property the
+ *      entry may be cited from, each independently copyable. A standard
+ *      registered for both governingStandard and testProcedureMethod gets one
+ *      snippet per use, because a provider populating a test procedure needs
+ *      that element name, not the first one that happened to be declared.
  *
  * Deliberately not shared with scripts.js: that file filters TABLE ROWS of a
  * columnar code list, and a registry renders one card per entry instead.
@@ -17,23 +20,28 @@
  * Citation snippets
  * ------------------------------------------------------------------ */
 
+/* Fallback when an entry declares no occurrences and so has no XPath to
+ * derive an element name from. governingStandard is by far the most common
+ * property holding a Specification in a registry-citing document. */
+var DEFAULT_CITING_ELEMENT = "diggs:governingStandard";
+
 /*
  * Derive the citing element's QName from an Occurrence sourceElementXpath.
  * "//diggs:RIProgramBasis/diggs:governingStandard" -> "diggs:governingStandard"
- * Falls back to diggs:governingStandard, the overwhelmingly common case, when
- * an entry declares no occurrences.
+ * "//diggs:testProcedureMethod"                    -> "diggs:testProcedureMethod"
  */
 function citingElementFromXPath(xpath) {
-    if (!xpath) return "diggs:governingStandard";
+    if (!xpath) return DEFAULT_CITING_ELEMENT;
     var steps = xpath.split("/").filter(function (s) { return s.length > 0; });
-    if (!steps.length) return "diggs:governingStandard";
+    if (!steps.length) return DEFAULT_CITING_ELEMENT;
     // Drop any predicate, e.g. foo[@bar='x'] -> foo
-    return steps[steps.length - 1].replace(/\[.*$/, "");
+    var last = steps[steps.length - 1].replace(/\[.*$/, "").trim();
+    return last.length ? last : DEFAULT_CITING_ELEMENT;
 }
 
 /*
- * Fill in every citation block. Runs once at load: the registry URL and each
- * entry's id are already in the DOM, courtesy of the XSLT.
+ * Fill in every citation block on the page. Runs once at load: the registry
+ * URL and each entry's id are already in the DOM, courtesy of the XSLT.
  */
 function buildCitations() {
     var urlNode = document.getElementById("registryUrl");
@@ -44,12 +52,33 @@ function buildCitations() {
         var block = blocks[i];
         var id = block.getAttribute("data-id") || "";
         var element = citingElementFromXPath(block.getAttribute("data-xpath"));
-        block.textContent = "<" + element + "\n    xlink:href=\"" + registryUrl + "#" + id + "\"/>";
+
+        block.textContent =
+            "<" + element + "\n    xlink:href=\"" + registryUrl + "#" + id + "\"/>";
+
+        // Label the snippet with the element it populates, so a card offering
+        // several uses is readable without showing raw XPaths.
+        var item = block.parentNode;
+        var use = item ? item.querySelector(".cite-use") : null;
+        if (use) use.textContent = element;
     }
 }
 
+/*
+ * Copy one snippet. The button and its snippet share a .cite-item parent, so
+ * scope the lookup to that - NOT to the enclosing .cite block, which holds
+ * every snippet on the card and would always return the first.
+ */
 function copyCitation(button) {
-    var block = button.parentNode.querySelector(".cite-code");
+    var item = button.closest ? button.closest(".cite-item") : null;
+    if (!item) {
+        // closest() unavailable: walk up manually.
+        item = button.parentNode;
+        while (item && item.className.indexOf("cite-item") === -1) item = item.parentNode;
+    }
+    if (!item) return;
+
+    var block = item.querySelector(".cite-code");
     if (!block) return;
     var text = block.textContent;
 
@@ -116,7 +145,8 @@ function filterRegistry() {
  * A registry href carries the Specification's gml:id as its fragment, so
  * following one from an instance document lands here. The id sits on the
  * Specification, which the XSLT does not emit as an element - so scroll to the
- * card whose citation block carries that id and flag it.
+ * card whose citation blocks carry that id and flag it. Scrolling happens
+ * inside the .cards pane, which is the scroll container.
  */
 function focusFragment() {
     var frag = window.location.hash.replace(/^#/, "");

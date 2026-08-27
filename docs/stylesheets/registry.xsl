@@ -8,13 +8,20 @@
   would be mostly empty cells and unreadable titles. Each entry is rendered as a card holding a
   key/value table instead, and only the fields actually present are shown.
 
-  The page has one job beyond lookup: telling a data provider how to CITE what they found. Every
-  card therefore ends with a ready-to-paste xlink:href snippet, built from the registry's own
-  gml:identifier and the Specification's gml:id.
+  The page has one job beyond lookup: telling a data provider how to CITE what they found. Each
+  entry therefore ends with ONE ready-to-paste snippet PER declared occurrence, each with its own
+  copy button - a standard citable from both governingStandard and testProcedureMethod shows both
+  forms. The raw sourceElementXpath values are deliberately NOT displayed: they are validator
+  configuration, and a data provider needs the element to write, not the XPath that governs it.
+
+  Layout is a flex column - header fixed, cards pane scrolling - so the search box and registry
+  title stay visible while browsing. Sized in viewport units rather than the fixed max-height
+  codelists.xsl uses, so it adapts to laptop and large-monitor heights alike.
 
   NOTE THE NAMESPACE. Registries are authored against http://diggsml.org/schemas/3. The published
   code list dictionaries still declare http://diggsml.org/schemas/2.6, which is why codelists.xsl
-  binds that instead - do not copy the prefix binding from that file.
+  binds that instead - do not copy the prefix binding from that file. (Tracked for correction as
+  task X11, after which this note can go.)
 
   Behaviour lives in https://diggsml.org/def/scripts/registry.js
 -->
@@ -32,17 +39,32 @@
       <head>
         <title><xsl:value-of select="/diggs:SpecificationRegistry/gml:name"/></title>
         <style>
+          html, body { height: 100%; }
+
           body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            padding: 0 0 60px 0;
+            padding: 0;
             background-color: #FFEFD5; /* Light amber background, matching the code list pages */
             color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
           }
 
-          .logo { position: absolute; top: 10px; left: 10px; }
+          /* ---- fixed header ---- */
+          .page-header {
+            flex: 0 0 auto;
+            position: relative;
+            background-color: #FFEFD5;
+            box-shadow: 0 3px 10px rgba(0,0,0,.30);
+            z-index: 5;
+            padding: 14px 16px 10px 16px;
+            text-align: center;
+          }
 
-          h1 { text-align: center; margin: 0 0 12px 0; padding-top: 18px; }
+          .logo { position: absolute; top: 10px; left: 12px; }
+
+          h1 { margin: 0 0 10px 0; font-size: 26px; }
 
           .description {
             border: 2px solid black;
@@ -50,10 +72,11 @@
             text-align: left;
             display: inline-block;
             max-width: 1000px;
+            max-height: 20vh;
+            overflow-y: auto;
             line-height: 1.45;
+            font-size: 14px;
           }
-
-          .toolbar { text-align: center; margin-top: 14px; }
 
           #myInput {
             background-image: url('https://diggsml.org/def/img/searchIcon.png');
@@ -65,21 +88,27 @@
             font-size: 16px;
             padding: 12px 20px 12px 44px;
             border: 1px solid #bbb;
-            margin: 4px 0 6px 0;
+            margin: 10px 0 4px 0;
           }
 
-          #counter { font-size: 14px; padding: 5px; display: inline-block; }
+          #counter { font-size: 14px; display: block; }
 
-          .hint { font-size: 13px; color: #555; margin: 2px 0 14px 0; }
+          .hint { font-size: 13px; color: #555; margin-top: 3px; }
 
-          .cards { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+          /* ---- scrolling cards pane ---- */
+          .cards {
+            flex: 1 1 auto;
+            overflow-y: auto;
+            padding: 18px 16px 40px 16px;
+          }
+
+          .cards-inner { max-width: 1100px; margin: 0 auto; }
 
           .card {
             background-color: #f7f7f7;
             border: 1px solid #999;
             box-shadow: 0 1px 5px rgba(0,0,0,.28);
             margin-bottom: 18px;
-            padding: 0;
           }
 
           .card-head {
@@ -137,28 +166,39 @@
 
           table.kv tr:last-child th, table.kv tr:last-child td { border-bottom: none; }
 
-          code, .mono { font-family: Consolas, "Courier New", monospace; font-size: 14px; }
+          .mono { font-family: Consolas, "Courier New", monospace; font-size: 14px; }
 
-          .xpath {
-            display: block;
-            background: #ececec;
-            border-left: 3px solid #888;
-            padding: 3px 8px;
-            margin: 2px 0;
-            word-break: break-all;
-          }
-
+          /* ---- citations ---- */
           .cite {
             border-top: 2px solid #000;
             background: #fffdf5;
-            padding: 10px 14px;
+            padding: 10px 14px 12px 14px;
           }
 
           .cite-label {
             font-size: 13px;
             font-weight: bold;
             display: block;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
+          }
+
+          .cite-note { font-size: 13px; color: #555; margin-bottom: 8px; }
+
+          .cite-item { margin-bottom: 12px; }
+          .cite-item:last-child { margin-bottom: 0; }
+
+          .cite-item-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 4px;
+          }
+
+          .cite-use {
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 14px;
+            font-weight: bold;
+            color: #10457f;
           }
 
           .cite-code {
@@ -173,10 +213,11 @@
             line-height: 1.5;
           }
 
+          .cite-cond { font-size: 12.5px; color: #8a5a00; margin-top: 4px; }
+
           .copy-btn {
-            margin-top: 8px;
-            font-size: 13px;
-            padding: 5px 12px;
+            font-size: 12.5px;
+            padding: 4px 12px;
             border: 1px solid #666;
             background: #eee;
             cursor: pointer;
@@ -198,40 +239,41 @@
       </head>
 
       <body>
-        <div class="logo">
-          <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:150px" alt="DIGGS"/>
-        </div>
+        <div class="page-header">
+          <div class="logo">
+            <img src="https://diggsml.org/def/img/diggs-logo.png" style="width:130px" alt="DIGGS"/>
+          </div>
 
-        <h1><xsl:value-of select="/diggs:SpecificationRegistry/gml:name"/></h1>
+          <h1><xsl:value-of select="/diggs:SpecificationRegistry/gml:name"/></h1>
 
-        <div style="text-align:center">
-          <span class="description">
-            <xsl:value-of select="/diggs:SpecificationRegistry/gml:description"/>
-          </span>
-        </div>
+          <div>
+            <span class="description">
+              <xsl:value-of select="/diggs:SpecificationRegistry/gml:description"/>
+            </span>
+          </div>
 
-        <div class="toolbar">
           <div>
             <input type="text" id="myInput" onkeyup="filterRegistry()"
-              placeholder="Search standards, identifiers, XPaths..."/>
+              placeholder="Search standards, identifiers, titles..."/>
           </div>
-          <div id="counter"></div>
+          <span id="counter"></span>
           <div class="hint">
-            Find the standard you need, then copy the citation snippet at the foot of its card.
+            Find the standard you need, then copy the citation for the property you are populating.
           </div>
-        </div>
 
-        <!-- The registry's own URL, read by registry.js to build citation snippets. -->
-        <span id="registryUrl" style="display:none"><xsl:value-of select="$registryUrl"/></span>
+          <!-- The registry's own URL, read by registry.js to build citation snippets. -->
+          <span id="registryUrl" style="display:none"><xsl:value-of select="$registryUrl"/></span>
+        </div>
 
         <div class="cards" id="cards">
-          <xsl:for-each select="/diggs:SpecificationRegistry/diggs:registryEntry/diggs:SpecificationRegistryEntry">
-            <xsl:sort select="diggs:specification/diggs:Specification/gml:name"/>
-            <xsl:apply-templates select="."/>
-          </xsl:for-each>
+          <div class="cards-inner">
+            <xsl:for-each select="/diggs:SpecificationRegistry/diggs:registryEntry/diggs:SpecificationRegistryEntry">
+              <xsl:sort select="diggs:specification/diggs:Specification/gml:name"/>
+              <xsl:apply-templates select="."/>
+            </xsl:for-each>
+            <div class="noresults" id="noresults">No standard matches that search.</div>
+          </div>
         </div>
-
-        <div class="noresults" id="noresults">No standard matches that search.</div>
       </body>
     </html>
   </xsl:template>
@@ -303,40 +345,44 @@
               </a>
             </td></tr>
         </xsl:if>
-
-        <tr>
-          <th>May be cited at</th>
-          <td>
-            <xsl:choose>
-              <xsl:when test="diggs:occurrences/diggs:Occurrence">
-                <xsl:for-each select="diggs:occurrences/diggs:Occurrence">
-                  <span class="xpath"><xsl:value-of select="diggs:sourceElementXpath"/></span>
-                  <xsl:if test="diggs:conditionalElementXpath">
-                    <span class="xpath">
-                      <xsl:text>&#8627; only when: </xsl:text>
-                      <xsl:value-of select="diggs:conditionalElementXpath"/>
-                    </span>
-                  </xsl:if>
-                </xsl:for-each>
-              </xsl:when>
-              <xsl:otherwise>
-                <em>Unrestricted &#8212; may be cited wherever a diggs:Specification is permitted.</em>
-              </xsl:otherwise>
-            </xsl:choose>
-          </td>
-        </tr>
       </table>
 
-      <!-- Citation snippet. The element name is taken from the FIRST occurrence's XPath so the
-           example shows the property this standard is actually meant to be cited from. -->
+      <!-- One citation per declared occurrence, each independently copyable. registry.js fills in
+           the element name and the snippet text from data-xpath / data-id. -->
       <div class="cite">
         <span class="cite-label">Cite it like this</span>
-        <span class="cite-code" data-id="{$id}">
-          <xsl:attribute name="data-xpath">
-            <xsl:value-of select="diggs:occurrences/diggs:Occurrence[1]/diggs:sourceElementXpath"/>
-          </xsl:attribute>
-        </span>
-        <button class="copy-btn" onclick="copyCitation(this)">Copy</button>
+        <xsl:choose>
+          <xsl:when test="diggs:occurrences/diggs:Occurrence">
+            <xsl:for-each select="diggs:occurrences/diggs:Occurrence">
+              <div class="cite-item">
+                <div class="cite-item-head">
+                  <span class="cite-use"></span>
+                  <button class="copy-btn" onclick="copyCitation(this)">Copy</button>
+                </div>
+                <span class="cite-code" data-id="{$id}" data-xpath="{diggs:sourceElementXpath}"></span>
+                <xsl:if test="diggs:conditionalElementXpath">
+                  <div class="cite-cond">
+                    <xsl:text>Only valid when this is also present: </xsl:text>
+                    <xsl:value-of select="diggs:conditionalElementXpath"/>
+                  </div>
+                </xsl:if>
+              </div>
+            </xsl:for-each>
+          </xsl:when>
+          <xsl:otherwise>
+            <div class="cite-note">
+              This entry declares no restriction, so it may be cited from any property that holds a
+              <span class="mono">diggs:Specification</span>. A common one is shown.
+            </div>
+            <div class="cite-item">
+              <div class="cite-item-head">
+                <span class="cite-use"></span>
+                <button class="copy-btn" onclick="copyCitation(this)">Copy</button>
+              </div>
+              <span class="cite-code" data-id="{$id}" data-xpath=""></span>
+            </div>
+          </xsl:otherwise>
+        </xsl:choose>
       </div>
     </div>
   </xsl:template>
