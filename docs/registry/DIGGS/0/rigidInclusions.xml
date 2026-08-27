@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/registry.xsl"?>
+
 <diggs:SpecificationRegistry
     xmlns:diggs="http://diggsml.org/schemas/3"
     xmlns:gml="http://www.opengis.net/gml/3.2"
