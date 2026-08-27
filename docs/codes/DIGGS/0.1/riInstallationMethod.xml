@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="riInstallationMethod">
+    <gml:description>Codes classifying how the ground is handled as a rigid inclusion is formed - whether the technique displaces soil laterally, removes it, or does some of each. The technical report calls this the primary classifier, because the families produce different as-built records: a displacement technique generates no spoil and densifies the surrounding ground, a replacement technique removes soil. Used for the value of diggs:RIColumnType/riInstallationMethod (as-built), diggs:RIColumnSpecificationType/riInstallationMethod (specified) and diggs:RIConstructionActivityType/riInstallationMethod (as recorded by the activity). Orthogonal to columnType, which names the technique rather than what it does to the ground; each columnType entry declares which of these families it is compatible with, so the two cannot contradict each other. Named with the ri prefix because installation method is a concept other DIGGS domains will want under their own vocabularies.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/riInstallationMethod.xml</gml:identifier>
+    <gml:name>DIGGS Rigid Inclusion Installation Method Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="full_displacement">
+            <gml:description>The technique displaces soil laterally through the full volume of the column and removes no spoil, densifying and laterally stressing the surrounding ground as it penetrates. Drilled displacement columns, driven and vibro-driven cast-in-place and precast inclusions, and vibro concrete columns all behave this way.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/riInstallationMethod.xml#full_displacement</gml:identifier>
+            <gml:name>Full displacement</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumn/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="partial_displacement">
+            <gml:description>The technique removes some spoil while displacing the remainder - an intermediate case between full displacement and replacement. Recorded as its own family rather than being forced into either neighbour, because the spoil volume and the degree of surrounding densification are both intermediate and the acceptance evidence reflects that.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/riInstallationMethod.xml#partial_displacement</gml:identifier>
+            <gml:name>Partial displacement</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumn/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="replacement">
+            <gml:description>The technique removes soil as the column is formed, so the surrounding ground is not displaced or densified. Includes continuous-flight-auger and auger-cast-in-place columns and conventional bored columns, whether uncased, cased or slurry-supported. Pre-drilling with spoil removal is the usual means; the family is named for the behaviour rather than the operation so that it stays parallel with the two displacement families.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/riInstallationMethod.xml#replacement</gml:identifier>
+            <gml:name>Replacement</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumn/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
