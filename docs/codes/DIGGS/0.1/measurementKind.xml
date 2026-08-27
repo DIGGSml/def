@@ -75,4 +75,32 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="composite_load_test">
+            <gml:description>A load test applied to a group of inclusions together with the soil between them, measuring the response of the treated ground as a composite rather than the response of one element.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#composite_load_test</gml:identifier>
+            <gml:name>Composite / group load test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="soil_load_test">
+            <gml:description>A load test applied to the soil between inclusions rather than to an inclusion, used to verify the stress and settlement assumed for the untreated soil in a composite-ground design.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#soil_load_test</gml:identifier>
+            <gml:name>Test on surrounding soil</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

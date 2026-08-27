@@ -293,4 +293,64 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="displacement_auger">
+            <gml:description>A shaped auger that forms a rigid inclusion by displacing soil laterally rather than removing it, generating no spoil. Proprietary tool geometries in common use include APGD, Atlas, De Waal, Fundex, Olivier, Omega, SVB and SVV.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#displacement_auger</gml:identifier>
+            <gml:name>Displacement auger</gml:name>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="traction_compacting_tool">
+            <gml:description>A displacement tool that advances by traction and compacts soil on both insertion and extraction, typically about half on each. Offered by Keller / Hayward Baker as an alternative to a single-pass displacement auger.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#traction_compacting_tool</gml:identifier>
+            <gml:name>Traction compacting tool</gml:name>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="vibratory_displacement_tool">
+            <gml:description>A displacement tool advanced by vibration rather than by rotary drilling or static push.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#vibratory_displacement_tool</gml:identifier>
+            <gml:name>Vibratory displacement tool</gml:name>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="grout_pump">
+            <gml:description>A pump delivering grout or cemented aggregate to the tool during column formation; a piston pump is typical for grouted rigid inclusions.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#grout_pump</gml:identifier>
+            <gml:name>Grout pump</gml:name>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="concrete_pump">
+            <gml:description>A pump delivering ready-mixed concrete to the tool during column formation, typical of controlled-modulus-column practice.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#concrete_pump</gml:identifier>
+            <gml:name>Concrete pump</gml:name>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

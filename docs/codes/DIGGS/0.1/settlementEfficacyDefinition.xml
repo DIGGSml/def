@@ -7,7 +7,7 @@
     <gml:name>DIGGS Settlement Efficacy Definition Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="settlement_ratio">
-            <gml:description>Settlement efficacy as the ratio of treated-ground settlement to untreated-ground settlement (values below 1 indicate improvement).</gml:description>
+            <gml:description>Efficacy expressed as the ratio of treated to untreated surface settlement, the complement of settlement_reduction_ratio, so that a smaller value means a more effective treatment. Complement of the ASIRI Eq 2.23 definition; see the DIGGS rigid inclusions technical report, Section 3.4.2 (Eq 3-11).</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/settlementEfficacyDefinition.xml#settlement_ratio</gml:identifier>
             <gml:name>Settlement ratio</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -21,7 +21,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="settlement_reduction_ratio">
-            <gml:description>Settlement efficacy as one minus the settlement ratio - the fraction of untreated-ground settlement eliminated by treatment.</gml:description>
+            <gml:description>Efficacy expressed as the fractional reduction of surface settlement relative to the untreated soil, so that a larger value means a more effective treatment. ASIRI Eq 2.23, p. 79; confirmed against the DIGGS rigid inclusions technical report, Section 3.4.2 (Eq 3-11).</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/settlementEfficacyDefinition.xml#settlement_reduction_ratio</gml:identifier>
             <gml:name>Settlement reduction ratio</gml:name>
             <diggs:dataType>string</diggs:dataType>

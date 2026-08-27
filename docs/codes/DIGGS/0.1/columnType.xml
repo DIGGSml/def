@@ -7,7 +7,7 @@
     <gml:name>DIGGS Rigid Inclusion Column Type Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="simple_bored">
-            <gml:description>A column installed by simple rotary boring/drilling with no casing or slurry support.</gml:description>
+            <gml:description>A column installed by simple rotary boring/drilling with no casing or slurry support. Replacement family: soil is removed as the column is formed.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#simple_bored</gml:identifier>
             <gml:name>Simple bored</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -27,7 +27,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="bored_with_casing">
-            <gml:description>A column installed by rotary boring with temporary or permanent casing supporting the borehole.</gml:description>
+            <gml:description>A column installed by rotary boring with temporary or permanent casing supporting the borehole. Replacement family: soil is removed as the column is formed.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#bored_with_casing</gml:identifier>
             <gml:name>Bored with casing</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -47,7 +47,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="bored_with_slurry">
-            <gml:description>A column installed by rotary boring with slurry (e.g. bentonite or polymer) supporting the borehole.</gml:description>
+            <gml:description>A column installed by rotary boring with slurry (e.g. bentonite or polymer) supporting the borehole. Replacement family: soil is removed as the column is formed.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#bored_with_slurry</gml:identifier>
             <gml:name>Bored with slurry</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -67,7 +67,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="continuous_flight_hollow_auger">
-            <gml:description>A column installed with a continuous-flight hollow-stem auger, concrete or grout placed through the auger stem as it is withdrawn.</gml:description>
+            <gml:description>A column installed with a continuous-flight hollow-stem auger, concrete or grout placed through the auger stem as it is withdrawn. Replacement family: soil is removed as the column is formed. Commonly abbreviated CFA; auger cast-in-place (ACIP) is a closely related replacement technique.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#continuous_flight_hollow_auger</gml:identifier>
             <gml:name>Continuous flight hollow auger (CFA)</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -107,7 +107,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="cip_vibro_driven">
-            <gml:description>A column formed by driving a closed-end casing or mandrel with a vibratory hammer and casting concrete in place.</gml:description>
+            <gml:description>A column formed by driving a closed-end casing or mandrel with a vibratory hammer and casting concrete in place. Displacement family: soil is displaced laterally rather than removed, so no spoil is generated.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#cip_vibro_driven</gml:identifier>
             <gml:name>Cast-in-place, vibro-driven</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -127,7 +127,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="cip_driven">
-            <gml:description>A column formed by driving a closed-end casing or mandrel with an impact hammer and casting concrete in place.</gml:description>
+            <gml:description>A column formed by driving a closed-end casing or mandrel with an impact hammer and casting concrete in place. Displacement family: soil is displaced laterally rather than removed, so no spoil is generated.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#cip_driven</gml:identifier>
             <gml:name>Cast-in-place, driven</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -147,7 +147,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="prefab_vibro_driven">
-            <gml:description>A prefabricated (precast or steel) column installed by vibratory driving.</gml:description>
+            <gml:description>A prefabricated (precast or steel) column installed by vibratory driving. Displacement family: soil is displaced laterally rather than removed, so no spoil is generated.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#prefab_vibro_driven</gml:identifier>
             <gml:name>Prefabricated, vibro-driven</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -167,7 +167,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="prefab_driven">
-            <gml:description>A prefabricated (precast or steel) column installed by impact driving.</gml:description>
+            <gml:description>A prefabricated (precast or steel) column installed by impact driving. Displacement family: soil is displaced laterally rather than removed, so no spoil is generated.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#prefab_driven</gml:identifier>
             <gml:name>Prefabricated, driven</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -210,6 +210,46 @@
             <gml:description>A column formed by high-pressure erosion and mixing of the native soil with cementitious grout injected through a jetting tool.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#jet_grouting</gml:identifier>
             <gml:name>Jet grouting</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumn/diggs:columnType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="grouted_stone_column">
+            <gml:description>A column formed from stone or gravel that is grouted to give it rigidity, intermediate between an unbound aggregate pier and a fully cemented inclusion.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#grouted_stone_column</gml:identifier>
+            <gml:name>Grouted stone/gravel column</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumn/diggs:columnType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:riTechniqueType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="vibro_concrete_column">
+            <gml:description>A column formed by advancing a vibratory probe and placing concrete through it. Displacement family: soil is displaced laterally rather than removed, so no spoil is generated.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/columnType.xml#vibro_concrete_column</gml:identifier>
+            <gml:name>Vibro concrete column (VCC)</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>

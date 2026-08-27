@@ -61,4 +61,46 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fhwa_beam">
+            <gml:description>The FHWA GEC-13 beam formulation (Eq 3-26), in which the load transfer platform is analysed as a beam or slab spanning between inclusion heads and the geosynthetic membrane contribution is taken through the membrane factor of GEC-13 Table 6-2. One of two FHWA variants a designer selects between; the other is fhwa_strain_compatibility.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designMethod.xml#fhwa_beam</gml:identifier>
+            <gml:name>FHWA beam method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FHWA GEC-13 (FHWA-NHI-16-028)</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:designMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fhwa_strain_compatibility">
+            <gml:description>The FHWA GEC-13 generalized parabolic formulation (Eq 3-25), which distributes load between the inclusion heads and the intervening soil by enforcing strain compatibility across the platform rather than assuming a fixed arching ratio. One of two FHWA variants a designer selects between; the other is fhwa_beam.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designMethod.xml#fhwa_strain_compatibility</gml:identifier>
+            <gml:name>FHWA strain-compatibility method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FHWA GEC-13 (FHWA-NHI-16-028)</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:designMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="nordic">
+            <gml:description>The Nordic (Scandinavian) design practice for column-supported embankments, carried as a distinct published method in practitioner surveys of rigid inclusion design.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designMethod.xml#nordic</gml:identifier>
+            <gml:name>Nordic method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:designMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

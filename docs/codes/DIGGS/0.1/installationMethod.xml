@@ -7,7 +7,7 @@
     <gml:name>DIGGS Rigid Inclusion Installation Method (Soil Displacement) Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="full_displacement_auger">
-            <gml:description>A continuous-flight or displacement auger that advances by pushing soil radially outward with no spoil removal, densifying and laterally stressing the surrounding ground as it penetrates.</gml:description>
+            <gml:description>A continuous-flight or displacement auger that advances by pushing soil radially outward with no spoil removal, densifying and laterally stressing the surrounding ground as it penetrates. Displacement family: soil is displaced laterally rather than removed, so no spoil is generated.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/installationMethod.xml#full_displacement_auger</gml:identifier>
             <gml:name>Full-displacement auger</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -21,7 +21,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="partial_displacement">
-            <gml:description>A method that removes some spoil while displacing the remainder, an intermediate case between full displacement and pre-drill/spoil removal.</gml:description>
+            <gml:description>A method that removes some spoil while displacing the remainder, an intermediate case between full displacement and pre-drill/spoil removal. Intermediate between the displacement and replacement families.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/installationMethod.xml#partial_displacement</gml:identifier>
             <gml:name>Partial displacement</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -35,7 +35,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="drilled_displacement">
-            <gml:description>A displacement tool advanced with a drilling (rotary) action rather than pure static push, combining drilling penetration with lateral soil displacement.</gml:description>
+            <gml:description>A displacement tool advanced with a drilling (rotary) action rather than pure static push, combining drilling penetration with lateral soil displacement. Displacement family: soil is displaced laterally rather than removed, so no spoil is generated. Trade names in common use: Controlled Modulus Column (CMC, Menard); and Rigid Inclusion (RI), also marketed as GI, GeoConcrete Column (GCC), Controlled Stiffness Column (CSC) and Augered Pressure Grout Column (APGC) by Keller / Hayward Baker.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/installationMethod.xml#drilled_displacement</gml:identifier>
             <gml:name>Drilled displacement</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -49,9 +49,23 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="pre_drill">
-            <gml:description>The hole is pre-drilled and spoil removed before or during grout placement, with no net soil displacement into the surrounding ground.</gml:description>
+            <gml:description>The hole is pre-drilled and spoil removed before or during grout placement, with no net soil displacement into the surrounding ground. Replacement family: soil is removed as the column is formed.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/installationMethod.xml#pre_drill</gml:identifier>
             <gml:name>Pre-drill / spoil removed</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:installationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="vibratory_displacement">
+            <gml:description>A displacement method in which the tool is advanced by vibration rather than by rotary drilling or static push. Offered by Keller / Hayward Baker alongside single-pass augering. Displacement family: soil is displaced laterally rather than removed, so no spoil is generated.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/installationMethod.xml#vibratory_displacement</gml:identifier>
+            <gml:name>Vibratory displacement</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>

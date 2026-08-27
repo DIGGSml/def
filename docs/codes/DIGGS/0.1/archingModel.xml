@@ -90,4 +90,38 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="concentric_arches">
+            <gml:description>The Concentric Arches model of CUR 226, in which embankment load reaches the inclusion heads through a system of concentric hemispherical and two-dimensional arches. Ranked among the more accurate methods by Han et al. (2025). The governing document itself is registered separately as cur226 in the DIGGS rigid inclusions specification registry.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/archingModel.xml#concentric_arches</gml:identifier>
+            <gml:name>Concentric Arches (CUR 226 / Van Eekelen)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>CUR 226 (CROW/CUR)</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:archingModel</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fhwa_parabolic">
+            <gml:description>The generalized parabolic arching formulation of FHWA GEC-13 (Eq 3-23 and Eq 3-25), which yields the stress reduction ratio applied to the soft soil between inclusion heads.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/archingModel.xml#fhwa_parabolic</gml:identifier>
+            <gml:name>FHWA generalized parabolic arching (GEC-13)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>FHWA GEC-13 (FHWA-NHI-16-028)</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:archingModel</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

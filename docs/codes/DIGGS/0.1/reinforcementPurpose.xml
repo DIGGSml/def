@@ -49,7 +49,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="asiri_domain_1">
-            <gml:description>Reinforcement provided per the ASIRI national project's Domain 1 classification - confirm exact criteria against the ASIRI recommendations; not independently verified here.</gml:description>
+            <gml:description>Reinforcement provided because the inclusions are needed for bearing capacity or overall stability, so that they are verified as deep foundations under Eurocode 7 and must be reinforced over any length that is not in compression. ASIRI Domain 1, as distinct from Domain 2, where the inclusions reduce settlement only and may be left unreinforced. Confirmed against the DIGGS rigid inclusions technical report, Section 3.4.2.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/reinforcementPurpose.xml#asiri_domain_1</gml:identifier>
             <gml:name>ASIRI Domain 1</gml:name>
             <diggs:dataType>string</diggs:dataType>

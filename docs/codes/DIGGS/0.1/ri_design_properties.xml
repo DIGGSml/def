@@ -213,4 +213,20 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="stress_reduction_ratio">
+            <gml:description>The ratio of the vertical stress carried by the soft soil between inclusion heads to the vertical stress that would act there without arching. FHWA GEC-13 Eq 3-23.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_design_properties.xml#stress_reduction_ratio</gml:identifier>
+            <gml:name>Stress reduction ratio (SRR)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>FHWA GEC-13 (FHWA-NHI-16-028)</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='fhwa_parabolic']</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
