@@ -14,6 +14,15 @@
   forms. The raw sourceElementXpath values are deliberately NOT displayed: they are validator
   configuration, and a data provider needs the element to write, not the XPath that governs it.
 
+  ONE UNIFIED REGISTRY, FILTERED BY DOMAIN (R15). A single registry document now spans every
+  domain of practice rather than being split one file per domain - see SpecificationRegistry.xsd's
+  own SCOPE note for why. Each card is tagged with its declared diggs:domain code(s) as a
+  data-domains attribute plus visible badges; the "All domains" dropdown next to the search box
+  filters the card list to one domain, and the search box then searches WITHIN whatever the
+  dropdown has already narrowed to - both conditions must pass. registry.js builds the dropdown's
+  options at load time from whatever domains actually appear in the document, so a domain never
+  needs to be hand-maintained here.
+
   Layout is a flex column - header fixed, cards pane scrolling - so the search box and registry
   title stay visible while browsing. Sized in viewport units rather than the fixed max-height
   codelists.xsl uses, so it adapts to laptop and large-monitor heights alike.
@@ -78,6 +87,15 @@
             font-size: 14px;
           }
 
+          .controls {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0 4px 0;
+          }
+
           #myInput {
             background-image: url('https://diggsml.org/def/img/searchIcon.png');
             background-size: 26px;
@@ -88,7 +106,15 @@
             font-size: 16px;
             padding: 12px 20px 12px 44px;
             border: 1px solid #bbb;
-            margin: 10px 0 4px 0;
+            margin: 0;
+          }
+
+          #domainFilter {
+            font-size: 15px;
+            padding: 11px 14px;
+            border: 1px solid #bbb;
+            background: #fff;
+            margin: 0;
           }
 
           #counter { font-size: 14px; display: block; }
@@ -143,6 +169,15 @@
           .badge.active     { background:#1e7a34; color:#fff; }
           .badge.superseded { background:#b06a00; color:#fff; }
           .badge.withdrawn  { background:#a01818; color:#fff; }
+
+          .domain-badge {
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: bold;
+            background: #10457f;
+            color: #fff;
+          }
 
           table.kv { border-collapse: collapse; width: 100%; }
 
@@ -252,9 +287,12 @@
             </span>
           </div>
 
-          <div>
+          <div class="controls">
             <input type="text" id="myInput" onkeyup="filterRegistry()"
               placeholder="Search standards, identifiers, titles..."/>
+            <select id="domainFilter" onchange="filterRegistry()">
+              <option value="">All domains</option>
+            </select>
           </div>
           <span id="counter"></span>
           <div class="hint">
@@ -289,11 +327,23 @@
       </xsl:choose>
     </xsl:variable>
 
-    <div class="card">
+    <xsl:variable name="domainIds">
+      <xsl:for-each select="diggs:domain">
+        <xsl:value-of select="substring-after(@codeSpace, '#')"/>
+        <xsl:if test="position() != last()"><xsl:text> </xsl:text></xsl:if>
+      </xsl:for-each>
+    </xsl:variable>
+
+    <div class="card" data-domains="{$domainIds}">
       <div class="card-head">
         <span class="nm"><xsl:value-of select="$spec/gml:name"/></span>
         <span class="id"><xsl:value-of select="$id"/></span>
         <span class="badge {$status}"><xsl:value-of select="$status"/></span>
+        <xsl:for-each select="diggs:domain">
+          <span class="domain-badge" data-domain-id="{substring-after(@codeSpace, '#')}">
+            <xsl:value-of select="."/>
+          </span>
+        </xsl:for-each>
       </div>
 
       <table class="kv">

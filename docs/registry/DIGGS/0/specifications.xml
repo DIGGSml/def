@@ -7,16 +7,16 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.1/Diggs.xsd"
-    gml:id="rigidInclusions">
-    <gml:description>Canonical citations of the published standards, codes, recommendations, test methods, agency special provisions and research reports that govern rigid inclusion ground improvement design, installation and verification. A data provider cites an entry by xlink:href from a property typed diggs:SpecificationPropertyType - normally diggs:RIProgramBasis/governingStandard - rather than retyping the standard's bibliographic detail. The href targets the diggs:Specification's gml:id, so it resolves to exactly the kind of object an instance would otherwise have carried inline; the enclosing diggs:SpecificationRegistryEntry carries the registration metadata, and its occurrences declare where the entry may legitimately be cited. Derived from the 'Required by (source)' column of the DIGGS rigid inclusions technical report, which populates it on all 235 essential parameters.</gml:description>
-    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml</gml:identifier>
-    <gml:name>DIGGS Rigid Inclusions Specification Registry</gml:name>
+    gml:id="specifications">
+    <gml:description>Canonical citations of the published standards, codes, recommendations, test methods, agency special provisions and research reports cited across DIGGS practice. A data provider cites an entry by xlink:href from a property typed diggs:SpecificationPropertyType - normally diggs:RIProgramBasis/governingStandard, but also diggs:AbstractTestProcedureType/testProcedureMethod, diggs:AbstractSpecimenType/preparationProcedure and any other Specification-typed property - rather than retyping the standard's bibliographic detail. The href targets the diggs:Specification's gml:id, so it resolves to exactly the kind of object an instance would otherwise have carried inline; the enclosing diggs:SpecificationRegistryEntry carries the registration metadata, and its occurrences declare where the entry may legitimately be cited. One registry serves every domain of practice - see diggs:SpecificationRegistry's own schema documentation for why a per-domain split was tried and withdrawn - and each entry's domain element (coded against specificationDomain.xml) classifies which domain(s) cite it, so the registry stays browsable and filterable by practice area without being split into several files. Populated first for rigid inclusions, derived from the 'Required by (source)' column of the DIGGS rigid inclusions technical report, which populates it on all 235 essential parameters; laboratory testing, in-situ testing, sampling and construction domains are added as entries under the same registry rather than as separate documents.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml</gml:identifier>
+    <gml:name>DIGGS Specification Registry</gml:name>
     <diggs:registryEntry>
         <diggs:SpecificationRegistryEntry gml:id="entry_asiri_2012">
             <diggs:specification>
                 <diggs:Specification gml:id="asiri_2012">
                     <gml:description>French national research project recommendations for rigid inclusion ground improvement. Source of the Domain 1 / Domain 2 reinforcement distinction and of the settlement efficacy definition (Eq 2.23, p. 79).</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#asiri_2012</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#asiri_2012</gml:identifier>
                     <gml:name>ASIRI National Project Recommendations (2012)</gml:name>
                     <diggs:accreditingBody>IREX</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASIRI</diggs:standardReferenceNumber>
@@ -24,6 +24,7 @@
                     <diggs:standardVersion>2012</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -37,7 +38,7 @@
             <diggs:specification>
                 <diggs:Specification gml:id="bs_8006_1_2010">
                     <gml:description>British code of practice covering basal reinforcement over piled embankments, including the requirement that reinforcement carry at least 15 percent of the load.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#bs_8006_1_2010</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_8006_1_2010</gml:identifier>
                     <gml:name>BS 8006-1:2010+A1:2016</gml:name>
                     <diggs:accreditingBody>BSI</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>BS 8006-1</diggs:standardReferenceNumber>
@@ -45,6 +46,7 @@
                     <diggs:standardVersion>2010+A1:2016</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -58,7 +60,7 @@
             <diggs:specification>
                 <diggs:Specification gml:id="ebgeo_2011">
                     <gml:description>German recommendations for geosynthetic-reinforced earth structures. Source of the Zaeske arching model and of the Winkler subgrade reaction treatment of load transfer.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#ebgeo_2011</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ebgeo_2011</gml:identifier>
                     <gml:name>EBGEO (2011)</gml:name>
                     <diggs:accreditingBody>DGGT</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>EBGEO</diggs:standardReferenceNumber>
@@ -66,6 +68,7 @@
                     <diggs:standardVersion>2011</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -79,7 +82,7 @@
             <diggs:specification>
                 <diggs:Specification gml:id="fhwa_gec_13">
                     <gml:description>US Federal Highway Administration reference manual for ground modification. Source of the generalized parabolic and beam methods, the stress-reduction ratio and the membrane factor of Table 6-2.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#fhwa_gec_13</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#fhwa_gec_13</gml:identifier>
                     <gml:name>FHWA GEC-13 (FHWA-NHI-16-028)</gml:name>
                     <diggs:accreditingBody>FHWA</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>FHWA-NHI-16-028</diggs:standardReferenceNumber>
@@ -87,6 +90,7 @@
                     <diggs:standardVersion>2017</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -100,13 +104,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="ec7">
                     <gml:description>European standard for geotechnical design. Source of the Design Approach safety formats and of the consequence class framework.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#ec7</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ec7</gml:identifier>
                     <gml:name>Eurocode 7 - EN 1997</gml:name>
                     <diggs:accreditingBody>CEN</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>EN 1997</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Eurocode 7: Geotechnical design</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -120,7 +125,7 @@
             <diggs:specification>
                 <diggs:Specification gml:id="en_12699_2015">
                     <gml:description>European execution standard for displacement piles, covering the installation technique families used for rigid inclusions.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#en_12699_2015</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_12699_2015</gml:identifier>
                     <gml:name>EN 12699:2015</gml:name>
                     <diggs:accreditingBody>CEN</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>EN 12699</diggs:standardReferenceNumber>
@@ -128,6 +133,7 @@
                     <diggs:standardVersion>2015</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -144,7 +150,7 @@
             <diggs:specification>
                 <diggs:Specification gml:id="en_14679">
                     <gml:description>European execution standard for deep mixing, covering soil-mixed columns and soil-mixed load transfer platforms.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#en_14679</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_14679</gml:identifier>
                     <gml:name>EN 14679</gml:name>
                     <diggs:accreditingBody>CEN</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>EN 14679</diggs:standardReferenceNumber>
@@ -152,6 +158,7 @@
                     <diggs:standardVersion>2005</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -168,13 +175,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="dtu_13_3">
                     <gml:description>French unified technical document for the design and execution of ground-bearing concrete slabs, commonly the supported structure over a rigid inclusion treated area.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#dtu_13_3</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#dtu_13_3</gml:identifier>
                     <gml:name>DTU 13.3</gml:name>
                     <diggs:accreditingBody>AFNOR</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>DTU 13.3</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Dallages - Conception, calcul et execution (concrete ground-bearing slabs)</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -188,7 +196,7 @@
             <diggs:specification>
                 <diggs:Specification gml:id="ibc_2024_ch18">
                     <gml:description>US model building code chapter governing soils and foundations, including the seismic site class framework.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#ibc_2024_ch18</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ibc_2024_ch18</gml:identifier>
                     <gml:name>IBC 2024 Chapter 18</gml:name>
                     <diggs:accreditingBody>ICC</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>IBC</diggs:standardReferenceNumber>
@@ -196,6 +204,7 @@
                     <diggs:standardVersion>2024</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -209,13 +218,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="nf_p94_261">
                     <gml:description>French national application document to Eurocode 7 for shallow foundations.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#nf_p94_261</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_261</gml:identifier>
                     <gml:name>NF P94-261</gml:name>
                     <diggs:accreditingBody>AFNOR</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>NF P94-261</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Justification des ouvrages geotechniques - Fondations superficielles</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -229,13 +239,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="nf_p94_262">
                     <gml:description>French national application document to Eurocode 7 for deep foundations. Governs the verification of Domain 1 inclusions as deep foundations.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#nf_p94_262</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_262</gml:identifier>
                     <gml:name>NF P94-262</gml:name>
                     <diggs:accreditingBody>AFNOR</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>NF P94-262</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Justification des ouvrages geotechniques - Fondations profondes</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -249,7 +260,7 @@
             <diggs:specification>
                 <diggs:Specification gml:id="cur226">
                     <gml:description>Dutch design guideline for piled embankments. Source of the Concentric Arches load transfer model; ranked among the more accurate methods by Han et al. (2025).</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#cur226</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#cur226</gml:identifier>
                     <gml:name>CUR 226</gml:name>
                     <diggs:accreditingBody>CROW/CUR</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>CUR 226</diggs:standardReferenceNumber>
@@ -257,6 +268,7 @@
                     <diggs:standardVersion>2016</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -270,13 +282,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d1143">
                     <gml:description>Static axial compressive load testing of deep foundations, applied to rigid inclusion trial and production columns.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#astm_d1143</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1143</gml:identifier>
                     <gml:name>ASTM D1143</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASTM D1143/D1143M</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Standard Test Methods for Deep Foundations Under Static Axial Compressive Load</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -293,13 +306,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d5882">
                     <gml:description>Low strain impact integrity testing, the basis of the low-strain integrity verification of rigid inclusion columns.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#astm_d5882</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5882</gml:identifier>
                     <gml:name>ASTM D5882</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASTM D5882</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Standard Test Method for Low Strain Impact Integrity Testing of Deep Foundations</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -316,13 +330,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d7383">
                     <gml:description>Rapid (force pulse) load testing of deep foundations.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#astm_d7383</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d7383</gml:identifier>
                     <gml:name>ASTM D7383</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASTM D7383</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Standard Test Methods for Axial Compressive Force Pulse (Rapid) Testing of Deep Foundations</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -339,13 +354,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d4945">
                     <gml:description>High-strain dynamic testing of deep foundations.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#astm_d4945</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d4945</gml:identifier>
                     <gml:name>ASTM D4945</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASTM D4945</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Standard Test Method for High-Strain Dynamic Testing of Deep Foundations</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -362,13 +378,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d6637">
                     <gml:description>Tensile testing of geogrids, the source of the characteristic tensile strength used in load transfer platform reinforcement design.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#astm_d6637</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d6637</gml:identifier>
                     <gml:name>ASTM D6637</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASTM D6637/D6637M</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Standard Test Method for Determining Tensile Properties of Geogrids by the Single or Multi-Rib Tensile Method</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -385,13 +402,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d1196">
                     <gml:description>Nonrepetitive static plate load testing, used for plate bearing verification over a treated area.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#astm_d1196</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1196</gml:identifier>
                     <gml:name>ASTM D1196</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASTM D1196/D1196M</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Standard Test Method for Nonrepetitive Static Plate Load Tests of Soils and Flexible Pavement Components</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -408,16 +426,17 @@
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d1194">
                     <gml:description>Withdrawn ASTM method for static plate load testing of spread footings. Retained because instances published while it was current cite it; use ASTM D1196 for new work.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#astm_d1194</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1194</gml:identifier>
                     <gml:name>ASTM D1194 (withdrawn)</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASTM D1194</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Standard Test Method for Bearing Capacity of Soil for Static Load and Spread Footings</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:registryStatus>withdrawn</diggs:registryStatus>
-            <diggs:supersededByRef xlink:href="https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#astm_d1196"/>
+            <diggs:supersededByRef xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1196"/>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
@@ -433,13 +452,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d2487">
                     <gml:description>USCS soil classification. Registered as a citable governing document; the classification values themselves are controlled by the astmD2487 code list.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#astm_d2487</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487</gml:identifier>
                     <gml:name>ASTM D2487</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASTM D2487</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System)</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -456,13 +476,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d2488">
                     <gml:description>Visual-manual soil description. Registered as a citable governing document; the description values themselves are controlled by the astmD2488 code list.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#astm_d2488</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2488</gml:identifier>
                     <gml:name>ASTM D2488</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASTM D2488</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Standard Practice for Description and Identification of Soils (Visual-Manual Procedures)</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -479,13 +500,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="iso_22476_4">
                     <gml:description>Menard pressuremeter testing, the source of the pressuremeter modulus and limit pressure used in French rigid inclusion design practice.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#iso_22476_4</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22476_4</gml:identifier>
                     <gml:name>ISO 22476-4</gml:name>
                     <diggs:accreditingBody>ISO</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ISO 22476-4</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Geotechnical investigation and testing - Field testing - Part 4: Menard pressuremeter test</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -502,13 +524,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="kdot_special_provision">
                     <gml:description>State agency special provision specifying permitted inclusion types and acceptance requirements.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#kdot_special_provision</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#kdot_special_provision</gml:identifier>
                     <gml:name>KDOT special provision</gml:name>
                     <diggs:accreditingBody>Kansas Department of Transportation</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>KDOT</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Kansas Department of Transportation special provision for rigid inclusions / column-supported embankments</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -522,13 +545,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="mndot_special_provision">
                     <gml:description>State agency special provision specifying permitted inclusion types, instrumentation and acceptance requirements.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#mndot_special_provision</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#mndot_special_provision</gml:identifier>
                     <gml:name>MnDOT special provision</gml:name>
                     <diggs:accreditingBody>Minnesota Department of Transportation</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>MnDOT</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Minnesota Department of Transportation special provision for rigid inclusions / column-supported embankments</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -542,13 +566,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="iadot_special_provision">
                     <gml:description>State agency special provision specifying permitted inclusion types and acceptance requirements.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#iadot_special_provision</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iadot_special_provision</gml:identifier>
                     <gml:name>IaDOT special provision</gml:name>
                     <diggs:accreditingBody>Iowa Department of Transportation</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>IaDOT</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Iowa Department of Transportation special provision for rigid inclusions / column-supported embankments</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -562,13 +587,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="penndot_special_provision">
                     <gml:description>State agency special provision specifying permitted inclusion types and acceptance requirements.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#penndot_special_provision</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#penndot_special_provision</gml:identifier>
                     <gml:name>PennDOT special provision</gml:name>
                     <diggs:accreditingBody>Pennsylvania Department of Transportation</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>PennDOT</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Pennsylvania Department of Transportation special provision for rigid inclusions / column-supported embankments</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -582,13 +608,14 @@
             <diggs:specification>
                 <diggs:Specification gml:id="nchrp_10_121">
                     <gml:description>US national cooperative highway research program project developing AASHTO specifications for column-supported embankments.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#nchrp_10_121</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nchrp_10_121</gml:identifier>
                     <gml:name>NCHRP 10-121</gml:name>
                     <diggs:accreditingBody>Transportation Research Board</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>NCHRP 10-121</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Proposed AASHTO specifications and commentary for column-supported embankments</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -602,7 +629,7 @@
             <diggs:specification>
                 <diggs:Specification gml:id="dfi_smith_2023a">
                     <gml:description>Deep Foundations Institute publication on rigid inclusion practice; source of the seismic site class commentary.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#dfi_smith_2023a</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#dfi_smith_2023a</gml:identifier>
                     <gml:name>DFI - Smith et al. (2023a)</gml:name>
                     <diggs:accreditingBody>Deep Foundations Institute</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>DFI Smith 2023a</diggs:standardReferenceNumber>
@@ -610,6 +637,7 @@
                     <diggs:standardVersion>2023</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -623,7 +651,7 @@
             <diggs:specification>
                 <diggs:Specification gml:id="dfi_smith_2023b">
                     <gml:description>Companion Deep Foundations Institute publication on rigid inclusion practice.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#dfi_smith_2023b</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#dfi_smith_2023b</gml:identifier>
                     <gml:name>DFI - Smith et al. (2023b)</gml:name>
                     <diggs:accreditingBody>Deep Foundations Institute</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>DFI Smith 2023b</diggs:standardReferenceNumber>
@@ -631,6 +659,7 @@
                     <diggs:standardVersion>2023</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -644,7 +673,7 @@
             <diggs:specification>
                 <diggs:Specification gml:id="han_et_al_2025">
                     <gml:description>Comparative evaluation of column-supported embankment design methods; source of the accuracy ranking that places CUR 226 among the more accurate methods.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/rigidInclusions.xml#han_et_al_2025</gml:identifier>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#han_et_al_2025</gml:identifier>
                     <gml:name>Han et al. (2025) - FHWA-KS-25-02</gml:name>
                     <diggs:accreditingBody>Kansas Department of Transportation</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>FHWA-KS-25-02</diggs:standardReferenceNumber>
@@ -652,6 +681,7 @@
                     <diggs:standardVersion>2025</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>

@@ -2,11 +2,17 @@
  * Behaviour for DIGGS Specification Registry pages rendered by
  * https://diggsml.org/def/stylesheets/registry.xsl
  *
- * Two jobs:
+ * Three jobs:
  *   1. Search - filter the entry cards on any visible text (name, id, title,
  *      accrediting body, ...), so a provider can confirm a standard is
  *      registered before citing it.
- *   2. Citation - build a ready-to-paste xlink:href for EVERY property the
+ *   2. Domain filter (R15) - a single registry now spans every domain of
+ *      practice, so the "All domains" dropdown narrows the card list to one
+ *      domain first; the search box then searches WITHIN that narrowed list -
+ *      a card must pass both to show. The dropdown's own options are built at
+ *      load time from whatever domains the document actually declares, never
+ *      hand-maintained here.
+ *   3. Citation - build a ready-to-paste xlink:href for EVERY property the
  *      entry may be cited from, each independently copyable. A standard
  *      registered for both governingStandard and testProcedureMethod gets one
  *      snippet per use, because a provider populating a test procedure needs
@@ -112,18 +118,88 @@ function legacyCopy(text, done) {
 }
 
 /* ------------------------------------------------------------------ *
- * Search
+ * Domain filter
+ * ------------------------------------------------------------------ */
+
+/*
+ * "rigid_inclusions" -> "Rigid Inclusions". Domain codes are lower_snake_case ids (the
+ * dictionary-wide convention - see specificationDomain.xml); text content on diggs:domain is not
+ * guaranteed to be a display label, so every domain badge and dropdown option is labelled purely
+ * from the id, never from whatever text an instance happened to carry.
+ */
+function formatDomainLabel(id) {
+    if (!id) return "";
+    var words = id.split("_");
+    for (var i = 0; i < words.length; i++) {
+        if (words[i].length) words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
+    return words.join(" ");
+}
+
+/* Replace every domain badge's text with its formatted label, derived from data-domain-id. */
+function prettifyDomainBadges() {
+    var badges = document.getElementsByClassName("domain-badge");
+    for (var i = 0; i < badges.length; i++) {
+        badges[i].textContent = formatDomainLabel(badges[i].getAttribute("data-domain-id"));
+    }
+}
+
+/*
+ * Build the "All domains" dropdown from whatever domains actually appear on the page - never
+ * hand-maintained, so a new domain added to the registry shows up here with no stylesheet change.
+ * Reads each card's data-domains attribute (space-separated ids) rather than the badges
+ * themselves, so a domain still gets an option even if a future layout stops rendering badges.
+ */
+function populateDomainFilter() {
+    var select = document.getElementById("domainFilter");
+    if (!select) return;
+    var cards = document.getElementsByClassName("card");
+    var seen = {};
+    var ids = [];
+
+    for (var i = 0; i < cards.length; i++) {
+        var raw = cards[i].getAttribute("data-domains") || "";
+        var tokens = raw.split(/\s+/).filter(function (s) { return s.length > 0; });
+        for (var j = 0; j < tokens.length; j++) {
+            if (!seen[tokens[j]]) { seen[tokens[j]] = true; ids.push(tokens[j]); }
+        }
+    }
+
+    ids.sort(function (a, b) {
+        return formatDomainLabel(a).localeCompare(formatDomainLabel(b));
+    });
+
+    for (var k = 0; k < ids.length; k++) {
+        var opt = document.createElement("option");
+        opt.value = ids[k];
+        opt.textContent = formatDomainLabel(ids[k]);
+        select.appendChild(opt);
+    }
+}
+
+/* ------------------------------------------------------------------ *
+ * Search + domain filter (combined - a card must satisfy both)
  * ------------------------------------------------------------------ */
 
 function filterRegistry() {
     var input = document.getElementById("myInput");
     var filter = input.value.toUpperCase().trim();
+    var domainSelect = document.getElementById("domainFilter");
+    var domain = domainSelect ? domainSelect.value : "";
     var cards = document.getElementsByClassName("card");
     var shown = 0;
 
     for (var i = 0; i < cards.length; i++) {
         var text = (cards[i].textContent || cards[i].innerText).toUpperCase();
-        var match = filter === "" || text.indexOf(filter) > -1;
+        var textMatch = filter === "" || text.indexOf(filter) > -1;
+
+        var domainMatch = true;
+        if (domain !== "") {
+            var cardDomains = (cards[i].getAttribute("data-domains") || "").split(/\s+/);
+            domainMatch = cardDomains.indexOf(domain) > -1;
+        }
+
+        var match = textMatch && domainMatch;
         cards[i].style.display = match ? "" : "none";
         if (match) shown++;
     }
@@ -166,6 +242,8 @@ function focusFragment() {
 
 function loadRegistry() {
     buildCitations();
+    prettifyDomainBadges();
+    populateDomainFilter();
     filterRegistry();
     focusFragment();
 }
