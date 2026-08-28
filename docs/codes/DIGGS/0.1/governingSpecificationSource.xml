@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="governingSpecificationSource">
+    <gml:description>Codes naming whose document governs the work under a contract - as distinct from which standard it invokes (see the specification registry, diggs:RIProgramBasisType/governingStandard). These codes are used for the value of the governingSpecificationSource property of the diggs:Contract object. Options drawn from the state-of-the-practice survey Han et al. (2025) reproduces (RI-DIGGS Technical Report Table 3-1, Figure 3-35).</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/governingSpecificationSource.xml</gml:identifier>
+    <gml:name>DIGGS Governing Specification Source Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="owner_or_agency_provisions">
+            <gml:description>The governing specification is the project owner's or a public agency's own provisions - for example a state transportation agency's special provisions for rigid inclusions. The most common answer in the state-of-the-practice survey (Han et al. 2025).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/governingSpecificationSource.xml#owner_or_agency_provisions</gml:identifier>
+            <gml:name>Owner or agency provisions</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Contract/diggs:governingSpecificationSource</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="contractor_specifications">
+            <gml:description>The governing specification is the contractor's own submitted specification, rather than one issued by the owner or a public agency.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/governingSpecificationSource.xml#contractor_specifications</gml:identifier>
+            <gml:name>Contractor specifications</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Contract/diggs:governingSpecificationSource</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="none">
+            <gml:description>No formal specification governs the work.</gml:description>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Contract/diggs:governingSpecificationSource</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>

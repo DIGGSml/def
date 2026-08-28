@@ -180,7 +180,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:project//diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -194,7 +194,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:project//diggs:rolePerformed</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
