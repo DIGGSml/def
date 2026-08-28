@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="analysisApproach">
+    <gml:description>Codes naming the class of calculation a rigid inclusion design was arrived at by. These codes are used for the value of the analysisApproach property of the diggs:RIProgramBasis object. Distinct from designMethod, which names a specific published method and is meaningful only where this value is analytical_method - numerical analysis, personal experience and load testing each select no named method at all. Options drawn from the state-of-the-practice survey Han et al. (2025) reproduces (RI-DIGGS Technical Report Table 3-1, Figure 3-13).</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/analysisApproach.xml</gml:identifier>
+    <gml:name>DIGGS Analysis Approach Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="analytical_method">
+            <gml:description>The design was calculated using a published closed-form or semi-analytical method - for example the FHWA beam or strain-compatibility methods, BS 8006-1, EBGEO, CUR226 or the Nordic method - recorded in the design's designMethod.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/analysisApproach.xml#analytical_method</gml:identifier>
+            <gml:name>Analytical method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:analysisApproach</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="numerical_analysis">
+            <gml:description>The design was calculated using a numerical method, most commonly finite-element or finite-difference analysis, rather than a published closed-form analytical method.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/analysisApproach.xml#numerical_analysis</gml:identifier>
+            <gml:name>Numerical analysis</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:analysisApproach</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="personal_experience">
+            <gml:description>The design was set by engineering judgment or precedent rather than an explicit analytical or numerical calculation.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/analysisApproach.xml#personal_experience</gml:identifier>
+            <gml:name>Personal experience</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:analysisApproach</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="load_testing">
+            <gml:description>The design basis was established or verified by pre-production or proof load testing rather than by calculation alone.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/analysisApproach.xml#load_testing</gml:identifier>
+            <gml:name>Load testing</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:analysisApproach</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
