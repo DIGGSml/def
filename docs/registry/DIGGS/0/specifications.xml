@@ -305,9 +305,9 @@
         <diggs:SpecificationRegistryEntry gml:id="entry_astm_d5882">
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d5882">
-                    <gml:description>Low strain impact integrity testing, the basis of the low-strain integrity verification of rigid inclusion columns.</gml:description>
+                    <gml:description>Low strain impact integrity testing, the basis of the low-strain integrity verification of rigid inclusion columns. Withdrawn by ASTM in 2025 with no replacement named; a reinstatement effort (ASTM work item WK93548) is in progress. Retained and citable for the same reason ASTM D1194 is - the workbook, the industry, and instances published before and after the withdrawal all mean this standard by "PIT"/low-strain integrity testing.</gml:description>
                     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5882</gml:identifier>
-                    <gml:name>ASTM D5882</gml:name>
+                    <gml:name>ASTM D5882 (withdrawn)</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
                     <diggs:standardReferenceNumber>ASTM D5882</diggs:standardReferenceNumber>
                     <diggs:standardTitle>Standard Test Method for Low Strain Impact Integrity Testing of Deep Foundations</diggs:standardTitle>
@@ -315,6 +315,7 @@
             </diggs:specification>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
@@ -782,6 +783,54 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_nf_p94_160_2">
+            <diggs:specification>
+                <diggs:Specification gml:id="nf_p94_160_2">
+                    <gml:description>French national standard for the reflection (sonic-echo) method of low-strain foundation-element integrity auscultation - the French-tradition counterpart to ASTM D5882's Pulse Echo Method, registered as its own separate standard rather than one method choice within a wider document.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_160_2</gml:identifier>
+                    <gml:name>NF P94-160-2</gml:name>
+                    <diggs:accreditingBody>AFNOR</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>NF P94-160-2</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Sols : reconnaissance et essais - Auscultation d'un element de fondation - Partie 2 : methode par reflexion</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_nf_p94_160_4">
+            <diggs:specification>
+                <diggs:Specification gml:id="nf_p94_160_4">
+                    <gml:description>French national standard for the impedance method of low-strain foundation-element integrity auscultation - the French-tradition counterpart to ASTM D5882's Transient Response Method, registered as its own separate standard rather than one method choice within a wider document.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_160_4</gml:identifier>
+                    <gml:name>NF P94-160-4</gml:name>
+                    <diggs:accreditingBody>AFNOR</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>NF P94-160-4</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Sols : reconnaissance et essais - Auscultation d'un element de fondation - Partie 4 : methode par impedance</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>

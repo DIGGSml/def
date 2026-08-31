@@ -381,4 +381,18 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="low_strain_impact_hammer">
+            <gml:description>The small handheld hammer (typically plastic- or rubber-tipped) used to apply the impact in a low-strain integrity test, per ASTM D5882 or NF P94-160-2/-4. Distinct from equipmentClass.xml#dynamic_test_hammer, the much larger drop or diesel hammer used to apply a high-strain blow in ASTM D4945 dynamic load testing - the two tests use different equipment at entirely different energy scales.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#low_strain_impact_hammer</gml:identifier>
+            <gml:name>Low-Strain Impact Hammer</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

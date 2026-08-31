@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="lowStrainTestMethod">
+    <gml:description>Codes classifying the analysis method used in a low-strain integrity test - ASTM D5882's two named methods (Pulse Echo Method, time-domain; Transient Response Method, frequency-domain), which the French national standards NF P94-160-2 (reflection/sonic-echo method) and NF P94-160-4 (impedance method) register as two separate documents rather than one standard with an internal method choice. Used for the value of diggs:LowStrainIntegrityTestType/testMethod.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/lowStrainTestMethod.xml</gml:identifier>
+    <gml:name>DIGGS Low Strain Integrity Test Method Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="pulse_echo">
+            <gml:description>Pile head motion (velocity, from an accelerometer or geophone) is measured as a function of time following hammer impact, and the time-domain record is evaluated directly for reflections indicating a change in impedance - a discontinuity, void, or the pile toe. ASTM D5882's Pulse Echo Method; corresponds to the French reflection/sonic-echo method, NF P94-160-2.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/lowStrainTestMethod.xml#pulse_echo</gml:identifier>
+            <gml:name>Pulse Echo Method (PEM)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:LowStrainIntegrityTest/diggs:testMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="transient_response">
+            <gml:description>Pile head motion and force (the latter from an instrumented hammer) are measured as a function of time and the data are evaluated in the frequency domain via the mobility (velocity/force) spectrum. ASTM D5882's Transient Response Method; corresponds to the French impedance method, NF P94-160-4.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/lowStrainTestMethod.xml#transient_response</gml:identifier>
+            <gml:name>Transient Response Method (TRM)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:LowStrainIntegrityTest/diggs:testMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
