@@ -3479,4 +3479,61 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="modulus_of_subgrade_reaction">
+            <gml:description>The ratio of applied bearing pressure to plate settlement (k) derived from a plate-bearing load test - ASTM D1195/D1196's characteristic output. Force per unit volume (pressure/deflection), reported in units such as kN/m3 or pci.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_of_subgrade_reaction</gml:identifier>
+            <gml:name>Modulus of Subgrade Reaction</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per volume</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PlateLoadTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ZoneLoadTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="deformation_modulus_first_load">
+            <gml:description>The deformation modulus derived from the load-settlement curve of the FIRST loading cycle of a two-cycle plate-bearing load test, per DIN 18134. Reflects the initial condition of the ground or platform material, including particle rearrangement and closure of air voids.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#deformation_modulus_first_load</gml:identifier>
+            <gml:name>Deformation Modulus, First Load (Ev1)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PlateLoadTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ZoneLoadTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="deformation_modulus_second_load">
+            <gml:description>The deformation modulus derived from the load-settlement curve of the SECOND loading cycle of a two-cycle plate-bearing load test, per DIN 18134. Primarily reflects the repeatable elastic behaviour of the ground or platform material after the first cycle's initial compression. The ratio Ev2/Ev1 (see #deformation_modulus_first_load) is DIN 18134's own reported indicator of the degree of compaction achieved.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#deformation_modulus_second_load</gml:identifier>
+            <gml:name>Deformation Modulus, Second Load (Ev2)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:PlateLoadTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ZoneLoadTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

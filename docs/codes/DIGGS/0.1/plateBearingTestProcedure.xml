@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="plateBearingTestProcedure">
+    <gml:description>Codes classifying the load-cycle procedure used for a plate-bearing load test. Used for the value of diggs:AbstractPlateBearingTestProcedureType/loadingProcedure (diggs:PlateLoadTest and diggs:ZoneLoadTest). Spans three traditions: ASTM D1196's single-cycle procedure, ASTM D1195's repetitive (multi-cycle) procedure, and DIN 18134's two-cycle procedure, which reports its two named moduli (Ev1, Ev2) as separate properties (see properties.xml#deformation_modulus_first_load / #deformation_modulus_second_load).</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/plateBearingTestProcedure.xml</gml:identifier>
+    <gml:name>DIGGS Plate Bearing Test Procedure Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="nonrepetitive">
+            <gml:description>A single load application, in increments, to the maximum test load, without unload/reload cycling. ASTM D1196.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/plateBearingTestProcedure.xml#nonrepetitive</gml:identifier>
+            <gml:name>Nonrepetitive</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:PlateLoadTest/diggs:loadingProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:ZoneLoadTest/diggs:loadingProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="repetitive">
+            <gml:description>The load applied and removed through repeated cycles to progressively higher levels, used for airport and highway pavement component design. ASTM D1195.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/plateBearingTestProcedure.xml#repetitive</gml:identifier>
+            <gml:name>Repetitive</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:PlateLoadTest/diggs:loadingProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:ZoneLoadTest/diggs:loadingProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="two_cycle">
+            <gml:description>Exactly two load cycles to a prescribed maximum stress, each in not less than six approximately equal stages, reporting a deformation modulus from each cycle (Ev1 from the first, Ev2 from the second) whose ratio indicates the degree of compaction. DIN 18134.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/plateBearingTestProcedure.xml#two_cycle</gml:identifier>
+            <gml:name>Two-Cycle (DIN 18134)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:PlateLoadTest/diggs:loadingProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:ZoneLoadTest/diggs:loadingProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>

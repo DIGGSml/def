@@ -103,4 +103,32 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="plate_load_test">
+            <gml:description>A plate-bearing load test on a single deep foundation element head, measuring ground or platform stiffness rather than the element's own axial capacity, per ASTM D1194 (withdrawn 2003, still in practical use), ASTM D1195/D1196, or DIN 18134.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test</gml:identifier>
+            <gml:name>Plate load test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>ASTM D1196</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="zone_load_test">
+            <gml:description>A large-plate load test on a load transfer platform over a group of columns, per BS 8006-1 (which requires the test), typically executed to ASTM D1195/D1196 or DIN 18134's methodology.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#zone_load_test</gml:identifier>
+            <gml:name>Zone load test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>BS 8006-1</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
