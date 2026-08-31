@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="rapidLoadTestAnalysisMethod">
+    <gml:description>Codes classifying the method used to derive an equivalent static load-displacement response from rapid (force-pulse) load test data. Used for the value of diggs:RapidLoadTestType/analysisMethod. The two named methods are the interpretation techniques both ASTM D7383 and EN ISO 22477-10 practice draw on; neither standard body treats them as specific to the other.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/rapidLoadTestAnalysisMethod.xml</gml:identifier>
+    <gml:name>DIGGS Rapid Load Test Analysis Method Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="unloading_point_method">
+            <gml:description>Derives an equivalent static load-displacement curve from the measured force-pulse and displacement data by removing velocity-dependent (damping) resistance at the point of maximum displacement, where velocity is momentarily zero. The standard interpretation method for rapid load test data.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/rapidLoadTestAnalysisMethod.xml#unloading_point_method</gml:identifier>
+            <gml:name>Unloading Point Method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RapidLoadTest/diggs:analysisMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="modified_unloading_point_method">
+            <gml:description>A refinement of the Unloading Point Method that additionally accounts for the unloading stiffness of the ground, improving the derived static resistance where the basic method under- or over-predicts it.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/rapidLoadTestAnalysisMethod.xml#modified_unloading_point_method</gml:identifier>
+            <gml:name>Modified Unloading Point Method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RapidLoadTest/diggs:analysisMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="other">
+            <gml:description>A rapid-load interpretation method other than the Unloading Point Method or its Modified form.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/rapidLoadTestAnalysisMethod.xml#other</gml:identifier>
+            <gml:name>Other</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RapidLoadTest/diggs:analysisMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="rapidLoadTestCategory">
+    <gml:description>Codes classifying a rapid (force-pulse) load test by its purpose, per EN ISO 22477-10's investigation-test/control-test distinction. Used for the value of diggs:RapidLoadTestType/testCategory. ASTM D7383 does not name an equivalent axis; leave this element absent for a test governed by ASTM alone with no comparable classification stated.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/rapidLoadTestCategory.xml</gml:identifier>
+    <gml:name>DIGGS Rapid Load Test Category Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="investigation_test">
+            <gml:description>A sacrificial test element loaded to ultimate limit state to assess its resistance. EN ISO 22477-10.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/rapidLoadTestCategory.xml#investigation_test</gml:identifier>
+            <gml:name>Investigation Test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RapidLoadTest/diggs:testCategory</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="control_test">
+            <gml:description>A working (non-sacrificial) test element loaded to a specified load in excess of its serviceability limit state, to confirm it behaves as designed. EN ISO 22477-10.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/rapidLoadTestCategory.xml#control_test</gml:identifier>
+            <gml:name>Control Test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RapidLoadTest/diggs:testCategory</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>

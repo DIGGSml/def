@@ -353,4 +353,32 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="rapid_load_device">
+            <gml:description>The pneumatic or hydraulic force-pulse generator used to apply the load in a rapid load test - a Statnamic device or an equivalent force-pulse actuator, per ASTM D7383 or EN ISO 22477-10.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#rapid_load_device</gml:identifier>
+            <gml:name>Rapid Load Test Device</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="dynamic_test_hammer">
+            <gml:description>The impact hammer used to apply the blow(s) in a high-strain dynamic load test, per ASTM D4945 or EN ISO 22477-4.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#dynamic_test_hammer</gml:identifier>
+            <gml:name>Dynamic Load Test Hammer</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

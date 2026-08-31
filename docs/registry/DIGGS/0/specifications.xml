@@ -374,6 +374,78 @@
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
     <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_en_iso_22477_1">
+            <diggs:specification>
+                <diggs:Specification gml:id="en_iso_22477_1">
+                    <gml:description>Static axial compressive load testing of piles by the maintained-load method, the current European counterpart to ASTM D1143 for the same test - the standard most ASIRI-governed European rigid inclusion projects cite for a static load test, superseding the withdrawn NF P94-150-1 that ASIRI (2012) itself was written against.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_iso_22477_1</gml:identifier>
+                    <gml:name>EN ISO 22477-1</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>EN ISO 22477-1</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Testing of geotechnical structures - Part 1: Testing of piles: static compression load testing</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_en_iso_22477_10">
+            <diggs:specification>
+                <diggs:Specification gml:id="en_iso_22477_10">
+                    <gml:description>Rapid (force-pulse) axial compressive load testing of piles, the European counterpart to ASTM D7383 for the same test.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_iso_22477_10</gml:identifier>
+                    <gml:name>EN ISO 22477-10</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>EN ISO 22477-10</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Testing of geotechnical structures - Part 10: Testing of piles: rapid load testing</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_en_iso_22477_4">
+            <diggs:specification>
+                <diggs:Specification gml:id="en_iso_22477_4">
+                    <gml:description>High-strain dynamic load testing of piles, the European counterpart to ASTM D4945 for the base impact-testing method, and broader in scope - it also covers driving-formula, wave-equation and multi-blow dynamic testing under the same standard number.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_iso_22477_4</gml:identifier>
+                    <gml:name>EN ISO 22477-4</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>EN ISO 22477-4</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Testing of geotechnical structures - Part 4: Dynamic load testing of piles</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
         <diggs:SpecificationRegistryEntry gml:id="entry_astm_d6637">
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d6637">

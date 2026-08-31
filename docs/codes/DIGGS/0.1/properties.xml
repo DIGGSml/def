@@ -3464,4 +3464,19 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="critical_creep_load">
+            <gml:description>The load at which the rate of settlement under sustained load becomes unacceptably large - conventionally the load level above which the rate of creep settlement increases sharply with each load increment, taken from a static load test loading schedule that includes sustained-load (creep) readings at one or more increments. A result of diggs:StaticLoadTest.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#critical_creep_load</gml:identifier>
+            <gml:name>Critical Creep Load</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticLoadTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
