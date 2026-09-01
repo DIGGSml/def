@@ -2683,6 +2683,10 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:StaticConePenetrationTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ThermalIntegrityProfiling</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -3547,6 +3551,21 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="effective_radius">
+            <gml:description>The as-built effective radius (or equivalent cross-sectional dimension) at a given depth, interpreted from a thermal integrity profiling temperature record by comparing the measured heat signature against the response expected for the design cross-section - a reduction indicates necking or a concrete deficiency, an increase indicates bulging. A result of diggs:ThermalIntegrityProfiling.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#effective_radius</gml:identifier>
+            <gml:name>Effective Radius</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:ThermalIntegrityProfiling</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

@@ -395,4 +395,32 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="thermal_integrity_probe">
+            <gml:description>The probe lowered into access ducts to take temperature readings in ASTM D7949 Method A thermal integrity profiling. Distinct from equipmentClass.xml#thermistor, which is the embedded sensor Method B uses instead - the two methods use different equipment classes for the same underlying measurement.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#thermal_integrity_probe</gml:identifier>
+            <gml:name>Thermal Integrity Profiling Probe</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="embedded_fiber_optic_cable">
+            <gml:description>The fiber-optic cable attached to the reinforcing cage and cast into the concrete for ASTM D7949 Method C thermal integrity profiling, giving effectively continuous temperature coverage along the element's length.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#embedded_fiber_optic_cable</gml:identifier>
+            <gml:name>Embedded Fiber-Optic Cable</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

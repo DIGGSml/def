@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="thermalIntegrityProfilingMethod">
+    <gml:description>Codes classifying which of ASTM D7949's three measurement methods was used in a thermal integrity profiling test - a thermal probe lowered into access ducts (Method A), embedded thermal sensors attached to the reinforcing cage (Method B), or embedded fiber-optic cable attached to the cage (Method C, added in the 2025 reinstatement of the standard). Used for the value of diggs:ThermalIntegrityProfilingType/measurementMethod.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/thermalIntegrityProfilingMethod.xml</gml:identifier>
+    <gml:name>DIGGS Thermal Integrity Profiling Method Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="thermal_probe">
+            <gml:description>Temperature is measured by lowering a thermal probe into access ducts (tubes) installed in the element during construction, taking readings at intervals along the length. ASTM D7949 Method A.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/thermalIntegrityProfilingMethod.xml#thermal_probe</gml:identifier>
+            <gml:name>Thermal Probe (Method A)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:ThermalIntegrityProfiling/diggs:measurementMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="embedded_thermal_sensor">
+            <gml:description>Temperature is measured by multiple thermistors attached to the reinforcing cage at several locations around its perimeter and at intervals along its length, cast into the concrete and read out after placement. ASTM D7949 Method B.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/thermalIntegrityProfilingMethod.xml#embedded_thermal_sensor</gml:identifier>
+            <gml:name>Embedded Thermal Sensor (Method B)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:ThermalIntegrityProfiling/diggs:measurementMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="embedded_fiber_optic">
+            <gml:description>Temperature is measured by fiber-optic cable attached to the reinforcing cage and cast into the concrete, giving effectively continuous coverage along the length rather than discrete sensor stations. ASTM D7949 Method C, added in the standard's 2025 reinstatement.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/thermalIntegrityProfilingMethod.xml#embedded_fiber_optic</gml:identifier>
+            <gml:name>Embedded Fiber-Optic Cable (Method C)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:ThermalIntegrityProfiling/diggs:measurementMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
