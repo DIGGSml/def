@@ -129,4 +129,32 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="penetration_rate">
+            <gml:description>The rate at which the installation tool advances into the ground, as a design property a conformance criterion may govern. The design-side counterpart of mwd_properties.xml#penetration_rate, which names the same quantity as MEASURED during drilling; this entry names it as the subject of a requirement. Together with torque it is the pair a drilling refusal rule is normally written on, and such a rule is conjunctive - see diggs:CompositeAcceptanceCriterion.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#penetration_rate</gml:identifier>
+            <gml:name>Penetration rate</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="torque">
+            <gml:description>The rotational force applied to the installation tool, as a design property a conformance criterion may govern. The design-side counterpart of mwd_properties.xml#torque, which names the same quantity as MEASURED during drilling. Paired with penetration_rate in a refusal criterion: neither alone defines refusal, which is why the combination is stated as a diggs:CompositeAcceptanceCriterion rather than left implicit in two co-scoped criteria.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#torque</gml:identifier>
+            <gml:name>Torque</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
