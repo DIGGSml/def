@@ -3585,4 +3585,19 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="magnesium_content">
+            <gml:description>Magnesium content by lab testing (corrosivity series). Completes the chemistry set the ground-aggressivity classifications are derived from: EN 206 grades chemical attack partly on magnesium ion content, and BS 8500 derives its ACEC class from sulfate AND magnesium together via BRE Special Digest 1, so an exposureClassification could be stated without the measurement that justifies it. Added at R10 from the Jazera project record (GBL-24136), which reports 571-954 ppm alongside its sulfate, chloride and pH results.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#magnesium_content</gml:identifier>
+            <gml:name>Magnesium Content</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
