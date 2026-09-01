@@ -21,7 +21,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="verticality">
-            <gml:description>The as-built inclination of the element from vertical (or from its designed batter), measured against its design tolerance.</gml:description>
+            <gml:description>The as-built inclination of the element from vertical (or from its designed batter), measured against its design tolerance. THE SPECIAL CASE OF alignment_deviation IN WHICH THE INTENDED ALIGNMENT IS VERTICAL, which is always so for rigid inclusion columns. Use alignment_deviation instead for an element intended to be raked, where a tolerance measured from vertical would be dominated by the design rake rather than by construction error. Judged against the alignmentDeviation property of diggs:AbstractLinearSamplingFeatureType (VERT1).</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#verticality</gml:identifier>
             <gml:name>Verticality</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -148,6 +148,20 @@
             <gml:description>The rotational force applied to the installation tool, as a design property a conformance criterion may govern. The design-side counterpart of mwd_properties.xml#torque, which names the same quantity as MEASURED during drilling. Paired with penetration_rate in a refusal criterion: neither alone defines refusal, which is why the combination is stated as a diggs:CompositeAcceptanceCriterion rather than left implicit in two co-scoped criteria.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#torque</gml:identifier>
             <gml:name>Torque</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="alignment_deviation">
+            <gml:description>A tolerance on how far the constructed element may depart from its INTENDED alignment, judged against the alignmentDeviation property of diggs:AbstractLinearSamplingFeatureType. Dimensionless - a ratio in Euc or a percentage in %, the same quantity in two uoms, so a 1:100 tolerance is 0.01 Euc or 1 %. USE THIS RATHER THAN verticality WHERE THE ELEMENT IS NOT INTENDED TO BE VERTICAL - a raked grout hole or a battered pile, whose tolerance governs construction error about the design rake and not departure from vertical. The two terms are the same measurement against different datums: verticality is the special case of this one where the intended alignment is vertical, which is always true of rigid inclusion columns. Both are retained because a specification that says 'verticality tolerance 1:100' should be transcribable in the words it uses. Built at VERT1.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#alignment_deviation</gml:identifier>
+            <gml:name>Alignment deviation</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
