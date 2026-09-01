@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="headShape">
+    <gml:description>Codes for the plan shape of an enlarged column head or cap, used for the value of the headShape property of diggs:RIColumnHead. The shape is what makes a single plan dimension interpretable: headWidth is the side of a square, the diameter of a circle, or the smaller side of a rectangle, and those differ in plan area. Deliberately NOT diggs:PileShapeEnumExtType, which describes a pile's structural cross section and carries values meaningless for a cap ("circular open", "square hollow"). Built at W1 - see docs/build/W1/NOTES.md.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/headShape.xml</gml:identifier>
+    <gml:name>DIGGS Column Head Plan Shape Codelist Definitions</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="square">
+            <gml:description>A square head, whose plan dimension headWidth is the length of one side. The most common cap form in rigid inclusion practice, since a square cap tessellates a square or rectangular column grid.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/headShape.xml#square</gml:identifier>
+            <gml:name>Square</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumnHead/diggs:headShape</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="rectangular">
+            <gml:description>A rectangular head, requiring both headWidth (the smaller plan dimension) and headLength (the larger). Used where the column grid spacing differs between the two horizontal axes.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/headShape.xml#rectangular</gml:identifier>
+            <gml:name>Rectangular</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumnHead/diggs:headShape</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="circular">
+            <gml:description>A circular head, whose plan dimension headWidth is the diameter. Typical where the cap is cast by enlarging the top of the column bore rather than formed separately.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/headShape.xml#circular</gml:identifier>
+            <gml:name>Circular</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumnHead/diggs:headShape</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
