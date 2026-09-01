@@ -101,4 +101,32 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="minimum_spacing_to_fresh_element">
+            <gml:description>The minimum plan distance permitted between an element being installed and a previously installed element that has not yet reached the age or strength at which it is unaffected by the installation. Controls installation effects - ground displacement, vibration and fresh concrete disturbance - on neighbours placed shortly before. Stated as a length; where a specification expresses it as a multiple of element diameter, the limit is the product of that multiple and the design diameter.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#minimum_spacing_to_fresh_element</gml:identifier>
+            <gml:name>Minimum spacing to a fresh element</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="minimum_age_before_adjacent_installation">
+            <gml:description>The minimum elapsed time between completing one element and beginning installation of an adjacent element, so that the earlier element has gained enough strength to be undisturbed. The time-based companion to minimum_spacing_to_fresh_element: a specification typically states one, the other, or both, and together they are what an installation sequence is designed to satisfy.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#minimum_age_before_adjacent_installation</gml:identifier>
+            <gml:name>Minimum age before adjacent installation</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
