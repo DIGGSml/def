@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="terminationOutcome">
-    <gml:description>Codes stating which stop rule actually governed the end of a rigid inclusion column's installation - design depth reached, or refusal. An as-built fact, distinct from the refusal criterion itself (a specification-side acceptance criterion cited by the construction activity, not a coded value). Used for the value of diggs:RIConstructionActivityType/diggs:terminationOutcome.</gml:description>
+    <gml:description>Codes stating which stop rule actually governed the end of a rigid inclusion column's installation - design depth reached, or refusal. An as-built fact, distinct from the refusal criterion itself (a specification-side acceptance criterion cited by the construction activity, not a coded value). Used for the value of diggs:RIColumnConstructionType/diggs:terminationOutcome.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/terminationOutcome.xml</gml:identifier>
     <gml:name>DIGGS Rigid Inclusion Termination Outcome Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -14,7 +14,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:terminationOutcome</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIColumnConstruction/diggs:terminationOutcome</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -28,7 +28,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:terminationOutcome</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIColumnConstruction/diggs:terminationOutcome</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

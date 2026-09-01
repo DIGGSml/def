@@ -629,7 +629,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="grout_level">
-            <gml:description>The elevation or depth of the grout surface within the column bore or annulus at a given reading, used to detect an in-progress drop in grout level - a sign the column is losing grout into the surrounding ground and is at risk of an 'uncovered column' condition (V2 Installation row 31). Where a drop triggers a corrective action, that outcome is recorded separately as diggs:RIConstructionActivityType/groutLevelCorrectiveAction; this entry carries only the level reading itself.</gml:description>
+            <gml:description>The elevation or depth of the grout surface within the column bore or annulus at a given reading, used to detect an in-progress drop in grout level - a sign the column is losing grout into the surrounding ground and is at risk of an 'uncovered column' condition (V2 Installation row 31). Where a drop triggers a corrective action, that outcome is recorded separately as diggs:RIColumnConstructionType/groutLevelCorrectiveAction; this entry carries only the level reading itself.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml#grout_level</gml:identifier>
             <gml:name>grout level</gml:name>
             <diggs:dataType>double</diggs:dataType>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="riInstallationMethod">
-    <gml:description>Codes classifying how the ground is handled as a rigid inclusion is formed - whether the technique displaces soil laterally, removes it, or does some of each. The technical report calls this the primary classifier, because the families produce different as-built records: a displacement technique generates no spoil and densifies the surrounding ground, a replacement technique removes soil. Used for the value of diggs:RIColumnType/riInstallationMethod (as-built), diggs:RIColumnSpecificationType/riInstallationMethod (specified) and diggs:RIConstructionActivityType/riInstallationMethod (as recorded by the activity). Orthogonal to columnType, which names the technique rather than what it does to the ground; each columnType entry declares which of these families it is compatible with, so the two cannot contradict each other. Named with the ri prefix because installation method is a concept other DIGGS domains will want under their own vocabularies.</gml:description>
+    <gml:description>Codes classifying how the ground is handled as a rigid inclusion is formed - whether the technique displaces soil laterally, removes it, or does some of each. The technical report calls this the primary classifier, because the families produce different as-built records: a displacement technique generates no spoil and densifies the surrounding ground, a replacement technique removes soil. Used for the value of diggs:RIColumnType/riInstallationMethod (as-built), diggs:RIColumnSpecificationType/riInstallationMethod (specified) and diggs:RIColumnConstructionType/riInstallationMethod (as recorded by the activity). Orthogonal to columnType, which names the technique rather than what it does to the ground; each columnType entry declares which of these families it is compatible with, so the two cannot contradict each other. Named with the ri prefix because installation method is a concept other DIGGS domains will want under their own vocabularies.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/riInstallationMethod.xml</gml:identifier>
     <gml:name>DIGGS Rigid Inclusion Installation Method Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -20,7 +20,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:riInstallationMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIColumnConstruction/diggs:riInstallationMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -40,7 +40,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:riInstallationMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIColumnConstruction/diggs:riInstallationMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -60,7 +60,7 @@
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:riInstallationMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:riInstallationMethod</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIColumnConstruction/diggs:riInstallationMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="groutLevelCorrectiveAction">
-    <gml:description>Codes for the corrective action taken where in-progress grout-level monitoring found the grout level in a rigid inclusion column had dropped below the expected level - an 'uncovered column' condition indicating grout loss into the surrounding ground (V2 Installation row 31). Used for the value of diggs:RIConstructionActivityType/groutLevelCorrectiveAction.</gml:description>
+    <gml:description>Codes for the corrective action taken where in-progress grout-level monitoring found the grout level in a rigid inclusion column had dropped below the expected level - an 'uncovered column' condition indicating grout loss into the surrounding ground (V2 Installation row 31). Used for the value of diggs:RIColumnConstructionType/groutLevelCorrectiveAction.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/groutLevelCorrectiveAction.xml</gml:identifier>
     <gml:name>DIGGS Grout Level Corrective Action Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -14,7 +14,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:groutLevelCorrectiveAction</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIColumnConstruction/diggs:groutLevelCorrectiveAction</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -28,7 +28,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:groutLevelCorrectiveAction</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIColumnConstruction/diggs:groutLevelCorrectiveAction</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -42,7 +42,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RIConstructionActivity/diggs:groutLevelCorrectiveAction</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RIColumnConstruction/diggs:groutLevelCorrectiveAction</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
