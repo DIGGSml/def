@@ -259,7 +259,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="load_test_reaction_frame">
-            <gml:description>The reaction system a static load test jacks against - a kentledge stack, a reaction beam on tension piles, or a ground anchor arrangement. Recorded as equipment because the reaction arrangement bears on how a test result is interpreted.</gml:description>
+            <gml:description>The reaction system a static load test jacks against - a kentledge stack, a reaction beam on tension piles, a ground anchor arrangement, or an adjacent test element pushed against in a two-element lateral test arrangement. Recorded as equipment because the reaction arrangement bears on how a test result is interpreted.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#load_test_reaction_frame</gml:identifier>
             <gml:name>Load test reaction frame</gml:name>
             <diggs:occurrences>

@@ -3570,4 +3570,19 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="lateral_deflection">
+            <gml:description>Horizontal displacement of the load application point (or another stated gauge point) on a deep foundation element under a static lateral load test, measured against a stated datum. Distinct from properties.xml#settlement, which is explicitly vertical. A result of diggs:LateralLoadTest.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#lateral_deflection</gml:identifier>
+            <gml:name>Lateral Deflection</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LateralLoadTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

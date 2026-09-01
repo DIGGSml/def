@@ -860,4 +860,53 @@
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d3966">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d3966">
+                    <gml:description>Static lateral (transverse) load-deflection testing of deep foundation elements or groups, applicable regardless of installation method. Current, not withdrawn.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d3966</gml:identifier>
+                    <gml:name>ASTM D3966/D3966M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D3966/D3966M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Deep Foundation Elements Under Static Lateral Load</diggs:standardTitle>
+                    <diggs:standardVersion>2022</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_nf_p94_151">
+            <diggs:specification>
+                <diggs:Specification gml:id="nf_p94_151">
+                    <gml:description>French national standard for static lateral (transverse) load testing of an isolated pile - the French-tradition counterpart to ASTM D3966/D3966M. Current, not withdrawn.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_151</gml:identifier>
+                    <gml:name>NF P94-151</gml:name>
+                    <diggs:accreditingBody>AFNOR</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>NF P94-151</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Sols : reconnaissance et essais - Essai statique de pieu isole sous effort transversal</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
 </diggs:SpecificationRegistry>
