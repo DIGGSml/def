@@ -24,6 +24,8 @@
                     <diggs:standardVersion>2012</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#construction">construction</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -46,6 +48,7 @@
                     <diggs:standardVersion>2010+A1:2016</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -68,6 +71,7 @@
                     <diggs:standardVersion>2011</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -90,6 +94,7 @@
                     <diggs:standardVersion>2017</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -111,7 +116,9 @@
                     <diggs:standardTitle>Eurocode 7: Geotechnical design</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -133,7 +140,9 @@
                     <diggs:standardVersion>2015</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#construction">construction</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -158,6 +167,7 @@
                     <diggs:standardVersion>2005</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#construction">construction</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -182,6 +192,8 @@
                     <diggs:standardTitle>Dallages - Conception, calcul et execution (concrete ground-bearing slabs)</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#construction">construction</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -204,7 +216,9 @@
                     <diggs:standardVersion>2024</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -225,6 +239,7 @@
                     <diggs:standardTitle>Justification des ouvrages geotechniques - Fondations superficielles</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -246,7 +261,9 @@
                     <diggs:standardTitle>Justification des ouvrages geotechniques - Fondations profondes</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -268,6 +285,7 @@
                     <diggs:standardVersion>2016</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -289,7 +307,9 @@
                     <diggs:standardTitle>Standard Test Methods for Deep Foundations Under Static Axial Compressive Load</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -313,7 +333,9 @@
                     <diggs:standardTitle>Standard Test Method for Low Strain Impact Integrity Testing of Deep Foundations</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:registryStatus>withdrawn</diggs:registryStatus>
             <diggs:occurrences>
@@ -338,7 +360,9 @@
                     <diggs:standardTitle>Standard Test Methods for Axial Compressive Force Pulse (Rapid) Testing of Deep Foundations</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -362,7 +386,9 @@
                     <diggs:standardTitle>Standard Test Method for High-Strain Dynamic Testing of Deep Foundations</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -386,7 +412,9 @@
                     <diggs:standardTitle>Geotechnical investigation and testing - Testing of geotechnical structures - Part 1: Testing of piles: static compression load testing</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -410,7 +438,9 @@
                     <diggs:standardTitle>Geotechnical investigation and testing - Testing of geotechnical structures - Part 10: Testing of piles: rapid load testing</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -434,7 +464,9 @@
                     <diggs:standardTitle>Geotechnical investigation and testing - Testing of geotechnical structures - Part 4: Dynamic load testing of piles</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -458,6 +490,7 @@
                     <diggs:standardTitle>Standard Test Method for Determining Tensile Properties of Geogrids by the Single or Multi-Rib Tensile Method</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -482,6 +515,7 @@
                     <diggs:standardTitle>Standard Test Method for Nonrepetitive Static Plate Load Tests of Soils and Flexible Pavement Components</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -506,6 +540,7 @@
                     <diggs:standardTitle>Standard Test Method for Bearing Capacity of Soil for Static Load and Spread Footings</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:registryStatus>withdrawn</diggs:registryStatus>
@@ -532,6 +567,7 @@
                     <diggs:standardTitle>Baugrund - Untersuchung von Bodenproben - Bestimmung des Verformungsmoduls und des Verformungsmoduls durch Plattendruckversuche (Soil - Testing procedures and testing equipment - Plate load test)</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -556,6 +592,7 @@
                     <diggs:standardTitle>Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System)</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -580,6 +617,7 @@
                     <diggs:standardTitle>Standard Practice for Description and Identification of Soils (Visual-Manual Procedures)</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -604,6 +642,7 @@
                     <diggs:standardTitle>Geotechnical investigation and testing - Field testing - Part 4: Menard pressuremeter test</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -628,6 +667,8 @@
                     <diggs:standardTitle>Kansas Department of Transportation special provision for rigid inclusions / column-supported embankments</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#construction">construction</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -649,6 +690,8 @@
                     <diggs:standardTitle>Minnesota Department of Transportation special provision for rigid inclusions / column-supported embankments</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#construction">construction</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -670,6 +713,8 @@
                     <diggs:standardTitle>Iowa Department of Transportation special provision for rigid inclusions / column-supported embankments</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#construction">construction</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -691,6 +736,8 @@
                     <diggs:standardTitle>Pennsylvania Department of Transportation special provision for rigid inclusions / column-supported embankments</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#construction">construction</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -712,6 +759,7 @@
                     <diggs:standardTitle>Proposed AASHTO specifications and commentary for column-supported embankments</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -734,6 +782,7 @@
                     <diggs:standardVersion>2023</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -756,6 +805,7 @@
                     <diggs:standardVersion>2023</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -778,6 +828,7 @@
                     <diggs:standardVersion>2025</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -799,7 +850,9 @@
                     <diggs:standardTitle>Sols : reconnaissance et essais - Auscultation d'un element de fondation - Partie 2 : methode par reflexion</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -823,7 +876,9 @@
                     <diggs:standardTitle>Sols : reconnaissance et essais - Auscultation d'un element de fondation - Partie 4 : methode par impedance</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -848,7 +903,9 @@
                     <diggs:standardVersion>2025</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -873,7 +930,9 @@
                     <diggs:standardVersion>2022</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -897,7 +956,9 @@
                     <diggs:standardTitle>Sols : reconnaissance et essais - Essai statique de pieu isole sous effort transversal</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions">rigid_inclusions</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -907,6 +968,308 @@
                     <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d1586">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d1586">
+                    <gml:description>The Standard Penetration Test. Drives a split-barrel sampler with a 63.5 kg hammer falling 760 mm and reports the blow count over the 150-450 mm interval as the N value, recovering a disturbed sample for identification at the same time; it is therefore both an in-situ test method and a sampling method. Cited by the Jazera Royal Palace substation investigation as ASTM D-1586-2011.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586</gml:identifier>
+                    <gml:name>ASTM D1586/D1586M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D1586/D1586M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Standard Penetration Test (SPT) and Split-Barrel Sampling of Soils</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d422">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d422">
+                    <gml:description>Particle-size distribution by sieving above 75 micrometres and by hydrometer sedimentation below it. Withdrawn by ASTM in 2016 with no direct one-to-one replacement; the successor methods are ASTM D6913/D6913M for sieve analysis and ASTM D7928 for sedimentation. Registered because it remains widely cited by projects in progress, including the Jazera Royal Palace substation investigation.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422</gml:identifier>
+                    <gml:name>ASTM D422</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D422</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Particle-Size Analysis of Soils</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d4318">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d4318">
+                    <gml:description>The Atterberg limits. Determines liquid limit by Casagrande cup (multipoint Method A or one-point Method B), plastic limit by thread rolling, and plasticity index as their difference. Withdrawn by ASTM in 2026; registered because it is cited by projects in progress and is the basis of the plasticity input to ASTM D2487 classification.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d4318</gml:identifier>
+                    <gml:name>ASTM D4318</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D4318</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Liquid Limit, Plastic Limit, and Plasticity Index of Soils</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d1557">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d1557">
+                    <gml:description>The modified Proctor compaction test. Establishes the relationship between water content and dry unit weight using a 4.54 kg rammer dropped 457 mm, giving maximum dry density and optimum moisture content. Method C, used at Jazera, compacts five layers of 56 blows in a 152 mm mould.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1557</gml:identifier>
+                    <gml:name>ASTM D1557</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D1557</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Laboratory Compaction Characteristics of Soil Using Modified Effort (56,000 ft-lbf/ft3 (2,700 kN-m/m3))</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d1883">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d1883">
+                    <gml:description>The California Bearing Ratio of laboratory-compacted subgrade, subbase and base course materials, reported as a percentage of the load on a standard crushed-stone reference at 2.54 and 5.08 mm penetration. Normally run on specimens compacted at several efforts (10, 25 and 56 blows per layer) so CBR can be interpolated at a specified percentage of maximum dry density, and optionally soaked to record swell.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1883</gml:identifier>
+                    <gml:name>ASTM D1883</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D1883</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for California Bearing Ratio (CBR) of Laboratory-Compacted Soils</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d4253">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d4253">
+                    <gml:description>Maximum index dry density of cohesionless, free-draining soils using a vertically vibrating table. Used with ASTM D4254 to compute relative density, which the Jazera investigation specifies as the acceptance basis for granular backfill. Withdrawn by ASTM in 2025.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d4253</gml:identifier>
+                    <gml:name>ASTM D4253</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D4253</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Maximum Index Density and Unit Weight of Soils Using a Vibratory Table</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d4254">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d4254">
+                    <gml:description>Minimum index dry density of cohesionless, free-draining soils, and the calculation of relative density from it together with the maximum index density of ASTM D4253. Withdrawn by ASTM in 2025; a reinstatement work item (WK99698) was open at the time of registration.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d4254</gml:identifier>
+                    <gml:name>ASTM D4254</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D4254</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Minimum Index Density and Unit Weight of Soils and Calculation of Relative Density</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_bs_1377_3">
+            <diggs:specification>
+                <diggs:Specification gml:id="bs_1377_3">
+                    <gml:description>Chemical and electro-chemical test methods for soil, weak rock and groundwater, covering pH, sulfate, chloride, carbonate, organic matter and electrical resistivity. Used to assess ground aggressiveness towards buried concrete and steel. The Jazera Royal Palace substation investigation cites it for pH, sulfate, chloride and magnesium determinations.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1377_3</gml:identifier>
+                    <gml:name>BS 1377-3</gml:name>
+                    <diggs:accreditingBody>BSI</diggs:accreditingBody>
+                    <diggs:standardPart>3</diggs:standardPart>
+                    <diggs:standardReferenceNumber>BS 1377-3</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Methods of test for soils for civil engineering purposes. Chemical and electro-chemical testing</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_g57">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_g57">
+                    <gml:description>Soil electrical resistivity by the Wenner four-electrode array: a current is driven between the outer electrodes and the potential drop measured between the inner pair, with the electrode spacing controlling the depth of investigation. Covers both in-situ measurement and measurement on samples removed from the ground in a soil box. Results support corrosion assessment and earthing design, and are commonly classified for soil corrosivity.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_g57</gml:identifier>
+                    <gml:name>ASTM G57</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM G57</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Measurement of Soil Resistivity Using the Wenner Four-Electrode Method</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#geophysics">geophysics</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_ieee_81">
+            <diggs:specification>
+                <diggs:Specification gml:id="ieee_81">
+                    <gml:description>Practical test methods for the electrical characteristics of grounding systems, including earth resistivity measurement, power-frequency and transient ground impedance to remote earth, touch and step voltages, and grounding-system integrity. Cited alongside ASTM G57 for the four-electrode resistivity surveys in the Jazera Royal Palace substation investigation.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ieee_81</gml:identifier>
+                    <gml:name>IEEE Std 81</gml:name>
+                    <diggs:accreditingBody>IEEE</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>IEEE Std 81</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>IEEE Guide for Measuring Earth Resistivity, Ground Impedance, and Earth Surface Potentials of a Grounding System</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#geophysics">geophysics</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d5334">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d5334">
+                    <gml:description>Thermal conductivity of soil and rock by the transient thermal needle probe: a line heat source is energised and the rate of temperature rise is interpreted for the thermal constants of the surrounding medium. Applicable to intact and reconstituted specimens and effective both in the laboratory and in the field. Thermal resistivity is reported as its reciprocal.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5334</gml:identifier>
+                    <gml:name>ASTM D5334</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D5334</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Determination of Thermal Conductivity of Soil and Rock by Thermal Needle Probe Procedure</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#geophysics">geophysics</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_ieee_442_2017">
+            <diggs:specification>
+                <diggs:Specification gml:id="ieee_442_2017">
+                    <gml:description>Thermal resistivity measurement of soils and of backfill materials used to encase buried cable systems, including concrete, engineered backfill, grout, rock and sand. Describes probe designs for both laboratory and field use and rests on the same line heat source theory as ASTM D5334. Underpins the ampacity rating of underground cable circuits.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ieee_442_2017</gml:identifier>
+                    <gml:name>IEEE Std 442-2017</gml:name>
+                    <diggs:accreditingBody>IEEE</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>IEEE Std 442</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>IEEE Guide for Thermal Resistivity Measurements of Soils and Backfill Materials</diggs:standardTitle>
+                    <diggs:standardVersion>2017</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#geophysics">geophysics</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_sbc_301_cr_18">
+            <diggs:specification>
+                <diggs:Specification gml:id="sbc_301_cr_18">
+                    <gml:description>The loading code of the Saudi Building Code. Chapter 11 sets the seismic design criteria and mapped ground motion values, Chapter 20 the site classification procedure and site class definitions, and Chapter 22 the seismic ground motion maps. It is the source of the Ss, S1, site class, Fa and Fv values reported for the Jazera Royal Palace substation site.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sbc_301_cr_18</gml:identifier>
+                    <gml:name>SBC 301-CR-18</gml:name>
+                    <diggs:accreditingBody>Saudi Building Code Center</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>SBC 301-CR</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>The Saudi Loading Code, Code Requirements</diggs:standardTitle>
+                    <diggs:standardVersion>2018</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes">design_codes</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_sec_70_tmss_03">
+            <diggs:specification>
+                <diggs:Specification gml:id="sec_70_tmss_03">
+                    <gml:description>Saudi Electricity Company material standard specification for normal-weight ready-mixed Portland cement concrete on SEC projects, covering mix design, constituent materials, quality control, delivery and testing, with strength and durability requirements keyed to exposure condition. The Jazera Royal Palace substation report tabulates its concrete requirements for very severe exposure. Bibliographic detail is taken from the citing project report and secondary sources; the controlled document was not publicly retrievable at the time of registration.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sec_70_tmss_03</gml:identifier>
+                    <gml:name>70-TMSS-03</gml:name>
+                    <diggs:accreditingBody>Saudi Electricity Company</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>70-TMSS-03</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Technical Material Standard Specification - Normal weight ready-mixed Portland cement concrete</diggs:standardTitle>
+                    <diggs:standardVersion>Rev. 02</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#materials">materials</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
 </diggs:SpecificationRegistry>
