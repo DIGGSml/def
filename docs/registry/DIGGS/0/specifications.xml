@@ -602,6 +602,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
@@ -626,6 +629,9 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
@@ -1270,6 +1276,249 @@
             </diggs:specification>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#materials">materials</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_m145">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_m145">
+                    <gml:description>The AASHTO soil classification system. Classifies soils into seven groups (A-1 to A-7) from laboratory particle-size distribution, liquid limit and plasticity index, and rates quality within a group by the calculated group index. Widely used for highway subgrade and subbase evaluation. Equivalent to ASTM D3282. DIGGS carries its codes in aashtoM145.xml and its group symbols in grp-aashtoM145.xml.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_m145</gml:identifier>
+                    <gml:name>AASHTO M 145</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO M 145</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Specification for Classification of Soils and Soil-Aggregate Mixtures for Highway Construction Purposes</diggs:standardTitle>
+                    <diggs:standardVersion>M 145-91 (2021)</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_usda_ssm_ah18">
+            <diggs:specification>
+                <diggs:Specification gml:id="usda_ssm_ah18">
+                    <gml:description>The controlling document for the USDA soil textural triangle. Defines the twelve standard textural classes from the relative proportions of sand, silt and clay in the fraction finer than 2 mm; the equilateral triangle was adopted by USDA in 1951 and has been carried in successive editions of the Manual, most recently the March 2017 edition issued by the Soil Science Division Staff. DIGGS carries its classes in usda.xml.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#usda_ssm_ah18</gml:identifier>
+                    <gml:name>USDA Soil Survey Manual (Agriculture Handbook 18)</gml:name>
+                    <diggs:accreditingBody>United States Department of Agriculture, Natural Resources Conservation Service</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>USDA Agriculture Handbook No. 18</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Soil Survey Manual</diggs:standardTitle>
+                    <diggs:standardVersion>2017</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_bs_5930">
+            <diggs:specification>
+                <diggs:Specification gml:id="bs_5930">
+                    <gml:description>Defines the British Soil Classification System (BSCS) alongside its recommendations for the planning and execution of ground investigations. The A1:2020 amendment aligned its soil and rock description with BS EN ISO 14688 and 14689 (2018) and with BS EN ISO 17892 and the related parts of BS 1377.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_5930</gml:identifier>
+                    <gml:name>BS 5930</gml:name>
+                    <diggs:accreditingBody>BSI</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>BS 5930</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Code of practice for ground investigations</diggs:standardTitle>
+                    <diggs:standardVersion>2015+A1:2020</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_14688_1">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_14688_1">
+                    <gml:description>Procedures for the identification and description of soil by visual and manual techniques, covering both material and mass characteristics. Part 1 of the two-part standard that carries the European soil classification system; it is used together with ISO 14688-2, and is adopted in Europe as EN ISO 14688-1. Applies to natural soils in situ, reworked soils and synthetic materials; rock is covered by ISO 14689 instead.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_14688_1</gml:identifier>
+                    <gml:name>ISO 14688-1</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardPart>1</diggs:standardPart>
+                    <diggs:standardReferenceNumber>ISO 14688-1</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Identification and classification of soil - Part 1: Identification and description</diggs:standardTitle>
+                    <diggs:standardVersion>2017</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_14688_2">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_14688_2">
+                    <gml:description>The classification half of the European soil classification system: having identified and described a soil under ISO 14688-1, Part 2 gives the means to group soils of similar composition and geotechnical properties from field and laboratory test results, according to their suitability for geotechnical engineering purposes. Adopted in Europe as EN ISO 14688-2.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_14688_2</gml:identifier>
+                    <gml:name>ISO 14688-2</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardPart>2</diggs:standardPart>
+                    <diggs:standardReferenceNumber>ISO 14688-2</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Identification and classification of soil - Part 2: Principles for a classification</diggs:standardTitle>
+                    <diggs:standardVersion>2017</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_is_1498">
+            <diggs:specification>
+                <diggs:Specification gml:id="is_1498">
+                    <gml:description>The Indian Standard Soil Classification System (ISSCS). Classifies soils for general engineering purposes from grain-size distribution and plasticity, using group symbols closely related to those of the Unified Soil Classification System. Maintained by BIS technical committee CED 43 and reaffirmed in 2021.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#is_1498</gml:identifier>
+                    <gml:name>IS 1498</gml:name>
+                    <diggs:accreditingBody>Bureau of Indian Standards</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>IS 1498</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Classification and identification of soils for general engineering purposes</diggs:standardTitle>
+                    <diggs:standardVersion>1970 (Reaffirmed 2021)</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_gb_t_50145_2007">
+            <diggs:specification>
+                <diggs:Specification gml:id="gb_t_50145_2007">
+                    <gml:description>The Chinese national standard for engineering soil classification, formulated to unify soil classification and the qualitative evaluation of soil properties. Takes 5 mm as the boundary between coarse- and fine-grained material, and subdivides by organic content into inorganic soil, organic soil, peaty soil and peat. Published by China Planning Press. The issuing agency recorded here is corroborated by secondary sources only; the controlled document was not publicly retrievable at the time of registration.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#gb_t_50145_2007</gml:identifier>
+                    <gml:name>GB/T 50145-2007</gml:name>
+                    <diggs:accreditingBody>Ministry of Water Resources of the People's Republic of China</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>GB/T 50145</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard for engineering classification of soil</diggs:standardTitle>
+                    <diggs:standardVersion>2007</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_sibcs_2018">
+            <diggs:specification>
+                <diggs:Specification gml:id="sibcs_2018">
+                    <gml:description>The Brazilian soil classification system: a hierarchical, multicategorical and open taxonomic system covering all soils occurring in Brazil, with six categorical levels - order, suborder, great group, subgroup, family and series. The fifth revised and expanded edition was released by Embrapa in August 2018 at the 21st World Congress of Soil Science and is distributed free as an e-book (ISBN 978-85-7035-800-4); it was the first edition also issued in English.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sibcs_2018</gml:identifier>
+                    <gml:name>SiBCS (5th edition, 2018)</gml:name>
+                    <diggs:accreditingBody>Empresa Brasileira de Pesquisa Agropecuaria (Embrapa Solos)</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>SiBCS</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Sistema Brasileiro de Classificacao de Solos</diggs:standardTitle>
+                    <diggs:standardVersion>5th edition, 2018</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_nzgs_2005_field_description">
+            <diggs:specification>
+                <diggs:Specification gml:id="nzgs_2005_field_description">
+                    <gml:description>The New Zealand guideline for field logging of soil and rock. Its stated aim is to reduce the subjective nature and variability of descriptions of materials encountered during investigation, design and construction, and it is written principally for use in the field where descriptions are recorded on logs.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nzgs_2005_field_description</gml:identifier>
+                    <gml:name>NZGS Field Description of Soil and Rock (2005)</gml:name>
+                    <diggs:accreditingBody>New Zealand Geotechnical Society</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>NZGS 2005</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Guideline for the Field Classification and Description of Soil and Rock for Engineering Purposes</diggs:standardTitle>
+                    <diggs:standardVersion>December 2005</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_jgs_0051">
+            <diggs:specification>
+                <diggs:Specification gml:id="jgs_0051">
+                    <gml:description>The Japanese engineering soil classification system. Follows the general form of the Unified Soil Classification System but adds provisions for cohesive volcanic soils (symbols VL, VH1 and VH2) and terms for very high (liquid limit 70-90) and extremely high (liquid limit above 90) plasticity. Issued by the Japanese Geotechnical Society and available in English translation since the society began translating its standards in 2014.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#jgs_0051</gml:identifier>
+                    <gml:name>JGS 0051</gml:name>
+                    <diggs:accreditingBody>Japanese Geotechnical Society</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>JGS 0051</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Method of classification of geomaterials for engineering purposes</diggs:standardTitle>
+                    <diggs:standardVersion>2000</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
 </diggs:SpecificationRegistry>
