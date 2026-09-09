@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="reinforcementPurpose">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="reinforcementPurpose">
     <gml:description>Codes for why reinforcement is present over a given interval of a rigid inclusion column - tension zone, bending, seismic, or an ASIRI-defined domain. ASIRI (Amelioration des Sols par Inclusions Rigides), the French national research project whose recommendations underpin much RI design practice, defines a domain classification for column behaviour; asiri_domain_1 names the domain this project's source material cites, not a full restatement of ASIRI's own domain criteria - confirm the exact domain definitions against the ASIRI recommendations before relying on this entry for design review, same caveat this project already attaches to diggs:archingModel. Used for the value of diggs:ReinforcementType/diggs:reinforcementPurpose.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/reinforcementPurpose.xml</gml:identifier>
     <gml:name>DIGGS Rigid Inclusion Reinforcement Purpose Codelist Definitions</gml:name>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="platformType">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="platformType">
     <gml:description>Codes classifying the construction type of a load transfer platform (LTP), planned or as-built - unreinforced granular fill, geogrid-reinforced fill, soil-mixed/cemented raft, or a structural concrete slab. Used for the value of diggs:RILTPSpecificationType/platformType (planned) and diggs:LoadTransferPlatformType/platformType (as-built) so design and as-built share one vocabulary. Distinct from materialType (diggs:LithologyPropertyType), which classifies what the fill is made of geologically and cannot express a structural concrete slab or a soil-mixed raft, neither of which is a lithology (V2 Design row 50).</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/platformType.xml</gml:identifier>
     <gml:name>DIGGS Load Transfer Platform Type Codelist Definitions</gml:name>

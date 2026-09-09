@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="appliesTo">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="appliesTo">
     <gml:description>Codes naming what a diggs:DesignFactor's value is applied to - an action, a material property, a calculated resistance, or a geosynthetic property. Used for the value of the appliesTo property of diggs:DesignFactor (core/Common.xsd), which exists specifically so a factor's identity (parameterName) and what it is applied to do not have to be conflated into one dictionary entry. The list is open.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/appliesTo.xml</gml:identifier>
     <gml:name>DIGGS Design Factor Applies-To Codelist Definitions</gml:name>

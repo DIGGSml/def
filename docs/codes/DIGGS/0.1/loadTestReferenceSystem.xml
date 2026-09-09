@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="loadTestReferenceSystem">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="loadTestReferenceSystem">
     <gml:description>Codes classifying how movement was referenced during a load test. Used for the value of diggs:AbstractLoadTestProcedureType/referenceSystem (StaticLoadTest, RapidLoadTest and DynamicLoadTest). Both ASTM D1143/D1143M and EN ISO 22477-1 require the reference system to be independent of the reaction system and unaffected by ground movement caused by the test; this dictionary records which arrangement was used, not that it satisfied the requirement.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/loadTestReferenceSystem.xml</gml:identifier>
     <gml:name>DIGGS Load Test Reference System Codelist Definitions</gml:name>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/propertylists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="propertyClass">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="propertyClass">
     <gml:description>This dictionary defines the factor names carried by the parameterName property of a diggs:DesignFactor object (core/Common.xsd). Two families of entry are present: partial and global safety factors (Design Parameter Analysis Group A row 11) and geosynthetic reduction factors A1-A5 plus the combined material factor f_m (Group G row 65, reused by row 93's durability RF chain). What each factor is applied to is carried separately, by diggs:DesignFactor/appliesTo (see the appliesTo.xml codelist) - splitting factor identity from what it is applied to is the reason diggs:DesignFactor exists rather than a bare AuthorizedParameter array; see DesignFactor's own schema documentation.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/design_factor_properties.xml</gml:identifier>
     <gml:name>DIGGS Design Factor Properties</gml:name>

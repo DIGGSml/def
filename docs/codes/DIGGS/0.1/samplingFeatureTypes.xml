@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="targetSFType">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="targetSFType">
     <gml:description>Codes naming the kind of sampling feature planned. These codes are used for the value of the targetSFType property of diggs:TargetSamplingFeature and its specializations (diggs:TargetBorehole, diggs:TargetInstallation). Covers both plain sampling features and installation-type sampling features in one vocabulary, since an installation is itself a sampling feature in DIGGS (diggs:AbstractLinearInstallation and diggs:AbstractPlanarInstallation both substitute diggs:AbstractSamplingFeature directly) - there is no separate installation-type head to key a second dictionary on. The list is every concrete sampling feature kind in the schema as of 3.1-dev; a future schema addition that substitutes diggs:AbstractSamplingFeature should get a matching entry here.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml</gml:identifier>
     <gml:name>DIGGS Sampling Feature Types Codelist Definitions</gml:name>

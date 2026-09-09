@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="gridPattern">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="gridPattern">
     <gml:description>Codes naming the plan arrangement of rigid inclusion columns within a design. These codes are used for the value of the gridPattern property of the diggs:RIColumnDesign object. Where the design's scope carries a plannedPositions grid, the grid's offsetVectors define the lattice exactly and this code merely names what they already express; where scope carries no grid, this property and the column spacings are the prevailing statement of the layout. The list is open.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gridPattern.xml</gml:identifier>
     <gml:name>DIGGS Rigid Inclusion Grid Pattern Codelist Definitions</gml:name>

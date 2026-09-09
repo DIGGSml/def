@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="elementClass">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="elementClass">
     <gml:description>Codes naming the role a rigid inclusion column plays in the works, as distinct from what it is made of or how it is built - trial, test, production, or sacrificial. Shared by the as-built record (diggs:RIColumn/elementClass) and the planned record (diggs:TargetRIColumn/elementClass) so design-stage and as-built statements of an element's role do not drift into different vocabularies for the same concept. Both host elements are mandatory: the distinction governs which acceptance criteria apply and how a test result may be extrapolated, so it must be stated rather than inferred - superseding the earlier convention of inferring a trial column from the absence of diggs:RIColumnType/samplingFeatureRef, which remains valid as description but is no longer the identifying signal.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/elementClass.xml</gml:identifier>
     <gml:name>DIGGS Rigid Inclusion Element Class Codelist Definitions</gml:name>

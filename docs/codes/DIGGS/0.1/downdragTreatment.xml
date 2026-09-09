@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="downdragTreatment">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="downdragTreatment">
     <gml:description>Codes naming how downdrag (negative skin friction above a rigid inclusion's neutral plane) was accounted for in a column's axial design analysis. These codes are used for the value of the downdragTreatment property of the diggs:GeoUnitDesignQuantity object. The value is required for negativeSkinFrictionLimit/neutralPlaneDepth/maxAxialForceAtNeutralPlane to be interpretable, since two designs reporting the same neutral-plane depth arrived at by different treatments are not comparable. Options drawn from the state-of-the-practice survey Han et al. (2025) reproduces (RI-DIGGS Technical Report Table 3-1).</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/downdragTreatment.xml</gml:identifier>
     <gml:name>DIGGS Downdrag Treatment Codelist Definitions</gml:name>

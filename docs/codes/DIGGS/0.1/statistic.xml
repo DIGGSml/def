@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="statistic">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="statistic">
     <gml:description>Codes naming how multiple measurements within an acceptance criterion's scope are reduced to the single value compared against its limit. Used for the value of the statistic property of diggs:AbstractAcceptanceCriterionType, inherited by both diggs:PerformanceCriterion and diggs:DesignConformanceCriterion. Omit where the criterion applies to each measurement individually rather than to a reduction over several. The intended value set is stated directly in the schema's own documentation for this element.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/statistic.xml</gml:identifier>
     <gml:name>DIGGS Acceptance Criterion Statistic Codelist Definitions</gml:name>

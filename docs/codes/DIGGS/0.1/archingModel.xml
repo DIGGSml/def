@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/2.6" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="archingModel">
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="archingModel">
     <gml:description>Codes naming the load transfer (arching) model a rigid inclusion or piled embankment design was prepared under. These codes are used for the value of the archingModel property of the diggs:ArchingCoefficients object. The model must be stated because the coefficients a design reports exist only inside one model, and because quantities every model produces - critical height, the stress on the head and the stress on the soil between heads - evaluate differently under each, so the numbers are not interpretable without it. The list is open: further models such as the concentric arches formulation are expected and should be added here rather than expressed as new schema elements.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/archingModel.xml</gml:identifier>
     <gml:name>DIGGS Arching Model Codelist Definitions</gml:name>
