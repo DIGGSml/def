@@ -1521,4 +1521,263 @@
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_22475_1">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_22475_1">
+                    <gml:description>Technical principles for the sampling of soil, rock and groundwater for geotechnical purposes, including the sampling category (A-E) and soil sample quality class (1-5) systems that diggs:AbstractSamplingActivityType/samplingCategory and diggs:SampleType/qualityClass are bound to. Second edition (2021) adds Categories D and E for both soil and rock beyond the first edition's A-C, and moves groundwater-measurement clauses to ISO 18674-4. Registered as R16's general anchor for SamplingActivity/samplingMethod, superseding ASTM for several sample forms (thin-walled tube, ring-lined barrel) whose own ASTM standards have been withdrawn with no replacement.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22475_1</gml:identifier>
+                    <gml:name>ISO 22475-1</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardPart>1</diggs:standardPart>
+                    <diggs:standardReferenceNumber>ISO 22475-1</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Sampling methods and groundwater measurements - Part 1: Technical principles for the sampling of soil, rock and groundwater</diggs:standardTitle>
+                    <diggs:standardVersion>2021</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d1452">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d1452">
+                    <gml:description>Soil exploration and sampling by auger borings - hand or power augers used to advance a hole and recover disturbed samples of the cuttings.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1452</gml:identifier>
+                    <gml:name>ASTM D1452/D1452M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D1452/D1452M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Soil Exploration and Sampling by Auger Borings</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d6519">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d6519">
+                    <gml:description>Sampling of soil using the hydraulically operated stationary-piston sampler, held stationary at the sampling depth to reduce disturbance in soft or sensitive soils.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d6519</gml:identifier>
+                    <gml:name>ASTM D6519/D6519M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D6519/D6519M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Sampling of Soil Using the Hydraulically Operated Stationary Piston Sampler</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d7015">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d7015">
+                    <gml:description>Obtaining intact (cubical and cylindrical) block samples of soil, hand-cut from an excavation or trial pit to preserve orientation and structure. Renamed from "Undisturbed Block..." in its -04 edition to "Intact Block..." in -18, matching this project's own preference for "intact" over "undisturbed" (diggs:SoilSpecimen/specimenType already documents "intact" as its first term).</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d7015</gml:identifier>
+                    <gml:name>ASTM D7015/D7015M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D7015/D7015M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practices for Obtaining Intact Block (Cubical and Cylindrical) Samples of Soils</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d6169">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d6169">
+                    <gml:description>Guide for selecting a subsurface soil and rock sampling device appropriate to the investigation's objectives and ground conditions. Retitled in its -21 edition to explicitly cover geotechnical investigations alongside environmental ones, having previously been environmental-only.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d6169</gml:identifier>
+                    <gml:name>ASTM D6169/D6169M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D6169/D6169M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Guide for Selection of Subsurface Soil and Rock Sampling Devices for Environmental and Geotechnical Investigations</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d6282">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d6282">
+                    <gml:description>Direct-push soil sampling for environmental site characterization, advancing a sampler by static or vibratory push rather than rotary or percussive drilling. Found while researching R16's withdrawal picture; not previously registered.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d6282</gml:identifier>
+                    <gml:name>ASTM D6282/D6282M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D6282/D6282M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Guide for Direct Push Soil Sampling for Environmental Site Characterizations</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d7663">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d7663">
+                    <gml:description>Active (pumped) soil-gas sampling in the vadose zone for vapor intrusion evaluations - the basis of diggs:SampleType/type value soil_gas_active. Confirmed active, with a further reapproved edition (D7663-12R24) beyond the -12(2018)e1 edition checked here.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d7663</gml:identifier>
+                    <gml:name>ASTM D7663</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D7663</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Active Soil Gas Sampling in the Vadose Zone for Vapor Intrusion Evaluations</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d1587">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d1587">
+                    <gml:description>Thin-walled (Shelby) tube sampling of fine-grained soils - the basis of diggs:SampleType/type value thin_walled_tube. Withdrawn by ASTM in 2024 with no replacement named. Registered because ISO 22475-1 section 6.3.2 is now the only standing anchor for this sample form, and project records predating the withdrawal still cite the ASTM designation directly.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1587</gml:identifier>
+                    <gml:name>ASTM D1587/D1587M (withdrawn)</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D1587/D1587M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Thin-Walled Tube Sampling of Fine-Grained Soils for Geotechnical Purposes</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d3550">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d3550">
+                    <gml:description>Thick-wall, ring-lined, split-barrel drive sampling of soils - the basis of diggs:SampleType/type value ring_lined_barrel. Withdrawn by ASTM in 2026 with no replacement named.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d3550</gml:identifier>
+                    <gml:name>ASTM D3550/D3550M (withdrawn)</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D3550/D3550M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Thick Wall, Ring-Lined, Split Barrel, Drive Sampling of Soils</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d2113">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d2113">
+                    <gml:description>Rock core drilling and sampling of rock for site exploration - the basis of diggs:SampleType/type value rotary_core where the recovered material is rock. Withdrawn by ASTM in 2023; a reinstatement effort (ASTM work item WK94321) is open, the same administrative-lapse pattern as ASTM D5882 (entry_astm_d5882, above) rather than deliberate obsolescence.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2113</gml:identifier>
+                    <gml:name>ASTM D2113 (withdrawn)</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D2113</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Rock Core Drilling and Sampling of Rock for Site Exploration</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d4220">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d4220">
+                    <gml:description>Preserving and transporting soil samples between the field and the laboratory. Withdrawn by ASTM in 2023; two reinstatement efforts (ASTM work items WK90906 and WK95514) are open.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d4220</gml:identifier>
+                    <gml:name>ASTM D4220/D4220M (withdrawn)</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D4220/D4220M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practices for Preserving and Transporting Soil Samples</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d7758">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d7758">
+                    <gml:description>Passive (sorbent) soil-gas sampling in the vadose zone - the basis of diggs:SampleType/type value soil_gas_passive. Withdrawn by ASTM on 2026-01-16 with no replacement named; currently no active ASTM standard covers passive soil-gas sampling technique specifically.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d7758</gml:identifier>
+                    <gml:name>ASTM D7758 (withdrawn)</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D7758</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Passive Soil Gas Sampling in the Vadose Zone for Source Identification, Spatial Variability Assessment, Monitoring, and Vapor Intrusion Evaluations</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling">sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
 </diggs:SpecificationRegistry>
