@@ -72,6 +72,39 @@ QUOTE_ESCAPE_LEAF_TAGS = (
     "diggs:sourceElementXpath",
 )
 
+# pandas.read_excel's default na_values list includes the literal strings "None",
+# "N/A", "NA", "NULL", "n/a", "null", etc. - so a cell containing exactly one of
+# those words, as legitimate content, silently reads as NaN, indistinguishable from
+# an empty cell. Real cases in this corpus: governingSpecificationSource#none's
+# Name is literally "None"; grout_inj_properties has a QuantityClass of "N/A".
+# Every read below passes keep_default_na=False so those survive as strings, and
+# every blank-check in this file goes through _is_blank/_cell_text rather than
+# pd.isna()/pd.notna()/.dropna() directly - under keep_default_na=False a genuinely
+# empty cell reads as "" rather than NaN, which those would not treat as blank.
+EXCEL_READ_KWARGS = {"keep_default_na": False}
+
+
+def _is_blank(value: object) -> bool:
+    """True for a missing cell or one containing only whitespace - not for a cell
+    that merely looks like a pandas NA sentinel (e.g. "None", "N/A")."""
+    if pd.isna(value):
+        return True
+    return not str(value).strip()
+
+
+def _cell_text(value: object) -> str | None:
+    """value with surrounding whitespace stripped, or None if the cell is blank."""
+    return None if _is_blank(value) else str(value).strip()
+
+
+def _first_nonblank(series: pd.Series, n: int = 0) -> str:
+    """The (n+1)th non-blank value in series, in row order - a blank-aware
+    replacement for the series.dropna().iloc[n] pattern xlsx_2_xml.py uses, which
+    (like bare pd.isna()) only recognizes NaN, not "" from a keep_default_na=False
+    read."""
+    values = [v for v in series if not _is_blank(v)]
+    return str(values[n]).strip()
+
 
 def git_last_commit_epoch(path: Path) -> int | None:
     """Unix timestamp of path's most recent commit, or None if it has no commit
@@ -122,9 +155,9 @@ def peek_dictionary_target(xlsx_path: Path) -> tuple[str, str]:
     up front, since dictionary_file is needed to even know which XML path to check
     for staleness (DictionaryFile does not always match the workbook's own
     basename — e.g. astmD2488Brdr.xlsx -> astm2488Brdr.xml)."""
-    df = pd.read_excel(xlsx_path, sheet_name="DictionaryName")
-    dictionary_file = df["DictionaryFile"].dropna().iloc[0].strip()
-    dictionary_id = df["Dictionary ID"].dropna().iloc[0].strip()
+    df = pd.read_excel(xlsx_path, sheet_name="DictionaryName", **EXCEL_READ_KWARGS)
+    dictionary_file = _first_nonblank(df["DictionaryFile"], 0)
+    dictionary_id = _first_nonblank(df["Dictionary ID"], 0)
     return dictionary_file, dictionary_id
 
 
@@ -133,21 +166,21 @@ def build_dictionary_xml(xlsx_path: Path, dictionary_file: str, dictionary_id: s
     pretty-printed XML document string. Returns (xml_text, warnings)."""
     warnings: list[str] = []
 
-    dictionary_name_df = pd.read_excel(xlsx_path, sheet_name="DictionaryName")
-    description_text = dictionary_name_df["Description"].dropna().iloc[1].strip()
-    dictionary_name = dictionary_name_df["DictionaryName"].dropna().iloc[0].strip()
+    dictionary_name_df = pd.read_excel(xlsx_path, sheet_name="DictionaryName", **EXCEL_READ_KWARGS)
+    description_text = _first_nonblank(dictionary_name_df["Description"], 1)
+    dictionary_name = _first_nonblank(dictionary_name_df["DictionaryName"], 0)
 
-    definitions_df = pd.read_excel(xlsx_path, sheet_name="Definitions")
-    associated_elements_df = pd.read_excel(xlsx_path, sheet_name="AssociatedElements")
+    definitions_df = pd.read_excel(xlsx_path, sheet_name="Definitions", **EXCEL_READ_KWARGS)
+    associated_elements_df = pd.read_excel(xlsx_path, sheet_name="AssociatedElements", **EXCEL_READ_KWARGS)
     workbook_sheets = pd.ExcelFile(xlsx_path).sheet_names
     if "AlternateNames" in workbook_sheets:
-        alternate_names_df = pd.read_excel(xlsx_path, sheet_name="AlternateNames")
+        alternate_names_df = pd.read_excel(xlsx_path, sheet_name="AlternateNames", **EXCEL_READ_KWARGS)
     else:
         # Older workbooks predate the AlternateNames sheet being added to the
         # template. No sheet is equivalent to an empty one, not an error.
         alternate_names_df = pd.DataFrame(columns=["Start", "ID", "Name", "codeSpace"])
 
-    is_conditional_element_empty = associated_elements_df["ConditionalElement"].isna().all()
+    is_conditional_element_empty = associated_elements_df["ConditionalElement"].apply(_is_blank).all()
     processing_instruction = (
         '<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/'
         + ("codelists.xsl" if is_conditional_element_empty else "propertylists.xsl")
@@ -178,38 +211,47 @@ def build_dictionary_xml(xlsx_path: Path, dictionary_file: str, dictionary_id: s
     # way AssociatedElements already tolerates an unmatched ID today.
     alt_names_by_id: dict[str, list[tuple[str, str | None]]] = {}
     for _, row in alternate_names_df.iterrows():
-        if pd.isna(row.get("ID")) or pd.isna(row.get("Name")):
+        alt_id = _cell_text(row.get("ID"))
+        alt_name = _cell_text(row.get("Name"))
+        if alt_id is None or alt_name is None:
             continue
-        alt_id = str(row["ID"]).strip()
-        alt_name = str(row["Name"]).strip()
-        if not alt_id or not alt_name:
-            continue
-        code_space = row.get("codeSpace")
-        code_space = str(code_space).strip() if pd.notna(code_space) and str(code_space).strip() else None
+        code_space = _cell_text(row.get("codeSpace"))
         alt_names_by_id.setdefault(alt_id, []).append((alt_name, code_space))
 
     matched_alt_ids: set[str] = set()
 
+    # A workbook can carry trailing rows past its real data (Excel extends the
+    # "used range" from stray formatting/clicks) that read back as blank-ID rows
+    # under keep_default_na=False, rather than vanishing the way a NaN ID would
+    # have against .dropna()-style code. xlsx_2_xml.py has no guard against this
+    # either - str(row['ID']).strip() there would write gml:id="" just the same -
+    # it simply never met a workbook with such rows before. A blank ID is not an
+    # incomplete Definition (which still warrants the Description/Name warnings
+    # below); it carries no data at all, so it is not a Definition to attempt.
+    skipped_blank_id_rows = 0
     for _, row in definitions_df.iterrows():
-        definition_id = str(row["ID"]).strip()
+        definition_id = _cell_text(row["ID"])
+        if definition_id is None:
+            skipped_blank_id_rows += 1
+            continue
         entry = ET.SubElement(root, ET.QName(GML_NS, "dictionaryEntry"))
         definition = ET.SubElement(
             entry, ET.QName(DIGGS_NS, "Definition"), attrib={ET.QName(GML_NS, "id"): definition_id}
         )
 
-        has_description = pd.notna(row["Description"]) and row["Description"].strip()
-        if has_description:
-            ET.SubElement(definition, ET.QName(GML_NS, "description")).text = row["Description"].strip()
+        entry_description = _cell_text(row["Description"])
+        if entry_description is not None:
+            ET.SubElement(definition, ET.QName(GML_NS, "description")).text = entry_description
         else:
             warnings.append(f"{dictionary_file}#{definition_id}: no Description (gml:description is mandatory)")
 
-        has_name = pd.notna(row["Name"]) and row["Name"].strip()
-        if has_name:
+        name_text = _cell_text(row["Name"])
+        if name_text is not None:
             identifier = ET.SubElement(
                 definition, ET.QName(GML_NS, "identifier"), attrib={"codeSpace": AUTHORITY_CODESPACE}
             )
             identifier.text = DICTIONARY_URL_BASE + dictionary_file + ".xml#" + definition_id
-            ET.SubElement(definition, ET.QName(GML_NS, "name")).text = row["Name"].strip()
+            ET.SubElement(definition, ET.QName(GML_NS, "name")).text = name_text
 
             for alt_name, alt_code_space in alt_names_by_id.get(definition_id, []):
                 attrib = {"codeSpace": alt_code_space} if alt_code_space else {}
@@ -228,23 +270,34 @@ def build_dictionary_xml(xlsx_path: Path, dictionary_file: str, dictionary_id: s
                     "so the alternates were dropped along with the primary gml:name"
                 )
 
-        if pd.notna(row["DataType"]) and str(row["DataType"]).strip():
-            ET.SubElement(definition, ET.QName(DIGGS_NS, "dataType")).text = str(row["DataType"]).strip()
-        if pd.notna(row["QuantityClass"]) and str(row["QuantityClass"]).strip():
-            ET.SubElement(definition, ET.QName(DIGGS_NS, "quantityClass")).text = str(row["QuantityClass"]).strip()
-        if pd.notna(row["Authority"]) and str(row["Authority"]).strip():
-            ET.SubElement(definition, ET.QName(DIGGS_NS, "authority")).text = str(row["Authority"]).strip()
-        if pd.notna(row["Reference"]) and str(row["Reference"]).strip():
-            ET.SubElement(definition, ET.QName(DIGGS_NS, "reference")).text = str(row["Reference"]).strip()
+        for tag, column in (
+            ("dataType", "DataType"),
+            ("quantityClass", "QuantityClass"),
+            ("authority", "Authority"),
+            ("reference", "Reference"),
+        ):
+            value = _cell_text(row[column])
+            if value is not None:
+                ET.SubElement(definition, ET.QName(DIGGS_NS, tag)).text = value
+
+    if skipped_blank_id_rows:
+        warnings.append(
+            f"{dictionary_file}: {skipped_blank_id_rows} blank-ID row(s) in Definitions "
+            "skipped (no data in any column - not an incomplete entry, just past the real data)"
+        )
 
     for alt_id in alt_names_by_id:
         if alt_id not in matched_alt_ids and alt_id != "LFS":
             warnings.append(f"{dictionary_file}: AlternateNames row ID '{alt_id}' matches no Definition")
 
+    skipped_blank_id_assoc_rows = 0
     for _, row in associated_elements_df.iterrows():
-        definition_id = str(row["ID"]).strip()
-        source_element = str(row["SourceElement"]).strip() if pd.notna(row["SourceElement"]) else None
-        conditional_element = str(row["ConditionalElement"]).strip() if pd.notna(row["ConditionalElement"]) else None
+        definition_id = _cell_text(row["ID"])
+        if definition_id is None:
+            skipped_blank_id_assoc_rows += 1
+            continue
+        source_element = _cell_text(row["SourceElement"])
+        conditional_element = _cell_text(row["ConditionalElement"])
 
         for definition in root.findall(f".//{{{DIGGS_NS}}}Definition"):
             if definition.get(ET.QName(GML_NS, "id")) == definition_id:
@@ -257,6 +310,12 @@ def build_dictionary_xml(xlsx_path: Path, dictionary_file: str, dictionary_id: s
                 if conditional_element:
                     ET.SubElement(occurrence, ET.QName(DIGGS_NS, "conditionalElementXpath")).text = conditional_element
                 break
+
+    if skipped_blank_id_assoc_rows:
+        warnings.append(
+            f"{dictionary_file}: {skipped_blank_id_assoc_rows} blank-ID row(s) in AssociatedElements "
+            "skipped (no data in any column - not an incomplete entry, just past the real data)"
+        )
 
     tree_str = ET.tostring(root, "utf-8")
     dom = parseString(tree_str)
@@ -301,6 +360,8 @@ def main() -> int:
     all_warnings: list[str] = []
 
     for xlsx_path in sorted(WORKBOOK_DIR.glob("*.xlsx")):
+        if xlsx_path.name.startswith("~$"):
+            continue  # Excel/Office lock file for a workbook currently open elsewhere
         try:
             dictionary_file, dictionary_id = peek_dictionary_target(xlsx_path)
         except Exception as exc:

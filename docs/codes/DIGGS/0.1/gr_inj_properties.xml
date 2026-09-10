@@ -381,7 +381,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml#line_loss</gml:identifier>
             <gml:name>line loss</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure per length</diggs:quantityClass>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -508,7 +508,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml#specific_energy</gml:identifier>
             <gml:name>specific energy</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>energy per meter</diggs:quantityClass>
+            <diggs:quantityClass>energy per length</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>

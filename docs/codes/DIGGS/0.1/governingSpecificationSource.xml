@@ -36,6 +36,8 @@
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="none">
             <gml:description>No formal specification governs the work.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/governingSpecificationSource.xml#none</gml:identifier>
+            <gml:name>None</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>

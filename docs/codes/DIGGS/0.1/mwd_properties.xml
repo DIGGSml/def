@@ -507,7 +507,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#soil_rock_resistance</gml:identifier>
             <gml:name>Soil-Rock resistance</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force time per volume</diggs:quantityClass>
+            <diggs:quantityClass>(mass per time) per area</diggs:quantityClass>
             <diggs:authority>ISO/IEC. 2016. Geotechnical Investigation and Testing – Field Testing – Part 15: Measuring While Drilling. ISO 22476-15:2016, International Standards Organization. Geneva, Switzerland.</diggs:authority>
             <diggs:reference>https://www.iso.org/standard/63412.html</diggs:reference>
             <diggs:occurrences>

@@ -2118,7 +2118,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pressure_filtration_coeff</gml:identifier>
             <gml:name>Pressure Filtration Coefficient</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>reciprocal time squared</diggs:quantityClass>
+            <diggs:quantityClass>reciprocal square root time</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -3349,7 +3349,6 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#aashto_percent_coarse_sand</gml:identifier>
             <gml:name>percent coarse sand aashto</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force per force</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
