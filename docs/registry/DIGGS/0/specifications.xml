@@ -1024,7 +1024,7 @@
         <diggs:SpecificationRegistryEntry gml:id="entry_astm_d4318">
             <diggs:specification>
                 <diggs:Specification gml:id="astm_d4318">
-                    <gml:description>The Atterberg limits. Determines liquid limit by Casagrande cup (multipoint Method A or one-point Method B), plastic limit by thread rolling, and plasticity index as their difference. Withdrawn by ASTM in 2026; registered because it is cited by projects in progress and is the basis of the plasticity input to ASTM D2487 classification.</gml:description>
+                    <gml:description>The Atterberg limits. Determines liquid limit by Casagrande cup (multipoint Method A or one-point Method B), plastic limit by thread rolling, and plasticity index as their difference. Withdrawn by ASTM in 2026; a reinstatement effort (ASTM work item WK93281) is open. Registered because it is cited by projects in progress and is the basis of the plasticity input to ASTM D2487 classification. AASHTO T 89/T 90 cover the same two limits by the same methods; ISO 17892-12 and BS 1377-2 cover them plus the fall-cone (cone penetrometer) method as an alternative to the Casagrande cup for liquid limit.</gml:description>
                     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d4318</gml:identifier>
                     <gml:name>ASTM D4318</gml:name>
                     <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
@@ -1776,6 +1776,273 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d6913">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d6913">
+                    <gml:description>Particle-size distribution of soils by sieve analysis. The direct successor to the sieve-analysis portion of ASTM D422 (withdrawn 2016) - see that entry's own description; paired with D7928 for the hydrometer/sedimentation portion D422 also used to cover. Registered because D422 names it as a successor without it being registered itself.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d6913</gml:identifier>
+                    <gml:name>ASTM D6913/D6913M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D6913/D6913M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Particle-Size Distribution (Gradation) of Soils Using Sieve Analysis</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d7928">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d7928">
+                    <gml:description>Particle-size distribution of fine-grained soils by sedimentation (hydrometer) analysis. The direct successor to the hydrometer portion of ASTM D422 (withdrawn 2016); paired with D6913/D6913M for the sieve-analysis portion. Registered for the same reason as D6913/D6913M.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d7928</gml:identifier>
+                    <gml:name>ASTM D7928</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D7928</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Particle-Size Distribution (Gradation) of Fine-Grained Soils Using the Sedimentation (Hydrometer) Analysis</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d3282">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d3282">
+                    <gml:description>Classification of soils and soil-aggregate mixtures for highway construction, using the same seven-group (A-1 to A-7) system and group-index calculation as AASHTO M 145 - the two are equivalent, ASTM's and AASHTO's versions of the same classification. Registered because AASHTO M 145's own entry names it as the ASTM equivalent without it being registered itself.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d3282</gml:identifier>
+                    <gml:name>ASTM D3282</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D3282</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Classification of Soils and Soil-Aggregate Mixtures for Highway Construction Purposes</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_en_1536">
+            <diggs:specification>
+                <diggs:Specification gml:id="en_1536">
+                    <gml:description>European execution standard for bored piles - piles or barrettes formed in the ground by excavation. Registered because ASTM D7949's own entry cites it (alongside EN 1538) as recognising thermal integrity profiling without defining a competing method of its own; not itself a testing standard, and not a rigid inclusion technique.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_1536</gml:identifier>
+                    <gml:name>EN 1536:2010+A1:2015</gml:name>
+                    <diggs:accreditingBody>CEN</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>EN 1536</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Execution of special geotechnical works - Bored piles</diggs:standardTitle>
+                    <diggs:standardVersion>2010+A1:2015</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#construction">construction</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:constructionMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_en_1538">
+            <diggs:specification>
+                <diggs:Specification gml:id="en_1538">
+                    <gml:description>European execution standard for diaphragm walls, used as either retaining walls or cut-off walls. Registered for the same reason as EN 1536 - named alongside it in ASTM D7949's entry; not itself a testing standard, and not a rigid inclusion technique.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_1538</gml:identifier>
+                    <gml:name>EN 1538:2010+A1:2015</gml:name>
+                    <diggs:accreditingBody>CEN</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>EN 1538</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Execution of special geotechnical works - Diaphragm walls</diggs:standardTitle>
+                    <diggs:standardVersion>2010+A1:2015</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#construction">construction</diggs:domain>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#deep_foundations">deep_foundations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:constructionMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_14689">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_14689">
+                    <gml:description>Identification, description and classification of rock for geotechnical and engineering-geology purposes - the rock counterpart to ISO 14688-1/14688-2's soil classification. The current (2017) edition unified what had previously been split out as ISO 14689-1 (2003) into a single document; there is no longer a "-1" part. Registered because both BS 5930's and ISO 14688-1's own entries name it as the rock-classification standard neither of them is.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_14689</gml:identifier>
+                    <gml:name>ISO 14689</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ISO 14689</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Identification, description and classification of rock</diggs:standardTitle>
+                    <diggs:standardVersion>2017</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#observations">observations</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:observationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t89">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t89">
+                    <gml:description>Determining the liquid limit of soils by the Casagrande (percussion cup) method - AASHTO's counterpart to the liquid-limit half of ASTM D4318 (withdrawn 2026). Registered as part of covering the Atterberg-limits standard landscape now that D4318 itself is withdrawn.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t89</gml:identifier>
+                    <gml:name>AASHTO T 89</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 89</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Determining the Liquid Limit of Soils</diggs:standardTitle>
+                    <diggs:standardVersion>T 89-22</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t90">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t90">
+                    <gml:description>Determining the plastic limit and plasticity index of soils - AASHTO's counterpart to the plastic-limit half of ASTM D4318 (withdrawn 2026). Paired with AASHTO T 89 for the liquid limit.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t90</gml:identifier>
+                    <gml:name>AASHTO T 90</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 90</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Determining the Plastic Limit and Plasticity Index of Soils</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d4943">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d4943">
+                    <gml:description>Shrinkage limit and shrinkage ratio of cohesive soils by water submersion - the current, non-hazardous shrinkage-limit method. Reuses the D4943 designation of an earlier, unrelated method (shrinkage factors by the wax method, itself withdrawn 2017); the water-submersion method is a distinct successor test, not a revision of the wax-method procedure that previously held this number.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d4943</gml:identifier>
+                    <gml:name>ASTM D4943</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D4943</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Shrinkage Factors of Cohesive Soils by the Water Submersion Method</diggs:standardTitle>
+                    <diggs:standardVersion>D4943-18</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d427">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d427">
+                    <gml:description>Shrinkage factors (shrinkage limit and shrinkage ratio) of soils by the mercury method. Withdrawn by ASTM in 2008 because of mercury's hazards; D4943's water-submersion method is the direct, non-hazardous replacement. Registered because it remains the standard historically cited by shrinkage-limit results predating 2008.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d427</gml:identifier>
+                    <gml:name>ASTM D427 (withdrawn)</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D427</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Test Method for Shrinkage Factors of Soils by the Mercury Method</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_17892_12">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_17892_12">
+                    <gml:description>Determination of the liquid and plastic limits of soil, covering BOTH the fall-cone (cone penetrometer) method and the Casagrande (percussion cup) method as equally valid alternatives in one standard. The international counterpart to ASTM D4318 (withdrawn 2026), and this registry's primary citable source for the fall-cone method specifically.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_17892_12</gml:identifier>
+                    <gml:name>ISO 17892-12</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardPart>12</diggs:standardPart>
+                    <diggs:standardReferenceNumber>ISO 17892-12</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Laboratory testing of soil - Part 12: Determination of liquid and plastic limits</diggs:standardTitle>
+                    <diggs:standardVersion>2018</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_bs_1377_2">
+            <diggs:specification>
+                <diggs:Specification gml:id="bs_1377_2">
+                    <gml:description>British classification tests for soils: liquid limit (by cone penetrometer or by the percussion-cup method - the cone penetrometer method is the only practicable procedure for low-plasticity soils where a percussion-cup groove is hard to obtain), plastic limit and plasticity index, and linear shrinkage and shrinkage limit. Registered as the British counterpart to ASTM D4318 (withdrawn 2026) and ISO 17892-12, and as another citable source for the fall-cone (cone penetrometer) method specifically.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1377_2</gml:identifier>
+                    <gml:name>BS 1377-2</gml:name>
+                    <diggs:accreditingBody>British Standards Institution</diggs:accreditingBody>
+                    <diggs:standardPart>2</diggs:standardPart>
+                    <diggs:standardReferenceNumber>BS 1377-2</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Methods of test for soils for civil engineering purposes - Part 2: Classification tests</diggs:standardTitle>
+                    <diggs:standardVersion>1990</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
