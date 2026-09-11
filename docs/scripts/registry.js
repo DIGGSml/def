@@ -2,24 +2,32 @@
  * Behaviour for DIGGS Specification Registry pages rendered by
  * https://diggsml.org/def/stylesheets/registry.xsl
  *
- * Three jobs:
- *   1. Search - filter the entry cards on any visible text (name, id, title,
- *      accrediting body, ...), so a provider can confirm a standard is
- *      registered before citing it.
+ * Each entry is a pair of adjacent table rows: a summary row (.entry-row,
+ * showing only Code and Title) immediately followed by its detail row
+ * (.detail-row, the full record, display:none until expanded). Four jobs:
+ *   1. Search - filter on any text in EITHER row of the pair (name, id,
+ *      title, accrediting body, ...), so a provider can confirm a standard is
+ *      registered before citing it, whether or not its panel happens to be
+ *      open. The detail row's markup stays in the DOM at all times so its
+ *      text is always there for textContent to see, even while display:none.
  *   2. Domain filter (R15) - a single registry now spans every domain of
- *      practice, so the "All domains" dropdown narrows the card list to one
+ *      practice, so the "All domains" dropdown narrows the row list to one
  *      domain first; the search box then searches WITHIN that narrowed list -
- *      a card must pass both to show. The dropdown's own options are built at
- *      load time from whatever domains the document actually declares, never
- *      hand-maintained here.
- *   3. Citation - build a ready-to-paste xlink:href for EVERY property the
+ *      a row pair must pass both to show. The dropdown's own options are
+ *      built at load time from whatever domains the document actually
+ *      declares, never hand-maintained here.
+ *   3. Accordion - clicking a summary row toggles its detail row open/closed;
+ *      opening one closes whichever other row was open, so at most one entry
+ *      is expanded at a time.
+ *   4. Citation - build a ready-to-paste xlink:href for EVERY property the
  *      entry may be cited from, each independently copyable. A standard
  *      registered for both governingStandard and testProcedureMethod gets one
  *      snippet per use, because a provider populating a test procedure needs
  *      that element name, not the first one that happened to be declared.
  *
- * Deliberately not shared with scripts.js: that file filters TABLE ROWS of a
- * columnar code list, and a registry renders one card per entry instead.
+ * Deliberately not shared with scripts.js: that file filters plain table rows
+ * of a columnar code list with no notion of a summary/detail pair or an
+ * accordion, even though both pages render as tables now.
  */
 
 /* ------------------------------------------------------------------ *
@@ -147,18 +155,19 @@ function prettifyDomainBadges() {
 /*
  * Build the "All domains" dropdown from whatever domains actually appear on the page - never
  * hand-maintained, so a new domain added to the registry shows up here with no stylesheet change.
- * Reads each card's data-domains attribute (space-separated ids) rather than the badges
- * themselves, so a domain still gets an option even if a future layout stops rendering badges.
+ * Reads each summary row's data-domains attribute (space-separated ids) rather than the badges
+ * themselves, so a domain still gets an option even though the badges only render inside the
+ * (possibly collapsed) detail row.
  */
 function populateDomainFilter() {
     var select = document.getElementById("domainFilter");
     if (!select) return;
-    var cards = document.getElementsByClassName("card");
+    var rows = document.getElementsByClassName("entry-row");
     var seen = {};
     var ids = [];
 
-    for (var i = 0; i < cards.length; i++) {
-        var raw = cards[i].getAttribute("data-domains") || "";
+    for (var i = 0; i < rows.length; i++) {
+        var raw = rows[i].getAttribute("data-domains") || "";
         var tokens = raw.split(/\s+/).filter(function (s) { return s.length > 0; });
         for (var j = 0; j < tokens.length; j++) {
             if (!seen[tokens[j]]) { seen[tokens[j]] = true; ids.push(tokens[j]); }
@@ -178,7 +187,42 @@ function populateDomainFilter() {
 }
 
 /* ------------------------------------------------------------------ *
- * Search + domain filter (combined - a card must satisfy both)
+ * Accordion - at most one entry's detail row expanded at a time
+ * ------------------------------------------------------------------ */
+
+/*
+ * summaryRow is the .entry-row that was clicked; its .detail-row is always
+ * the very next sibling, emitted immediately after it by the XSLT. Toggles
+ * that pair open/closed, and force-closes every other pair first, so opening
+ * one entry always closes whichever other one was open - including the
+ * degenerate case of re-clicking the already-open row, which this closes
+ * without opening anything new.
+ */
+function toggleRow(summaryRow) {
+    var detailRow = summaryRow.nextElementSibling;
+    if (!detailRow) return;
+    var wasExpanded = summaryRow.classList.contains("expanded");
+
+    var rows = document.getElementsByClassName("entry-row");
+    for (var i = 0; i < rows.length; i++) {
+        if (rows[i] !== summaryRow && rows[i].classList.contains("expanded")) {
+            rows[i].classList.remove("expanded");
+            var otherDetail = rows[i].nextElementSibling;
+            if (otherDetail) otherDetail.style.display = "none";
+        }
+    }
+
+    if (wasExpanded) {
+        summaryRow.classList.remove("expanded");
+        detailRow.style.display = "none";
+    } else {
+        summaryRow.classList.add("expanded");
+        detailRow.style.display = "table-row";
+    }
+}
+
+/* ------------------------------------------------------------------ *
+ * Search + domain filter (combined - a row pair must satisfy both)
  * ------------------------------------------------------------------ */
 
 function filterRegistry() {
@@ -186,31 +230,49 @@ function filterRegistry() {
     var filter = input.value.toUpperCase().trim();
     var domainSelect = document.getElementById("domainFilter");
     var domain = domainSelect ? domainSelect.value : "";
-    var cards = document.getElementsByClassName("card");
+    var rows = document.getElementsByClassName("entry-row");
     var shown = 0;
 
-    for (var i = 0; i < cards.length; i++) {
-        var text = (cards[i].textContent || cards[i].innerText).toUpperCase();
-        var textMatch = filter === "" || text.indexOf(filter) > -1;
+    for (var i = 0; i < rows.length; i++) {
+        var summaryRow = rows[i];
+        var detailRow = summaryRow.nextElementSibling;
+
+        // Match against BOTH rows' text, so a search term that only appears in the
+        // (possibly collapsed) detail panel - a description, an accrediting body -
+        // still finds the entry, exactly as it did when everything was always visible.
+        var text = (summaryRow.textContent || summaryRow.innerText || "") + " " +
+            (detailRow ? (detailRow.textContent || detailRow.innerText || "") : "");
+        var textMatch = filter === "" || text.toUpperCase().indexOf(filter) > -1;
 
         var domainMatch = true;
         if (domain !== "") {
-            var cardDomains = (cards[i].getAttribute("data-domains") || "").split(/\s+/);
-            domainMatch = cardDomains.indexOf(domain) > -1;
+            var rowDomains = (summaryRow.getAttribute("data-domains") || "").split(/\s+/);
+            domainMatch = rowDomains.indexOf(domain) > -1;
         }
 
         var match = textMatch && domainMatch;
-        cards[i].style.display = match ? "" : "none";
+        summaryRow.style.display = match ? "" : "none";
+
+        if (detailRow) {
+            if (!match) {
+                // A row filtered out of view shouldn't stay "open" underneath.
+                detailRow.style.display = "none";
+                summaryRow.classList.remove("expanded");
+            } else {
+                detailRow.style.display = summaryRow.classList.contains("expanded") ? "table-row" : "none";
+            }
+        }
+
         if (match) shown++;
     }
 
     var counter = document.getElementById("counter");
     if (counter) {
-        counter.innerHTML = "Showing " + shown + " of " + cards.length + " registered standards";
+        counter.innerHTML = "Showing " + shown + " of " + rows.length + " registered standards";
     }
 
     var none = document.getElementById("noresults");
-    if (none) none.style.display = (shown === 0 && cards.length > 0) ? "block" : "none";
+    if (none) none.style.display = (shown === 0 && rows.length > 0) ? "block" : "none";
 }
 
 /* ------------------------------------------------------------------ *
@@ -220,9 +282,11 @@ function filterRegistry() {
 /*
  * A registry href carries the Specification's gml:id as its fragment, so
  * following one from an instance document lands here. The id sits on the
- * Specification, which the XSLT does not emit as an element - so scroll to the
- * card whose citation blocks carry that id and flag it. Scrolling happens
- * inside the .cards pane, which is the scroll container.
+ * Specification, which the XSLT does not emit as an element - so find the
+ * detail row whose citation blocks carry that id, expand its entry (deep
+ * links should reveal the record, not just scroll near it), and flag the
+ * summary row. Scrolling happens inside the .cards pane, which is the
+ * scroll container.
  */
 function focusFragment() {
     var frag = window.location.hash.replace(/^#/, "");
@@ -230,10 +294,12 @@ function focusFragment() {
     var blocks = document.getElementsByClassName("cite-code");
     for (var i = 0; i < blocks.length; i++) {
         if (blocks[i].getAttribute("data-id") === frag) {
-            var card = blocks[i].closest ? blocks[i].closest(".card") : null;
-            if (card) {
-                card.scrollIntoView({ block: "center" });
-                card.style.outline = "3px solid #b06a00";
+            var detailRow = blocks[i].closest ? blocks[i].closest(".detail-row") : null;
+            var summaryRow = detailRow ? detailRow.previousElementSibling : null;
+            if (summaryRow) {
+                toggleRow(summaryRow);
+                summaryRow.scrollIntoView({ block: "center" });
+                summaryRow.style.outline = "3px solid #b06a00";
             }
             return;
         }

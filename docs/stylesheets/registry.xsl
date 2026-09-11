@@ -3,36 +3,50 @@
 <!--
   Renders a DIGGS Specification Registry as a browsable, searchable page.
 
-  Companion to codelists.xsl / propertylists.xsl, but deliberately NOT columnar: a registry entry
-  carries a bibliographic record with many optional fields, most of them long, so one row per entry
-  would be mostly empty cells and unreadable titles. Each entry is rendered as a card holding a
-  key/value table instead, and only the fields actually present are shown.
+  ONE ROW PER ENTRY (changed 2026-09-10; was one card per entry - see git history for that
+  version). A registry entry carries a bibliographic record with many optional fields, most of
+  them long, so all of it is still there - just collapsed by default. Each row shows only Code
+  (the Specification's gml:id) and Title; clicking a row expands an inline detail panel below it
+  holding the full key/value record, in the fixed order Name, Reference number, Version,
+  Description, Accrediting body, Registry authority, then any of the rarer fields an entry
+  happens to carry (Part, Clause, Short method name, Publisher link, Superseded by - present in
+  the pre-existing card layout, not part of the requested six but kept rather than silently
+  dropped), then the citation snippets. Only one row is expanded at a time: opening a row closes
+  whichever one was already open, and opening an already-open row closes it. The detail panel's
+  full text stays in the DOM at all times (merely display:none when collapsed) specifically so
+  search still matches on it - see "Rows filter exactly the same as the cards do" below.
 
   The page has one job beyond lookup: telling a data provider how to CITE what they found. Each
-  entry therefore ends with ONE ready-to-paste snippet PER declared occurrence, each with its own
-  copy button - a standard citable from both governingStandard and testProcedureMethod shows both
-  forms. The raw sourceElementXpath values are deliberately NOT displayed: they are validator
-  configuration, and a data provider needs the element to write, not the XPath that governs it.
+  entry's detail panel therefore ends with ONE ready-to-paste snippet PER declared occurrence,
+  each with its own copy button - a standard citable from both governingStandard and
+  testProcedureMethod shows both forms. The raw sourceElementXpath values are deliberately NOT
+  displayed: they are validator configuration, and a data provider needs the element to write,
+  not the XPath that governs it.
 
   ONE UNIFIED REGISTRY, FILTERED BY DOMAIN (R15). A single registry document now spans every
   domain of practice rather than being split one file per domain - see SpecificationRegistry.xsd's
-  own SCOPE note for why. Each card is tagged with its declared diggs:domain code(s) as a
-  data-domains attribute plus visible badges; the "All domains" dropdown next to the search box
-  filters the card list to one domain, and the search box then searches WITHIN whatever the
-  dropdown has already narrowed to - both conditions must pass. registry.js builds the dropdown's
-  options at load time from whatever domains actually appear in the document, so a domain never
-  needs to be hand-maintained here.
+  own SCOPE note for why. Each row is tagged with its declared diggs:domain code(s) as a
+  data-domains attribute (domain badges themselves moved into the detail panel, since the
+  collapsed row shows only Code and Title); the "All domains" dropdown next to the search box
+  filters the row list to one domain, and the search box then searches WITHIN whatever the
+  dropdown has already narrowed to - both conditions must pass, unchanged from the card version.
+  registry.js builds the dropdown's options at load time from whatever domains actually appear in
+  the document, so a domain never needs to be hand-maintained here.
 
-  Layout is a flex column - header fixed, cards pane scrolling - so the search box and registry
-  title stay visible while browsing. Sized in viewport units rather than the fixed max-height
-  codelists.xsl uses, so it adapts to laptop and large-monitor heights alike.
+  Layout is a flex column - header fixed, table pane scrolling, column headers sticky within that
+  pane - so the search box and registry title stay visible while browsing. Sized in viewport units
+  rather than the fixed max-height codelists.xsl uses, so it adapts to laptop and large-monitor
+  heights alike.
 
   NOTE THE NAMESPACE. Registries are authored against http://diggsml.org/schemas/3. The published
   code list dictionaries still declare http://diggsml.org/schemas/2.6, which is why codelists.xsl
   binds that instead - do not copy the prefix binding from that file. (Tracked for correction as
   task X11, after which this note can go.)
 
-  Behaviour lives in https://diggsml.org/def/scripts/registry.js
+  Behaviour lives in https://diggsml.org/def/scripts/registry.js. Deliberately still not shared
+  with scripts.js (codelists.xsl / propertylists.xsl's behaviour): this page's rows come in
+  summary/detail pairs with accordion and domain-filter logic scripts.js has no notion of, even
+  though both pages now render as tables.
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2"
@@ -121,7 +135,7 @@
 
           .hint { font-size: 13px; color: #555; margin-top: 3px; }
 
-          /* ---- scrolling cards pane ---- */
+          /* ---- scrolling table pane ---- */
           .cards {
             flex: 1 1 auto;
             overflow-y: auto;
@@ -130,32 +144,67 @@
 
           .cards-inner { max-width: 1100px; margin: 0 auto; }
 
-          .card {
+          table.registry-table {
+            width: 100%;
+            border-collapse: collapse;
             background-color: #f7f7f7;
-            border: 1px solid #999;
             box-shadow: 0 1px 5px rgba(0,0,0,.28);
-            margin-bottom: 18px;
           }
 
-          .card-head {
+          table.registry-table thead th {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            text-align: left;
             background-color: #000;
             color: #fff;
             padding: 10px 14px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
-            gap: 10px;
+            font-size: 14px;
           }
 
-          .card-head .nm { font-size: 18px; font-weight: bold; }
+          tr.entry-row { cursor: pointer; }
+          tr.entry-row:hover { background-color: #ececec; }
+          tr.entry-row.expanded { background-color: #e4e4e4; }
 
-          .card-head .id {
-            font-family: Consolas, "Courier New", monospace;
+          tr.entry-row td {
+            padding: 10px 14px;
+            border-bottom: 1px solid #ccc;
             font-size: 15px;
+            vertical-align: top;
+          }
+
+          td.code-cell { width: 260px; white-space: nowrap; }
+
+          .chevron {
+            display: inline-block;
+            width: 0.8em;
+            transition: transform .15s ease;
+          }
+          tr.entry-row.expanded .chevron { transform: rotate(90deg); }
+
+          .code-pill {
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 14px;
             background: #fff;
             color: #000;
             padding: 2px 8px;
             border-radius: 3px;
+            border: 1px solid #ccc;
+          }
+
+          tr.detail-row > td {
+            padding: 0;
+            border-bottom: 1px solid #999;
+            background-color: #fbfbfb;
+          }
+
+          .detail-inner { padding: 14px 18px 18px 18px; }
+
+          .detail-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 14px;
           }
 
           .badge {
@@ -305,10 +354,20 @@
 
         <div class="cards" id="cards">
           <div class="cards-inner">
-            <xsl:for-each select="/diggs:SpecificationRegistry/diggs:registryEntry/diggs:SpecificationRegistryEntry">
-              <xsl:sort select="diggs:specification/diggs:Specification/gml:name"/>
-              <xsl:apply-templates select="."/>
-            </xsl:for-each>
+            <table class="registry-table">
+              <thead>
+                <tr>
+                  <th style="width:260px;">Code</th>
+                  <th>Title</th>
+                </tr>
+              </thead>
+              <tbody>
+                <xsl:for-each select="/diggs:SpecificationRegistry/diggs:registryEntry/diggs:SpecificationRegistryEntry">
+                  <xsl:sort select="diggs:specification/diggs:Specification/gml:name"/>
+                  <xsl:apply-templates select="."/>
+                </xsl:for-each>
+              </tbody>
+            </table>
             <div class="noresults" id="noresults">No standard matches that search.</div>
           </div>
         </div>
@@ -334,107 +393,120 @@
       </xsl:for-each>
     </xsl:variable>
 
-    <div class="card" data-domains="{$domainIds}">
-      <div class="card-head">
-        <span class="nm"><xsl:value-of select="$spec/gml:name"/></span>
-        <span class="id"><xsl:value-of select="$id"/></span>
-        <span class="badge {$status}"><xsl:value-of select="$status"/></span>
-        <xsl:for-each select="diggs:domain">
-          <span class="domain-badge" data-domain-id="{substring-after(@codeSpace, '#')}">
-            <xsl:value-of select="."/>
-          </span>
-        </xsl:for-each>
-      </div>
-
-      <table class="kv">
-        <xsl:if test="$spec/gml:description">
-          <tr><th>Description</th><td><xsl:value-of select="$spec/gml:description"/></td></tr>
-        </xsl:if>
-        <xsl:if test="$spec/diggs:standardReferenceNumber">
-          <tr><th>Reference number</th>
-            <td class="mono"><xsl:value-of select="$spec/diggs:standardReferenceNumber"/></td></tr>
-        </xsl:if>
-        <xsl:if test="$spec/diggs:standardTitle">
-          <tr><th>Title</th><td><xsl:value-of select="$spec/diggs:standardTitle"/></td></tr>
-        </xsl:if>
-        <xsl:if test="$spec/diggs:standardVersion">
-          <tr><th>Version</th><td><xsl:value-of select="$spec/diggs:standardVersion"/></td></tr>
-        </xsl:if>
-        <xsl:if test="$spec/diggs:standardPart">
-          <tr><th>Part</th><td><xsl:value-of select="$spec/diggs:standardPart"/></td></tr>
-        </xsl:if>
-        <xsl:if test="$spec/diggs:standardClause">
-          <tr><th>Clause</th><td><xsl:value-of select="$spec/diggs:standardClause"/></td></tr>
-        </xsl:if>
-        <xsl:if test="$spec/diggs:shortMethodName">
-          <tr><th>Short method name</th><td><xsl:value-of select="$spec/diggs:shortMethodName"/></td></tr>
-        </xsl:if>
-        <xsl:if test="$spec/diggs:accreditingBody or $spec/diggs:accredtingBody">
-          <tr><th>Accrediting body</th>
-            <td>
-              <xsl:value-of select="$spec/diggs:accreditingBody"/>
-              <xsl:value-of select="$spec/diggs:accredtingBody"/>
-            </td></tr>
-        </xsl:if>
-
-        <!-- registration metadata: about the entry, not the standard -->
-        <xsl:if test="diggs:authority">
-          <tr><th>Registry authority</th><td><xsl:value-of select="diggs:authority"/></td></tr>
-        </xsl:if>
-        <xsl:if test="diggs:reference">
-          <tr><th>Publisher link</th>
-            <td>
-              <a target="_blank" href="{diggs:reference}"><xsl:value-of select="diggs:reference"/></a>
-            </td></tr>
-        </xsl:if>
-        <xsl:if test="diggs:supersededByRef/@xlink:href">
-          <tr><th>Superseded by</th>
-            <td class="mono">
-              <a href="{diggs:supersededByRef/@xlink:href}">
-                <xsl:value-of select="diggs:supersededByRef/@xlink:href"/>
-              </a>
-            </td></tr>
-        </xsl:if>
-      </table>
-
-      <!-- One citation per declared occurrence, each independently copyable. registry.js fills in
-           the element name and the snippet text from data-xpath / data-id. -->
-      <div class="cite">
-        <span class="cite-label">Cite it like this</span>
-        <xsl:choose>
-          <xsl:when test="diggs:occurrences/diggs:Occurrence">
-            <xsl:for-each select="diggs:occurrences/diggs:Occurrence">
-              <div class="cite-item">
-                <div class="cite-item-head">
-                  <span class="cite-use"></span>
-                  <button class="copy-btn" onclick="copyCitation(this)">Copy</button>
-                </div>
-                <span class="cite-code" data-id="{$id}" data-xpath="{diggs:sourceElementXpath}"></span>
-                <xsl:if test="diggs:conditionalElementXpath">
-                  <div class="cite-cond">
-                    <xsl:text>Only valid when this is also present: </xsl:text>
-                    <xsl:value-of select="diggs:conditionalElementXpath"/>
-                  </div>
-                </xsl:if>
-              </div>
+    <tr class="entry-row" data-domains="{$domainIds}" onclick="toggleRow(this)">
+      <td class="code-cell">
+        <span class="chevron">&#9656;</span>
+        <span class="code-pill"><xsl:value-of select="$id"/></span>
+      </td>
+      <td><xsl:value-of select="$spec/diggs:standardTitle"/></td>
+    </tr>
+    <tr class="detail-row" style="display:none">
+      <td colspan="2">
+        <div class="detail-inner">
+          <div class="detail-badges">
+            <span class="badge {$status}"><xsl:value-of select="$status"/></span>
+            <xsl:for-each select="diggs:domain">
+              <span class="domain-badge" data-domain-id="{substring-after(@codeSpace, '#')}">
+                <xsl:value-of select="."/>
+              </span>
             </xsl:for-each>
-          </xsl:when>
-          <xsl:otherwise>
-            <div class="cite-note">
-              This entry declares no restriction, so it may be cited from any property that holds a
-              <span class="mono">diggs:Specification</span>. A common one is shown.
-            </div>
-            <div class="cite-item">
-              <div class="cite-item-head">
-                <span class="cite-use"></span>
-                <button class="copy-btn" onclick="copyCitation(this)">Copy</button>
-              </div>
-              <span class="cite-code" data-id="{$id}" data-xpath=""></span>
-            </div>
-          </xsl:otherwise>
-        </xsl:choose>
-      </div>
-    </div>
+          </div>
+
+          <!-- Field order below is the requested six, in order, followed by whatever rarer
+               fields (Part, Clause, Short method name, Publisher link, Superseded by) this
+               particular entry happens to carry - present in the pre-existing layout, not part
+               of the requested six, kept rather than silently dropped. Title itself is not
+               repeated here: it is already showing, in the row directly above, whether or not
+               this panel is open. -->
+          <table class="kv">
+            <tr><th>Name</th><td><xsl:value-of select="$spec/gml:name"/></td></tr>
+            <xsl:if test="$spec/diggs:standardReferenceNumber">
+              <tr><th>Reference number</th>
+                <td class="mono"><xsl:value-of select="$spec/diggs:standardReferenceNumber"/></td></tr>
+            </xsl:if>
+            <xsl:if test="$spec/diggs:standardVersion">
+              <tr><th>Version</th><td><xsl:value-of select="$spec/diggs:standardVersion"/></td></tr>
+            </xsl:if>
+            <xsl:if test="$spec/gml:description">
+              <tr><th>Description</th><td><xsl:value-of select="$spec/gml:description"/></td></tr>
+            </xsl:if>
+            <xsl:if test="$spec/diggs:accreditingBody or $spec/diggs:accredtingBody">
+              <tr><th>Accrediting body</th>
+                <td>
+                  <xsl:value-of select="$spec/diggs:accreditingBody"/>
+                  <xsl:value-of select="$spec/diggs:accredtingBody"/>
+                </td></tr>
+            </xsl:if>
+            <xsl:if test="diggs:authority">
+              <tr><th>Registry authority</th><td><xsl:value-of select="diggs:authority"/></td></tr>
+            </xsl:if>
+
+            <!-- rarer fields, kept from the card layout -->
+            <xsl:if test="$spec/diggs:standardPart">
+              <tr><th>Part</th><td><xsl:value-of select="$spec/diggs:standardPart"/></td></tr>
+            </xsl:if>
+            <xsl:if test="$spec/diggs:standardClause">
+              <tr><th>Clause</th><td><xsl:value-of select="$spec/diggs:standardClause"/></td></tr>
+            </xsl:if>
+            <xsl:if test="$spec/diggs:shortMethodName">
+              <tr><th>Short method name</th><td><xsl:value-of select="$spec/diggs:shortMethodName"/></td></tr>
+            </xsl:if>
+            <xsl:if test="diggs:reference">
+              <tr><th>Publisher link</th>
+                <td>
+                  <a target="_blank" href="{diggs:reference}"><xsl:value-of select="diggs:reference"/></a>
+                </td></tr>
+            </xsl:if>
+            <xsl:if test="diggs:supersededByRef/@xlink:href">
+              <tr><th>Superseded by</th>
+                <td class="mono">
+                  <a href="{diggs:supersededByRef/@xlink:href}">
+                    <xsl:value-of select="diggs:supersededByRef/@xlink:href"/>
+                  </a>
+                </td></tr>
+            </xsl:if>
+          </table>
+
+          <!-- One citation per declared occurrence, each independently copyable. registry.js
+               fills in the element name and the snippet text from data-xpath / data-id. -->
+          <div class="cite">
+            <span class="cite-label">Cite it like this</span>
+            <xsl:choose>
+              <xsl:when test="diggs:occurrences/diggs:Occurrence">
+                <xsl:for-each select="diggs:occurrences/diggs:Occurrence">
+                  <div class="cite-item">
+                    <div class="cite-item-head">
+                      <span class="cite-use"></span>
+                      <button class="copy-btn" onclick="copyCitation(this)">Copy</button>
+                    </div>
+                    <span class="cite-code" data-id="{$id}" data-xpath="{diggs:sourceElementXpath}"></span>
+                    <xsl:if test="diggs:conditionalElementXpath">
+                      <div class="cite-cond">
+                        <xsl:text>Only valid when this is also present: </xsl:text>
+                        <xsl:value-of select="diggs:conditionalElementXpath"/>
+                      </div>
+                    </xsl:if>
+                  </div>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:otherwise>
+                <div class="cite-note">
+                  This entry declares no restriction, so it may be cited from any property that holds a
+                  <span class="mono">diggs:Specification</span>. A common one is shown.
+                </div>
+                <div class="cite-item">
+                  <div class="cite-item-head">
+                    <span class="cite-use"></span>
+                    <button class="copy-btn" onclick="copyCitation(this)">Copy</button>
+                  </div>
+                  <span class="cite-code" data-id="{$id}" data-xpath=""></span>
+                </div>
+              </xsl:otherwise>
+            </xsl:choose>
+          </div>
+        </div>
+      </td>
+    </tr>
   </xsl:template>
 
 </xsl:stylesheet>
