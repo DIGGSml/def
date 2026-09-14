@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="arrayType">
+    <gml:description>Codes that define the electrode array configuration used for an in-situ electrical resistivity test. These codes are used for the value of the arrayType property of the InsituResistivityTest object.</gml:description>
+    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/arrayType.xml</gml:identifier>
+    <gml:name>DIGGS Electrode Array Type Codes</gml:name>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="wenner">
+            <gml:description>Four electrodes in a line at equal separation &quot;a&quot; - the outer pair injects current, the inner pair measures potential. DIGGS structures this array through diggs:ResistivityReading/diggs:electrodeSpacing.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/arrayType.xml#wenner</gml:identifier>
+            <gml:name>Wenner</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:InsituResistivityTest/diggs:arrayType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="schlumberger">
+            <gml:description>A closely spaced potential electrode pair at the centre of a more widely, and in a sounding progressively, spaced current electrode pair. DIGGS structures this array through diggs:ResistivityReading/diggs:currentElectrodeSeparation and diggs:potentialElectrodeSeparation.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/arrayType.xml#schlumberger</gml:identifier>
+            <gml:name>Schlumberger</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:InsituResistivityTest/diggs:arrayType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="dipole_dipole">
+            <gml:description>A current dipole and a potential dipole of equal length, offset from each other by a multiple (n) of that length, both dipoles moved together as the array is stepped. DIGGS structures this array through diggs:ResistivityReading/diggs:dipoleLength and diggs:nFactor.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/arrayType.xml#dipole_dipole</gml:identifier>
+            <gml:name>Dipole-Dipole</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:InsituResistivityTest/diggs:arrayType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+</gml:Dictionary>
