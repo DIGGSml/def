@@ -3695,4 +3695,50 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="apparent_resistivity_min">
+            <gml:description>The minimum apparent resistivity value among the readings taken during an in-situ electrical resistivity test at a station, used together with the maximum apparent resistivity to characterize the resistivity range for a corrosivity classification (eg. Palmer, 1974).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_min</gml:identifier>
+            <gml:name>Minimum Apparent Resistivity</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electrical resistivity</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituResistivityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="apparent_resistivity_max">
+            <gml:description>The maximum apparent resistivity value among the readings taken during an in-situ electrical resistivity test at a station, used together with the minimum apparent resistivity to characterize the resistivity range for a corrosivity classification (eg. Palmer, 1974).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_max</gml:identifier>
+            <gml:name>Maximum Apparent Resistivity</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>electrical resistivity</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituResistivityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="corrosivity_classification_palmer">
+            <gml:description>A qualitative soil corrosivity rating for buried metal, assigned from the apparent resistivity range measured by an in-situ electrical resistivity test according to the correlation published by Palmer (1974): 0-10 ohm.m Very Severe, 11-20 Severe, 21-50 Moderate, 51-100 Mild, 101+ Very Mild.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#corrosivity_classification_palmer</gml:identifier>
+            <gml:name>Corrosivity Classification (Palmer, 1974)</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>J.D. Palmer</diggs:authority>
+            <diggs:reference>Palmer, J.D. (1974). Soil Resistivity - Measurement and Analysis. Material Performance, Vol. 13.</diggs:reference>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituResistivityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
