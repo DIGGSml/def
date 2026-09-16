@@ -1486,6 +1486,10 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LossOnIgnitionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1915,7 +1919,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="pH">
-            <gml:description>A meassure of how acidic or basic a soil or water is.</gml:description>
+            <gml:description>The negative base-10 logarithm of hydrogen ion activity in a soil-water suspension or in a water sample - the measure of how acidic or alkaline the material is, on a scale where 7 is neutral, lower values are acidic and higher values alkaline. Dimensionless by definition, so a Property carrying it states no uom. Determined electrometrically with a pH meter: BS 1377-3 Clause 12; ASTM G51 and AASHTO T 289 where the purpose is corrosion assessment; ASTM D4972 for agricultural, environmental and natural-resource purposes, whose own scope excludes corrosion testing. In a ground-aggressivity assessment pH is read together with resistivity, sulfate and chloride rather than on its own.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pH</gml:identifier>
             <gml:name>pH</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -2168,6 +2172,10 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:RedoxTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -2204,6 +2212,10 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabResistivityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -3113,6 +3125,10 @@
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:OrganicMatterByWetCombustionTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -3836,6 +3852,96 @@
             <gml:description>Water-soluble magnesium content of soil or groundwater, per BS 1377-3 Clause 10 - which specifies the water-soluble determination only, so for magnesium this is the basis a BS 1377-3 result will normally be on even when the report does not say so. Use in preference to the generic magnesium_content whenever the source confirms it. Magnesium matters because BS 8500 derives its ACEC class from sulfate and magnesium together via BRE Special Digest 1, and EN 206 grades chemical attack partly on magnesium ion content.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#magnesium_water_soluble</gml:identifier>
             <gml:name>Magnesium Content, Water-Soluble</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="total_organic_carbon">
+            <gml:description>Total organic carbon (TOC) content of soil, per BS 1377-3 Clause 5 - the carbon held in organic compounds, determined after removing carbonate carbon. Distinct from total_carbon and easily_oxidized_carbon, which are the AASHTO T 194 wet-combustion determinations bound to OrganicMatterByWetCombustionTest, and distinct again from LOI (loss on ignition, Clause 6) and total_organic_matter, which measure organic MATTER rather than the carbon within it.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#total_organic_carbon</gml:identifier>
+            <gml:name>Total Organic Carbon</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="carbonate_content">
+            <gml:description>Carbonate content of soil, per BS 1377-3 Clause 8, usually expressed as equivalent calcium carbonate. Relevant both to ground aggressivity - carbonate buffers acidity and moderates the pH a corrosion assessment reads - and to the identification of calcareous and cemented soils. The Jazera site's sabkha and calcareous sands are exactly the materials for which this is normally reported, though this determination is not in the project record.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#carbonate_content</gml:identifier>
+            <gml:name>Carbonate Content</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="total_sulfur">
+            <gml:description>Total sulfur content of soil, per BS 1377-3 Clause 7 - all sulfur present, in every oxidation state, not only that recoverable as sulfate. The upper bound on sulfate that could develop if reduced sulfur compounds oxidise, which is why it is reported for pyritic and sabkha ground. A DIFFERENT ANALYTE from sulfate_content and its water- and acid-soluble variants, not another extraction of the same one.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#total_sulfur</gml:identifier>
+            <gml:name>Total Sulfur</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="total_sulfide">
+            <gml:description>Total sulfide content of soil, also called total reduced sulfur, per BS 1377-3 Clause 7 - sulfur held in reduced form, which on exposure to air can oxidise to sulfate and acidify the ground. Reported where pyrite or organic-rich anaerobic deposits are suspected. Distinct from sulfide_acid_soluble, which recovers only the monosulfide fraction.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#total_sulfide</gml:identifier>
+            <gml:name>Total Sulfide</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sulfide_acid_soluble">
+            <gml:description>Acid-soluble sulfide content of soil - the monosulfide fraction released by acid digestion, per BS 1377-3 Clause 7. A subset of total_sulfide: it does not recover disulfides such as pyrite, so the two differ substantially in pyritic ground and should not be used interchangeably.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sulfide_acid_soluble</gml:identifier>
+            <gml:name>Sulfide Content, Acid-Soluble</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="total_dissolved_solids">
+            <gml:description>Total dissolved solids (TDS) of groundwater, per BS 1377-3 Clause 11 - the mass of dissolved material remaining after evaporation of a filtered sample. A summary measure of groundwater salinity, read alongside the individual ion determinations (sulfate, chloride, magnesium) rather than in place of them.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#total_dissolved_solids</gml:identifier>
+            <gml:name>Total Dissolved Solids</gml:name>
             <diggs:dataType>double</diggs:dataType>
             <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
             <diggs:occurrences>
