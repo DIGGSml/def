@@ -1480,7 +1480,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#LOI</gml:identifier>
             <gml:name>Organic Content of Soil</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>force per force</diggs:quantityClass>
+            <diggs:quantityClass>mass per mass</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -3074,7 +3074,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#easily_oxidized_carbon</gml:identifier>
             <gml:name>Easily Oxidized Carbon</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:quantityClass>mass per mass</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -3089,7 +3089,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#total_carbon</gml:identifier>
             <gml:name>Total Carbon</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:quantityClass>mass per mass</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -3104,7 +3104,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#easily_oxidized_matter</gml:identifier>
             <gml:name>Easily Oxidized Organic Matter</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:quantityClass>mass per mass</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -3119,7 +3119,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#total_organic_matter</gml:identifier>
             <gml:name>Total Organic Matter</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:quantityClass>mass per mass</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
