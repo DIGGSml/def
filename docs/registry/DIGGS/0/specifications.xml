@@ -2047,4 +2047,135 @@
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t288">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t288">
+                    <gml:description>Minimum laboratory soil resistivity by the soil box method, measured on a soil-water slurry and progressively diluted to find the minimum value. Its principal use is to assess the corrosivity of a soil toward buried metal, and it is the laboratory counterpart to the field four-electrode (Wenner) survey of ASTM G57. Normally read together with AASHTO T 289 (pH), T 290 (water-soluble sulfate) and T 291 (water-soluble chloride) as the AASHTO soil-corrosivity series.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t288</gml:identifier>
+                    <gml:name>AASHTO T 288</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 288</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Determining Minimum Laboratory Soil Resistivity</diggs:standardTitle>
+                    <diggs:standardVersion>2023</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t289">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t289">
+                    <gml:description>pH of soil for corrosion testing, by pH meter on a soil-water slurry. The standard states that the principal use of the test is to supplement soil-resistivity measurement rather than to stand alone, identifying conditions under which corrosion of buried metal may be accentuated. The AASHTO counterpart to ASTM G51, and to the pH determination of BS 1377-3 Clause 12.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t289</gml:identifier>
+                    <gml:name>AASHTO T 289</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 289</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Determining pH of Soil for Use in Corrosion Testing</diggs:standardTitle>
+                    <diggs:standardVersion>2022</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t290">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t290">
+                    <gml:description>Water-soluble sulfate ion content of soil. Reports the WATER-SOLUBLE fraction specifically, as distinct from acid-soluble sulfate or total sulfur - a distinction that matters because the three can differ by an order of magnitude on the same material and feed different ground-aggressivity classifications. The AASHTO counterpart to ASTM C1580, and to the 2:1 water extract of BS 1377-3 Clause 7.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t290</gml:identifier>
+                    <gml:name>AASHTO T 290</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 290</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Determining Water-Soluble Sulfate Ion Content in Soil</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t291">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t291">
+                    <gml:description>Water-soluble chloride ion content of soil; the standard defines the procedures for sampling and testing a soil for chloride ion content. Reports the WATER-SOLUBLE fraction specifically, as distinct from the acid-soluble chloride of BS 1377-3 Clause 9. Completes the AASHTO soil-corrosivity series alongside T 288 (resistivity), T 289 (pH) and T 290 (sulfate).</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t291</gml:identifier>
+                    <gml:name>AASHTO T 291</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 291</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Determining Water-Soluble Chloride Ion Content in Soil</diggs:standardTitle>
+                    <diggs:standardVersion>1994(R2013)</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_g51">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_g51">
+                    <gml:description>pH of soil for corrosion evaluation, by pH meter. The standard states that its principal use is to supplement soil-resistivity measurement (ASTM G57) and thereby identify conditions under which the corrosion of metals in soil may be accentuated. NOTE THE TITLE CHANGED WITH THE CURRENT EDITION: editions through G51-18 read &quot;for Use in Corrosion Testing&quot;, while G51-23 reads &quot;for Use in Corrosion Evaluations&quot; - the designation is unchanged and the earlier title will be the one cited by older reports. The ASTM counterpart to AASHTO T 289.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_g51</gml:identifier>
+                    <gml:name>ASTM G51</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM G51</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Measuring pH of Soil for Use in Corrosion Evaluations</diggs:standardTitle>
+                    <diggs:standardVersion>2023</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c1580">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c1580">
+                    <gml:description>Water-soluble sulfate in soil, developed to determine whether a soil could react adversely with hydraulic cement concrete. Covers water-soluble sulfate concentrations between 0.02 % and 3.33 % sulfate by mass, and determines sulfur only in the sulfate form - not total sulfur and not sulfide. Reports the WATER-SOLUBLE fraction specifically; compare the acid-soluble sulfate and total-sulfur determinations of BS 1377-3 Clause 7, which can give an order-of-magnitude different answer on the same material. The ASTM counterpart to AASHTO T 290.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c1580</gml:identifier>
+                    <gml:name>ASTM C1580</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C1580</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Water-Soluble Sulfate in Soil</diggs:standardTitle>
+                    <diggs:standardVersion>2020</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
 </diggs:SpecificationRegistry>

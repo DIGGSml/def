@@ -348,7 +348,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="chloride_content">
-            <gml:description>Chloride content by lab testing (corrosivity series)</gml:description>
+            <gml:description>Chloride content of soil or groundwater by laboratory testing (corrosivity series). USE THIS ENTRY WHEN THE SOURCE DOES NOT STATE THE EXTRACTION BASIS - the case for the Jazera project record (GBL-24136), which reports a chloride content as a percentage without saying whether it is water- or acid-soluble. Where the basis IS known, prefer chloride_water_soluble or chloride_acid_soluble instead.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#chloride_content</gml:identifier>
             <gml:name>Chloride Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -2601,7 +2601,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="sulfate_content">
-            <gml:description>Sulfate content by lab testing (corrosivity series)</gml:description>
+            <gml:description>Sulfate content of soil or groundwater by laboratory testing (corrosivity series). USE THIS ENTRY WHEN THE SOURCE DOES NOT STATE THE EXTRACTION BASIS - common in practice, and the case for the Jazera project record (GBL-24136), which reports a sulfate content in ppm without saying whether it is water- or acid-soluble. Where the basis IS known, prefer the specific entry instead: sulfate_water_soluble or sulfate_acid_soluble. The distinction is not cosmetic - the two can differ by an order of magnitude on the same material, and BS 8500 / BRE Special Digest 1 derive their ACEC class from a particular one of them.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sulfate_content</gml:identifier>
             <gml:name>Sulfate Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -3587,7 +3587,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="magnesium_content">
-            <gml:description>Magnesium content by lab testing (corrosivity series). Completes the chemistry set the ground-aggressivity classifications are derived from: EN 206 grades chemical attack partly on magnesium ion content, and BS 8500 derives its ACEC class from sulfate AND magnesium together via BRE Special Digest 1, so an exposureClassification could be stated without the measurement that justifies it. Added at R10 from the Jazera project record (GBL-24136), which reports 571-954 ppm alongside its sulfate, chloride and pH results.</gml:description>
+            <gml:description>Magnesium content by lab testing (corrosivity series). Completes the chemistry set the ground-aggressivity classifications are derived from: EN 206 grades chemical attack partly on magnesium ion content, and BS 8500 derives its ACEC class from sulfate AND magnesium together via BRE Special Digest 1, so an exposureClassification could be stated without the measurement that justifies it. Added at R10 from the Jazera project record (GBL-24136), which reports 571-954 ppm alongside its sulfate, chloride and pH results. USE THIS ENTRY WHEN THE SOURCE DOES NOT STATE THE EXTRACTION BASIS, as that record does not; where it is known to be the water-soluble determination of BS 1377-3 Clause 10, prefer magnesium_water_soluble instead.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#magnesium_content</gml:identifier>
             <gml:name>Magnesium Content</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -3767,6 +3767,81 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabThermalConductivityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sulfate_water_soluble">
+            <gml:description>Water-soluble sulfate content of soil or groundwater - the fraction released by a water extract, conventionally the 2:1 water:soil extract of BS 1377-3 Clause 7, and the quantity determined by ASTM C1580 and AASHTO T 290. Use in preference to the generic sulfate_content whenever the source states that the determination was water-soluble. Distinguish from sulfate_acid_soluble: the two can differ by an order of magnitude on the same material, and BS 8500 / BRE Special Digest 1 ACEC classification depends on which was measured.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sulfate_water_soluble</gml:identifier>
+            <gml:name>Sulfate Content, Water-Soluble</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sulfate_acid_soluble">
+            <gml:description>Acid-soluble sulfate content of soil - the fraction released by acid digestion, per BS 1377-3 Clause 7, and generally the larger of the two determinations because it mobilises sparingly-soluble sulfate minerals such as gypsum that a water extract leaves behind. Use in preference to the generic sulfate_content whenever the source states that the determination was acid-soluble. Distinct again from total sulfur and from the sulfide determinations of the same clause, which are different analytes rather than different extractions.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sulfate_acid_soluble</gml:identifier>
+            <gml:name>Sulfate Content, Acid-Soluble</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="chloride_water_soluble">
+            <gml:description>Water-soluble chloride content of soil or groundwater - the fraction released by a water extract, per BS 1377-3 Clause 9 and AASHTO T 291. Use in preference to the generic chloride_content whenever the source states that the determination was water-soluble.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#chloride_water_soluble</gml:identifier>
+            <gml:name>Chloride Content, Water-Soluble</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="chloride_acid_soluble">
+            <gml:description>Acid-soluble chloride content of soil - the fraction released by acid digestion, per BS 1377-3 Clause 9. Use in preference to the generic chloride_content whenever the source states that the determination was acid-soluble.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#chloride_acid_soluble</gml:identifier>
+            <gml:name>Chloride Content, Acid-Soluble</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="magnesium_water_soluble">
+            <gml:description>Water-soluble magnesium content of soil or groundwater, per BS 1377-3 Clause 10 - which specifies the water-soluble determination only, so for magnesium this is the basis a BS 1377-3 result will normally be on even when the report does not say so. Use in preference to the generic magnesium_content whenever the source confirms it. Magnesium matters because BS 8500 derives its ACEC class from sulfate and magnesium together via BRE Special Digest 1, and EN 206 grades chemical attack partly on magnesium ion content.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#magnesium_water_soluble</gml:identifier>
+            <gml:name>Magnesium Content, Water-Soluble</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>amount of substance per amount of substance</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabChemicalTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
