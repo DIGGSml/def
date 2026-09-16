@@ -1206,8 +1206,8 @@
                     <diggs:standardTitle>Standard Test Method for Determination of Thermal Conductivity of Soil and Rock by Thermal Needle Probe Procedure</diggs:standardTitle>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
-            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#geophysics">geophysics</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
@@ -1229,8 +1229,8 @@
                     <diggs:standardVersion>2017</diggs:standardVersion>
                 </diggs:Specification>
             </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
             <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing">insitu_testing</diggs:domain>
-            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#geophysics">geophysics</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>

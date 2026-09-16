@@ -3741,4 +3741,34 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="thermal_conductivity">
+            <gml:description>A material's ability to conduct heat, determined for soil or soft rock by the thermal needle probe method (ASTM D5334, IEEE Std 442).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thermal_conductivity</gml:identifier>
+            <gml:name>Thermal Conductivity</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>thermal conductivity</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabThermalConductivityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="thermal_resistivity">
+            <gml:description>The reciprocal of thermal conductivity - a material's opposition to heat flow per unit length - determined for soil or soft rock by the thermal needle probe method (ASTM D5334, IEEE Std 442).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thermal_resistivity</gml:identifier>
+            <gml:name>Thermal Resistivity</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>thermal resistivity</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabThermalConductivityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
