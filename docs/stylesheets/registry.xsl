@@ -163,6 +163,17 @@
           }
 
           tr.entry-row { cursor: pointer; }
+
+          /* Alternating row shading, white/grey. Every entry-row is followed immediately by its
+             own detail-row (always in pairs - see the template), so entry-rows fall at row
+             positions 1, 5, 9, ... (logical entry 1, 3, 5, ...) and 3, 7, 11, ... (logical entry
+             2, 4, 6, ...) among ALL table-row siblings, hence the 4n+1 / 4n+3 split rather than
+             plain odd/even. Declared BEFORE :hover/.expanded below so those still win the tie on
+             specificity (same 0,2,1 weight; later source wins) and remain visible over either
+             stripe. */
+          tr.entry-row:nth-of-type(4n+1) { background-color: #ffffff; }
+          tr.entry-row:nth-of-type(4n+3) { background-color: #f0f0f0; }
+
           tr.entry-row:hover { background-color: #ececec; }
           tr.entry-row.expanded { background-color: #e4e4e4; }
 
@@ -185,6 +196,7 @@
           .code-pill {
             font-family: Consolas, "Courier New", monospace;
             font-size: 14px;
+            font-weight: bold;
             background: #fff;
             color: #000;
             padding: 2px 8px;
