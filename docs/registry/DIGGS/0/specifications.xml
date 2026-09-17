@@ -2178,4 +2178,180 @@
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d2216">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d2216">
+                    <gml:description>Water (moisture) content of soil, rock and similar materials, by drying to constant mass: the ratio of the mass of water held in the pore spaces to the mass of the solid particles, as a percentage. Two methods differing in specimen size and reported resolution - Method A reports to the nearest 1 % and is the referee method where a result is disputed, Method B to 0.1 %. Materials containing gypsum, appreciable organic matter, soluble solids or chemical contaminants may need a reduced drying temperature or an alternative procedure. Water content of PEAT AND OTHER ORGANIC SOILS belongs to ASTM D2974, whose own scope says so explicitly, not to this method. This is the determination every other index test is built on: it is the abscissa of the compaction curve, the quantity the Atterberg limits are values of, and the term that converts a bulk density to a dry density.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2216</gml:identifier>
+                    <gml:name>ASTM D2216</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D2216</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Laboratory Determination of Water (Moisture) Content of Soil and Rock by Mass</diggs:standardTitle>
+                    <diggs:standardVersion>2019</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d1140">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d1140">
+                    <gml:description>The amount of material finer than the 75 micrometre (No. 200) sieve in a soil, determined by washing, for material of maximum particle size 75 mm. Two methods: Method A disperses the specimen in water and suits non-cohesive soils of little or no plasticity; Method B uses a dispersing solution and is for cohesive, clayey soils. Reports a SINGLE percentage - the fines fraction - and not a particle-size distribution: where the full gradation is wanted, ASTM D6913/D6913M covers the distribution coarser than 75 micrometres and ASTM D7928 the distribution finer than it, and D6913 carries a washing step of its own rather than citing this method. The standard states that it does not distinguish removal of fine particles from removal of soluble substances, and directs the user elsewhere for materials with appreciable soluble content.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1140</gml:identifier>
+                    <gml:name>ASTM D1140</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D1140</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Determining the Amount of Material Finer than 75-um (No. 200) Sieve in Soils by Washing</diggs:standardTitle>
+                    <diggs:standardVersion>2025</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d854">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d854">
+                    <gml:description>Specific gravity of soil solids passing the 9.5 mm (3/8 in.) or a smaller sieve, by displacement of water in a pycnometer. Method A tests a moist specimen and is the one required for organic soils, highly plastic fine-grained soils, tropical soils and soils containing halloysite; Method B tests an oven-dry specimen. Excluded from scope: solids altered by the method itself, contaminated material, and highly organic matter such as floating fibrous material. NOTE THE TITLE CHANGED WITH THE CURRENT EDITION: editions through D854-14 read &quot;Specific Gravity of Soil Solids by Water Pycnometer&quot;, while D854-23 reads &quot;by the Water Displacement Method&quot; - the designation is unchanged and the earlier title will be the one cited by older reports. Specific gravity is the quantity that converts a measured density into a void ratio or a degree of saturation, so it is a prerequisite of most phase-relationship computation rather than a result reported for its own sake.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d854</gml:identifier>
+                    <gml:name>ASTM D854</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D854</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Specific Gravity of Soil Solids by the Water Displacement Method</diggs:standardTitle>
+                    <diggs:standardVersion>2023</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d7263">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d7263">
+                    <gml:description>Bulk density, dry density and dry unit weight of a soil SPECIMEN - as distinct from an index density and from an in-place field density. Method A obtains the specimen volume by water displacement after coating it with wax; Method B by direct measurement of its dimensions together with its mass. Applies to intact specimens from thin-walled tubes and to block samples, and to specimens remoulded by dynamic or static compaction, provided the specimen holds its shape while being measured; it may extend to related materials such as soil-cement mixtures. SI units are the standard and inch-pound values are for information. Compare ASTM D4253 and D4254, which give the maximum and minimum INDEX densities of cohesionless soils for a relative-density computation rather than the density of one particular specimen.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d7263</gml:identifier>
+                    <gml:name>ASTM D7263</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D7263</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Laboratory Determination of Density and Unit Weight of Soil Specimens</diggs:standardTitle>
+                    <diggs:standardVersion>2021</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d2974">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d2974">
+                    <gml:description>Water (moisture) content, ash content and organic material of peat and other organic soils - organic clays, silts and mucks - by loss on ignition in a muffle furnace. Method A ignites the oven-dried specimen at 440 +/- 40 degrees C and is the general classification method; Method B air-dries then oven-dries the specimen and ignites it at 750 +/- 38 degrees C, and is used when the material is being evaluated for use as a fuel. The standard states explicitly that water content of MINERAL soil and rock belongs to ASTM D2216 and not to it. NOTE THAT BOTH THE TITLE AND THE METHOD LETTERS CHANGED IN THE 2020 REVISION: editions through D2974-13 read &quot;Standard Test Methods for Moisture, Ash, and Organic Matter of Peat and Other Organic Soils&quot; and carried four methods A to D (A and B for moisture, C and D for ash), while D2974-20 and later carry the current title and only Methods A and B. A citation of D2974 &quot;Method C&quot; or &quot;Method D&quot; can therefore only be to an edition before 2020; no such method exists in the current standard.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2974</gml:identifier>
+                    <gml:name>ASTM D2974</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D2974</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Determining the Water (Moisture) Content, Ash Content, and Organic Material of Peat and Other Organic Soils</diggs:standardTitle>
+                    <diggs:standardVersion>2025</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d698">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d698">
+                    <gml:description>The standard Proctor compaction test. Establishes the relationship between water content and dry unit weight at a compactive effort of 12,400 ft-lbf/ft3 (600 kN-m/m3), giving maximum dry density and optimum water content, for soils with 30 % or less by mass retained on the 19.0 mm (3/4 in.) sieve. Three methods, each compacting three layers: Method A, 101.6 mm mould, 25 blows per layer, material passing the No. 4 sieve; Method B, 101.6 mm mould, 25 blows, material passing the 9.5 mm (3/8 in.) sieve; Method C, 152.4 mm mould, 56 blows, material passing the 19.0 mm (3/4 in.) sieve. The standard-effort counterpart to ASTM D1557, the modified Proctor test at 2,700 kN-m/m3: same three method letters and the same mould sizes, but a heavier rammer falling further, and therefore a different curve on the same soil. A percent-compaction acceptance criterion is not interpretable unless it names which of the two it is referred to.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d698</gml:identifier>
+                    <gml:name>ASTM D698</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D698</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Laboratory Compaction Characteristics of Soil Using Standard Effort (12,400 ft-lbf/ft3 (600 kN-m/m3))</diggs:standardTitle>
+                    <diggs:standardVersion>2012(R2021)</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_g187">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_g187">
+                    <gml:description>Soil electrical resistivity measured on a sample removed from the ground, using a TWO-electrode soil box, for the assessment and control of corrosion of buried structures. The procedure may be run in the field or in the laboratory, on specimens either saturated or in the as-received condition, and results are reported in ohm-centimetres. Distinct from ASTM G57, which is the four-electrode (Wenner) method, and from AASHTO T 288, which is also a soil-box method but progressively dilutes a soil-water slurry to find the MINIMUM resistivity rather than the resistivity of the material as sampled. The three are not interchangeable and a soil-corrosivity classification is only interpretable against the method that produced the value.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_g187</gml:identifier>
+                    <gml:name>ASTM G187</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM G187</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Measurement of Soil Resistivity Using the Two-Electrode Soil Box Method</diggs:standardTitle>
+                    <diggs:standardVersion>2023</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d4327">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d4327">
+                    <gml:description>Sequential determination of seven common anions - fluoride, chloride, nitrite, ortho-phosphate, bromide, nitrate and sulfate - by suppressed ion chromatography, with detection limits reaching 0.01 mg/L depending on the anion; other anions such as the short-chain organic acids can be determined with alternate separator columns and eluents, outside the primary scope. NOTE THE MATRIX. This is a WATER method: its scope covers water, and it states that establishing its validity for any other matrix is the user's responsibility. A soil chloride or sulfate result therefore reaches this standard only as the analytical finish applied to an aqueous extract, and it is the extraction procedure - not this method - that makes such a result a water-soluble one. For a soil determination complete in itself, cite AASHTO T 291 (water-soluble chloride in soil), AASHTO T 290 or ASTM C1580 (water-soluble sulfate in soil), or BS 1377-3 for the acid-soluble fractions.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d4327</gml:identifier>
+                    <gml:name>ASTM D4327</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D4327</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Anions in Water by Suppressed Ion Chromatography</diggs:standardTitle>
+                    <diggs:standardVersion>2017(R2025)</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing">laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
 </diggs:SpecificationRegistry>
