@@ -16,15 +16,11 @@
         diggs:Specification's gml:id, so it resolves to exactly the kind of object an instance would
         otherwise have carried inline; the enclosing diggs:SpecificationRegistryEntry carries the
         registration metadata, and its occurrences declare where the entry may legitimately be
-        cited. One registry serves every domain of practice - see diggs:SpecificationRegistry's own
-        schema documentation for why a per-domain split was tried and withdrawn - and each entry's
+        cited. One registry serves every domain of practice and each entry's
         domain element (coded against specificationDomain.xml) classifies which domain(s) cite it,
-        so the registry stays browsable and filterable by practice area without being split into
-        several files. Populated first for rigid inclusions, derived from the 'Required by (source)'
-        column of the DIGGS rigid inclusions technical report, which populates it on all 235
-        essential parameters; laboratory testing, in-situ testing, sampling and construction domains
-        are added as entries under the same registry rather than as separate
-        documents.</gml:description>
+        so the registry stays browsable and filterable. Selecting a domain from the dropdown field filters 
+        the registry by that domain, and adding text to the search bar will filter the list further.
+    </gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
         >https://diggsml.org/def/registry/DIGGS/0/specifications.xml</gml:identifier>
     <gml:name>DIGGS Specification Registry</gml:name>
