@@ -3967,4 +3967,64 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="bulk_unit_weight">
+            <gml:description>Total weight (of solids and water) divided by total volume of material, representing natural conditions. Parallels bulk_density, but reported strictly as a force per volume (unit weight) rather than interchangeably as mass per volume.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight</gml:identifier>
+            <gml:name>Unit Weight, Bulk (Natural)</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per volume</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituCBRTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:InsituDensityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCBRTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="dry_unit_weight">
+            <gml:description>Weight of solids divided by total volume. Parallels dry_density, but reported strictly as a force per volume (unit weight) rather than interchangeably as mass per volume.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_unit_weight</gml:identifier>
+            <gml:name>Unit Weight, Dry</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per volume</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabDensityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="unit_weight_max">
+            <gml:description>This is a result of a compaction test. It is defined as the maximum dry unit weight that is measured when a specific type and amount of energy is used for the compaction test. This is also the value of the compacted dry unit weight when the soil is at the optimum moisture content. Parallels dry_density_max, but reported strictly as a force per volume (unit weight) rather than interchangeably as mass per volume.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#unit_weight_max</gml:identifier>
+            <gml:name>Maximum Unit Weight</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per volume</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LabCompactionTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
