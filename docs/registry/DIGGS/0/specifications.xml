@@ -1805,6 +1805,11 @@
                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#materials"
                 >materials</diggs:domain>
             <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
     <diggs:registryEntry>
@@ -3389,6 +3394,75 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_sbc_303_cr_18">
+            <diggs:specification>
+                <diggs:Specification gml:id="sbc_303_cr_18">
+                    <gml:description>The soils and foundations code of the Saudi Building Code,
+                        covering site investigation, soil classification, shallow and deep
+                        foundation design, ground improvement, excavation and earthwork. Companion
+                        to the loading code SBC 301-CR, which carries the seismic and load
+                        provisions. Cited as reference [4] of the Jazera substation CMC final
+                        technical report (FMSA 24047-FTR-CMC).</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sbc_303_cr_18</gml:identifier>
+                    <gml:name>SBC 303-CR-18</gml:name>
+                    <diggs:accreditingBody>Saudi Building Code Center</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>SBC 303-CR</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>The Saudi Soil and Foundations Code, Code
+                        Requirements</diggs:standardTitle>
+                    <diggs:standardVersion>2018</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes"
+                >design_codes</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_bs_8006_1995">
+            <diggs:specification>
+                <diggs:Specification gml:id="bs_8006_1995">
+                    <gml:description>The original, single-part edition of the British code of
+                        practice for strengthened/reinforced soils and other fills, covering basal
+                        reinforcement over piled embankments. A SEPARATE REGISTRY ENTRY FROM
+                        bs_8006_1_2010, NOT A VERSION OF IT, for two reasons: the 1995 edition
+                        carries a different designation (BS 8006, not the later BS 8006-1, which
+                        was renumbered when the standard was split into parts), and the 2010
+                        edition substantially revised the basal-reinforcement design method, so the
+                        two are not interchangeable as a design basis. Cited as reference [7] of
+                        the Jazera substation CMC final technical report (FMSA 24047-FTR-CMC),
+                        which names the 1995 edition explicitly.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_8006_1995</gml:identifier>
+                    <gml:name>BS 8006:1995</gml:name>
+                    <diggs:accreditingBody>BSI</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>BS 8006</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Code of practice for strengthened/reinforced soils and
+                        other fills</diggs:standardTitle>
+                    <diggs:standardVersion>1995</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#design_codes"
+                >design_codes</diggs:domain>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions"
+                >rigid_inclusions</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
