@@ -14,7 +14,13 @@
             <diggs:authority>ASCE 7</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -28,7 +34,13 @@
             <diggs:authority>ASCE 7</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -42,7 +54,13 @@
             <diggs:authority>ASCE 7</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -56,7 +74,13 @@
             <diggs:authority>ASCE 7</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -70,7 +94,13 @@
             <diggs:authority>ASCE 7</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -84,7 +114,13 @@
             <diggs:authority>ASCE 7</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RigidInclusionSystem/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
