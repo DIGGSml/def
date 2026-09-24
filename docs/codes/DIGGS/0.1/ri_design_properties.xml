@@ -16,7 +16,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='marston']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficient/diggs:archingModel[.='marston']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -32,7 +32,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='marston']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficient/diggs:archingModel[.='marston']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -48,7 +48,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='hewlett_randolph']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficient/diggs:archingModel[.='hewlett_randolph']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -64,7 +64,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='hewlett_randolph']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficient/diggs:archingModel[.='hewlett_randolph']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -80,7 +80,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='hewlett_randolph']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficient/diggs:archingModel[.='hewlett_randolph']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -96,7 +96,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='hewlett_randolph']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficient/diggs:archingModel[.='hewlett_randolph']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -112,7 +112,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='zaeske']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficient/diggs:archingModel[.='zaeske']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -128,7 +128,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='adapted_terzaghi']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficient/diggs:archingModel[.='adapted_terzaghi']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -144,7 +144,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='prandtl']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficient/diggs:archingModel[.='prandtl']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -224,7 +224,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficients/diggs:archingModel[.='fhwa_parabolic']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:ArchingCoefficient/diggs:archingModel[.='fhwa_parabolic']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

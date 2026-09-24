@@ -14,7 +14,7 @@
             <diggs:authority>BS 8006-1:2010+A1:2016</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ArchingCoefficient/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:archingModel</diggs:sourceElementXpath>
@@ -31,7 +31,7 @@
             <diggs:authority>Hewlett, W.J. and Randolph, M.F. (1988), Ground Engineering 21(3)</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ArchingCoefficient/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:archingModel</diggs:sourceElementXpath>
@@ -48,7 +48,7 @@
             <diggs:authority>EBGEO (DGGT), Chapter 6.9</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ArchingCoefficient/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:archingModel</diggs:sourceElementXpath>
@@ -65,7 +65,7 @@
             <diggs:authority>FHWA GEC-13 (Ground Modification Methods Reference Manual)</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ArchingCoefficient/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:archingModel</diggs:sourceElementXpath>
@@ -82,7 +82,7 @@
             <diggs:authority>ASIRI National Project Recommendations (IREX)</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ArchingCoefficient/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:archingModel</diggs:sourceElementXpath>
@@ -99,7 +99,7 @@
             <diggs:authority>CUR 226 (CROW/CUR)</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ArchingCoefficient/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:archingModel</diggs:sourceElementXpath>
@@ -116,7 +116,7 @@
             <diggs:authority>FHWA GEC-13 (FHWA-NHI-16-028)</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ArchingCoefficients/diggs:archingModel</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:ArchingCoefficient/diggs:archingModel</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:archingModel</diggs:sourceElementXpath>
