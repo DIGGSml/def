@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
-<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="targetSFType">
-    <gml:description>Codes naming the kind of sampling feature planned. These codes are used for the value of the targetSFType property of diggs:TargetSamplingFeature and its specializations (diggs:TargetBorehole, diggs:TargetInstallation). Covers both plain sampling features and installation-type sampling features in one vocabulary, since an installation is itself a sampling feature in DIGGS (diggs:AbstractLinearInstallation and diggs:AbstractPlanarInstallation both substitute diggs:AbstractSamplingFeature directly) - there is no separate installation-type head to key a second dictionary on. The list is every concrete sampling feature kind in the schema as of 3.1-dev; a future schema addition that substitutes diggs:AbstractSamplingFeature should get a matching entry here.</gml:description>
+<gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="samplingFeatureType">
+    <gml:description>Codes naming the kind of sampling feature a design applies to. Used for the value of samplingFeatureType on AbstractSamplingFeatureDesignType and its specializations. Covers both plain sampling features and installation-type sampling features in one vocabulary, since an installation is itself a sampling feature in DIGGS (AbstractLinearInstallation and AbstractPlanarInstallation both substitute AbstractSamplingFeature directly) - there is no separate installation-type head to key a second dictionary on. The list is every concrete sampling feature kind in the schema; a future schema addition that substitutes AbstractSamplingFeature should get a matching entry here.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml</gml:identifier>
     <gml:name>DIGGS Sampling Feature Types Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -13,7 +13,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -26,7 +26,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -39,7 +39,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -52,7 +52,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -65,7 +65,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -78,7 +78,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -91,7 +91,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -104,7 +104,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -117,7 +117,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -130,7 +130,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -143,7 +143,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -156,7 +156,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -169,7 +169,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -182,7 +182,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -195,7 +195,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -208,7 +208,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -221,7 +221,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -234,20 +234,20 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="rigid_inclusion_system">
-            <gml:description>A top-level, complex sampling feature describing the components of a rigid inclusion system - the load transfer platform and the individual rigid inclusion columns constructed within the soil below it.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#rigid_inclusion_system</gml:identifier>
-            <gml:name>Rigid inclusion system</gml:name>
+        <diggs:Definition gml:id="ri_treatment_area">
+            <gml:description>The area of a site treated by a rigid inclusion ground improvement program - the ground improvement footprint that includes the rigid inclusion columns and may extend beyond any associated foundation or embankment.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_treatment_area</gml:identifier>
+            <gml:name>RI treatment area</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -260,7 +260,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:targetSFType</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:samplingFeatureType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
