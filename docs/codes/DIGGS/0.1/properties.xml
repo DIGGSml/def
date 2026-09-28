@@ -4218,7 +4218,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="differential_settlement">
-            <gml:description>The difference in settlement between two points, measured. The separation the difference is taken over is not part of this value: where a criterion expresses the limit as a gradient or angular distortion, the criterion's own basis and baseLength carry it, exactly as they do for the predicted form on diggs:RITreatedAreaDesignType.</gml:description>
+            <gml:description>The difference in settlement between two points, measured. The separation the difference is taken over is not part of this value: where a criterion expresses the limit as a gradient or angular distortion, the criterion's own basis and baseLength carry it, exactly as they do for the predicted form on diggs:DesignRITreatedAreaType.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#differential_settlement</gml:identifier>
             <gml:name>Differential settlement</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -4241,7 +4241,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="settlement_reduction_ratio">
-            <gml:description>Measured settlement of the treated ground divided by the settlement of the equivalent untreated ground. The measured counterpart of diggs:RITreatedAreaDesignType/settlementEfficacy; which definition of the ratio is in use is stated by that design element's settlementEfficacyDefinition, since a measured value is only comparable against the prediction under the same definition.</gml:description>
+            <gml:description>Measured settlement of the treated ground divided by the settlement of the equivalent untreated ground. The measured counterpart of diggs:DesignRITreatedAreaType/settlementEfficacy; which definition of the ratio is in use is stated by that design element's settlementEfficacyDefinition, since a measured value is only comparable against the prediction under the same definition.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement_reduction_ratio</gml:identifier>
             <gml:name>Settlement reduction ratio (measured)</gml:name>
             <diggs:dataType>double</diggs:dataType>

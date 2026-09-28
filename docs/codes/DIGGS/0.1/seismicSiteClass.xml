@@ -17,7 +17,7 @@
                     <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
@@ -37,7 +37,7 @@
                     <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
@@ -57,7 +57,7 @@
                     <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
@@ -77,7 +77,7 @@
                     <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
@@ -97,7 +97,7 @@
                     <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>
@@ -117,7 +117,7 @@
                     <diggs:sourceElementXpath>//diggs:RITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RITreatedAreaDesign/diggs:seismicSiteClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:seismicSiteClass</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:SeismicHazardParameters/diggs:seismicSiteClass</diggs:sourceElementXpath>

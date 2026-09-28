@@ -24,7 +24,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="geogrid_reinforced_fill">
-            <gml:description>A granular fill platform reinforced with one or more geogrid or geotextile layers. Recorded here as an explicit classification even though it is also derivable from whether diggs:LoadTransferPlatformType/geosynthetics (as-built) or diggs:GeosyntheticLayerDesign (design) is populated - stating it directly lets a reviewer read the platform's construction type from one field rather than checking for the presence of a child array.</gml:description>
+            <gml:description>A granular fill platform reinforced with one or more geogrid or geotextile layers. Recorded here as an explicit classification even though it is also derivable from whether diggs:LoadTransferPlatformType/geosynthetics (as-built) or diggs:DesignGeosyntheticLayer (design) is populated - stating it directly lets a reviewer read the platform's construction type from one field rather than checking for the presence of a child array.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/platformType.xml#geogrid_reinforced_fill</gml:identifier>
             <gml:name>Geogrid-Reinforced Fill</gml:name>
             <diggs:dataType>string</diggs:dataType>
