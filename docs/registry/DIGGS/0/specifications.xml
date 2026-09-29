@@ -3467,4 +3467,162 @@
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d5778">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d5778">
+                    <gml:description>Electronic cone penetration testing (CPT), with an optional
+                        pore-pressure module (CPTU), the current standard for static cone testing.
+                        Pushes an instrumented cone at a controlled rate and continuously records
+                        tip resistance, sleeve friction and (CPTU only) pore pressure, superseding
+                        the mechanical method of ASTM D3441 as the primary approach for delineating
+                        soil stratigraphy and estimating engineering properties from a static
+                        push.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5778</gml:identifier>
+                    <gml:name>ASTM D5778</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D5778</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Electronic Friction Cone and
+                        Piezocone Penetration Testing of Soils</diggs:standardTitle>
+                    <diggs:standardVersion>2020</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing"
+                >insitu_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d3441">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d3441">
+                    <gml:description>Mechanical cone penetration testing, the historical precursor
+                        to the electronic method of ASTM D5778. Advances an inner rod independently
+                        of an outer sleeve to distinguish point resistance from combined
+                        point-plus-friction resistance at discrete depth increments, rather than
+                        measuring both electronically and continuously. The prior edition,
+                        D3441-16, was withdrawn in 2025 and replaced the same year by the current,
+                        active D3441-25.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d3441</gml:identifier>
+                    <gml:name>ASTM D3441</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D3441</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Mechanical Cone Penetration
+                        Testing of Soils</diggs:standardTitle>
+                    <diggs:standardVersion>2025</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing"
+                >insitu_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_22476_1">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_22476_1">
+                    <gml:description>European/international counterpart to ASTM D5778 for
+                        electronic cone and piezocone penetration testing (CPT/CPTU). Covers
+                        onshore and nearshore testing; offshore CPT is covered separately under ISO
+                        19901-8.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22476_1</gml:identifier>
+                    <gml:name>ISO 22476-1</gml:name>
+                    <diggs:accreditingBody>International Organization for
+                        Standardization</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ISO 22476-1</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Field testing -
+                        Part 1: Electrical cone and piezocone penetration test</diggs:standardTitle>
+                    <diggs:standardVersion>2022</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing"
+                >insitu_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d6951">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d6951">
+                    <gml:description>The dynamic cone penetrometer (DCP) test for shallow pavement
+                        applications: an 8 kg (or optional 4.6 kg) sliding hammer drives a 60-degree
+                        cone tip, and penetration rate per blow is correlated to an estimated in-situ
+                        CBR. Distinct from the dynamic probing family of ISO 22476-2, which uses
+                        different hammer masses and reports blow count per unit penetration rather
+                        than penetration rate.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d6951</gml:identifier>
+                    <gml:name>ASTM D6951/D6951M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D6951/D6951M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Use of the Dynamic Cone
+                        Penetrometer in Shallow Pavement Applications</diggs:standardTitle>
+                    <diggs:standardVersion>2018(R2023)</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing"
+                >insitu_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_22476_2">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_22476_2">
+                    <gml:description>Dynamic probing: a solid 60-degree cone advanced by repeated
+                        hammer blows of a defined energy, reporting blow count per unit penetration
+                        as an indirect strength/density indicator. Defines four energy classes -
+                        light (DPL), medium (DPM), heavy (DPH) and super heavy (DPSH) - distinguished
+                        by hammer mass and drop height. Distinct from the pavement-specific dynamic
+                        cone penetrometer of ASTM D6951, which uses different hammer masses and
+                        reports penetration rate rather than blow count.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22476_2</gml:identifier>
+                    <gml:name>ISO 22476-2</gml:name>
+                    <diggs:accreditingBody>International Organization for
+                        Standardization</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ISO 22476-2</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Field testing -
+                        Part 2: Dynamic probing</diggs:standardTitle>
+                    <diggs:standardVersion>2005+A1:2011</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing"
+                >insitu_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
 </diggs:SpecificationRegistry>
