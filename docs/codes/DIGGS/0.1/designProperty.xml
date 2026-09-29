@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/propertylists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="designProperty">
     <gml:description>Codes naming the design property a diggs:DesignConformanceCriterion governs - a geometric or constructional property measured against its design intent, as opposed to a diggs:PerformanceCriterion's measured physical property. Used for the value of the designProperty property of diggs:DesignConformanceCriterionType. The intended value set is stated directly in the schema's own documentation for this element.</gml:description>
@@ -14,7 +14,8 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -28,7 +29,8 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -42,7 +44,8 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -56,7 +59,8 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -70,7 +74,8 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -83,7 +88,8 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -96,7 +102,8 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -110,7 +117,8 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -124,7 +132,8 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -138,7 +147,8 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -152,7 +162,8 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -166,7 +177,83 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:designProperty</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="binding_material_content">
+            <gml:description>Mass of binding material (cement plus pozzolanic materials such as fly ash or silica fume) per unit volume of grout/concrete - for example specified with a minimum of 390 kg/m3 under SEC 70-TMSS-03 Table 8B for Very Severe/Severe exposure. A recipe requirement checked against the batch as mixed, not a tested physical property of the cured material - contrast compressive_strength_unconfined (properties.xml), which is.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#binding_material_content</gml:identifier>
+            <gml:name>Binding material content</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="water_binding_material_ratio">
+            <gml:description>Ratio of water mass to binding-material mass (cement plus pozzolanic materials) in a grout/concrete mix - for example specified with a maximum of 0.40 under SEC 70-TMSS-03 Table 8B for a silica-fume mix in Very Severe/Severe exposure. Distinct from the plain water/cement ratio (diggs:DesignGroutMixType/waterCementRatio), which excludes any SCM replacement from the denominator. A recipe requirement checked against the batch as mixed, not a tested physical property of the cured material.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#water_binding_material_ratio</gml:identifier>
+            <gml:name>Water/binding-material ratio</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="chloride_content_in_concrete">
+            <gml:description>Chloride ion content of a grout/concrete mix, expressed as a percentage of the mix (not of a constituent) - for example limited to a maximum of 0.10% under SEC 70-TMSS-03 Table 8B, fixed across every exposure class regardless of admixture route. DISTINCT FROM properties.xml#chloride_content, which is the chloride content of SOIL OR GROUNDWATER (the exposure condition that selects which Table 8B row applies) - this entry is the durability-relevant quantity in the hardened mix itself, a different subject. A recipe/material requirement checked against the batch as mixed, not an emergent tested behaviour - contrast compressive_strength_unconfined (properties.xml), which is.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#chloride_content_in_concrete</gml:identifier>
+            <gml:name>Chloride content in concrete</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="differential_settlement">
+            <gml:description>Differential settlement between adjacent elements or points, checked against an allowable gradient - the design-side counterpart of properties.xml#differential_settlement, which names the same quantity as MEASURED post-construction. Typically stated per unit length (basis=per unit length, baseLength carrying the reference length) - see diggs:AbstractAcceptanceCriterionType/basis and baseLength.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#differential_settlement</gml:identifier>
+            <gml:name>Differential settlement</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="relative_compaction">
+            <gml:description>The ratio of the field (as-compacted) dry density of a fill material to a reference maximum dry density (typically from a Proctor compaction test, e.g. ASTM D698/D1557), expressed as a percentage, checked against a specified minimum - for example 95% for a load transfer platform fill. A conformance check on the fill as placed, not a tested physical property of the material itself - distinct from properties.xml#dry_density_max, which is the reference value this ratio is computed against, and from properties.xml#relative_density, an unrelated granular-soil state parameter (Dr).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#relative_compaction</gml:identifier>
+            <gml:name>Relative compaction</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

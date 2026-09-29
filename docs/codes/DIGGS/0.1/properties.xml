@@ -4206,7 +4206,7 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:TemporalResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
@@ -4229,7 +4229,7 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:TemporalResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
@@ -4252,7 +4252,7 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:TemporalResult</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
@@ -4290,7 +4290,7 @@
             <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
