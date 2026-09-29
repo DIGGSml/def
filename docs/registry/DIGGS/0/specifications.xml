@@ -3625,4 +3625,71 @@
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_din_4094_1">
+            <diggs:specification>
+                <diggs:Specification gml:id="din_4094_1">
+                    <gml:description>The German national standard for static cone penetration
+                        testing (Drucksondierung). Withdrawn and replaced by DIN EN ISO 22476-1
+                        (registered as iso_22476_1) in 2013. Retained because reports produced under
+                        German practice before the changeover cite it by this
+                        designation.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#din_4094_1</gml:identifier>
+                    <gml:name>DIN 4094-1 (withdrawn)</gml:name>
+                    <diggs:accreditingBody>Deutsches Institut fur Normung</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>DIN 4094-1</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Baugrund - Felduntersuchungen - Teil 1:
+                        Drucksondierungen (Subsoil - Field testing - Part 1: Cone penetration
+                        tests)</diggs:standardTitle>
+                    <diggs:standardVersion>2002-06</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing"
+                >insitu_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:supersededByRef
+                xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22476_1"/>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_din_4094_3">
+            <diggs:specification>
+                <diggs:Specification gml:id="din_4094_3">
+                    <gml:description>The German national standard for dynamic probing
+                        (Rammsondierung). Withdrawn and replaced by DIN EN ISO 22476-2 (registered
+                        as iso_22476_2). Retained because reports produced under German practice
+                        before the changeover cite it by this designation.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#din_4094_3</gml:identifier>
+                    <gml:name>DIN 4094-3 (withdrawn)</gml:name>
+                    <diggs:accreditingBody>Deutsches Institut fur Normung</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>DIN 4094-3</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Baugrund - Felduntersuchungen - Teil 3:
+                        Rammsondierungen (Subsoil - Field testing - Part 3: Dynamic
+                        probing)</diggs:standardTitle>
+                    <diggs:standardVersion>2002-01</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing"
+                >insitu_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:supersededByRef
+                xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22476_2"/>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
 </diggs:SpecificationRegistry>
