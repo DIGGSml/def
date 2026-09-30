@@ -18,6 +18,20 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>horizontal_offset</diggs:method>
+                    <diggs:realizedValueXpath>diggs:referencePoint</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:scope/diggs:SFDesignScope/diggs:targetPosition</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:method>horizontal_offset</diggs:method>
+                    <diggs:realizedValueXpath>diggs:referencePoint</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:scope/diggs:SFDesignScope/diggs:plannedPositions</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -33,6 +47,12 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:alignmentDeviation</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -48,6 +68,14 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>difference</diggs:method>
+                    <diggs:realizedValueXpath>diggs:columnDiameter</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:columnDiameter</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -63,6 +91,14 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>difference</diggs:method>
+                    <diggs:realizedValueXpath>diggs:columnLength</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:columnLength</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -92,6 +128,32 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>reverse_difference</diggs:method>
+                    <diggs:realizedValueXpath>number(tokenize(normalize-space(diggs:centerLine//gml:posList),'\s+')[last()])</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:location</diggs:referenceValueXpath>
+                    <diggs:referenceSource>evidence</diggs:referenceSource>
+                    <diggs:referenceEvaluation>volume_top</diggs:referenceEvaluation>
+                    <diggs:normalizeByXpath>diggs:columnDiameter</diggs:normalizeByXpath>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:method>reverse_difference</diggs:method>
+                    <diggs:realizedValueXpath>number(tokenize(normalize-space(diggs:centerLine//gml:posList),'\s+')[last()])</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:deref(diggs:bearingUnitRef)/diggs:location</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                    <diggs:referenceEvaluation>volume_top</diggs:referenceEvaluation>
+                    <diggs:normalizeByXpath>diggs:columnDiameter</diggs:normalizeByXpath>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:method>reverse_difference</diggs:method>
+                    <diggs:realizedValueXpath>number(tokenize(normalize-space(diggs:centerLine//gml:posList),'\s+')[last()])</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>(diggs:geoUnitDesignQuantity//diggs:bearingStratumLevel//gml:pos)[1]</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                    <diggs:referenceEvaluation>value</diggs:referenceEvaluation>
+                    <diggs:normalizeByXpath>diggs:columnDiameter</diggs:normalizeByXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -181,6 +243,18 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:alignmentDeviation</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:method>angular_difference</diggs:method>
+                    <diggs:realizedValueXpath>diggs:plunge</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:designPlunge</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -211,6 +285,13 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:GroutBatch</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:waterCementRatioOfMix</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -256,6 +337,33 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="installation_sequence">
+            <gml:description>Whether an element was installed in its designed order relative to its design neighbours - after its nearest built design predecessor and before its nearest built design successor in the governing design's installation sequence. Evaluated as true or false (operator eq, limit true). Comparing an as-built installation number with a design sequence number directly is not meaningful: one element installed out of order shifts the number of every element after it.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#installation_sequence</gml:identifier>
+            <gml:name>Installation sequence</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumn</diggs:subjectElement>
+                    <diggs:method>sequence_between</diggs:method>
+                    <diggs:realizedValueXpath>diggs:installationSequenceNumber</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumn</diggs:subjectElement>
+                    <diggs:method>sequence_between</diggs:method>
+                    <diggs:realizedValueXpath>diggs:whenConstructed//diggs:start</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
 </gml:Dictionary>

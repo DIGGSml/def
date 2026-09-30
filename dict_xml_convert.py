@@ -9,6 +9,10 @@ existing codespace reference). Built for RI_Build_Plan_3.md X11 + X11a:
   X11a — reads the AlternateNames sheet, which xlsx_2_xml.py has never read, and
          emits each row as an additional gml:name on the matching Definition
          (gml:name is [1..unbounded] on DefinitionBaseType — Dictionary_diggs.xsd:24).
+  EAC6 — reads an optional ValueBindings sheet and emits each row as a
+         diggs:ValueBinding inside diggs:valueBindings, after diggs:occurrences
+         (Dictionary_diggs.xsd DefinitionType). Rows keep their sheet order, which is
+         the order an evaluator tries them.
 
 All other behavior — sheet layout, column names, the codelists.xsl/propertylists.xsl
 stylesheet choice, the blank-row/placeholder-row tolerance, root gml:id sourced from
@@ -50,6 +54,18 @@ OUTPUT_DIR = REPO_ROOT / "docs" / "codes" / "DIGGS" / "0.1"
 GML_NS = "http://www.opengis.net/gml/3.2"
 XSI_NS = "http://www.w3.org/2001/XMLSchema-instance"
 DIGGS_NS = "http://diggsml.org/schemas/3"  # X11 — was schemas/2.6
+
+# EAC6 — ValueBindings sheet column -> diggs:ValueBinding child element, in the order
+# Dictionary_diggs.xsd ValueBindingType declares them.
+VALUE_BINDING_COLUMNS = [
+    ("SubjectElement", "subjectElement"),
+    ("Method", "method"),
+    ("RealizedValueXpath", "realizedValueXpath"),
+    ("ReferenceValueXpath", "referenceValueXpath"),
+    ("ReferenceSource", "referenceSource"),
+    ("ReferenceEvaluation", "referenceEvaluation"),
+    ("NormalizeByXpath", "normalizeByXpath"),
+]
 
 NS_MAP = {"": GML_NS, "gml": GML_NS, "xsi": XSI_NS, "diggs": DIGGS_NS}
 
@@ -162,7 +178,7 @@ def peek_dictionary_target(xlsx_path: Path) -> tuple[str, str]:
 
 
 def build_dictionary_xml(xlsx_path: Path, dictionary_file: str, dictionary_id: str) -> tuple[str, list[str]]:
-    """Full conversion: Definitions + AssociatedElements + AlternateNames -> one
+    """Full conversion: Definitions + AssociatedElements + AlternateNames + ValueBindings -> one
     pretty-printed XML document string. Returns (xml_text, warnings)."""
     warnings: list[str] = []
 
@@ -179,6 +195,11 @@ def build_dictionary_xml(xlsx_path: Path, dictionary_file: str, dictionary_id: s
         # Older workbooks predate the AlternateNames sheet being added to the
         # template. No sheet is equivalent to an empty one, not an error.
         alternate_names_df = pd.DataFrame(columns=["Start", "ID", "Name", "codeSpace"])
+    # EAC6 — optional, like AlternateNames: most dictionaries have no value bindings.
+    if "ValueBindings" in workbook_sheets:
+        value_bindings_df = pd.read_excel(xlsx_path, sheet_name="ValueBindings", **EXCEL_READ_KWARGS)
+    else:
+        value_bindings_df = pd.DataFrame(columns=["Start", "ID"] + [c for c, _ in VALUE_BINDING_COLUMNS])
 
     is_conditional_element_empty = associated_elements_df["ConditionalElement"].apply(_is_blank).all()
     processing_instruction = (
@@ -316,6 +337,32 @@ def build_dictionary_xml(xlsx_path: Path, dictionary_file: str, dictionary_id: s
             f"{dictionary_file}: {skipped_blank_id_assoc_rows} blank-ID row(s) in AssociatedElements "
             "skipped (no data in any column - not an incomplete entry, just past the real data)"
         )
+
+    # EAC6 — value bindings, appended after occurrences so the child order matches
+    # DefinitionType's sequence. Blank-ID rows (trailing used range) are skipped the
+    # same way as above; a row whose ID matches no Definition is warned about.
+    definitions_by_id = {
+        d.get(ET.QName(GML_NS, "id")): d for d in root.findall(f".//{{{DIGGS_NS}}}Definition")
+    }
+    unmatched_binding_ids: list[str] = []
+    for _, row in value_bindings_df.iterrows():
+        binding_id = _cell_text(row.get("ID"))
+        if binding_id is None:
+            continue
+        definition = definitions_by_id.get(binding_id)
+        if definition is None:
+            unmatched_binding_ids.append(binding_id)
+            continue
+        value_bindings = definition.find(f"{{{DIGGS_NS}}}valueBindings")
+        if value_bindings is None:
+            value_bindings = ET.SubElement(definition, ET.QName(DIGGS_NS, "valueBindings"))
+        binding = ET.SubElement(value_bindings, ET.QName(DIGGS_NS, "ValueBinding"))
+        for column, tag in VALUE_BINDING_COLUMNS:
+            value = _cell_text(row.get(column))
+            if value is not None:
+                ET.SubElement(binding, ET.QName(DIGGS_NS, tag)).text = value
+    for binding_id in unmatched_binding_ids:
+        warnings.append(f"{dictionary_file}: ValueBindings row ID '{binding_id}' matches no Definition")
 
     tree_str = ET.tostring(root, "utf-8")
     dom = parseString(tree_str)
