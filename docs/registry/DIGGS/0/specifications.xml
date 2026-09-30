@@ -5010,4 +5010,133 @@
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c617">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c617">
+                    <gml:description>Apparatus, materials and procedures for capping freshly
+                        molded concrete cylinders with neat cement, and hardened cylinders and
+                        drilled cores with high-strength gypsum paste or sulfur mortar, where the
+                        end surfaces do not meet the planeness and perpendicularity requirements of
+                        the applicable test method. Unbonded caps are the alternative, per ASTM
+                        C1231/C1231M. The end preparation cited by ASTM C39 for capped
+                        specimens.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c617</gml:identifier>
+                    <gml:name>ASTM C617/C617M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C617/C617M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Capping Cylindrical Concrete
+                        Specimens</diggs:standardTitle>
+                    <diggs:standardVersion>2023</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c1231">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c1231">
+                    <gml:description>Unbonded capping system for cylinders made per ASTM
+                        C31/C31M or C192/C192M, or cores obtained per ASTM C42/C42M, in place of the
+                        bonded caps of ASTM C617. Neoprene caps may be reused without qualification
+                        testing up to specified strength levels; other elastomeric materials always
+                        require qualification testing. Applies only to concrete with compressive
+                        strength between 10 MPa and 80 MPa (1500 to 12 000 psi). Specimens tested
+                        with unbonded caps rupture more violently than with bonded
+                        caps.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c1231</gml:identifier>
+                    <gml:name>ASTM C1231/C1231M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C1231/C1231M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Use of Unbonded Caps in
+                        Determination of Compressive Strength of Hardened Cylindrical Concrete
+                        Specimens</diggs:standardTitle>
+                    <diggs:standardVersion>2023</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c873">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c873">
+                    <gml:description>Strength of cylindrical concrete specimens molded in place
+                        in special molds attached to the formwork before concrete placement, for
+                        slabs 125 mm to 300 mm (5 to 12 in.) deep. Because the cylinder cures within
+                        the slab, its strength relates to the strength of the concrete in the
+                        structure.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c873</gml:identifier>
+                    <gml:name>ASTM C873/C873M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C873/C873M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Compressive Strength of
+                        Concrete Cylinders Cast in Place in Cylindrical Molds</diggs:standardTitle>
+                    <diggs:standardVersion>2023</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t231">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t231">
+                    <gml:description>Capping cylindrical concrete specimens. The AASHTO
+                        counterpart of ASTM C617/C617M.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t231</gml:identifier>
+                    <gml:name>AASHTO T 231</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 231</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Capping Cylindrical
+                        Concrete Specimens</diggs:standardTitle>
+                    <diggs:standardVersion>T 231-25</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
 </diggs:SpecificationRegistry>
