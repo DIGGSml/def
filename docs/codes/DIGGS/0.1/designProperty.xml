@@ -314,6 +314,13 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:GroutBatch</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:chlorideContentOfMix</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
