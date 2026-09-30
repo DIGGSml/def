@@ -302,10 +302,10 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="chloride_content_in_concrete">
-            <gml:description>Chloride ion content of a grout/concrete mix, expressed as a percentage of the mix (not of a constituent) - for example limited to a maximum of 0.10% under SEC 70-TMSS-03 Table 8B, fixed across every exposure class regardless of admixture route. DISTINCT FROM properties.xml#chloride_content, which is the chloride content of SOIL OR GROUNDWATER (the exposure condition that selects which Table 8B row applies) - this entry is the durability-relevant quantity in the hardened mix itself, a different subject. A recipe/material requirement checked against the batch as mixed, not an emergent tested behaviour - contrast compressive_strength_unconfined (properties.xml), which is.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#chloride_content_in_concrete</gml:identifier>
-            <gml:name>Chloride content in concrete</gml:name>
+        <diggs:Definition gml:id="water_soluble_chloride_content_in_concrete">
+            <gml:description>Water-soluble chloride ion (Cl-) content of hardened grout or concrete, expressed as a mass fraction of the cement (for example %) - for example limited to a maximum of 0.10% by mass of cement under SEC 70-TMSS-03. The chloride that dissolves in water under the conditions of the test method (ASTM C1218/C1218M); a different quantity from acid-soluble chloride (acid_soluble_chloride_content_in_concrete), which a specification may limit separately. DISTINCT FROM properties.xml#chloride_content, which is the chloride content of SOIL OR GROUNDWATER (the exposure condition that selects the requirements) - this entry is the durability-relevant quantity in the concrete itself, a different subject. Compliance is shown by testing; a mix design does not by itself establish it.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#water_soluble_chloride_content_in_concrete</gml:identifier>
+            <gml:name>Water-soluble chloride content in concrete</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
@@ -318,7 +318,7 @@
                 <diggs:ValueBinding>
                     <diggs:subjectElement>diggs:GroutBatch</diggs:subjectElement>
                     <diggs:method>direct</diggs:method>
-                    <diggs:realizedValueXpath>diggs:chlorideContentOfMix</diggs:realizedValueXpath>
+                    <diggs:realizedValueXpath>diggs:waterSolubleChlorideContent</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
@@ -376,6 +376,28 @@
                     <diggs:subjectElement>diggs:RIColumn</diggs:subjectElement>
                     <diggs:method>sequence_between</diggs:method>
                     <diggs:realizedValueXpath>diggs:whenConstructed//diggs:start</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="acid_soluble_chloride_content_in_concrete">
+            <gml:description>Acid-soluble chloride ion (Cl-) content of hardened grout or concrete, expressed as a mass fraction of the cement (for example %). The chloride that dissolves in acid under the conditions of the test method (ASTM C1152/C1152M), which in most concretes approximates the total chloride; a different quantity from water-soluble chloride (water_soluble_chloride_content_in_concrete), which a specification may limit separately and at a different value. DISTINCT FROM properties.xml#chloride_content, which is the chloride content of SOIL OR GROUNDWATER. Compliance is shown by testing; a mix design does not by itself establish it.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#acid_soluble_chloride_content_in_concrete</gml:identifier>
+            <gml:name>Acid-soluble chloride content in concrete</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:GroutBatch</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:acidSolubleChlorideContent</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
