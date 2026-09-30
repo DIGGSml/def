@@ -3692,4 +3692,175 @@
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c39">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c39">
+                    <gml:description>Compressive strength of cylindrical concrete specimens -
+                        molded cylinders and drilled cores - limited to concrete with a density
+                        above 800 kg/m3. Results serve as a basis for quality control of concrete
+                        proportioning, mixing and placing operations and for determining compliance
+                        with specifications. The value obtained depends on specimen size and shape,
+                        batching and mixing, the methods of sampling and molding, and the age,
+                        temperature and moisture conditions during curing - so a result is
+                        interpretable only with its test age and curing regime, which the project
+                        specification sets, not this method. Specimens are made and cured per ASTM
+                        C31 from samples taken per ASTM C172; drilled cores are obtained per ASTM
+                        C42. Not the soil test (ASTM D2166) or the rock test (ASTM D7012), though
+                        all three report an unconfined compressive strength.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c39</gml:identifier>
+                    <gml:name>ASTM C39/C39M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C39/C39M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Compressive Strength of
+                        Cylindrical Concrete Specimens</diggs:standardTitle>
+                    <diggs:standardVersion>2026</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c31">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c31">
+                    <gml:description>Making and curing cylinder and beam specimens from
+                        representative samples of fresh concrete on a construction project.
+                        Distinguishes standard curing, for acceptance testing of specified strength
+                        and quality control, from field curing, for estimating in-place strength and
+                        checking the adequacy of curing - the curing regime determines what a later
+                        strength result means. Not applicable to concrete without measurable slump,
+                        lightweight insulating concrete or controlled low strength material (CLSM).
+                        Samples are taken per ASTM C172; cylinders are tested per ASTM
+                        C39.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c31</gml:identifier>
+                    <gml:name>ASTM C31/C31M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C31/C31M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Making and Curing Concrete Test
+                        Specimens in the Field</diggs:standardTitle>
+                    <diggs:standardVersion>2026b</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c172">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c172">
+                    <gml:description>Obtaining representative samples of fresh concrete as
+                        delivered to the project site, for tests that determine compliance with the
+                        specification under which the concrete is furnished - from stationary,
+                        paving and truck mixers, from agitating and nonagitating transport
+                        equipment, and from continuous mixing equipment. Also covers wet-sieving a
+                        sample to remove aggregate larger than a designated size. The sample is the
+                        source of the specimens made per ASTM C31.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c172</gml:identifier>
+                    <gml:name>ASTM C172/C172M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C172/C172M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Sampling Freshly Mixed
+                        Concrete</diggs:standardTitle>
+                    <diggs:standardVersion>2025</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d2166">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d2166">
+                    <gml:description>Unconfined compressive strength of cohesive soil in the
+                        intact, remolded or reconstituted condition, by strain-controlled axial
+                        loading; an approximate strength in total stresses. Applicable only to
+                        cohesive materials that neither expel water during loading nor lose strength
+                        when confinement is removed, such as clays or clayey soils - not dry and
+                        crumbly soils, fissured or varved materials, silts, peats or sands. Not a
+                        substitute for the unconsolidated-undrained triaxial test (ASTM D2850).
+                        Concrete specimens are tested per ASTM C39 and rock cores per ASTM
+                        D7012.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2166</gml:identifier>
+                    <gml:name>ASTM D2166/D2166M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D2166/D2166M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Unconfined Compressive
+                        Strength of Cohesive Soil</diggs:standardTitle>
+                    <diggs:standardVersion>2024</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d7012">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d7012">
+                    <gml:description>Strength of intact rock core specimens in uniaxial and
+                        triaxial compression, by four methods: triaxial compressive strength (A),
+                        triaxial elastic moduli (B), uniaxial compressive strength (C) and uniaxial
+                        elastic moduli (D), with optional elevated temperature. The triaxial
+                        strengths give the angle of internal friction, angle of shearing resistance
+                        and cohesion intercept; the moduli methods give Young's modulus and
+                        Poisson's ratio. Method C is the rock counterpart of ASTM D2166 (soil) and
+                        ASTM C39 (concrete).</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d7012</gml:identifier>
+                    <gml:name>ASTM D7012</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D7012</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Compressive Strength and
+                        Elastic Moduli of Intact Rock Core Specimens under Varying States of Stress
+                        and Temperatures</diggs:standardTitle>
+                    <diggs:standardVersion>2023</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
 </diggs:SpecificationRegistry>
