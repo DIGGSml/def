@@ -5139,4 +5139,98 @@
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c1202">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c1202">
+                    <gml:description>Determination of the electrical conductance of concrete,
+                        reported as the charge passed, as a rapid indication of its resistance to
+                        the penetration of chloride ions. Applicable to types of concrete where
+                        correlations have been established between this test and long-term chloride
+                        ponding procedures such as AASHTO T 259. It is an electrical measurement of
+                        penetration resistance, not a measurement of chloride content: the chloride
+                        contents of concrete are determined by ASTM C1218/C1218M (water-soluble) and
+                        ASTM C1152/C1152M (acid-soluble).</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c1202</gml:identifier>
+                    <gml:name>ASTM C1202</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C1202</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Electrical Indication of
+                        Concrete's Ability to Resist Chloride Ion Penetration</diggs:standardTitle>
+                    <diggs:standardVersion>2025</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c1218">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c1218">
+                    <gml:description>Sampling and analysis of hydraulic-cement mortar or
+                        concrete for chloride that is water soluble under the conditions of test, in
+                        new construction or existing structures. The water-soluble chloride content
+                        is a different quantity from the acid-soluble chloride content of ASTM
+                        C1152/C1152M, and a limit on one is not a limit on the
+                        other.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c1218</gml:identifier>
+                    <gml:name>ASTM C1218/C1218M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C1218/C1218M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Water-Soluble Chloride in
+                        Mortar and Concrete</diggs:standardTitle>
+                    <diggs:standardVersion>2020</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c1152">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c1152">
+                    <gml:description>Sampling and analysis of hydraulic-cement mortar or
+                        concrete for chloride that is acid soluble under the conditions of test. The
+                        acid-soluble chloride content is a different quantity from the water-soluble
+                        chloride content of ASTM C1218/C1218M, and a limit on one is not a limit on
+                        the other.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c1152</gml:identifier>
+                    <gml:name>ASTM C1152/C1152M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C1152/C1152M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Acid-Soluble Chloride in
+                        Mortar and Concrete</diggs:standardTitle>
+                    <diggs:standardVersion>2020</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
 </diggs:SpecificationRegistry>
