@@ -3894,8 +3894,1116 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t22">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t22">
+                    <gml:description>Compressive strength of cylindrical concrete specimens. The
+                        AASHTO counterpart of ASTM C39/C39M.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t22</gml:identifier>
+                    <gml:name>AASHTO T 22M/T 22</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 22M/T 22</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Compressive Strength of
+                        Cylindrical Concrete Specimens</diggs:standardTitle>
+                    <diggs:standardVersion>T 22M/T 22-25</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_en_12390_3">
+            <diggs:specification>
+                <diggs:Specification gml:id="en_12390_3">
+                    <gml:description>Compressive strength of test specimens of hardened
+                        concrete, loaded to failure in a compression testing machine, with guidance
+                        on specimen preparation and positioning and on the test report. Specimens
+                        are made and cured per EN 12390-2 from samples taken per EN 12350-1; cores
+                        are covered by EN 12504-1.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_12390_3</gml:identifier>
+                    <gml:name>EN 12390-3</gml:name>
+                    <diggs:accreditingBody>CEN</diggs:accreditingBody>
+                    <diggs:standardPart>3</diggs:standardPart>
+                    <diggs:standardReferenceNumber>EN 12390-3</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Testing hardened concrete - Part 3: Compressive
+                        strength of test specimens</diggs:standardTitle>
+                    <diggs:standardVersion>2019</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_1920_4">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_1920_4">
+                    <gml:description>Strength of hardened concrete: compressive strength of
+                        cube, cylinder or core specimens, with failure classification, plus flexural
+                        and tensile splitting strength. Specimens are made and cured per ISO 1920-3
+                        from samples taken per ISO 1920-1; cores are taken per ISO
+                        1920-6.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_1920_4</gml:identifier>
+                    <gml:name>ISO 1920-4</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardPart>4</diggs:standardPart>
+                    <diggs:standardReferenceNumber>ISO 1920-4</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Testing of concrete - Part 4: Strength of hardened
+                        concrete</diggs:standardTitle>
+                    <diggs:standardVersion>2020</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_bs_1881_116">
+            <diggs:specification>
+                <diggs:Specification gml:id="bs_1881_116">
+                    <gml:description>Compressive strength of concrete cube specimens. Withdrawn
+                        by BSI on 1 February 2004; registered because older project records and
+                        specifications still cite it.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1881_116</gml:identifier>
+                    <gml:name>BS 1881-116</gml:name>
+                    <diggs:accreditingBody>British Standards Institution</diggs:accreditingBody>
+                    <diggs:standardPart>116</diggs:standardPart>
+                    <diggs:standardReferenceNumber>BS 1881-116</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Testing concrete - Part 116: Method for determination
+                        of compressive strength of concrete cubes</diggs:standardTitle>
+                    <diggs:standardVersion>1983</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t24">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t24">
+                    <gml:description>Obtaining and testing drilled cores and sawed beams of
+                        concrete. The AASHTO counterpart of ASTM C42/C42M.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t24</gml:identifier>
+                    <gml:name>AASHTO T 24M/T 24</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 24M/T 24</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Obtaining and Testing
+                        Drilled Cores and Sawed Beams of Concrete</diggs:standardTitle>
+                    <diggs:standardVersion>T 24M/T 24-22</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_en_12504_1">
+            <diggs:specification>
+                <diggs:Specification gml:id="en_12504_1">
+                    <gml:description>Taking cores from hardened concrete, examining them,
+                        preparing them for testing and determining their compressive strength. Gives
+                        no guidance on whether or where to drill cores, or on interpreting core
+                        strength results.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_12504_1</gml:identifier>
+                    <gml:name>EN 12504-1</gml:name>
+                    <diggs:accreditingBody>CEN</diggs:accreditingBody>
+                    <diggs:standardPart>1</diggs:standardPart>
+                    <diggs:standardReferenceNumber>EN 12504-1</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Testing concrete in structures - Part 1: Cored
+                        specimens - Taking, examining and testing in
+                        compression</diggs:standardTitle>
+                    <diggs:standardVersion>2019</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_1920_6">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_1920_6">
+                    <gml:description>Taking cores from hardened concrete, examining them,
+                        preparing them for testing and determining their compressive strength. Gives
+                        no guidance on the decision to drill cores or on drilling locations, and no
+                        procedure for interpreting core strength results.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_1920_6</gml:identifier>
+                    <gml:name>ISO 1920-6</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardPart>6</diggs:standardPart>
+                    <diggs:standardReferenceNumber>ISO 1920-6</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Testing of concrete - Part 6: Sampling, preparing and
+                        testing of concrete cores</diggs:standardTitle>
+                    <diggs:standardVersion>2019</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_r100">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_r100">
+                    <gml:description>Casting and curing concrete strength test specimens in the
+                        field. The AASHTO counterpart of ASTM C31/C31M; formerly designated AASHTO T
+                        23.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_r100</gml:identifier>
+                    <gml:name>AASHTO R 100M/R 100</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO R 100M/R 100</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Casting and Curing Concrete
+                        Strength Test Specimens in the Field</diggs:standardTitle>
+                    <diggs:standardVersion>R 100M/R 100-25</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_r39">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_r39">
+                    <gml:description>Casting and curing concrete test specimens in the
+                        laboratory. The AASHTO counterpart of ASTM C192/C192M.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_r39</gml:identifier>
+                    <gml:name>AASHTO R 39M/R 39</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO R 39M/R 39</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Casting and Curing Concrete Test
+                        Specimens in the Laboratory</diggs:standardTitle>
+                    <diggs:standardVersion>R 39M/R 39-25</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c192">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c192">
+                    <gml:description>Making and curing concrete test specimens in the laboratory
+                        under accurate control of materials and test conditions, for concrete that
+                        can be consolidated by rodding or vibration. The laboratory counterpart of
+                        ASTM C31, which covers specimens made in the field.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c192</gml:identifier>
+                    <gml:name>ASTM C192/C192M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C192/C192M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Making and Curing Concrete Test
+                        Specimens in the Laboratory</diggs:standardTitle>
+                    <diggs:standardVersion>2026a</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_en_12390_2">
+            <diggs:specification>
+                <diggs:Specification gml:id="en_12390_2">
+                    <gml:description>Making and curing specimens for strength tests of hardened
+                        concrete: preparing and filling moulds, compacting the concrete, finishing
+                        the surface, marking, curing and transporting the
+                        specimens.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_12390_2</gml:identifier>
+                    <gml:name>EN 12390-2</gml:name>
+                    <diggs:accreditingBody>CEN</diggs:accreditingBody>
+                    <diggs:standardPart>2</diggs:standardPart>
+                    <diggs:standardReferenceNumber>EN 12390-2</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Testing hardened concrete - Part 2: Making and curing
+                        specimens for strength tests</diggs:standardTitle>
+                    <diggs:standardVersion>2019</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_1920_3">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_1920_3">
+                    <gml:description>Making and curing concrete test specimens for strength
+                        tests.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_1920_3</gml:identifier>
+                    <gml:name>ISO 1920-3</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardPart>3</diggs:standardPart>
+                    <diggs:standardReferenceNumber>ISO 1920-3</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Testing of concrete - Part 3: Making and curing test
+                        specimens</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_r60">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_r60">
+                    <gml:description>Sampling freshly mixed concrete. The AASHTO counterpart of
+                        ASTM C172/C172M.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_r60</gml:identifier>
+                    <gml:name>AASHTO R 60M/R 60</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO R 60M/R 60</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Sampling Freshly Mixed
+                        Concrete</diggs:standardTitle>
+                    <diggs:standardVersion>R 60M/R 60-23</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_en_12350_1">
+            <diggs:specification>
+                <diggs:Specification gml:id="en_12350_1">
+                    <gml:description>Sampling fresh concrete by composite sampling or spot
+                        sampling, with definitions of composite sample, batch, spot sample and
+                        increment, and the common apparatus used for fresh-concrete tests and for
+                        making strength test specimens.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_12350_1</gml:identifier>
+                    <gml:name>EN 12350-1</gml:name>
+                    <diggs:accreditingBody>CEN</diggs:accreditingBody>
+                    <diggs:standardPart>1</diggs:standardPart>
+                    <diggs:standardReferenceNumber>EN 12350-1</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Testing fresh concrete - Part 1: Sampling and common
+                        apparatus</diggs:standardTitle>
+                    <diggs:standardVersion>2019</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_1920_1">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_1920_1">
+                    <gml:description>Sampling of fresh concrete.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_1920_1</gml:identifier>
+                    <gml:name>ISO 1920-1</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardPart>1</diggs:standardPart>
+                    <diggs:standardReferenceNumber>ISO 1920-1</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Testing of concrete - Part 1: Sampling of fresh
+                        concrete</diggs:standardTitle>
+                    <diggs:standardVersion>2004</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t208">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t208">
+                    <gml:description>Unconfined compressive strength of cohesive soil. The
+                        AASHTO counterpart of ASTM D2166/D2166M.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t208</gml:identifier>
+                    <gml:name>AASHTO T 208M/T 208</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 208M/T 208</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Unconfined Compressive
+                        Strength of Cohesive Soil</diggs:standardTitle>
+                    <diggs:standardVersion>T 208M/T 208-25</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_iso_17892_7">
+            <diggs:specification>
+                <diggs:Specification gml:id="iso_17892_7">
+                    <gml:description>Unconfined compressive strength of a homogeneous specimen
+                        of undisturbed, re-compacted, remoulded or reconstituted soil. Used to
+                        estimate undrained shear strength, which is valid only for soils of low
+                        permeability that behave sufficiently undrained during the
+                        test.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_17892_7</gml:identifier>
+                    <gml:name>EN ISO 17892-7</gml:name>
+                    <diggs:accreditingBody>International Organization for Standardization</diggs:accreditingBody>
+                    <diggs:standardPart>7</diggs:standardPart>
+                    <diggs:standardReferenceNumber>EN ISO 17892-7</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Geotechnical investigation and testing - Laboratory
+                        testing of soil - Part 7: Unconfined compression test</diggs:standardTitle>
+                    <diggs:standardVersion>2018</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_bs_1377_7">
+            <diggs:specification>
+                <diggs:Specification gml:id="bs_1377_7">
+                    <gml:description>Shear strength of soils in terms of total stress, without
+                        pore pressure measurement, by direct shear or by compression tests,
+                        including the unconfined compression test in the laboratory and in a
+                        portable apparatus for use on site. Withdrawn by BSI on 29 March 2022;
+                        registered because older project records still cite it.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1377_7</gml:identifier>
+                    <gml:name>BS 1377-7</gml:name>
+                    <diggs:accreditingBody>British Standards Institution</diggs:accreditingBody>
+                    <diggs:standardPart>7</diggs:standardPart>
+                    <diggs:standardReferenceNumber>BS 1377-7</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Methods of test for soils for civil engineering
+                        purposes - Part 7: Shear strength tests (total stress)</diggs:standardTitle>
+                    <diggs:standardVersion>1990</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_jis_a_1216">
+            <diggs:specification>
+                <diggs:Specification gml:id="jis_a_1216">
+                    <gml:description>Unconfined compression strength of specimens that stand
+                        without confining pressure; mainly for undisturbed cohesive soils, and with
+                        modifications for self-standing specimens of remolded, compacted or sandy
+                        soils. Strain-controlled, to 15 % strain. Published with identical content
+                        by the Japanese Geotechnical Society as JGS 0511.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#jis_a_1216</gml:identifier>
+                    <gml:name>JIS A 1216</gml:name>
+                    <diggs:accreditingBody>Japanese Standards Association</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>JIS A 1216</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Method for unconfined compression test of
+                        soils</diggs:standardTitle>
+                    <diggs:standardVersion>2020</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_isrm_1979_ucs">
+            <diggs:specification>
+                <diggs:Specification gml:id="isrm_1979_ucs">
+                    <gml:description>Part 1 measures the uniaxial compressive strength of a rock
+                        specimen for intact rock characterization; Part 2 determines stress-strain
+                        curves, Young's modulus and Poisson's ratio in uniaxial compression.
+                        Published in the International Journal of Rock Mechanics and Mining
+                        Sciences, Vol. 16, No. 2 (1979), pp. 135-140.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#isrm_1979_ucs</gml:identifier>
+                    <gml:name>ISRM Suggested Method (1979)</gml:name>
+                    <diggs:accreditingBody>International Society for Rock Mechanics</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ISRM Suggested Method (1979)</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Suggested methods for determining the uniaxial
+                        compressive strength and deformability of rock
+                        materials</diggs:standardTitle>
+                    <diggs:standardVersion>1979</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_en_1926">
+            <diggs:specification>
+                <diggs:Specification gml:id="en_1926">
+                    <gml:description>Uniaxial compressive strength of natural stone, with
+                        apparatus, specimen preparation, procedure and expression of
+                        results.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#en_1926</gml:identifier>
+                    <gml:name>EN 1926</gml:name>
+                    <diggs:accreditingBody>CEN</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>EN 1926</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Natural stone test methods - Determination of uniaxial
+                        compressive strength</diggs:standardTitle>
+                    <diggs:standardVersion>2006</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d2938">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d2938">
+                    <gml:description>Unconfined compressive strength of intact rock core
+                        specimens. Withdrawn in 2005 and replaced by ASTM D7012.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2938</gml:identifier>
+                    <gml:name>ASTM D2938</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D2938</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Unconfined Compressive
+                        Strength of Intact Rock Core Specimens</diggs:standardTitle>
+                    <diggs:standardVersion>1995(R2002)</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:supersededByRef
+                xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d7012"/>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_jgs_2521">
+            <diggs:specification>
+                <diggs:Specification gml:id="jgs_2521">
+                    <gml:description>Unconfined compression test on rock
+                        specimens.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#jgs_2521</gml:identifier>
+                    <gml:name>JGS 2521</gml:name>
+                    <diggs:accreditingBody>Japanese Geotechnical Society</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>JGS 2521</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Method for unconfined compression test on
+                        rocks</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c109">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c109">
+                    <gml:description>Compressive strength of hydraulic cement mortars using 50
+                        mm (2 in.) cube specimens.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c109</gml:identifier>
+                    <gml:name>ASTM C109/C109M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C109/C109M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Compressive Strength of
+                        Hydraulic Cement Mortars (Using 50 mm [2 in.] Cube
+                        Specimens)</diggs:standardTitle>
+                    <diggs:standardVersion>2026a</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_aashto_t106">
+            <diggs:specification>
+                <diggs:Specification gml:id="aashto_t106">
+                    <gml:description>Compressive strength of hydraulic cement mortar using 50 mm
+                        (2 in.) cube specimens. The AASHTO counterpart of ASTM
+                        C109/C109M.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#aashto_t106</gml:identifier>
+                    <gml:name>AASHTO T 106M/T 106</gml:name>
+                    <diggs:accreditingBody>American Association of State Highway and Transportation Officials</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>AASHTO T 106M/T 106</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Method of Test for Compressive Strength of
+                        Hydraulic Cement Mortar (Using 50-mm or 2-in. Cube
+                        Specimens)</diggs:standardTitle>
+                    <diggs:standardVersion>T 106M/T 106-25</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c942">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c942">
+                    <gml:description>Compressive strength of hydraulic cement grout for
+                        preplaced-aggregate concrete, in the laboratory.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c942</gml:identifier>
+                    <gml:name>ASTM C942/C942M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C942/C942M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Compressive Strength of Grouts
+                        for Preplaced-Aggregate Concrete in the Laboratory</diggs:standardTitle>
+                    <diggs:standardVersion>2021</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_c1019">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_c1019">
+                    <gml:description>Field and laboratory sampling and compression testing of
+                        grout used in masonry construction.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_c1019</gml:identifier>
+                    <gml:name>ASTM C1019</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM C1019</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Sampling and Testing Grout for
+                        Masonry</diggs:standardTitle>
+                    <diggs:standardVersion>2026</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d4832">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d4832">
+                    <gml:description>Preparing, curing, transporting and testing cylinders of
+                        controlled low strength material (CLSM) for compressive strength - materials
+                        stronger than soil but below 8400 kPa (1200 psi), typically 350 to 700 kPa -
+                        and of similar soil-cementitious mixtures such as self-cementing fly
+                        ashes.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d4832</gml:identifier>
+                    <gml:name>ASTM D4832/D4832M</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D4832/D4832M</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Method for Preparation and Testing of
+                        Controlled Low Strength Material (CLSM) Test Cylinders</diggs:standardTitle>
+                    <diggs:standardVersion>2026</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d1633">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d1633">
+                    <gml:description>Compressive strength of soil-cement using molded cylinders:
+                        Method A in a Proctor mold (height/diameter 1.15), Method B in a cylinder of
+                        height/diameter 2.0. Withdrawn by ASTM in 2026 with no replacement;
+                        registered because it remains cited for soil-cement and has no active ASTM
+                        successor.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1633</gml:identifier>
+                    <gml:name>ASTM D1633</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D1633</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Test Methods for Compressive Strength of
+                        Molded Soil-Cement Cylinders</diggs:standardTitle>
+                    <diggs:standardVersion>2017</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_astm_d1632">
+            <diggs:specification>
+                <diggs:Specification gml:id="astm_d1632">
+                    <gml:description>Making and curing soil-cement compression and flexure test
+                        specimens in the laboratory under accurate control of materials and test
+                        conditions. Withdrawn by ASTM in 2026 with no replacement; registered
+                        because it remains cited and has no active ASTM successor.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1632</gml:identifier>
+                    <gml:name>ASTM D1632</gml:name>
+                    <diggs:accreditingBody>ASTM International</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>ASTM D1632</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Standard Practice for Making and Curing Soil-Cement
+                        Compression and Flexure Test Specimens in the
+                        Laboratory</diggs:standardTitle>
+                    <diggs:standardVersion>2017e1</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_jgs_0811">
+            <diggs:specification>
+                <diggs:Specification gml:id="jgs_0811">
+                    <gml:description>Making and curing stabilized soil specimens compacted with
+                        a rammer.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#jgs_0811</gml:identifier>
+                    <gml:name>JGS 0811</gml:name>
+                    <diggs:accreditingBody>Japanese Geotechnical Society</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>JGS 0811</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Practice for making and curing compacted stabilized
+                        soil specimens using a rammer</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_jgs_0812">
+            <diggs:specification>
+                <diggs:Specification gml:id="jgs_0812">
+                    <gml:description>Making and curing statically compacted stabilized soil
+                        specimens.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#jgs_0812</gml:identifier>
+                    <gml:name>JGS 0812</gml:name>
+                    <diggs:accreditingBody>Japanese Geotechnical Society</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>JGS 0812</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Practice for making and curing statically compacted
+                        stabilized soil specimens</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_jgs_0821">
+            <diggs:specification>
+                <diggs:Specification gml:id="jgs_0821">
+                    <gml:description>Making and curing stabilized soil specimens without
+                        compaction.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#jgs_0821</gml:identifier>
+                    <gml:name>JGS 0821</gml:name>
+                    <diggs:accreditingBody>Japanese Geotechnical Society</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>JGS 0821</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Practice for making and curing stabilized soil
+                        specimens without compaction</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_jis_a_1108">
+            <diggs:specification>
+                <diggs:Specification gml:id="jis_a_1108">
+                    <gml:description>Compressive strength of test specimens of hardened
+                        concrete. Specimens are made and cured per JIS A 1132.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#jis_a_1108</gml:identifier>
+                    <gml:name>JIS A 1108</gml:name>
+                    <diggs:accreditingBody>Japanese Standards Association</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>JIS A 1108</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Method of test for compressive strength of
+                        concrete</diggs:standardTitle>
+                    <diggs:standardVersion>2018</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_jis_a_1107">
+            <diggs:specification>
+                <diggs:Specification gml:id="jis_a_1107">
+                    <gml:description>Sampling and testing drilled cores of concrete for
+                        compressive strength.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#jis_a_1107</gml:identifier>
+                    <gml:name>JIS A 1107</gml:name>
+                    <diggs:accreditingBody>Japanese Standards Association</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>JIS A 1107</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Method of sampling and testing for compressive strength
+                        of drilled cores of concrete</diggs:standardTitle>
+                    <diggs:standardVersion>2022</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#laboratory_testing"
+                >laboratory_testing</diggs:domain>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_jis_a_1132">
+            <diggs:specification>
+                <diggs:Specification gml:id="jis_a_1132">
+                    <gml:description>Making and curing concrete test specimens for the
+                        compressive strength test (JIS A 1108), flexural strength test (JIS A 1106)
+                        and splitting tensile strength test (JIS A 1113).</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#jis_a_1132</gml:identifier>
+                    <gml:name>JIS A 1132</gml:name>
+                    <diggs:accreditingBody>Japanese Standards Association</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>JIS A 1132</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Method of making and curing concrete
+                        specimens</diggs:standardTitle>
+                    <diggs:standardVersion>2020</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:preparationProcedure</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_jis_a_1115">
+            <diggs:specification>
+                <diggs:Specification gml:id="jis_a_1115">
+                    <gml:description>Sampling fresh concrete.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#jis_a_1115</gml:identifier>
+                    <gml:name>JIS A 1115</gml:name>
+                    <diggs:accreditingBody>Japanese Standards Association</diggs:accreditingBody>
+                    <diggs:standardReferenceNumber>JIS A 1115</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Method of sampling fresh concrete</diggs:standardTitle>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#sampling"
+                >sampling</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:samplingMethod</diggs:sourceElementXpath>
                 </diggs:Occurrence>
