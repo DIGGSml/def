@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/propertylists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="designProperty">
-    <gml:description>Codes naming the design property a diggs:DesignConformanceCriterion governs - a geometric or constructional property measured against its design intent, as opposed to a diggs:PerformanceCriterion's measured physical property. Used for the value of the designProperty property of diggs:DesignConformanceCriterionType. The intended value set is stated directly in the schema's own documentation for this element.</gml:description>
+    <gml:description>Codes naming the design property a diggs:DesignConformanceCriterion governs - a geometric, constructional, compositional or procedural property checked against what the design or specification requires, as opposed to a diggs:PerformanceCriterion's measured physical property. Used for the value of the designProperty property of diggs:DesignConformanceCriterionType. The intended value set is stated directly in the schema's own documentation for this element.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml</gml:identifier>
     <gml:name>DIGGS Design Conformance Criterion Design Property Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -400,6 +400,21 @@
                     <diggs:realizedValueXpath>diggs:acidSolubleChlorideContent</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="sampling_frequency">
+            <gml:description>Number of acceptance samplings taken per unit volume of material placed - for example a minimum of 1 sampling per 100 m3 of concrete for compressive strength testing. A requirement on how much testing is done, not on a measured property of the material: it is met by counting the distinct samplings behind the test results, so results reported only as an average cannot show it was met.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#sampling_frequency</gml:identifier>
+            <gml:name>Acceptance sampling frequency</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
 </gml:Dictionary>
