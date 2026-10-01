@@ -2051,6 +2051,10 @@
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>

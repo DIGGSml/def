@@ -51,4 +51,20 @@
             </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="applied_pressure">
+            <gml:description>The pressure applied to the test surface at which a measured response is read - for example the 150 kPa design pressure at which the settlement under a plate or zone load test is judged. Restricts the evidence of a criterion to readings taken at that applied pressure.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/evidenceCondition.xml#applied_pressure</gml:identifier>
+            <gml:name>Applied pressure</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:evidenceCondition</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
