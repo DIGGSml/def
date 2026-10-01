@@ -67,4 +67,20 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="fines_content">
+            <gml:description>The fines content of the material the evidence was taken from - the percentage of particles by dry mass finer than the 75 micron (No. 200) sieve - for example a fill containing 5 to 10 % fines. Restricts the evidence of a criterion to material whose fines content lies in the stated range.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/evidenceCondition.xml#fines_content</gml:identifier>
+            <gml:name>Fines content</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>mass per mass</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:evidenceCondition</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

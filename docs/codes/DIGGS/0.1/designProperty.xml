@@ -340,10 +340,11 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="relative_compaction">
-            <gml:description>The ratio of the field (as-compacted) dry density of a fill material to a reference maximum dry density (typically from a Proctor compaction test, e.g. ASTM D698/D1557), expressed as a percentage, checked against a specified minimum - for example 95% for a load transfer platform fill. A conformance check on the fill as placed, not a tested physical property of the material itself - distinct from properties.xml#dry_density_max, which is the reference value this ratio is computed against, and from properties.xml#relative_density, an unrelated granular-soil state parameter (Dr).</gml:description>
+            <gml:description>The ratio of the field (as-compacted) dry density of a fill material to a reference maximum dry density (typically from a Proctor compaction test, e.g. ASTM D698/D1557), expressed as a percentage, checked against a specified minimum or range - for example 95% for a load transfer platform fill. A conformance check on the fill as placed, not a tested physical property of the material itself - distinct from properties.xml#dry_density_max, which is the reference value this ratio is computed against, and from properties.xml#relative_density, an unrelated granular-soil state parameter (Dr).</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#relative_compaction</gml:identifier>
             <gml:name>Relative compaction</gml:name>
-            <diggs:dataType>string</diggs:dataType>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
