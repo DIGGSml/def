@@ -83,4 +83,20 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="interval_duration">
+            <gml:description>The length of the time interval over which the compared value was accumulated - for example the two minutes over which penetration is judged against a refusal limit. Restricts the evidence of a criterion to values accumulated over an interval of the stated length.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/evidenceCondition.xml#interval_duration</gml:identifier>
+            <gml:name>Interval duration</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:evidenceCondition</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
