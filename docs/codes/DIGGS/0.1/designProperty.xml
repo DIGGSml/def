@@ -26,10 +26,8 @@
                     <diggs:referenceSource>design</diggs:referenceSource>
                 </diggs:ValueBinding>
                 <diggs:ValueBinding>
-                    <diggs:method>horizontal_offset</diggs:method>
-                    <diggs:realizedValueXpath>diggs:referencePoint</diggs:realizedValueXpath>
-                    <diggs:referenceValueXpath>diggs:scope/diggs:SFDesignScope/diggs:plannedPositions</diggs:referenceValueXpath>
-                    <diggs:referenceSource>design</diggs:referenceSource>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>if (exists(diggs:realizesGridIndex)) then (let $d := ($design, diggs:deref($design/diggs:basedOnRef), diggs:deref(diggs:deref($design/diggs:basedOnRef)/diggs:basedOnRef)), $g := ($d/diggs:scope/diggs:SFDesignScope/diggs:plannedPositions//diggs:RectifiedGrid)[1] return if (exists($g)) then (let $i := number(tokenize(normalize-space(diggs:realizesGridIndex),'\s+')[1]), $j := number(tokenize(normalize-space(diggs:realizesGridIndex),'\s+')[2]), $o := tokenize(normalize-space($g/diggs:origin//gml:pos),'\s+'), $a := tokenize(normalize-space($g/diggs:offsetVector[1]),'\s+'), $b := tokenize(normalize-space($g/diggs:offsetVector[2]),'\s+'), $p := tokenize(normalize-space(diggs:referencePoint//gml:pos),'\s+'), $dx := number($p[1]) - (number($o[1]) + $i*number($a[1]) + $j*number($b[1])), $dy := number($p[2]) - (number($o[2]) + $i*number($a[2]) + $j*number($b[2])) return math:sqrt($dx*$dx + $dy*$dy)) else ()) else ()</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
