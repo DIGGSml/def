@@ -55,7 +55,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="diameter">
-            <gml:description>The as-built diameter of the element, measured against its designed diameter.</gml:description>
+            <gml:description>The as-built diameter of the element. Use diameter_deviation where a requirement is stated against the designed diameter.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#diameter</gml:identifier>
             <gml:name>Diameter</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -68,10 +68,8 @@
             </diggs:occurrences>
             <diggs:valueBindings>
                 <diggs:ValueBinding>
-                    <diggs:method>difference</diggs:method>
+                    <diggs:method>direct</diggs:method>
                     <diggs:realizedValueXpath>diggs:columnDiameter</diggs:realizedValueXpath>
-                    <diggs:referenceValueXpath>diggs:columnDiameter</diggs:referenceValueXpath>
-                    <diggs:referenceSource>design</diggs:referenceSource>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
@@ -416,7 +414,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="easting_position_deviation">
-            <gml:description>The signed offset, along the easting axis of the project horizontal CRS, of the as-built position of the element from its designed position (positive towards increasing easting). The per-axis form of a position tolerance; the as-built and designed positions must be stated in the same CRS, and the axes are taken from its definition; see radial_position_deviation for the radial form.</gml:description>
+            <gml:description>The signed offset, along the easting axis of the project horizontal CRS, of the as-built position of the element from its designed position (positive towards increasing easting). The per-axis form of a position tolerance; the as-built and designed positions must be stated in the same CRS, and the axes are taken from its definition; see position for the radial form.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#easting_position_deviation</gml:identifier>
             <gml:name>Easting position deviation</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -444,7 +442,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="northing_position_deviation">
-            <gml:description>The signed offset, along the northing axis of the project horizontal CRS, of the as-built position of the element from its designed position (positive towards increasing northing). The per-axis form of a position tolerance; the as-built and designed positions must be stated in the same CRS, and the axes are taken from its definition; see radial_position_deviation for the radial form.</gml:description>
+            <gml:description>The signed offset, along the northing axis of the project horizontal CRS, of the as-built position of the element from its designed position (positive towards increasing northing). The per-axis form of a position tolerance; the as-built and designed positions must be stated in the same CRS, and the axes are taken from its definition; see position for the radial form.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#northing_position_deviation</gml:identifier>
             <gml:name>Northing position deviation</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -524,6 +522,30 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="diameter_deviation">
+            <gml:description>The as-built diameter of the element minus its designed diameter, signed: negative where the element is narrower than designed. Use it where a requirement limits the deviation from the designed diameter; diameter states the absolute as-built diameter.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#diameter_deviation</gml:identifier>
+            <gml:name>Diameter deviation</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>difference</diggs:method>
+                    <diggs:realizedValueXpath>diggs:columnDiameter</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:columnDiameter</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
 </gml:Dictionary>
