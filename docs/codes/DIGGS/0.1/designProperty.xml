@@ -399,7 +399,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="sampling_frequency">
-            <gml:description>Number of acceptance samplings taken per unit volume of material placed - for example a minimum of 1 sampling per 100 m3 of concrete for compressive strength testing. A requirement on how much testing is done, not on a measured property of the material: it is met by counting the distinct samplings behind the test results, so results reported only as an average cannot show it was met.</gml:description>
+            <gml:description>Number of acceptance samplings taken per unit volume of material placed - for example a minimum of 1 sampling per 100 m3 of concrete for compressive strength testing. A requirement on how much testing is done, not on a measured property of the material: it is met by counting the distinct samplings behind the test results, so results reported only as an average cannot show it was met. A sampling is identified by the creation time of its specimens (extractionTime) or, where that is not recorded, by the casting date derived from the test date and the specimen age at test in days; specimens cast from one sampling share that time, so distinct creation times count samplings. Evaluated per batch against its total batch volume.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#sampling_frequency</gml:identifier>
             <gml:name>Acceptance sampling frequency</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -410,6 +410,20 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:GroutBatch</diggs:subjectElement>
+                    <diggs:method>frequency</diggs:method>
+                    <diggs:realizedValueXpath>distinct-values($evidence//diggs:GroutSpecimen/diggs:extractionTime/normalize-space(.))</diggs:realizedValueXpath>
+                    <diggs:normalizeByXpath>diggs:totalBatchVolume</diggs:normalizeByXpath>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:GroutBatch</diggs:subjectElement>
+                    <diggs:method>frequency</diggs:method>
+                    <diggs:realizedValueXpath>distinct-values(for $s in $evidence//diggs:GroutSpecimen[diggs:ageAtTest[@uom='d']] return string(xs:date(substring(string($s/ancestor::diggs:MaterialTest/diggs:samplingTime//gml:timePosition), 1, 10)) - xs:dayTimeDuration(concat('P', $s/diggs:ageAtTest, 'D'))))</diggs:realizedValueXpath>
+                    <diggs:normalizeByXpath>diggs:totalBatchVolume</diggs:normalizeByXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -510,7 +524,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="discharge_time">
-            <gml:description>The time elapsed from the introduction of mixing water to the end of discharge of the mix at the point of placement - a limit on how long a grout or concrete batch may take to be placed.</gml:description>
+            <gml:description>The time elapsed from the introduction of mixing water to the end of discharge of the mix at the point of placement - a limit on how long a grout or concrete batch may take to be placed. Evaluated on the element that received the batch: the end of its installation record where one exists, otherwise the end of its whenConstructed interval, less the start of the batch's sampling (mixing) activity. The two times must be recorded to a resolution at least as fine as the unit of the limit (hours need a time of day; days need only a date); otherwise the value is not evaluable.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#discharge_time</gml:identifier>
             <gml:name>Discharge time</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -522,6 +536,22 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumn</diggs:subjectElement>
+                    <diggs:method>difference</diggs:method>
+                    <diggs:realizedValueXpath>let $id := concat('#', @gml:id) return sort(root(.)//diggs:RIColumnConstruction[diggs:samplingFeatureRef/@xlink:href = $id]/diggs:installationRecord//diggs:timeDomain//(gml:timePosition | gml:endPosition | diggs:end))[last()]</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>(diggs:samplingDate | diggs:deref(diggs:samplingActivityRef)/diggs:samplingDate)/diggs:TimeInterval/diggs:start</diggs:referenceValueXpath>
+                    <diggs:referenceSource>evidence</diggs:referenceSource>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumn</diggs:subjectElement>
+                    <diggs:method>difference</diggs:method>
+                    <diggs:realizedValueXpath>diggs:whenConstructed//diggs:end</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>(diggs:samplingDate | diggs:deref(diggs:samplingActivityRef)/diggs:samplingDate)/diggs:TimeInterval/diggs:start</diggs:referenceValueXpath>
+                    <diggs:referenceSource>evidence</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
