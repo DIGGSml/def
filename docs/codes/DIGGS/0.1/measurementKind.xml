@@ -48,10 +48,10 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="low_strain_integrity_test">
-            <gml:description>A low-strain impact (pulse-echo or transient-response) test used to detect discontinuities, necking or changes in cross-section along the length of a completed element, per ASTM D5882 or equivalent.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#low_strain_integrity_test</gml:identifier>
-            <gml:name>Low-strain integrity test</gml:name>
+        <diggs:Definition gml:id="pile_integrity_test">
+            <gml:description>A low-strain impact (pulse-echo or transient-response) test used to detect discontinuities, necking or changes in cross-section along the length of a completed pile or column, per ASTM D5882 or equivalent.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#pile_integrity_test</gml:identifier>
+            <gml:name>Pile integrity test (PIT)</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D5882</diggs:authority>
             <diggs:occurrences>
@@ -76,34 +76,6 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="composite_load_test">
-            <gml:description>A load test applied to a group of inclusions together with the soil between them, measuring the response of the treated ground as a composite rather than the response of one element.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#composite_load_test</gml:identifier>
-            <gml:name>Composite / group load test</gml:name>
-            <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>DIGGS</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
-        <diggs:Definition gml:id="soil_load_test">
-            <gml:description>A load test applied to the soil between inclusions rather than to an inclusion, used to verify the stress and settlement assumed for the untreated soil in a composite-ground design.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#soil_load_test</gml:identifier>
-            <gml:name>Test on surrounding soil</gml:name>
-            <diggs:dataType>string</diggs:dataType>
-            <diggs:authority>DIGGS</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="plate_load_test">
             <gml:description>A plate-bearing load test on a single deep foundation element head, measuring ground or platform stiffness rather than the element's own axial capacity, per ASTM D1194 (withdrawn 2003, still in practical use), ASTM D1195/D1196, or DIN 18134.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test</gml:identifier>
@@ -119,7 +91,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="zone_load_test">
-            <gml:description>A large-plate load test on a load transfer platform over a group of columns, per BS 8006-1 (which requires the test), typically executed to ASTM D1195/D1196 or DIN 18134's methodology.</gml:description>
+            <gml:description>A large-plate load test on a load transfer platform over a group of columns, treating the group and the intervening soil as a composite rather than testing one element - applied to the platform as a sampling feature, not to a pile. Per BS 8006-1 (which requires the test), typically executed to ASTM D1195/D1196 or DIN 18134's methodology.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#zone_load_test</gml:identifier>
             <gml:name>Zone load test</gml:name>
             <diggs:dataType>string</diggs:dataType>
