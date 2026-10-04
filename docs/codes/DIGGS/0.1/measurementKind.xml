@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="measurementKind">
-    <gml:description>Codes naming the kind of measurement a diggs:TargetMeasurement plans, for use where no measurementMethod is cited or where the cited method admits several kinds of measurement. Seeded here with the load-verification and integrity-testing kinds referenced by rigid inclusion acceptance testing (ASIRI; FHWA-KS-25-02); TargetMeasurement is general DIGGS infrastructure covering every planned Test, Monitor, MaterialTest, MeasurementWhileDrilling and GeophysicalFieldSurvey, so the list is expected to grow well beyond this starting set as other domains populate it. Expect this element to be omitted in the common case, per its own documentation.</gml:description>
+    <gml:description>Codes naming the kind of measurement a diggs:DesignMeasurement plans, for use where no measurementMethod is cited or where the cited method admits several kinds of measurement. Seeded here with the load-verification and integrity-testing kinds referenced by rigid inclusion acceptance testing (ASIRI; FHWA-KS-25-02); DesignMeasurement is general DIGGS infrastructure covering every planned Test, Monitor, MaterialTest, MeasurementWhileDrilling and GeophysicalFieldSurvey, so the list is expected to grow well beyond this starting set as other domains populate it. Expect this element to be omitted in the common case, per its own documentation.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml</gml:identifier>
-    <gml:name>DIGGS Target Measurement Kind Codelist Definitions</gml:name>
+    <gml:name>DIGGS Design Measurement Kind Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="static_load_test">
             <gml:description>A slow-maintained or constant-rate-of-penetration axial load test applying load directly to the element and measuring load-movement response, per ASTM D1143 or equivalent.</gml:description>
@@ -14,7 +14,7 @@
             <diggs:authority>ASTM D1143</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -28,7 +28,7 @@
             <diggs:authority>ASTM D7383</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -42,7 +42,7 @@
             <diggs:authority>ASTM D4945</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -56,7 +56,7 @@
             <diggs:authority>ASTM D5882</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -70,7 +70,7 @@
             <diggs:authority>ASTM D3966</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -84,7 +84,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -98,7 +98,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -112,7 +112,7 @@
             <diggs:authority>ASTM D1196</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -126,7 +126,7 @@
             <diggs:authority>BS 8006-1</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -140,7 +140,7 @@
             <diggs:authority>ASTM D7949</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
