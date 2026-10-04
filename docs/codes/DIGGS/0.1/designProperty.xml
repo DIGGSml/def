@@ -437,6 +437,10 @@
                     <diggs:referenceValueXpath>number(tokenize(normalize-space(diggs:scope/diggs:SFDesignScope/diggs:targetPosition//gml:pos),'\s+')[1])</diggs:referenceValueXpath>
                     <diggs:referenceSource>design</diggs:referenceSource>
                 </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>if (exists(diggs:realizesGridIndex)) then (let $d := ($design, diggs:deref($design/diggs:basedOnRef), diggs:deref(diggs:deref($design/diggs:basedOnRef)/diggs:basedOnRef)), $g := ($d/diggs:scope/diggs:SFDesignScope/diggs:plannedPositions//diggs:RectifiedGrid)[1] return if (exists($g)) then (let $i := number(tokenize(normalize-space(diggs:realizesGridIndex),'\s+')[1]), $j := number(tokenize(normalize-space(diggs:realizesGridIndex),'\s+')[2]), $o := tokenize(normalize-space($g/diggs:origin//gml:pos),'\s+'), $a := tokenize(normalize-space($g/diggs:offsetVector[1]),'\s+'), $b := tokenize(normalize-space($g/diggs:offsetVector[2]),'\s+') return number(tokenize(normalize-space(diggs:referencePoint//gml:pos),'\s+')[1]) - (number($o[1]) + $i*number($a[1]) + $j*number($b[1]))) else ()) else ()</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -460,6 +464,10 @@
                     <diggs:realizedValueXpath>number(tokenize(normalize-space(diggs:referencePoint//gml:pos),'\s+')[2])</diggs:realizedValueXpath>
                     <diggs:referenceValueXpath>number(tokenize(normalize-space(diggs:scope/diggs:SFDesignScope/diggs:targetPosition//gml:pos),'\s+')[2])</diggs:referenceValueXpath>
                     <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>if (exists(diggs:realizesGridIndex)) then (let $d := ($design, diggs:deref($design/diggs:basedOnRef), diggs:deref(diggs:deref($design/diggs:basedOnRef)/diggs:basedOnRef)), $g := ($d/diggs:scope/diggs:SFDesignScope/diggs:plannedPositions//diggs:RectifiedGrid)[1] return if (exists($g)) then (let $i := number(tokenize(normalize-space(diggs:realizesGridIndex),'\s+')[1]), $j := number(tokenize(normalize-space(diggs:realizesGridIndex),'\s+')[2]), $o := tokenize(normalize-space($g/diggs:origin//gml:pos),'\s+'), $a := tokenize(normalize-space($g/diggs:offsetVector[1]),'\s+'), $b := tokenize(normalize-space($g/diggs:offsetVector[2]),'\s+') return number(tokenize(normalize-space(diggs:referencePoint//gml:pos),'\s+')[2]) - (number($o[2]) + $i*number($a[2]) + $j*number($b[2]))) else ()) else ()</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
