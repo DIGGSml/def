@@ -508,7 +508,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="penetration_over_interval">
-            <gml:description>The distance the installation tool advances into the ground over a stated interval of time - for example less than 50 mm over two consecutive minutes as a drilling refusal rule. The interval is stated by an evidenceCondition (interval_duration) on the criterion. Distinct from penetration_rate, which is the same advance expressed per unit time. Evaluated on the installation record: the depth gained over the window of that duration that ends when the tool first reaches its maximum depth, so a refusal rule judges the last push before termination and not the pause at total depth. Depth is positive downward.</gml:description>
+            <gml:description>The distance the installation tool advances into the ground over a stated interval of time - for example less than 50 mm over two consecutive minutes as a drilling refusal rule. The interval is stated by an evidenceCondition (interval_duration) on the criterion. Distinct from penetration_rate, which is the same advance expressed per unit time. Evaluated on the construction activity that formed the element, from its installation record: the depth gained over the window of that duration that ends when the tool first reaches its maximum depth, so a refusal rule judges the last push before termination and not the pause at total depth. Depth is positive downward.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#penetration_over_interval</gml:identifier>
             <gml:name>Penetration over an interval</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -522,11 +522,11 @@
             </diggs:occurrences>
             <diggs:valueBindings>
                 <diggs:ValueBinding>
-                    <diggs:subjectElement>diggs:RIColumn</diggs:subjectElement>
+                    <diggs:subjectElement>diggs:RIColumnConstruction</diggs:subjectElement>
                     <diggs:method>change_over_window</diggs:method>
-                    <diggs:realizedValueXpath>diggs:series(($evidence/descendant-or-self::diggs:RIInstallationRecord[.//diggs:propertyClass/@codeSpace[ends-with(., '#depth')]])[1], 'depth')</diggs:realizedValueXpath>
+                    <diggs:realizedValueXpath>diggs:series((descendant-or-self::diggs:RIInstallationRecord[.//diggs:propertyClass/@codeSpace[ends-with(., '#depth')]])[1], 'depth')</diggs:realizedValueXpath>
                     <diggs:referenceValueXpath>let $s := diggs:series((descendant-or-self::diggs:RIInstallationRecord[.//diggs:propertyClass/@codeSpace[ends-with(., '#depth')]])[1], 'depth'), $m := max($s ! ?2) return ($s[?2 = $m])[1]?1</diggs:referenceValueXpath>
-                    <diggs:referenceSource>evidence</diggs:referenceSource>
+                    <diggs:referenceSource>subject</diggs:referenceSource>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
