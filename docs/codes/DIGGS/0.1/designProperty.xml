@@ -7,7 +7,7 @@
     <gml:name>DIGGS Design Conformance Criterion Design Property Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="position">
-            <gml:description>The as-built plan position of the element, measured against its designed position.</gml:description>
+            <gml:description>The plan (horizontal) distance between the as-built position of the element (its reference point) and its designed position - the radial form of a position tolerance. Use easting_position_deviation and northing_position_deviation where a tolerance is stated per axis.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#position</gml:identifier>
             <gml:name>Position</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -80,7 +80,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="length">
-            <gml:description>The as-built length of the element, measured against its designed length.</gml:description>
+            <gml:description>The as-built length of the element. Use length_deviation where a requirement is stated against the designed length.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#length</gml:identifier>
             <gml:name>Length</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -93,10 +93,8 @@
             </diggs:occurrences>
             <diggs:valueBindings>
                 <diggs:ValueBinding>
-                    <diggs:method>difference</diggs:method>
+                    <diggs:method>direct</diggs:method>
                     <diggs:realizedValueXpath>diggs:columnLength</diggs:realizedValueXpath>
-                    <diggs:referenceValueXpath>diggs:columnLength</diggs:referenceValueXpath>
-                    <diggs:referenceSource>design</diggs:referenceSource>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
@@ -419,24 +417,8 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="radial_position_deviation">
-            <gml:description>The plan (horizontal) distance between the as-built position of the element and its designed position - the radial form of a position tolerance. Use easting_position_deviation and northing_position_deviation where a tolerance is stated per axis.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#radial_position_deviation</gml:identifier>
-            <gml:name>Radial position deviation</gml:name>
-            <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>length</diggs:quantityClass>
-            <diggs:authority>DIGGS</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:Definition>
-    </gml:dictionaryEntry>
-    <gml:dictionaryEntry>
         <diggs:Definition gml:id="easting_position_deviation">
-            <gml:description>The signed offset, along the easting axis of the project horizontal CRS, of the as-built position of the element from its designed position (positive towards increasing easting). The per-axis form of a position tolerance; see radial_position_deviation for the radial form.</gml:description>
+            <gml:description>The signed offset, along the easting axis of the project horizontal CRS, of the as-built position of the element from its designed position (positive towards increasing easting). The per-axis form of a position tolerance; the as-built and designed positions must be stated in the same CRS, and the axes are taken from its definition; see radial_position_deviation for the radial form.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#easting_position_deviation</gml:identifier>
             <gml:name>Easting position deviation</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -448,11 +430,19 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>difference</diggs:method>
+                    <diggs:realizedValueXpath>number(tokenize(normalize-space(diggs:referencePoint//gml:pos),'\s+')[1])</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>number(tokenize(normalize-space(diggs:scope/diggs:SFDesignScope/diggs:targetPosition//gml:pos),'\s+')[1])</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="northing_position_deviation">
-            <gml:description>The signed offset, along the northing axis of the project horizontal CRS, of the as-built position of the element from its designed position (positive towards increasing northing). The per-axis form of a position tolerance; see radial_position_deviation for the radial form.</gml:description>
+            <gml:description>The signed offset, along the northing axis of the project horizontal CRS, of the as-built position of the element from its designed position (positive towards increasing northing). The per-axis form of a position tolerance; the as-built and designed positions must be stated in the same CRS, and the axes are taken from its definition; see radial_position_deviation for the radial form.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#northing_position_deviation</gml:identifier>
             <gml:name>Northing position deviation</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -464,6 +454,14 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>difference</diggs:method>
+                    <diggs:realizedValueXpath>number(tokenize(normalize-space(diggs:referencePoint//gml:pos),'\s+')[2])</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>number(tokenize(normalize-space(diggs:scope/diggs:SFDesignScope/diggs:targetPosition//gml:pos),'\s+')[2])</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -480,6 +478,14 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>difference</diggs:method>
+                    <diggs:realizedValueXpath>diggs:columnLength</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:columnLength</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
