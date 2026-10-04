@@ -33,4 +33,18 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="stopped_short">
+            <gml:description>Installation stopped before the design toe depth was reached without the refusal criterion being met - for example on an obstruction or an instruction. Neither design_depth nor refusal applies; the reason belongs in a construction event or a remark.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/terminationOutcome.xml#stopped_short</gml:identifier>
+            <gml:name>Stopped short of design depth</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIColumnConstruction/diggs:terminationOutcome</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

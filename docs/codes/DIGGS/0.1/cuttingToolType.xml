@@ -103,4 +103,28 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="traction_compacting_tool">
+            <gml:description>A displacement tool that advances by traction and compacts soil on both insertion and extraction, typically about half on each. Offered by Keller / Hayward Baker as an alternative to a single-pass displacement auger.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cuttingToolType.xml#traction_compacting_tool</gml:identifier>
+            <gml:name>Traction compacting tool</gml:name>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:CuttingTool/diggs:toolType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="vibratory_displacement_tool">
+            <gml:description>A displacement tool advanced by vibration rather than by rotary drilling or static push.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/cuttingToolType.xml#vibratory_displacement_tool</gml:identifier>
+            <gml:name>Vibratory displacement tool</gml:name>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:CuttingTool/diggs:toolType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
