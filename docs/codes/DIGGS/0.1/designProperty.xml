@@ -533,7 +533,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="discharge_time">
-            <gml:description>The time elapsed from the introduction of mixing water to the end of discharge of the mix at the point of placement - a limit on how long a grout or concrete batch may take to be placed. Evaluated on the element that received the batch: the end of its installation record where one exists, otherwise the end of its whenConstructed interval, less the start of the batch's sampling (mixing) activity. The two times must be recorded to a resolution at least as fine as the unit of the limit (hours need a time of day; days need only a date); otherwise the value is not evaluable.</gml:description>
+            <gml:description>The time elapsed from the introduction of mixing water to the end of discharge of the mix at the point of placement - a limit on how long a grout or concrete batch may take to be placed. Evaluated on the element that received the batch: the end of its installation record where one exists (the activity start plus the last elapsed time of a time-interval-list domain, or the last time of an instant domain), otherwise the end of its whenConstructed interval, less the start of the batch's sampling (mixing) activity. The two times must be recorded to a resolution at least as fine as the unit of the limit (hours need a time of day; days need only a date); otherwise the value is not evaluable.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#discharge_time</gml:identifier>
             <gml:name>Discharge time</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -546,6 +546,13 @@
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumn</diggs:subjectElement>
+                    <diggs:method>difference</diggs:method>
+                    <diggs:realizedValueXpath>let $id := concat('#', @gml:id), $a := (root(.)//diggs:RIColumnConstruction[diggs:samplingFeatureRef/@xlink:href = $id][.//diggs:TimeIntervalList[@unit = 'second']])[1] return if (exists($a)) then xs:dateTime($a/diggs:activityDateTime//diggs:start) + xs:dayTimeDuration(concat('PT', tokenize(normalize-space($a//diggs:TimeIntervalList/diggs:timeIntervalList), '\s+')[last()], 'S')) else ()</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>(diggs:samplingDate | diggs:deref(diggs:samplingActivityRef)/diggs:samplingDate)/diggs:TimeInterval/diggs:start</diggs:referenceValueXpath>
+                    <diggs:referenceSource>evidence</diggs:referenceSource>
+                </diggs:ValueBinding>
                 <diggs:ValueBinding>
                     <diggs:subjectElement>diggs:RIColumn</diggs:subjectElement>
                     <diggs:method>difference</diggs:method>
