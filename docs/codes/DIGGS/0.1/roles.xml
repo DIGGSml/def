@@ -303,4 +303,18 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="approver">
+            <gml:description>Person or organization that approved the associated data, document or work - for example a calibration certificate, a test report or an inspection.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#approver</gml:identifier>
+            <gml:name>Approver</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:rolePerformed</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

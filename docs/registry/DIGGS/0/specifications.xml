@@ -5233,4 +5233,86 @@
             </diggs:occurrences>
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_bs_1377_9">
+            <diggs:specification>
+                <diggs:Specification gml:id="bs_1377_9">
+                    <gml:description>In-situ tests on soils: density, penetration resistance,
+                        vertical deformation and strength (including the plate loading test) and
+                        in-situ corrosivity. Withdrawn by BSI; registered because project records
+                        made while it was current cite it.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1377_9</gml:identifier>
+                    <gml:name>BS 1377-9</gml:name>
+                    <diggs:accreditingBody>British Standards Institution</diggs:accreditingBody>
+                    <diggs:standardPart>9</diggs:standardPart>
+                    <diggs:standardReferenceNumber>BS 1377-9</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Methods of test for soils for civil engineering
+                        purposes - Part 9: In-situ tests</diggs:standardTitle>
+                    <diggs:standardVersion>1990</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing"
+                >insitu_testing</diggs:domain>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions"
+                >rigid_inclusions</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:registryStatus>withdrawn</diggs:registryStatus>
+            <diggs:supersededByRef
+                xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1377_9_2025"/>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:calibrationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
+    <diggs:registryEntry>
+        <diggs:SpecificationRegistryEntry gml:id="entry_bs_1377_9_2025">
+            <diggs:specification>
+                <diggs:Specification gml:id="bs_1377_9_2025">
+                    <gml:description>In-situ tests on soils, published 20 November 2025: seven
+                        methods for in-situ density, dynamic cone penetration, four methods for
+                        vertical deformation and strength (plate load test, shallow pad maintained
+                        load test, in-situ CBR test, in-situ vane test) and two for in-situ
+                        corrosivity. Replaces BS 1377-9:1990.</gml:description>
+                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
+                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1377_9_2025</gml:identifier>
+                    <gml:name>BS 1377-9</gml:name>
+                    <diggs:accreditingBody>British Standards Institution</diggs:accreditingBody>
+                    <diggs:standardPart>9</diggs:standardPart>
+                    <diggs:standardReferenceNumber>BS 1377-9</diggs:standardReferenceNumber>
+                    <diggs:standardTitle>Methods of test for soils for civil engineering
+                        purposes - Part 9: In-situ tests</diggs:standardTitle>
+                    <diggs:standardVersion>2025</diggs:standardVersion>
+                </diggs:Specification>
+            </diggs:specification>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#insitu_testing"
+                >insitu_testing</diggs:domain>
+            <diggs:domain
+                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#rigid_inclusions"
+                >rigid_inclusions</diggs:domain>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:testProcedureMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:calibrationMethod</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:SpecificationRegistryEntry>
+    </diggs:registryEntry>
 </diggs:SpecificationRegistry>
