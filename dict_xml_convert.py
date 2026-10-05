@@ -13,6 +13,9 @@ existing codespace reference). Built for RI_Build_Plan_3.md X11 + X11a:
          diggs:ValueBinding inside diggs:valueBindings, after diggs:occurrences
          (Dictionary_diggs.xsd DefinitionType). Rows keep their sheet order, which is
          the order an evaluator tries them.
+  VCS1 — reads an optional ValueCodeSpace column on the Definitions sheet and emits it as
+         diggs:valueCodeSpace, last in the Definition (the code list a string property's
+         values come from).
 
 All other behavior — sheet layout, column names, the codelists.xsl/propertylists.xsl
 stylesheet choice, the blank-row/placeholder-row tolerance, root gml:id sourced from
@@ -363,6 +366,16 @@ def build_dictionary_xml(xlsx_path: Path, dictionary_file: str, dictionary_id: s
                 ET.SubElement(binding, ET.QName(DIGGS_NS, tag)).text = value
     for binding_id in unmatched_binding_ids:
         warnings.append(f"{dictionary_file}: ValueBindings row ID '{binding_id}' matches no Definition")
+
+    # VCS1 - optional Definitions column ValueCodeSpace -> diggs:valueCodeSpace, last in
+    # DefinitionType's sequence (after occurrences and valueBindings), so it is appended here.
+    if "ValueCodeSpace" in definitions_df.columns:
+        for _, row in definitions_df.iterrows():
+            definition_id = _cell_text(row["ID"])
+            code_space = _cell_text(row["ValueCodeSpace"])
+            if definition_id is None or code_space is None:
+                continue
+            ET.SubElement(definitions_by_id[definition_id], ET.QName(DIGGS_NS, "valueCodeSpace")).text = code_space
 
     tree_str = ET.tostring(root, "utf-8")
     dom = parseString(tree_str)

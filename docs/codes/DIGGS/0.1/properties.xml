@@ -5115,7 +5115,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="loading_phase">
-            <gml:description>Whether a load test reading or increment belongs to loading, unloading or reloading. Values from loadTestIncrementPhase.xml.</gml:description>
+            <gml:description>Whether a load test reading or increment belongs to seating, loading, unloading or reloading.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#loading_phase</gml:identifier>
             <gml:name>Loading Phase</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -5133,6 +5133,7 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueCodeSpace>https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml</diggs:valueCodeSpace>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
