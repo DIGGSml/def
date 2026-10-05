@@ -601,4 +601,26 @@
             </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="maximum_test_stress">
+            <gml:description>The highest stress a load test is taken to - the largest stress applied through the bearing plate or loaded footprint during the test. A requirement on how the test is run, stated as a minimum the test must reach (for example 150 % of the design bearing pressure). Compared with the maxTestStress of the test's procedure.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#maximum_test_stress</gml:identifier>
+            <gml:name>Maximum test stress</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:procedure/*/diggs:maxTestStress</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
