@@ -387,4 +387,28 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="dial_gauge">
+            <gml:description>A mechanical or digital indicator that reads a displacement directly, mounted on a reference beam to measure the settlement of a test plate or pile head.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#dial_gauge</gml:identifier>
+            <gml:name>Dial gauge</gml:name>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="pressure_gauge">
+            <gml:description>A gauge that reads fluid pressure, for example the Bourdon-tube gauge on a hydraulic jack that gives the load applied in a static load test.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#pressure_gauge</gml:identifier>
+            <gml:name>Pressure gauge</gml:name>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
