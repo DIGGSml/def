@@ -5155,4 +5155,242 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="calibration_reference_value">
+            <gml:description>Value of the reference standard applied to the item at one calibration point, in the unit of the quantity calibrated (for example bar for a pressure gauge).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_reference_value</gml:identifier>
+            <gml:name>Calibration Reference Value</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationResults</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="calibration_indicated_value">
+            <gml:description>Value the item under calibration indicated at one calibration point, in the unit of the quantity calibrated.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_indicated_value</gml:identifier>
+            <gml:name>Calibration Indicated Value</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationResults</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="calibration_deviation">
+            <gml:description>Difference between the value the item indicated and the reference value applied, at one calibration point, as reported on the certificate.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_deviation</gml:identifier>
+            <gml:name>Calibration Deviation</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationResults</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="calibration_expanded_uncertainty">
+            <gml:description>Expanded uncertainty of the calibration at one point, at the coverage factor stated for the calibration (coverage_factor).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_expanded_uncertainty</gml:identifier>
+            <gml:name>Calibration Expanded Uncertainty</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationResults</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="instrument_resolution">
+            <gml:description>Smallest change in the quantity measured that the instrument displays, as stated on the calibration certificate.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#instrument_resolution</gml:identifier>
+            <gml:name>Instrument Resolution</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationValues</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="maximum_expanded_uncertainty">
+            <gml:description>Largest expanded uncertainty over the calibrated range, as stated on the calibration certificate, in the unit of the quantity calibrated.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#maximum_expanded_uncertainty</gml:identifier>
+            <gml:name>Maximum Expanded Uncertainty</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationValues</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="coverage_factor">
+            <gml:description>Factor multiplying the standard uncertainty to give the expanded uncertainty reported; k = 2 corresponds to a coverage probability of approximately 95 %.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coverage_factor</gml:identifier>
+            <gml:name>Coverage Factor</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationValues</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="calibrated_range_minimum">
+            <gml:description>Lower limit of the range over which the instrument was calibrated, in the unit of the quantity calibrated.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_minimum</gml:identifier>
+            <gml:name>Calibrated Range Minimum</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationValues</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="calibrated_range_maximum">
+            <gml:description>Upper limit of the range over which the instrument was calibrated, in the unit of the quantity calibrated.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_maximum</gml:identifier>
+            <gml:name>Calibrated Range Maximum</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationValues</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="acceptance_tolerance">
+            <gml:description>The tolerance the instrument is accepted to, as stated on the calibration certificate - a limit or a reference to the manufacturer's specification.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#acceptance_tolerance</gml:identifier>
+            <gml:name>Acceptance Tolerance</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationValues</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="jack_ram_area">
+            <gml:description>Area of the hydraulic jack ram, as stated on the calibration certificate, used to convert jack pressure to force.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#jack_ram_area</gml:identifier>
+            <gml:name>Jack Ram Area</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>area</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationValues</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="ambient_temperature">
+            <gml:description>Air temperature in the laboratory or on site while a calibration was performed. State the permitted variation as the minimum and maximum value.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ambient_temperature</gml:identifier>
+            <gml:name>Ambient Temperature</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>thermodynamic temperature</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationConditions</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="relative_humidity">
+            <gml:description>Relative humidity of the air while a calibration was performed. State the permitted variation as the minimum and maximum value.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_humidity</gml:identifier>
+            <gml:name>Relative Humidity</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:calibrationConditions</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
