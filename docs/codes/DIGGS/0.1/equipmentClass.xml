@@ -134,6 +134,9 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Sensor/diggs:class</diggs:sourceElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:Equipment/diggs:class</diggs:sourceElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
