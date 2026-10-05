@@ -688,4 +688,34 @@
             </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="test_count">
+            <gml:description>The number of tests made under a planned measurement - for example the number of integrity tests made of a planned set of locations. A requirement on how much testing is done, stated as a minimum. Counted from the realized measurements that cite the planned measurement.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#test_count</gml:identifier>
+            <gml:name>Test count</gml:name>
+            <diggs:dataType>integer</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="averaged_impact_count">
+            <gml:description>The number of hammer impacts averaged into one record of a low-strain integrity test, as reported by the test equipment. A requirement on how the test is run, stated as a minimum (for example at least three). One value for each test.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#averaged_impact_count</gml:identifier>
+            <gml:name>Averaged impact count</gml:name>
+            <diggs:dataType>integer</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
