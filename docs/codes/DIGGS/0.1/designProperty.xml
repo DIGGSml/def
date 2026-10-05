@@ -623,4 +623,69 @@
             </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="load_increment_count">
+            <gml:description>The number of loading increments applied in a load test - the stages in which load was raised, not the unloading stages. A requirement on how the test is run, stated as a minimum (for example at least three increments). Counted from the increments of the test's procedure.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#load_increment_count</gml:identifier>
+            <gml:name>Load increment count</gml:name>
+            <diggs:dataType>integer</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>count(diggs:procedure/*/diggs:increment/diggs:LoadTestIncrement[diggs:loadingPhase = 'loading'])</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="increment_hold_duration">
+            <gml:description>The time a load increment is held before the next is applied, taken from the first to the last reading of the increment, in seconds. One value for each loading increment of the test; the criterion's statistic states which governs (the shortest, for a minimum hold). A requirement on how the test is run.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#increment_hold_duration</gml:identifier>
+            <gml:name>Load increment hold duration</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>for $i in diggs:procedure/*/diggs:increment/diggs:LoadTestIncrement[diggs:loadingPhase = 'loading'] return (diggs:series($i//diggs:TemporalResult, 'settlement'))[last()]?1</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="settlement_change_last_five_minutes">
+            <gml:description>The settlement gained over the last five minutes of a load increment's hold - the settlement at the last reading minus the settlement five minutes earlier, interpolated. One value for each loading increment of the test; the criterion's statistic states which governs (the largest, for a stabilization requirement). A requirement on how the test is run, for example that an increment is held until the settlement in five minutes is less than 0.02 mm.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#settlement_change_last_five_minutes</gml:identifier>
+            <gml:name>Settlement change over the last five minutes of an increment</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>for $i in diggs:procedure/*/diggs:increment/diggs:LoadTestIncrement[diggs:loadingPhase = 'loading'] return let $s := diggs:series($i//diggs:TemporalResult, 'settlement'), $e := ($s[last()])?1 return diggs:valueAt($s, $e) - diggs:valueAt($s, $e - 300)</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>
