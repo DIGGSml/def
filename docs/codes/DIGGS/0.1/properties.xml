@@ -4254,6 +4254,11 @@
             </diggs:occurrences>
             <diggs:valueBindings>
                 <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:LoadTransferPlatform</diggs:subjectElement>
+                    <diggs:method>value_at</diggs:method>
+                    <diggs:realizedValueXpath>let $r := $evidence/diggs:outcome/*[1], $x := diggs:series($r, 'applied_stress'), $y := diggs:series($r, 'settlement'), $p := diggs:series($r, 'loading_phase') return for $i in 1 to count($y) return if ($p[$i]?2 = 'loading') then [$x[$i]?2, $y[$i]?2] else ()</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
                     <diggs:method>direct</diggs:method>
                     <diggs:realizedValueXpath>for $r in $evidence/descendant-or-self::*[diggs:results//diggs:propertyClass/@codeSpace[ends-with(., '#settlement')]] return diggs:series($r, 'settlement') ! ?2</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
