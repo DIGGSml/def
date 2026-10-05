@@ -48,10 +48,10 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
-        <diggs:Definition gml:id="pile_integrity_test">
-            <gml:description>A low-strain impact (pulse-echo or transient-response) test used to detect discontinuities, necking or changes in cross-section along the length of a completed pile or column, per ASTM D5882 or equivalent.</gml:description>
-            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#pile_integrity_test</gml:identifier>
-            <gml:name>Pile integrity test (PIT)</gml:name>
+        <diggs:Definition gml:id="low_strain_integrity_test">
+            <gml:description>A low-strain impact (pulse-echo or transient-response) test used to detect discontinuities, necking or changes in cross-section along the length of a completed pile or column, per ASTM D5882 or equivalent. Commonly called a pile integrity test (PIT).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#low_strain_integrity_test</gml:identifier>
+            <gml:name>Low strain integrity test</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>ASTM D5882</diggs:authority>
             <diggs:occurrences>
