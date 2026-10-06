@@ -5408,7 +5408,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="toe_depth">
-            <gml:description>The depth from the pile or element head to the toe reflection of a low-strain integrity test record, taken at the largest-amplitude reflection of the record and calculated from its travel time and the assumed wave speed. A result of diggs:LowStrainIntegrityTest. Compare with the as-built length of the element through toe_depth_deviation; defect_depth is the depth of a reflection above the toe.</gml:description>
+            <gml:description>The depth from the pile or element head to the toe reflection of a low-strain integrity test record: the deepest reflection of the record, found by working up from the bottom of the record, taken at its first amplitude maximum (or at its starting deflection where the start pulse of the record is referenced to its starting deflection). Reading from the bottom separates the toe from internal defects, which lie above it. The depth is calculated from the travel time and the assumed wave speed. A result of diggs:LowStrainIntegrityTest. Compare with the length of the element through toe_depth_deviation; defect_depth is the depth of a reflection above the toe.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#toe_depth</gml:identifier>
             <gml:name>Toe Depth</gml:name>
             <diggs:dataType>double</diggs:dataType>
