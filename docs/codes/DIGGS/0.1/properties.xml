@@ -1242,6 +1242,10 @@
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -4453,6 +4457,10 @@
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -5414,6 +5422,10 @@
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -5455,6 +5467,169 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
                     <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="normalized_velocity">
+            <gml:description>The velocity of the head of a pile or element in a low-strain integrity test record as evaluated: averaged over the impacts, amplified as the procedure states and normalized so that the impact peak has a fixed height. A number without a unit, comparable only with the impact of the same record. A column of the depth-indexed result of diggs:LowStrainIntegrityTest.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#normalized_velocity</gml:identifier>
+            <gml:name>Normalized Velocity</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="normalized_force">
+            <gml:description>The force applied to the head of a pile or element in a low-strain integrity test with an instrumented hammer, normalized to the same scale as the normalized velocity of the record. A number without a unit. A column of the result of diggs:LowStrainIntegrityTest.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#normalized_force</gml:identifier>
+            <gml:name>Normalized Force</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="impact_force">
+            <gml:description>The force applied to the head of a pile or element by the hammer of a low-strain integrity test, measured by an instrumented hammer. A column of the result of diggs:LowStrainIntegrityTest.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#impact_force</gml:identifier>
+            <gml:name>Impact Force</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="relative_impedance">
+            <gml:description>The impedance of a pile or element at a depth relative to its impedance at the head, as reconstructed from a low-strain integrity test record; 1 where the section and the concrete equal those at the head. A column of the depth-indexed result of diggs:LowStrainIntegrityTest.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_impedance</gml:identifier>
+            <gml:name>Relative Impedance</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="frequency">
+            <gml:description>A frequency at which a frequency-domain record is stated - for example a row of the mobility record of a transient response low-strain integrity test (diggs:LowStrainIntegrityTest/frequencyResponse).</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#frequency</gml:identifier>
+            <gml:name>Frequency</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>frequency</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="mobility">
+            <gml:description>The ratio of the velocity transform to the force transform at the head of a pile or element at a frequency, in a transient response low-strain integrity test: velocity per force (s/kg, equal to m/(N.s)). A column of diggs:LowStrainIntegrityTest/frequencyResponse. Not the fluid mobility of a porous medium.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mobility</gml:identifier>
+            <gml:name>Mobility</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time per mass</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="characteristic_mobility">
+            <gml:description>The mean mobility over the range of resonant frequencies of a transient response low-strain integrity test record. For a uniform element it approximates the reciprocal of the product of concrete density, wave speed and cross-sectional area, so it reflects the section and the quality of the concrete.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#characteristic_mobility</gml:identifier>
+            <gml:name>Characteristic Mobility</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>time per mass</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="dynamic_stiffness">
+            <gml:description>The ratio of force to displacement at the head of a pile or element at low frequency, read from the initial slope of the mobility record of a transient response low-strain integrity test. It reflects the element and the soil around it.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dynamic_stiffness</gml:identifier>
+            <gml:name>Dynamic Stiffness</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>force per length</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="mobility_ratio">
+            <gml:description>The ratio of the peak mobility to the characteristic mobility of a transient response low-strain integrity test record. A number without a unit.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#mobility_ratio</gml:identifier>
+            <gml:name>Mobility Ratio</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
