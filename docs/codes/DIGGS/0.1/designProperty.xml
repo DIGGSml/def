@@ -29,6 +29,11 @@
                     <diggs:method>direct</diggs:method>
                     <diggs:realizedValueXpath>if (exists(diggs:realizesGridIndex)) then (let $d := ($design, diggs:deref($design/diggs:basedOnRef), diggs:deref(diggs:deref($design/diggs:basedOnRef)/diggs:basedOnRef)), $g := ($d/diggs:scope/diggs:SFDesignScope/diggs:plannedPositions//diggs:RectifiedGrid)[1] return if (exists($g)) then (let $i := number(tokenize(normalize-space(diggs:realizesGridIndex),'\s+')[1]), $j := number(tokenize(normalize-space(diggs:realizesGridIndex),'\s+')[2]), $o := tokenize(normalize-space($g/diggs:origin//gml:pos),'\s+'), $a := tokenize(normalize-space($g/diggs:offsetVector[1]),'\s+'), $b := tokenize(normalize-space($g/diggs:offsetVector[2]),'\s+'), $p := tokenize(normalize-space(diggs:referencePoint//gml:pos),'\s+'), $dx := number($p[1]) - (number($o[1]) + $i*number($a[1]) + $j*number($b[1])), $dy := number($p[2]) - (number($o[2]) + $i*number($a[2]) + $j*number($b[2])) return math:sqrt($dx*$dx + $dy*$dy)) else ()) else ()</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:Test</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>if (exists(diggs:realizesGridIndex) and exists($design//diggs:ReferenceableGridByArray)) then (let $n := tokenize(normalize-space(($design//diggs:ReferenceableGridByArray)[1]/gml:posList), '\s+'), $i := number(normalize-space(diggs:realizesGridIndex)), $p := tokenize(normalize-space(diggs:deref(diggs:samplingFeatureRef)/diggs:referencePoint//gml:pos), '\s+') return math:sqrt(math:pow(number($p[1]) - number($n[2*$i + 1]), 2) + math:pow(number($p[2]) - number($n[2*$i + 2]), 2))) else ()</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -701,6 +706,13 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:Test</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>count(root(.)//diggs:Test[diggs:programDesignRef/@xlink:href = concat('#', $design/@gml:id)])</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -716,6 +728,13 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:Test</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:procedure/*/diggs:averagedImpactCount</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -732,6 +751,13 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:Test</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>days-from-duration(xs:date(substring(string(diggs:samplingTime//gml:timePosition), 1, 10)) - xs:date(substring(string(diggs:deref(diggs:samplingFeatureRef)/diggs:whenConstructed//diggs:end), 1, 10)))</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -748,6 +774,13 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:Test</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>let $col := diggs:deref(diggs:samplingFeatureRef), $batch := $col/diggs:groutRef/@xlink:href, $d := xs:date(substring(string(diggs:samplingTime//gml:timePosition), 1, 10)), $mix := diggs:deref(diggs:deref(diggs:deref($col/diggs:groutRef)/diggs:samplingActivityRef)/diggs:currentDesign//diggs:programDesignRef), $r := (for $m in root(.)//diggs:MaterialTest[diggs:sampleRef/@xlink:href = $batch][xs:date(substring(string(diggs:samplingTime//gml:timePosition), 1, 10)) le $d] return diggs:series($m/diggs:outcome/*, 'compressive_strength_unconfined') ! ?2) return if (exists($r) and exists($mix/diggs:strengthDesign)) then max($r) * 1000000 div number($mix/diggs:strengthDesign) * 100 else ()</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
 </gml:Dictionary>

@@ -70,4 +70,18 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="inconclusive">
+            <gml:description>The check was run and its evidence cannot decide the criterion - for example a record that does not meet the condition on which the criterion's reading rests, or one that shows no feature to measure. Neither satisfied nor not satisfied, and no concession is made: the criterion is left open. Bound to diggs:AcceptanceCheck only.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#inconclusive</gml:identifier>
+            <gml:name>Inconclusive</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:AcceptanceCheck/diggs:outcome</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

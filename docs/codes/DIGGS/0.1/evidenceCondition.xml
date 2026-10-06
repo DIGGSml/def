@@ -99,4 +99,20 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="relative_toe_amplitude">
+            <gml:description>The height of the toe reflection of a low-strain integrity test record relative to the height of its impact peak. Restricts the evidence to records whose amplification balances the toe reflection against the impact - the condition under which the relative height of an earlier reflection approximates its reflection coefficient. Stated as a range, for example 0.5 to 2.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/evidenceCondition.xml#relative_toe_amplitude</gml:identifier>
+            <gml:name>Relative toe amplitude</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:evidenceCondition</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

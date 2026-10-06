@@ -5450,6 +5450,13 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:Test</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>let $t := diggs:otherMeasurementProperty/diggs:AuthorizedParameter[diggs:parameterName/@codeSpace[ends-with(., '#toe_depth')]]/diggs:parameterValue, $l := diggs:procedure/*/diggs:referenceLength return if (exists($t) and exists($l)) then abs(number($t) - number($l)) * 100 div number($l) else ()</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -5477,6 +5484,13 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:Test</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:otherMeasurementProperty/diggs:AuthorizedParameter[diggs:parameterName/@codeSpace[ends-with(., '#relative_reflection_amplitude')]]/diggs:parameterValue</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -5636,6 +5650,33 @@
                     <diggs:conditionalElementXpath>ancestor::diggs:characteristicProperty</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="relative_toe_amplitude">
+            <gml:description>The height of the toe reflection of a low-strain integrity test record relative to the height of the initial impact peak, both read from the same record: 1 where the amplification balances the toe reflection against the impact, above 1 where the record is amplified past that balance and below 1 where it is not amplified up to it. A result of diggs:LowStrainIntegrityTest. See relative_reflection_amplitude.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_toe_amplitude</gml:identifier>
+            <gml:name>Relative Toe Amplitude</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:measurement//diggs:procedure/diggs:LowStrainIntegrityTest</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:Test</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:otherMeasurementProperty/diggs:AuthorizedParameter[diggs:parameterName/@codeSpace[ends-with(., '#relative_toe_amplitude')]]/diggs:parameterValue</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
 </gml:Dictionary>
