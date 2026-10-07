@@ -91,11 +91,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumn/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full_displacement' or .='replacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full displacement' or .='replacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full_displacement' or .='replacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full displacement' or .='replacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -110,11 +110,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumn/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -129,11 +129,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumn/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -148,11 +148,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumn/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -167,11 +167,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumn/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -186,11 +186,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumn/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full_displacement' or .='replacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full displacement' or .='replacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full_displacement' or .='replacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full displacement' or .='replacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -205,11 +205,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumn/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -224,11 +224,11 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumn/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full_displacement' or .='partial_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumn/diggs:riInstallationMethod[.='full displacement' or .='partial displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:RIColumnSpecification/diggs:columnType</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full_displacement' or .='partial_displacement']</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:RIColumnSpecification/diggs:riInstallationMethod[.='full displacement' or .='partial displacement']</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
