@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="sampleMatrix">
-    <gml:description>Codes classifying the material class of a sample, planned or realized - soil, rock, grout, and so on. Used for the value of diggs:TargetSampleType/sampleMatrix (planned) and diggs:SampleType/sampleMatrix (as-built) so design and as-built share one vocabulary for the same concept. The soil/rock distinction matters at planning time even where the eventual matrix is uncertain: a design targeting a not-yet-drilled location may know only that the recovered material will be one or the other.</gml:description>
+    <gml:description>Codes classifying the material class of a sample, planned or realized - soil, rock, grout, and so on. Used for the value of diggs:DesignSampleType/sampleMatrix (planned) and diggs:SampleType/sampleMatrix (as-built) so design and as-built share one vocabulary for the same concept. The soil/rock distinction matters at planning time even where the eventual matrix is uncertain: a design targeting a not-yet-drilled location may know only that the recovered material will be one or the other.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/sampleMatrix.xml</gml:identifier>
     <gml:name>DIGGS Sample Matrix Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -14,7 +14,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetSample/diggs:sampleMatrix</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignSample/diggs:sampleMatrix</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Sample/diggs:sampleMatrix</diggs:sourceElementXpath>
@@ -31,7 +31,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetSample/diggs:sampleMatrix</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignSample/diggs:sampleMatrix</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Sample/diggs:sampleMatrix</diggs:sourceElementXpath>
@@ -48,7 +48,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetSample/diggs:sampleMatrix</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignSample/diggs:sampleMatrix</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Sample/diggs:sampleMatrix</diggs:sourceElementXpath>
@@ -65,7 +65,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetSample/diggs:sampleMatrix</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignSample/diggs:sampleMatrix</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Sample/diggs:sampleMatrix</diggs:sourceElementXpath>
@@ -82,7 +82,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetSample/diggs:sampleMatrix</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignSample/diggs:sampleMatrix</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Sample/diggs:sampleMatrix</diggs:sourceElementXpath>
@@ -99,7 +99,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetSample/diggs:sampleMatrix</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignSample/diggs:sampleMatrix</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Sample/diggs:sampleMatrix</diggs:sourceElementXpath>
@@ -116,7 +116,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:TargetSample/diggs:sampleMatrix</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:DesignSample/diggs:sampleMatrix</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:Sample/diggs:sampleMatrix</diggs:sourceElementXpath>
