@@ -14,6 +14,9 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -27,6 +30,9 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
@@ -42,6 +48,9 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -55,6 +64,9 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
@@ -70,6 +82,9 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -83,6 +98,9 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
@@ -98,6 +116,9 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -111,6 +132,9 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
@@ -126,6 +150,9 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -139,6 +166,9 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
@@ -154,6 +184,9 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -167,6 +200,9 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
@@ -182,6 +218,9 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
@@ -195,6 +234,9 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs_geo:TriaxialTest/diggs_geo:triaxialTestType</diggs:sourceElementXpath>
+                </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:TriaxialTest/diggs:triaxialTestType</diggs:sourceElementXpath>
                 </diggs:Occurrence>
