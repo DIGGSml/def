@@ -295,7 +295,7 @@
                 <diggs:ValueBinding>
                     <diggs:subjectElement>diggs:GroutBatch</diggs:subjectElement>
                     <diggs:method>direct</diggs:method>
-                    <diggs:realizedValueXpath>diggs:waterCementRatioOfMix</diggs:realizedValueXpath>
+                    <diggs:realizedValueXpath>diggs:formulation/diggs:GroutBatchFormulation/diggs:waterCementRatioOfMix</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
