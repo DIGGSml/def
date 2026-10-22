@@ -4259,7 +4259,7 @@
             <diggs:valueBindings>
                 <diggs:ValueBinding>
                     <diggs:subjectElement>diggs:LoadTransferPlatform</diggs:subjectElement>
-                    <diggs:method>value_at</diggs:method>
+                    <diggs:method>value at</diggs:method>
                     <diggs:realizedValueXpath>let $r := $evidence/diggs:outcome/*[1], $x := diggs:series($r, 'applied_stress'), $y := diggs:series($r, 'settlement'), $p := diggs:series($r, 'loading_phase') return for $i in 1 to count($y) return if ($p[$i]?2 = 'loading') then [$x[$i]?2, $y[$i]?2] else ()</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
                 <diggs:ValueBinding>
