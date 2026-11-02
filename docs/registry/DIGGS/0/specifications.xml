@@ -1780,39 +1780,6 @@
         </diggs:SpecificationRegistryEntry>
     </diggs:registryEntry>
     <diggs:registryEntry>
-        <diggs:SpecificationRegistryEntry gml:id="entry_sec_70_tmss_03">
-            <diggs:specification>
-                <diggs:Specification gml:id="sec_70_tmss_03">
-                    <gml:description>Saudi Electricity Company material standard specification for
-                        normal-weight ready-mixed Portland cement concrete on SEC projects, covering
-                        mix design, constituent materials, quality control, delivery and testing,
-                        with strength and durability requirements keyed to exposure condition. The
-                        Jazera Royal Palace substation report tabulates its concrete requirements
-                        for very severe exposure. Bibliographic detail is taken from the citing
-                        project report and secondary sources; the controlled document was not
-                        publicly retrievable at the time of registration.</gml:description>
-                    <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS"
-                        >https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sec_70_tmss_03</gml:identifier>
-                    <gml:name>70-TMSS-03</gml:name>
-                    <diggs:accreditingBody>Saudi Electricity Company</diggs:accreditingBody>
-                    <diggs:standardReferenceNumber>70-TMSS-03</diggs:standardReferenceNumber>
-                    <diggs:standardTitle>Technical Material Standard Specification - Normal weight
-                        ready-mixed Portland cement concrete</diggs:standardTitle>
-                    <diggs:standardVersion>Rev. 02</diggs:standardVersion>
-                </diggs:Specification>
-            </diggs:specification>
-            <diggs:domain
-                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/specificationDomain.xml#materials"
-                >materials</diggs:domain>
-            <diggs:authority>DIGGS</diggs:authority>
-            <diggs:occurrences>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:RIProgramBasis/diggs:governingStandard</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-            </diggs:occurrences>
-        </diggs:SpecificationRegistryEntry>
-    </diggs:registryEntry>
-    <diggs:registryEntry>
         <diggs:SpecificationRegistryEntry gml:id="entry_aashto_m145">
             <diggs:specification>
                 <diggs:Specification gml:id="aashto_m145">
