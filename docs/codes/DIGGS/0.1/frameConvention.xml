@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="frameConvention">
-    <gml:description>Codes naming what the axes of a diggs:RelativeLocation's relativePosition2D/3D mean, for the value of frameConvention. PROVISIONAL - built from documented practice (project-baseline station/offset/elevation referencing; trench and test-pit face logging grids) rather than a single citable naming standard, and platform_relative is an inference with no located precedent found; flagged for SME review the same way R10's and VERT1's provisional dictionaries are.</gml:description>
+    <gml:description>Codes naming what the axes of a diggs:RelativeLocation's relativePosition2D/3D mean, for the value of frameConvention. PROVISIONAL - built from documented practice (project-baseline station/offset/elevation referencing; trench and test-pit face logging grids) rather than a single citable naming standard, and platform_relative is an inference with no located precedent found; flagged for SME review.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/frameConvention.xml</gml:identifier>
     <gml:name>DIGGS Relative-Location Frame Convention Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
