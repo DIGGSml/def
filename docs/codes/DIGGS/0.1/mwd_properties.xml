@@ -680,7 +680,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#specific_energy</gml:identifier>
             <gml:name>Specific energy</gml:name>
             <diggs:dataType>double</diggs:dataType>
-            <diggs:quantityClass>pressure</diggs:quantityClass>
+            <diggs:quantityClass>energy per volume</diggs:quantityClass>
             <diggs:authority>Teale, R. 1965. “The concept of specific energy in rock drilling.” International Journal of Rock Mechanics and Mining Sciences. 2(1): 57–73.</diggs:authority>
             <diggs:reference>https://doi.org/10.1016/0148-9062(65)90022-7</diggs:reference>
             <diggs:occurrences>
