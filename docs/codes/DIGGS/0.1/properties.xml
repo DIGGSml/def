@@ -5182,6 +5182,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_reference_value</gml:identifier>
             <gml:name>Calibration Reference Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>any</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -5200,6 +5201,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_indicated_value</gml:identifier>
             <gml:name>Calibration Indicated Value</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>any</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -5218,6 +5220,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_deviation</gml:identifier>
             <gml:name>Calibration Deviation</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>any</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -5236,6 +5239,7 @@
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_expanded_uncertainty</gml:identifier>
             <gml:name>Calibration Expanded Uncertainty</gml:name>
             <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>any</diggs:quantityClass>
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
