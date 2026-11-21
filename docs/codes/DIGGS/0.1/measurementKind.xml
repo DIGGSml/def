@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="measurementKind">
-    <gml:description>Codes naming the kind of measurement a diggs:DesignMeasurement plans, for use where no measurementMethod is cited or where the cited method admits several kinds of measurement. One entry per concrete test procedure type in the DIGGS schema (every AbstractTestProcedure descendant, plus GeophysicalProcessing), so a planned measurement can state the kind of procedure it will become. Authority is the standard the schema documentation names, else DIGGS. Expect this element to be omitted in the common case, per its own documentation.</gml:description>
+    <gml:description>Codes naming the kind of measurement a diggs:DesignMeasurement plans, for use where no measurementMethod is cited or where the cited method admits several kinds of measurement. One entry per concrete test procedure type in the DIGGS schema (every AbstractTestProcedure descendant, plus GeophysicalProcessing), so a planned measurement can state the kind of procedure it will become. Also entries for planned observations, such as a lithologic log, which are realized as observation systems rather than measurements. Authority is the standard the schema documentation names, else DIGGS. Expect this element to be omitted in the common case, per its own documentation.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml</gml:identifier>
     <gml:name>DIGGS Design Measurement Kind Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -839,6 +839,23 @@
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
+        <diggs:Definition gml:id="lithologic_log">
+            <gml:description>A description, by depth interval, of the soil or rock encountered in a borehole, test pit or other exposure: material, color, structure, consistency or strength, moisture and other descriptive properties, for example per ASTM D2488 or ASTM D5434. A planned observation rather than a measurement: it is realized as an observation system, such as a lithology system, that cites the design through programDesignRef.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#lithologic_log</gml:identifier>
+            <gml:name>Lithologic log</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
         <diggs:Definition gml:id="los_angeles_abrasion_test">
             <gml:description>Toughness and abrasion of a coarse aggregate: a sample is rotated in a steel drum with steel spheres, and the loss passing the specified sieve is reported as a percentage of the original mass.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#los_angeles_abrasion_test</gml:identifier>
@@ -1149,6 +1166,23 @@
             <gml:description>Relative density of a cohesionless soil, as a percentage, from its field void ratio and its maximum and minimum index void ratios.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#relative_density_test</gml:identifier>
             <gml:name>Relative density test</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="rock_core_log">
+            <gml:description>A description, by core run, of the rock core recovered from a borehole: rock type, weathering, strength, discontinuities and other descriptive properties, with the core recovery and rock quality designation of each run, for example per ASTM D5434 or ASTM D6032. A planned observation rather than a measurement: its descriptions are realized as observation systems that cite the design through programDesignRef.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#rock_core_log</gml:identifier>
+            <gml:name>Rock core log</gml:name>
             <diggs:dataType>string</diggs:dataType>
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
