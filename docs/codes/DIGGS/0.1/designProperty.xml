@@ -930,13 +930,13 @@
                 <diggs:ValueBinding>
                     <diggs:subjectElement>diggs:RIColumnConstruction</diggs:subjectElement>
                     <diggs:method>direct</diggs:method>
-                    <diggs:realizedValueXpath>diggs:constructionMethod/diggs:ConstructionActivityMethod/diggs:constructionMethod/@xlink:href/string(.)</diggs:realizedValueXpath>
+                    <diggs:realizedValueXpath>diggs:constructionMethod/diggs:ConstructionActivityMethod/diggs:constructionMethod/(@xlink:href/substring-after(., '#'), diggs:Specification/@gml:id/string(.))</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
                 <diggs:ValueBinding>
                     <diggs:subjectElement>diggs:RIColumnConstruction</diggs:subjectElement>
                     <diggs:method>match</diggs:method>
-                    <diggs:realizedValueXpath>diggs:constructionMethod/diggs:ConstructionActivityMethod/diggs:constructionMethod/@xlink:href/string(.)</diggs:realizedValueXpath>
-                    <diggs:referenceValueXpath>$design/diggs:constructionMethod/diggs:ConstructionActivityMethod/diggs:constructionMethod/@xlink:href/string(.)</diggs:referenceValueXpath>
+                    <diggs:realizedValueXpath>diggs:constructionMethod/diggs:ConstructionActivityMethod/diggs:constructionMethod/(@xlink:href/substring-after(., '#'), diggs:Specification/@gml:id/string(.))</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>$design/diggs:constructionMethod/diggs:ConstructionActivityMethod/diggs:constructionMethod/(@xlink:href/substring-after(., '#'), diggs:Specification/@gml:id/string(.))</diggs:referenceValueXpath>
                     <diggs:referenceSource>design</diggs:referenceSource>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
