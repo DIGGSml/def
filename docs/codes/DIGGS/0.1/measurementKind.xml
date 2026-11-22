@@ -16,9 +16,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -32,9 +29,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -50,9 +44,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -66,9 +57,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -84,9 +72,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -100,9 +85,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -118,9 +100,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -134,9 +113,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -152,9 +128,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -168,9 +141,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -186,9 +156,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -202,9 +169,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -220,9 +184,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -236,9 +197,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -254,9 +212,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -270,9 +225,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -288,9 +240,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -304,9 +253,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -322,9 +268,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -338,9 +281,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -356,9 +296,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -372,9 +309,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -390,9 +324,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -406,9 +337,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -424,9 +352,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -440,9 +365,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -458,9 +380,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -474,9 +393,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -492,9 +408,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -508,9 +421,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -526,9 +436,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -542,9 +449,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -560,9 +464,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -576,9 +477,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -594,9 +492,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -610,9 +505,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -628,9 +520,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -644,9 +533,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -662,9 +548,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -678,9 +561,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -696,9 +576,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -712,9 +589,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -730,9 +604,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -746,9 +617,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -764,9 +632,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -780,9 +645,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -798,9 +660,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -814,9 +673,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -832,9 +688,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -848,9 +701,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -866,9 +716,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -882,9 +729,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -900,9 +744,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -916,9 +757,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -934,9 +772,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -950,9 +785,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -968,9 +800,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -984,9 +813,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1002,9 +828,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1018,9 +841,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1036,9 +856,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1052,9 +869,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1070,9 +884,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1086,9 +897,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1104,9 +912,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1120,9 +925,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1138,9 +940,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1154,9 +953,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1172,9 +968,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1188,9 +981,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1206,9 +996,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1222,9 +1009,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1240,9 +1024,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1256,9 +1037,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1274,9 +1052,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1290,9 +1065,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1308,9 +1080,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1324,9 +1093,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1342,9 +1108,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1358,9 +1121,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1376,9 +1136,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1392,9 +1149,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1410,9 +1164,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1426,9 +1177,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1444,9 +1192,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1460,9 +1205,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1478,9 +1220,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1494,9 +1233,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -1512,9 +1248,6 @@
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
@@ -1528,9 +1261,6 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignMeasurement/diggs:measurementKind</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:MeasurementSpecification/diggs:appliesToMeasurementKind</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

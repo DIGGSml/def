@@ -828,7 +828,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -2067,7 +2067,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -2748,7 +2748,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -3140,7 +3140,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -4249,7 +4249,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
@@ -4257,7 +4257,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:MeasurementSpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignMeasurement</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -4269,6 +4269,14 @@
                 <diggs:ValueBinding>
                     <diggs:method>direct</diggs:method>
                     <diggs:realizedValueXpath>for $r in $evidence/descendant-or-self::*[diggs:results//diggs:propertyClass/@codeSpace[ends-with(., '#settlement')]] return diggs:series($r, 'settlement') ! ?2</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:LoadTransferPlatform</diggs:subjectElement>
+                    <diggs:method>value at</diggs:method>
+                    <diggs:realizedValueXpath>let $r := $evidence/diggs:outcome/*[1], $x := diggs:series($r, 'applied_stress'), $y := diggs:series($r, 'settlement'), $p := diggs:series($r, 'loading_phase') return for $i in 1 to count($y) return if ($p[$i]?2 = 'loading') then [$x[$i]?2, $y[$i]?2] else ()</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>(root(.)//diggs:DesignRITreatedArea/diggs:designLoad/diggs:DesignLoad/diggs:magnitudePressure)[1]</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                    <diggs:referenceScaleCode>design_load_multiple</diggs:referenceScaleCode>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>
@@ -4287,7 +4295,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
@@ -4310,7 +4318,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
@@ -4340,7 +4348,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="reinforcement_load_fraction">
-            <gml:description>The fraction of total applied load carried by the reinforcement rather than by the surrounding soil. Dimensionless, 0 to 1. Named by a diggs:PerformanceCriterion stating a minimum, which is how a design requirement on load sharing is expressed.</gml:description>
+            <gml:description>The fraction of total applied load carried by the reinforcement rather than by the surrounding soil. Dimensionless, 0 to 1. Named by a diggs:Criterion stating a minimum, which is how a design requirement on load sharing is expressed.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#reinforcement_load_fraction</gml:identifier>
             <gml:name>Reinforcement load fraction</gml:name>
             <diggs:dataType>double</diggs:dataType>
@@ -4348,7 +4356,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
@@ -5110,7 +5118,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:MeasurementSpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignMeasurement</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -5440,7 +5448,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:MeasurementSpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignMeasurement</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -5459,7 +5467,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
@@ -5489,7 +5497,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:PerformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
@@ -5501,7 +5509,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:MeasurementSpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignMeasurement</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>

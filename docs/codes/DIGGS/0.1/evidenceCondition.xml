@@ -115,4 +115,50 @@
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="design_load_multiple">
+            <gml:description>A multiple of the design load, for an evidence condition stated relative to it: a value of 1.5 selects the evidence at 1.5 times the design load. Used as the referenceScaleCode of a value binding that takes the design load as its reference value.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/evidenceCondition.xml#design_load_multiple</gml:identifier>
+            <gml:name>Design load multiple</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:evidenceCondition</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="neighbor_temporal_order">
+            <gml:description>Which of the subject and its neighbor was installed first, for a requirement on spacing or elapsed time between neighbors. Values: &quot;unordered&quot;, the two timestamps are at least the stated time apart in either order; &quot;reference before subject&quot;, the neighbor reached its governing timestamp before the subject; &quot;subject before reference&quot;, the subject reached its governing timestamp before the neighbor.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/evidenceCondition.xml#neighbor_temporal_order</gml:identifier>
+            <gml:name>Neighbor temporal order</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:evidenceCondition</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="elapsed_time_basis">
+            <gml:description>Which timestamps the elapsed time between two installations runs between. Values: &quot;completion to start&quot;, from the completion of the first to the start of the second; &quot;start to start&quot;; &quot;completion to completion&quot;; &quot;start to completion&quot;, from the start of the first to the completion of the second.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/evidenceCondition.xml#elapsed_time_basis</gml:identifier>
+            <gml:name>Elapsed time basis</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:evidenceCondition</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
 </gml:Dictionary>

@@ -20,7 +20,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -38,7 +38,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -61,7 +61,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -84,7 +84,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -103,7 +103,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -126,7 +126,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -147,7 +147,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -165,7 +165,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -183,7 +183,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -203,7 +203,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -222,7 +222,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -241,7 +241,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -260,7 +260,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -279,7 +279,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -298,7 +298,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -316,7 +316,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -335,7 +335,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -355,7 +355,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -374,7 +374,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -393,7 +393,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -412,7 +412,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -431,7 +431,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:propertyClass</diggs:sourceElementXpath>
@@ -454,7 +454,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -473,7 +473,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -496,7 +496,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -515,7 +515,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -538,7 +538,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -561,7 +561,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -582,7 +582,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -605,7 +605,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -628,7 +628,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -649,7 +649,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -669,7 +669,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -690,7 +690,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -708,7 +708,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -727,7 +727,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -750,7 +750,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -769,7 +769,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -788,7 +788,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -807,7 +807,7 @@
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:recordingParameter</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:ConstructionActivitySpecification</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConstructionActivity</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

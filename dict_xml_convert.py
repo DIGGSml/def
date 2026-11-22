@@ -13,6 +13,9 @@ existing codespace reference). Built for RI_Build_Plan_3.md X11 + X11a:
          diggs:ValueBinding inside diggs:valueBindings, after diggs:occurrences
          (Dictionary_diggs.xsd DefinitionType). Rows keep their sheet order, which is
          the order an evaluator tries them.
+  SPECMODEL — the ValueBindings sheet may carry an optional ReferenceScaleCode column
+         (diggs:referenceScaleCode, after ReferenceEvaluation); workbooks without it convert
+         unchanged.
   VCS1 — reads an optional ValueCodeSpace column on the Definitions sheet and emits it as
          diggs:valueCodeSpace, last in the Definition (the code list a string property's
          values come from).
@@ -67,6 +70,7 @@ VALUE_BINDING_COLUMNS = [
     ("ReferenceValueXpath", "referenceValueXpath"),
     ("ReferenceSource", "referenceSource"),
     ("ReferenceEvaluation", "referenceEvaluation"),
+    ("ReferenceScaleCode", "referenceScaleCode"),
     ("NormalizeByXpath", "normalizeByXpath"),
 ]
 

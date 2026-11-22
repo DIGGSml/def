@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="constraintRationale">
-    <gml:description>Codes naming why a diggs:ClearanceConstraint exists, for the value of constraintRationale. Documentation of intent, not load-bearing for evaluating the constraint itself.</gml:description>
+    <gml:description>Codes naming why a separation requirement exists, for the value of basis on a diggs:Criterion that states a separation from neighboring features. Documentation of intent, not load-bearing for evaluating the criterion itself.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/constraintRationale.xml</gml:identifier>
-    <gml:name>DIGGS Clearance Constraint Rationale Codelist Definitions</gml:name>
+    <gml:name>DIGGS Separation Rationale Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="vibration_sensitivity">
             <gml:description>The constraint exists to protect a nearby feature, or the subject feature itself while curing or setting, from construction vibration.</gml:description>
@@ -13,7 +13,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:constraintRationale</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -26,7 +26,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:constraintRationale</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -39,7 +39,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:constraintRationale</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -52,7 +52,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:constraintRationale</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -65,7 +65,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:constraintRationale</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -78,7 +78,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:constraintRationale</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -91,7 +91,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:constraintRationale</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -104,7 +104,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:constraintRationale</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -117,7 +117,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:constraintRationale</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

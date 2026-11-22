@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/propertylists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="designProperty">
-    <gml:description>Codes naming the design property a diggs:DesignConformanceCriterion governs - a geometric, constructional, compositional or procedural property checked against what the design or specification requires, as opposed to a diggs:PerformanceCriterion's measured physical property. Used for the value of the designProperty property of diggs:DesignConformanceCriterionType. The intended value set is stated directly in the schema's own documentation for this element.</gml:description>
+    <gml:description>Codes naming a property a diggs:Criterion governs: a geometric, constructional, compositional or procedural property checked against what the design or specification requires, as opposed to a measured physical property named from properties.xml. Used for the parameterName of limit. The value binding of each entry states where the realized value is found and what it is compared with.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml</gml:identifier>
-    <gml:name>DIGGS Design Conformance Criterion Design Property Codelist Definitions</gml:name>
+    <gml:name>DIGGS Criterion Design Property Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="position">
             <gml:description>The plan (horizontal) distance between the as-built position of the element (its reference point) and its designed position - the radial form of a position tolerance. Use easting_position_deviation and northing_position_deviation where a tolerance is stated per axis.</gml:description>
@@ -15,7 +15,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -47,7 +47,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -68,7 +68,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -89,7 +89,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -110,7 +110,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -124,7 +124,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -164,14 +164,14 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="minimum_spacing_to_fresh_element">
-            <gml:description>The minimum plan distance permitted between an element being installed and a previously installed element that has not yet reached the age or strength at which it is unaffected by the installation. Controls installation effects - ground displacement, vibration and fresh concrete disturbance - on neighbours placed shortly before. Stated as a length; where a specification expresses it as a multiple of element diameter, the limit is the product of that multiple and the design diameter.</gml:description>
+            <gml:description>The plan distance from an element being installed to the nearest neighbor of the kind the criterion's neighborFeatureType names that has not yet reached the age or strength at which it is unaffected by the installation. Controls installation effects - ground displacement, vibration and fresh concrete disturbance - on neighbors placed shortly before. Stated as a length; where a specification expresses it as a multiple of element diameter, the limit is the product of that multiple and the design diameter.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#minimum_spacing_to_fresh_element</gml:identifier>
             <gml:name>Minimum spacing to a fresh element</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -179,9 +179,17 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>horizontal offset</diggs:method>
+                    <diggs:realizedValueXpath>diggs:referencePoint</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:referencePoint</diggs:referenceValueXpath>
+                    <diggs:referenceSource>neighbor</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
@@ -194,14 +202,22 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>difference</diggs:method>
+                    <diggs:realizedValueXpath>diggs:whenConstructed//diggs:start</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>diggs:whenConstructed//diggs:end</diggs:referenceValueXpath>
+                    <diggs:referenceSource>neighbor</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="penetration_rate">
-            <gml:description>The rate at which the installation tool advances into the ground, as a design property a conformance criterion may govern. The design-side counterpart of mwd_properties.xml#penetration_rate, which names the same quantity as MEASURED during drilling; this entry names it as the subject of a requirement. Together with torque it is the pair a drilling refusal rule is normally written on, and such a rule is conjunctive - see diggs:CompositeAcceptanceCriterion.</gml:description>
+            <gml:description>The rate at which the installation tool advances into the ground, as a design property a criterion may govern. The design-side counterpart of mwd_properties.xml#penetration_rate, which names the same quantity as MEASURED during drilling; this entry names it as the subject of a requirement. Together with torque it is the pair a drilling refusal rule is normally written on, and such a rule is conjunctive - see a compound diggs:Criterion.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#penetration_rate</gml:identifier>
             <gml:name>Penetration rate</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -209,14 +225,14 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="torque">
-            <gml:description>The rotational force applied to the installation tool, as a design property a conformance criterion may govern. The design-side counterpart of mwd_properties.xml#torque, which names the same quantity as MEASURED during drilling. Paired with penetration_rate in a refusal criterion: neither alone defines refusal, which is why the combination is stated as a diggs:CompositeAcceptanceCriterion rather than left implicit in two co-scoped criteria.</gml:description>
+            <gml:description>The rotational force applied to the installation tool, as a design property a criterion may govern. The design-side counterpart of mwd_properties.xml#torque, which names the same quantity as MEASURED during drilling. Paired with penetration_rate in a refusal criterion: neither alone defines refusal, which is why the combination is stated as a compound diggs:Criterion rather than left implicit in two separate criteria.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#torque</gml:identifier>
             <gml:name>Torque</gml:name>
             <diggs:dataType>string</diggs:dataType>
@@ -224,7 +240,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -239,7 +255,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -266,7 +282,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -288,7 +304,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -310,7 +326,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -332,7 +348,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -348,7 +364,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -363,7 +379,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -390,7 +406,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -412,7 +428,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -442,7 +458,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -470,7 +486,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -498,7 +514,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -522,7 +538,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -547,7 +563,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -593,7 +609,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -617,7 +633,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -638,7 +654,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -660,7 +676,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -682,7 +698,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -703,7 +719,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -725,7 +741,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -748,7 +764,7 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
@@ -771,14 +787,293 @@
             <diggs:occurrences>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
-                    <diggs:conditionalElementXpath>ancestor::diggs:DesignConformanceCriterion</diggs:conditionalElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:Test</diggs:subjectElement>
+                    <diggs:method>ratio</diggs:method>
+                    <diggs:realizedValueXpath>let $col := diggs:deref(diggs:samplingFeatureRef), $batch := $col/diggs:groutRef/@xlink:href, $d := xs:date(substring(string(diggs:samplingTime//gml:timePosition), 1, 10)), $mix := diggs:deref(diggs:deref(diggs:deref($col/diggs:groutRef)/diggs:samplingActivityRef)/diggs:currentDesign//diggs:programDesignRef), $r := (for $m in root(.)//diggs:MaterialTest[diggs:sampleRef/@xlink:href = $batch][xs:date(substring(string(diggs:samplingTime//gml:timePosition), 1, 10)) le $d] return diggs:series($m/diggs:outcome/*, 'compressive_strength_unconfined') ! ?2) return if (exists($r) and exists($mix/diggs:strengthDesign)) then max($r) * 1000000 else ()</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>let $col := diggs:deref(diggs:samplingFeatureRef), $mix := diggs:deref(diggs:deref(diggs:deref($col/diggs:groutRef)/diggs:samplingActivityRef)/diggs:currentDesign//diggs:programDesignRef) return number($mix/diggs:strengthDesign)</diggs:referenceValueXpath>
+                    <diggs:referenceSource>subject</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="column_type">
+            <gml:description>The rigid inclusion technique the columns are built with, as a code from columnType.xml: controlled modulus columns, auger cast-in-place, continuous flight auger and so on. The realized value is the code of the as-built column's columnType; the design states the intended technique on the column design.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#column_type</gml:identifier>
+            <gml:name>Column type</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumn</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>substring-after(diggs:columnType/@codeSpace, '#')</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="ri_installation_method">
+            <gml:description>How the ground was handled as the columns were formed: full displacement, partial displacement or replacement. The realized value is the riInstallationMethod of the as-built column.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#ri_installation_method</gml:identifier>
+            <gml:name>Installation method</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumn</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>string(diggs:riInstallationMethod)</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="platform_type">
+            <gml:description>The construction type of the load transfer platform: unreinforced granular fill, geogrid-reinforced fill, soil-mixed or cemented raft, or a structural concrete slab. The realized value is the platformType of the as-built platform.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#platform_type</gml:identifier>
+            <gml:name>Platform type</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:LoadTransferPlatform</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>string(diggs:platformType)</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="ltp_material_type">
+            <gml:description>The classification of the fill the load transfer platform is built from. The realized value is the lithology classification code of the lifts of the as-built platform.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#ltp_material_type</gml:identifier>
+            <gml:name>Platform fill material</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:LoadTransferPlatform</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:lifts/diggs:LTPLift/diggs:materialType/diggs:Lithology/diggs:classificationCode/string(.)</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="percent_passing">
+            <gml:description>The grain size distribution of a fill or grout aggregate compared with the permitted gradation envelope of its design. The criterion names the term with no value; every point of the tested gradation must lie inside the envelope, which is bounded below by the coarse limit curve and above by the fine limit curve of the design. The realized curve is the sieve analysis of the cited evidence, as (particle size, percent passing) pairs.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#percent_passing</gml:identifier>
+            <gml:name>Percent passing</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>dimensionless</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>within envelope</diggs:method>
+                    <diggs:realizedValueXpath>for $g in $evidence//diggs:SieveAnalysis/diggs:gradingData/diggs:Grading return [number($g/diggs:particleSize), number($g/diggs:percentPassing)]</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>[ array { for $g in $design/diggs:aggregateGradationCurveCoarseLimit/diggs:SieveAnalysis/diggs:gradingData/diggs:Grading return [number($g/diggs:particleSize), number($g/diggs:percentPassing)] }, array { for $g in $design/diggs:aggregateGradationCurveFineLimit/diggs:SieveAnalysis/diggs:gradingData/diggs:Grading return [number($g/diggs:particleSize), number($g/diggs:percentPassing)] } ]</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="construction_method_standard">
+            <gml:description>The method statement or standard the construction activity followed, as the reference of its constructionMethod specification. Compared with the method the design of the activity states.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#construction_method_standard</gml:identifier>
+            <gml:name>Construction method standard</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumnConstruction</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:constructionMethod/diggs:ConstructionActivityMethod/diggs:constructionMethod/@xlink:href/string(.)</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumnConstruction</diggs:subjectElement>
+                    <diggs:method>match</diggs:method>
+                    <diggs:realizedValueXpath>diggs:constructionMethod/diggs:ConstructionActivityMethod/diggs:constructionMethod/@xlink:href/string(.)</diggs:realizedValueXpath>
+                    <diggs:referenceValueXpath>$design/diggs:constructionMethod/diggs:ConstructionActivityMethod/diggs:constructionMethod/@xlink:href/string(.)</diggs:referenceValueXpath>
+                    <diggs:referenceSource>design</diggs:referenceSource>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="cutting_tool_type">
+            <gml:description>The type of cutting tool the construction activity used, as the code of the toolType of its cutting tool.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#cutting_tool_type</gml:identifier>
+            <gml:name>Cutting tool type</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumnConstruction</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:constructionMethod//diggs:CuttingTool/diggs:toolType/substring-after(@codeSpace, '#')</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="cutting_tool_diameter">
+            <gml:description>The outer diameter of the cutting tool the construction activity used.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#cutting_tool_diameter</gml:identifier>
+            <gml:name>Cutting tool diameter</gml:name>
+            <diggs:dataType>double</diggs:dataType>
+            <diggs:quantityClass>length</diggs:quantityClass>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumnConstruction</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>diggs:constructionMethod//diggs:CuttingTool/diggs:toolOuterDiameter</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="recorded_quantities">
+            <gml:description>The quantities a record holds, as the set of property codes recorded. The criterion lists the required codes with the operator includesAll. The realized values are the property codes of the installation record of a construction activity, or of the outcome of a measurement.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#recorded_quantities</gml:identifier>
+            <gml:name>Recorded quantities</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:RIColumnConstruction</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>distinct-values(.//diggs:propertyClass/@codeSpace ! substring-after(., '#'))</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+                <diggs:ValueBinding>
+                    <diggs:subjectElement>diggs:Test</diggs:subjectElement>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>distinct-values($evidence//diggs:propertyClass/@codeSpace ! substring-after(., '#'))</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="equipment_class">
+            <gml:description>The classes of equipment used, as the set of class codes of the equipment the subject cites or holds. The criterion lists the required classes with the operator includesAll or includesAny.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#equipment_class</gml:identifier>
+            <gml:name>Equipment class</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>distinct-values((.//diggs:Equipment | diggs:deref(.//diggs:equipment/@xlink:href)) /diggs:class/@codeSpace ! substring-after(., '#'))</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="test_standard">
+            <gml:description>The standard a measurement followed, as the reference of the testProcedureMethod of its procedure.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#test_standard</gml:identifier>
+            <gml:name>Test standard</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
             <diggs:valueBindings>
                 <diggs:ValueBinding>
                     <diggs:subjectElement>diggs:Test</diggs:subjectElement>
                     <diggs:method>direct</diggs:method>
-                    <diggs:realizedValueXpath>let $col := diggs:deref(diggs:samplingFeatureRef), $batch := $col/diggs:groutRef/@xlink:href, $d := xs:date(substring(string(diggs:samplingTime//gml:timePosition), 1, 10)), $mix := diggs:deref(diggs:deref(diggs:deref($col/diggs:groutRef)/diggs:samplingActivityRef)/diggs:currentDesign//diggs:programDesignRef), $r := (for $m in root(.)//diggs:MaterialTest[diggs:sampleRef/@xlink:href = $batch][xs:date(substring(string(diggs:samplingTime//gml:timePosition), 1, 10)) le $d] return diggs:series($m/diggs:outcome/*, 'compressive_strength_unconfined') ! ?2) return if (exists($r) and exists($mix/diggs:strengthDesign)) then max($r) * 1000000 div number($mix/diggs:strengthDesign) * 100 else ()</diggs:realizedValueXpath>
+                    <diggs:realizedValueXpath>string((diggs:procedure/*/diggs:testProcedureMethod/@xlink:href)[1])</diggs:realizedValueXpath>
+                </diggs:ValueBinding>
+            </diggs:valueBindings>
+        </diggs:Definition>
+    </gml:dictionaryEntry>
+    <gml:dictionaryEntry>
+        <diggs:Definition gml:id="specimen_preparation_standard">
+            <gml:description>The standard or procedure the specimens were prepared by, as the reference of the preparationProcedure of each specimen.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#specimen_preparation_standard</gml:identifier>
+            <gml:name>Specimen preparation standard</gml:name>
+            <diggs:dataType>string</diggs:dataType>
+            <diggs:authority>DIGGS</diggs:authority>
+            <diggs:occurrences>
+                <diggs:Occurrence>
+                    <diggs:sourceElementXpath>//diggs:parameterName</diggs:sourceElementXpath>
+                    <diggs:conditionalElementXpath>ancestor::diggs:Criterion</diggs:conditionalElementXpath>
+                </diggs:Occurrence>
+            </diggs:occurrences>
+            <diggs:valueBindings>
+                <diggs:ValueBinding>
+                    <diggs:method>direct</diggs:method>
+                    <diggs:realizedValueXpath>for $p in diggs:preparationProcedure return string(($p/@xlink:href, $p/diggs:Specification/diggs:standardReferenceNumber)[1])</diggs:realizedValueXpath>
                 </diggs:ValueBinding>
             </diggs:valueBindings>
         </diggs:Definition>

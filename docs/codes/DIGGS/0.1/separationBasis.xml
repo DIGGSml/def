@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="separationBasis">
-    <gml:description>Codes naming how the distance between two features is measured, for the value of separationBasis on diggs:ClearanceConstraint. Needed because two features' location geometries do not by themselves say which two points a stated separation distance is taken between.</gml:description>
+    <gml:description>Codes naming how the distance between two features is measured, for the value of basis on a diggs:Criterion that states a separation. Needed because two features' location geometries do not by themselves say which two points a stated separation distance is taken between.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/separationBasis.xml</gml:identifier>
     <gml:name>DIGGS Separation Measurement Basis Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
@@ -13,7 +13,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:separationBasis</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -26,7 +26,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:separationBasis</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -39,7 +39,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:separationBasis</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -52,7 +52,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:separationBasis</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>
@@ -65,7 +65,7 @@
             <diggs:dataType>string</diggs:dataType>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:ClearanceConstraint/diggs:separationBasis</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
             </diggs:occurrences>
         </diggs:Definition>

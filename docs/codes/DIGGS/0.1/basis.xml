@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="https://diggsml.org/def/stylesheets/codelists.xsl"?>
 
 <gml:Dictionary xmlns:diggs="http://diggsml.org/schemas/3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd" gml:id="basis">
-    <gml:description>Codes naming the unit of work an acceptance criterion is assessed over - distinct from scope, which says which features are governed. Used for the value of the basis property of diggs:AbstractAcceptanceCriterionType, inherited by both diggs:PerformanceCriterion and diggs:DesignConformanceCriterion. Where basis expresses a per-unit-length quantum, the reference length is given by the sibling baseLength element. Also used for the value of diggs:DesignRITreatedAreaType/diggs:differentialSettlementBasis, which shares this vocabulary with AbstractAcceptanceCriterionType/basis; the list includes an angular_distortion entry for it.</gml:description>
+    <gml:description>Codes naming the unit of work a criterion is assessed over - distinct from scope, which says which features are governed. Used for the value of the basis property of diggs:Criterion. Where basis expresses a per-unit-length quantum, the reference length is given by the sibling baseLength element. Also used for the value of diggs:DesignRITreatedAreaType/diggs:differentialSettlementBasis, which shares this vocabulary with diggs:Criterion/basis; the list includes an angular_distortion entry for it.</gml:description>
     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/basis.xml</gml:identifier>
-    <gml:name>DIGGS Acceptance Criterion Basis Codelist Definitions</gml:name>
+    <gml:name>DIGGS Criterion Basis Codelist Definitions</gml:name>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="per_element">
             <gml:description>The criterion is evaluated separately for each individual rigid inclusion or other element in scope.</gml:description>
@@ -14,10 +14,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PerformanceCriterion/diggs:basis</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:basis</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:differentialSettlementBasis</diggs:sourceElementXpath>
@@ -34,10 +31,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PerformanceCriterion/diggs:basis</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:basis</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:differentialSettlementBasis</diggs:sourceElementXpath>
@@ -54,10 +48,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PerformanceCriterion/diggs:basis</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:basis</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:differentialSettlementBasis</diggs:sourceElementXpath>
@@ -74,10 +65,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PerformanceCriterion/diggs:basis</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:basis</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:differentialSettlementBasis</diggs:sourceElementXpath>
@@ -94,10 +82,7 @@
             <diggs:authority>DIGGS</diggs:authority>
             <diggs:occurrences>
                 <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:PerformanceCriterion/diggs:basis</diggs:sourceElementXpath>
-                </diggs:Occurrence>
-                <diggs:Occurrence>
-                    <diggs:sourceElementXpath>//diggs:DesignConformanceCriterion/diggs:basis</diggs:sourceElementXpath>
+                    <diggs:sourceElementXpath>//diggs:Criterion/diggs:basis</diggs:sourceElementXpath>
                 </diggs:Occurrence>
                 <diggs:Occurrence>
                     <diggs:sourceElementXpath>//diggs:DesignRITreatedArea/diggs:differentialSettlementBasis</diggs:sourceElementXpath>

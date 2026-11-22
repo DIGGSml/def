@@ -199,7 +199,7 @@
     </gml:dictionaryEntry>
     <gml:dictionaryEntry>
         <diggs:Definition gml:id="stiffness_ratio">
-            <gml:description>The ratio ks,T/ks of the stiffness of the improved composite ground to that of the untreated ground, used by EBGEO as a gate on whether its method may be applied. THE GATE VALUE IS NOT STATED HERE. The threshold this ratio must exceed is a pass/fail requirement on method validity, not a design value, and belongs in a diggs:DesignConformanceCriterion that names this property. That keeps the requirement where a reviewer looks for requirements and lets it differ by project or edition. The commonly cited threshold has not been verified against a retrievable clause; the criterion carrying it should cite its own source.</gml:description>
+            <gml:description>The ratio ks,T/ks of the stiffness of the improved composite ground to that of the untreated ground, used by EBGEO as a gate on whether its method may be applied. THE GATE VALUE IS NOT STATED HERE. The threshold this ratio must exceed is a pass/fail requirement on method validity, not a design value, and belongs in a diggs:Criterion that names this property. That keeps the requirement where a reviewer looks for requirements and lets it differ by project or edition. The commonly cited threshold has not been verified against a retrievable clause; the criterion carrying it should cite its own source.</gml:description>
             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/codes/DIGGS/0.1/ri_design_properties.xml#stiffness_ratio</gml:identifier>
             <gml:name>Subgrade stiffness ratio</gml:name>
             <diggs:dataType>double</diggs:dataType>
